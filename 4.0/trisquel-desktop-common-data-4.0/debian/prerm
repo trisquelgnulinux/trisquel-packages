@@ -1,0 +1,11 @@
+#! /bin/sh
+
+set -e
+
+
+
+case "$1" in
+  remove)
+    update-alternatives --remove gdm-config-derivative /etc/xdg/trisquel/gdm/gdm.conf
+    ;;
+esac

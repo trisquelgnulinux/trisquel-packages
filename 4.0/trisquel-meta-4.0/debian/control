@@ -1,0 +1,122 @@
+Source: trisquel-meta
+Section: metapackages
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends: debhelper (>= 4.1.0)
+Standards-Version: 3.7.3
+
+Package: trisquel-minimal
+Architecture: all
+Priority: important
+Depends: adduser, apt, apt-utils, bzip2, console-setup, dash, debconf, dhcp3-client, eject, gnupg, ifupdown, initramfs-tools, iproute, iputils-ping, kbd, less, libc6-i686 [i386], locales, lsb-release, makedev, mawk, module-init-tools, net-tools, netbase, netcat-openbsd, ntpdate, passwd, procps, python, sudo, rsyslog, tasksel, tzdata, udev, upstart, ureadahead, vim-tiny, whiptail
+Description: Trisquel base metapackage.
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a minimal console environment.
+ .
+
+Package: trisquel-base
+Architecture: all
+Priority: optional
+Depends: trisquel-minimal, trisquel-keyring, bc, dc, dmraid, jfsutils, ntfsprogs, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, ssh, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-daemon, avahi-autoipd, avahi-utils, ca-certificates, consolekit, doc-base, hal, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, openfwwf, modemmanager, pcmciautils, ecryptfs-utils
+Recommends: trisquel-base-recommended
+Description: Trisquel base metapackage.
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a complete console environment.
+ .
+
+Package: trisquel-base-recommended
+Architecture: all
+Priority: optional
+Depends: trisquel-base, unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue
+Description: Trisquel base metapackage (recommended packages).
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a complete console environment.
+ .
+
+Package: trisquel
+Architecture: all
+Priority: optional
+Depends: trisquel-base, trisquel-gnome-base, trisquel-wallpapers
+Recommends: trisquel-recommended
+Suggests: casper, ubiquity, grub-pc, ubiquity-frontend-gtk, gparted, language-support-en, language-support-es, language-pack-gnome-en, language-pack-gnome-es, openoffice.org-l10n-es, openoffice.org-help-es, openoffice.org-help-en-us, openoffice.org-hyphenation, openoffice.org-hyphenation-en-us, openoffice.org-thesaurus-en-us, openoffice.org-l10n-en-gb, openoffice.org-help-en-gb, openoffice.org-l10n-en-za, openoffice.org-thesaurus-en-au, lupin-casper
+Description: Trisquel metapackage (desktop edition).
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a full featured desktop environment.
+ .
+
+Package: trisquel-recommended
+Architecture: all
+Priority: optional
+Depends: trisquel, empathy, telepathy-butterfly, telepathy-gabble, telepathy-salut, telepathy-haze, telepathy-sofiasip, transmission-gtk, xchat, cheese, gthumb, simple-scan, oggconvert, gnote, aisleriot, gnome-mahjongg, gnome-sudoku, gnomine, glchess, trisquel-base-recommended, trisquel-desktop-common-recommended, trisquel-gnome-base-recommended, liferea, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, gimp, gimp-help-es, gimp-help-en, shotwell, gimp-ufraw
+Description: Trisquel metapackage for the desktop edition (recommended packages).
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a full featured desktop environment.
+ .
+
+Package: trisquel-desktop-common
+Architecture: all
+Priority: optional
+Depends: synaptic, apt-xapian-index, trisquel-desktop-common-data, dmz-cursor-theme, xcursor-themes, foo2zjs, min12xxw, pxljr, splix, im-switch, hplip, ghostscript-x, foomatic-db, foomatic-db-engine, foomatic-filters, hpijs, trisquel-gtk-theme, trisquel-icon-theme, genisoimage, dbus-x11, cups, cups-bsd, cups-client, cups-driver-gutenprint, desktop-file-utils, gconf-editor, network-manager-openvpn | wicd, network-manager | wicd, network-manager-gnome | wicd, notification-daemon, openprinting-ppds, system-config-printer-gnome, ttf-dejavu, ttf-droid, update-notifier, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, software-properties-gtk, pm-utils-powersave-policy, gdebi, xdg-user-dirs, xdg-user-dirs-gtk, ntfs-3g, ntfsprogs, screen-resolution-extra, dnsmasq-base, network-manager-pptp | wicd
+Recommends: trisquel-desktop-common-recommended
+Description: Trisquel desktop metapackage.
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a X11 environment and a set of tools common to all graphical Trisquel editions.
+ .
+
+Package: trisquel-desktop-common-recommended
+Architecture: all
+Priority: optional
+Depends: trisquel-desktop-common, unace, arj, p7zip, gstreamer0.10-schroedinger, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-ugly, ttf-linux-libertine, ttf-beteckna, ttf-dustin, ttf-freefont, ttf-junicode, ttf-marvosym, ttf-mgopen, ttf-radisnoir, ttf-sil-andika, ttf-summersby, ttf-tiresias, ttf-tuffy, xnest, gstreamer0.10-ffmpeg, mozilla-plugin-gnash | swfdec-mozilla, xfonts-scalable, indicator-messages
+Description: Trisquel desktop metapackage (recommended packages).
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a X11 environment and a set of tools common to all graphical Trisquel editions.
+ .
+
+Package: trisquel-gnome-base
+Architecture: all
+Priority: optional
+Depends: trisquel-desktop-common, gnome-app-install, trisquel-screensaver, trisquel-sounds, gvfs-fuse, gvfs-backends, gnome-screensaver, libpam-gnome-keyring, compiz, alacarte, gnome-applets, gnome-control-center, gnome-media, gnome-menus,  gnome-nettool, gnome-panel, gnome-power-manager, gnome-session, gnome-system-monitor, gnome-terminal, gnome-themes, gstreamer0.10-alsa, gstreamer0.10-plugins-base-apps, gstreamer0.10-pulseaudio, libasound2-plugins, esound-clients, libgnomevfs2-extra, metacity, nautilus, nautilus-share, nautilus-sendto, pulseaudio, pulseaudio-esound-compat, pulseaudio-module-gconf, pulseaudio-module-x11, pulseaudio-module-bluetooth, gnome-bluetooth, libpam-smbpass, gnome-utils, rarian-compat, gedit, ibus-gtk, ibus-m17n, ibus-table, libgl1-mesa-glx, libgl1-mesa-dri, gnome-system-tools, policykit-1-gnome, policykit-desktop-privileges, yelp, gconf-editor, language-selector, libpam-ck-connector, libsasl2-modules, libsdl1.2debian-pulseaudio, libxp6, speech-dispatcher, gdm, indicator-applet, indicator-sound, gnome-disk-utility
+Recommends: trisquel-gnome-base-recommended
+Description: Trisquel metapackage.
+ Virtual package providing a dependency list for Trisquel base installation. 
+ Provides a basic GNOME environment, common to all GNOME-based Trisquel editions.
+ .
+
+Package: trisquel-gnome-base-recommended
+Architecture: all
+Priority: optional
+Depends: trisquel-gnome-base, samba, vino, nautilus-gksu, nautilus-open-terminal, gnome-user-guide-en, gnome-user-guide-es, gnome-screensaver, openoffice.org-gnome, openoffice.org-calc, openoffice.org-impress, openoffice.org-writer, bogofilter, totem, totem-mozilla, flashvideoreplacer, pitivi, exaile, exaile-plugin-ipod, python-beautifulsoup, python-cddb, bluez, bluez-cups, bluez-alsa, bluez-gstreamer, compizconfig-settings-manager, evolution, evolution-exchange, evolution-plugins, evolution-webcal, gvfs-bin, espeak, espeak-data, evolution-indicator, inputattach, mousetweaks, usb-creator, gnome-raw-thumbnailer, gnome-xcf-thumbnailer, ooo-thumbnailer, seahorse-plugins, seahorse, ssh-askpass-gnome, gnome-session-canberra, libcanberra-pulse, mozilla-plugin-gnash | swfdec-mozilla, gucharmap, vinagre, evince, file-roller, gcalctool, brasero, gthumb, computer-janitor-gtk, abrowser, firefox-gnome-support, notify-osd, xul-ext-notify
+Description: Trisquel metapackage (recommended packages).
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a basic GNOME environment, common to all GNOME-based Trisquel editions.
+ .
+
+Package: trisquel-mini
+Architecture: all
+Priority: optional
+Depends: trisquel-base, trisquel-desktop-common, lxde, lxdm, gnome-power-manager, trisquel-mini-data, language-selector, trisquel-wallpapers, gnome-app-install, gigolo, gvfs-fuse, gvfs-backends, gvfs-bin, pulseaudio
+Recommends: trisquel-mini-recommended
+Suggests: casper, ubiquity, grub-pc, ubiquity-frontend-gtk, language-pack-gnome-es, lupin-casper
+Description: Trisquel metapackage (mini edition).
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides lightweight desktop environment.
+ .
+
+Package: trisquel-mini-recommended
+Architecture: all
+Priority: optional
+Depends: trisquel-mini, midori, abiword, sylpheed, sylpheed-i18n, xchat, xfburn, mtpaint, epdfview, transmission-gtk, gcalctool, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, trisquel-base-recommended, trisquel-desktop-common-recommended, simple-scan, gnome-mplayer, empathy, telepathy-gabble, telepathy-salut, telepathy-haze, telepathy-butterfly, gstreamer0.10-x, libpurple-bin, usb-creator
+Description: Trisquel metapackage (mini edition).
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides lightweight desktop environment.
+ .
+
+Package: trisquel-sugar
+Architecture: all
+Priority: optional
+Depends: trisquel-base, dbus-x11, gdm, trisquel-desktop-common-data, ttf-dejavu, ttf-droid, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, sweets-distribution, metacity, dmz-cursor-theme, mozilla-plugin-gnash | swfdec-mozilla, usb-creator, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-good, gstreamer0.10-ffmpeg, gstreamer0.10-fluendo-mp3, gstreamer0.10-x, network-manager, bash-completion, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, gstreamer0.10-alsa, gstreamer0.10-pulseaudio, pulseaudio
+Suggests: casper, ubiquity-frontend-gtk, ubiquity, lupin-casper, grub-pc
+Description: Sugar environment for Trisquel.
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a Sugar based environment.
+ .

@@ -1,0 +1,15 @@
+Source: trisquel-base-data
+Section: trisquel
+Priority: important
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: trisquel-base-data
+Architecture: all
+Priority: important
+Description: Trisquel base metapackage - data files.
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a console basic environment.
+ .
+

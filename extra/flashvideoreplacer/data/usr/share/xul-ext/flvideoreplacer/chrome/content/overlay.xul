@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://flvideoreplacer/skin/toolbar.css" type="text/css" ?>
+
+<!DOCTYPE overlay SYSTEM "chrome://flvideoreplacer/locale/flvideoreplacer.dtd">
+
+<overlay id="flvideoreplacer-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="chrome://flvideoreplacer/content/scripts/functions-firstrun.js"/>
+    <script type="application/x-javascript" src="chrome://flvideoreplacer/content/scripts/functions-listener.js"/>
+    <script type="application/x-javascript" src="chrome://flvideoreplacer/content/scripts/functions-urlbarlistener.js"/>
+
+    <window id="main-window">
+	    <stringbundleset id="strbundles">
+		<stringbundle id="flvideoreplacerstrings" src="chrome://flvideoreplacer/locale/strings.properties"/>
+	    </stringbundleset>
+    </window>
+    
+    <toolbarpalette id="BrowserToolbarPalette">
+	<toolbarbutton id="flvideoreplacer-toolbar-button" label="&FlashVideoReplacerTitle;" tooltiptext="&FlashVideoReplacerTitle;" oncommand="window.openDialog('chrome://flvideoreplacer/content/options.xul', 'flvideoreplacer-prefs', 'chrome,centerscreen,alwaysRaised');" class="toolbarbutton-1 chromeclass-toolbar-additional"/>
+    </toolbarpalette>
+    
+    <popup id="contentAreaContextMenu">
+	<menu id="flvideoreplacer-contextmenu" label="&FlashVideoReplacerTitle;" class="menu-iconic" image="chrome://flvideoreplacer/skin/toolbar-small.png" onpopupshowing="flvideoreplacerListener.showHideMenus();">
+	    <menupopup>
+		<menu id="flvideoreplacer-embedded" label="&OpenEmbedded;" class="menu-iconic" image="chrome://flvideoreplacer/skin/play16.png" position="end_after">
+		    <menupopup id="flvideoreplacer-embedded-select">
+			<vbox id="flvideoreplacer-embedded-select-vbox">
+			</vbox>
+		    </menupopup>
+		</menu>
+		<menu id="flvideoreplacer-embedded-detection" label="&EmbeddedVideoDetection;" class="menu-iconic" image="chrome://flvideoreplacer/skin/embedded16.png" position="end_after">
+		    <menupopup id="flvideoreplacer-embedded-detection-select">
+			<vbox id="flvideoreplacer-embedded-detection-select-vbox">
+			</vbox>
+		    </menupopup>
+		</menu>
+		<menuseparator id="flvideoreplacer-embedded-separator"/>
+		<menu id="flvideoreplacer-copy" label="&Clipboard;" class="menu-iconic" image="chrome://flvideoreplacer/skin/clipboard16.png" position="end_after">
+		    <menupopup id="flvideoreplacer-copy-select">
+			<vbox id="flvideoreplacer-copy-select-vbox">
+			</vbox>
+		    </menupopup>
+		</menu>
+		<menu id="flvideoreplacer-download" label="&Download;" class="menu-iconic" image="chrome://flvideoreplacer/skin/download16.png" position="end_after">
+		    <menupopup id="flvideoreplacer-download-select">
+			<vbox id="flvideoreplacer-download-select-vbox">
+			</vbox>
+		    </menupopup>
+		</menu>
+		<menuseparator id="flvideoreplacer-prefs-separator"/>
+		<menuitem id="flvideoreplacer-preferences" label="&Preferences;" class="menu-iconic" image="chrome://flvideoreplacer/skin/settings16.png" oncommand="window.openDialog('chrome://flvideoreplacer/content/options.xul', 'flvideoreplacer-prefs', 'chrome,centerscreen,alwaysRaised');"/>
+	    </menupopup>
+	</menu>
+    </popup>
+
+</overlay>

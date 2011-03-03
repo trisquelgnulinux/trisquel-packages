@@ -1,0 +1,26 @@
+#!/bin/sh
+files="
+/usr/share/xsessions/xterm.desktop
+"
+for item in $files
+do
+    [ -f "$item"".ubuntu" ] || dpkg-divert --package trisquel-sugar \
+     --add --rename --divert "$item"".ubuntu" "$item"
+done
+
+[ -d /usr/share/xsessions/ ] || mkdir -p /usr/share/xsessions/
+if [ ! -f /usr/share/xsessions/xterm.desktop ]
+then
+cat << EOF > /usr/share/xsessions/xterm.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Name=Recovery Console
+Comment=Failsafe session with only xterm
+Exec=xterm
+TryExec=xterm
+Icon=
+Type=Application
+X-Ubuntu-Gettext-Domain=gdm
+Hidden=true
+EOF
+fi

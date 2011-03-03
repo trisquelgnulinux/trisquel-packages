@@ -1,0 +1,46 @@
+#!/bin/sh
+files="
+/etc/xdg/exaile/settings.ini
+/usr/lib/openoffice/basis3.2/share/registry/data/org/openoffice/Office/ExtensionManager.xcu
+"
+for item in $files
+do
+    [ -f "$item"".ubuntu" ] || dpkg-divert --package trisquel-desktop-common-data \
+     --add --rename --divert "$item"".ubuntu" "$item"
+done
+
+[ -d /etc/xdg/exaile ] || mkdir -p /etc/xdg/exaile
+if [ ! -f /etc/xdg/exaile/settings.ini.ubuntu ]
+then
+cat << EOF > /etc/xdg/exaile/settings.ini.ubuntu
+
+
+[plugins]
+enabled = L: ['shoutcast', 'lastfmcovers', 'lyricsfly', 'cd', 'replaygain', 'equalizer', 'lyricsviewer', 'lastfmdynamic', 'notifyosd']
+
+[osd]
+enabled = B: False
+hover_tray = B: False
+
+[covers]
+preferred_order = L: ['local', 'lastfm']
+
+[cd_import]
+format = S: FLAC
+EOF
+fi
+
+[ -d /usr/lib/openoffice/basis3.2/share/registry/data/org/openoffice/Office/ ] || mkdir -p /usr/lib/openoffice/basis3.2/share/registry/data/org/openoffice/Office/
+if [ ! -f /usr/lib/openoffice/basis3.2/share/registry/data/org/openoffice/Office/ExtensionManager.xcu ]
+then
+cat << EOF > /usr/lib/openoffice/basis3.2/share/registry/data/org/openoffice/Office/ExtensionManager.xcu
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:install="http://openoffice.org/2004/installation" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="ExtensionManager" oor:package="org.openoffice.Office">
+  <node oor:name="ExtensionRepositories">
+    <prop oor:name="WebsiteLink">
+      <value>http://www.fsf.org/openoffice</value>
+    </prop>
+  </node>
+</oor:component-data>
+EOF
+fi

@@ -1,0 +1,40 @@
+/* XPM */
+static char *minimize2[] = {
+/* width height ncolors chars_per_pixel */
+"23 23 10 1",
+/* colors */
+"  c #8D8D8D",
+". c #F4F4F4",
+"X c #EAEAEA",
+"o c #E8E8E8",
+"O c #F3EFEC",
+"+ c #CCCCCC",
+"@ c #FFFFFF",
+"# c #F3F3F3",
+"$ c #E9E9E9",
+"% c None",
+/* pixels */
+"                       ",
+"@@@@@@@@@@@@@@@@@@@@@@@",
+"OOOOOOOOOOOOOOOOOOOOOOO",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"XXXXXXXXXXXXXXXXXXXXXXX",
+"$$$$$$$$$$$$$$$$$$$$$$$",
+"$$$$$$$$$$$$$$$$$$$$$$$",
+"$$$$$$$$$$$$$$$$$$$$$$$",
+"XXXXXXXXX+++++++++XXXXX",
+"XXXXXXXXX+++++++++.XXXX",
+"$$$$$$$$$$#########$$$$",
+"$$$$$$$$$$$$$$$$$$$$$$$",
+"$$$$$$$$$$$$$$$$$$$$$$$",
+"$$$$$$$$$$$$$$$$$$$$$$$",
+"ooooooooooooooooooooooo",
+"ooooooooooooooooooooooo",
+"%%%%%%%%%%%%%%%%%%%%%%%"
+};

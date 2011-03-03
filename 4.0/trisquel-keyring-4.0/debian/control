@@ -1,0 +1,16 @@
+Source: trisquel-keyring
+Section: trisquel
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: trisquel-keyring
+Architecture: all
+Priority: important
+Depends: gnupg (>= 1.0.6-4)
+Description: GnuPG keys of the Trisquel archive
+ The Trisquel project digitally signs its Release files. This package
+ contains the archive keys used for that.
+ .
+

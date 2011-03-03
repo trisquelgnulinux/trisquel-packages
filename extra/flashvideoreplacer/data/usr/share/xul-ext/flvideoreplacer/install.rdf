@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+	<em:id>flvideoreplacer@lovinglinux.megabyet.net</em:id>
+	<em:version>2.0.2</em:version>
+	<em:type>2</em:type>
+	<em:optionsURL>chrome://flvideoreplacer/content/options.xul</em:optionsURL>
+	<em:name>FlashVideoReplacer</em:name>
+	<em:description>Replace embedded flash videos and display them with a different plugin or standlone player, download or automatically redirect to WebM player when available.</em:description>
+	<em:creator>lovinglinux</em:creator>
+	<em:homepageURL>http://www.webgapps.org/addons/flashvideoreplacer</em:homepageURL>
+	<em:targetApplication>
+	    <Description>
+		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+		<em:minVersion>3.5</em:minVersion>
+		<em:maxVersion>4.0.*</em:maxVersion>
+	    </Description>
+	</em:targetApplication>
+    </Description>
+</RDF>

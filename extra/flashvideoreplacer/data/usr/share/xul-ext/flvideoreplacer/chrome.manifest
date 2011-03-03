@@ -1,0 +1,8 @@
+content   flvideoreplacer                    chrome/content/
+skin      flvideoreplacer      classic/1.0   chrome/skin/
+
+locale    flvideoreplacer  en-US         chrome/locale/en-US/
+locale    flvideoreplacer  pt-BR         chrome/locale/pt-BR/
+
+overlay chrome://browser/content/browser.xul          chrome://flvideoreplacer/content/overlay.xul
+style   chrome://global/content/customizeToolbar.xul  chrome://flvideoreplacer/skin/toolbar.css

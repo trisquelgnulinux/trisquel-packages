@@ -1,0 +1,7 @@
+#flvideoreplacer-toolbar-button {
+  list-style-image: url("chrome://flvideoreplacer/skin/toolbar.png");
+}
+
+toolbar[iconsize="small"] #flvideoreplacer-toolbar-button {
+  list-style-image: url("chrome://flvideoreplacer/skin/toolbar-small.png");
+}

@@ -1,0 +1,23 @@
+trisquel-screensaver (4.0) taranis; urgency=low
+
+  * Initial release for Taranis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2010 19:50:00 +0200
+
+trisquel-screensaver (3.5) awen; urgency=low
+
+  * Initial release for Awen
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 03 Mar 2010 21:27:09 +0100
+
+trisquel-screensaver (3.0) dwyn; urgency=low
+
+  * Initial release for Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Fri, 12 Jun 2009 14:28:12 +0200
+
+trisquel-screensaver (2.1-1) robur; urgency=low
+
+  * Initial release
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200

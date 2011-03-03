@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=LyX Document Processor
+Name[es]=Procesador de Documentos LyX
+Name[gl]=Procesador de Documentos LyX
+GenericName=Document Processor
+GenericName[gl]=Procesador de Documentos
+GenericName[es]=Procesador de Documentos
+Comment=High level LaTeX frontend
+Comment[gl]=Editor de LaTeX de alto nivel
+Comment[es]=Editor de LaTeX de alto nivel
+Exec=lyx %F
+TryExec=lyx
+Icon=document
+StartupNotify=false
+StartupWMClass=Lyx
+Terminal=false
+Categories=Office;WordProcessor;Qt;
+MimeType=text/x-lyx;application/x-lyx;

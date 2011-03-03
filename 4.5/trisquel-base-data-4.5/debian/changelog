@@ -1,0 +1,114 @@
+trisquel-base-data (4.4.9-4) slaine; urgency=low
+
+  * Restored radeon into blacklist
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 24 Feb 2011 04:23:49 +0100
+
+trisquel-base-data (4.4.9-3) slaine; urgency=low
+
+  * Removed radeon from blacklist
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 11 Feb 2011 00:49:34 +0100
+
+trisquel-base-data (4.4.9-2) slaine; urgency=low
+
+  * Updated generator script logging texts
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 12 Jan 2011 03:03:48 +0100
+
+trisquel-base-data (4.4.9-1) slaine; urgency=low
+
+  * New sources.list generator for ubiquity
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 10 Jan 2011 22:13:00 +0100
+
+trisquel-base-data (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-base-data (4.0-1) taranis; urgency=low
+
+  * Radeon module blacklisted
+  * Sets plymouth theme back to trisquel if lubuntu's is in use
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 22 Sep 2010 23:39:58 +0200
+
+trisquel-base-data (4.0) taranis; urgency=low
+
+  * Added update-initramfs command on install
+  * Added grub background
+  * priority moved to important
+  * apt configured not to autoinstall recommended packages
+  * Initial release for Taranis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2010 19:50:00 +0200
+
+trisquel-base-data (3.5-1) awen; urgency=low
+
+  * Added /usr/share/perl5/Dpkg/Vendor/Trisquel.pm, closes
+    http://trisquel.info/issues/1796
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 02 Apr 2010 04:00:31 +0200
+
+trisquel-base-data (3.5) awen; urgency=low
+
+  * Partman recipe changed to ext4+xfs
+  * Legacy rebuildfstab script removed
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 20 Feb 2010 18:36:33 +0100
+
+trisquel-base-data (3.4.9) awen; urgency=low
+
+  * Initial release for awen
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 16 Feb 2010 23:20:49 +0100
+
+trisquel-base-data (3.0) dwyn; urgency=low
+
+  * b43 config added
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Wed, 09 Sep 2009 21:06:08 +0200
+
+trisquel-base-data (2.99-3) dwyn; urgency=low
+
+  * partman recipe updated
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Tue, 04 Aug 2009 17:19:03 +0200
+
+trisquel-base-data (2.99-2) dwyn; urgency=low
+
+  * Grub config file updated
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Sun, 12 Jul 2009 03:57:44 +0200
+
+trisquel-base-data (2.99-1) dwyn; urgency=low
+
+  * Removed some bash aliases
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Fri, 12 Jun 2009 13:27:22 +0200
+
+trisquel-base-data (2.99) dwyn; urgency=low
+
+  * Initial release for Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 11 Jun 2009 14:50:23 +0200
+
+trisquel-base-data (2.1-6) robur; urgency=low
+
+  * Screenrc bug fixed, conffile restored
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 14 May 2009 13:15:28 +0200
+
+trisquel-base-data (2.1-5) robur; urgency=low
+
+  * Removed screenrc skel config due to synaptic bug (FIXME)
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 14 May 2009 10:26:41 +0200
+
+trisquel-base-data (2.1-4) robur; urgency=low
+
+  * Ported from dpkg -b
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200

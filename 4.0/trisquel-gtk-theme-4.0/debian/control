@@ -1,0 +1,14 @@
+Source: trisquel-gtk-theme
+Section: trisquel
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: trisquel-gtk-theme
+Architecture: all
+Priority: optional
+Depends: gtk2-engines-pixbuf, gtk2-engines-murrine, gtk2-engines-aurora, gtk2-engines-equinox
+Description: Trisquel gtk theme.
+ A GTK2, metacity and xfwm4 theme for Trisquel.
+ .

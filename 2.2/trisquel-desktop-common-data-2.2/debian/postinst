@@ -1,0 +1,20 @@
+#! /bin/sh
+
+#remove old config files
+[ -d /etc/skel/.mozilla ] && rm -rf /etc/skel/.mozilla
+[ -f /etc/firefox-3.0/pref/trisquel.js ] && rm /etc/firefox-3.0/pref/trisquel.js
+
+## remove tracker configuration if it is broken
+for i in $(ls -1 /home)
+do
+    if [ -f /home/$i/.config/tracker/tracker.cfg ]
+    then
+        grep -q WatchDirectoryRoots /home/$i/.config/tracker/tracker.cfg || rm -rf /home/$i/.config/tracker/
+    fi
+done
+
+
+#[ -e /etc/printcap ] || ln -s /var/run/cups/printcap /etc/printcap 
+
+[ -f /etc/gconf/gconf.xml.defaults/%gconf-tree.xml ] && mv /etc/gconf/gconf.xml.defaults/%gconf-tree.xml /etc/gconf/gconf.xml.defaults/%gconf-tree.xml-old
+[ -f /etc/gconf/gconf.xml.defaults/%gconf-tree-trisquel.xml ] && ln -s /etc/gconf/gconf.xml.defaults/%gconf-tree-trisquel.xml /etc/gconf/gconf.xml.defaults/%gconf-tree.xml

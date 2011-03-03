@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Trisquel-3
+Comment=Theme for Trisquel 3.x
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Trisquel-3
+MetacityTheme=Trisquel-3
+IconTheme=trisquel
+CursorTheme=DMZ-White

@@ -1,0 +1,29 @@
+trisquel-debootstrap (4.0) taranis; urgency=low
+
+  * Initial release for Taranis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 02 May 2010 16:53:45 +0200
+
+trisquel-debootstrap (3.5-1) awen; urgency=low
+
+  * Priority lowered to important
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 20 Feb 2010 19:00:10 +0100
+
+trisquel-debootstrap (3.5) awen; urgency=low
+
+  * Initial release for awen
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 16 Feb 2010 19:55:17 +0100
+
+trisquel-debootstrap (3.0) dwyn; urgency=low
+
+  * Initial release for Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Fri, 12 Jun 2009 14:19:29 +0200
+
+trisquel-debootstrap (2.1-2) robur; urgency=low
+
+  * Ported from dpkg -b
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200

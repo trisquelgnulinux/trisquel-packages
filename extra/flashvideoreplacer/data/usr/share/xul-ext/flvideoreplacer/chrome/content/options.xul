@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://flvideoreplacer/locale/flvideoreplacer.dtd">
+
+<prefwindow width="390" height="620" id="flvideoreplacer-prefs" title="&FlashVideoReplacerPreferences;" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="chrome://flvideoreplacer/content/scripts/functions-options.js"/>
+    
+    <stringbundleset id="strbundles">
+	<stringbundle id="flvideoreplacerstrings" src="chrome://flvideoreplacer/locale/strings.properties"/>
+    </stringbundleset>
+
+    <prefpane id="flvideoreplacer-pref-pane" flex="1">
+	<preferences>
+	    <preference id="pref_youtube" name="extensions.flvideoreplacer.youtube" type="bool"/>
+	    <preference id="pref_vimeo" name="extensions.flvideoreplacer.vimeo" type="bool"/>
+	    <preference id="pref_metacafe" name="extensions.flvideoreplacer.metacafe" type="bool"/>
+	    <preference id="pref_other" name="extensions.flvideoreplacer.other" type="bool"/>
+	    <preference id="pref_alertsinfo" name="extensions.flvideoreplacer.alertsinfo" type="bool"/>
+	    <preference id="pref_alertserror" name="extensions.flvideoreplacer.alertserror" type="bool"/>
+	    <preference id="pref_method" name="extensions.flvideoreplacer.method" type="string"/>
+	    <preference id="pref_mimetype" name="extensions.flvideoreplacer.mimetype" type="string"/>
+	    <preference id="pref_videoquality" name="extensions.flvideoreplacer.videoquality" type="string"/>
+	    <preference id="pref_preferwebm" name="extensions.flvideoreplacer.preferwebm" type="bool"/>
+	    <preference id="pref_prefermp4" name="extensions.flvideoreplacer.prefermp4" type="bool"/>
+	    <preference id="pref_autoplay" name="extensions.flvideoreplacer.autoplay" type="bool"/>
+	    <preference id="pref_playerpath" name="extensions.flvideoreplacer.playerpath" type="string"/> 
+	    <preference id="pref_downdir" name="extensions.flvideoreplacer.downdir" type="string"/>
+	</preferences>
+	<vbox style="width:370px;height:530px;overflow:auto;">
+	    <vbox>
+		<spacer height="10" flex="0"/>
+		<hbox>
+		    <caption label="&Method;"/> 
+		    <spacer width="2" flex="0"/>
+		    <vbox flex="0">
+			<spacer height="1" flex="1"/>
+			<menulist preference="pref_method" id="method" width="110" onselect="flvideoreplacerOptions.toggleOptions();">
+			    <menupopup>
+				<menuitem id="mprompt" label="&Prompt;" value="prompt" />
+				<menuitem id="membed" label="&Embedded;" value="embedded" selected="true" />
+				<menuitem id="mnewtab" label="&NewTab;" value="newtab" />
+				<menuitem id="mnewwin" label="&NewWin;" value="newwindow" />
+				<menuitem id="mstand" label="&Standalone;" value="standalone" />
+			    </menupopup>
+			</menulist>
+			<spacer height="1" flex="1"/>
+		    </vbox>
+		</hbox>
+		<spacer height="10" flex="0"/>
+		<vbox id="selectplugin">
+		    <caption label="&ForcePluginMimeType;" /> 
+		    <spacer height="10" flex="0"/>
+		    <hbox>
+			<spacer width="10" flex="0"/>
+			<menulist preference="pref_mimetype" id="mimetype">
+			    <menupopup>
+				<menuitem label="&Autodetect;" value="autodetect" selected="true" />
+				<menuitem id="pluginvmp4" label="MP4 (video/mp4)" value="video/mp4"/>
+				<menuitem id="pluginaqt" label="QT (video/quicktime)" value="video/quicktime" />
+				<menuitem id="pluginawmp" label="WMP (application/x-mplayer2)" value="application/x-mplayer2" />
+				<menuitem id="pluginxflv" label="FLV (application/x-flv)" value="application/x-flv"/>
+			    </menupopup>
+			</menulist>
+		    </hbox>
+		    <spacer height="10" flex="0"/>
+		    <hbox id="webmbox">
+			<spacer width="10" flex="0"/>
+			<checkbox label="&PreferWebM;" preference="pref_preferwebm" id="preferwebm" size="30"/>
+			<spacer width="10" flex="0"/>
+		    </hbox>
+		    <spacer height="10" flex="0"/>
+		    <hbox>
+			<spacer width="10" flex="0"/>
+			<checkbox label="&Autoplay;" preference="pref_autoplay" id="autoplay" size="30"/>
+			<spacer width="10" flex="0"/>
+		    </hbox>
+		    <spacer height="10" flex="0"/>
+		</vbox>
+		<vbox id="checkplugin" >
+		    <hbox flex="0">
+			<spacer width="10" flex="1"/>
+			    <button orient="vertical" width="200" height="30" flex="2" label="&CheckPlugins;" tooltiptext="&CheckPluginsTooltip;" onclick="flvideoreplacerOptions.checkPlugin();"/>
+			<spacer width="10" flex="1"/>
+		    </hbox>
+		    <spacer height="10" flex="0"/>
+		</vbox>
+		<vbox id="standaloneplayer">
+		    <spacer height="10" flex="0"/>
+		    <caption label="&StandalonePlayer;"/>
+		    <spacer height="10" flex="0"/>
+		    <hbox>
+			<menulist id="standalone" width="330" onselect="flvideoreplacerOptions.toggleOptions();">
+			    <menupopup>
+				<menuitem id="playercustom" label="&Custom;" value="playercustom"/>
+				<menuitem id="playerbest" label="&BestPlayer;" value="playerbest"/>
+				<menuitem id="playerbsp" label="BS.Player" value="playerbsp" />
+				<menuitem id="playergmplayer" label="Gnome MPlayer" value="playergmplayer" />
+				<menuitem id="playerkaffeine" label="Kaffeine" value="playerkaffeine" />
+				<menuitem id="playerkmp" label="KMPlayer" value="playerkmp" />
+				<menuitem id="playerqt" label="QuickTime Player" value="playerqt" />
+				<menuitem id="playersmplayer" label="SMPlayer" value="playersmplayer" />
+				<menuitem id="playertotem" label="Totem" value="playertotem" />
+				<menuitem id="playerwmp" label="Windows Media Player" value="playerwmp" />
+			    </menupopup>
+			</menulist>
+			<spacer width="10" flex="0"/>
+		    </hbox>
+		    <spacer height="10" flex="0"/>
+		    <hbox id="playerpathbox">
+			<textbox preference="pref_playerpath" id="playerpath" size="35" flex="1"/>
+			<vbox>
+			    <hbox>
+				<image src="chrome://flvideoreplacer/skin/search24.png" tooltiptext="&Search;" onclick="flvideoreplacerOptions.openFile('&SelectFile;');"/>
+				<image src="chrome://flvideoreplacer/skin/delete24.png" tooltiptext="&Reset;" onclick="flvideoreplacerOptions.resetFile('standalone');"/>
+			    </hbox>
+			</vbox>
+			<spacer width="10" flex="0"/>
+		    </hbox>
+		</vbox>
+
+		<vbox id="downloader">
+		    <spacer height="10" flex="0"/>
+		    <caption label="&DownloadDir;"/>
+		    <spacer height="10" flex="0"/>
+		    <hbox>
+			<textbox preference="pref_downdir" id="downdir"  size="35" flex="1"/>
+			<vbox>
+			    <hbox>
+				<image src="chrome://flvideoreplacer/skin/search24.png" tooltiptext="&Search;" onclick="flvideoreplacerOptions.openDir('&SelectDir;');"/>
+				<image src="chrome://flvideoreplacer/skin/delete24.png" tooltiptext="&Reset;" onclick="flvideoreplacerOptions.resetFile('downdir');"/>
+			    </hbox>
+			</vbox>
+			<spacer width="10" flex="0"/>
+		    </hbox>
+		    <spacer height="10" flex="0"/>
+		</vbox>
+	    </vbox>
+	    <spacer height="15" flex="0"/>
+	    <caption label="&WebSites;" /> 
+	    <spacer height="10" flex="0"/>
+	    <hbox>
+		<checkbox label="YouTube" preference="pref_youtube" id="youtube" size="30"/>
+		<spacer width="10" flex="0"/>
+		<checkbox label="Vimeo" preference="pref_vimeo" id="vimeo" size="30"/>
+		<spacer width="10" flex="0"/>
+		<checkbox label="Metacafe" preference="pref_metacafe" id="metacafe" size="30"/>
+		<spacer width="10" flex="1"/>
+	    </hbox>
+	    <spacer height="10" flex="0"/>
+	    <hbox>
+		<checkbox label="&Other;" preference="pref_other" id="other" size="30" onclick="flvideoreplacerOptions.toggleOptions();"/>
+		<spacer width="10" flex="1"/>
+	    </hbox>
+	    <spacer height="10" flex="0"/>
+	    <caption label="&Quality;" /> 
+	    <spacer height="10" flex="0"/>
+	    <hbox>
+		<menulist preference="pref_videoquality" id="videoquality" width="110">
+		    <menupopup>
+			<menuitem label="&LOW;" value="LOW"/>
+			<menuitem label="&MEDIUM;" value="MEDIUM" />
+			<menuitem label="&HIGH;" value="HIGH" selected="true" />
+		    </menupopup>
+		</menulist>
+		<spacer width="5" flex="0"/>
+		<checkbox label="&PreferMP4;" preference="pref_prefermp4" id="prefermp4" size="30"/>
+		<spacer width="10" flex="1"/>
+	    </hbox>
+	    <spacer height="10" flex="0"/>
+	    <caption label="&Alerts;" /> 
+	    <spacer height="10" flex="0"/>
+	    <hbox>
+		<checkbox label="&EnableErrorAlerts;" preference="pref_alertserror" id="alertserror" size="30"/>
+		<spacer width="5" flex="0"/>
+		<checkbox label="&EnableInfoAlerts;" preference="pref_alertsinfo" id="alertsinfo" size="30"/>
+		<spacer width="10" flex="1"/>
+	    </hbox>	   
+	</vbox>
+    </prefpane>
+</prefwindow>

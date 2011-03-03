@@ -1,0 +1,13 @@
+#!/bin/sh
+files="
+/usr/share/xsessions/xterm.desktop
+"
+
+if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" -o abort-upgrade = "$1" ]; then
+    for item in $files
+    do 
+        [ -f "$item"".ubuntu" ] && dpkg-divert --package trisquel-sugar \
+        --remove --rename --divert "$item"".ubuntu" "$item"
+    done
+fi
+

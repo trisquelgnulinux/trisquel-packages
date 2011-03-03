@@ -1,0 +1,37 @@
+<!ENTITY Alerts "Alertas">
+<!ENTITY Autodetect "Auto-detectar">
+<!ENTITY Autoplay "Tocar vídeos automaticamente">
+<!ENTITY BestPlayer "Melhor Disponível">
+<!ENTITY CheckPlugins "Verificar Compatibilidade de Plugin">
+<!ENTITY CheckPluginsTooltip "Clique aqui para verificar se você possui o plugin apropriado para seu sistema operacional.">
+<!ENTITY Clipboard "Copiar url para clipboard">
+<!ENTITY Custom "Personalizado">
+<!ENTITY Download "Download">
+<!ENTITY DownloadDir "Destino do Download">
+<!ENTITY Embedded "Inserido">
+<!ENTITY EmbeddedVideoDetection "Detecção de vídeos inseridos">
+<!ENTITY EnableErrorAlerts "Habilitar alertas de erros">
+<!ENTITY EnableInfoAlerts "Habilitar alertas informativos">
+<!ENTITY FlashVideoReplacerPreferences "Preferências FlashVideoReplacer">
+<!ENTITY FlashVideoReplacerTitle "FlashVideoReplacer">
+<!ENTITY ForcePluginMimeType "Plugin/MimeType">
+<!ENTITY HIGH "ALTA">
+<!ENTITY LOW "BAIXA">
+<!ENTITY MEDIUM "MÉDIA">
+<!ENTITY Method "Método de Substituição">
+<!ENTITY NewTab "Nova Aba">
+<!ENTITY NewWin "Janela">
+<!ENTITY OpenEmbedded "Abrir video inserido nesta página">
+<!ENTITY Other "Outros sites de streaming">
+<!ENTITY Preferences "Preferências">
+<!ENTITY PreferWebM "Preferir WebM quando disponível (não requer plugin)">
+<!ENTITY PreferMP4 "Preferir mp4 sobre flv">
+<!ENTITY Prompt "Perguntar">
+<!ENTITY Quality "Qualidade">
+<!ENTITY Reset "Limpar">
+<!ENTITY Search "Buscar">
+<!ENTITY SelectFile "Selecionar Arquivo">
+<!ENTITY SelectDir "Selecionar Diretório">
+<!ENTITY Standalone "Externo">
+<!ENTITY StandalonePlayer "Player Externo">
+<!ENTITY WebSites "Habilitar/Desabilitar Sites">

@@ -1,0 +1,26 @@
+[Added Associations]
+image/svg+xml=inkscape.desktop;gthumb.desktop;
+application/x-dia-diagram=dia-common.desktop;
+audio/mpeg=audacious.desktop;
+inode/directory=nautilus-folder-handler.desktop;audacious.desktop;
+image/jpeg=gthumb.desktop;gimp.desktop;
+image/x-pcx=gthumb.desktop;gimp.desktop;
+image/gif=gthumb.desktop;gimp.desktop;
+image/png=gthumb.desktop;gimp.desktop;
+image/jpg=gthumb.desktop;gimp.desktop;
+image/x-portable-bitmap=gthumb.desktop;gimp.desktop;
+image/vnd.wap.wbmp=gthumb.desktop;
+image/x-xpixmap=gthumb.desktop;gimp.desktop;
+image/x-bmp=gthumb.desktop;gimp.desktop;
+image/bmp=gthumb.desktop;gimp.desktop;
+image/tiff=gthumb.desktop;gimp.desktop;
+image/x-icb=gthumb.desktop;
+image/svg+xml-compressed=inkscape.desktop;gthumb.desktop;
+image/x-portable-graymap=gthumb.desktop;gimp.desktop;
+image/x-ico=gthumb.desktop;gimp.desktop;
+image/x-xbitmap=gthumb.desktop;gimp.desktop;
+image/x-portable-pixmap=gthumb.desktop;gimp.desktop;
+image/pjpeg=gthumb.desktop;gimp.desktop;
+image/x-portable-anymap=gthumb.desktop;gimp.desktop;
+image/x-png=gthumb.desktop;gimp.desktop;
+image/x-gray=gthumb.desktop;gimp.desktop;

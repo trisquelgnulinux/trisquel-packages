@@ -1,0 +1,37 @@
+[General]
+GUIEffects=none^e
+XIMInputStyle=On The Spot
+cursorFlashTime=1000
+doubleClickInterval=400
+embedFonts=true
+enableXft=true
+font=Sans Serif,8,-1,5,50,0,0,0,0,0
+fontPath=\0
+globalStrut=0^e0^e
+resolveSymlinks=true
+style=Polymer
+useRtlExtensions=false
+useXft=true
+wheelScrollLines=3
+
+[KDE]
+contrast=7
+kdeAddedLibraryPaths=/usr/lib/kde3/plugins/^e
+
+[KWinPalette]
+activeBackground=#1f26ad
+activeBlend=#259bb8
+activeForeground=#ffffff
+activeTitleBtnBg=#e6e6e6
+frame=#efefef
+inactiveBackground=#cdcdcd
+inactiveBlend=#ababab
+inactiveForeground=#dddddd
+inactiveFrame=#efefef
+inactiveTitleBtnBg=#ebebeb
+
+[Palette]
+active=#000000^e#e4e7eb^e#ffffff^e#f1f3f5^e#717375^e#97999c^e#000000^e#ffffff^e#000000^e#ffffff^e#e8e8e8^e#000000^e#678db2^e#ffffff^e#0000ee^e#52188b^e
+disabled=#808080^e#e4e7eb^e#ffffff^e#ffffff^e#717375^e#97999c^e#808080^e#ffffff^e#808080^e#ffffff^e#e8e8e8^e#000000^e#678db2^e#808080^e#0000ee^e#52188b^e
+inactive=#000000^e#e4e7eb^e#ffffff^e#ffffff^e#717375^e#97999c^e#000000^e#ffffff^e#000000^e#ffffff^e#e8e8e8^e#000000^e#678db2^e#ffffff^e#0000ee^e#52188b^e
+

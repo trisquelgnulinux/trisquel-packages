@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<gnc-account-example>
+    <gnc-act:title>
+      Conta de conversión monetaria
+    </gnc-act:title>
+    <gnc-act:short-description>
+      Conta para converter e comerciar con moeda extranxeira
+    </gnc-act:short-description>
+    <gnc-act:long-description>
+    Desexará seleccionar este xogo de contas se converte moedas
+      extranxeiras.
+
+    Nota: A conta encóntrase en USD; edite a conta para altera-la
+     moeda.
+  </gnc-act:long-description>    
+<gnc:account version="2.0.0">
+  <act:name>Root Account</act:name>
+  <act:id type="new">1972cce2e2364f95b2b0bc014502661d</act:id>
+  <act:type>ROOT</act:type>
+  <act:commodity-scu>0</act:commodity-scu>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>Activo</act:name>
+  <act:id type="new">b3c65be1c5d163746ddc0c506f3f4619</act:id>
+  <act:type>ASSET</act:type>
+  <act:currency>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:currency>
+  <act:description>Activo</act:description>
+  <act:parent type="new">1972cce2e2364f95b2b0bc014502661d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>Inversións</act:name>
+  <act:id type="new">d9c796b35784533aee4309e28a3cbfc5</act:id>
+  <act:type>ASSET</act:type>
+  <act:currency>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:currency>
+  <act:description>Inversións</act:description>
+  <act:parent type="new">b3c65be1c5d163746ddc0c506f3f4619</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>Comercio de moedas extranxeiras</act:name>
+  <act:id type="new">9206632307989cb5b244ad5da5d3131b</act:id>
+  <act:type>CURRENCY</act:type>
+  <act:currency>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>USD</cmdty:id>
+  </act:currency>
+  <act:description>Comercio de moedas extranxeiras</act:description>
+  <act:parent type="new">d9c796b35784533aee4309e28a3cbfc5</act:parent>
+</gnc:account>
+</gnc-account-example>
+
+<!-- Local variables: -->
+<!-- mode: xml        -->
+<!-- End:             -->

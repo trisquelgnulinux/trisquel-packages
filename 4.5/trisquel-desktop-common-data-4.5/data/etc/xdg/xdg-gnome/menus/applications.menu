@@ -1,0 +1,80 @@
+<!DOCTYPE Menu
+  PUBLIC '-//freedesktop//DTD Menu 1.0//EN'
+  'http://standards.freedesktop.org/menu-spec/menu-1.0.dtd'>
+<Menu>
+	<Name>Applications</Name>
+	<MergeFile type="parent">/etc/xdg/menus/applications.menu</MergeFile>
+	<Menu>
+		<Name>Internet</Name>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>abrowser-3.0.desktop</Filename>
+			<Filename>abrowser-3.5.desktop</Filename>
+			<Filename>abrowser.desktop</Filename>
+			<Filename>iceweasel.desktop</Filename>
+			<Filename>firefox.desktop</Filename>
+			<Filename>epiphany.desktop</Filename>
+			<Filename>epiphany-gecko.desktop</Filename>
+			<Filename>evolution-mail.desktop</Filename>
+			<Filename>thunderbird.desktop</Filename>
+			<Filename>liferea.desktop</Filename>
+			<Filename>pidgin.desktop</Filename>
+			<Filename>tsclient.desktop</Filename>
+			<Filename>ekiga.desktop</Filename>
+			<Filename>xchat.desktop</Filename>
+			<Filename>amule.desktop</Filename>
+			<Filename>transmission.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Office</Name>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>openoffice.org-writer.desktop</Filename>
+			<Filename>openoffice.org-calc.desktop</Filename>
+			<Filename>openoffice.org-impress.desktop</Filename>
+			<Filename>openoffice.org-base.desktop</Filename>
+			<Filename>openoffice.org-draw.desktop</Filename>
+			<Filename>evolution.desktop</Filename>
+			<Filename>evolution-2.2.desktop</Filename>
+			<Filename>lyx.desktop</Filename>
+			<Filename>gnome-dictionary.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+	<Menu>
+		<Name>Graphics</Name>
+		<Layout>
+			<Merge type="menus"/>
+			<Filename>gthumb.desktop</Filename>
+			<Filename>gimp.desktop</Filename>
+			<Filename>inkscape.desktop</Filename>
+			<Filename>ooo-draw.desktop</Filename>
+			<Filename>dia-common.desktop</Filename>
+			<Filename>xsane.desktop</Filename>
+			<Filename>evince.desktop</Filename>
+			<Filename>eog.desktop</Filename>
+			<Merge type="files"/>
+		</Layout>
+	</Menu>
+	<Layout>
+		<Merge type="menus"/>
+		<Menuname>Internet</Menuname>
+		<Menuname>Office</Menuname>
+		<Menuname>Education</Menuname>
+		<Menuname>Development</Menuname>
+		<Menuname>Graphics</Menuname>
+		<Menuname>Multimedia</Menuname>
+		<Menuname>Games</Menuname>
+		<Menuname>Accessories</Menuname>
+		<Menuname>System</Menuname>
+		<Menuname>Universal Access</Menuname>
+		<Menuname>Debian</Menuname>
+		<Menuname>Other</Menuname>
+		<Menuname>wine-wine</Menuname>
+		<Separator/>
+		<Filename>gnome-app-install.desktop</Filename>
+		<Merge type="files"/>
+	</Layout>
+</Menu>

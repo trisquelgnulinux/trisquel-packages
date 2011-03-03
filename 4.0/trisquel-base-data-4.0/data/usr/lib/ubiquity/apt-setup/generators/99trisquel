@@ -1,0 +1,38 @@
+#!/bin/sh
+set -e
+
+file="$1"
+
+FASTEST=http://ftp.rediris.es/mirror/Trisquel/
+SPEED=1000000000000
+
+for i in $(grep 'tp:' /usr/share/python-apt/templates/Trisquel.mirrors)
+do
+    echo Testing $i
+    TIME=$(date +%s%N)
+    wget -o /dev/null -O /dev/null $i/speedtest || continue
+    TIME2=$(date +%s%N)
+    ELAPSED=$(expr $TIME2 - $TIME)
+    echo Time: $ELAPSED
+    if [ $ELAPSED -lt $SPEED ]
+    then
+        FASTEST=$i
+        SPEED=$ELAPSED
+    fi
+done
+
+MIRROR=$FASTEST
+RELEASE=$(lsb_release -c | cut -f 2)
+
+cat << EOF > $file
+# Trisquel repositories for supported software and updates
+deb $MIRROR $RELEASE main
+deb-src $MIRROR $RELEASE main
+deb $MIRROR $RELEASE-security main
+deb-src $MIRROR $RELEASE-security main
+deb $MIRROR $RELEASE-updates main
+deb-src $MIRROR $RELEASE-updates main
+#deb $MIRROR $RELEASE-backports main
+#deb-src $MIRROR $RELEASE-backports main
+EOF
+

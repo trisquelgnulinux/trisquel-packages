@@ -1,0 +1,7 @@
+[General]
+terminal=lxterminal
+
+[Desktop]
+show_wallpaper=1
+show_desktop=1
+wallpaper=/usr/share/backgrounds/taranis.jpg

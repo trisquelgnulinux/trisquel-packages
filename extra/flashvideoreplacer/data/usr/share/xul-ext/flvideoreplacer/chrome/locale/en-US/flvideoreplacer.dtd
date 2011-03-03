@@ -1,0 +1,37 @@
+<!ENTITY Alerts "Alerts">
+<!ENTITY Autodetect "Autodetect">
+<!ENTITY Autoplay "Play videos automatically">
+<!ENTITY BestPlayer "Best Available">
+<!ENTITY CheckPlugins "Check Plugin Compatibility">
+<!ENTITY CheckPluginsTooltip "Click here to check if you have the appropriate plugin for your operating system.">
+<!ENTITY Clipboard "Copy url to clipboard">
+<!ENTITY Custom "Custom">
+<!ENTITY Download "Download">
+<!ENTITY DownloadDir "Download Destination">
+<!ENTITY Embedded "Embedded">
+<!ENTITY EmbeddedVideoDetection "Embedded video detection">
+<!ENTITY EnableErrorAlerts "Enable error alerts">
+<!ENTITY EnableInfoAlerts "Enable info alerts">
+<!ENTITY FlashVideoReplacerPreferences "FlashVideoReplacer Preferences">
+<!ENTITY FlashVideoReplacerTitle "FlashVideoReplacer">
+<!ENTITY ForcePluginMimeType "Plugin/MimeType">
+<!ENTITY HIGH "HIGH">
+<!ENTITY LOW "LOW">
+<!ENTITY MEDIUM "MEDIUM">
+<!ENTITY Method "Replace Method">
+<!ENTITY NewTab "New Tab">
+<!ENTITY NewWin "Window">
+<!ENTITY OpenEmbedded "Open video embedded on this page">
+<!ENTITY Other "Other streaming websites">
+<!ENTITY Preferences "Preferences">
+<!ENTITY PreferWebM "Prefer WebM when available (no plugin required)">
+<!ENTITY PreferMP4 "Prefer mp4 over flv">
+<!ENTITY Prompt "Prompt">
+<!ENTITY Quality "Quality">
+<!ENTITY Reset "Reset">
+<!ENTITY Search "Search">
+<!ENTITY SelectFile "Select File">
+<!ENTITY SelectDir "Select Directory">
+<!ENTITY Standalone "Standalone">
+<!ENTITY StandalonePlayer "Standalone Player">
+<!ENTITY WebSites "Enable/Disable Web Sites">

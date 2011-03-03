@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://flvideoreplacer/locale/flvideoreplacer.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  id="flvideoreplacer-prompt"
+  title="FlashVideoReplacer"
+  ondialogaccept="return onOK();"
+  onload="onLoad();"
+  persist="screenX screenY width height">
+  
+    <stringbundleset id="strbundles">
+	<stringbundle id="flvideoreplacerstrings" src="chrome://flvideoreplacer/locale/strings.properties"/>
+    </stringbundleset>
+    
+    <script>
+	<![CDATA[
+	    function onLoad() {
+		document.getElementById("pmethod").value = window.arguments[0].inn.pmethod;
+		
+		//get osString
+		var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
+			.getService(Components.interfaces.nsIHttpProtocolHandler).oscpu; 
+			
+		if(osString.match(/OSX/) || osString.match(/Macintosh/) || osString.match(/OS X/)){
+		    document.getElementById("membed").hidden=false;
+		    document.getElementById("mnewtab").hidden=false;
+		    document.getElementById("mnewwin").hidden=false;
+		    document.getElementById("mstand").hidden=true;
+		}else{
+
+		    //access preferences interface
+		    this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
+			    .getService(Components.interfaces.nsIPrefService)
+			    .getBranch("extensions.flvideoreplacer.");
+		
+		    //get plugin compatibility
+		    var pluginvmp4 = this.prefs.getBoolPref("pluginvmp4");
+		    var pluginxflv = this.prefs.getBoolPref("pluginxflv");
+		
+		    if(pluginvmp4 == false && pluginxflv == false){
+			this.prefs.setCharPref("promptmethod","standalone");
+			document.getElementById("membed").hidden=true;
+			document.getElementById("mnewtab").hidden=true;
+			document.getElementById("mnewwin").hidden=true;
+		    }
+		    if(pluginvmp4 == true && pluginxflv == false){
+			this.prefs.setBoolPref("prefermp4",true);
+		    }
+		    if(pluginvmp4 == false && pluginxflv == true){
+			this.prefs.setBoolPref("prefermp4",false);
+		    }
+		}
+	    }
+
+	    function onOK() {
+		window.arguments[0].out = {
+		    pmethod:document.getElementById("pmethod").value};
+		return true;
+	    }
+	]]>
+    </script>
+  
+    <hbox>
+	<caption label="&Method;"/> 
+	<spacer width="2" flex="0"/>
+	<vbox flex="0">
+	    <spacer height="1" flex="1"/>
+	    <menulist id="pmethod" width="110">
+		<menupopup>
+		    <menuitem id="membed" label="&Embedded;" value="embedded" selected="true" />
+		    <menuitem id="mnewtab" label="&NewTab;" value="newtab" />
+		    <menuitem id="mnewwin" label="&NewWin;" value="newwindow" />
+		    <menuitem id="mstand" label="&Standalone;" value="standalone"/>
+		</menupopup>
+	    </menulist>
+	    <spacer height="1" flex="0"/>
+	</vbox>
+    </hbox>
+</dialog>

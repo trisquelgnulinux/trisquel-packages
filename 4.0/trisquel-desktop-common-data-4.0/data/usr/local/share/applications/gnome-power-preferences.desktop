@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Power Management
+Comment=Configure power management
+Icon=gnome-power-manager
+Exec=gnome-power-preferences
+Terminal=false
+Type=Application
+Categories=Settings;X-GNOME-SystemSettings;
+OnlyShowIn=GNOME;XFCE;LXDE;
+StartupNotify=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-power-manager
+X-GNOME-Bugzilla-Component=gnome-power-preferences
+X-GNOME-Bugzilla-Version=2.28.1
+X-GNOME-Bugzilla-ExtraInfoScript=/usr/share/gnome-power-manager/gnome-power-bugreport
+X-Ubuntu-Gettext-Domain=gnome-power-manager

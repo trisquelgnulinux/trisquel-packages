@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Trisquel-2
+Type=X-GNOME-Metatheme
+Comment=A nice and clean theme for Trisquel 2.x edition
+
+[X-GNOME-Metatheme]
+GtkTheme=Trisquel-2
+MetacityTheme=Trisquel-2
+IconTheme=trisquel
+GtkColorScheme=fg_color:#323232323232,bg_color:#e7e7e7e7e7e7,text_color:#e8e8e8e8e8e8,base_color:#ffffffffffff,selected_fg_color:#ffffffffffff,selected_bg_color:#99996b6b5c5c,tooltip_fg_color:#323232323232,tooltip_bg_color:#ebebeaeab8b8
+CursorTheme=DMZ-White

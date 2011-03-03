@@ -1,0 +1,61 @@
+trisquel-desktop-common-data (2.2-2) robur; urgency=low
+
+  * Moved icon link from abrowser-3.0 to abrowser in gconf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 01 Feb 2011 18:10:26 +0100
+
+trisquel-desktop-common-data (2.2-1) robur; urgency=low
+
+  * Added gconf-tree postinst handler
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Tue, 01 Dec 2009 20:38:39 +0100
+
+trisquel-desktop-common-data (2.2) robur; urgency=low
+
+  * system menu template updated
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 20 Jul 2009 12:47:19 +0200
+
+trisquel-desktop-common-data (2.1-13) robur; urgency=low
+
+  * autoremove old config files
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 13 Jul 2009 09:59:48 +0200
+
+trisquel-desktop-common-data (2.1-12) robur; urgency=low
+
+  * Removed Firefox skel, moving to abrowser
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Wed, 08 Jul 2009 14:34:15 +0200
+
+trisquel-desktop-common-data (2.1-11) robur; urgency=low
+
+  * Added Trisquel search plugin
+  * Firefox config file moved to firefox-3.0 package
+  * Added Thunderbird config file
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 28 May 2009 12:03:17 +0200
+
+trisquel-desktop-common-data (2.1-10) robur; urgency=low
+
+  * default_plugin_disabled chain removed from Firefox config file
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Wed, 20 May 2009 13:38:27 +0200
+
+trisquel-desktop-common-data (2.1-9) robur; urgency=low
+
+  * Removed gconf-tree cleanup preinst script (regression)
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 14 May 2009 08:54:43 +0200
+
+trisquel-desktop-common-data (2.1-8) robur; urgency=low
+
+  * Added gconf-tree cleanup preinst script
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Tue, 12 May 2009 10:09:56 +0200
+
+trisquel-desktop-common-data (2.1-7) robur; urgency=low
+
+  * Ported from dpkg -b
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200

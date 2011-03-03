@@ -1,0 +1,9 @@
+[settings]
+toolbar-style=MIDORI_TOOLBAR_SMALL_ICONS
+toolbar-items=TabNew,Back,Forward,ReloadStop,Separator,Homepage,Location,Separator,Search,
+homepage=http://trisquel.info
+
+[extensions]
+libdnsprefetch.so=true
+libtoolbar-editor.so=true
+libweb-cache.so=true

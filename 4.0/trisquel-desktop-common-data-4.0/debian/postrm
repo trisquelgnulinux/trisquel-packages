@@ -1,0 +1,14 @@
+#!/bin/sh
+files="
+/etc/xdg/exaile/settings.ini
+/usr/lib/openoffice/basis3.2/share/registry/data/org/openoffice/Office/ExtensionManager.xcu
+"
+
+if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" -o abort-upgrade = "$1" ]; then
+    for item in $files
+    do
+        [ -f "$item"".ubuntu" ] && dpkg-divert --package trisquel-desktop-common-data \
+        --remove --rename --divert "$item"".ubuntu" "$item"
+    done
+fi
+

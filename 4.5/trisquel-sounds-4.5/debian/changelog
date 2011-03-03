@@ -1,0 +1,23 @@
+trisquel-sounds (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-sounds (4.0) taranis; urgency=low
+
+  * Initial release for Taranis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2010 19:50:00 +0200
+
+trisquel-sounds (3.5) awen; urgency=low
+
+  * Initial release for Awen
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 03 Mar 2010 21:27:45 +0100
+
+trisquel-sounds (3.0) dwyn; urgency=low
+
+  * Initial release or Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 09 Jul 2009 13:16:34 +0200

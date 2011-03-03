@@ -1,0 +1,16 @@
+Source: flashvideoreplacer
+Section: trisquel
+Priority: important
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: flashvideoreplacer
+Architecture: all
+Priority: important
+Description: Browser extension to play embedded flash videos with a standard video player or plugin.
+ FlashVideoReplacer is an extension that allows to replace embedded flash
+ videos and display them with a different plugin or standalone player, 
+ download or automatically redirect to WebM player when available.
+ .
+

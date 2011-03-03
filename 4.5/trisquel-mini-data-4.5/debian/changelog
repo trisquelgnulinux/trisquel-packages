@@ -1,0 +1,23 @@
+trisquel-mini-data (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-mini-data (3.99-2) taranis; urgency=low
+
+  * Added gigolo config file
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 18:06:49 +0200
+
+trisquel-mini-data (3.99-1) taranis; urgency=low
+
+  * Replaced wallpaper, Midori as default browser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 00:10:44 +0200
+
+trisquel-mini-data (3.99) taranis; urgency=low
+
+  * Initial release
+
+ -- Rubén Rodríguez <ruben@trisquel.info>  Wed, 12 May 2010 15:09:43 +0100

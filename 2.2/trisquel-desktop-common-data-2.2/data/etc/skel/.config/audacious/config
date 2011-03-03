@@ -1,0 +1,3 @@
+[audacious]
+output_plugin=/usr/lib/audacious/Output/pulse_audio.so (#0)
+skin=/usr/share/audacious/Skins/Classic

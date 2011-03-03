@@ -1,0 +1,105 @@
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+
+### Created by Brad Sims  25/06/2004 
+### (Modified for Trisquel by Ruben Rodriguez and Santiago Rodriguez)
+
+### I got tired of .screenrc's on the internet being so 
+### poorly commented... So being a good GNUbie I took matters
+### into my own hands; and wrote this dotfile.
+
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+
+##    Explanation of hardstatus line    ##
+
+# Ignore the ' marks if you use these examples for yourself
+
+# Note that if you want to use the color brown under konsole
+# You actually use bright yellow (%{Y}). 
+
+# Note the embeded space after the colon, I feel 
+#  it just looks nicer with a blank between the
+#  text and console edge:
+#   '%{=b}%{G} Screen(s): '
+
+# This prints the window listing in blue:
+#   '%{b}%w'
+
+# This right-aligns what follows:
+#   '%='
+
+# This displays the time (hours and minutes) in 12hr format 
+# and adds an AM/PM flag, in bold green:
+#   '%{G}%C%A'
+
+# This displays the day of the week:
+#   '%D'
+
+#This displays the date in Mon/day/year format:
+# and again I embeded a space to give me one space
+# between the text and console edge:
+#  '%M/%d/%Y '
+
+# The resulting command give you a status line that 
+#  looks like this: 
+#   | Screen(s): 0* bash           5:30PM  Fri, Jun/25/2004 |
+#  (The pipes indicate the edges of the xterm/console).
+
+# Green text, time, and date; windows in blue:
+hardstatus alwayslastline "%{=b}%{G}%{b}%w %=%{kG}%C%A  %d/%M/%Y "
+
+
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+
+##    Some general options    ##
+
+# Enable scroll back
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# Turn off start message:
+startup_message off
+
+# Set messages timeout to three seconds: 
+msgwait 3
+
+# Enlarge buffer
+defscrollback 4096
+
+
+#Disable beep
+vbell off
+bell " %n %t !"
+
+#Nethack style messages
+nethack on
+
+caption splitonly "%2n %t"
+
+
+# =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+##    Keybindings    ##
+
+# bind F7  to detach screen session from this terminal
+# bind F8  to kill current screen window.
+# bind F9  to create a new screen
+# bind F10 to rename current screen window
+# bind F11 to move to previous window
+# bind F12 to move to next window
+bindkey -k k1 select 0
+bindkey -k k2 select 1
+bindkey -k k3 select 2
+bindkey -k k4 select 3
+bindkey -k k5 select 4
+bindkey -k k6 select 5
+
+bindkey -k k7 copy
+bindkey -k k8 paste .
+
+bindkey -k k9 screen
+
+#bindkey -k k8 kill
+#bindkey -k k9 screen
+#bindkey -k k; title
+#bindkey -k F1 prev
+#bindkey -k F2 next
+#unbind s
+bind s
