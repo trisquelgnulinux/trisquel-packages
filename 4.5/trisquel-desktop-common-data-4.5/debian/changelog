@@ -1,3 +1,15 @@
+trisquel-desktop-common-data (4.4.9-5) slaine; urgency=low
+
+  * Network servers icon removed from desktop
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 01:55:55 +0100
+
+trisquel-desktop-common-data (4.4.9-4) slaine; urgency=low
+
+  * updated gconf settings for default applications
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 01:13:45 +0100
+
 trisquel-desktop-common-data (4.4.9-3) slaine; urgency=low
 
   * updated gconf settings for default applications

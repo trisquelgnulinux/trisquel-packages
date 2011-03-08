@@ -1,3 +1,9 @@
+trisquel-meta (4.4.9-11) slaine; urgency=low
+
+  * removed libgl1-mesa-dri-experimental and network-manager-pptp
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 01:18:45 +0100
+
 trisquel-meta (4.4.9-10) slaine; urgency=low
 
   * Added deja-dup

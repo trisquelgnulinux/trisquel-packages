@@ -1,13 +1,5 @@
 
 [Added Associations]
-audio/mpeg=audacious2.desktop;
-audio/ogg=audacious2.desktop;
-audio/x-flac=audacious2.desktop;
-audio/mp4=audacious2.desktop;
-x-content/audio-cdda=audacious2.desktop;
-x-content/video-dvd=totem.desktop;
-audio/mpeg=audacious2.desktop;
-inode/directory=nautilus-folder-handler.desktop;audacious2.desktop;
 application/xml=gedit.desktop;
 image/jpeg=shotwell-viewer.desktop;gimp.desktop;
 image/x-pcx=shotwell-viewer.desktop;gimp.desktop;

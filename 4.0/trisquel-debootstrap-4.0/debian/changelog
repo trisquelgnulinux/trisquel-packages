@@ -1,3 +1,9 @@
+trisquel-debootstrap (4.0-1) taranis; urgency=low
+
+  * Added slaine script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 16:11:46 +0100
+
 trisquel-debootstrap (4.0) taranis; urgency=low
 
   * Initial release for Taranis

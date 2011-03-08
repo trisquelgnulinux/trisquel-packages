@@ -335,7 +335,7 @@
                         <dir name="desktop">
                                 <entry name="volumes_visible" mtime="1141191311" type="bool" value="true">
                                 </entry>
-                                <entry name="network_icon_visible" mtime="1141191311" type="bool" value="true">
+                                <entry name="network_icon_visible" mtime="1141191311" type="bool" value="false">
                                 </entry>
                                 <entry name="trash_icon_visible" mtime="1140237024" type="bool" value="true">
                                 </entry>
