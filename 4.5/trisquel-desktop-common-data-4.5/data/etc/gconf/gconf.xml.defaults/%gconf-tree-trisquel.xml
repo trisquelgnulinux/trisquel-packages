@@ -8,6 +8,12 @@
                 </dir>
         </dir>
         <dir name="apps">
+		<!-- Don't autostart gwibber service by default  -->
+                <dir name="gwibber">
+                    <dir name="preferences">
+		        <entry name="autostart" mtime="1284653624" type="bool" value="false"/>
+		    </dir>
+		</dir>
 		<!-- No metacity transparency for inactive windows  -->
                 <dir name="gwd">
 			<entry name="metacity_theme_opacity" mtime="1215602871" type="float" value="1.0">
@@ -770,9 +776,6 @@
                                         </li>
                                         <li type="string">
                                                 <stringvalue>showdesktop</stringvalue>
-                                        </li>
-                                        <li type="string">
-                                                <stringvalue>indicator</stringvalue>
                                         </li>
                                 </entry>
                                 <entry name="object_id_list" mtime="1189983595" type="list" ltype="string">

@@ -1,3 +1,15 @@
+trisquel-desktop-common-data (4.4.9-7) slaine; urgency=low
+
+  * Set /apps/gwibber/preferences/autostart=false in gconf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Mar 2011 20:42:10 +0100
+
+trisquel-desktop-common-data (4.4.9-6) slaine; urgency=low
+
+  * removed indicator applet
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 17:29:53 +0100
+
 trisquel-desktop-common-data (4.4.9-5) slaine; urgency=low
 
   * Network servers icon removed from desktop

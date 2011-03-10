@@ -1,3 +1,15 @@
+trisquel-meta (4.4.9-13) slaine; urgency=low
+
+  * Added gwibber, python-indicate, python-libproxy
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Mar 2011 20:46:07 +0100
+
+trisquel-meta (4.4.9-12) slaine; urgency=low
+
+  * removed indicator applet
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 18:14:15 +0100
+
 trisquel-meta (4.4.9-11) slaine; urgency=low
 
   * removed libgl1-mesa-dri-experimental and network-manager-pptp
