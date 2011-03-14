@@ -8,6 +8,10 @@
                 </dir>
         </dir>
         <dir name="apps">
+		<!-- Show unread number on tray icon  -->
+                <dir name="liferea">
+		        <entry name="trayicon-new-count" mtime="1284653624" type="bool" value="true"/>
+		</dir>
 		<!-- Don't autostart gwibber service by default  -->
                 <dir name="gwibber">
                     <dir name="preferences">

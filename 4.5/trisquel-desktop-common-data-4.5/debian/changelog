@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (4.4.9-8) slaine; urgency=low
+
+  * Set liferea/trayicon-new-count=true in gconf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 14 Mar 2011 23:28:54 +0100
+
 trisquel-desktop-common-data (4.4.9-7) slaine; urgency=low
 
   * Set /apps/gwibber/preferences/autostart=false in gconf
