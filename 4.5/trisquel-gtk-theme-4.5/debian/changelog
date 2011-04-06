@@ -1,4 +1,4 @@
-trisquel-gtk-theme (4.4.9-2) slaine; urgency=low
+trisquel-gtk-theme (4.5) slaine; urgency=low
 
   * fixed a bug in the previous update which changed the style of
     several widgets

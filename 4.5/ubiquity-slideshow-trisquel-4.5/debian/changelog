@@ -1,0 +1,23 @@
+ubiquity-slideshow-trisquel (4.5-2) slaine; urgency=low
+
+  * Updated directory.js
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 23 Mar 2011 02:13:32 +0100
+
+ubiquity-slideshow-trisquel (4.5-1) slaine; urgency=low
+
+  * Added galician translation
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 22 Mar 2011 18:27:46 +0100
+
+ubiquity-slideshow-trisquel (4.5) slaine; urgency=low
+
+  * Fixed typo
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 18 Mar 2011 23:26:01 +0100
+
+ubiquity-slideshow-trisquel (4.4.9) slaine; urgency=low
+
+  * Initial release
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 18 Mar 2011 01:03:08 +0100

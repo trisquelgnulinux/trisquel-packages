@@ -1,7 +1,3 @@
-[General]
-terminal=lxterminal
-
-[Desktop]
-show_wallpaper=1
-show_desktop=1
-wallpaper=/usr/share/backgrounds/taranis.jpg
+[desktop]
+wallpaper=/usr/share/backgrounds/slaine.jpg
+wallpaper_mode=1

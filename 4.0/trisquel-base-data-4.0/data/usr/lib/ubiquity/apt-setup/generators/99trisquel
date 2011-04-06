@@ -3,7 +3,7 @@ set -e
 
 file="$1"
 
-FASTEST=http://ftp.rediris.es/mirror/Trisquel/
+FASTEST=http://ftp.rediris.es/mirror/Trisquel/packages/
 SPEED=1000000000000
 
 for i in $(grep 'tp:' /usr/share/python-apt/templates/Trisquel.mirrors)

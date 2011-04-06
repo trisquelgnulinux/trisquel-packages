@@ -1,4 +1,10 @@
-trisquel-desktop-common-data (4.4.9-8) slaine; urgency=low
+trisquel-desktop-common-data (4.5-1) slaine; urgency=low
+
+  * Changed defaults back to gthumb
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 23 Mar 2011 00:16:37 +0100
+
+trisquel-desktop-common-data (4.5) slaine; urgency=low
 
   * Set liferea/trayicon-new-count=true in gconf
 

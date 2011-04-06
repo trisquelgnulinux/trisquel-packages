@@ -3,22 +3,27 @@
 
 <!DOCTYPE window SYSTEM "chrome://flvideoreplacer/locale/flvideoreplacer.dtd">
 
-<window id="flvideoreplacer-player" title="FlashVideoReplacer" orient="vertical"  xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<window id="flvideoreplacer-player" title="FlashVideoReplacer"
+	orient="vertical" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-    <script type="application/x-javascript" src="chrome://flvideoreplacer/content/scripts/functions-player.js"/>
-    
-    <stringbundleset id="strbundles">
-	<stringbundle id="flvideoreplacerstrings" src="chrome://flvideoreplacer/locale/strings.properties"/>
-    </stringbundleset>
-  
-    <stack width="600" height="400" flex="1">
-	<hbox flex="1">
-	    <image src="chrome://flvideoreplacer/skin/stack.png" flex="1"/>
-	</hbox>
-	<vbox width="600" height="400" flex="1">
-	    <hbox flex="1" width="600" height="400" orient="horizontal">
-		<iframe src="" id="flvideoreplacervideo" type="content" width="600" height="400" flex="1"/>
-	    </hbox>
-	</vbox>
-    </stack>
+	<script type="application/x-javascript"
+		src="chrome://flvideoreplacer/content/scripts/player.js" />
+
+	<stringbundleset id="flvideoreplacerstrbundles">
+		<stringbundle id="flvideoreplacerstrings"
+			src="chrome://flvideoreplacer/locale/strings.properties" />
+	</stringbundleset>
+
+	<stack width="600" height="400" flex="1">
+		<hbox flex="1">
+			<image src="chrome://flvideoreplacer/skin/stack.png" flex="1" />
+		</hbox>
+		<vbox width="600" height="400" flex="1">
+			<hbox flex="1" width="600" height="400" orient="horizontal">
+				<iframe src="" id="flvideoreplacervideo" type="content"
+					width="600" height="400" flex="1" />
+			</hbox>
+		</vbox>
+	</stack>
 </window>

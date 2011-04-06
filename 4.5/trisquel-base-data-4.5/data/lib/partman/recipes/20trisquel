@@ -1,6 +1,6 @@
 partman-auto/text/home_scheme ::
 
-500 4000 10000 ext4
+500 5000 10000 ext4
 	method{ format }
 	format{ }
 	use_filesystem{ }

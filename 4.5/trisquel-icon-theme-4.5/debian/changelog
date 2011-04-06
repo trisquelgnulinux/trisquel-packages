@@ -1,4 +1,4 @@
-trisquel-icon-theme (4.4.9-1) slaine; urgency=low
+trisquel-icon-theme (4.5) slaine; urgency=low
 
   * added a lock to nm-applet icons, and a gwibber status icon
 

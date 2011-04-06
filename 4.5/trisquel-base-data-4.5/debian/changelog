@@ -1,3 +1,15 @@
+trisquel-base-data (4.5-1) slaine; urgency=low
+
+  * Updated apt list generator
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 22 Mar 2011 18:21:02 +0100
+
+trisquel-base-data (4.5) slaine; urgency=low
+
+  * Updated grub background, partman recipe and apt.conf.d/02trisquel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 18 Mar 2011 00:28:39 +0100
+
 trisquel-base-data (4.4.9-4) slaine; urgency=low
 
   * Restored radeon into blacklist

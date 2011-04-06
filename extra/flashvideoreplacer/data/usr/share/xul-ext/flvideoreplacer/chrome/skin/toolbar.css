@@ -1,7 +1,17 @@
-#flvideoreplacer-toolbar-button {
-  list-style-image: url("chrome://flvideoreplacer/skin/toolbar.png");
-}
+#flvideoreplacer-toolbar-button,
+#wrapper-flvideoreplacer-toolbar-button
+  {list-style-image: url("chrome://flvideoreplacer/skin/toolbarbutton.png");}
 
-toolbar[iconsize="small"] #flvideoreplacer-toolbar-button {
-  list-style-image: url("chrome://flvideoreplacer/skin/toolbar-small.png");
-}
+.toolbaractive
+  {-moz-image-region: rect( 0px 24px 24px 0px);}
+
+[iconsize="small"] .toolbaractive
+  {-moz-image-region: rect( 0px 40px 16px 24px);}
+  
+.toolbarinactive
+  {-moz-image-region: rect( 0px 64px 24px 40px);}
+
+[iconsize="small"] .toolbarinactive
+  {-moz-image-region: rect( 0px 80px 16px 64px);}
+
+  

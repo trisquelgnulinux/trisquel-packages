@@ -2,5 +2,5 @@
 @lxpanel --profile Trisquel-mini
 @xscreensaver -no-splash
 @gnome-power-manager
-@pcmanfm -d
+@pcmanfm --desktop
 @/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1

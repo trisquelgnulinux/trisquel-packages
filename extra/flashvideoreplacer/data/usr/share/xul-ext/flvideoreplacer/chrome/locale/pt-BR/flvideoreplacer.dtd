@@ -1,37 +1,46 @@
 <!ENTITY Alerts "Alertas">
 <!ENTITY Autodetect "Auto-detectar">
-<!ENTITY Autoplay "Tocar vídeos automaticamente">
+<!ENTITY AutoLaunchEmbed "Tocar vídeos automaticamente">
+<!ENTITY AutoLaunchPlayer "Abrir player automaticamente">
+<!ENTITY AutoLaunchTab "Abrir aba de vídeo automaticamente">
+<!ENTITY AutoLaunchWindow "Abrir janela de video automaticamente">
 <!ENTITY BestPlayer "Melhor Disponível">
-<!ENTITY CheckPlugins "Verificar Compatibilidade de Plugin">
-<!ENTITY CheckPluginsTooltip "Clique aqui para verificar se você possui o plugin apropriado para seu sistema operacional.">
 <!ENTITY Clipboard "Copiar url para clipboard">
 <!ENTITY Custom "Personalizado">
+<!ENTITY Delay "Atraso">
 <!ENTITY Download "Download">
+<!ENTITY Downloads "Downloads">
 <!ENTITY DownloadDir "Destino do Download">
 <!ENTITY Embedded "Inserido">
 <!ENTITY EmbeddedVideoDetection "Detecção de vídeos inseridos">
 <!ENTITY EnableErrorAlerts "Habilitar alertas de erros">
 <!ENTITY EnableInfoAlerts "Habilitar alertas informativos">
+<!ENTITY Fallback "Player Reserva">
 <!ENTITY FlashVideoReplacerPreferences "Preferências FlashVideoReplacer">
 <!ENTITY FlashVideoReplacerTitle "FlashVideoReplacer">
 <!ENTITY ForcePluginMimeType "Plugin/MimeType">
 <!ENTITY HIGH "ALTA">
 <!ENTITY LOW "BAIXA">
 <!ENTITY MEDIUM "MÉDIA">
-<!ENTITY Method "Método de Substituição">
+<!ENTITY Method "Método Preferido">
 <!ENTITY NewTab "Nova Aba">
 <!ENTITY NewWin "Janela">
-<!ENTITY OpenEmbedded "Abrir video inserido nesta página">
+<!ENTITY NoThirdPartyPlugin "Não usar">
+<!ENTITY OpenEmbedded "Abrir videos inseridos">
 <!ENTITY Other "Outros sites de streaming">
+<!ENTITY PluginForce "Forçar compatibilidade de plugin">
 <!ENTITY Preferences "Preferências">
 <!ENTITY PreferWebM "Preferir WebM quando disponível (não requer plugin)">
 <!ENTITY PreferMP4 "Preferir mp4 sobre flv">
-<!ENTITY Prompt "Perguntar">
 <!ENTITY Quality "Qualidade">
+<!ENTITY Replacement "Substituição">
 <!ENTITY Reset "Limpar">
 <!ENTITY Search "Buscar">
 <!ENTITY SelectFile "Selecionar Arquivo">
 <!ENTITY SelectDir "Selecionar Diretório">
+<!ENTITY SilentDownload "Download silencioso">
+<!ENTITY Sites "Sites">
 <!ENTITY Standalone "Externo">
 <!ENTITY StandalonePlayer "Player Externo">
+<!ENTITY SUPER "SUPER">
 <!ENTITY WebSites "Habilitar/Desabilitar Sites">

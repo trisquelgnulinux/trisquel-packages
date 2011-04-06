@@ -823,7 +823,7 @@
                                 <entry name="autobrowse" mtime="1161662405" type="bool" value="true">
                                 </entry>
                                 <entry name="autophoto_command" mtime="1153762671" type="string">
-                                        <stringvalue>shotwell</stringvalue>
+                                        <stringvalue>gthumb -i</stringvalue>
                                 </entry>
                                 <entry name="autoipod_command" mtime="1156772178" type="string">
                                         <stringvalue>exaile</stringvalue>
