@@ -25,7 +25,7 @@
 			label="&FlashVideoReplacerTitle;" tooltiptext="&FlashVideoReplacerTitle;"
 			popup="flvideoreplacer-contextmenu"
 			onclick="flvideoreplacerListener.menuClickDetect(event);"
-			class="toolbarbutton-1 chromeclass-toolbar-additional toolbaractive"/>
+			class="toolbarbutton-1 chromeclass-toolbar-additional toolbarnosupport"/>
 	</toolbarpalette>
 
 	<popupset>

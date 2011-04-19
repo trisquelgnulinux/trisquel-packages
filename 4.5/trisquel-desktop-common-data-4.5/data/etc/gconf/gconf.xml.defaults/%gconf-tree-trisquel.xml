@@ -8,6 +8,14 @@
                 </dir>
         </dir>
         <dir name="apps">
+		<!-- Default icon  -->
+                <dir name="gdm">
+                    <dir name="simple-greeter">
+                        <entry name="logo_icon_name" mtime="1268856091" type="string">
+                	    <stringvalue>distributor-logo</stringvalue>
+        		</entry>
+		    </dir>
+		</dir>
 		<!-- Show unread number on tray icon  -->
                 <dir name="liferea">
 		        <entry name="trayicon-new-count" mtime="1284653624" type="bool" value="true"/>

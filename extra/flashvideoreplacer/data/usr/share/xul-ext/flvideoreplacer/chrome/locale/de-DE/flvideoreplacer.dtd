@@ -11,21 +11,24 @@
 <!ENTITY Download "Herunterladen">
 <!ENTITY Downloads "Downloads">
 <!ENTITY DownloadDir "Speicherort">
+<!ENTITY DownWithDTA "Download with DownThemAll">
 <!ENTITY Embedded "Eingebettet">
 <!ENTITY EmbeddedVideoDetection "Eingebettete Video Erkennung">
-<!ENTITY EnableErrorAlerts "Fehlermeldungen aktivieren">
-<!ENTITY EnableInfoAlerts "Infomeldungen aktivieren">
-<!ENTITY Fallback "Fallback Player">
+<!ENTITY EnableAlerts "Warnungen Aktivieren">
+<!ENTITY EnableErrorAlerts "Fehlermeldungen">
+<!ENTITY EnableInfoAlerts "Video Infomeldungenn">
+<!ENTITY EnableTipAlerts "Tipps">
+<!ENTITY Fallback "Ersatz Player">
 <!ENTITY FlashVideoReplacerPreferences "FlashVideoReplacer Einstellungen">
 <!ENTITY FlashVideoReplacerTitle "FlashVideoReplacer">
 <!ENTITY ForcePluginMimeType "Plugin/MimeType">
 <!ENTITY HIGH "HOCH">
 <!ENTITY LOW "NIEDRIG">
 <!ENTITY MEDIUM "MITTEL">
-<!ENTITY Method "Preferred Method">
+<!ENTITY Method "Bevorzugte Methode">
 <!ENTITY NewTab "Neuer Tab">
 <!ENTITY NewWin "Neues Fenster">
-<!ENTITY NoThirdPartyPlugin "Do not use">
+<!ENTITY NoThirdPartyPlugin "Verwenden Sie keine">
 <!ENTITY OpenEmbedded "Öffne eingebundene videos">
 <!ENTITY Other "Andere Video-Webseiten">
 <!ENTITY PluginForce "Forciere Plugin-Kompatibilität">
@@ -39,7 +42,7 @@
 <!ENTITY SelectFile "Datei auswählen">
 <!ENTITY SelectDir "Verzeichnis auswählen">
 <!ENTITY SilentDownload "Im Hintergrund runterladen">
-<!ENTITY Sites "Sites">
+<!ENTITY Sites "Webseiten">
 <!ENTITY Standalone "Extern">
 <!ENTITY StandalonePlayer "Externer Player">
 <!ENTITY SUPER "SUPER">

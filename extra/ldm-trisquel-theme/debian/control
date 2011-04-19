@@ -1,0 +1,14 @@
+Source: ldm-trisquel-theme
+Section: trisquel
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: ldm-trisquel-theme
+Architecture: all
+Priority: optional
+Description: Trisquel ldm theme
+ Provides an ldm theme for LTSP.
+ .
+

@@ -43,6 +43,12 @@ var flvideoreplacerFirstrun = {
 			.getService(Components.interfaces.nsIPrefService)
 			.getBranch("extensions.flvideoreplacer.");
 
+			//get localization
+			var strbundle = document.getElementById("flvideoreplacerstrings");
+			var enabledstring = strbundle.getString("enabled");
+			var notsupportedstring = strbundle.getString("notsupported");
+			var disabledstring = strbundle.getString("disabled");
+
 			// firstrun, update and current declarations
 			var ver = -1, firstrun = true, current = aVersion, dir;
 
@@ -82,7 +88,7 @@ var flvideoreplacerFirstrun = {
 					// extension updates
 
 					if (!ver.match(/2\..*/)) {
-						
+
 						// add toolbar button
 						var navbar = document.getElementById("nav-bar");
 						var newset = navbar.currentSet + ",flvideoreplacer-toolbar-button";
@@ -112,9 +118,25 @@ var flvideoreplacerFirstrun = {
 				var enabled = this.prefs.getBoolPref("enabled");
 				// toggle toolbar button style
 				if (enabled === true) {
-					document.getElementById("flvideoreplacer-toolbar-button").setAttribute('class',	"toolbarbutton-1 chromeclass-toolbar-additional toolbaractive");
+					var url = gBrowser.currentURI.spec;
+					if(url.match(/youtube\.com/)
+							|| url.match(/vimeo\.com/)
+							|| url.match(/metacafe\.com/)
+							|| url.match(/blip\.tv/)
+							|| url.match(/ustream\.tv/)
+							|| url.match(/youporn\.com/)
+							|| url.match(/pornhub\.com/)
+							|| url.match(/redtube\.com/)
+					){
+						document.getElementById("flvideoreplacer-toolbar-button").setAttribute('class',"toolbarbutton-1 chromeclass-toolbar-additional toolbaractive");
+						document.getElementById("flvideoreplacer-toolbar-button").setAttribute('tooltiptext',enabledstring);
+					}else{
+						document.getElementById("flvideoreplacer-toolbar-button").setAttribute('class',"toolbarbutton-1 chromeclass-toolbar-additional toolbarnosupport");
+						document.getElementById("flvideoreplacer-toolbar-button").setAttribute('tooltiptext',notsupportedstring);
+					}
 				} else {
 					document.getElementById("flvideoreplacer-toolbar-button").setAttribute('class', "toolbarbutton-1 chromeclass-toolbar-additional toolbarinactive");
+					document.getElementById("flvideoreplacer-toolbar-button").setAttribute('tooltiptext',disabledstring);
 				}
 			}
 		},
@@ -163,7 +185,7 @@ var flvideoreplacerFirstrun = {
 				do {
 					hasmore = istream.readLine(line);
 					lines.push(line.value);
-					
+
 					// check plugins by mime-type
 					var pluginflash = /Shockwave Flash/.test(line.value);
 					if (pluginflash === true) {
@@ -432,9 +454,51 @@ var flvideoreplacerFirstrun = {
 			} else {
 				this.prefs.setBoolPref("playercustom", true);
 			}
+		},
+
+		checkTPE: function() {
+
+			//access preferences interface
+			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
+			.getService(Components.interfaces.nsIPrefService)
+			.getBranch("extensions.");
+
+			var enableditems;
+
+			//check enabled extensions
+			try{
+				enableditems = this.prefs.getCharPref("enabledAddons");
+			}catch(e){
+				enableditems = this.prefs.getCharPref("enabledItems");
+			}finally{
+
+				//access preferences interface
+				this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
+				.getService(Components.interfaces.nsIPrefService)
+				.getBranch("extensions.flvideoreplacer.");
+
+				if (enableditems.match(/\{DDC359D1-844A-42a7-9AA1-88A850A938A8\}/)) {//dta
+					this.prefs.setBoolPref("dta",true);
+				}else{
+					this.prefs.setBoolPref("dta",false);
+				}
+
+				if (enableditems.match(/\{84b24861-62f6-364b-eba5-2e5e2061d7e6\}/)) {//mediaplayerconnectivity
+					this.prefs.setBoolPref("mpc",true);
+				}else{
+					this.prefs.setBoolPref("mpc",false);
+				}
+
+				if (enableditems.match(/\{3d7eb24f-2740-49df-8937-200b1cc08f8a\}/)) {//flashblock
+					this.prefs.setBoolPref("flashblock",true);
+				}else{
+					this.prefs.setBoolPref("flashblock",false);
+				}
+			}
 		}
 };
 //event listeners to call the functions when Firefox starts and closes
 window.addEventListener("load",function(){ flvideoreplacerFirstrun.init(); },true);
+window.addEventListener("load", function(e) { setTimeout(function () { flvideoreplacerFirstrun.checkTPE(); }, 100); }, false);
 window.addEventListener("load", function(e) { setTimeout(function () { flvideoreplacerFirstrun.pluginCheck(); }, 150); }, false);
 window.addEventListener("load", function(e) { setTimeout(function () { flvideoreplacerFirstrun.playerCheck(); }, 300); }, false);

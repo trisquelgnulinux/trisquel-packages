@@ -1,3 +1,15 @@
+flashvideoreplacer (2.1.9pretrisquel1-1) slaine; urgency=low
+
+  * Updated settings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 14 Apr 2011 20:47:06 +0200
+
+flashvideoreplacer (2.1.9pretrisquel1) slaine; urgency=low
+
+  * New upstream version
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 10 Apr 2011 17:14:43 +0200
+
 flashvideoreplacer (2.1.5trisquel1) slaine; urgency=low
 
   * New version upstream

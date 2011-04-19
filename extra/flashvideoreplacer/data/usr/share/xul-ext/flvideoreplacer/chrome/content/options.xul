@@ -33,6 +33,8 @@
 				type="bool" />
 			<preference id="pref_alertserror" name="extensions.flvideoreplacer.alertserror"
 				type="bool" />
+			<preference id="pref_alertstips" name="extensions.flvideoreplacer.alertstips"
+				type="bool" />
 			<preference id="pref_method" name="extensions.flvideoreplacer.method"
 				type="string" />
 			<preference id="pref_delay" name="extensions.flvideoreplacer.delay"
@@ -63,6 +65,8 @@
 				type="bool" />
 			<preference id="pref_fallback" name="extensions.flvideoreplacer.fallback"
 				type="string" />
+			<preference id="pref_downdta" name="extensions.flvideoreplacer.downdta"
+				type="bool" />
 
 		</preferences>
 		<vbox style="width:390px;height:300px;overflow:auto;" flex="1">
@@ -305,6 +309,8 @@
 								<hbox>
 									<checkbox label="&SilentDownload;" preference="pref_silentdownload" id="silentdownload" size="30" />
 									<spacer width="10" flex="0" />
+									<checkbox label="&DownWithDTA;" preference="pref_downdta" id="downdta" size="30" />
+									<spacer width="10" flex="0" />
 								</hbox>
 								<spacer height="15" flex="0" />
 							</vbox>
@@ -357,7 +363,7 @@
 							</vbox>
 							<vbox>
 								<spacer height="15" flex="0" />
-								<caption label="&Alerts;" />
+								<caption label="&EnableAlerts;" />
 								<spacer height="5" flex="0" />
 								<hbox>
 									<checkbox label="&EnableErrorAlerts;" preference="pref_alertserror"
@@ -365,6 +371,9 @@
 									<spacer width="5" flex="0" />
 									<checkbox label="&EnableInfoAlerts;" preference="pref_alertsinfo"
 										id="alertsinfo" size="30" />
+									<spacer width="5" flex="0" />
+									<checkbox label="&EnableTipAlerts;" preference="pref_alertstips"
+										id="alertstips" size="30" />
 									<spacer width="10" flex="1" />
 								</hbox>
 								<spacer height="15" flex="0" />

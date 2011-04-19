@@ -14,4 +14,8 @@
 [iconsize="small"] .toolbarinactive
   {-moz-image-region: rect( 0px 80px 16px 64px);}
 
-  
+.toolbarnosupport
+  {-moz-image-region: rect( 0px 104px 24px 80px);}
+
+[iconsize="small"] .toolbarnosupport
+  {-moz-image-region: rect( 0px 120px 16px 104px);}

@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (4.5-2) slaine; urgency=low
+
+  * Added /apps/gdm/simple-greeter/logo_icon_name gcond entry
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 14 Apr 2011 21:39:04 +0200
+
 trisquel-desktop-common-data (4.5-1) slaine; urgency=low
 
   * Changed defaults back to gthumb

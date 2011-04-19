@@ -1,5 +1,22 @@
 var flvideoreplacerOptions = {
 
+		toggleTPE: function() {
+
+			//access preferences interface
+			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
+			.getService(Components.interfaces.nsIPrefService)
+			.getBranch("extensions.flvideoreplacer.");
+
+			//get plugin info
+			var dta = this.prefs.getBoolPref("dta");
+
+			if(dta === true){
+				document.getElementById("downdta").hidden = false;
+			}else{
+				document.getElementById("downdta").hidden = true;
+			}			
+		},
+
 		toggleMime: function() {
 
 			//get osString
@@ -580,5 +597,6 @@ var flvideoreplacerOptions = {
 			}
 		}
 };
+window.addEventListener("load",function(){ flvideoreplacerOptions.toggleTPE(); },true);
 window.addEventListener("load",function(){ flvideoreplacerOptions.toggleMime(); },true);
 window.addEventListener("load",function(){ flvideoreplacerOptions.togglePlayer(); },true);

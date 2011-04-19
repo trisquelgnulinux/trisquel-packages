@@ -11,10 +11,13 @@
 <!ENTITY Download "Download">
 <!ENTITY Downloads "Downloads">
 <!ENTITY DownloadDir "Destino do Download">
+<!ENTITY DownWithDTA "Baixar com DownThemAll">
 <!ENTITY Embedded "Inserido">
 <!ENTITY EmbeddedVideoDetection "Detecção de vídeos inseridos">
-<!ENTITY EnableErrorAlerts "Habilitar alertas de erros">
-<!ENTITY EnableInfoAlerts "Habilitar alertas informativos">
+<!ENTITY EnableAlerts "Habilitar Alertas">
+<!ENTITY EnableErrorAlerts "Erros">
+<!ENTITY EnableInfoAlerts "Video Info">
+<!ENTITY EnableTipAlerts "Dicas">
 <!ENTITY Fallback "Player Reserva">
 <!ENTITY FlashVideoReplacerPreferences "Preferências FlashVideoReplacer">
 <!ENTITY FlashVideoReplacerTitle "FlashVideoReplacer">
