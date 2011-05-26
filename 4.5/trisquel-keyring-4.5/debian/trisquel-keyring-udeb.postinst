@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+DIR=/usr/share/keyrings
+if [ ! -e $DIR/archive.gpg ]; then
+	ln -s trisquel-archive-keyring.gpg $DIR/archive.gpg
+fi

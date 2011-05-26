@@ -1,3 +1,15 @@
+trisquel-desktop-common-data (4.0-6) taranis; urgency=low
+
+  * Midori config modified for DDG
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 12 May 2011 23:18:35 +0200
+
+trisquel-desktop-common-data (4.0-5) taranis; urgency=low
+
+  * added /usr/lib/firefox-addons/searchplugins/trisquel-packages.xml
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 02 May 2011 17:35:26 +0200
+
 trisquel-desktop-common-data (4.0-4) taranis; urgency=low
 
   * Dropped pidgin skel config files

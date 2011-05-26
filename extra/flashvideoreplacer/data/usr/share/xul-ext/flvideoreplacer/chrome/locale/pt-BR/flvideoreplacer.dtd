@@ -30,6 +30,23 @@
 <!ENTITY NewWin "Janela">
 <!ENTITY NoThirdPartyPlugin "Não usar">
 <!ENTITY OpenEmbedded "Abrir videos inseridos">
+<!ENTITY OptionsTooltipMethod "Este opção determina como o vídeo será tocado, se você selecionar a opção para tocá-lo automaticamente. Adicionalmente, seleciona automaticamente a opção de menu correspondente, quando estiver usando o placeholder.">
+<!ENTITY OptionsTooltipDelay "Este opção determina o tempo de espera, em milisegundos, até que a extensão entre em ação. Um valor mais alto pode ajudar, por exemplo, quando alguns elementos da página não estão sendo exibidos corretamente ou se você estiver encontrando problemas de performance ao usar a extensão.">
+<!ENTITY OptionsTooltipAutolaunch "Quando esta opção é selecionada, o vídeo será iniciado automaticamente usando o método escolhido acima.">
+<!ENTITY OptionsTooltipPrefWebM "Quando esta opção é selecionada, a estensão tentará encontrar uma versão do vídeo em html5 e irá redirecionar para a página correspondente ao invés de substituir o vídeo.">
+<!ENTITY OptionsTooltipForceMime "Algumas vezes os plugins disponíveis em seu navegador não conseguem tocar um formato de vídeo específico. Ao selecionar um mime type diferente, você pode enganar o navegador, fazendo-o pensar que o formato é suportado. Por exemplo, o plugin Totem somente funciona corretamente se você selecionar o mime type x-mplayer2.">
+<!ENTITY OptionsTooltipFallback "Se você não possuir o plugin necessário para substituir um vídeo, então esta opção permite usar um flash player diferente do original disponível no site sendo visualizado.">
+<!ENTITY OptionsTooltipStandalone "Esta opção permite selecionar o player externo que será usado para tocar o vídeo. Você pode escolher uma das opções pré-configuradas disponíveis no menu, digitar o caminho para o executável ou usar o botão de busca para localizá-lo.">
+<!ENTITY OptionsTooltipQuality "Alguns sites oferecem múltiplas opções de qualidade de vídeo. Aqui você determina a qualidade padrão desejada, para ser selecionada automaticamente. [ BAIXA: até 360p | MÉDIA: até 480p | ALTA: até 720p | SUPER: 1080p ou superior. ]">
+<!ENTITY OptionsTooltipPrefMP4 "Alguns sites oferecem múltiplos formatos de vídeo. Quando esta opção é selecionada, a extensão dará prioridade para mp4, mesmo que a qualidade do vídeo seja inferior a opção padrão selecionada.">
+<!ENTITY OptionsTooltipDownDir "O recurso de download salva os arquivos de vídeo numa única pasta. Esta opção permite selecionar a pasta onde os arquivos serão gravados. Você pode digitar o caminho para a pasta ou usar o botão de busca.">
+<!ENTITY OptionsTooltipSilentDown "Quando esta opção é selecionada, a janela do gerenciador de download não é exibida quando você inicia um download.">
+<!ENTITY OptionsTooltipDTA "Esta opção permite utilizar o gerenciador de download DownThemAll ao invés do gerenciador embutido no navegador.">
+<!ENTITY OptionsTooltipSites "Esa seção permite selecionar os sites suportados em que a extensão será ativada.">
+<!ENTITY OptionsTooltipAlerts "A estensão fornece feedback através de vários alertas. Esta seção permite desativá-los ou ativá-los.">
+<!ENTITY OptionsTooltipAlertErrors "Quando a extensão não consegue substituir um vídeo, ela ativa um alerta de erro.">
+<!ENTITY OptionsTooltipAlertVidInfo "Quando um vídeo é substituído, a extensão fornece informações sobre qualidade e formato detectados.">
+<!ENTITY OptionsTooltipAlertTips "A extensão fornece dicas para melhorar a experiência do usuário.">
 <!ENTITY Other "Outros sites de streaming">
 <!ENTITY PluginForce "Forçar compatibilidade de plugin">
 <!ENTITY Preferences "Preferências">

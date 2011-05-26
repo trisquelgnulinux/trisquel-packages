@@ -1,3 +1,9 @@
+trisquel-keyring (4.5-1) slaine; urgency=low
+
+  * Added missing udeb generation files
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 04 May 2011 01:56:18 +0200
+
 trisquel-keyring (4.5) slaine; urgency=low
 
   * Initial release for slaine

@@ -89,7 +89,7 @@
 								<vbox>
 									<spacer height="15" flex="0" />
 									<hbox>
-										<caption label="&Method;" />
+										<caption label="&Method;" tooltiptext="&OptionsTooltipMethod;"/>
 										<spacer width="2" flex="0" />
 										<vbox flex="0">
 											<spacer height="1" flex="1" />
@@ -106,7 +106,7 @@
 											<spacer height="1" flex="1" />
 										</vbox>
 										<spacer width="5" flex="0" />
-										<caption label="&Delay;" />
+										<caption label="&Delay;" tooltiptext="&OptionsTooltipDelay;"/>
 										<spacer width="2" flex="0" />
 										<vbox flex="0">
 											<spacer height="1" flex="1" />
@@ -120,7 +120,7 @@
 										<hbox>
 											<spacer width="10" flex="0" />
 											<checkbox label="&AutoLaunchEmbed;" preference="pref_autolaunchembed"
-												id="autolaunchembed" size="30" />
+												id="autolaunchembed" size="30" tooltiptext="&OptionsTooltipAutolaunch;" />
 											<spacer width="10" flex="0" />
 										</hbox>
 									</vbox>
@@ -129,7 +129,7 @@
 										<hbox>
 											<spacer width="10" flex="0" />
 											<checkbox label="&AutoLaunchPlayer;" preference="pref_autolaunchplayer"
-												id="autolaunchplayer" size="30" />
+												id="autolaunchplayer" size="30" tooltiptext="&OptionsTooltipAutolaunch;" />
 											<spacer width="10" flex="0" />
 										</hbox>
 									</vbox>
@@ -138,7 +138,7 @@
 										<hbox>
 											<spacer width="10" flex="0" />
 											<checkbox label="&AutoLaunchTab;" preference="pref_autolaunchtab"
-												id="autolaunchtab" size="30" />
+												id="autolaunchtab" size="30" tooltiptext="&OptionsTooltipAutolaunch;" />
 											<spacer width="10" flex="0" />
 										</hbox>
 									</vbox>
@@ -147,7 +147,7 @@
 										<hbox>
 											<spacer width="10" flex="0" />
 											<checkbox label="&AutoLaunchWindow;" preference="pref_autolaunchwindow"
-												id="autolaunchwindow" size="30" />
+												id="autolaunchwindow" size="30" tooltiptext="&OptionsTooltipAutolaunch;" />
 											<spacer width="10" flex="0" />
 										</hbox>
 									</vbox>
@@ -156,7 +156,7 @@
 										<hbox>
 											<spacer width="10" flex="0" />
 											<checkbox label="&PreferWebM;" preference="pref_preferwebm"
-												id="preferwebm" size="30" />
+												id="preferwebm" size="30" tooltiptext="&OptionsTooltipPrefWebM;" />
 											<spacer width="10" flex="0" />
 										</hbox>
 									</vbox>
@@ -168,7 +168,7 @@
 									<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
 								</vbox>
 								<vbox id="selectplugin">
-									<caption label="&ForcePluginMimeType;" />
+									<caption label="&ForcePluginMimeType;" tooltiptext="&OptionsTooltipForceMime;" />
 									<spacer height="5" flex="0" />
 									<hbox>
 										<spacer width="10" flex="0" />
@@ -195,7 +195,7 @@
 									</hbox>
 									<spacer height="10" flex="0" />
 									<hbox>
-										<caption label="&Fallback;" />
+										<caption label="&Fallback;" tooltiptext="&OptionsTooltipFallback;" />
 										<spacer width="10" flex="0" />
 										<menulist preference="pref_fallback" id="fallback">
 											<menupopup>
@@ -213,7 +213,7 @@
 									<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
 								</vbox>
 								<vbox id="standaloneplayer">
-									<caption label="&StandalonePlayer;" />
+									<caption label="&StandalonePlayer;" tooltiptext="&OptionsTooltipStandalone;" />
 									<spacer height="5" flex="0" />
 									<hbox>
 										<menulist id="standalone" width="330"
@@ -264,7 +264,7 @@
 							<vbox>
 								<spacer height="15" flex="0" />
 								<hbox>
-									<caption label="&Quality;" />
+									<caption label="&Quality;" tooltiptext="&OptionsTooltipQuality;" />
 									<spacer width="5" flex="0" />
 									<menulist preference="pref_videoquality" id="videoquality"
 										width="110">
@@ -277,7 +277,7 @@
 									</menulist>
 									<spacer width="5" flex="0" />
 									<checkbox label="&PreferMP4;" preference="pref_prefermp4"
-										id="prefermp4" size="30" />
+										id="prefermp4" size="30" tooltiptext="&OptionsTooltipPrefMP4;" />
 									<spacer width="10" flex="1" />
 								</hbox>
 								<spacer height="15" flex="0" />
@@ -291,7 +291,7 @@
 							</vbox>
 							<vbox id="downloader">
 								<spacer height="15" flex="0" />
-								<caption label="&DownloadDir;" />
+								<caption label="&DownloadDir;" tooltiptext="&OptionsTooltipDownDir;" />
 								<spacer height="5" flex="0" />
 								<hbox>
 									<textbox preference="pref_downdir" id="downdir" size="35"
@@ -307,9 +307,9 @@
 									<spacer width="10" flex="0" />
 								</hbox>
 								<hbox>
-									<checkbox label="&SilentDownload;" preference="pref_silentdownload" id="silentdownload" size="30" />
+									<checkbox label="&SilentDownload;" preference="pref_silentdownload" id="silentdownload" size="30" tooltiptext="&OptionsTooltipSilentDown;" />
 									<spacer width="10" flex="0" />
-									<checkbox label="&DownWithDTA;" preference="pref_downdta" id="downdta" size="30" />
+									<checkbox label="&DownWithDTA;" preference="pref_downdta" id="downdta" size="30" tooltiptext="&OptionsTooltipDTA;" />
 									<spacer width="10" flex="0" />
 								</hbox>
 								<spacer height="15" flex="0" />
@@ -324,7 +324,7 @@
 								</vbox>
 								<vbox>
 									<spacer height="15" flex="0" />
-									<caption label="&WebSites;" />
+									<caption label="&WebSites;" tooltiptext="&OptionsTooltipSites;" />
 									<spacer height="5" flex="0" />
 									<hbox>
 										<checkbox label="YouTube" preference="pref_youtube" id="youtube"
@@ -363,17 +363,17 @@
 							</vbox>
 							<vbox>
 								<spacer height="15" flex="0" />
-								<caption label="&EnableAlerts;" />
+								<caption label="&EnableAlerts;" tooltiptext="&OptionsTooltipAlerts;" />
 								<spacer height="5" flex="0" />
 								<hbox>
 									<checkbox label="&EnableErrorAlerts;" preference="pref_alertserror"
-										id="alertserror" size="30" />
+										id="alertserror" size="30" tooltiptext="&OptionsTooltipAlertErrors;" />
 									<spacer width="5" flex="0" />
 									<checkbox label="&EnableInfoAlerts;" preference="pref_alertsinfo"
-										id="alertsinfo" size="30" />
+										id="alertsinfo" size="30" tooltiptext="&OptionsTooltipAlertVidInfo;" />
 									<spacer width="5" flex="0" />
 									<checkbox label="&EnableTipAlerts;" preference="pref_alertstips"
-										id="alertstips" size="30" />
+										id="alertstips" size="30" tooltiptext="&OptionsTooltipAlertTips;" />
 									<spacer width="10" flex="1" />
 								</hbox>
 								<spacer height="15" flex="0" />

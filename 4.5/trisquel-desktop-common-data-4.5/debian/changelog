@@ -1,3 +1,15 @@
+trisquel-desktop-common-data (4.5-4) slaine; urgency=low
+
+  * Midori config modified for DDG
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 12 May 2011 20:46:04 +0200
+
+trisquel-desktop-common-data (4.5-3) slaine; urgency=low
+
+  * added /usr/lib/firefox-addons/searchplugins/trisquel-packages.xml
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 02 May 2011 17:12:17 +0200
+
 trisquel-desktop-common-data (4.5-2) slaine; urgency=low
 
   * Added /apps/gdm/simple-greeter/logo_icon_name gcond entry

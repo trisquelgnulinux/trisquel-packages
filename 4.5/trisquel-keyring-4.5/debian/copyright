@@ -1,6 +1,16 @@
-This package was created by Rubén Rodríguez <ruben@trisquel.info>
+This is Ubuntu GNU's GnuPG keyrings of archive keys.
 
-Copyright (C) 2009 the authors
+This package was originally put together by Michael Vogt
+<michael.vogt@canonical.com> 
+
+The keys in the keyrings don't fall under any copyright.  Everything
+else in the package is covered by the GNU GPL.
+
+Ubuntu support files Copyright (C) 2004 Michael Vogt <michael.vogt@canonical.com> based on the debian-keyring package maintained by James Troup 
+
+This package was modified by Rubén Rodríguez <ruben@trisquel.info>
+
+Copyright (C) 2010 the authors
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by

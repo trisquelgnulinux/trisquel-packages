@@ -9,6 +9,10 @@
 	<script type="application/x-javascript"
 		src="chrome://flvideoreplacer/content/scripts/firstrun.js" />
 	<script type="application/x-javascript"
+		src="chrome://flvideoreplacer/content/scripts/overlay.js" />
+	<script type="application/x-javascript"
+		src="chrome://flvideoreplacer/content/scripts/observer.js" />
+	<script type="application/x-javascript"
 		src="chrome://flvideoreplacer/content/scripts/listener.js" />
 	<script type="application/x-javascript"
 		src="chrome://flvideoreplacer/content/scripts/urlbarlistener.js" />
@@ -62,6 +66,14 @@
 				</menupopup>
 			</menu>
 			<menuseparator id="flvideoreplacer-prefs-separator" />
+			<menu id="flvideoreplacer-quality" label="&Quality;" class="menu-iconic" image="chrome://flvideoreplacer/skin/embedded16.png">
+				<menupopup id="flvideoreplacer-quality-selected">
+					<menuitem id="flvideoreplacer-quality-selected-low" label="&LOW;" class="menuitem-iconic" image="chrome://flvideoreplacer/skin/blank16.png" oncommand="flvideoreplacerOverlay.changePref('videoquality','string','LOW');"/>
+					<menuitem id="flvideoreplacer-quality-selected-medium" label="&MEDIUM;" class="menuitem-iconic" image="chrome://flvideoreplacer/skin/blank16.png" oncommand="flvideoreplacerOverlay.changePref('videoquality','string','MEDIUM');"/>
+					<menuitem id="flvideoreplacer-quality-selected-high" label="&HIGH;" class="menuitem-iconic" image="chrome://flvideoreplacer/skin/blank16.png" oncommand="flvideoreplacerOverlay.changePref('videoquality','string','HIGH');"/>
+					<menuitem id="flvideoreplacer-quality-selected-super" label="&SUPER;" class="menuitem-iconic" image="chrome://flvideoreplacer/skin/blank16.png" oncommand="flvideoreplacerOverlay.changePref('videoquality','string','SUPER');"/>
+				</menupopup>
+			</menu>
 			<menuitem id="flvideoreplacer-preferences" label="&Preferences;"
 				class="menu-iconic" image="chrome://flvideoreplacer/skin/settings16.png"
 				oncommand="window.openDialog('chrome://flvideoreplacer/content/options.xul', 'flvideoreplacer-prefs', 'chrome,centerscreen,alwaysRaised');" />

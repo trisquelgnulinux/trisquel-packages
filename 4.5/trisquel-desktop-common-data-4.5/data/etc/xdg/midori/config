@@ -2,6 +2,7 @@
 toolbar-style=MIDORI_TOOLBAR_SMALL_ICONS
 toolbar-items=TabNew,Back,Forward,ReloadStop,Separator,Homepage,Location,Separator,Search,
 homepage=http://trisquel.info
+location-entry-search=https://duckduckgo.com/?q=!+%s
 
 [extensions]
 libdnsprefetch.so=true

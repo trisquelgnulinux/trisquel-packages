@@ -17,7 +17,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-base
 Architecture: all
 Priority: optional
-Depends: trisquel-minimal, trisquel-keyring, bc, dc, dmraid, jfsutils, ntfsprogs, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, ssh, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-daemon, avahi-autoipd, avahi-utils, ca-certificates, consolekit, doc-base, hal, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, openfwwf, modemmanager, pcmciautils, ecryptfs-utils, apparmor, apparmor-utils 
+Depends: trisquel-minimal, trisquel-keyring, bc, dc, dmraid, jfsutils, ntfsprogs, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, ssh, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-daemon, avahi-autoipd, avahi-utils, ca-certificates, consolekit, doc-base, hal, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, pcmciautils, ecryptfs-utils, apparmor, apparmor-utils, mdadm
 Recommends: trisquel-base-recommended
 Description: Trisquel base metapackage.
  Virtual package providing a dependency list for Trisquel base installation.
@@ -27,7 +27,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-base-recommended
 Architecture: all
 Priority: optional
-Depends: trisquel-base, unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue
+Depends: trisquel-base, unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue, modemmanager, wvdial, openfwwf, atheros-firmware
 Description: Trisquel base metapackage (recommended packages).
  Virtual package providing a dependency list for Trisquel base installation.
  Provides a complete console environment.
@@ -114,8 +114,8 @@ Description: Trisquel metapackage (mini edition).
 Package: trisquel-sugar
 Architecture: all
 Priority: optional
-Depends: trisquel-base, usplash-theme-trisquel, trisquel-gtk-theme, dbus-x11, lxdm, trisquel-desktop-common-data, ttf-dejavu, ttf-droid, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, sugar-platform, metacity, trisquel-gtk-theme, dmz-cursor-theme, mozilla-plugin-gnash | swfdec-mozilla, icedtea6-plugin, usb-creator-gtk, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-good, gstreamer0.10-ffmpeg, gstreamer0.10-fluendo-mp3, gstreamer0.10-x, xulrunner-1.9.1, network-manager, bash-completion, gnome-settings-daemon
-Suggests: casper, ubiquity-frontend-gtk, ubiquity, language-pack-ar-base, language-pack-bn-base, language-pack-ca-base, language-pack-de-base, language-pack-el-base, language-pack-en-base, language-pack-es-base, language-pack-eu-base, language-pack-fa-base, language-pack-fr-base, language-pack-gl-base, language-pack-he-base, language-pack-hi-base, language-pack-it-base, language-pack-ja-base, language-pack-mg-base, language-pack-mn-base, language-pack-nb-base, language-pack-ne-base, language-pack-nl-base, language-pack-pt-base, language-pack-ru-base, language-pack-si-base, language-pack-sl-base, language-pack-sq-base, language-pack-sv-base, language-pack-tr-base, language-pack-ur-base, language-pack-vi-base, language-pack-zh-base, lupin-casper, ubiquity-slideshow-trisquel
+Depends: trisquel-base, dbus-x11, gdm, trisquel-desktop-common-data, ttf-dejavu, ttf-droid, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, sweets-distribution, metacity, dmz-cursor-theme, mozilla-plugin-gnash | swfdec-mozilla, usb-creator-gtk, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-good, gstreamer0.10-ffmpeg, gstreamer0.10-fluendo-mp3, gstreamer0.10-x, network-manager, bash-completion, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, gstreamer0.10-alsa, gstreamer0.10-pulseaudio, pulseaudio
+Suggests: casper, ubiquity-frontend-gtk, ubiquity, lupin-casper, grub-pc, ubiquity-slideshow-trisquel
 Description: Sugar environment for Trisquel.
  Virtual package providing a dependency list for Trisquel base installation.
  Provides a Sugar based environment.

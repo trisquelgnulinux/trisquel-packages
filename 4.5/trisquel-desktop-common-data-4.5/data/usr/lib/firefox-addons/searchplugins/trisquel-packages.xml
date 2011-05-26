@@ -1,0 +1,9 @@
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/" xmlns:os="http://a9.com/-/spec/opensearch/1.1/">
+<os:ShortName>Trisquel Packages</os:ShortName>
+<os:Description>Search packages.trisquel.info</os:Description>
+<os:InputEncoding>UTF-8</os:InputEncoding>
+<os:Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACi0lEQVQ4jY2T3UtTARiH92/0DxR0E10EZTeBF3VhBEqF9EEXUURUpn2AmohNS60oUrRMQ1D86ItKKz+atjmd25w5S82zlXPOqfNsc27nzOPOeboQJlakL/xuXnifi+d9Xx1bLEVZxTHhxzjsRZJXkn3dVob9gQhp+d1kFhs5rv9C6s1ufnjEjQDHhJ+bNXbOlJsprHfwyxdMAgrrHbzvcxONxXF7F6l47eRUaR+qqq4BWgwCO85+5KjeyMm7Jraf62DnhU5aDZMA3KodJByR0DSNmjdDCFML7L/Wy4IYQReNxUm52oXB7sEzG6Lb5sEx7uNgXi8pOT04JuYwO308bB3mrclNfbuTFoNAWoGJmLSCzusPcij3M6GlGJUvhzDYpymuH6Tvq5cDuX0cKzHjW1jCMxtk1DWPecRLZqkFfcPwmoNgOMrhgl5m5sJJu2UNVqZnRY7oLaSXWDlRZuFGjZ3LlVYOFpg5c6+fxVB0XeLjV07OP7LwosfFs7YxGjvGsI3Nkl5iJTW/nz3Zvey+1Mm+rA7y6uyEI9LGNWqahlOY59Ogh1HXPAA51Va2ne4gv86GazqQlPhn/fMOFCXB3qxOMu+YCASXud80RNFzC7Yx/9YAYijKrotd1LZP8OTtKG6viCSvcL16AGF6cXNATFohJbubqnffefruG+M/51FVlWaDQE3b+OYAgOyqQTKKTATEZT6YXQieAOXNIzR2Tf4N0DQNVVVZXV1FURQURcHrF8m4beTsgwFaewTKm0c4qjcy5RNJJBJJoTpN04jH40QiEUKhEKIoJuOemuFBs40rFWbuN9kYFzwEg0HC4TCSJK3/QiKRQJZlZFkmHo//N7IsI0kSiqKgaRq/AbKDgxgo7zYPAAAAAElFTkSuQmCC</os:Image>
+<SearchForm>http://packages.trisquel.info/</SearchForm>
+<os:Url type="text/html" method="GET" template="http://packages.trisquel.info/search?suite=default&amp;section=all&amp;arch=any&amp;searchon=names&amp;keywords={searchTerms}">
+</os:Url>
+</SearchPlugin>

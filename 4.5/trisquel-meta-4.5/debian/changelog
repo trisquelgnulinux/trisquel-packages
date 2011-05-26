@@ -1,3 +1,27 @@
+trisquel-meta (4.5-8) slaine; urgency=low
+
+  * Added ubiquity-slideshow-trisquel to trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 May 2011 03:03:46 +0200
+
+trisquel-meta (4.5-7) slaine; urgency=low
+
+  * Changed usb-creator to usb-creator-gtk in trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 May 2011 01:06:34 +0200
+
+trisquel-meta (4.5-6) slaine; urgency=low
+
+  * Updated trisquel-sugar entry
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 May 2011 00:48:22 +0200
+
+trisquel-meta (4.5-5) slaine; urgency=low
+
+  * Added atheros-firmware, mdadm and wvdial
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 11 May 2011 16:07:01 +0200
+
 trisquel-meta (4.5-4) slaine; urgency=low
 
   * Updated for trisquel-mini

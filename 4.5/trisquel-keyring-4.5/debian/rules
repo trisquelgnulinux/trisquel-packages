@@ -1,28 +1,74 @@
 #!/usr/bin/make -f
+# debian/rules file - for debian/keyring
+# Based on sample debian/rules file - for GNU Hello (1.3).
+# Copyright 1994,1995 by Ian Jackson.
+# Copyright 1998-2003 James Troup
+# I hereby give you perpetual unlimited permission to copy,
+# modify and relicense this file, provided that you do not remove
+# my name from the file itself.  (I assert my moral right of
+# paternity under the Copyright, Designs and Patents Act 1988.)
+# This file may have to be extensively modified
+
+install_dir=install -d -m 755
+install_file=install -m 644
+install_script=install -m 755
+install_binary=install -m 755 -s
+
+VERSION := $(shell dpkg-parsechangelog | grep ^Version: | cut -d' ' -f2)
 
 build:
 
 clean:
-	dh_testdir
-	dh_testroot
-	dh_clean
+	$(checkdir)
+	-rm -f foo foo.asc *.bak *~ */*~ debian/files* debian/*substvars
+	-rm -rf debian/tmp debian/trisquel-keyring-udeb
 
-binary-indep:
-	dh_clean
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs
-	dh_installdocs
-	cp data/* -a debian/`find debian/ -mindepth 1 -maxdepth 1 -type d | cut -d/ -f2`
-	dh_fixperms
-	dh_compress
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
+binary-indep: checkroot
+	$(checkdir)
+	-rm -rf debian/tmp
+	$(install_dir) debian/tmp/DEBIAN/
+	$(install_script) debian/postinst debian/tmp/DEBIAN/
+
+	$(install_dir) debian/tmp/usr/share/keyrings/
+	$(install_file) keyrings/trisquel-archive-keyring.gpg debian/tmp/usr/share/keyrings/
+
+	$(install_dir) debian/tmp/usr/share/doc/trisquel-keyring/
+	$(install_file) debian/changelog debian/tmp/usr/share/doc/trisquel-keyring/changelog
+	gzip -9v debian/tmp/usr/share/doc/trisquel-keyring/*
+	$(install_file) debian/copyright debian/tmp/usr/share/doc/trisquel-keyring/
+	cd debian/tmp; find -type f \! -regex '.*/DEBIAN/.*' -printf '%P\0' | xargs -r0 md5sum >DEBIAN/md5sums
+
+	dpkg-gencontrol -ptrisquel-keyring -isp
+	chown -R root.root debian/tmp
+	chmod -R go=rX debian/tmp
+	dpkg --build debian/tmp ..
+
+	-rm -rf debian/trisquel-keyring-udeb
+	$(install_dir) debian/trisquel-keyring-udeb/DEBIAN/
+
+	$(install_dir) debian/trisquel-keyring-udeb/usr/share/keyrings/
+	$(install_file) keyrings/trisquel-archive-keyring.gpg debian/trisquel-keyring-udeb/usr/share/keyrings/
+	install -m 755 debian/trisquel-keyring-udeb.postinst debian/trisquel-keyring-udeb/DEBIAN/postinst
+
+	# Don't let dpkg-gencontrol write incorrect guesses to debian/files.
+	# Instead, register the udeb manually.
+	dpkg-gencontrol -ntrisquel-keyring-udeb_$(VERSION)_all.udeb -ptrisquel-keyring-udeb -Tdebian/trisquel-keyring-udeb.substvars -Pdebian/trisquel-keyring-udeb -isp
+	chown -R root.root debian/trisquel-keyring-udeb
+	chmod -R go=rX debian/trisquel-keyring-udeb
+	dpkg --build debian/trisquel-keyring-udeb ../trisquel-keyring-udeb_$(VERSION)_all.udeb
 
 binary-arch:
 
-binary: binary-indep binary-arch
+define checkdir
+	test -f keyrings/trisquel-archive-keyring.gpg
+endef
 
-.PHONY: binary binary-arch binary-indep clean build
+# Below here is fairly generic really
+
+binary:		binary-indep binary-arch
+
+checkroot:
+	$(checkdir)
+	test root = "`whoami`"
+
+.PHONY: binary binary-arch binary-indep clean checkroot build
