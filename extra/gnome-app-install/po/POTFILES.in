@@ -1,0 +1,29 @@
+[encoding: UTF-8]
+data/gnome-app-install.schemas.in
+[type: gettext/glade] data/gnome-app-install.ui
+data/gnome-app-install.desktop.in
+data/gnome-app-install-xfce.desktop.in
+gnome-app-install
+AppInstall/activation.py
+AppInstall/AppInstallApp.py
+AppInstall/BrowserView.py
+AppInstall/packaging/Cache.py
+AppInstall/CoreMenu.py
+AppInstall/DialogComplete.py
+AppInstall/DialogMultipleApps.py
+AppInstall/DialogPendingChanges.py
+AppInstall/DialogProprietary.py
+AppInstall/Menu.py
+AppInstall/Progress.py
+AppInstall/Util.py
+AppInstall/distros/Debian.py
+AppInstall/distros/Default.py
+AppInstall/distros/Ubuntu.py
+AppInstall/prof.py
+AppInstall/widgets/AppDescView.py
+AppInstall/widgets/AppListView.py
+AppInstall/widgets/ReleaseNotesViewer.py
+AppInstall/widgets/SearchEntry.py
+AppInstall/backend/InstallBackend.py
+AppInstall/backend/InstallBackendAptdaemon.py
+AppInstall/backend/InstallBackendSynaptic.py

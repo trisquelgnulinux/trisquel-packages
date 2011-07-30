@@ -1,0 +1,2046 @@
+gnome-app-install (0.5.60.1ubuntu2trisquel6-1) slaine; urgency=low
+
+  * Removed python-sexy dependency
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 18 Jul 2011 03:06:09 +0200
+
+gnome-app-install (0.5.60.1ubuntu2trisquel6) slaine; urgency=low
+
+  * AppInstall/AppInstallApp.py
+    - Fixed progress window failing to close on cache update
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 18 Jan 2011 02:57:22 +0000
+
+gnome-app-install (0.5.60.1ubuntu2trisquel5) slaine; urgency=low
+
+  * Updated spanish and galician translations
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 13 Jan 2011 02:50:52 +0000
+
+gnome-app-install (0.5.60.1ubuntu2trisquel4) slaine; urgency=low
+
+  * Backend changed to synaptic
+  * Changed "Get screenshot" chain to "Screenshot"
+  * Removed splash screen chain about third party vendors
+  * Removed libgtkhtml2 dependency
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 13 Jan 2011 01:23:21 +0000
+
+gnome-app-install (0.5.60.1ubuntu2trisquel3) taranis; urgency=low
+
+  * Menu entry shows in all desktops
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 02:01:42 +0000
+
+gnome-app-install (0.5.60.1ubuntu2trisquel2) taranis; urgency=low
+
+  * Removed xfce icon
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 05 Sep 2010 17:05:23 +0000
+
+gnome-app-install (0.5.60.1ubuntu2trisquel1) awen; urgency=low
+
+  * Removed non-free recommendation system
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 17 Feb 2010 14:30:18 +0000
+
+gnome-app-install (0.5.60.1ubuntu2) karmic; urgency=low
+
+  * no change upload to get mo files build again (LP: #456757)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 22 Oct 2009 18:10:26 +0200
+
+gnome-app-install (0.5.60.1ubuntu1) karmic; urgency=low
+
+  * AppInstall/Menu.py:
+    - do not crash if a Icon can not be loaded (LP: #406850)
+  * fix crash when opening with specific activation style 
+    (LP: #391555)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 04 Sep 2009 13:28:00 +0200
+
+gnome-app-install (0.5.60.1) unstable; urgency=low
+
+  * Do not raise an error if the translation can not be found.
+
+ -- Julian Andres Klode <jak@debian.org>  Fri, 21 Aug 2009 13:34:36 +0200
+
+gnome-app-install (0.5.60) unstable; urgency=low
+
+  * New release to be shared by Debian and Ubuntu (Closes: #537235).
+  * AppInstall/widgets/AppDescView.py:
+    - Add a button to fetch a screenshot (like synaptic)
+    - Use UTF-8 bullets.
+    - Use a new description formatter which should produce better results.
+  * Rename AppInstall/AppInstall.py to AppInstall/AppInstallApp.py to
+    not cause confusion between the package and the module.
+  * Use gettext.install() to install _() into the builtin namespace, this is
+    much faster than using gettext.gettext each time.  
+  * AppInstall/SimpleGtkbuilderApp.py:
+    - Call set_translation_domain() so translations work correctly.
+  * AppInstall/distros/__init__.py:
+    - Detect the currently running System via lsb_release.
+  * AppInstall/distros/Debian.py:
+    - Rework to only support main and treat all other components as
+      unsupported.
+  * AppInstall/Menu.py:
+    - Only call self.itemIsInstalled() if we have a cache.
+  * debian/control:
+    - Drop dependency on python-launchpad-integration, it's not used.
+    - Set maintainer to g-a-i-devel@lists.alioth.debian.org
+    - Fix typo in description (s/gstreamer/GStreamer and s/mime/MIME)
+  * debian/copyright:
+    - Update to DEP-5 draft format.
+  * debian/postinst:
+    - Call update-app-install without a path.
+  * debian/rules:
+    - Install the modules into /usr/share/gnome-app-install.
+    - Use debhelper 7 instead of CDBS.
+  * po/POTFILES.in:
+    - Treat gnome-app-install.ui as gettext/glade, so strings are picked up
+      again.
+  * po: Merge translations from Launchpad.
+  * Remove the progress label from data/gnome-app-install.ui and move it into
+    the distribution classes.
+  * data/*.desktop.in:
+    - Change name to "Add/Remove Applications" and System;Settings to the
+      categories.
+    - Remove the deprecated Encoding key.
+
+ -- Julian Andres Klode <jak@debian.org>  Thu, 20 Aug 2009 16:55:32 +0200
+
+gnome-app-install (0.5.52-0ubuntu1) karmic; urgency=low
+
+  * fix detection of aptdaemon
+  * AppInstall/widgets/AppDescView.py:
+    - fix short description display
+  * AppInstall/backend/InstallBackendAptdaemon.py:
+    - updated to work with the latest aptdaemon
+  * debian/control:
+    - add aptdaemon or-dependency (in addition to synaptic)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 17 Aug 2009 15:43:58 +0200
+
+gnome-app-install (0.5.51-0ubuntu1) karmic; urgency=low
+
+  [ David Stansby ]
+  *  Added yelp reccomends to make sure that xubuntu users
+     don't have a help button that does nothing (LP: #78689)
+
+  [ Michael Vogt ]
+  * AppInstall/SimpleGtkbuilderApp.py:
+    - updated to new version
+  * AppInstall/update.py:
+    - cache pkgname->icon mapping to
+  * make update-manager use aptdaemon (if avaialble)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 28 Jul 2009 11:17:34 +0200
+
+gnome-app-install (0.5.50-0ubuntu1) karmic; urgency=low
+
+  * ported to gtkbuilder
+  * better InstallBackend seperation
+  * use factory to construct the best backend and use
+    aptdaemon if available
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 08 Jul 2009 17:45:42 +0200
+
+gnome-app-install (0.5.30-0ubuntu1) karmic; urgency=low
+
+  * AppInstall/CoreMenu.py, AppInstall/Menu.py:
+    - support keyword search ("Keywords" and "X-AppInstall-Keywords")
+  * util/addKeywords.py:
+    - add tool that can add keyword data to the meta-data
+  * fix crash in search code
+  * faster startup by loading the apt cache and the desktop
+    data in parallel (not as much win as initially hoped because
+    Thread.start() is rather slow in python)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 15 Jun 2009 18:01:33 +0200
+
+gnome-app-install (0.5.24-1) unstable; urgency=low
+
+  * New upstream release (Closes: #523307)
+  * debian/patches/05_fix_spelling.patch:
+    - Rebase against the new release
+  * debian/postinst, debian/prerm, debian/links:
+    - Provide an alternative for gstreamer-codec-install, but use of the
+      gnome-codec-install is recommended (g-c-i has a higher priority).
+  * debian/control.in:
+    - Update to Standards-Version 3.8.1
+    - Replace jak@jak-linux.org with jak@debian.org
+    - Drop Sebastian Heinlein <glatzor@ubuntu.com> from Uploaders
+    - Remove Dm-Upload-Allowed, it's not needed anymore.
+
+ -- Julian Andres Klode <jak@debian.org>  Thu, 09 Apr 2009 14:28:28 +0200
+
+gnome-app-install (0.5.24-0ubuntu1.1) jaunty-proposed; urgency=low
+
+  * AppInstall/Menu.py:
+    - fix search filter bug (LP: #354563)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 29 Apr 2009 10:25:39 +0200
+
+gnome-app-install (0.5.24-0ubuntu1) jaunty; urgency=low
+
+  * fix missing app name for unknown maintaince status
+    (LP: #320517) - thanks to István Nyitrai
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 31 Mar 2009 14:54:17 +0200
+
+gnome-app-install (0.5.23-0ubuntu1) jaunty; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - fix crash in menu sort order code (right click
+      on "All")
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 23 Mar 2009 11:32:34 +0100
+
+gnome-app-install (0.5.22-0ubuntu1) jaunty; urgency=low
+
+  * fix bug in X-AppInstall-AlwaysOnTop sorting (thanks
+    to LaserJock for reporting)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 19 Mar 2009 17:40:10 +0100
+
+gnome-app-install (0.5.21-0ubuntu1) jaunty; urgency=low
+
+  * support X-AppInstall-AlwaysOnTop key in the desktop
+    files to show these in the top of a category the item
+    is in (only in default sort order)
+    LP: #321005
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 04 Mar 2009 18:51:42 +0100
+
+gnome-app-install (0.5.20-0ubuntu1) jaunty; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - fixes in the channel adding code
+    - fix extra space (LP: #155105), thanks to István Nyitrai
+  * AppInstall/distros/Ubuntu.py:
+    - make the support period string i18n friendlier,
+      thanks to István Nyitrai and Gabor Kelemen (LP: #300272)
+  * AppInstall/update.py:
+   - do not crash when run as non-root (LP: #325909), thanks
+     to István Nyitrai
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 02 Mar 2009 10:15:44 +0100
+
+gnome-app-install (0.5.12-0ubuntu1.1) jaunty; urgency=low
+
+  * Rebuild with python (>= 2.6), include symlinks in the package.
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 25 Feb 2009 00:54:09 +0100
+
+gnome-app-install (0.5.12-0ubuntu1) intrepid; urgency=low
+
+  * rename gnome-codec-install to gstreamer-codec-install
+    and make it a alternative (LP: #280633) to match the
+    changes in the recent gstreamer sync (LP: #281606),
+    (thanks to Sebastian Heinlein)
+  * AppInstall/AppInstall.py:
+    - do not crash on _confirm_source_activation() if no
+      secondary message is given (LP: #280402)
+    - fix focus problem in special activation modes (like
+      codec search) (LP: #191245)
+    - fix crash when adding components without component
+      dependencies (LP: #194148)
+  * AppInstall/activation.py:
+    - remove stderr output that may cause IOError in Rhythmbox,
+      the exit code is sufficient (LP: #193817)
+  * AppInstall/update.py:
+    - ensure correct permission for the g-a-i caches (LP: #217040)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 13 Oct 2008 10:02:12 +0200
+
+gnome-app-install (0.5.11-0ubuntu1) intrepid; urgency=low
+
+  * AppInstall/activation.py:
+    - remove the isApproved() check in the XUL extensions
+      code so that the extensions show up again (LP: #267382)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 25 Sep 2008 21:15:22 +0200
+
+gnome-app-install (0.5.10-0ubuntu1) intrepid; urgency=low
+
+  * AppInstall/widgets/AppDescView.py:
+    - fix regression in the mainatainance status view
+    - fix the gray to make it easier to read (LP: #263982)
+  * AppInstall/Util.py:
+    - do not crash on broken Release files (LP: #269970)
+    - do not crash if ver.FileList is None (LP: #267300)
+  * AppInstall/distros/Ubuntu.py:
+    - fix the support display so that it corresponds with the spec
+      (LP: #263693)
+    - remove the tooltips (as requested in the
+      PackageMaintainednessPresentation spec) (LP: #263689)
+  * fix the way the supported time is calcualted, ensure to
+    only look for imutable source
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 17 Sep 2008 15:44:19 +0200
+
+gnome-app-install (0.5.9-0ubuntu1) intrepid; urgency=low
+
+  [ Matt Zimmerman ]
+  * Update codec page URL to a more permanent one
+
+  [ Michael Vogt ]
+  * modify the codec UI based on the design of Matthew Paul Thomas
+    https://wiki.ubuntu.com/CodecInstallationIntrepid
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 09 Sep 2008 18:14:04 +0200
+
+gnome-app-install (0.5.8-0ubuntu1) intrepid; urgency=low
+
+  * AppInstall/activation.py, AppInstall/distros/Default.py:
+    - support a generic way to add a link button during codec
+      install into the UI for additional actions
+  * AppInstall/distros/Ubuntu.py:
+    - link to the codec page in the canonical shop
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 21 Aug 2008 11:38:16 +0200
+
+gnome-app-install (0.5.7-0ubuntu1) intrepid; urgency=low
+
+  * AppInstall/distros/Ubuntu.py:
+    - rename "support applications" to "Canonical-maintained applications"
+      (PackageMaintainednessPresentation spec)
+    - update key dependencies for kde4
+  * AppInstall/widgets/AppDescView.py:
+    - show maintaince status in the description textview
+      (PackageMaintainednessPresentation spec)
+  * AppInstall/distros/Ubuntu.py:
+    - calculate the maintenance status based on the date in the
+      Release file of the application
+  * AppInstall/Util.py:
+    - add the required helpers for the support date calculation
+  * test/test_maintenance.py:
+    - add tests
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 20 Aug 2008 14:15:35 +0200
+
+gnome-app-install (0.5.6-0ubuntu1) intrepid; urgency=low
+
+  * AppInstall/widgets/AppDescView.py:
+    - improve description for items that are in a not
+      yet enabled third party repository
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 11 Aug 2008 12:29:57 +0200
+
+gnome-app-install (0.5.5.1-1) unstable; urgency=low
+
+  [ Josselin Mouette ]
+  * Change the dependency on python-gnome2-extras to python-gtkhtml,
+    python-gtkmozembed.
+
+  [ Julian Andres Klode ]
+  * New upstream release
+  * debian/README.source: Add. (debian/control: Update to Policy 3.8.0)
+
+ -- Julian Andres Klode <jak@jak-linux.org>  Tue, 15 Jul 2008 23:11:00 +0200
+
+gnome-app-install (0.5.5.1-0ubuntu1) intrepid; urgency=low
+
+  * AppInstall/DialogComplete.py:
+    - fix missing extra codecs in failure message (thanks to Hobbsee)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 13 Jun 2008 17:35:22 +0200
+
+gnome-app-install (0.5.5-0ubuntu1) intrepid; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - fix typo (LP: #155691)
+    - do not crash if yelp is not installed (LP: #205899)
+    - do not use the same shortcut for "Confirm" and "Cancel"
+      (LP: #210949)
+    - do not crash if gconf is not available (LP: #214816)
+
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 10 Jun 2008 15:40:46 +0200
+
+gnome-app-install (0.5.4-0ubuntu1) intrepid; urgency=low
+
+  * do not show "do you want to install more software" dialog
+    after a successful codec install (LP: #238685)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 10 Jun 2008 11:11:16 +0200
+
+gnome-app-install (0.5.2.7-2) unstable; urgency=low
+
+  * Fix spelling mistake: "enable the installaion" (Closes: #479545)
+
+ -- Julian Andres Klode <jak@jak-linux.org>  Sun, 08 Jun 2008 13:58:07 +0200
+
+gnome-app-install (0.5.2.7-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+  * debian/patches/04_fix_wording.patch:
+    - Debian is main only (Closes: #476287)
+    - Remove 3rd party choice (Closes: #476289)
+    - Packages are restricted by their license (Closes: #476291)
+
+ -- Julian Andres Klode <jak@jak-linux.org>  Tue, 22 Apr 2008 16:52:02 +0200
+
+gnome-app-install (0.5.2.7-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/widgets/AppListView.py:
+    - workaround the fact that gdk_icon_theme_load_icon()
+      sometimes ignore the size request and give huge
+      icons instead (#209072)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 11 Apr 2008 21:58:33 +0200
+
+gnome-app-install (0.5.2.6-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/update.py:
+    - do not crash if xdg.DesktopEntry can not be importet
+      (LP: #194111)
+  * fix crash on pygtk.require("2.0") (LP: #211683)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 04 Apr 2008 20:19:09 +0200
+
+gnome-app-install (0.5.2.5-1) unstable; urgency=low
+
+  * New upstream release
+  * fix spelling-error-in-description gstreamer GStreamer
+  * debian/copyright: Use machine-interpretable copyright
+  * Revert: use DH_PYCENTRAL=nomove as we need g-a-i code in
+    app-install-data postinst
+
+ -- Julian Andres Klode <jak@jak-linux.org>  Tue, 25 Mar 2008 15:36:05 +0100
+
+gnome-app-install (0.5.2.5-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - work around gettext issue in the legal warning
+      (thanks to Timo Jyrinki)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 11 Mar 2008 21:23:47 +0100
+
+gnome-app-install (0.5.2.4-0ubuntu1) hardy; urgency=low
+
+  * rebuild against latest python-central
+  * fix description parser to make it display wormux correctly
+    (LP: #193094)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 20 Feb 2008 13:23:58 +0100
+
+gnome-app-install (0.5.2.3-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control: Depend on latest python-apt (>= 0.7.5) for pkg.homepage
+
+ -- Julian Andres Klode <jak@jak-linux.org>  Tue, 19 Feb 2008 21:19:18 +0100
+
+gnome-app-install (0.5.2.3-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/widgets/AppDescView.py:
+    - fix crash homepage field usage (LP: #192068)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 18 Feb 2008 13:49:27 +0100
+
+gnome-app-install (0.5.2.2-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/widgets/AppDescView.py:
+    - show the homepage field (if available)
+  * debian/control:
+    - depend on the latest python-apt (for the homepage field)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 11 Feb 2008 10:40:58 +0100
+
+gnome-app-install (0.5.2.1-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/activation.py:
+    - fix crash when running with --xul-extensions=firefox
+      (thanks to Alexander Sack for reporting this issue)
+      LP: #189490
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 07 Feb 2008 14:55:42 +0100
+
+gnome-app-install (0.5.2-1) unstable; urgency=low
+
+  [ Julian Andres Klode ]
+  * New upstream release
+    - Fix crash on package search (Closes: #453850)
+    - Fix README (Closes: #437415)
+  * debian/patches:
+    - 04_reset_default_sort_func.patch: Removed, was wrong
+    - 02_debian_distro.patch: updated
+  * debian/control:
+    - Build-Depend on python-setuptools
+    - Build-Depend on debhelper (>= 5.0.51), for dh_icons
+    - Depend on latest python-apt (>= 0.7.4) (for pkgSourceList.List support)
+    - Add missing Depends on python-gnome2
+    - Remove alternative depends on update-manager (<< 0.59.20)
+    - Upgrade to Policy 3.7.3
+    - Add DM-Upload-Allowed
+  * debian/rules:
+    - use DH_PYCENTRAL=nomove as we need g-a-i code in
+      app-install-data postinst
+    - call dh_icons
+    - Delete usr/share/gnome/help/gnome-app-install/de/figures/, it's empty
+  * debian/manpages: Install manpages
+
+  [ Josselin Mouette ]
+  * 03_desktop.patch: add "Settings" category to the desktop file so
+    that it appears in the correct menu.
+
+ -- Julian Andres Klode <jak@jak-linux.org>  Tue, 05 Feb 2008 13:58:34 +0100
+
+gnome-app-install (0.5.2-0ubuntu1) hardy; urgency=low
+
+  [ Michael Vogt ]
+  * AppInstall/AppInstall.py:
+    - wording fixes (thanks to Matthew Paul Thomas)
+  * remove some dead code
+  * README: fix some outdated information (closes: #437415)
+  * fix gettext init (LP: #106756)
+  * be more robust if the description is empty for some
+    reason
+  * add special handling for the canonical partner repositor
+    in the app view (own text + icon)
+  * add support for https URLs in the app view
+
+  [ Sebastian Heinlein ]
+  * support emblemes without description and remove
+    unclear descriptions
+  * move search entry so that its more clear that it searches
+    only in the current category
+
+  [ Julian Andres Klode ]
+  * man/: Add manpages for all commands
+  * debian/control:
+    - Update to Policy 3.7.3
+    - Remove dependency on software-properties-gtk
+    - Use Vcs-Bzr instead of XS-Vcs-Bzr, fix url
+  * data/gnome-app-install.glade:
+    - Remove the Preferences Button
+  * setup.py:
+    - Install gnome-app-install-helper into /usr/sbin/
+  * AppInstall/CoreMenu.py, AppInstall/update.py:
+    - Use more efficient format to store cache (pickle protocol 2)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 05 Feb 2008 13:48:32 +0100
+
+gnome-app-install (0.5.1-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/Menu.py:
+    - really fix crash in codec search code when gst.caps_from_string()
+      is called (LP: #173118). Thanks to Julian Klode and Albert23
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 21 Dec 2007 14:00:51 +0100
+
+gnome-app-install (0.5.0-0ubuntu1) hardy; urgency=low
+
+  * AppInstall/Menu.py:
+    - fix crash in codec search code when gst.caps_from_string()
+      is called (LP: #173118)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 04 Dec 2007 17:16:38 +0100
+
+gnome-app-install (0.4.13-0ubuntu1) gutsy; urgency=low
+
+  * remove app-install-data-commercial dependency (LP: #149018)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 05 Oct 2007 08:03:31 +0200
+
+gnome-app-install (0.4.12-0ubuntu1) gutsy; urgency=low
+
+  * Revert:
+    "Remove item.applications.set_default_sort_func(None)
+     and use reset_default_sort_func() instead"
+    This breaks sorting the search results
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 04 Oct 2007 12:29:49 +0200
+
+gnome-app-install (0.4.11-0ubuntu1) gutsy; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - be more robust about pkg missing in the data files
+      (LP: #122352)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 24 Sep 2007 13:05:28 +0200
+
+gnome-app-install (0.4.10-0ubuntu1) gutsy; urgency=low
+
+  * update-app-install:
+    - use system python (LP: #137985, #138903)
+  * data/gnome-app-install.schemas.in:
+    - fix typo (thanks to Alexandre Franke)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 11 Sep 2007 19:54:42 +0200
+
+gnome-app-install (0.4.9-0ubuntu1) gutsy; urgency=low
+
+  * debian/rules:
+    - use DH_PYCENTRAL=nomove as we need g-a-i code in
+      app-install-data-{ubuntu,commercial} postinst
+  * debian/control:
+    - sexy-python is now called python-sexy
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 06 Sep 2007 09:15:33 +0200
+
+gnome-app-install (0.4.8-0ubuntu1) gutsy; urgency=low
+
+  * fix detection of missing index files and popup a dialog
+    that offers reloading the sources (LP: #3475)
+  * debian/control:
+    - depend on latest python-apt (for pkgSourceList.List support)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 04 Sep 2007 17:37:12 +0200
+
+gnome-app-install (0.4.7-0ubuntu1) gutsy; urgency=low
+
+  [Michael Vogt]
+  * typo fix (LP: #134794), thanks to Malcom Parsons
+  * AppInstall/distros/Default.py:
+    - add missing get_codename() (LP: #128457)
+
+  [Sebastian Heinlein]
+  * tests/:
+    - added more tests and better test data
+  * AppInstall/update.py, update-app-install:
+    - refactored into module
+  * AppInstall/DialogComplete.py:
+    - wording improvements
+  * AppInstall/AppInstall.py:
+    - improve failure detection
+    - add option to run in test-mode
+  * AppInstall/activation.py:
+    - set column caption depending on activation style
+  * debian/control:
+    - build-depend on python-setuptools
+  * setup.py, setup.cfg:
+    - build with python-setuptools
+  * Make the apply changes button translatable - fixes LP #133570
+
+  [Julian Andres Klode]
+  * Completely remove item.applications.set_default_sort_func(None)
+    and use reset_default_sort_func() instead
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 27 Aug 2007 14:54:12 +0200
+
+gnome-app-install (0.4.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Depend on "software-properties-gtk | update-manager (<< 0.59.20)" instead
+    of only update-manager
+  * 01_fixicons.patch: Removed, merged upstream
+  * 04_reset_default_sort_func.patch: Use reset_default_sort_func() instead of
+    set_default_sort_func(None)
+  * 03_desktop.patch: Remove Applications from Categories
+
+ -- Julian Andres Klode <jak@jak-linux.org>  Mon, 13 Aug 2007 20:10:44 +0200
+
+gnome-app-install (0.4.6-0ubuntu1) gutsy; urgency=low
+
+  [ Sebastian Heinlein ]
+  * Fix no mime type handler error message (Fixes LP #129485)
+  * HIGification and rewording of the above dialog
+  * Show the file name in the window title for the mime type installer
+  * Only show the broaden your search tip if there is a filter choser
+    (fixes LP #130022)
+  * Store the filter names and tooltips in a less technical dictonary in the
+    distribution class
+  * Make the no results message more context sensitive
+  * Default to the search button on the initial codec search dialog
+  * Restore the state of the main window from the last time (fixes LP #48436)
+  * Improve cache update error messages (fixes LP #119198)
+
+  [ Julian Andres Klode ]
+  * Merge with Debian, remaining changes:
+    - No debian/patches
+    - Other list of deps and build-deps
+    - No watch file
+  * AppInstall/CoreMenu.py:
+    - Display icons with filename ending in png,svg or xpm
+
+  [Michael Vogt]
+  * AppInstall/AppInstall.py:
+    - Remove item.applications.set_default_sort_func(None)
+      and use reset_default_sort_func() instead
+  * tests/testCodecSearch.py,
+    tests/testMimeSearch.py:
+    - added test for mime and codec install feature
+  * AppInstall/Menu.py:
+    - fix some if tests that will be false for both "None" and "0"
+      to only fail on None
+    - cosmetic changes
+  * AppInstall/activation.py:
+    - use property for isInstallerOnly instead of function
+    - split CodecSearchActivation.preRun() into interactive and
+      non-interactive code to make it actually testable
+  * gnome-app-install:
+    - fix --selftest
+  * AppInstall/AppInstall.py:
+    - when building the filters, insert them sorted-by-key
+  * AppInstall/Menu.py:
+    - make the filter constants match the gconf schema file
+      (LP: #129669)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 07 Aug 2007 17:45:38 +0200
+
+gnome-app-install (0.4.5-0ubuntu1) gutsy; urgency=low
+
+  [ Sebastian Heinlein ]
+  * Window id has to be stored as an integer - fix LP #129416
+
+  [ Julian Andres Klode ]
+  * Switch to CDBS
+  * check whether to use software-properties-gtk or software-properties
+  * help/C/figures/*: Updated
+  * help/{de,sv}: disabled
+  * po/POTFILES.in: add AppInstall/activation.py
+  * Remove installation part in the docs and the Ubuntu ML
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 31 Jul 2007 16:38:53 +0200
+
+gnome-app-install (0.4.4ubuntu1) gutsy; urgency=low
+
+  * Add an installer only mode for the mime type handler and codec
+    installation
+  * Do not show the confirmation dialog anymore in the installer only mode
+  * Allow to search and choose different filters in the installer mode
+    (only used by the mime type installer)
+  * Rename the add/remove button to apply changes
+  * Improve command line handling
+  * Some code refractioning
+  * Add a XUL extension manager mode
+
+ -- Sebastian Heinlein <glatzor@ubuntu.com>  Mon, 30 Jul 2007 11:59:04 +0200
+
+gnome-app-install (0.4.3) gutsy; urgency=low
+
+  [Sebastian Heinlein]
+  * Switch to python-distutils-extra
+  * fix POTFILES.in (LP: #125046)
+
+  [Michael Vogt]
+  * do not display a application start icon for desktop
+    files without execCmd
+  * fix double del of a ActionGroup (LP: #126117)
+  * AppInstall/Menu.py, AppInstall/CoreMenu.py:
+    - code cleanup
+
+  [Julian Andres Klode]
+  * AppInstall/AppInstall.py:
+    - If close button of the window manager was pressed and there are no
+      pending changes, quit.
+    - If there are pending changes, ask what to do
+  * AppInstall/distros/Debian.py:
+    - Merge changes from Ubuntu.py
+    - Use the new Debian icons
+    - Improve the descriptions
+  * debian/control:
+    - Cleanup build-depends
+  * data/icons/16x16/apps/application-debian-*.png:
+    - Add icons for Debian
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 25 Jul 2007 22:12:19 +0200
+
+gnome-app-install (0.4.2) gutsy; urgency=low
+
+  * Fix in the gstreamer caps support (LP#117157)
+  * added README.codecs
+  * added README.extraction (LP#107097)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 04 Jun 2007 16:12:49 +0200
+
+gnome-app-install (0.4.1) gutsy; urgency=low
+
+  [Sebastian Heinlein]
+  * Improved start up time
+  * Replace the supported Ubuntu applications filter by a
+    supported by Canonical one
+  * Switched from Apply|Cancel|OK to Cancel|Install/Remove buttons
+  * Added a clear icon and different background colouring to the search
+    entry
+  * Allow to specify a human readable name of an independent
+    software provider (X-AppInstall-ISV)
+  * Allow derivates to specify custom messages, components and filters
+  * Rewording of the additional components enabling dialogs
+    "Install" -> "Enable installation of"
+  * Allow to retry a failed installation/removal
+  * Handle errors in the enabling of components in a more sane way
+  * Rewording of the confirm restricted software dialog by
+    introducing the action confirm
+  * First check for the legal status and than add repository
+  * Add a helper script to workarround the missing exit states sent
+    through gksu (only for the component activation)
+  * Avoid flickering of the codec installer at startup
+  * Only write fd.o valid icon attributes to the menu data
+  * Use the KDE/GNOME icons instead of the Kubuntu/Ubuntu icons for
+    the desktop integration emblems
+  * Improve shown emblems (handle support status and freedomness separately)
+
+  [Michael Vogt]
+  * ensure proper i18n in cache menu item loader
+  * no longer depend on the exact app-install-data version
+  * fix setup.py to include the new widgets
+  * fix in the codec extraction (for caps intersection)
+  * default to show supported software (not main)
+  * partly disable debian backend for now (not quite ready)
+  * fix in enable channel code
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 21 May 2007 21:47:55 +0200
+
+gnome-app-install (0.4.0) gutsy; urgency=low
+
+  [Michael Vogt]
+  * updated for gutsy
+  * merged the gstreams caps intersection branch (LP#90737)
+  [Sebastian Heinlein]
+  * split out the data into its own "app-instll-data-ubuntu"
+    source package
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu,  3 May 2007 14:54:59 +0200
+
+gnome-app-install (0.3.31) feisty-proposed; urgency=low
+
+  * gnome-app-install:
+    - fix crash when window parent is none (LP#106026)
+  * po/POTFILES.in:
+    - add missing gnome-app-install main (LP#106756)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu,  3 May 2007 11:56:15 +0200
+
+gnome-app-install (0.3.30) feisty; urgency=low
+
+  * menu-data:
+    - updated to current feisty
+  * AppInstall/Progress.py:
+    - only set transient if we have a window
+  * util/getMenuData.py:
+    - consider usr/share/icons a valid icon dir as well
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 13 Apr 2007 13:36:05 +0200
+
+gnome-app-install (0.3.29) feisty; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - fix xmlescape() (LP#91875)
+    - do not crash if no dbus.service.BusName() fails (LP#92073)
+  * data/gnome-app-install-xfce.desktop:
+    - added so that g-a-i shows up in Applications/System in XFCE
+  * data/gnome-app-install.desktop:
+    - remove "System" from Categories (LP#98580)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  3 Apr 2007 14:02:30 +0200
+
+gnome-app-install (0.3.28) feisty; urgency=low
+
+  * data/gnome-app-install.desktop.in:
+    - added System category (LP#93803)
+  * menu-data/wesnoth.desktop, util/rename.cfg:
+    - install "wesnoth-all" when selecting wesnoth (LP#96301)
+  * gnome-app-install:
+    - when runing in codec-instal mode, ask first if the user
+      wants to search for codecs (#94372)
+    - warn about unsupported codecs but show them all (LP#87748)
+  * AppInstall/AppInstall.py:
+    - proper error checking for conflicting installs (LP#86684)
+  * menu-data:
+    - updated to current feisty
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 28 Mar 2007 16:13:26 +0200
+
+gnome-app-install (0.3.27) feisty; urgency=low
+
+  * menu-data/*.desktop:
+    - updated to latest feisty
+  * AppInstall/CoreMenu.py:
+    - do not use a regexp list for the mime-type, a string list
+      works fine
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 13 Mar 2007 18:13:58 +0100
+
+gnome-app-install (0.3.26) feisty; urgency=low
+
+  * menu-data-additional/gstreamer-bad-multiverse.desktop:
+    - added for better multimedia support (LP#89999)
+  * menu-data-additional/gstreamer-bad.desktop:
+    - description updated
+  * AppInstall/AppInstall.py:
+    - do not crash if no /etc/apt/sources.list if available
+      (LP#90078)
+    - fix updating pkg states when the cache is updated (LP#88246)
+    - protect against odd arguments in tooltip_on_filter (LP#87727)
+  * AppInstall/DialogNewlyInstalled.py:
+    - do not show "Click to launch" label if runing as root
+      (we do not support it there)
+  * packages-whitelist:
+    - added gstreamer010-plugins-bad-multiverse
+  * AppInstall/PackageWorker.py:
+    - deal better deal with addon CDs
+  * gnome-app-install:
+    - do not crash for invalid codec arguemnts but return error code
+      1 and display a error dialog (LP#88154)
+    - change the gnome-codec-search return codes to match:
+      http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-base-libs/html/gst-plugins-base-libs-gstbaseutilsinstallplugins.html
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  7 Mar 2007 09:34:54 +0100
+
+gnome-app-install (0.3.25) feisty; urgency=low
+
+  * install a additional gnome-codec-install so that the new
+    gst can call that (LP#87748)
+  * ensure that the default view is only supported ubuntu applications
+  * do not show users menu dirs (LP#87733)
+  * menu-data/popcon updated to current feisty
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 26 Feb 2007 09:53:48 +0100
+
+gnome-app-install (0.3.24) feisty; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - only run _ensureInArchive() for installs (LP#86593)
+  * data/gnome-app-install.desktop.in:
+    - added OnlyShowIn=GNOME;XFCE; (LP#78977)
+  * debian/control:
+    - only support python >= 2.4 (LP#78030)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 22 Feb 2007 16:46:08 +0100
+
+gnome-app-install (0.3.23) feisty; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - make the search timeout bigger (LP#82509)
+    - fix reference to "advanced mode" (LP#70283)
+  * data/gnome-app-install.schemas.in:
+    - add "search-timeout" gconf key
+  * data/gnome-app-install.glade:
+    - disable interactive search in categories (LP#86472)
+  * menu-data-additional/*.py:
+    - added popcon data
+  * AppInstall/Menu.py:
+    - fix init for popcon_max (LP#86530)
+  * AppInstall/Cache.py:
+    - move the assert for a clean cache into clean()
+    - print broken/removed packages after clean()
+  * menu-data/ia32-sun-java6-java.desktop:
+    - fix arch-specific information
+  * util/getMenuData.py:
+    - make sure to write arch-specific information to all desktopfiles
+      from a single package (LP#81371)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 20 Feb 2007 23:19:25 +0100
+
+gnome-app-install (0.3.22) feisty; urgency=low
+
+  * report error on startup with a broken cache
+  * fix memory leak (LP#85306)
+  * speedups on package list reload and after install/remove
+  * optimized the loading for codec and mime search
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 20 Feb 2007 14:46:46 +0100
+
+gnome-app-install (0.3.21) feisty; urgency=low
+
+  * fix typo (LP#85037)
+  * added swedish manual translation (BIG thanks to Daniel Nylander)
+    (LP#85030)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 14 Feb 2007 10:41:02 +0100
+
+gnome-app-install (0.3.20) feisty; urgency=low
+
+  * menu-data/totem.desktop:
+    - fix incorrect replace information (LP#84690)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 13 Feb 2007 17:24:49 +0100
+
+gnome-app-install (0.3.19) feisty; urgency=low
+
+  * updated menu-data/popcon-data for herd4
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 13 Feb 2007 11:24:32 +0100
+
+gnome-app-install (0.3.18) feisty; urgency=low
+
+  * include full bzr changelog in package (for seb128)
+  * relalize window_main before using it as transient parent (lp: #82926)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  6 Feb 2007 18:22:47 +0100
+
+gnome-app-install (0.3.17) feisty; urgency=low
+
+  * added --addon-cd= switch to support addon CDs
+    (EdubuntuOnTwoCDs spec)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  6 Feb 2007 15:06:03 +0100
+
+gnome-app-install (0.3.16) feisty; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - work with the latest python-apt
+  * menu-data/
+    - updated the popcon data
+    - fixed ardour-gtk menu-data
+  * menu-data-additional/mozilla-acroread.desktop:
+    - removed, no longer available in the archive (lp: #83085)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  6 Feb 2007 11:55:13 +0100
+
+gnome-app-install (0.3.15) feisty; urgency=low
+
+  * call software-properties-gtk when preferences is clicked
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  5 Feb 2007 12:10:29 +0100
+
+gnome-app-install (0.3.14) feisty; urgency=low
+
+  * remove 'firefox' dependency (we do not use gtkmozembed anymore)
+  * change update-manager to software-properties-gtk dependency
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  5 Feb 2007 11:12:24 +0100
+
+gnome-app-install (0.3.13) feisty; urgency=low
+
+  * added warning when a codec is installed
+  * fix unbound variable problem (lp: #82713)
+  * update-app-install:
+    - do not crash when import AppInstall.CoreMenu fails (lp: #80589)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu,  1 Feb 2007 11:08:39 +0100
+
+gnome-app-install (0.3.12) feisty; urgency=low
+
+  * fixed missing X-AppInstall-Codec information for
+    gstreamer-bad.desktop (lp: #82239)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 31 Jan 2007 10:00:01 +0100
+
+gnome-app-install (0.3.11) feisty; urgency=low
+
+  * fix various UI glitches
+  * fix transient problem (lp: #82247)
+  * various bugfixes for the EasyCodecInstall activation mode
+    (thanks to seb128 for his testing/feedback)
+  * give a warning message for universe/multiverse applications
+    when they are used the first time (AlwaysEnableUniverseMultiverseSpec)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 30 Jan 2007 11:53:48 +0100
+
+gnome-app-install (0.3.10) feisty; urgency=low
+
+  * updated the app-install-data to the latest feisty for HERD-3
+  * menu-data/*.desktop
+    - show only one hplip icon (instead of four)
+    - show only a single kdevelop
+  * AppInstall/AppInstall.py:
+    - use a logarithmic scale for the popularity
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 29 Jan 2007 15:53:58 +0100
+
+gnome-app-install (0.3.9) feisty; urgency=low
+
+  * fix setupDBus() to work with the latest python-dbus changes
+    (lp: 81727)
+  * updated the popcon-data, use the "by_vote" information for
+    the ranking instead of the "by_inst" data (lp: #82051)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 29 Jan 2007 13:33:48 +0100
+
+gnome-app-install (0.3.8) feisty; urgency=low
+
+  * update-app-install.py: do use #!/usr/bin/python
+    (lp: #67067)
+  * whitelist gstreamer0.10-ffmpeg, gstreamer0.10-plugins-ugly
+    gstreamer0.10-plugins-bad to make EasyCodecInstallation
+    useful
+  * re-apply the last search on apply
+  * protect against package not in the cache (lp: #81364)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 25 Jan 2007 09:27:17 +0100
+
+gnome-app-install (0.3.7) feisty; urgency=low
+
+  * do not crash if the cache can't be read (lp: #79619)
+    (Thanks to Jonah)
+  * bugfixes in the codec install branch (should be working now)
+  * use /etc/gnome-app-install/package-whitelist for the mime and
+    codec whitelist
+  * added gstreamer0.10-plugins-bad
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 22 Jan 2007 09:52:55 +0100
+
+gnome-app-install (0.3.6) feisty; urgency=low
+
+  * updated to the current python policy
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 17 Jan 2007 10:13:23 +0100
+
+gnome-app-install (0.3.5) feisty; urgency=low
+
+  [Ian Jackson]
+  * Generalise gnome-app-install mime search to also support codec search
+    according to GnomeAppInstallCodecs:
+    - New command-line invocation mode.  The support for this which
+      replaces the mime_search object which threads its way through
+      AppInstall and Menu with an richer ActivationStyle object.
+    - Set the ActivationStyle earlier during Menu creation to make the
+      whole thing a little less ugly.
+    - Read the X-AppInstall-Codecs entries from desktop files into the
+      item objects.
+    - Support ordinary searching on codecs even if not invoked for codec
+      search, just as for mime type search.
+    - Generalise update-app-install to make gai-codec-map.gdbm as well as
+      gai-mime-map.gdbm.
+    - getMenuData.py generates the X-AppInstall-Codecs entries in the
+      output desktop files, from the .supported files found in scanned
+      .debs.  These entries are included both in getMenuData.py's own
+      generated desktop files, and edited into the pre-supplied ones in
+      menu-data-additional.
+  * Support --transient-for=... option (as specified in
+    GnomeAppInstallCodecs).  Command-line parsing is shoddy,
+    unfortunately and --transient-for has to come first.
+  [Michael Vogt]
+  * menu-data/ updated to latest feisty
+  * menu-data-additional/ updated with the codec information
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 17 Jan 2007 11:58:31 +0100
+
+gnome-app-install (0.3.5) feisty; urgency=low
+
+  * menu-data-additional/:
+    - 7zip.desktop: added 7zip
+    - openclipart.desktop: added openclipart
+  * AppInstall/CoreMenu.py:
+    - fix bug in duplicats detection that prevents clamtk from showing
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  8 Jan 2007 18:09:51 +0100
+
+gnome-app-install (0.3.4) feisty; urgency=low
+
+  * show applications from System/Settings in the "Others"
+    category to support applications like "SBackup", "Bum",
+    "gnome-arts" (CommonCustomizations)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri,  5 Jan 2007 12:09:21 +0100
+
+gnome-app-install (0.3.3) feisty; urgency=low
+
+  * fixed FTBFS
+  * updated to latest python-policy
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  3 Jan 2007 16:10:13 +0100
+
+gnome-app-install (0.3.2) feisty; urgency=low
+
+  * AppInstall/AppInstall.py, data/gnome-app-install.glade:
+    - add preferences button (CommonCustomizations)
+  * menu-data/kipnia.desktop:
+    - removed, invalid utf-8 in desktop file
+  * menu-data/cream.desktop:
+    - removed, invalid mime-type line
+  * AppInstall/Cache.py:
+    - make use of the auto-install information when removing
+      applications (lp: #77095, #69885)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  3 Jan 2007 11:56:20 +0100
+
+gnome-app-install (0.3.1) feisty; urgency=low
+
+  * menu-data-additional/rar.desktop,
+    menu-data-additional/ace.desktop:
+    - added desktop files for ACE and RAR (CommonCustomizations)
+  * AppInstall/Menu.py:
+    - pimp ubuntu-restricted-extras search results
+  * menu-data-additional/totem-xine.desktop:
+    - added totem-xine for DVD support (CommonCustomizations)
+  * AppInstall/AppInstall.py:
+    - support new "Replaces" keyword to support apps like
+      totem-gstream/totem-xine, abiword-gnome/abiword
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 15 Dec 2006 14:27:45 +0100
+
+gnome-app-install (0.3.0) feisty; urgency=low
+
+  * menu-data-additional/ubuntu-restricted-extras.desktop:
+    - menu file for ubuntu-restricted-extras (part of CommonCustomizations)
+  * menu-data/*:
+    - updated for feisty
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 11 Dec 2006 19:33:07 +0100
+
+gnome-app-install (0.2.22) edgy-proposed; urgency=low
+
+  * menu-data-additional/mozilla-acroread.desktop:
+    - fixed the category to make it actually visible
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  7 Nov 2006 15:31:16 -0800
+
+gnome-app-install (0.2.21) edgy; urgency=low
+
+  * fixed vanished intltool-update -p
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 16 Oct 2006 17:19:38 +0200
+
+gnome-app-install (0.2.20) edgy; urgency=low
+
+  * debian/control, dependencies changed:
+    - added python-gtkhtml2, python-gconf dependency,
+    - removed python-gnome2, python-gnome2-extras (lp: #65232)
+  * menu-data/mail-notification.desktop:
+    - removed, buggy desktop file
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 11 Oct 2006 14:05:44 +0200
+
+gnome-app-install (0.2.19) edgy; urgency=low
+
+  * menu-data updated to current edgy, fixes error in
+    Openoffice.org menu-data (lp: #64677)
+  * better support checking for installed software (lp: #64964)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  9 Oct 2006 18:16:12 +0200
+
+gnome-app-install (0.2.18) edgy; urgency=low
+
+  * typos (lp: #63487)
+  * update the menu-data files/popcon data to current edgy
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu,  5 Oct 2006 16:56:59 +0200
+
+gnome-app-install (0.2.17) edgy; urgency=low
+
+  * fix missing file in POTFILES.in
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  2 Oct 2006 14:57:17 +0200
+
+gnome-app-install (0.2.16) edgy; urgency=low
+
+  * data/gnome-app-install.glade:
+    - updated the text to fix "serve grammar failure" (lp: #62359)
+  * wording/typo fixes
+  * split out the gtk bits when run update-app-install (lp: #59403)
+    (thanks to Sebastian Heinlein)
+  * drop python-gtk2 pre-depends
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Sat, 30 Sep 2006 00:39:30 +0200
+
+gnome-app-install (0.2.15) edgy; urgency=low
+
+  * hide python-apt future warnings
+  * update available information on refresh()
+  * changed the "applications-proprietary" icon
+  * menu-data/*:
+    - updated to current edgy, updated popcon data as well
+  * menu-data-additional/:
+    - nvidia-driver.desktop: pseudo package for the nvidia driver
+    - nvidia-driver-legacy.desktop:pseudo package for the nvidia legacy driver
+    - fglrx-driver.desktop: pseudo package for the ati driver
+    - mscorefonts.desktop: improved description
+    - ndisgtk.desktop: added for easy wifi setup
+    - nact.desktop: nautilus action
+    - sun-java5-plugin.desktop: sun java5 browser plugin
+    - mozilla-mplayer.desktop: added mplayer browser plugin
+    - mozilla-acroread.desktop: added acroread browser plugin
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 25 Sep 2006 18:40:52 +0200
+
+gnome-app-install (0.2.14) edgy; urgency=low
+
+  * pre-depend on python-gobject as well (lp: #61225)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 19 Sep 2006 10:28:44 +0200
+
+gnome-app-install (0.2.13) edgy; urgency=low
+
+  * debian/control:
+    - pre-depend on current python-gtk to fix upgrade problem
+      (lp: #59403)
+  * update-app-install:
+    - unset DISPLAY (lp: #59403)
+  * menu-data/mail-notification.desktop:
+    - fixed incorrect desktop file (lp: #59758)
+  * menu-data/mail-notification-properties.desktop:
+    - removed and blacklisted
+  * menu-data-additonal/j2re1.4-mozilla-plugin.desktop:
+    - added java-plugin desktop file (lp: #61047)
+  * AppInstall/common.py:
+    - use "applications-other" icon when icon can not be found
+      (lp: #59478)
+  * AppInstall/AppInstall.py:
+    - fix typos, better wording (lp: 59477)
+    - make sure the welcome text is no longer selected (lp: #58891)
+  * blacklist gnome-applets (lp: #59418)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 18 Sep 2006 12:42:50 +0200
+
+gnome-app-install (0.2.12) edgy; urgency=low
+
+  * fix mimetype cache creation
+  * fix schema install
+  * updated desktop files to current edgy
+  * updated popcon data
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri,  8 Sep 2006 02:58:45 +0200
+
+gnome-app-install (0.2.11) edgy; urgency=low
+
+  * fix the python-gdbm dependency again lp: #57528)
+  * moved the desktop-files/mime-types cache generation
+    to the postinst (thanks to Sebastian Heinlein)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  4 Sep 2006 16:42:55 +0200
+
+gnome-app-install (0.2.10) edgy; urgency=low
+
+  * fix incorrect display of installation status
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 28 Aug 2006 15:32:00 +0200
+
+gnome-app-install (0.2.9) edgy; urgency=low
+
+  * fix FTBFS because of missing b-d
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 28 Aug 2006 10:01:12 +0200
+
+gnome-app-install (0.2.8) edgy; urgency=low
+
+  * debian/control: python2.4-dbus -> python-dbus
+  * cache the desktop file information to make startup faster
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 25 Aug 2006 12:27:19 +0200
+
+gnome-app-install (0.2.7) edgy; urgency=low
+
+  * SuggestedPackagesForFiletypesSpec: fix missing Depends on python-gdbm
+    (Malone 57528.)
+
+ -- Ian Jackson <iwj@ubuntu.com>  Thu, 24 Aug 2006 09:24:05 +0100
+
+gnome-app-install (0.2.6) edgy; urgency=low
+
+  * SuggestedPackagesForFiletypesSpec implementation
+    - gnome-app-install checks that no other options or arguments are given
+    - gnome-app-install mime mode: looks in gdbm db
+    - gnome-app-install mime mode: checks component and package whitelists
+    - gnome-app-install mime mode: encodes lookup failures in exit status
+    - app-install-data contains gdbm db for mime->program mapping
+  * Fix for Malone #57323 (stack backtrace when you try to apply).
+
+ -- Ian Jackson <iwj@ubuntu.com>  Wed, 23 Aug 2006 16:12:54 +0100
+
+gnome-app-install (0.2.5) edgy; urgency=low
+
+  * updated the menu-data to current edgy, fixed a icon
+    extraction bug along the way
+  * added popularity column (sortable)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 17 Aug 2006 10:25:46 +0200
+
+gnome-app-install (0.2.4) edgy; urgency=low
+
+  * Fix #52612: use the applications-office icon instead of the
+    skype one for gnome-office
+  * refreshed the desktop files with a new icon extract code
+  * added "Show all supported" view
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri,  4 Aug 2006 20:05:21 +0200
+
+gnome-app-install (0.2.3) edgy; urgency=low
+
+  * various bug/wording fixes
+  * fix aptsources.py import
+  * updated desktop+popcon data
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  2 Aug 2006 13:05:43 +0200
+
+gnome-app-install (0.2.2) edgy; urgency=low
+
+  The 'everybody should hug Sebastian Heinlein' release:
+  * use custom GtkTextView instead of GtkHtml to display the
+    formated descriptions. This fixes various accessability
+    problems
+  * better desktop environment detection
+  * use emblems for desktop environment and support status
+  * wording/gui fixes
+  * bugfixes
+  * improve the handling of packages that are only available
+    on certain architectures
+  * refreshed the desktop files to the current edgy
+  (many thanks to Sebastian Heinlein who did a lot of the above)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 24 Jul 2006 19:37:34 +0200
+
+gnome-app-install (0.2.1) edgy; urgency=low
+
+  * fix the gnome-app-install.glade file
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  4 Jul 2006 13:04:33 +0200
+
+gnome-app-install (0.2) edgy; urgency=low
+
+  * search is weighted now depending on where the searched item
+    was found
+  * make the display/filtering more flexible
+    (thanks to Sebastian Heinlein)
+  * search will also search in the mime information
+  * search is ranked by popcon data
+  * added missing "gksu" dependency
+  * added --mime-type=$mime-type commandline argument
+  * added popcon data (by_inst) to the menu files
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 28 Jun 2006 18:50:07 +0200
+
+gnome-app-install (0.1.33) dapper-updates; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - fix a bug in the addChannel() code that can lead to not
+      adding the gpg key
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu,  1 Jun 2006 16:44:35 +0200
+
+gnome-app-install (0.1.32) dapper; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - exit when ok is clicked but no packages where selected
+    - fix a bug that caused universe to be not enabled (ubuntu: #46723)
+      and make sure to enable updates as well
+  * menu-data/*:
+    - updated to the latest dapper
+  * menu-data-additonal/vmware-player.desktop:
+    - added
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 22 May 2006 09:33:43 +0200
+
+gnome-app-install (0.1.31) dapper; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - be more robust about mistyped passwords (ubuntu: #40591)
+  * menu-data-additonal/wine.desktop:
+    - added a valid desktop file
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 18 May 2006 23:20:50 +0200
+
+gnome-app-install (0.1.30) dapper; urgency=low
+
+  * AppInstall/AppInstall.py:
+    - fix broken "Advanced" button (Ubuntu: #45043)
+    - fix in the "add-channel" code
+  * AppInstall/DialogProprietary.py:
+    - browser window expands with the dialog window
+  * menu-data/*:
+    - updated to the current dapper version (including java5)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 17 May 2006 17:16:45 +0200
+
+gnome-app-install (0.1.29) dapper; urgency=low
+
+  * menu-data/*:
+    - updated to latest dapper archive
+  * data/gnome-app-install.glade:
+    - "show proprietary applications" -> "show commercial applications"
+      (as suggested by Malcom)
+  * AppInstall/Menu.py:
+    - "Reading desktop files" -> "Reading list of available applications"
+      (thanks to Matt for this suggestion)
+  * debian/control:
+    - depend on app-install-data-commercial (that contains the commercial
+      desktop files)
+  * AppInstall/AppInstall.py, DialogProprietary.py:
+    - removed some debug code
+    - fix a problem with 3rd party apps without channels
+  * menu-data-additonal/gstreamer-ugly.desktop:
+    - point to "gstreamer0.10-plugins-ugly" (ubuntu: #40046)
+  * use the "Education" section (to be in sync with the gnome menu
+    again) (ubuntu: #37921)
+  * data/gnome-app-install.glade:
+    - fix not translatable button (ubuntu: #44417)
+  * help/C/gnome-app-install.xml:
+    - various fixes to the manual (ubuntu: #44331)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 15 May 2006 19:31:18 +0200
+
+gnome-app-install (0.1.28) dapper; urgency=low
+
+  * menu-data/*:
+    - updated to latest dapper archive
+  * menu-data-additional/nm-applet.desktop:
+    - fixed category, shows up in 'Internet' now
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  9 May 2006 23:47:23 +0200
+
+gnome-app-install (0.1.27) dapper; urgency=low
+
+  * catch more errors, some wording fixes (thanks to Sebastian Heinlein)
+  * AppInstall/AppInstall.py:
+    - fix bug when adding a component
+  * help/C/gnome-app-install.xml:
+    - fix some incorrect xml (thanks to Matthew East, closes: 40061)
+  * menu-data/*:
+    - updated to latest dapper archive
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 21 Apr 2006 09:52:31 +0200
+
+gnome-app-install (0.1.26) dapper; urgency=low
+
+  * debian/control:
+    - python-dbus -> python2.4-dbus
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Sat,  8 Apr 2006 01:06:02 +0200
+
+gnome-app-install (0.1.25) dapper; urgency=low
+
+  * give better feedback when the search had no results (ubuntu: #38112)
+  * only allow a single gnome-app-install instance in a session (ubuntu: #38424)  * fix a bug in the duplication detection when it was too agressive
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri,  7 Apr 2006 22:44:16 +0200
+
+gnome-app-install (0.1.24) dapper; urgency=low
+
+  * debian/rules: fix a bug in the clean target
+  * help/C: updated documentation (thanks to the docteam!)
+  * AppInstall/AppInstall.py: added support for CTRL-q (ubuntu: #3751)
+  * menu-data/*.desktop:
+    - updated to the latest dapper
+  * improved the runtime duplication detection
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  5 Apr 2006 14:37:14 +0200
+
+gnome-app-install (0.1.23) dapper; urgency=low
+
+  * menu-data/*.desktop:
+    - updated to current dapper
+    - added libxine-extracodecs.desktop (thanks to Jonathan Riddell)
+    - fix a bug in the lyx file
+  * fix a problem with gtkhtml2 and the high-contrast theme (ubuntu #36686)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 28 Mar 2006 15:35:55 +0200
+
+gnome-app-install (0.1.22) dapper; urgency=low
+
+  * menu-data/*.desktop:
+    - updated to current dapper, fixed a bug in the epoch handling so
+      this build is much more complete than the previous ones (#35183)
+  * blacklisted some duplicated/bogus desktop files (#33922)
+  * make sure that a security repo is added if component is added (#34613)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 24 Mar 2006 13:15:51 +0100
+
+gnome-app-install (0.1.21) dapper; urgency=low
+
+  * menu-data/*.desktop: updated to current dapper
+  * typo fix (ubuntu: #35655)
+  * added pseudo desktop packages for flash and msttfonts
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 22 Mar 2006 18:49:09 +0100
+
+gnome-app-install (0.1.20) dapper; urgency=low
+
+  * fixes various strings (thanks to Jane Silber for the review)
+    for real this time, thanks for Sebastian Heinlein for noticing
+    and sending the patch
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 14 Mar 2006 16:47:48 +0000
+
+gnome-app-install (0.1.19) dapper; urgency=low
+
+  * fixes various strings (thanks to Jane Silber for the review)
+  * make sure that {universe,multiverse}-security is also added when
+    {universe, multiverse} are added
+  * remove the "add" button from the description, this is done via the
+    toggle button now again
+  * make the progress a single 0-100 run (instead of multiple runs)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 13 Mar 2006 18:26:50 +0000
+
+gnome-app-install (0.1.18) dapper; urgency=low
+
+  * menu-data/gnome-office.desktop: added gnome-desktop
+  * menu-data/gstreamer-ugly.desktop: added gstreamer plugin for the "ugly"
+    codecs
+  * string cleanups
+  * disabled the skype channel because it dosn't work with current dapper
+    (dependency problems)
+  * the pulse is gone and the "normal" progress is back
+  * clicking on a toggle button of a not active channels ask if it should
+    be add
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  6 Mar 2006 12:55:30 +0000
+
+gnome-app-install (0.1.17) dapper; urgency=low
+
+  * po/fi.po: updated Finnish translation (thanks to Timo Jyrinki)
+  * fix problem with the 3rd party channel files ending up in the wrong dir
+  * ask for package list update if the cache is outdated
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 28 Feb 2006 14:41:34 +0100
+
+gnome-app-install (0.1.16) dapper; urgency=low
+
+  * AppInstall/Menu.py: use GenericName is Comment dosn't give anything
+                        useful (kde requires this)
+  * AppInstall/AppInstall.py: don't crash if the icon-theme dosn't have
+                              gnome icons (kde again). Thanks to Sebastian
+	                      Heinlein for the diff)
+  * help/*: updated to latest svn version
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 24 Feb 2006 14:54:54 +0100
+
+gnome-app-install (0.1.15) dapper; urgency=low
+
+  * help/*: added the help from the docteam (Thanks guys!)
+  * debian/control: changed maintainer field
+  * menu-data/*: updated to latest dapper data
+  * support desktop files with no Exec line and assume they are
+    "pseudo" files that install e.g. gsteamer plugins or servers
+  * bugfixes
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 23 Feb 2006 10:16:52 +0100
+
+gnome-app-install (0.1.14) dapper; urgency=low
+
+  * po/pt_BR.po: updated translation (thanks to
+    Carlos Eduardo Pedroza Santiviago)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 20 Feb 2006 15:55:46 +0100
+
+gnome-app-install (0.1.13) dapper; urgency=low
+
+  * fix in the desktop file parsing code (thanks to zyga)
+  * typo fixes (thanks to Sebastian Heinlein)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 16 Feb 2006 23:10:45 +0100
+
+gnome-app-install (0.1.12) dapper; urgency=low
+
+  The 'Thanks to Sebastian Heinlein' release
+  * "All" category has a icon now
+  * "Add repository" button added to document view
+  * bugfixes
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 16 Feb 2006 20:01:31 +0100
+
+gnome-app-install (0.1.11) dapper; urgency=low
+
+  * split the desktop data out into it's own "app-install-data" package
+    that is shared between gnome-app-install and apdept-installer
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 15 Feb 2006 13:02:05 +0100
+
+gnome-app-install (0.1.10) dapper; urgency=low
+
+  * fix ok button poping up empty dialog
+  * don't die if gettext.dgettext() throws a exception (it seems to like
+    doing this)
+  * add "All" category
+  * imporved searching
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 13 Feb 2006 11:26:29 +0100
+
+gnome-app-install (0.1.9) dapper; urgency=low
+
+  * fix problem with adding missing components in non-root mode
+  * fix url detection
+  * fix a problem with some applications not being displayed (e.g. inkscape)
+  * fix incorrectly detected urls in the descripton
+  * don't explode on enter in search field
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 10 Feb 2006 21:38:08 +0100
+
+gnome-app-install (0.1.8) dapper; urgency=low
+
+  * fix anoying flickering in dialogs
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  8 Feb 2006 22:55:46 +0100
+
+gnome-app-install (0.1.7) dapper; urgency=low
+
+  * non-root mode added, just run synaptic as backend with gksu
+  * make links clickable in the package description
+  * make it possible to launch a newly installed application
+  * remember "show unsupported", "show proprietary" settings
+  * improved the description displaying
+  * bufixes
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  8 Feb 2006 21:11:06 +0100
+
+gnome-app-install (0.1.6) dapper; urgency=low
+
+  * data/gnome-app-install.desktop.in: added "..." (ubuntu: #22475)
+  * improved the UI
+  * menu-data/*.desktop: updated to current dapper
+  * improved formating of the html page
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 20 Jan 2006 10:39:07 +0100
+
+gnome-app-install (0.1.5) dapper; urgency=low
+
+  * show version information in the info page (ubuntu: #21530)
+  * workaround a pygtk crash in the TreeModelFilter (ubuntu: #21527)
+  * fix the menupath display in the dialog that shows the newly installed
+    applications (ubuntu: #21443)
+  * be more robust about (half)broken desktop files (ubuntu: #21442)
+  * support per-channel repository keys as well
+  * support displaying a license agreement
+  * give a hint about the used desktop environment in the info page
+    (ubuntu: #21531)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 10 Jan 2006 15:26:31 +0100
+
+gnome-app-install (0.1.4) dapper; urgency=low
+
+  * show version in about dialog (ubuntu #21539)
+  * show progress for the menu building
+  * fix a icon-display problem in the gtkhtml2 browser view
+  * bugfixes/cleanups
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 28 Dec 2005 15:32:25 +0100
+
+gnome-app-install (0.1.3) dapper; urgency=low
+
+  * various bufixes
+  * updated desktop/icon files to current dapper
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 21 Dec 2005 15:55:24 +0100
+
+gnome-app-install (0.1.2) dapper; urgency=low
+
+  * use window default icon again (ubuntu: #21252)
+  * typo fix (ubuntu: #21251)
+  * have checkboxes for proprietary and unsupported software to
+    make filtering easy
+  * search performance increased/dynmaic filtering on unsupported
+    proprietary possible here as well now
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 19 Dec 2005 12:08:04 +0100
+
+gnome-app-install (0.1.1) dapper; urgency=low
+
+  * added missing build-dep to python-dev
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Sat, 17 Dec 2005 12:11:00 +0100
+
+gnome-app-install (0.1) dapper; urgency=low
+
+  * new upstream release:
+    - massive code cleanups
+    - use SimpleGladeApp now
+    - split the code into useful modules
+    - use sources.list.d directory now
+    - use the mechanism from gnome-software properties to
+      read/manipulate the sources.list
+    - make the used browser (pymozemebed/gtkhtml2/raw) plugable
+    - use gtkhtml2 as html widget until firefox is fixed
+  * use gksu in desktop file and added X-KDE-SubstituteUID=true
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 16 Dec 2005 13:57:14 +0100
+
+gnome-app-install (0+20051005) breezy; urgency=low
+
+  * menu-data:
+    - gksu.desktop: removed, title is 'open root terminal' and that
+                    was removed from the menu too
+    - datakiosk.desktop: removed double entry (only development now)
+  * debian/control:
+    - depend on firefox|mozilla-firefox
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  5 Oct 2005 11:35:29 +0200
+
+gnome-app-install (0+20051004) breezy; urgency=low
+
+  * data/gnome-app-install.desktop.in:
+    - add various desktop file translations (ubuntu #16943)
+  * menu-data/gnome-terminal.desktop:
+    - updated category to be in sync with ubuntu (ubuntu #16832)
+  * menu-data/aegis-virus-scanner.desktop:
+    - updated name (ubuntu #15703)
+  * debian/control:
+    - updated dependencies (ubuntu #16456)
+  * src/gnome-app-install.in:
+    - use explicit python path (ubuntu #16547)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  4 Oct 2005 10:17:42 +0200
+
+gnome-app-install (0+20050927) breezy; urgency=low
+
+  * fix a incorrect variable name (ubuntu: #16453)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 27 Sep 2005 17:21:05 +0200
+
+gnome-app-install (0+20050926) breezy; urgency=low
+
+  * added locking support
+  * added firefox|mozilla-browser to dependencies (for gtkmozembed)
+    (ubuntu #16306)
+  * typo fix: 'Can not remove' -> 'Cannot remove' (ubuntu #16295)
+  * fix a bug when multiple searches are executed (ubuntu #16346)
+  * menu-data/gnome-screensaver-preferences.desktop
+              kghostview.desktop, qdvdauthor.desktop:
+    - fix components
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 26 Sep 2005 22:55:47 +0200
+
+gnome-app-install (0+20050921) breezy; urgency=low
+
+  * added to menu-data/:
+    - lbreakout2 (ubuntu #15703, thanks to Wouter Stomp)
+  * debian/control:
+    - added dependency to gnome-icon-theme (ubuntu: #15918)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 21 Sep 2005 14:34:47 +0200
+
+gnome-app-install (0+20050919) breezy; urgency=low
+
+  * desktop file changes in menu-data/:
+    - remove babytrans.desktop (uninstallable and unfixable)
+    - remove smeg-kde.desktop (duplicate of smeg) (ubuntu #15704)
+  * Fixed/added:
+    banshee.desktop, cream.desktop, d4x.desktop, evince.desktop,
+    firestarter.desktop, gnome-art.desktop, gnome-breakout.desktop,
+    gnome-power-preferences.desktop, kmerlin.desktop, revelation.desktop,
+    wifi-radar.desktop (ubuntu #15703)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 19 Sep 2005 17:44:41 +0200
+
+gnome-app-install (0+20050914) breezy; urgency=low
+
+  * data/gnome-app-install.glade:
+    - typo:"initalizing" -> "initializing"
+  * desktop file changes in menu-data/:
+    Changed (because X-AppInstall-Package was wrong):
+    - GnomeICU.desktop: pkg is "gnomeicu"
+    - MySqlAdministrator: pkg is "mysql-admin" (ubuntu #15304)
+    - MySqlQueryBrowser: pkg is "mysql-query-browser" (ubuntu #15304)
+    - anjuta.desktop: pkg is "anjuta"
+    - conglomerate.desktop: pkg is "conglomerate"
+    - galeon.desktop: pkg is "galeon"
+    - gedit.desktop: pkg is "gedit"
+    - startdict.desktop: pkg is "stardict"
+    Corrected section:
+    - totem, kiten, kbemusedsrv, kbluetoothd, kbtobexclient, kbtserialchat,
+      kcm_btpaired, kcm_kbluetoothd
+  * src/verifyDesktopFile.py:
+    - catch "-common" packages as well
+
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 13 Sep 2005 10:46:49 +0200
+
+gnome-app-install (0+20050912) breezy; urgency=low
+
+  * desktop file changes in menu-data/:
+    Changed (because X-AppInstall-Package was wrong):
+    - atomix.desktop: changed pkg to "atomix" (ubuntu #15207)
+    - chinepaint.desktop: changed pkg to "chinepaint"
+    - enigma.desktop: changed pkg to "enigma"
+    - gcompris.desktop: changed pkg to "gcompris"
+    - gcompris-edit.desktop: changed pkg to "gcompris"
+    - gimp2.2.desktop: changed pkg to "gimp"
+    - glabels.desktop: changed pkg to "glabel"
+    - glade-2.desktop: changed pkg to "glade-gnome-2"
+    - gnome-terminal.desktop: changed pkg to "gnome-terminal"
+    - gnomecc.desktop: changed pkg to "gnome-control-center"
+    - eclipse.desktop: change pkg to "eclipse-platform"
+    - mplayer.desktop: changed pkg to "mplayer"
+    - kdevelop3.desktop: changed pkg to "kdevelop3"
+    - kdevdesigner.desktop: changed pkg to "kdevelop3"
+    - kdevassisant.desktop: changed pkg to "kdevelop3"
+    - kdevelop_c_cpp.desktop: changed pkg to "kdevelop3"
+    - kdevelop_kde_cpp.desktop: changed pkg to "kdevelop3"
+    - kdevelop_ruby.desktop: changed pkg to "kdevelop3"
+    - kdevelop_scripting.desktop: changed pkg to "kdevelop3"
+    - totem.dekstop: changed pkg to "totem"
+    - xchat.desktop: changed pkg to "xchat"
+    Changed (other reasons):
+    - gnome-phone-manager.desktop: fixed icon location
+    Removed (because in gnome-control-center and no apps):
+    - default-application.desktop, display-properties.desktop
+      at-properties.desktop, font-properties.desktop,
+      gnome-about-me.desktop, gnome-font-viewer.desktop
+      gnome-network-preferences, gnome-settings-mouse.desktop
+      gnome-settings-sound.desktop, gnome-ui-properties.desktop
+      gtk-theme-selector.desktop, themus-theme-applie.desktop
+      keybindings.desktop, window-properties.desktop
+    Removed (other reasons):
+    - acroread.desktop removed, we have "AdobeReader.desktop" already
+    - kresources.desktop: part of kdelibs-data
+    - lilo.desktop: not a application
+    - ubuntu-about.desktop: part of the gnome-panel
+    - kdevelop_c_cpp.desktop, kdevelop_ruby.desktop
+      kdevelop_kde_cpp.desktop, kdevelop_scripting.desktop: because
+      they are all provided by kdevelop3.desktop already
+  * src/AppInstall.py:
+    - detect packages that are not availabe even when the needed
+      component was added (e.g. helixplayer on amd64)
+  * src/gnome-app-install.py.in:
+    - fail if not started as root (ubuntu #15139)
+  * src/verifyDesktopFile.py:
+    - be smarter about common problems (e.g. -data packages)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 12 Sep 2005 11:38:53 +0200
+
+gnome-app-install (0+20050909) breezy; urgency=low
+
+  * Changed the title and desktop file to "Add applications"
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri,  9 Sep 2005 14:20:02 +0200
+
+gnome-app-install (0+20050908) breezy; urgency=low
+
+  * maintain selection when changing repositories (ubuntu #14140)
+  * added python-gnome2 dependency (ubuntu #14962)
+  * small ui fixes for the progress window (half of ubuntu #14141)
+  * typo fix (ubuntu #14857)
+  * fix a incorrect eclipse menu entry (ubuntu #14858)
+  * improve the program not availabe dialog a bit (spacing, image)
+    (ubuntu #14859)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed,  7 Sep 2005 09:49:10 +0200
+
+gnome-app-install (0+20050904) breezy; urgency=low
+
+  * more fixes for the menu-data desktop files:
+    - gaim.desktop: X-App-Install package is gaim (not gaim-data)
+  * data/featured.txt:
+    - added: evince, totem, gnome-games, gaim, glade-gnome-2
+    - removed: gpdf, gnome-gv, sodipodi, glade-2, gaim-data, vlc
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  5 Sep 2005 13:59:00 +0200
+
+gnome-app-install (0+20050903) breezy; urgency=low
+
+  * make OpenOffice.org2 a featured application, removed OO1
+  * fix the window title (ubuntu #14556)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  5 Sep 2005 11:37:45 +0200
+
+gnome-app-install (0+20050831) breezy; urgency=low
+
+  * fix error when enabling a repository (#14140)
+  * updated the menu data desktop files to the current archive
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 31 Aug 2005 23:53:33 +0200
+
+gnome-app-install (0+20050825) breezy; urgency=low
+
+  * set apply only sensitive when there are actually actions to perform
+  * added intro page (#13433)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 26 Aug 2005 01:17:12 +0200
+
+gnome-app-install (0+20050824) breezy; urgency=low
+
+  * improve the search (ubuntu #14022)
+  * fix some incorrect desktop data files
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 25 Aug 2005 11:09:19 +0200
+
+gnome-app-install (0+20050823) breezy; urgency=low
+
+  * minor ui improvments
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 23 Aug 2005 17:47:05 +0200
+
+gnome-app-install (0+20050822) breezy; urgency=low
+
+  * added LaunchpadIntegration support
+  * wording improvments (ubuntu #13805, #13906)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 22 Aug 2005 16:18:39 +0200
+
+gnome-app-install (0+20050816) breezy; urgency=low
+
+  * conflicts with gnome-app-install-data
+  * bugfixes:
+    - "Quit" is in the file menu now (ubuntu #13434)
+    - "Advanced" is in the File menu now (ubuntu #13432)
+    - double clicking expands categories (ubuntu #13431)
+    - check if a install operation can be done without breaking the
+      cache or removing anything already installed) (ubuntu #10009)
+    - display correct utf-8 in the description (ubuntu #13476)
+    - pending dialog improvments (ubuntu #13505)
+    - don't show pending dialog when nothing is selected (ubuntu #13507)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 15 Aug 2005 11:13:44 +0200
+
+gnome-app-install (0+20050810) breezy; urgency=low
+
+  * mime-type search added
+  * added missing icons
+  * undid the split into pkg, pkg-data (pointless for a arch: all pkg)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 11 Aug 2005 15:32:47 +0200
+
+gnome-app-install (0+20050809) breezy; urgency=low
+
+  * make it a native package
+  * update contains a reworked gui
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue,  9 Aug 2005 12:52:25 +0200
+
+gnome-app-install (0+20050404a-5) breezy; urgency=low
+
+  * fix a FTBFS (for real this time)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 26 Jul 2005 21:04:36 +0200
+
+gnome-app-install (0+20050404a-4) breezy; urgency=low
+
+  * fix a FTBFS
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Tue, 26 Jul 2005 19:45:37 +0200
+
+gnome-app-install (0+20050404a-3) breezy; urgency=low
+
+  * updated to the new pyXDG
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 16 Jun 2005 09:36:51 +0200
+
+gnome-app-install (0+20050404a-2) breezy; urgency=low
+
+  * po/POTFILES.in: Remove nonexisting file data/gnome-app-install.desktop.in.
+  * debian/rules: Automatically create a POT file.
+
+ -- Martin Pitt <martin.pitt@ubuntu.com>  Fri, 10 Jun 2005 12:46:51 +0000
+
+gnome-app-install (0+20050404a-1) hoary; urgency=low
+
+  * Freshen .desktop files
+
+ -- LaMont Jones <lamont@ubuntu.com>  Wed,  6 Apr 2005 00:50:49 -0600
+
+gnome-app-install (0+20050404-1) hoary; urgency=low
+
+  * New snapshot, i18n updates only (fr.po, pl.po)
+  * Re-Init the depcache after the PinFile was read (one-line change)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon,  4 Apr 2005 11:19:49 +0200
+
+gnome-app-install (0+20050331-1) hoary; urgency=low
+
+  * new snapshot, i18n update only (da.po) and removed a debug statement
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Thu, 31 Mar 2005 11:53:33 +0200
+
+gnome-app-install (0+20050321-1) hoary; urgency=low
+
+  * new snapshot, minimal fixes only:
+    - #7892: duplicated entries
+    - #6858: exception after removing some program
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 21 Mar 2005 10:56:52 +0100
+
+gnome-app-install (0+20050317-1) hoary; urgency=low
+
+  * New snapshot, i18n updates, embedd synaptic
+  * use the depcache and ignore non-installable packages (#7340)
+  * fix when packages are not found in the cache (#7595)
+  * don't crash on unsupported locale (#7643)
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Mon, 14 Mar 2005 14:52:41 +0100
+
+gnome-app-install (0+20050217-1) hoary; urgency=low
+
+  * New upstream release
+    - Depend on python-glade2 (closes: #5800)
+    - Hide the Synaptic main window (closes: #5995)
+
+ -- Ross Burton <ross@debian.org>  Thu, 17 Feb 2005 15:20:46 +0000
+
+gnome-app-install (0+20041111-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Ross Burton <ross@debian.org>  Wed, 10 Nov 2004 14:09:00 +0000

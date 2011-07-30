@@ -1,0 +1,16 @@
+Source: trisquel-desktop-common-data
+Section: trisquel
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: trisquel-desktop-common-data
+Architecture: all
+Priority: optional
+Replaces: trisquel-desktop-common
+Description: Trisquel desktop metapackage - data files.
+ Virtual package providing a dependency list for Trisquel base installation.
+ Provides a X11 environment and a set of tools common to all Trisquel versions.
+ .
+

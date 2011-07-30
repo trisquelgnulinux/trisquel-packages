@@ -14,7 +14,6 @@ const FlashVideoReplacerObserver =
 				if((sourceurl.match(/youtube.*watch.*v\=/)  && !sourceurl.match("html5=True")) 
 						|| sourceurl.match(/vimeo\.com\/\d{1,8}/)
 						|| (sourceurl.match(/metacafe\.com\/watch\//) && !sourceurl.match(/http.*http:\/\/www.metacafe\.com/))
-						|| sourceurl.match(/blip\.tv\/file\/.*/)
 						|| sourceurl.match(/ustream\.tv\/recorded\/\d{1,8}/)
 						|| sourceurl.match(/youporn\.com\/watch\//)
 						|| sourceurl.match(/pornhub\.com\/view_video.php\?viewkey=/)

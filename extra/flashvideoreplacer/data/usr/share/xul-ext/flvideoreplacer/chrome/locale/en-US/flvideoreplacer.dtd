@@ -8,6 +8,7 @@
 <!ENTITY Clipboard "Copy url to clipboard">
 <!ENTITY Custom "Custom">
 <!ENTITY Delay "Delay">
+<!ENTITY DefaultQuality "Default Quality">
 <!ENTITY Download "Download">
 <!ENTITY Downloads "Downloads">
 <!ENTITY DownloadDir "Download Destination">
@@ -34,7 +35,7 @@
 <!ENTITY OptionsTooltipDelay "This option determines how long, in miliseconds, the extension will wait before replacing the video in the page. This can be useful for example, if some page elements are not loaded properly or if you are experiencing performance issues when the extension is loaded.">
 <!ENTITY OptionsTooltipAutolaunch "When this option is selected, the video will be launched automatically using the method chosen above.">
 <!ENTITY OptionsTooltipPrefWebM "When this option is selected, the extension will try to find a html5 version of the video and will redirect to the corresponding page instead of replacing it.">
-<!ENTITY OptionsTooltipForceMime "Sometimes the available plugins cannot handle a specific video format available. Selecting a different mime type here will trick the browser to think the video is a supported format. For example, Totem plugin only works if you set this option to x-mplayer2.">
+<!ENTITY OptionsTooltipForceMime "Sometimes the available plugins cannot handle a specific video format available. Selecting a different mime type here will trick the browser to think the video is a supported format. For example, Totem plugin only works if you set this option to x-totem-plugin.">
 <!ENTITY OptionsTooltipFallback "If you don't have the necessary plugin to replace the video, then this option will allow to replace the original flash player with a different player.">
 <!ENTITY OptionsTooltipStandalone "This option allows to choose the standalone external player to be used. You can use a pre-configured option from the menu, type the path of the player executable or use the search button to locate it.">
 <!ENTITY OptionsTooltipQuality "Some web sites offer multiple video quality options. This allows you to set the default video quality to be choosen automatically. [ LOW: up to 360p | MEDIUM: up to 480p | HIGH: up to 720p | SUPER: 1080p or above. ]">

@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+set -e
+
+if [ "$1" = configure ]; then
+  update-alternatives --install /etc/lxdm/default.conf \
+    lxdm.conf /etc/xdg/trisquel-mini/lxdm/lxdm.conf 60 
+fi
+
+#DEBHELPER#
+exit 0

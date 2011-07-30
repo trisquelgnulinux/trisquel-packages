@@ -26,12 +26,18 @@ pref("extensions.flvideoreplacer.downdir", "");
 pref("extensions.flvideoreplacer.downdta", false);
 pref("extensions.flvideoreplacer.silentdownload", false);
 pref("extensions.flvideoreplacer.videourl", "");
+pref("extensions.flvideoreplacer.fmt", "18");
 pref("extensions.flvideoreplacer.fallback", "noplugin");
 
 pref("extensions.flvideoreplacer.pluginforce", true);
 pref("extensions.flvideoreplacer.pluginmp4", false);
 pref("extensions.flvideoreplacer.pluginflv", false);
 pref("extensions.flvideoreplacer.pluginqt", false);
+pref("extensions.flvideoreplacer.pluginmkv", false);
+pref("extensions.flvideoreplacer.pluginxth", false);
+pref("extensions.flvideoreplacer.pluginxtp", false);
+pref("extensions.flvideoreplacer.pluginxin", false);
+pref("extensions.flvideoreplacer.pluginvlc", false);
 pref("extensions.flvideoreplacer.pluginwmp", false);
 pref("extensions.flvideoreplacer.pluginwmv", false);
 pref("extensions.flvideoreplacer.pluginmov", false);

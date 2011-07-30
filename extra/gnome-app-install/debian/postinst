@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+if [ "$1" = "configure" ]; then
+    # cache the application data
+    update-app-install || true
+    # Provides a gstreamer codec installer
+    update-alternatives \
+        --install \
+	    /usr/bin/gstreamer-codec-install \
+            gstreamer-codec-install \
+            /usr/bin/gnome-app-install \
+	    80 \
+        --slave \
+	    /usr/share/man/man1/gstreamer-codec-install.1.gz \
+            gstreamer-codec-install.1.gz \
+            /usr/share/man/man1/gnome-app-install.1.gz
+fi
+
+

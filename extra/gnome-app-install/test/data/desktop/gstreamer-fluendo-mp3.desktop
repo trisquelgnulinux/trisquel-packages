@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=Codecs to play MP3 Files
+Name=GStreamer Fluendo MP3 Plugin
+Encoding=UTF-8
+Terminal=false
+Type=Application
+Categories=GNOME;Application;Multimedia;AudioVideo;
+X-AppInstall-Package=gstreamer0.10-fluendo-mp3
+X-AppInstall-Popcon=0
+X-AppInstall-Section=main
+X-AppInstall-Codecs=0.10:element-flump3dec;0.10:decoder-audio/mpeg, mpegversion=(int)1, layer=(int)[ 1, 3 ]

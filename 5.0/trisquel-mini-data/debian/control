@@ -1,0 +1,12 @@
+Source: trisquel-mini-data
+Section: x11
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+
+Package: trisquel-mini-data
+Architecture: all
+Depends: lxsession (>= 0.4.1), trisquel-icon-theme, trisquel-gtk-theme
+Description: default settings for Trisquel-mini
+ Various system settings tailored for Trisquel-mini.

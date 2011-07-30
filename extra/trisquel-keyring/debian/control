@@ -1,0 +1,23 @@
+Source: trisquel-keyring
+Section: misc
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Standards-Version: 3.8.3
+
+Package: trisquel-keyring
+Priority: important
+Architecture: all
+Depends: gnupg (>= 1.0.6-4)
+Description: GnuPG keys of the Trisquel archive
+ The Trisquel project digitally signs its Release files. This package
+ contains the archive keys used for that.
+
+Package: trisquel-keyring-udeb
+Priority: optional
+Architecture: all
+Section: debian-installer
+Recommends: gpgv-udeb
+Description: GnuPG keys of the Trisquel archive
+ The Trisquel project digitally signs its Release files. This package
+ contains the archive keys used for that, in a minimal form for use
+ in the installer.

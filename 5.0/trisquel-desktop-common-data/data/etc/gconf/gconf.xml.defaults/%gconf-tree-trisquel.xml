@@ -1,0 +1,980 @@
+<?xml version="1.0"?>
+<gconf>
+        <dir name="system">
+                <dir name="smb">
+                        <entry name="workgroup" mtime="1144291190" type="string">
+                        <stringvalue>TRISQUEL</stringvalue>
+                        </entry>
+                </dir>
+        </dir>
+        <dir name="apps">
+		<!-- Default icon  -->
+                <dir name="gdm">
+                    <dir name="simple-greeter">
+                        <entry name="logo_icon_name" mtime="1268856091" type="string">
+                	    <stringvalue>distributor-logo</stringvalue>
+        		</entry>
+		    </dir>
+		</dir>
+		<!-- Show unread number on tray icon  -->
+                <dir name="liferea">
+		        <entry name="trayicon-new-count" mtime="1284653624" type="bool" value="true"/>
+		</dir>
+		<!-- Don't autostart gwibber service by default  -->
+                <dir name="gwibber">
+                    <dir name="preferences">
+		        <entry name="autostart" mtime="1284653624" type="bool" value="false"/>
+		    </dir>
+		</dir>
+		<!-- No metacity transparency for inactive windows  -->
+                <dir name="gwd">
+			<entry name="metacity_theme_opacity" mtime="1215602871" type="float" value="1.0">
+                        </entry>
+		</dir>
+                <dir name="gnome-mplayer">
+                        <dir name="preferences">
+			        <entry name="resize_on_new_media" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="remember_loc" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="bring_to_front" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="replace_and_play" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="single_instance" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="show_status_icon" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="show_notification" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="use_xscrnsaver" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="disable_animation" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="disable_pause_on_click" mtime="1284653624" type="bool" value="false"/>
+			        <entry name="disableframedrop" mtime="1284653624" type="bool" value="false"/>
+			        <entry name="disable_deinterlace" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="disableembeddedfonts" mtime="1284653624" type="bool" value="false"/>
+			        <entry name="disableass" mtime="1284653624" type="bool" value="false"/>
+			        <entry name="forcecache" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="remember_softvol" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="softvol" mtime="1284653624" type="bool" value="true"/>
+			        <entry name="pplevel" mtime="1284653624" type="int" value="6"/>
+			        <entry name="osdlevel" mtime="1284653624" type="int" value="1"/>
+			        <entry name="plugin_cache_size" mtime="1284653624" type="int" value="2000"/>
+			        <entry name="cache_size" mtime="1284653624" type="int" value="2000"/>
+                        </dir>
+		</dir>
+                <dir name="shotwell">
+                        <dir name="preferences">
+                                <dir name="ui">
+                                        <entry name="show_welcome_dialog" mtime="1282685702" type="bool" value="false"/>
+                                </dir>
+                        </dir>
+                </dir>
+                <dir name="compiz">
+	                <dir name="plugins">
+        		        <dir name="scale">
+              				<dir name="allscreens">
+                				<dir name="options">
+        					<entry name="initiate_button" mtime="1268856091" type="string">
+                					<stringvalue>&lt;TopLeftEdge&gt;Button1</stringvalue>
+        					</entry>
+						</dir>
+					</dir>
+				</dir>
+				<dir name="obs">
+                                        <dir name="screen0">
+                                                <dir name="options">
+						        <entry name="opacity_values" mtime="1282680424" type="list" ltype="int">
+					        	        <li type="int" value="95"/>
+						        </entry>
+						        <entry name="opacity_matches" mtime="1282680179" type="list" ltype="string">
+						                <li type="string">
+					        	                <stringvalue>(type=popupmenu) &amp; (name=gnome-panel)</stringvalue>
+						                </li>
+						        </entry>
+                                                </dir>
+                                        </dir>
+                                </dir>
+			</dir>
+			<dir name="general">
+				<dir name="allscreens">
+					<dir name="options">
+						<entry name="active_plugins" mtime="1282681152" type="list" ltype="string">
+							<li type="string">
+								<stringvalue>core</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>ccp</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>move</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>resize</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>place</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>decoration</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>regex</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>vpswitch</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>neg</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>text</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>dbus</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>session</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>imgjpeg</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>obs</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>svg</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>gnomecompat</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>workarounds</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>animation</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>snap</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>expo</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>png</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>commands</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>mousepoll</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>wall</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>fade</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>scale</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>resizeinfo</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>scaleaddon</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>ezoom</stringvalue>
+							</li>
+							<li type="string">
+								<stringvalue>staticswitcher</stringvalue>
+							</li>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+                <dir name="update-notifier">
+			<entry name="show_apport_crashes" mtime="1246263424" type="bool" value="false"/>
+		        <entry name="auto_launch" mtime="1246263446" type="bool" value="false"/>
+                </dir>
+                <dir name="update-manager">
+                        <entry name="first_run" mtime="1283787223" type="bool" value="false"/>
+                </dir>
+                <dir name="brasero">
+                        <dir name="config">
+                                <entry name="plugins" mtime="1228522209" type="list" ltype="string">
+                                <li type="string">
+                                        <stringvalue>local-track</stringvalue>
+                                </li>
+                                <li type="string">
+                                        <stringvalue>md5sum-file</stringvalue>
+                                </li>
+                                </entry>
+                        </dir>
+                </dir>
+                <dir name="epiphany">
+                        <dir name="web">
+				<entry name="minimum_font_size" mtime="1167783898" type="int" value="10" />
+			</dir>
+                        <dir name="general">
+                                <entry name="toolbar_style" mtime="1167782823" type="string">
+                                        <stringvalue>icons</stringvalue>
+                                </entry>
+                                <entry name="active_extensions" mtime="1167783898" type="list" ltype="string">
+                                        <li type="string">
+                                                <stringvalue>menubarspinner</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>rss</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>favicon</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>smart-bookmarks</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>tab-states</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>certificates</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>extensions-manager-ui</stringvalue>
+                                        </li>
+                                </entry>
+                                <entry name="homepage" mtime="1167782984" type="string">
+                                        <stringvalue>http://trisquel.info/welcome</stringvalue>
+                                </entry>
+                        </dir>
+                </dir>
+                <dir name="gnome-terminal">
+                        <dir name="profiles">
+                                <dir name="Default">
+	        			<entry name="background_darkness" mtime="1215602871" type="float" value="0.84432715177536011">
+				        </entry>
+				        <entry name="background_type" mtime="1215602867" type="string">
+				                <stringvalue>solid</stringvalue>
+				        </entry>
+				        <entry name="background_color" mtime="1215602863" type="string">
+				                <stringvalue>#000000</stringvalue>
+				        </entry>
+				        <entry name="foreground_color" mtime="1215602863" type="string">
+				                <stringvalue>#AAAAAA</stringvalue>
+				        </entry>
+				        <entry name="palette" mtime="1215602855" type="string">
+				                <stringvalue>#2E2E34343636:#CCCC00000000:#4E4E9A9A0606:#C4C4A0A00000:#34346565A4A4:#757550507B7B:#060698209A9A:#D3D3D7D7CFCF:#555557575353:#EFEF29292929:#8A8AE2E23434:#FCFCE9E94F4F:#72729F9FCFCF:#ADAD7F7FA8A8:#3434E2E2E2E2:#EEEEEEEEECEC</stringvalue>
+				        </entry>
+                                	<entry name="use_theme_colors" mtime="1140203058" type="bool" value="false">
+                                	</entry>
+                                </dir>
+                        </dir>
+                </dir>
+                <dir name="metacity">
+                        <dir name="workspace_names">
+                                <entry name="name_2" mtime="1140241694" type="string">
+                                        <stringvalue>2</stringvalue>
+                                </entry>
+                                <entry name="name_1" mtime="1140241689" type="string">
+                                        <stringvalue>1</stringvalue>
+                                </entry>
+                        </dir>
+                        <dir name="general">
+                                <entry name="visual_bell_type" mtime="1140242487" type="string">
+                                        <stringvalue>frame_flash</stringvalue>
+                                </entry>
+                                <entry name="visual_bell" mtime="1140242466" type="bool" value="true">
+                                </entry>
+                                <entry name="application_based" mtime="1140203058" type="bool" value="false">
+                                </entry>
+                                <entry name="titlebar_font" mtime="1148045338" type="string">
+                                        <stringvalue>Sans Bold 10</stringvalue>
+                                </entry>
+                                <entry name="audible_bell" mtime="1140242496" type="bool" value="true">
+                                </entry>
+                                <entry name="button_layout" mtime="1140051351" type="string">
+                                        <stringvalue>menu:minimize,maximize,close</stringvalue>
+                                </entry>
+                                <entry name="num_workspaces" mtime="1139354584" type="int" value="2">
+                                </entry>
+                                <entry name="theme" mtime="1167784355" type="string">
+                                        <stringvalue>Trisquel</stringvalue>
+                                </entry>
+                        </dir>
+                </dir>
+                 <dir name="gnome-screensaver">
+                        <entry name="themes" mtime="1190201953" type="list" ltype="string">
+                                <li type="string">
+                                        <stringvalue>screensavers-trisquel</stringvalue>
+                                </li>
+                        </entry>
+                        <entry name="mode" mtime="1190201953" type="string">
+                                <stringvalue>single</stringvalue>
+                        </entry>
+                        <entry name="lock_enabled" mtime="1190201266" type="bool" value="false">
+                        </entry>
+                        <entry name="lock" mtime="1190201266" type="bool" value="false">
+                        </entry>
+                </dir>
+
+	<dir name="gnome-app-install">
+	        <entry name="mime-whitelist-components" mtime="1222193313" type="list" ltype="string">
+        	        <li type="string">
+                	        <stringvalue>main</stringvalue>
+	                </li>
+        	        <li type="string">
+	                        <stringvalue>extras</stringvalue>
+	                </li>
+	                <li type="string">
+	                        <stringvalue>universe</stringvalue>
+	                </li>
+	        </entry>
+	        <entry name="components_seen" mtime="1222193305" type="list" ltype="string">
+	                <li type="string">
+	                        <stringvalue>main</stringvalue>
+	                </li>
+	                <li type="string">
+	                        <stringvalue>extras</stringvalue>
+	                </li>
+	                <li type="string">
+	                        <stringvalue>universe</stringvalue>
+	                </li>
+	        </entry>
+        </dir>
+
+	<dir name="nautilus">
+                        <entry name="start-state" mtime="1162474204" type="list" ltype="string">
+                        </entry>
+                        <entry name="sound_state" mtime="1139357176" type="int" value="0">
+                        </entry>
+                        <entry name="preferences_version" mtime="1139353992" type="int" value="2">
+                        </entry>
+                        <dir name="sidebar_panels">
+                                <dir name="tree">
+                                        <entry name="show_only_directories" mtime="1140209754" type="bool" value="false">
+                                        </entry>
+                                </dir>
+                        </dir>
+                        <dir name="desktop">
+                                <entry name="volumes_visible" mtime="1141191311" type="bool" value="true">
+                                </entry>
+                                <entry name="network_icon_visible" mtime="1141191311" type="bool" value="false">
+                                </entry>
+                                <entry name="trash_icon_visible" mtime="1140237024" type="bool" value="true">
+                                </entry>
+                                <entry name="computer_icon_visible" mtime="1140237032" type="bool" value="true">
+                                </entry>
+                                <entry name="home_icon_visible" mtime="1140237027" type="bool" value="true">
+                                </entry>
+                        </dir>
+                        <dir name="icon_view">
+                                <entry name="labels_beside_icons" mtime="1140216519" type="bool" value="false">
+                                </entry>
+                                <entry name="default_use_tighter_layout" mtime="1140216524" type="bool" value="false">
+                                </entry>
+                                <entry name="captions" mtime="1140214562" type="list" ltype="string">
+                                        <li type="string">
+                                                <stringvalue>none</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>size</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>type</stringvalue>
+                                        </li>
+                                </entry>
+                        </dir>
+                        <dir name="preferences">
+                                <entry name="navigation_window_saved_maximized" mtime="1190050158" type="bool" value="false">
+                                </entry>
+                                <entry name="show_directory_item_counts" mtime="1167987887" type="string">
+                                        <stringvalue>local_only</stringvalue>
+                                </entry>
+                                <entry name="preview_sound" mtime="1161583423" type="string">
+                                        <stringvalue>never</stringvalue>
+                                </entry>
+                                <entry name="show_icon_text" mtime="1149884484" type="string">
+                                        <stringvalue>never</stringvalue>
+                                </entry>
+                                <entry name="window_always_new" mtime="1140236954" type="bool" value="false">
+                                </entry>
+                                <entry name="start_with_toolbar" mtime="1140236904" type="bool" value="true">
+                                </entry>
+                                <entry name="sort_directories_first" mtime="1140236871" type="bool" value="true">
+                                </entry>
+                                <entry name="side_pane_background_filename" mtime="1140236795" type="string">
+                                        <stringvalue></stringvalue>
+                                </entry>
+                                <entry name="side_pane_background_color" mtime="1140236797" type="string">
+                                        <stringvalue>#E5E5E5</stringvalue>
+                                </entry>
+                                <entry name="show_special_flags" mtime="1140236763" type="bool" value="false">
+                                </entry>
+                                <entry name="directory_limit" mtime="1140236591" type="int" value="-1">
+                                </entry>
+                                <entry name="click_policy" mtime="1140236297" type="string">
+                                        <stringvalue>double</stringvalue>
+                                </entry>
+                                <entry name="side_pane_background_set" mtime="1140236806" type="bool" value="false">
+                                </entry>
+                                <entry name="show_desktop" mtime="1140226205" type="bool" value="true">
+                                </entry>
+                                <entry name="show_image_thumbnails" mtime="1167987733" type="string">
+                                        <stringvalue>local_only</stringvalue>
+                                </entry>
+                                <entry name="desktop_is_home_dir" mtime="1140226338" type="bool" value="false">
+                                </entry>
+                                <entry name="always_use_location_entry" mtime="1140236257" type="bool" value="false">
+                                </entry>
+                                <entry name="start_with_location_bar" mtime="1140209552" type="bool" value="true">
+                                </entry>
+                                <entry name="start_with_status_bar" mtime="1167987896" type="bool" value="true">
+                                </entry>
+                                <entry name="desktop_font" mtime="1148045332" type="string">
+                                        <stringvalue>Sans Bold 8</stringvalue>
+                                </entry>
+                                <entry name="start_with_sidebar" mtime="1156133477" type="bool" value="true">
+                                </entry>
+                                <entry name="thumbnail_limit" mtime="1167987737" type="int" value="3145728">
+                                </entry>
+                                <entry name="enable_delete" mtime="1140236687" type="bool" value="false">
+                                </entry>
+                                <entry name="executable_text_activation" mtime="1139427363" type="string">
+                                        <stringvalue>display</stringvalue>
+                                </entry>
+                                <entry name="date_format" mtime="1139427346" type="string">
+                                        <stringvalue>informal</stringvalue>
+                                </entry>
+                                <entry name="background_set" mtime="1140236291" type="bool" value="true">
+                                </entry>
+                                <entry name="background_filename" mtime="1140236153" type="string">
+                                        <stringvalue></stringvalue>
+                                </entry>
+                                <entry name="background_color" mtime="1140236153" type="string">
+                                        <stringvalue>#FFFFFF</stringvalue>
+                                </entry>
+                                <entry name="sidebar_width" mtime="1140236858" type="int" value="172">
+                                </entry>
+                                <entry name="side_pane_view" mtime="1156133472" type="string">
+                                        <stringvalue>NautilusPlacesSidebar</stringvalue>
+                                </entry>
+                                <entry name="always_use_browser" mtime="1140237242" type="bool" value="true">
+                                </entry>
+                        </dir>
+                        <dir name="list_view">
+                                <entry name="default_column_order" mtime="1167987908" type="list" ltype="string">
+                                        <li type="string">
+                                                <stringvalue>name</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>size</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>type</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>date_modified</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>date_accessed</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>group</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>mime_type</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>octal_permissions</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>owner</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>permissions</stringvalue>
+                                        </li>
+                                </entry>
+                                <entry name="default_visible_columns" mtime="1167987908" type="list" ltype="string">
+                                        <li type="string">
+                                                <stringvalue>name</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>size</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>type</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>date_modified</stringvalue>
+                                        </li>
+                                </entry>
+                        </dir>
+                </dir>
+                <dir name="panel">
+                        <dir name="applets">
+                                <dir name="indicator">
+					<entry name="attached_toplevel_id" mtime="1274130306" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+					<entry name="position" mtime="1274130306" schema="/schemas/apps/panel/objects/position" type="int" value="3"/>
+					<entry name="use_menu_path" mtime="1274130306" schema="/schemas/apps/panel/objects/use_menu_path"/>
+					<entry name="action_type" mtime="1274130306" schema="/schemas/apps/panel/objects/action_type"/>
+					<entry name="toplevel_id" mtime="1274130306" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+						<stringvalue>panel_2</stringvalue>
+					</entry>
+					<entry name="tooltip" mtime="1274130306" schema="/schemas/apps/panel/objects/tooltip"/>
+					<entry name="use_custom_icon" mtime="1274130306" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+					<entry name="object_type" mtime="1274130306" schema="/schemas/apps/panel/objects/object_type" type="string">
+						<stringvalue>bonobo-applet</stringvalue>
+					</entry>
+					<entry name="panel_right_stick" mtime="1274130306" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true"/>
+                                        <entry name="locked" mtime="1189983734" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+					<entry name="custom_icon" mtime="1274130306" schema="/schemas/apps/panel/objects/custom_icon"/>
+					<entry name="bonobo_iid" mtime="1274130306" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+						<stringvalue>OAFIID:GNOME_IndicatorApplet</stringvalue>
+					</entry>
+					<entry name="launcher_location" mtime="1274130306" schema="/schemas/apps/panel/objects/launcher_location"/>
+					<entry name="menu_path" mtime="1274130306" schema="/schemas/apps/panel/objects/menu_path"/>
+                                </dir>
+                                <dir name="showdesktop">
+                                        <entry name="menu_path" mtime="1189983102" schema="/schemas/apps/panel/objects/menu_path"/>
+                                        <entry name="locked" mtime="1189983734" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+                                        <entry name="position" mtime="1189983608" schema="/schemas/apps/panel/objects/position" type="int" value="1">
+                                        </entry>
+                                        <entry name="object_type" mtime="1189983102" schema="/schemas/apps/panel/objects/object_type" type="string">
+                                                <stringvalue>bonobo-applet</stringvalue>
+                                        </entry>
+                                        <entry name="panel_right_stick" mtime="1189983136" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true">
+                                        </entry>
+                                        <entry name="use_menu_path" mtime="1189983102" schema="/schemas/apps/panel/objects/use_menu_path"/>
+                                        <entry name="launcher_location" mtime="1189983102" schema="/schemas/apps/panel/objects/launcher_location"/>
+                                        <entry name="custom_icon" mtime="1189983102" schema="/schemas/apps/panel/objects/custom_icon"/>
+                                        <entry name="tooltip" mtime="1189983102" schema="/schemas/apps/panel/objects/tooltip"/>
+                                        <entry name="action_type" mtime="1189983102" schema="/schemas/apps/panel/objects/action_type"/>
+                                        <entry name="use_custom_icon" mtime="1189983246" schema="/schemas/apps/panel/objects/use_custom_icon" type="bool" value="false">
+                                        </entry>
+                                        <entry name="attached_toplevel_id" mtime="1189983102" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+                                        <entry name="bonobo_iid" mtime="1189983102" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+                                                <stringvalue>OAFIID:GNOME_ShowDesktopApplet</stringvalue>
+                                        </entry>
+                                        <entry name="toplevel_id" mtime="1189983102" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="windowlist">
+                                        <entry name="menu_path" mtime="1153764596" schema="/schemas/apps/panel/objects/menu_path"/>
+                                        <entry name="locked" mtime="1170441286" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+                                        <entry name="position" mtime="1170441283" schema="/schemas/apps/panel/objects/position" type="int" value="3">
+                                        </entry>
+                                        <entry name="object_type" mtime="1153764596" schema="/schemas/apps/panel/objects/object_type" type="string">
+                                                <stringvalue>bonobo-applet</stringvalue>
+                                        </entry>
+                                        <entry name="panel_right_stick" mtime="1153764596" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false">
+                                        </entry>
+                                        <entry name="use_menu_path" mtime="1153764596" schema="/schemas/apps/panel/objects/use_menu_path"/>
+                                        <entry name="launcher_location" mtime="1153764596" schema="/schemas/apps/panel/objects/launcher_location"/>
+                                        <entry name="custom_icon" mtime="1153764596" schema="/schemas/apps/panel/objects/custom_icon"/>
+                                        <entry name="tooltip" mtime="1153764596" schema="/schemas/apps/panel/objects/tooltip"/>
+                                        <entry name="action_type" mtime="1153764596" schema="/schemas/apps/panel/objects/action_type"/>
+                                        <entry name="use_custom_icon" mtime="1153764596" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+                                        <entry name="attached_toplevel_id" mtime="1153764596" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+                                        <entry name="bonobo_iid" mtime="1153764596" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+                                                <stringvalue>OAFIID:GNOME_WindowListApplet</stringvalue>
+                                        </entry>
+                                        <entry name="toplevel_id" mtime="1153764596" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </entry>
+                                        <dir name="prefs">
+                                                <entry name="minimum_size" mtime="1189983750" schema="/schemas/apps/window_list_applet/prefs/minimum_size"/>
+                                                <entry name="maximum_size" mtime="1189983750" schema="/schemas/apps/window_list_applet/prefs/maximum_size"/>
+                                                <entry name="group_windows" mtime="1189983750" schema="/schemas/apps/window_list_applet/prefs/group_windows"/>
+                                                <entry name="display_all_workspaces" mtime="1189983750" schema="/schemas/apps/window_list_applet/prefs/display_all_workspaces"/>
+                                                <entry name="move_unminimized_windows" mtime="1189983750" schema="/schemas/apps/window_list_applet/prefs/move_unminimized_windows"/>
+                                        </dir>
+                                </dir>
+                                <dir name="clock">
+                                        <entry name="menu_path" mtime="1140202665" schema="/schemas/apps/panel/objects/menu_path"/>
+                                        <entry name="locked" mtime="1189983732" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+                                        <entry name="position" mtime="1189983616" schema="/schemas/apps/panel/objects/position" type="int" value="2">
+                                        </entry>
+                                        <entry name="object_type" mtime="1140202665" schema="/schemas/apps/panel/objects/object_type" type="string">
+                                                <stringvalue>bonobo-applet</stringvalue>
+                                        </entry>
+                                        <entry name="panel_right_stick" mtime="1189982972" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true">
+                                        </entry>
+                                        <entry name="use_menu_path" mtime="1140202665" schema="/schemas/apps/panel/objects/use_menu_path"/>
+                                        <entry name="launcher_location" mtime="1140202665" schema="/schemas/apps/panel/objects/launcher_location"/>
+                                        <entry name="custom_icon" mtime="1140202665" schema="/schemas/apps/panel/objects/custom_icon"/>
+                                        <entry name="tooltip" mtime="1140202665" schema="/schemas/apps/panel/objects/tooltip"/>
+                                        <entry name="action_type" mtime="1140202665" schema="/schemas/apps/panel/objects/action_type"/>
+                                        <entry name="use_custom_icon" mtime="1140202665" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+                                        <entry name="attached_toplevel_id" mtime="1140202665" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+                                        <entry name="bonobo_iid" mtime="1140202665" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+                                                <stringvalue>OAFIID:GNOME_ClockApplet</stringvalue>
+                                        </entry>
+                                        <entry name="toplevel_id" mtime="1140202665" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </entry>
+                                        <dir name="prefs">
+                                                <entry name="show_date" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/show_date" type="bool" value="true">
+                                                </entry>
+                                                <entry name="internet_time" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/internet_time"/>
+                                                <entry name="custom_format" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/custom_format"/>
+                                                <entry name="show_week_numbers" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/show_week_numbers"/>
+                                                <entry name="hour_format" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/hour_format"/>
+                                                <entry name="unix_time" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/unix_time"/>
+                                                <entry name="format" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/format" type="string">
+                                                        <stringvalue>24-hour</stringvalue>
+                                                </entry>
+                                                <entry name="config_tool" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/config_tool"/>
+                                                <entry name="show_tooltip" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/show_tooltip"/>
+                                                <entry name="show_seconds" mtime="1189983750" schema="/schemas/apps/clock_applet/prefs/show_seconds"/>
+                                        </dir>
+                                </dir>
+                                <dir name="notification">
+                                        <entry name="menu_path" mtime="1140202637" schema="/schemas/apps/panel/objects/menu_path"/>
+                                        <entry name="locked" mtime="1189983628" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+                                        <entry name="position" mtime="1189983623" schema="/schemas/apps/panel/objects/position" type="int" value="4">
+                                        </entry>
+                                        <entry name="object_type" mtime="1140202637" schema="/schemas/apps/panel/objects/object_type" type="string">
+                                                <stringvalue>bonobo-applet</stringvalue>
+                                        </entry>
+                                        <entry name="panel_right_stick" mtime="1189982972" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="true">
+                                        </entry>
+                                        <entry name="use_menu_path" mtime="1140202637" schema="/schemas/apps/panel/objects/use_menu_path"/>
+                                        <entry name="launcher_location" mtime="1140202637" schema="/schemas/apps/panel/objects/launcher_location"/>
+                                        <entry name="custom_icon" mtime="1140202637" schema="/schemas/apps/panel/objects/custom_icon"/>
+                                        <entry name="tooltip" mtime="1140202637" schema="/schemas/apps/panel/objects/tooltip"/>
+                                        <entry name="action_type" mtime="1140202637" schema="/schemas/apps/panel/objects/action_type"/>
+                                        <entry name="use_custom_icon" mtime="1140202637" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+                                        <entry name="attached_toplevel_id" mtime="1140202637" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+                                        <entry name="bonobo_iid" mtime="1140202637" schema="/schemas/apps/panel/objects/bonobo_iid" type="string">
+                                                <stringvalue>OAFIID:GNOME_NotificationAreaApplet</stringvalue>
+                                        </entry>
+                                        <entry name="toplevel_id" mtime="1140202637" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </entry>
+                                </dir>
+                        </dir>
+                        <dir name="objects">
+                                <dir name="browser">
+                                        <entry name="menu_path" mtime="1167781479" schema="/schemas/apps/panel/objects/menu_path"/>
+                                        <entry name="locked" mtime="1167781530" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+                                        <entry name="position" mtime="1167781512" schema="/schemas/apps/panel/objects/position" type="int" value="2">
+                                        </entry>
+                                        <entry name="object_type" mtime="1167781479" schema="/schemas/apps/panel/objects/object_type" type="string">
+                                                <stringvalue>launcher-object</stringvalue>
+                                        </entry>
+                                        <entry name="panel_right_stick" mtime="1167781479" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false">
+                                        </entry>
+                                        <entry name="use_menu_path" mtime="1167781479" schema="/schemas/apps/panel/objects/use_menu_path"/>
+                                        <entry name="launcher_location" mtime="1167781479" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+                                                <stringvalue>/usr/share/applications/browser.desktop</stringvalue>
+                                        </entry>
+                                        <entry name="custom_icon" mtime="1167781479" schema="/schemas/apps/panel/objects/custom_icon"/>
+                                        <entry name="tooltip" mtime="1167781479" schema="/schemas/apps/panel/objects/tooltip"/>
+                                        <entry name="action_type" mtime="1167781479" schema="/schemas/apps/panel/objects/action_type"/>
+                                        <entry name="use_custom_icon" mtime="1167781479" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+                                        <entry name="attached_toplevel_id" mtime="1167781479" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+                                        <entry name="bonobo_iid" mtime="1167781479" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+                                        <entry name="toplevel_id" mtime="1167781479" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="home">
+                                        <entry name="menu_path" mtime="1167781477" schema="/schemas/apps/panel/objects/menu_path"/>
+                                        <entry name="locked" mtime="1167781532" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+                                        <entry name="position" mtime="1167781512" schema="/schemas/apps/panel/objects/position" type="int" value="1">
+                                        </entry>
+                                        <entry name="object_type" mtime="1167781477" schema="/schemas/apps/panel/objects/object_type" type="string">
+                                                <stringvalue>launcher-object</stringvalue>
+                                        </entry>
+                                        <entry name="panel_right_stick" mtime="1167781477" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false">
+                                        </entry>
+                                        <entry name="use_menu_path" mtime="1167781477" schema="/schemas/apps/panel/objects/use_menu_path"/>
+                                        <entry name="launcher_location" mtime="1167781477" schema="/schemas/apps/panel/objects/launcher_location" type="string">
+                                                <stringvalue>/usr/share/applications/home.desktop</stringvalue>
+                                        </entry>
+                                        <entry name="custom_icon" mtime="1167781477" schema="/schemas/apps/panel/objects/custom_icon"/>
+                                        <entry name="tooltip" mtime="1167781477" schema="/schemas/apps/panel/objects/tooltip"/>
+                                        <entry name="action_type" mtime="1167781477" schema="/schemas/apps/panel/objects/action_type"/>
+                                        <entry name="use_custom_icon" mtime="1167781477" schema="/schemas/apps/panel/objects/use_custom_icon"/>
+                                        <entry name="attached_toplevel_id" mtime="1167781477" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+                                        <entry name="bonobo_iid" mtime="1167781477" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+                                        <entry name="toplevel_id" mtime="1167781477" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="menu">
+                                        <entry name="menu_path" mtime="1140203158" schema="/schemas/apps/panel/objects/menu_path"/>
+                                        <entry name="locked" mtime="1140325580" schema="/schemas/apps/panel/objects/locked" type="bool" value="true">
+                                        </entry>
+                                        <entry name="position" mtime="1140203161" schema="/schemas/apps/panel/objects/position" type="int" value="0">
+                                        </entry>
+                                        <entry name="object_type" mtime="1140203158" schema="/schemas/apps/panel/objects/object_type" type="string">
+                                                <stringvalue>menu-object</stringvalue>
+                                        </entry>
+                                        <entry name="panel_right_stick" mtime="1140203158" schema="/schemas/apps/panel/objects/panel_right_stick" type="bool" value="false">
+                                        </entry>
+                                        <entry name="use_menu_path" mtime="1140209623" schema="/schemas/apps/panel/objects/use_menu_path" type="bool" value="false">
+                                        </entry>
+                                        <entry name="launcher_location" mtime="1140203158" schema="/schemas/apps/panel/objects/launcher_location"/>
+                                        <entry name="action_type" mtime="1140203158" schema="/schemas/apps/panel/objects/action_type"/>
+                                        <entry name="attached_toplevel_id" mtime="1140203158" schema="/schemas/apps/panel/objects/attached_toplevel_id"/>
+                                        <entry name="bonobo_iid" mtime="1140203158" schema="/schemas/apps/panel/objects/bonobo_iid"/>
+                                        <entry name="custom_icon" mtime="1140209645" schema="/schemas/apps/panel/objects/custom_icon" type="string">
+                                                <stringvalue>/user/share/pixmaps/trisquel.png</stringvalue>
+                                        </entry>
+                                        <entry name="use_custom_icon" mtime="1140209627" schema="/schemas/apps/panel/objects/use_custom_icon" type="bool" value="true">
+                                        </entry>
+                                        <entry name="toplevel_id" mtime="1140203158" schema="/schemas/apps/panel/objects/toplevel_id" type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </entry>
+                                </dir>
+                        </dir>
+                        <dir name="toplevels">
+                                <dir name="panel_2">
+                                        <entry name="enable_arrows" mtime="1140202630" schema="/schemas/apps/panel/toplevels/enable_arrows"/>
+                                        <entry name="auto_hide" mtime="1140202630" schema="/schemas/apps/panel/toplevels/auto_hide"/>
+                                        <entry name="x" mtime="1140202630" schema="/schemas/apps/panel/toplevels/x"/>
+                                        <entry name="orientation" mtime="1140244382" schema="/schemas/apps/panel/toplevels/orientation" type="string">
+                                                <stringvalue>bottom</stringvalue>
+                                        </entry>
+                                        <entry name="monitor" mtime="1140202630" schema="/schemas/apps/panel/toplevels/monitor" type="int" value="0">
+                                        </entry>
+                                        <entry name="screen" mtime="1140202630" schema="/schemas/apps/panel/toplevels/screen" type="int" value="0">
+                                        </entry>
+                                        <entry name="auto_hide_size" mtime="1140202630" schema="/schemas/apps/panel/toplevels/auto_hide_size"/>
+                                        <entry name="x_centered" mtime="1140223486" schema="/schemas/apps/panel/toplevels/x_centered" type="bool" value="true">
+                                        </entry>
+                                        <entry name="y_centered" mtime="1140202630" schema="/schemas/apps/panel/toplevels/y_centered"/>
+                                        <entry name="expand" mtime="1140223491" schema="/schemas/apps/panel/toplevels/expand" type="bool" value="true">
+                                        </entry>
+                                        <entry name="name" mtime="1140202630" schema="/schemas/apps/panel/toplevels/name"/>
+                                        <entry name="size" mtime="1167765088" schema="/schemas/apps/panel/toplevels/size" type="int" value="42">
+                                        </entry>
+                                        <entry name="unhide_delay" mtime="1140202630" schema="/schemas/apps/panel/toplevels/unhide_delay"/>
+                                        <entry name="animation_speed" mtime="1140202630" schema="/schemas/apps/panel/toplevels/animation_speed"/>
+                                        <entry name="hide_delay" mtime="1140202630" schema="/schemas/apps/panel/toplevels/hide_delay"/>
+                                        <entry name="enable_buttons" mtime="1140202630" schema="/schemas/apps/panel/toplevels/enable_buttons"/>
+                                        <entry name="enable_animations" mtime="1140202630" schema="/schemas/apps/panel/toplevels/enable_animations"/>
+                                        <entry name="y" mtime="1140202630" schema="/schemas/apps/panel/toplevels/y"/>
+                                        <dir name="background">
+                                                <entry name="stretch" mtime="1140202630" schema="/schemas/apps/panel/toplevels/background/stretch"/>
+                                                <entry name="rotate" mtime="1140202630" schema="/schemas/apps/panel/toplevels/background/rotate"/>
+                                                <entry name="opacity" mtime="1189982834" schema="/schemas/apps/panel/toplevels/background/opacity" type="int" value="50555">
+                                                </entry>
+                                                <entry name="color" mtime="1140202630" schema="/schemas/apps/panel/toplevels/background/color"/>
+                                                <entry name="fit" mtime="1140202630" schema="/schemas/apps/panel/toplevels/background/fit"/>
+                                                <entry name="type" mtime="1189983507" schema="/schemas/apps/panel/toplevels/background/type" type="string">
+                                                        <stringvalue>image</stringvalue>
+                                                </entry>
+                                                <entry name="image" mtime="1189983504" schema="/schemas/apps/panel/toplevels/background/image" type="string">
+                                                        <stringvalue>/usr/share/themes/Trisquel/gtk-2.0/Panel/panel-bg.png</stringvalue>
+                                                </entry>
+                                        </dir>
+                                </dir>
+                        </dir>
+                        <dir name="general">
+                                <entry name="applet_id_list" mtime="1189983595" type="list" ltype="string">
+                                        <li type="string">
+                                                <stringvalue>clock</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>notification</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>windowlist</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>showdesktop</stringvalue>
+                                        </li>
+                                </entry>
+                                <entry name="object_id_list" mtime="1189983595" type="list" ltype="string">
+                                        <li type="string">
+                                                <stringvalue>menu</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>home</stringvalue>
+                                        </li>
+                                        <li type="string">
+                                                <stringvalue>browser</stringvalue>
+                                        </li>
+                                </entry>
+                                <entry name="toplevel_id_list" mtime="1189983595" type="list" ltype="string">
+                                        <li type="string">
+                                                <stringvalue>panel_2</stringvalue>
+                                        </li>
+                                </entry>
+                                <entry name="profiles_migrated" mtime="1139353992" type="bool" value="true">
+                                </entry>
+                        </dir>
+                </dir>
+        </dir>
+        <dir name="desktop">
+                <dir name="gnome">
+                        <dir name="volume_manager">
+                                <entry name="autoopen" mtime="1183634874" type="bool" value="true">
+                                </entry>
+                                <entry name="autorun" mtime="1153762685" type="bool" value="true">
+                                </entry>
+                                <entry name="autoprinter" mtime="1153762679" type="bool" value="true">
+                                </entry>
+                                <entry name="autoplay_dvd" mtime="1153752618" type="bool" value="true">
+                                </entry>
+                                <entry name="autoplay_cda" mtime="1153752608" type="bool" value="true">
+                                </entry>
+                                <entry name="automount_media" mtime="1184592276" type="bool" value="true">
+                                </entry>
+                                <entry name="automount_drives" mtime="1153752585" type="bool" value="true">
+                                </entry>
+                                <entry name="autobrowse" mtime="1161662405" type="bool" value="true">
+                                </entry>
+                                <entry name="autophoto_command" mtime="1153762671" type="string">
+                                        <stringvalue>gthumb -i</stringvalue>
+                                </entry>
+                                <entry name="autoipod_command" mtime="1156772178" type="string">
+                                        <stringvalue>exaile</stringvalue>
+                                </entry>
+                                <entry name="autoipod" mtime="1141183668" type="bool" value="true">
+                                </entry>
+                                <entry name="autoburn" mtime="1141183633" type="bool" value="true">
+                                </entry>
+                        </dir>
+                        <dir name="url-handlers">
+                                <dir name="sip">
+                                        <entry name="enabled" mtime="1148042688" type="bool" value="true">
+                                        </entry>
+                                        <entry name="need-terminal" mtime="1148042688" type="bool" value="false">
+                                        </entry>
+                                        <entry name="command" mtime="1148042688" type="string">
+                                                <stringvalue>ekiga -c &quot;%s&quot;</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="mailto">
+                                        <entry name="needs_terminal" mtime="1149878929" type="bool" value="false">
+                                        </entry>
+                                        <entry name="enabled" mtime="1145006647" type="bool" value="true">
+                                        </entry>
+                                        <entry name="command" mtime="1149878929" type="string">
+                                                <stringvalue>evolution %s</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="about">
+                                        <entry name="needs_terminal" mtime="1153762746" type="bool" value="false">
+                                        </entry>
+                                        <entry name="command" mtime="1153762746" type="string">
+                                                <stringvalue>icecat %s</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="unknown">
+                                        <entry name="needs_terminal" mtime="1153762746" type="bool" value="false">
+                                        </entry>
+                                        <entry name="command" mtime="1153762746" type="string">
+                                                <stringvalue>icecat %s</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="chrome">
+                                        <entry name="needs_terminal" mtime="1153752386" type="bool" value="false">
+                                        </entry>
+                                        <entry name="enabled" mtime="1153752386" type="bool" value="true">
+                                        </entry>
+                                        <entry name="command" mtime="1153752386" type="string">
+                                                <stringvalue>icecat %s</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="gopher">
+                                        <entry name="needs_terminal" mtime="1153752386" type="bool" value="false">
+                                        </entry>
+                                        <entry name="enabled" mtime="1153752386" type="bool" value="true">
+                                        </entry>
+                                        <entry name="command" mtime="1153752386" type="string">
+                                                <stringvalue>icecat %s</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="ftp">
+                                        <entry name="needs_terminal" mtime="1153752386" type="bool" value="false">
+                                        </entry>
+                                        <entry name="enabled" mtime="1153752386" type="bool" value="true">
+                                        </entry>
+                                        <entry name="command" mtime="1153752386" type="string">
+                                                <stringvalue>icecat %s</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="https">
+                                        <entry name="needs_terminal" mtime="1153762746" type="bool" value="false">
+                                        </entry>
+                                        <entry name="enabled" mtime="1153752386" type="bool" value="true">
+                                        </entry>
+                                        <entry name="command" mtime="1153762746" type="string">
+                                                <stringvalue>icecat %s</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="http">
+                                        <entry name="needs_terminal" mtime="1153762746" type="bool" value="false">
+                                        </entry>
+                                        <entry name="enabled" mtime="1153752386" type="bool" value="true">
+                                        </entry>
+                                        <entry name="command" mtime="1153762746" type="string">
+                                                <stringvalue>icecat %s</stringvalue>
+                                        </entry>
+                                </dir>
+                        </dir>
+                        <dir name="font_rendering">
+                                <entry name="hinting" mtime="1155505188" type="string">
+                                        <stringvalue>slight</stringvalue>
+                                </entry>
+                                <entry name="antialiasing" mtime="1155505187" type="string">
+                                        <stringvalue>grayscale</stringvalue>
+                                </entry>
+                        </dir>
+                        <dir name="interface">
+                                <entry name="accessibility" mtime="1169934538" type="bool" value="false">
+                                </entry>
+                                <entry name="buttons_have_icons" mtime="1161583422" type="bool" value="true">
+                                </entry>
+                                <entry name="enable_animations" mtime="1161583422" type="bool" value="true">
+                                </entry>
+                                <entry name="document_font_name" mtime="1155505210" type="string">
+                                        <stringvalue>Serif 10</stringvalue>
+                                </entry>
+                                <entry name="monospace_font_name" mtime="1155505224" type="string">
+                                        <stringvalue>Monospace Bold 9</stringvalue>
+                                </entry>
+                                <entry name="can_change_accels" mtime="1150825728" type="bool" value="false">
+                                </entry>
+                                <entry name="toolbar_style" mtime="1150825744" type="string">
+                                        <stringvalue>both</stringvalue>
+                                </entry>
+                                <entry name="toolbar_detachable" mtime="1150825726" type="bool" value="false">
+                                </entry>
+                                <entry name="menus_have_icons" mtime="1150825718" type="bool" value="true">
+                                </entry>
+                                <entry name="font_name" mtime="1148045365" type="string">
+                                        <stringvalue>Sans 8</stringvalue>
+                                </entry>
+                                <entry name="icon_theme" mtime="1167784355" type="string">
+                                        <stringvalue>trisquel</stringvalue>
+                                </entry>
+                                <entry name="gtk_theme" mtime="1167784355" type="string">
+                                        <stringvalue>Trisquel</stringvalue>
+                                </entry>
+                        </dir>
+                        <dir name="applications">
+                                <dir name="media">
+                                        <entry name="exec" mtime="1153590967" type="string">
+                                                <stringvalue>totem</stringvalue>
+                                        </entry>
+                                </dir>
+                                <dir name="terminal">
+                                        <entry name="exec_arg" mtime="1153590967" type="string">
+                                                <stringvalue>-x</stringvalue>
+                                        </entry>
+                                        <entry name="exec" mtime="1153590967" type="string">
+                                                <stringvalue>gnome-terminal</stringvalue>
+                                        </entry>
+                                </dir>
+                        </dir>
+                </dir>
+        </dir>
+</gconf>

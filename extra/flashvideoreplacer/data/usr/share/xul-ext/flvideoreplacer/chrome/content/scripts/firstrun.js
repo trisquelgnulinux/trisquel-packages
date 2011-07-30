@@ -122,7 +122,6 @@ var flvideoreplacerFirstrun = {
 					if(url.match(/youtube\.com/)
 							|| url.match(/vimeo\.com/)
 							|| url.match(/metacafe\.com/)
-							|| url.match(/blip\.tv/)
 							|| url.match(/ustream\.tv/)
 							|| url.match(/youporn\.com/)
 							|| url.match(/pornhub\.com/)
@@ -157,10 +156,16 @@ var flvideoreplacerFirstrun = {
 			this.prefs.setBoolPref("pluginmp4", false);
 			this.prefs.setBoolPref("pluginflv", false);
 			this.prefs.setBoolPref("pluginqt", false);
+			this.prefs.setBoolPref("pluginmkv", false);
 			this.prefs.setBoolPref("pluginwmp", false);
 			this.prefs.setBoolPref("pluginwmv", false);
 			this.prefs.setBoolPref("pluginmov", false);
 			this.prefs.setBoolPref("pluginm4v", false);
+			this.prefs.setBoolPref("pluginxth", false);
+			this.prefs.setBoolPref("pluginxtp", false);
+			this.prefs.setBoolPref("pluginxin", false);
+			this.prefs.setBoolPref("pluginvlc", false);
+		
 			// get prefs
 			var pluginforce = this.prefs.getBoolPref("pluginforce");
 
@@ -204,6 +209,26 @@ var flvideoreplacerFirstrun = {
 					if (pluginm4v === true) {
 						this.prefs.setBoolPref("pluginm4v", true);
 					}
+					var pluginmkv = /video.*x-matroska/.test(line.value);
+					if (pluginmkv === true) {
+						this.prefs.setBoolPref("pluginmkv", true);
+					}
+					var pluginxth = /video.*x-theora/.test(line.value);
+					if (pluginxth === true) {
+						this.prefs.setBoolPref("pluginxth", true);
+					}
+					var pluginxtp = /application.*x-totem-plugin/.test(line.value);
+					if (pluginxtp === true) {
+						this.prefs.setBoolPref("pluginxtp", true);
+					}
+					var pluginxin = /application.*x-xine-plugin/.test(line.value);
+					if (pluginxin === true) {
+						this.prefs.setBoolPref("pluginxin", true);
+					}
+					var pluginvlc = /application.*x-vlc-plugin/.test(line.value);
+					if (pluginvlc === true) {
+						this.prefs.setBoolPref("pluginvlc", true);
+					}
 					var pluginqt = /video.*quicktime/.test(line.value);
 					if (pluginqt === true) {
 						this.prefs.setBoolPref("pluginqt", true);
@@ -228,6 +253,11 @@ var flvideoreplacerFirstrun = {
 					this.prefs.setBoolPref("pluginmp4", true);
 					this.prefs.setBoolPref("pluginflv", true);
 					this.prefs.setBoolPref("pluginqt", true);
+					this.prefs.setBoolPref("pluginmkv", true);
+					this.prefs.setBoolPref("pluginxth", true);
+					this.prefs.setBoolPref("pluginxtp", true);
+					this.prefs.setBoolPref("pluginxin", true);
+					this.prefs.setBoolPref("pluginvlc", true);
 					this.prefs.setBoolPref("pluginwmp", true);
 					this.prefs.setBoolPref("pluginwmv", true);
 					this.prefs.setBoolPref("pluginmov", true);

@@ -4,20 +4,20 @@
 
 	<Description about="urn:mozilla:install-manifest">
 		<em:id>flvideoreplacer@lovinglinux.megabyet.net</em:id>
-		<em:version>2.1.10pre1</em:version>
+		<em:version>2.1.13pre</em:version>
 		<em:type>2</em:type>
 		<em:optionsURL>chrome://flvideoreplacer/content/options.xul</em:optionsURL>
 		<em:name>FlashVideoReplacer</em:name>
 		<em:description>Replace embedded flash videos and display them with a different plugin or standalone player, download or automatically redirect to WebM player when available.</em:description>
 		<em:creator>webgapps</em:creator>
 		<em:contributor>famo</em:contributor>
-		<em:homepageURL>http://www.webgapps.org/addons/flashvideoreplacer</em:homepageURL>
+		<em:homepageURL>http://www.webgapps.org/add-ons/flashvideoreplacer</em:homepageURL>
 		<em:targetApplication>
-			<Description>
-				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-				<em:minVersion>3.5</em:minVersion>
-				<em:maxVersion>6.0a1</em:maxVersion>
-			</Description>
+        <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>3.5</em:minVersion>
+                <em:maxVersion>7.0a1</em:maxVersion>
+        </Description>
 		</em:targetApplication>
 	</Description>
 </RDF>

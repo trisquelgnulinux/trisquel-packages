@@ -84,7 +84,7 @@
 						<vbox flex="1">
 							<stack flex="1">
 								<vbox flex="1">
-									<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
+
 								</vbox>
 								<vbox>
 									<spacer height="15" flex="0" />
@@ -165,7 +165,7 @@
 							</stack>
 							<stack flex="1">
 								<vbox flex="1">
-									<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
+
 								</vbox>
 								<vbox id="selectplugin">
 									<caption label="&ForcePluginMimeType;" tooltiptext="&OptionsTooltipForceMime;" />
@@ -176,7 +176,18 @@
 											<menupopup>
 												<menuitem label="&Autodetect;" value="autodetect"
 													selected="true" />
-												<menuitem id="pluginmp4" label="MP4 (video/mp4)" value="video/mp4" />
+												<menuitem id="pluginmkv" label="Matroska (video/x-matroska)"
+													value="video/x-matroska" />
+												<menuitem id="pluginxth" label="Theora (video/x-theora)"
+													value="video/x-theora" />
+												<menuitem id="pluginxtp" label="Totem (application/x-totem-plugin)"
+													value="application/x-totem-plugin" />
+												<menuitem id="pluginxin" label="Xine (application/x-xine-plugin)"
+													value="application/x-xine-plugin" />
+												<menuitem id="pluginvlc" label="VLC (application/x-vlc-plugin)"
+													value="application/x-vlc-plugin" />
+												<menuitem id="pluginmp4" label="MP4 (video/mp4)" 
+													value="video/mp4" />
 												<menuitem id="pluginqt" label="QT (video/quicktime)"
 													value="video/quicktime" />
 												<menuitem id="pluginwmp" label="WMP (application/x-mplayer2)"
@@ -210,7 +221,7 @@
 							</stack>
 							<stack flex="1">
 								<vbox flex="1">
-									<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
+
 								</vbox>
 								<vbox id="standaloneplayer">
 									<caption label="&StandalonePlayer;" tooltiptext="&OptionsTooltipStandalone;" />
@@ -243,9 +254,11 @@
 										<vbox>
 											<hbox>
 												<image src="chrome://flvideoreplacer/skin/search24.png"
-													tooltiptext="&Search;" onclick="flvideoreplacerOptions.openFile('&SelectFile;');" />
+												       onmouseover="this.style.cursor='pointer';"
+												       tooltiptext="&Search;" onclick="flvideoreplacerOptions.openFile('&SelectFile;');" />
 												<image src="chrome://flvideoreplacer/skin/delete24.png"
-													tooltiptext="&Reset;" onclick="flvideoreplacerOptions.resetFile('standalone');" />
+												       onmouseover="this.style.cursor='pointer';"
+												       tooltiptext="&Reset;" onclick="flvideoreplacerOptions.resetFile('standalone');" />
 											</hbox>
 										</vbox>
 										<spacer width="10" flex="0" />
@@ -259,12 +272,12 @@
 					<tabpanel flex="1">
 						<stack flex="1">
 							<vbox flex="1">
-								<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
+
 							</vbox>
 							<vbox>
 								<spacer height="15" flex="0" />
 								<hbox>
-									<caption label="&Quality;" tooltiptext="&OptionsTooltipQuality;" />
+									<caption label="&DefaultQuality;" tooltiptext="&OptionsTooltipQuality;" />
 									<spacer width="5" flex="0" />
 									<menulist preference="pref_videoquality" id="videoquality"
 										width="110">
@@ -287,7 +300,7 @@
 					<tabpanel flex="1">
 						<stack flex="1">
 							<vbox flex="1">
-								<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
+
 							</vbox>
 							<vbox id="downloader">
 								<spacer height="15" flex="0" />
@@ -299,9 +312,11 @@
 									<vbox>
 										<hbox>
 											<image src="chrome://flvideoreplacer/skin/search24.png"
-												tooltiptext="&Search;" onclick="flvideoreplacerOptions.openDir('&SelectDir;');" />
+											       onmouseover="this.style.cursor='pointer';"
+											       tooltiptext="&Search;" onclick="flvideoreplacerOptions.openDir('&SelectDir;');" />
 											<image src="chrome://flvideoreplacer/skin/delete24.png"
-												tooltiptext="&Reset;" onclick="flvideoreplacerOptions.resetFile('downdir');" />
+											       onmouseover="this.style.cursor='pointer';"
+											       tooltiptext="&Reset;" onclick="flvideoreplacerOptions.resetFile('downdir');" />
 										</hbox>
 									</vbox>
 									<spacer width="10" flex="0" />
@@ -320,7 +335,7 @@
 						<vbox flex="1">
 							<stack flex="1">
 								<vbox flex="1">
-									<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
+
 								</vbox>
 								<vbox>
 									<spacer height="15" flex="0" />
@@ -337,7 +352,7 @@
 											size="30" />
 										<spacer width="10" flex="0" />
 										<checkbox label="Blip.tv" preference="pref_bliptv" id="bliptv"
-											size="30" />
+											size="30" hidden="true"/>
 										<spacer width="10" flex="1" />
 									</hbox>
 									<spacer height="10" flex="0" />
@@ -359,7 +374,7 @@
 					<tabpanel flex="1">
 						<stack flex="1">
 							<vbox flex="1">
-								<image src="chrome://flvideoreplacer/skin/stack2.png" flex="1"/>
+
 							</vbox>
 							<vbox>
 								<spacer height="15" flex="0" />

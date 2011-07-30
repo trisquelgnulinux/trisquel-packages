@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+share:=usr/share/gnome-app-install/
+%:
+	dh --with=python-central $@
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf build AppInstall/Version.py gnome_app_install.egg-info
+
+# Install the modules in a private directory, as our applications are the
+# only ones using them.
+override_dh_auto_install:
+	dh_auto_install -- --install-lib /usr/share/gnome-app-install/
+	rm -r debian/gnome-app-install/usr/share/gnome-app-install/*.egg-info
+	# Move the scripts to $(SHARE) and relink them again later.
+	mv debian/gnome-app-install/usr/*bin/* debian/gnome-app-install/$(share)
+	rmdir debian/gnome-app-install/usr/*bin
+	dh_link $(share)/gnome-app-install usr/bin/gnome-app-install \
+	        $(share)/update-app-install usr/sbin/update-app-install \
+			$(share)/gnome-app-install-helper usr/sbin/gnome-app-install-helper
+	# Remove empty directories.
+	find debian/gnome-app-install/usr -type d -empty -delete

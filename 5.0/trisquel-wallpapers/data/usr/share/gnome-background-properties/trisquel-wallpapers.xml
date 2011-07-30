@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper>
+    <name>Trisquel Robur</name>
+    <filename>/usr/share/backgrounds/robur.png</filename>
+    <options>stretched</options>
+    <pcolor>#19377f</pcolor>
+    <scolor>#5d9dcb</scolor>
+    <shade_type>vertical-gradient</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Dwyn</name>
+    <filename>/usr/share/backgrounds/dwyn.png</filename>
+    <options>zoom</options>
+    <pcolor>#8000FF</pcolor>
+    <scolor>#FF3C00</scolor>
+    <shade_type>horizontal-gradient</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Awen</name>
+    <filename>/usr/share/backgrounds/awen.png</filename>
+    <options>zoom</options>
+    <pcolor>#19377f</pcolor>
+    <scolor>#5d9dcb</scolor>
+    <shade_type>vertical-gradient</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Taranis</name>
+    <filename>/usr/share/backgrounds/taranis.jpg</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+</wallpapers>
