@@ -1,6 +1,8 @@
 var flvideoreplacerFirstrun = {
 
 		init : function() {// get current version from extension manager
+			
+			"use strict";
 
 			// access preferences interface
 			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
@@ -9,9 +11,6 @@ var flvideoreplacerFirstrun = {
 
 			try {// Firefox <= 3.6
 
-				// store browser version
-				this.prefs.setIntPref("performance", 3);
-
 				var gExtensionManager = Components.classes["@mozilla.org/extensions/manager;1"]
 				.getService(Components.interfaces.nsIExtensionManager);
 				var current = gExtensionManager.getItemForID("flvideoreplacer@lovinglinux.megabyet.net").version;
@@ -19,9 +18,6 @@ var flvideoreplacerFirstrun = {
 				flvideoreplacerFirstrun.updateInstall(current);
 
 			} catch (e) {// Firefox >=4.0
-
-				// store browser version
-				this.prefs.setIntPref("performance", 4);
 
 				Components.utils.import("resource://gre/modules/AddonManager.jsm");
 				AddonManager.getAddonByID("flvideoreplacer@lovinglinux.megabyet.net", function(addon) {
@@ -33,6 +29,8 @@ var flvideoreplacerFirstrun = {
 		},
 
 		updateInstall : function(aVersion) {// check version and perform updates
+			
+			"use strict";
 
 			// get osString
 			var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
@@ -122,7 +120,6 @@ var flvideoreplacerFirstrun = {
 					if(url.match(/youtube\.com/)
 							|| url.match(/vimeo\.com/)
 							|| url.match(/metacafe\.com/)
-							|| url.match(/ustream\.tv/)
 							|| url.match(/youporn\.com/)
 							|| url.match(/pornhub\.com/)
 							|| url.match(/redtube\.com/)
@@ -141,6 +138,8 @@ var flvideoreplacerFirstrun = {
 		},
 
 		pluginCheck : function() {
+			
+			"use strict";
 
 			// get osString
 			var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
@@ -267,6 +266,8 @@ var flvideoreplacerFirstrun = {
 		},
 
 		playerCheck : function() {
+			
+			"use strict";
 
 			// get osString
 			var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
@@ -487,6 +488,8 @@ var flvideoreplacerFirstrun = {
 		},
 
 		checkTPE: function() {
+			
+			"use strict";
 
 			//access preferences interface
 			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]

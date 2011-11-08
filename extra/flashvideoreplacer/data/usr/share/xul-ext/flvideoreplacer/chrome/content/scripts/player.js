@@ -1,6 +1,8 @@
 var flvideoreplacerPlayer = {
 
 	startPlayer: function() {//detect video path and start player
+		
+		"use strict";
 
 	    //access preferences interface
 	    this.prefs = Components.classes["@mozilla.org/preferences-service;1"]

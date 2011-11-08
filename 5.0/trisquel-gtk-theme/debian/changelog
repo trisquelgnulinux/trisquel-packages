@@ -1,3 +1,21 @@
+trisquel-gtk-theme (5.0-1) slaine; urgency=low
+
+  * Removed hack to hide resize grips
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Sep 2011 21:18:11 +0200
+
+trisquel-gtk-theme (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:31:50 +0200
+
+trisquel-gtk-theme (4.99-1) slaine; urgency=low
+
+  * Removed resize widget in the lower right corner
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 09 Aug 2011 18:13:27 +0200
+
 trisquel-gtk-theme (4.99) slaine; urgency=low
 
   * Initial release for Dagda

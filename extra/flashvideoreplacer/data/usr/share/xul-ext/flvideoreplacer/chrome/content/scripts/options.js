@@ -1,6 +1,8 @@
 var flvideoreplacerOptions = {
 
 		toggleTPE: function() {
+			
+			"use strict";
 
 			//access preferences interface
 			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
@@ -18,6 +20,8 @@ var flvideoreplacerOptions = {
 		},
 
 		toggleMime: function() {
+			
+			"use strict";
 
 			//get osString
 			var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
@@ -124,6 +128,8 @@ var flvideoreplacerOptions = {
 		},
 
 		togglePlayer: function() {
+			
+			"use strict";
 
 			//access preferences interface
 			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
@@ -189,6 +195,8 @@ var flvideoreplacerOptions = {
 		},
 
 		toggleOptions: function() {
+			
+			"use strict";
 
 			//get osString
 			var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
@@ -551,6 +559,8 @@ var flvideoreplacerOptions = {
 		},
 
 		resetFile : function(aField) {//reset prefs file paths
+			
+			"use strict";
 
 			//get osString
 			var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
@@ -590,6 +600,8 @@ var flvideoreplacerOptions = {
 		},
 
 		openFile : function(aText) {//open file and set path in prefs
+			
+			"use strict";
 
 			//access preferences interface
 			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
@@ -610,6 +622,8 @@ var flvideoreplacerOptions = {
 		},
 
 		openDir : function(aText) {//open folder and set path in prefs
+			
+			"use strict";
 
 			//access preferences interface
 			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]

@@ -1,4 +1,0 @@
-#! /bin/sh
-
-[ -f /etc/gconf/gconf.xml.defaults/%gconf-tree.xml ] && mv /etc/gconf/gconf.xml.defaults/%gconf-tree.xml /etc/gconf/gconf.xml.defaults/%gconf-tree.xml-old
-[ -f /etc/gconf/gconf.xml.defaults/%gconf-tree-trisquel.xml ] && ln -s /etc/gconf/gconf.xml.defaults/%gconf-tree-trisquel.xml /etc/gconf/gconf.xml.defaults/%gconf-tree.xml

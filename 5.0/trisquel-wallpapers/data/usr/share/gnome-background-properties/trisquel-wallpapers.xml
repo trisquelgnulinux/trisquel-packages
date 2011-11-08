@@ -33,4 +33,29 @@
     <scolor>#000000</scolor>
     <shade_type>solid</shade_type>
   </wallpaper>
+  <wallpaper>
+    <name>Trisquel Slaine</name>
+    <filename>/usr/share/backgrounds/slaine.jpg</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Dagda Blue</name>
+    <filename>/usr/share/backgrounds/dagda-b.jpg</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Dagda Red</name>
+    <filename>/usr/share/backgrounds/dagda-r.jpg</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+
 </wallpapers>

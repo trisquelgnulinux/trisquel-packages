@@ -22,7 +22,7 @@ fi
 export XDG_DATA_DIRS
 
 # Ensure the existance of pcmanfm config file
-PCMANFM_CONF_DIR="$XDG_CONFIG_HOME/pcmanfm"
+PCMANFM_CONF_DIR="$XDG_CONFIG_HOME/pcmanfm/Trisquel-mini"
 if [ ! -f "$PCMANFM_CONF_DIR/pcmanfm.conf" ]; then
     mkdir -p "$PCMANFM_CONF_DIR"
     cp /usr/share/trisquel-mini/pcmanfm/main.trisquel-mini "$PCMANFM_CONF_DIR/pcmanfm.conf"

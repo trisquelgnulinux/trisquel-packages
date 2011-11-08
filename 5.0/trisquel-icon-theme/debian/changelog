@@ -1,3 +1,15 @@
+trisquel-icon-theme (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:31:55 +0200
+
+trisquel-icon-theme (4.99-1) slaine; urgency=low
+
+  * Now inherits from Elementary Dark
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 09 Aug 2011 18:51:55 +0200
+
 trisquel-icon-theme (4.99) slaine; urgency=low
 
   * Initial release for Dagda

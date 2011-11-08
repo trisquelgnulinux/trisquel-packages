@@ -1,0 +1,14 @@
+#!/bin/sh
+
+item="/usr/bin/gnome-panel"
+
+[ -f "$item"".real" ] && exit 0 || true
+
+dpkg-divert --package trisquel-desktop-common-data --add --rename --divert "$item"".real" "$item"
+
+cat << EOF > $item
+#!/bin/sh
+/usr/bin/gnome-panel.real --replace
+EOF
+
+chmod 755 $item

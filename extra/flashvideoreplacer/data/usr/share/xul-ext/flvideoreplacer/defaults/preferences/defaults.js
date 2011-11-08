@@ -4,7 +4,6 @@ pref("extensions.flvideoreplacer.youtube", true);
 pref("extensions.flvideoreplacer.vimeo", true);
 pref("extensions.flvideoreplacer.metacafe", true);
 pref("extensions.flvideoreplacer.bliptv", true);
-pref("extensions.flvideoreplacer.ustream", true);
 pref("extensions.flvideoreplacer.other", true);
 pref("extensions.flvideoreplacer.alertsinfo", false);
 pref("extensions.flvideoreplacer.alertserror", true);
@@ -26,7 +25,6 @@ pref("extensions.flvideoreplacer.downdir", "");
 pref("extensions.flvideoreplacer.downdta", false);
 pref("extensions.flvideoreplacer.silentdownload", false);
 pref("extensions.flvideoreplacer.videourl", "");
-pref("extensions.flvideoreplacer.fmt", "18");
 pref("extensions.flvideoreplacer.fallback", "noplugin");
 
 pref("extensions.flvideoreplacer.pluginforce", true);

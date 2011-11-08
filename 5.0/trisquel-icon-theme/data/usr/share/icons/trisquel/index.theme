@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Trisquel
 Comment=Trisquel icons for GNOME
-Inherits=elementary
+Inherits=elementary-mono-dark
 Example=folder
 
 Directories=scalable/apps,scalable/devices,scalable/places,24x24/apps,24x24/status

@@ -1,6 +1,9 @@
 var flvideoreplacerUrlBarListener = {
 
 		QueryInterface: function(aIID) {
+
+			"use strict";
+
 			if (aIID.equals(Components.interfaces.nsIWebProgressListener) ||
 					aIID.equals(Components.interfaces.nsISupportsWeakReference) ||
 					aIID.equals(Components.interfaces.nsISupports))
@@ -9,6 +12,9 @@ var flvideoreplacerUrlBarListener = {
 		},
 
 		onLocationChange: function(aProgress, aRequest, aURI) {
+
+			"use strict";
+
 			flvideoreplacerURLBar.processNewURL(aURI);
 		},
 
@@ -23,16 +29,23 @@ var flvideoreplacerURLBar = {
 		oldURL: null,
 
 		init: function() {
+
+			"use strict";
+
 			//listen for webpage loads
-			gBrowser.addProgressListener(flvideoreplacerUrlBarListener,
-					Components.interfaces.nsIWebProgress.NOTIFY_LOCATION);
+			gBrowser.addProgressListener(flvideoreplacerUrlBarListener);
 		},
 
 		uninit: function() {
+			
+			"use strict";
+
 			gBrowser.removeProgressListener(flvideoreplacerUrlBarListener);
 		},
 
 		processNewURL: function(aURI) {
+			
+			"use strict";
 
 			if (aURI.spec == this.oldURL) {
 				return;
@@ -56,7 +69,6 @@ var flvideoreplacerURLBar = {
 					if(aURI.spec.match(/youtube\.com/)
 							|| aURI.spec.match(/vimeo\.com/)
 							|| aURI.spec.match(/metacafe\.com/)
-							|| aURI.spec.match(/ustream\.tv/)
 							|| aURI.spec.match(/youporn\.com/)
 							|| aURI.spec.match(/pornhub\.com/)
 							|| aURI.spec.match(/redtube\.com/)
@@ -95,6 +107,7 @@ var flvideoreplacerURLBar = {
 					var mimetype = this.prefs.getCharPref("filemime");
 					var baseurl = this.prefs.getCharPref("videourl");
 					var alertserror = this.prefs.getBoolPref("alertserror");
+					var vimeoTab = this.prefs.getIntPref("tabindex");
 
 					var videoid = baseurl.replace(/.*clip:/,"").replace(/\/.*/,"");
 					//get localization
@@ -124,8 +137,8 @@ var flvideoreplacerURLBar = {
 								if (player.exists()) {//match if player exists and launch it
 									process = Components.classes['@mozilla.org/process/util;1'].createInstance(Components.interfaces.nsIProcess);
 									process.init(player);
-									var arguments = [""+videourl+""];
-									process.run(false, arguments, arguments.length);
+									var args = [""+videourl+""];
+									process.run(false, args, args.length);
 								}
 							}else{
 								if(alertserror === true){
@@ -156,8 +169,8 @@ var flvideoreplacerURLBar = {
 								if (player.exists()) {//match if player exists and launch it
 									process = Components.classes['@mozilla.org/process/util;1'].createInstance(Components.interfaces.nsIProcess);
 									process.init(player);
-									var arguments = [""+videourl+""];
-									process.run(false, arguments, arguments.length);
+									var args = [""+videourl+""];
+									process.run(false, args, args.length);
 								}
 							}else{
 
@@ -181,12 +194,11 @@ var flvideoreplacerURLBar = {
 						}
 					}
 					try{
-						aTab = document.getElementById("FlashVideoReplacerVimeo");
-						gBrowser.removeTab(aTab);
+						gBrowser.selectTabAtIndex(vimeoTab);
+						setTimeout(function () { var fvrTab = document.getElementById("FlashVideoReplacerVimeo"); gBrowser.removeTab(fvrTab); }, 1500);
 					}catch(e){
 						//do nothing
 					}
-					//flvideoreplacerURLBar.uninit();
 				}
 			}
 			this.oldURL = aURI.spec;

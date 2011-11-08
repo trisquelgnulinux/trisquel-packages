@@ -1,26 +1,37 @@
-trisquel-meta (4.99-4) slaine; urgency=low
+trisquel-meta (5.0-3) slaine; urgency=low
 
+  * Added gstreamer0.10-plugins-bad back
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 26 Oct 2011 15:52:55 +0200
+
+trisquel-meta (5.0-2) slaine; urgency=low
+
+  * Added mobile-broadband-provider-info
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Sep 2011 04:12:43 +0200
+
+trisquel-meta (5.0-1) slaine; urgency=low
+
+  * Added usbmodeswitch
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 20:32:46 +0200
+
+trisquel-meta (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+  * Added trisquel-gnome-base transitional package
+  * Removed "Recommended:" entries and added -recommended transitional packages
+  * Removed compizconfig-settings-manager, added libreoffice-style-tango, choqok and ark
+  * Removed -recommended packages, added triskel
+  * Removed gstreamer0.10-schroedinger and gstreamer0.10-plugins-bad
+  * Removed friendly-recovery
+  * Added gnome-keyring
   * Replaced Firefox with IceCat and OpenOffice.org with LibreOffice
-
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 27 Jul 2011 02:42:47 +0200
-
-trisquel-meta (4.99-3) slaine; urgency=low
-
   * Added back gnome-user-guide-en and gnome-user-guide-es
-
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 20 Jul 2011 03:33:44 +0200
-
-trisquel-meta (4.99-2) slaine; urgency=low
-
   * Added gwibber services and friendly-recovery
-
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 19 Jul 2011 17:22:35 +0200
-
-trisquel-meta (4.99-1) slaine; urgency=low
-
   * Removed flashvideoreplacer, xul-ext-notify and remmina-gnome dependencies
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 19 Jul 2011 02:10:26 +0200
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:32:07 +0200
 
 trisquel-meta (4.99) slaine; urgency=low
 
