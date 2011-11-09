@@ -1,3 +1,9 @@
+gnome-app-install (0.5.60.1ubuntu2trisquel6-2) slaine; urgency=low
+
+  * Now provids software-center, fixes #4105
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Nov 2011 02:28:14 +0100
+
 gnome-app-install (0.5.60.1ubuntu2trisquel6-1) slaine; urgency=low
 
   * Removed python-sexy dependency

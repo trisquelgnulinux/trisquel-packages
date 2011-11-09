@@ -32,6 +32,7 @@ Depends: ${python:Depends},
          python-xdg (>= 0.8),
          synaptic (>= 0.57.8) | aptdaemon
 Recommends: yelp, lsb-release
+Provides: software-center
 XB-Python-Version: ${python:Versions}
 Description: GNOME Application Installer
  A pretty application installer for GNOME. It can also search for MIME
