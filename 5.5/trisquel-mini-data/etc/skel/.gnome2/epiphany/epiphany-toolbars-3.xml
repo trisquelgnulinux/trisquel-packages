@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<toolbars version="1.1">
+  <toolbar name="DefaultToolbar" hidden="false" editable="true">
+    <toolitem name="FileNewTab"/>
+    <toolitem name="NavigationBack"/>
+    <toolitem name="NavigationForward"/>
+    <toolitem name="ViewStop"/>
+    <toolitem name="ViewReload"/>
+    <toolitem name="GoHome"/>
+    <toolitem name="Location"/>
+    <toolitem name="ToolbarGo"/>
+  </toolbar>
+</toolbars>

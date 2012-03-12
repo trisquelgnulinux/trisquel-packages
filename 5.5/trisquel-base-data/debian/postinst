@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if update-alternatives --query default.plymouth | grep Value | grep lubuntu -q
+then
+update-alternatives --remove default.plymouth /lib/plymouth/themes/lubuntu-logo/lubuntu-logo.plymouth
+fi
+
+update-initramfs -u
+
+exit 0

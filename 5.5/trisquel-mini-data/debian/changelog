@@ -1,0 +1,65 @@
+trisquel-mini-data (5.4-1) slaine; urgency=low
+
+  * nm-applet is no longer needed in the autostart script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 10 Mar 2012 16:34:02 +0100
+
+trisquel-mini-data (5.4) slaine; urgency=low
+
+  * Initial release for Brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 18:40:14 +0100
+
+trisquel-mini-data (5.0-1) slaine; urgency=low
+
+  * Added changes from http://trisquel.info/es/issues/4235
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Nov 2011 22:42:19 +0100
+
+trisquel-mini-data (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:32:13 +0200
+
+trisquel-mini-data (4.99-1) slaine; urgency=low
+
+  * Added final artwork
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 01:52:08 +0200
+
+trisquel-mini-data (4.99) slaine; urgency=low
+
+  * Initial release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 Jul 2011 14:48:53 +0200
+
+trisquel-mini-data (4.4.9-1) slaine; urgency=low
+
+  * Updated for new pcmanfm version
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 05 Apr 2011 16:51:40 +0200
+
+trisquel-mini-data (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-mini-data (3.99-2) taranis; urgency=low
+
+  * Added gigolo config file
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 18:06:49 +0200
+
+trisquel-mini-data (3.99-1) taranis; urgency=low
+
+  * Replaced wallpaper, Midori as default browser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 00:10:44 +0200
+
+trisquel-mini-data (3.99) taranis; urgency=low
+
+  * Initial release
+
+ -- Rubén Rodríguez <ruben@trisquel.info>  Wed, 12 May 2010 15:09:43 +0100

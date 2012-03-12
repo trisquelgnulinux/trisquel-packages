@@ -1,0 +1,14 @@
+ApDocView, /* Abiword */
+EogScrollView, /* Eog */
+CheeseThumbView /* Cheese */
+{
+	background-color: @dark_bg_color;
+	-EogScrollView-shadow-type: none;
+}
+
+/* gnome-terminal */
+TerminalScreen {
+	background-color: #000000;
+	color: #AAAAAA;
+	-TerminalScreen-background-darkness: 0.95;
+}

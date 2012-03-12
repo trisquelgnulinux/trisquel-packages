@@ -1,0 +1,398 @@
+trisquel-meta (5.4-15) slaine; urgency=low
+
+  * Removed nepomukcontroller and network-manager-pptp-kde from triskel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 12 Mar 2012 02:56:20 +0100
+
+trisquel-meta (5.4-14) slaine; urgency=low
+
+  * Added trisquel-codecs metapackage
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 23:45:12 +0100
+
+trisquel-meta (5.4-13) slaine; urgency=low
+
+  * Replaced gnome-screensaver with xscreensaver
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 03:23:10 +0100
+
+trisquel-meta (5.4-12) slaine; urgency=low
+
+  * Removed gimp
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 01:17:03 +0100
+
+trisquel-meta (5.4-11) slaine; urgency=low
+
+  * added missed langpack dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 10 Mar 2012 18:43:18 +0100
+
+trisquel-meta (5.4-10) slaine; urgency=low
+
+  * Added python-gobject-cairo to trisquel-mini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 10 Mar 2012 16:38:44 +0100
+
+trisquel-meta (5.4-9) slaine; urgency=low
+
+  * Added orca and lightdm dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 05 Mar 2012 16:46:59 +0100
+
+trisquel-meta (5.4-8) slaine; urgency=low
+
+  * Added unity-greeter
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 03 Mar 2012 01:07:23 +0100
+
+trisquel-meta (5.4-7) slaine; urgency=low
+
+  * Replaced gnome-session with gnome-session-fallback
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 02 Mar 2012 18:59:07 +0100
+
+trisquel-meta (5.4-6) slaine; urgency=low
+
+  * Replaced gdm with lightdm
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 02 Mar 2012 18:45:19 +0100
+
+trisquel-meta (5.4-5) slaine; urgency=low
+
+  * Removed language-support*
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 02 Mar 2012 17:10:18 +0100
+
+trisquel-meta (5.4-4) slaine; urgency=low
+
+  * Removed seahorse-plugins gnome-user-guide-*
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 28 Feb 2012 22:26:34 +0100
+
+trisquel-meta (5.4-3) slaine; urgency=low
+
+  * Removed compiz
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Feb 2012 02:52:40 +0100
+
+trisquel-meta (5.4-2) slaine; urgency=low
+
+  * Removed esound-clients and libc6-i686
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Feb 2012 00:22:39 +0100
+
+trisquel-meta (5.4-1) slaine; urgency=low
+
+  * Removed kdebase-workspace-bin from Triskel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 23:27:44 +0100
+
+trisquel-meta (5.4) slaine; urgency=low
+
+  * Initial release for Brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 18:40:14 +0100
+
+trisquel-meta (5.0-4) slaine; urgency=low
+
+  * Added wicd alternative to trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 15 Nov 2011 01:15:11 +0100
+
+trisquel-meta (5.0-3) slaine; urgency=low
+
+  * Added gstreamer0.10-plugins-bad back
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 26 Oct 2011 15:52:55 +0200
+
+trisquel-meta (5.0-2) slaine; urgency=low
+
+  * Added mobile-broadband-provider-info
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Sep 2011 04:12:43 +0200
+
+trisquel-meta (5.0-1) slaine; urgency=low
+
+  * Added usbmodeswitch
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 20:32:46 +0200
+
+trisquel-meta (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+  * Added trisquel-gnome-base transitional package
+  * Removed "Recommended:" entries and added -recommended transitional packages
+  * Removed compizconfig-settings-manager, added libreoffice-style-tango, choqok and ark
+  * Removed -recommended packages, added triskel
+  * Removed gstreamer0.10-schroedinger and gstreamer0.10-plugins-bad
+  * Removed friendly-recovery
+  * Added gnome-keyring
+  * Replaced Firefox with IceCat and OpenOffice.org with LibreOffice
+  * Added back gnome-user-guide-en and gnome-user-guide-es
+  * Added gwibber services and friendly-recovery
+  * Removed flashvideoreplacer, xul-ext-notify and remmina-gnome dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:32:07 +0200
+
+trisquel-meta (4.99) slaine; urgency=low
+
+  * Initial release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 Jul 2011 14:48:47 +0200
+
+trisquel-meta (4.5-8) slaine; urgency=low
+
+  * Added ubiquity-slideshow-trisquel to trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 May 2011 03:03:46 +0200
+
+trisquel-meta (4.5-7) slaine; urgency=low
+
+  * Changed usb-creator to usb-creator-gtk in trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 May 2011 01:06:34 +0200
+
+trisquel-meta (4.5-6) slaine; urgency=low
+
+  * Updated trisquel-sugar entry
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 May 2011 00:48:22 +0200
+
+trisquel-meta (4.5-5) slaine; urgency=low
+
+  * Added atheros-firmware, mdadm and wvdial
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 11 May 2011 16:07:01 +0200
+
+trisquel-meta (4.5-4) slaine; urgency=low
+
+  * Updated for trisquel-mini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 05 Apr 2011 17:55:23 +0200
+
+trisquel-meta (4.5-3) slaine; urgency=low
+
+  * Replaced shotwell with gthumb
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 23 Mar 2011 00:17:48 +0100
+
+trisquel-meta (4.5-2) slaine; urgency=low
+
+  * Added brasero-cdrkit and libgnome2-perl
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 22 Mar 2011 14:03:33 +0100
+
+trisquel-meta (4.5-1) slaine; urgency=low
+
+  * Added flashvideoreplacer
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 18 Mar 2011 08:44:07 +0100
+
+trisquel-meta (4.5) slaine; urgency=low
+
+  * Added ubiquity-slideshow-trisquel and gnome-orca
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 18 Mar 2011 00:39:30 +0100
+
+trisquel-meta (4.4.9-13) slaine; urgency=low
+
+  * Added gwibber, python-indicate, python-libproxy
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Mar 2011 20:46:07 +0100
+
+trisquel-meta (4.4.9-12) slaine; urgency=low
+
+  * removed indicator applet
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 18:14:15 +0100
+
+trisquel-meta (4.4.9-11) slaine; urgency=low
+
+  * removed libgl1-mesa-dri-experimental and network-manager-pptp
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 01:18:45 +0100
+
+trisquel-meta (4.4.9-10) slaine; urgency=low
+
+  * Added deja-dup
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 25 Feb 2011 04:47:17 +0100
+
+trisquel-meta (4.4.9-9) slaine; urgency=low
+
+  * Updated plymouth themes
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 25 Feb 2011 03:06:26 +0100
+
+trisquel-meta (4.4.9-8) slaine; urgency=low
+
+  * Added audacious
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 24 Feb 2011 03:56:14 +0100
+
+trisquel-meta (4.4.9-7) slaine; urgency=low
+
+  * Added xul-ext-notify and remmina
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 23 Feb 2011 02:05:42 +0100
+
+trisquel-meta (4.4.9-6) slaine; urgency=low
+
+  * Restored gnome-app-install
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 03 Feb 2011 03:32:52 +0100
+
+trisquel-meta (4.4.9-5) slaine; urgency=low
+
+  * Added dnsmasq-base network-manager-pptp and lupin-casper
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Feb 2011 23:42:33 +0100
+
+trisquel-meta (4.4.9-4) slaine; urgency=low
+
+  * Added totem-plugins and libgl1-mesa-dri-experimental
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 25 Jan 2011 01:39:49 +0100
+
+trisquel-meta (4.4.9-3) slaine; urgency=low
+
+  * Moved usb-creator to usb-creator-gtk
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 13 Jan 2011 22:58:58 +0100
+
+trisquel-meta (4.4.9-2) slaine; urgency=low
+
+  * Removed gthumb and xchat
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 13 Jan 2011 21:43:27 +0100
+
+trisquel-meta (4.4.9-1) slaine; urgency=low
+
+  * Temporarily removed gnome-app-install
+  * pm-utils-powersave-policy replaced with pm-utils
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 21:33:43 +0200
+
+trisquel-meta (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-meta (4.0-5) taranis; urgency=low
+
+  * Added missing i18n packages:
+    openoffice.org-thesaurus-en-us, openoffice.org-l10n-en-gb, openoffice.org-help-en-gb,
+    openoffice.org-l10n-en-za, openoffice.org-thesaurus-en-au
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 27 Oct 2010 14:35:19 +0200
+
+trisquel-meta (4.0-4) taranis; urgency=low
+
+  * Added usb-creator to trisquel-mini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 21 Sep 2010 22:23:55 +0200
+
+trisquel-meta (4.0-3) taranis; urgency=low
+
+  * Added gnome-disk-utility and screen-resolution-extra
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 21 Sep 2010 18:49:03 +0200
+
+trisquel-meta (4.0-2) taranis; urgency=low
+
+  * Added to trisquel-mini: gigolo, gvfs-fuse, gvfs-backends, gvfs-bin, pulseaudio.
+  * Replaced galculator with gcalctool
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 18:04:36 +0200
+
+trisquel-meta (4.0-1) taranis; urgency=low
+
+  * Ayttm replaced with empathy in mini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 00:18:26 +0200
+
+trisquel-meta (4.0) taranis; urgency=low
+
+  * Final release for Taranis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 08 Sep 2010 00:18:48 +0200
+
+trisquel-meta (3.99-12) taranis; urgency=low
+
+  * Included more language packages for es_ES and en_US
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Sep 2010 21:46:42 +0200
+
+trisquel-meta (3.99-11) taranis; urgency=low
+
+  * Added swfdec-mozilla as mozilla-plugin-gnash alternative
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Sep 2010 15:41:55 +0200
+
+trisquel-meta (3.99-10) taranis; urgency=low
+
+  * Changed dependency from plymouth-theme-text to plymouth-theme-script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 25 Aug 2010 21:03:14 +0200
+
+trisquel-meta (3.99-9) taranis; urgency=low
+
+  * added gimm, shotwell and gddrescue
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 19 Aug 2010 13:25:41 +0200
+
+trisquel-meta (3.99-8) taranis; urgency=low
+
+  * added notify-osd, vlc moved back to totem
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 08 Aug 2010 19:53:11 +0200
+
+trisquel-meta (3.99-7) taranis; urgency=low
+
+  * mplayer as default in mini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 03 Jul 2010 15:09:27 +0200
+
+trisquel-meta (3.99-6) taranis; urgency=low
+
+  * ntfs-3g moved to trisquel-desktop-common
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Jun 2010 19:39:58 +0200
+
+trisquel-meta (3.99-5) taranis; urgency=low
+
+  * languages removed, totem replaced with vlc
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Jun 2010 23:37:59 +0200
+
+trisquel-meta (3.99-4) taranis; urgency=low
+
+  * added telepathy-gabble to trisquel-recommended
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 31 May 2010 19:47:44 +0200
+
+trisquel-meta (3.99-3) taranis; urgency=low
+
+  * Included indicator dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 17 May 2010 23:40:42 +0200
+
+trisquel-meta (3.99-2) taranis; urgency=low
+
+  * updated for trisquel-mini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 12 May 2010 16:58:21 +0200
+
+trisquel-meta (3.99-1) taranis; urgency=low
+
+  * Epiphany replaced with Abrowser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 04 May 2010 23:33:50 +0200
+
+trisquel-meta (3.99) taranis; urgency=low
+
+  * Initial release, imported from 3.5 metapackages
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 02 May 2010 16:45:19 +0200

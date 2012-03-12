@@ -1,0 +1,134 @@
+/* Fallback Mode Panel */
+PanelWidget,
+PanelApplet,
+PanelToplevel {
+	background-color: @dark_bg_color;
+	padding: 0;
+	text-shadow: none;
+	color: @selected_fg_color;
+	border-width: 0;
+
+}
+
+.gnome-panel-main-menu {
+font:bold;
+background-color: #dfdfdf;
+}
+
+.gnome-panel-main-menu .menuitem{
+    border-width: 0;
+    border-style: none;
+    padding: 9 5;
+}
+.gnome-panel-main-menu .menuitem.separator {
+    color: @menu_separator;
+
+    -GtkSeparatorMenuItem-horizontal-padding: 0;
+    -GtkSeparatorMenuItem-vertical-padding: 0;
+padding:3 5;
+}
+
+PanelAppletFrame { 
+	background-color: @dark_bg_color;
+	text-shadow: none;
+	color: @selected_fg_color;
+	border-width: 0;
+}
+
+
+.gnome-panel-menu-bar .menuitem:prelight {
+	background-color: @dark_bg_color;
+	color: @selected_fg_color;
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.0)),
+		to (shade (@dark_bg_color, 1.0))); 
+	border-color: shade (@dark_bg_color, 0.78);
+	border-radius: 0;
+	border-width: 0 1 0 1;
+}
+
+.gnome-panel-menu-bar .menuitem *:prelight {
+	color: @selected_fg_color;
+	text-shadow: none;
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.0)),
+		to (shade (@dark_bg_color, 1.0))); 
+	border-color: shade (@dark_bg_color, 0.78);
+	border-radius: 0;
+	border-width: 0;
+}
+
+PanelApplet .button {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (alpha (@dark_bg_color, 0.0)),
+		to (alpha (@dark_bg_color, 0.0)));
+	border-radius: 3;
+	border-width: 0;
+	text-shadow: alpha(black, 0.5) 1 1;
+
+	-unico-border-gradient: none;
+	-unico-glow-radius: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+	color: @selected_fg_color;
+}
+
+PanelApplet .button:prelight:active,
+PanelApplet .button:active {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (alpha (white, 0.3)),
+		to (alpha (white, 0.1)));
+	border-color: transparent;
+	border-width: 1;
+
+	-unico-border-gradient: none;
+	-unico-glow-radius: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+	color: @selected_fg_color;
+}
+
+PanelApplet .button:prelight {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+                from (alpha (white, 0.5)),
+                to (alpha (white, 0.2)));
+	border-color: transparent;
+	border-width: 1;
+
+	-unico-border-gradient: none;
+	-unico-glow-radius: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+	color: @selected_fg_color;
+	text-shadow: none;
+}
+
+ClockBox {
+font:bold;
+	color: @selected_fg_color;
+	text-shadow: alpha(black, 0.5) 1 1;
+	border-width: 0;
+}
+WnckPager, WnckTasklist {
+	background-color: @dark_bg_color;
+	color: @selected_fg_color;
+	text-shadow: none;
+}
+
+NaTrayApplet {
+	-NaTrayApplet-icon-padding: 1;
+	-NaTrayApplet-icon-size: 24;
+	color: @selected_fg_color;
+	border-width: 0;
+}
+
+GsmFailWhaleDialog {
+	background-color: @dark_bg_color;
+	background-image: none;
+	color: @selected_fg_color;
+}
+
+GsmFailWhaleDialog * {
+	background-color: @dark_bg_color;
+	background-image: none;
+}

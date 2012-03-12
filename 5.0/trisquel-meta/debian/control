@@ -86,7 +86,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-sugar
 Architecture: all
 Priority: optional
-Depends: trisquel-base, dbus-x11, gdm, trisquel-desktop-common-data, ttf-dejavu, ttf-droid, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, sweets-distribution, metacity, dmz-cursor-theme, mozilla-plugin-gnash | swfdec-mozilla, usb-creator-gtk, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-good, gstreamer0.10-ffmpeg, gstreamer0.10-fluendo-mp3, gstreamer0.10-x, network-manager, bash-completion, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, gstreamer0.10-alsa, gstreamer0.10-pulseaudio, pulseaudio
+Depends: trisquel-base, dbus-x11, gdm, trisquel-desktop-common-data, ttf-dejavu, ttf-droid, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, sweets-distribution, metacity, dmz-cursor-theme, mozilla-plugin-gnash | swfdec-mozilla, usb-creator-gtk, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-good, gstreamer0.10-ffmpeg, gstreamer0.10-fluendo-mp3, gstreamer0.10-x, network-manager|wicd, bash-completion, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, gstreamer0.10-alsa, gstreamer0.10-pulseaudio, pulseaudio
 Suggests: casper, ubiquity-frontend-gtk, ubiquity, lupin-casper, grub-pc, ubiquity-slideshow-trisquel
 Description: Sugar environment for Trisquel.
  Dependency list for Trisquel base installation.

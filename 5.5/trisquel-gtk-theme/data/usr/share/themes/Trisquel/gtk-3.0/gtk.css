@@ -1,0 +1,65 @@
+/* 
+	AUTHOR: Gaurav Pareek <grvrulz, gaurav.conetfun@gmail.com> 
+	WEBSITE: http://grvrulz.deviantart.com
+	LICENSE: GPL3
+	DESCRIPTION: Theme for Trisquel GNU/Linux
+*/
+
+/* default color scheme */
+@define-color bg_color #e0dedc;
+@define-color fg_color #333333;
+@define-color base_color #ffffff;
+@define-color text_color #333333;
+@define-color selected_bg_color #86A2C0;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_fg_color #53311C;
+@define-color tooltip_bg_color #F9F1AD;
+
+/* other color schemes could simply override these */
+@define-color theme_bg_color @bg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_text_color @text_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+
+/* misc colors used by gtk+ */
+@define-color info_fg_color rgb (181, 171, 156);
+@define-color info_bg_color rgb (252, 252, 189);
+@define-color warning_fg_color rgb (173, 120, 41);
+@define-color warning_bg_color rgb (250, 173, 61);
+@define-color question_fg_color rgb (97, 122, 214);
+@define-color question_bg_color rgb (138, 173, 212);
+@define-color error_fg_color rgb (166, 38, 38);
+@define-color error_bg_color rgb (237, 54, 54);
+@define-color link_color #08c;
+@define-color error_color #cc0000;
+
+/* theme common colors */
+@define-color button_bg_color #ebeae9;
+@define-color button_insensitive_bg_color shade (@bg_color, 0.95);
+@define-color dark_bg_color #3c3c3c;
+@define-color dark_fg_color #e0e0e0;
+@define-color transparent rgba (0, 0, 0, 0);
+
+/* special colors */
+@define-color menubar_gradient_final #d4d1ce;
+@define-color toolbar_gradient_base #d3d0cd;
+@define-color toolbar_gradient_final #bfbbb7;
+@define-color menubar_border_2 #ebeae9;
+@define-color menubar_border_1 #b7b2ad;
+@define-color toolbar_border #a29c95;
+@define-color scrollbar_1 #a5bdd5;
+@define-color scrollbar_2 #98b2cd;
+@define-color scrollbar_4 #97b1cc;
+@define-color scrollbar_border #69737e;
+@define-color scrollbar_border_inner #bccee1;
+@define-color sidebar_bg_color #c7d3e1;
+
+@import url("gtk-widgets.css");
+@import url("apps/gnome-panel.css");
+@import url("apps/gnome-applications.css");
+@import url("apps/nautilus.css");
+@import url("apps/unity.css");

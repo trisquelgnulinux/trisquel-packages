@@ -1,3 +1,9 @@
+trisquel-meta (5.0-4) slaine; urgency=low
+
+  * Added wicd alternative to trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 15 Nov 2011 01:15:11 +0100
+
 trisquel-meta (5.0-3) slaine; urgency=low
 
   * Added gstreamer0.10-plugins-bad back
