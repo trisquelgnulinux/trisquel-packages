@@ -1,3 +1,9 @@
+trisquel-icon-theme (5.4-2) slaine; urgency=low
+
+  * Moved base to gnome-brave
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 14 Mar 2012 15:58:40 +0100
+
 trisquel-icon-theme (5.4-1) slaine; urgency=low
 
   * Added symbolic action icons, needed by totem among others

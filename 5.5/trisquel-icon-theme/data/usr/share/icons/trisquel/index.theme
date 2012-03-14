@@ -1,10 +1,10 @@
 [Icon Theme]
 Name=Trisquel
 Comment=Trisquel icons for GNOME
-Inherits=elementary-mono-dark
+Inherits=gnome-brave
 Example=folder
 
-Directories=scalable/apps,scalable/devices,scalable/places,24x24/apps,24x24/status,scalable/actions
+Directories=scalable/apps,scalable/devices,scalable/places,24x24/apps,24x24/status,scalable/actions,scalable/status
 
 [scalable/actions]
 Size=48
@@ -13,6 +13,12 @@ MaxSize=256
 Context=Actions
 Type=Scalable
 
+[scalable/status]
+Size=48
+MinSize=32
+MaxSize=256
+Context=Status
+Type=Scalable
 
 [scalable/apps]
 Size=48

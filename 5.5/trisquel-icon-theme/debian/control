@@ -8,9 +8,9 @@ Standards-Version: 3.5.9.0
 Package: trisquel-icon-theme
 Architecture: all
 Priority: optional
-Depends: elementary-icon-theme
+Depends: gnome-brave-icon-theme
 Provides: gnome-icon-theme
 Description: Trisquel icon theme.
- An icon theme for Trisquel based on Elementary.
+ An icon theme for Trisquel based on gnome-brave-icon-theme.
  .
 
