@@ -26,7 +26,7 @@ Description: Trisquel codecs metapackage
 Package: trisquel-base
 Architecture: all
 Priority: optional
-Depends: bc, dc, dmraid, jfsutils, ntfsprogs, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, ssh, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-daemon, avahi-autoipd, avahi-utils, ca-certificates, consolekit, doc-base, hal, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, pcmciautils, ecryptfs-utils, apparmor, apparmor-utils, mdadm
+Depends: bc, dc, dmraid, jfsutils, ntfsprogs, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, ssh, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-daemon, avahi-autoipd, avahi-utils, ca-certificates, consolekit, doc-base, hal, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, pcmciautils, ecryptfs-utils, apparmor, apparmor-utils, mdadm, btrfs-tools
 Recommends: unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue, modemmanager, wvdial, openfwwf, atheros-firmware
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.
