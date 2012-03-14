@@ -1,3 +1,9 @@
+trisquel-meta (5.4-16) slaine; urgency=low
+
+  * Added gnome-user-share, libgail-3-common, libgail-common
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 14 Mar 2012 17:02:45 +0100
+
 trisquel-meta (5.4-15) slaine; urgency=low
 
   * Removed nepomukcontroller and network-manager-pptp-kde from triskel
