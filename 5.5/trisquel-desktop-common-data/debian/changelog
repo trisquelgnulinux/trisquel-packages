@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (5.4-5) slaine; urgency=low
+
+  * Added glib schema overrides
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 00:49:20 +0100
+
 trisquel-desktop-common-data (5.4-4) slaine; urgency=low
 
   * Added metacity-compositing-helper
