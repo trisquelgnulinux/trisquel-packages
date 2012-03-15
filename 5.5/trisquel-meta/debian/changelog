@@ -1,3 +1,9 @@
+trisquel-meta (5.4-17) slaine; urgency=low
+
+  * Added firmware-carl9170
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 02:19:02 +0100
+
 trisquel-meta (5.4-16) slaine; urgency=low
 
   * Added gnome-user-share, libgail-3-common, libgail-common
