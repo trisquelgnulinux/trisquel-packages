@@ -1,3 +1,10 @@
+trisquel-desktop-common-data (5.4-7) slaine; urgency=low
+
+  * Added a mime handler to fix abrowser not opening directories in
+    nautilus
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 18:20:38 +0100
+
 trisquel-desktop-common-data (5.4-6) slaine; urgency=low
 
   * Added default settings for gnome-system-log
