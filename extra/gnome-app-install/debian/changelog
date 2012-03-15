@@ -1,3 +1,10 @@
+gnome-app-install (0.5.60.1ubuntu2trisquel6-4) slaine; urgency=low
+
+  * Updated AppDescView.py to fix packages with no description failing
+    to load
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 15:17:56 +0100
+
 gnome-app-install (0.5.60.1ubuntu2trisquel6-3) slaine; urgency=low
 
   * Updated AppDescView.py to fix descriptions failing to load in

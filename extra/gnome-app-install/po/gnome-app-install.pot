@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
-"POT-Creation-Date: 2012-03-15 14:35+0100\n"
+"POT-Creation-Date: 2012-03-15 15:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -792,13 +792,13 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:104
+#: ../AppInstall/widgets/AppDescView.py:108
 #, python-format
 msgid "%s cannot be installed"
 msgstr ""
 
 #. warn that this app is not available on this plattform
-#: ../AppInstall/widgets/AppDescView.py:113
+#: ../AppInstall/widgets/AppDescView.py:117
 #, python-format
 msgid ""
 "%s cannot be installed on your computer type (%s). Either the application "
@@ -806,29 +806,29 @@ msgid ""
 "computer type."
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:124
+#: ../AppInstall/widgets/AppDescView.py:128
 #, python-format
 msgid ""
 "%s is available in the third party software channel '%s'. To install it, "
 "please click on the checkbox to activate the software channel."
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:134
+#: ../AppInstall/widgets/AppDescView.py:138
 msgid "This application is bundled with the following applications: "
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:228
+#: ../AppInstall/widgets/AppDescView.py:232
 msgid "Screenshot"
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:236
+#: ../AppInstall/widgets/AppDescView.py:240
 #, python-format
 msgid ""
 "\n"
 "Homepage: %s\n"
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:238
+#: ../AppInstall/widgets/AppDescView.py:242
 #, python-format
 msgid "Version: %s (%s)"
 msgstr ""

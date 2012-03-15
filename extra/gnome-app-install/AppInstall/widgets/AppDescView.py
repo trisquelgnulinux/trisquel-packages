@@ -73,7 +73,11 @@ class AppDescView(ReleaseNotesViewer):
             try:
                 # short_desc = ... already looked up the correct translation
                 # for us.
-                rough_desc = candidate.package._pcache._records.LongDesc.split("\n",1)[1]
+                tmp = candidate.package._pcache._records.LongDesc.split("\n",1)
+                if len(tmp) == 1:
+                    rough_desc = ""
+                else:
+                    rough_desc = tmp[1]
             except AttributeError:
                 rough_desc = candidate and candidate.raw_description.split("\n",1)[1]
             
