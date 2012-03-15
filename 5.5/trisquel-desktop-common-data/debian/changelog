@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (5.4-6) slaine; urgency=low
+
+  * Added default settings for gnome-system-log
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 15:32:03 +0100
+
 trisquel-desktop-common-data (5.4-5) slaine; urgency=low
 
   * Added glib schema overrides
