@@ -1,3 +1,10 @@
+gnome-app-install (0.5.60.1ubuntu2trisquel6-3) slaine; urgency=low
+
+  * Updated AppDescView.py to fix descriptions failing to load in
+    brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 14:34:39 +0100
+
 gnome-app-install (0.5.60.1ubuntu2trisquel6-2) slaine; urgency=low
 
   * Now provids software-center, fixes #4105

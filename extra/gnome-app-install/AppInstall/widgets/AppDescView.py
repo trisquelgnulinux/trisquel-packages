@@ -148,7 +148,7 @@ class AppDescView(ReleaseNotesViewer):
         pango_context = self.get_pango_context()
         font_desc = pango_context.get_font_description()
         font_size = font_desc.get_size() / pango.SCALE
-        if item.iconname != "":
+        if item.iconname == "":
             # justify the icon and the app name
             if font_size * pango.SCALE_LARGE > 32:
                 icon_size = 32
@@ -190,7 +190,7 @@ class AppDescView(ReleaseNotesViewer):
             buffer.insert_with_tags_by_name(iter, "%s" % item.name, "app-name")
 
         emblems = self.distro.get_app_emblems(item, self.cache)
-        if short_desc != "": 
+        if short_desc == "": 
             tag_name = buffer.create_tag("short-desc",
                                          weight=pango.WEIGHT_BOLD)
             buffer.insert_with_tags_by_name(iter,
@@ -245,13 +245,13 @@ class AppDescView(ReleaseNotesViewer):
         #foo = gtk.Frame(self.distro.get_maintenance_status(item, self.cache))
         #foo.show()
         #self.add_child_at_anchor(foo, anchor)
-        buffer.create_tag("maint-status", 
-                          scale_set=True,
-                          scale=pango.SCALE_SMALL,
-                          foreground="#888")
+        #buffer.create_tag("maint-status", 
+        #                  scale_set=True,
+        #                  scale=pango.SCALE_SMALL,
+        #                  foreground="#888")
         #                  foreground_gdk=style.base[gtk.STATE_INSENSITIVE])
-        m = self.distro.get_maintenance_status(item, self.cache)
-        buffer.insert_with_tags_by_name(iter, "\n%s" % m, "maint-status")
+        #m = self.distro.get_maintenance_status(item, self.cache)
+        #buffer.insert_with_tags_by_name(iter, "\n%s" % m, "maint-status")
 
     def show_message(self, header, msg):
         """ Show a quick introduction to gnome-app-install 
