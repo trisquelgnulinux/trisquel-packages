@@ -5,12 +5,6 @@ disable-lock-screen = true
 logfile='/var/log/syslog'
 logfiles=['/var/log/auth.log', '/var/log/dpkg.log', '/var/log/mail.log', '/var/log/syslog', '/var/log/Xorg.0.log']
 
-[org.gnome.desktop.sound]
-theme-name = 'trisquel'
-
-[org.gnome.desktop.session]
-session-name="gnome-classic"
-
 [org.gnome.settings-daemon.plugins.xsettings]
 antialiasing = 'grayscale'
 hinting = 'slight'

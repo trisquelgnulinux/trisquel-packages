@@ -1,3 +1,10 @@
+trisquel-desktop-common-data (5.4-9) slaine; urgency=low
+
+  * Removed session name and sound theme name glib schema overrides, as
+    they caused regressions
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Mar 2012 10:14:28 +0100
+
 trisquel-desktop-common-data (5.4-8) slaine; urgency=low
 
   * Disabled desktop locking
