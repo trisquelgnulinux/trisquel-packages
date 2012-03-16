@@ -1,3 +1,9 @@
+trisquel-icon-theme (5.4-3) slaine; urgency=low
+
+  * Make the theme inherit gnome as well as gnome-brave
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Mar 2012 10:31:58 +0100
+
 trisquel-icon-theme (5.4-2) slaine; urgency=low
 
   * Moved base to gnome-brave

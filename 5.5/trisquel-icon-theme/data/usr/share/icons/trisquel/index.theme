@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Trisquel
 Comment=Trisquel icons for GNOME
-Inherits=gnome-brave
+Inherits=gnome-brave,gnome
 Example=folder
 
 Directories=scalable/apps,scalable/devices,scalable/places,24x24/apps,24x24/status,scalable/actions,scalable/status
