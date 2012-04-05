@@ -1,6 +1,10 @@
 
+[Default Applications]
+text/calendar=evolution.desktop
+
 [Added Associations]
 application/xml=gedit.desktop;
+text/calendar=evolution.desktop;
 image/jpeg=gthumb.desktop;gimp.desktop;
 image/x-pcx=gthumb.desktop;gimp.desktop;
 image/gif=gthumb.desktop;gimp.desktop;

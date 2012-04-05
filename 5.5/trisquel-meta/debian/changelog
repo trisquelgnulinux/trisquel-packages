@@ -1,3 +1,33 @@
+trisquel-meta (5.5) brigantia; urgency=low
+
+  * Added gnome-user-guide, ubuntu-docs
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 04 Apr 2012 16:10:47 +0200
+
+trisquel-meta (5.4-21) slaine; urgency=low
+
+  * Added libreoffice-style-galaxy, removed computer-janitor-gtk
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 04 Apr 2012 15:53:05 +0200
+
+trisquel-meta (5.4-20) slaine; urgency=low
+
+  * Added missing firmware-carl9170 to trisquel-base-recommended
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 03 Apr 2012 02:17:37 +0200
+
+trisquel-meta (5.4-19) slaine; urgency=low
+
+  * Going back to gdm and gnome-screensaver, added gnome-ppp
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 01 Apr 2012 23:57:14 +0200
+
+trisquel-meta (5.4-18) slaine; urgency=low
+
+  * Added system-config-printer-udev
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 19 Mar 2012 20:51:22 +0100
+
 trisquel-meta (5.4-17) slaine; urgency=low
 
   * Added firmware-carl9170

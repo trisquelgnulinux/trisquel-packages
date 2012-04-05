@@ -1,4 +1,4 @@
-trisquel-icon-theme (5.4-3) slaine; urgency=low
+trisquel-icon-theme (5.5) brigantia; urgency=low
 
   * Make the theme inherit gnome as well as gnome-brave
 

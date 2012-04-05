@@ -51,6 +51,7 @@
 /apps/metacity/general/titlebar_font					Sans Bold 10
 /apps/metacity/general/visual_bell					true
 /apps/metacity/general/visual_bell_type					frame_flash
+/apps/metacity/global_keybindings/panel_run_dialog                      <Alt>F2
 /apps/nautilus/desktop/computer_icon_visible				true
 /apps/nautilus/desktop/home_icon_visible				true
 /apps/nautilus/desktop/network_icon_visible				false
