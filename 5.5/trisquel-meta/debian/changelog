@@ -1,3 +1,9 @@
+trisquel-meta (5.5-1) brigantia; urgency=low
+
+  * Added back gimp
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 11 Apr 2012 01:45:07 +0200
+
 trisquel-meta (5.5) brigantia; urgency=low
 
   * Added gnome-user-guide, ubuntu-docs
