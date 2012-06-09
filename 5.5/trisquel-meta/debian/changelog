@@ -1,3 +1,9 @@
+trisquel-meta (5.5-2) brigantia; urgency=low
+
+  * Added sweets-desktop
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 10 May 2012 00:08:27 +0200
+
 trisquel-meta (5.5-1) brigantia; urgency=low
 
   * Added back gimp
