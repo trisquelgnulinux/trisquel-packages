@@ -1,3 +1,9 @@
+trisquel-meta (4.1-2) taranis; urgency=low
+
+  * Removed firefox-gnome-support
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 24 Jan 2013 01:39:16 +0100
+
 trisquel-meta (4.1-1) taranis; urgency=low
 
   * Added xul-ext-notify
