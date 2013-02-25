@@ -1,0 +1,40 @@
+[org.gnome.gnome-system-log]
+logfile='/var/log/syslog'
+logfiles=['/var/log/auth.log', '/var/log/dpkg.log', '/var/log/mail.log', '/var/log/syslog', '/var/log/Xorg.0.log']
+
+[org.gnome.settings-daemon.plugins.xsettings]
+antialiasing = 'rgba'
+hinting = 'slight'
+
+[org.gnome.desktop.background]
+show-desktop-icons=true
+picture-uri='file:///usr/share/backgrounds/toutatis.jpg'
+picture-options='stretched'
+color-shading-type='solid'
+
+[org.gnome.desktop.interface]
+cursor-theme='DMZ-White'
+document-font-name='Serif 10'
+enable-animations=true
+font-name='Sans 8'
+gtk-theme='Trisquel'
+icon-theme='trisquel'
+monospace-font-name='Monospace Bold 9'
+
+[org.gnome.desktop.sound]
+event-sounds=true
+
+[org.gnome.gnome-panel.layout.toplevels.panel.background]
+image-uri='file:///usr/share/themes/Trisquel/gtk-3.0/panel-bg.png'
+type='image'
+
+[org.gnome.nautilus.desktop]
+computer-icon-visible=true
+font='Sans Bold 8'
+home-icon-visible=true
+network-icon-visible=true
+trash-icon-visible=true
+volumes-visible=true
+
+[system.smb]
+workgroup='TRISQUEL'

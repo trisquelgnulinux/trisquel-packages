@@ -1,0 +1,10 @@
+#!/bin/sh
+
+[ -f .config/metacity_managed ] && exit 0
+
+if /usr/lib/gnome-session/gnome-session-check-accelerated-helper
+then
+    gconftool --set --type boolean /apps/metacity/general/compositing_manager true
+fi
+    touch .config/metacity_managed
+

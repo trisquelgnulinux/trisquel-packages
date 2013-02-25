@@ -1,0 +1,229 @@
+/* Fallback Mode Panel */
+PanelWidget,
+PanelApplet,
+PanelToplevel,
+.desktop-panel {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.5)),
+		to (shade (@dark_bg_color, 1.05)));
+	padding: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+	color: @dark_fg_color;
+	text-shadow: none;
+text-shadow: 0 1 alpha (shade (@button_bg_color, 1.25), 0.4);
+}
+
+PanelApplet {
+	border-width: 0;
+}
+
+PanelSeparator {
+	border-width: 0;
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.5)),
+		to (shade (@dark_bg_color, 1.05)));
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+	color: @dark_fg_color;
+	text-shadow: none;
+}
+
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem,
+.desktop-panel .menubar,
+.desktop-panel .menubar .menuitem {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.5)),
+		to (shade (@dark_bg_color, 1.05)));
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+	text-shadow: none;
+}
+
+PanelAppletFrame { 
+	background-color: @dark_bg_color;
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.5)),
+		to (shade (@dark_bg_color, 1.05)));
+	border-width: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+	text-shadow: none;
+}
+
+PanelApplet .button,
+.desktop-panel .button {
+	-GtkButton-inner-border: 2;
+
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.5)),
+		to (shade (@dark_bg_color, 1.05)));
+
+	border-color: @transparent;
+	border-radius: 2px;
+	border-width: 0 1px 0 1px;
+
+	color: @dark_fg_color;
+	text-shadow: none;
+
+	-unico-border-gradient: none;
+	-unico-glow-radius: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+
+text-shadow: 1 1 alpha (#000, 0.3);
+color:#fff;
+
+}
+
+PanelApplet .button:prelight:active,
+PanelApplet .button:active,
+.desktop-panel .button:prelight:active,
+.desktop-panel .button:active {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 0.85)),
+		to (shade (@dark_bg_color, 1.0))); 
+	border-color: shade (@dark_bg_color, 0.78);
+
+	-unico-border-gradient: none;
+	-unico-glow-radius: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+}
+
+PanelApplet .button:prelight,
+.desktop-panel .button:prelight {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@dark_bg_color, 1.7)),
+		to (shade (@dark_bg_color, 1.25)));
+	border-color: @transparent;
+
+	-unico-border-gradient: none;
+	-unico-glow-radius: 0;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;	
+}
+
+ClockBox {
+	text-shadow: none;
+text-shadow: 1 1 alpha (#000, 0.3);
+color:#fff;
+font:bold;
+}
+
+WnckPager, WnckTasklist {
+	background-color: @dark_bg_color;
+	text-shadow: none;
+}
+
+/* Classic icon style */
+.gnome-panel-menu-bar {
+	-PanelMenuBar-icon-visible: true;
+}
+
+/* Makes the text color on the dark panel white */
+.gnome-panel-menu-bar .menuitem {
+	color: @dark_fg_color;
+	text-shadow: none;
+}
+
+.gnome-panel-menu-bar .menuitem:hover {
+	background-image: -gtk-gradient (linear, left top, left bottom,
+		from (shade (@selected_bg_color, 1.0)),
+		to (shade (@selected_bg_color, 0.85)));
+	border-width: 0;
+	color: @dark_fg_color;
+	text-shadow: none;
+	-unico-inner-stroke-width: 0;
+	-unico-outer-stroke-width: 0;
+}
+
+/* Makes sure that the menus doesn't get white text */
+.gnome-panel-menu-bar .menu.menuitem,
+.gnome-panel-menu-bar .menu .menuitem {
+	color: @fg_color;
+}
+
+.gnome-panel-menu-bar .menu.menuitem:hover,
+.gnome-panel-menu-bar .menu .menuitem:hover {
+	color: @selected_fg_color;
+}
+
+/* Fixes the indicator applet text */
+PanelApplet > GtkMenuBar > GtkMenuItem > GtkBox > GtkLabel {
+	color: @dark_fg_color;
+	text-shadow: none;
+}
+
+
+.gnome-panel-main-menu {
+font:bold;
+background-color: #dfdfdf;
+}
+
+.gnome-panel-main-menu .menuitem{
+    border-width: 0;
+    border-style: none;
+    padding: 9px 5px;
+}
+.gnome-panel-main-menu .menuitem.separator {
+
+    -GtkSeparatorMenuItem-horizontal-padding: 0;
+    -GtkSeparatorMenuItem-vertical-padding: 0;
+padding:5px 7px;
+border-color:#ccc;
+}
+
+
+.gnome-panel-menu-bar .menuitem:prelight {
+        background-color: @dark_bg_color;
+        color: @selected_fg_color;
+        background-image: -gtk-gradient (linear, left top, left bottom,
+                from (shade (@dark_bg_color, 1.0)),
+                to (shade (@dark_bg_color, 1.0)));
+        border-color: shade (@dark_bg_color, 0.78);
+        border-radius: 0;
+        border-width: 0px 1px 0px 1px;
+}
+
+.gnome-panel-menu-bar .menuitem *:prelight {
+        color: @selected_fg_color;
+        text-shadow: none;
+        background-image: -gtk-gradient (linear, left top, left bottom,
+                from (shade (@dark_bg_color, 1.0)),
+                to (shade (@dark_bg_color, 1.0)));
+        border-color: shade (@dark_bg_color, 0.78);
+        border-radius: 0;
+        border-width: 0;
+}
+
+.gnome-panel-menu-bar .menuitem:hover,
+.menu .menuitem:hover {
+        background-image: -gtk-gradient (linear, left top, left bottom,
+                from (shade (@selected_bg_color, 1.0)),
+                to (shade (@selected_bg_color, 0.8)));
+        color: @selected_fg_color;
+        text-shadow: none;
+        -unico-bullet-color: @dark_fg_color;
+        border-style: solid;
+        border-width: 0;
+
+
+        -unico-border-gradient: none;
+        -unico-glow-radius: 0;
+        -unico-inner-stroke-width: 0;
+        -unico-outer-stroke-width: 0;
+color:#fff;
+text-shadow: 0 1 shade (@selected_bg_color, 0.7);
+
+}
+
+.gnome-panel-menu-bar .menuitem,
+.menu .menuitem {
+text-shadow: 0 1 #fff;
+color:#555;
+}

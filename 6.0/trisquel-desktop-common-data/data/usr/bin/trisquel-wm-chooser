@@ -1,0 +1,56 @@
+#!/bin/bash
+#
+#    Copyright (C) 2013  Rubén Rodríguez <ruben@trisquel.info>
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+#
+
+set -e
+
+if [ -f ~/.disablecompiz ]; then
+  COMPIZ=false
+  METACITY=true
+else
+  COMPIZ=true
+  METACITY=false
+fi
+
+TEXT="Compiz: 
+* Use Compiz if the 3D acceleration is available and the accessibility is disabled.
+
+Metacity:
+* Use Metacity in any case, recommended if composition is causing problems"
+TITLE="Select window manager and effects"
+
+if [ $LANG = es_ES.UTF-8 ]; then
+TEXT="Compiz: 
+* Usar Compiz si la aceleración 3D está disponible y la accesibilidad está deshabilitada.
+
+Metacity:
+* Usar Metacity en cualquier caso, recomendado si la composición está causando problemas"
+TITLE="Seleccionar gestor de ventanas y efectos"
+fi
+
+ans=$(zenity  --list --hide-header  --title "$TITLE" --text "$TEXT\n" --radiolist  --column "" --column "" $COMPIZ Compiz $METACITY Metacity);
+
+if [ $ans = "Compiz" ] && [ $COMPIZ = "false" ]; then
+  rm ~/.disablecompiz
+  /usr/lib/gnome-session/gnome-session-check-accelerated && exec compiz --replace &
+fi
+
+if [ $ans = "Metacity" ] && [ $METACITY = "false" ]; then
+  touch ~/.disablecompiz
+  exec metacity --no-composite --replace &
+fi

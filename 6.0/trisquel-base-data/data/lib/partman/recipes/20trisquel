@@ -1,0 +1,23 @@
+partman-auto/text/home_scheme ::
+
+500 5000 15000 ext4
+	method{ format }
+	format{ }
+	use_filesystem{ }
+	filesystem{ ext4 }
+	mountpoint{ / }
+	options/relatime{ relatime } .
+
+96 512 300% linux-swap
+	$lvmok{ }
+	method{ swap }
+	format{ } .
+
+100 10000 -1 xfs
+        $lvmok{ }
+        method{ format }
+        format{ }
+        use_filesystem{ }
+        filesystem{ xfs }
+        mountpoint{ /home }
+        options/relatime{ relatime } .
