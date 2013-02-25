@@ -1,3 +1,9 @@
+ubiquity-slideshow-trisquel (4.5-5) slaine; urgency=low
+
+  * Fixed typo, closes #5007
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 03 Feb 2013 03:44:16 +0100
+
 ubiquity-slideshow-trisquel (4.5-4) slaine; urgency=low
 
   * Fixed typo
