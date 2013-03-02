@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (6.0-5) precise; urgency=low
+
+  * Removed about-trisquel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 02 Mar 2013 05:17:20 +0100
+
 trisquel-desktop-common-data (6.0-4) precise; urgency=low
 
   * Changed font hinting to rgb
