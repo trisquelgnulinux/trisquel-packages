@@ -1,3 +1,9 @@
+trisquel-mini-data (5.99-3) precise; urgency=low
+
+  * Updated 6.0/trisquel-mini-data to fix font color in lxdm theme
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 08 Mar 2013 05:48:01 +0100
+
 trisquel-mini-data (5.99-2) precise; urgency=low
 
   * Updated for new wallpaper

@@ -23,14 +23,19 @@ style "time"
 style "prompt"
 {
 	fg[NORMAL]="#ffffff"
-	font_name="Sans Bold 12"
+	font_name="Sans Bold 14"
 }
+style "white"
+{
+	fg[NORMAL]="#ffffff"
+}
+
 
 # Normally this won't paint an invisible event box, but we did some hacks in greeter.c.
 style "bottom"
 {
-	font_name="Sans 10"
-	fg[NORMAL] = "#9E9D9B"
+	font_name="Sans Bold 10"
+	fg[NORMAL] = "#fff"
 	engine "pixmap"
 	{
 		image
@@ -45,6 +50,6 @@ style "bottom"
 
 widget "lxdm" style "back"
 widget "lxdm.*.time" style "time"
-widget "lxdm.*.prompt" style "prompt"
+widget "*prompt" style "prompt"
 widget "lxdm.*.bottom_pane" style "bottom"
 widget_class "GtkWindow.*.GtkEventBox.*.<GtkLabel>" style "bottom"
