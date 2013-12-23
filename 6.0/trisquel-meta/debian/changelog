@@ -1,3 +1,33 @@
+trisquel-meta (6.0-12) precise; urgency=low
+
+  * Added open-ath9k-htc-firmware
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 Dec 2013 04:11:36 +0100
+
+trisquel-meta (6.0-11) precise; urgency=low
+
+  * Added libglib2.0-bin, mobile-broadband-provider-info to trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 28 Aug 2013 06:52:01 +0200
+
+trisquel-meta (6.0-10) precise; urgency=low
+
+  * Added telepathy dependencies to trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Aug 2013 07:26:32 +0200
+
+trisquel-meta (6.0-9) precise; urgency=low
+
+  * Removed etoys from trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Aug 2013 06:40:28 +0200
+
+trisquel-meta (6.0-8) precise; urgency=low
+
+  * Updated trisquel-sugar metapackage dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Aug 2013 06:08:39 +0200
+
 trisquel-meta (6.0-7) precise; urgency=low
 
   * Replaced gdebi with apturl

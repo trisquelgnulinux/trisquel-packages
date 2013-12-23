@@ -27,7 +27,7 @@ Package: trisquel-base
 Architecture: all
 Priority: optional
 Depends: bc, dc, dmraid, jfsutils, ntfsprogs, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, ssh, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-daemon, avahi-autoipd, avahi-utils, ca-certificates, consolekit, doc-base, hal, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, pcmciautils, ecryptfs-utils, apparmor, apparmor-utils, mdadm, btrfs-tools, cryptsetup
-Recommends: unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue, modemmanager, wvdial, openfwwf, atheros-firmware, firmware-carl9170
+Recommends: unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue, modemmanager, wvdial, openfwwf, atheros-firmware, firmware-carl9170, open-ath9k-htc-firmware
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.
  Provides a complete console environment.
@@ -35,7 +35,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-base-recommended
 Architecture: all
 Priority: optional
-Depends: unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue, modemmanager, wvdial, openfwwf, atheros-firmware, firmware-carl9170
+Depends: unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue, modemmanager, wvdial, openfwwf, atheros-firmware, firmware-carl9170, open-ath9k-htc-firmware
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.
  Provides a complete console environment.
@@ -96,7 +96,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-sugar
 Architecture: all
 Priority: optional
-Depends: trisquel-base, dbus-x11, gdm, indicator-application, indicator-appmenu, indicator-messages, indicator-status-provider-pidgin, indicator-datetime, indicator-power, indicator-session, indicator-sound, trisquel-desktop-common-data, ttf-dejavu-core, ttf-droid, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, metacity, dmz-cursor-theme, mozilla-plugin-gnash | swfdec-mozilla, usb-creator-gtk, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-good, gstreamer0.10-ffmpeg, gstreamer0.10-fluendo-mp3, gstreamer0.10-x, network-manager|wicd, bash-completion, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, gstreamer0.10-alsa, gstreamer0.10-pulseaudio, pulseaudio, gir1.2-sugarext-1.0, libsugar-eventcontroller0, libsugarext-data, libsugarext0, python-carquinyol-0.98, python-jarabe-0.98, python-sugar-0.98, python-sugar-toolkit-0.98, python-sugar3, sucrose-0.98, sugar-artwork-0.98, sugar-emulator-0.98, sugar-session-0.98, sugar-tools-0.98, gir1.2-wnck-3.0, python-webkit, libwebkitgtk-3.0-0, libwebkitgtk-1.0-0, gir1.2-webkit-3.0, gir1.2-evince-3.0, python-pygame, espeak, gstreamer0.10-alsa, csound, etoys, squeak-vm, libgnomevfs2-common, libgnomevfs2-0
+Depends: trisquel-base, dbus-x11, gdm, indicator-application, indicator-appmenu, indicator-messages, indicator-status-provider-pidgin, indicator-datetime, indicator-power, indicator-session, indicator-sound, trisquel-desktop-common-data, ttf-dejavu-core, ttf-droid, x-ttcidfont-conf, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, metacity, dmz-cursor-theme, mozilla-plugin-gnash | swfdec-mozilla, usb-creator-gtk, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-good, gstreamer0.10-ffmpeg, gstreamer0.10-fluendo-mp3, gstreamer0.10-x, network-manager|wicd, bash-completion, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, gstreamer0.10-alsa, gstreamer0.10-pulseaudio, pulseaudio, gir1.2-sugarext-1.0, libsugar-eventcontroller0, libsugarext-data, libsugarext0, python-carquinyol-0.98, python-jarabe-0.98, python-sugar-0.98, python-sugar-toolkit-0.98, python-sugar3, sucrose-0.98, sugar-artwork-0.98, sugar-emulator-0.98, sugar-session-0.98, sugar-tools-0.98, gir1.2-wnck-3.0, python-webkit, libwebkitgtk-3.0-0, libwebkitgtk-1.0-0, gir1.2-webkit-3.0, gir1.2-evince-3.0, python-pygame, espeak, gstreamer0.10-alsa, csound, squeak-vm, libgnomevfs2-common, libgnomevfs2-0, gir1.2-gtksource-3.0, gir1.2-telepathyglib-0.12, gir1.2-telepathylogger-0.2, telepathy-gabble, telepathy-mission-control-5, telepathy-salut, libglib2.0-bin, mobile-broadband-provider-info
 Suggests: casper, ubiquity-frontend-gtk, ubiquity, lupin-casper, grub-pc, ubiquity-slideshow-trisquel
 Description: Sugar environment for Trisquel.
  Dependency list for Trisquel base installation.
