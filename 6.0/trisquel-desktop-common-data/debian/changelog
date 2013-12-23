@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (6.0-6) precise; urgency=low
+
+  * Moved 99_trisquel.gschema.override to 90_trisquel.gschema.override
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 28 Aug 2013 06:53:14 +0200
+
 trisquel-desktop-common-data (6.0-5) precise; urgency=low
 
   * Removed about-trisquel
