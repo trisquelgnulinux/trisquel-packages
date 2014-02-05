@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Xscreensaver
+Comment=Screensaver for X
+Exec=xscreensaver -no-splash
+Terminal=false
+Type=Application
+X-GNOME-Autostart-Phase=Applications
+X-GNOME-AutoRestart=true
+NoDisplay=true
+

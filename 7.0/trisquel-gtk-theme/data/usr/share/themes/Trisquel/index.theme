@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Trisquel
+Type=X-GNOME-Metatheme
+Comment=Trisquel 6.x Theme, based on Zukitwo http://lassekongo83.deviantart.com/
+
+[X-GNOME-Metatheme]
+GtkTheme=Trisquel
+MetacityTheme=Trisquel
+IconTheme=trisquel
+CursorTheme=DMZ-White

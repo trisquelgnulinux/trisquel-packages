@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Window manager and effects
+Comment=Allows to change between Compiz and Metacity
+Exec=trisquel-wm-chooser
+Icon=checkbox
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Compiz;Settings;DesktopSettings;
+OnlyShowIn=GNOME;
+Keywords=Compiz,Metacity,Window manager
+
+Name[es]=Gestor de ventanas y efectos
+Comment[es]=Permite alternar entre Compiz y Metacity

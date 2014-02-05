@@ -1,0 +1,28 @@
+
+[Default Applications]
+text/calendar=evolution.desktop
+
+[Added Associations]
+application/xml=gedit.desktop;
+text/calendar=evolution.desktop;
+image/jpeg=gthumb.desktop;gimp.desktop;
+image/x-pcx=gthumb.desktop;gimp.desktop;
+image/gif=gthumb.desktop;gimp.desktop;
+image/png=gthumb.desktop;gimp.desktop;
+image/jpg=gthumb.desktop;gimp.desktop;
+image/tiff=gthumb.desktop;gimp.desktop;
+image/x-portable-bitmap=gthumb.desktop;gimp.desktop;
+image/vnd.wap.wbmp=gthumb.desktop;
+image/x-xpixmap=gthumb.desktop;gimp.desktop;
+image/x-bmp=gthumb.desktop;gimp.desktop;
+image/bmp=gthumb.desktop;gimp.desktop;
+image/x-icb=gthumb.desktop;
+image/x-portable-graymap=gthumb.desktop;gimp.desktop;
+image/x-ico=gthumb.desktop;gimp.desktop;
+image/x-xbitmap=gthumb.desktop;gimp.desktop;
+image/x-portable-pixmap=gthumb.desktop;gimp.desktop;
+image/pjpeg=gthumb.desktop;gimp.desktop;
+image/x-portable-anymap=gthumb.desktop;gimp.desktop;
+image/x-png=gthumb.desktop;gimp.desktop;
+image/x-gray=gthumb.desktop;gimp.desktop;
+image/svg+xml=gthumb.desktop;

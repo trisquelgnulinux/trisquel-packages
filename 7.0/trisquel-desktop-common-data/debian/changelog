@@ -1,0 +1,433 @@
+trisquel-desktop-common-data (7.0) belenos; urgency=low
+
+  * Initial release for belenos
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 31 Jan 2014 19:46:30 +0100
+
+trisquel-desktop-common-data (6.0-6) toutatis; urgency=low
+
+  * Moved 99_trisquel.gschema.override to 90_trisquel.gschema.override
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 28 Aug 2013 06:53:14 +0200
+
+trisquel-desktop-common-data (6.0-5) precise; urgency=low
+
+  * Removed about-trisquel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 02 Mar 2013 05:17:20 +0100
+
+trisquel-desktop-common-data (6.0-4) precise; urgency=low
+
+  * Changed font hinting to rgb
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 24 Feb 2013 17:30:15 +0100
+
+trisquel-desktop-common-data (6.0-3) precise; urgency=low
+
+  * Updated gschema for new wallpaper
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 13 Feb 2013 05:02:37 +0100
+
+trisquel-desktop-common-data (6.0-2) precise; urgency=low
+
+  * Updated trisquel-wm-chooser so it only runs compiz when 3D is
+    available
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 12 Feb 2013 03:10:28 +0100
+
+trisquel-desktop-common-data (6.0-1) precise; urgency=low
+
+  * Added trisquel-wm-chooser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 12 Feb 2013 02:16:24 +0100
+
+trisquel-desktop-common-data (6.0) toutatis; urgency=low
+
+  * Final release for Toutatis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 25 Nov 2012 07:34:00 +0100
+
+trisquel-desktop-common-data (5.99-2) toutatis; urgency=low
+
+  * Further configured compiz
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Nov 2012 22:55:47 +0100
+
+trisquel-desktop-common-data (5.99-1) toutatis; urgency=low
+
+  * Updated compiz settings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Nov 2012 21:42:41 +0100
+
+trisquel-desktop-common-data (5.99) toutatis; urgency=low
+
+  * Initial release for Toutatis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 07 Oct 2012 05:26:25 +0200
+
+trisquel-desktop-common-data (5.5) brigantia; urgency=low
+
+  * Added evolution as calendar manager in
+    data/usr/share/gnome/applications/mimeapps.list
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 05 Apr 2012 03:03:03 +0200
+
+trisquel-desktop-common-data (5.4-14) slaine; urgency=low
+
+  * Updated for final brigantia artwork
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 05 Apr 2012 02:33:55 +0200
+
+trisquel-desktop-common-data (5.4-13) slaine; urgency=low
+
+  * Added keybinding for run-command dialog as alt+f2
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 04 Apr 2012 18:24:52 +0200
+
+trisquel-desktop-common-data (5.4-12) slaine; urgency=low
+
+  * Removed metacity-compositing-helper.desktop because compositing
+    breaks vsync
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 04 Apr 2012 18:06:34 +0200
+
+trisquel-desktop-common-data (5.4-11) slaine; urgency=low
+
+  * Updated nautilus-folder-handler-extra.desktop to avoid open in file
+    manager showing twice in nautilus
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 04 Apr 2012 15:50:42 +0200
+
+trisquel-desktop-common-data (5.4-10) slaine; urgency=low
+
+  * Reenabled desktop locking
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 02 Apr 2012 01:48:21 +0200
+
+trisquel-desktop-common-data (5.4-9) slaine; urgency=low
+
+  * Removed session name and sound theme name glib schema overrides, as
+    they caused regressions
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Mar 2012 10:14:28 +0100
+
+trisquel-desktop-common-data (5.4-8) slaine; urgency=low
+
+  * Disabled desktop locking
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 18:26:41 +0100
+
+trisquel-desktop-common-data (5.4-7) slaine; urgency=low
+
+  * Added a mime handler to fix abrowser not opening directories in
+    nautilus
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 18:20:38 +0100
+
+trisquel-desktop-common-data (5.4-6) slaine; urgency=low
+
+  * Added default settings for gnome-system-log
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 15:32:03 +0100
+
+trisquel-desktop-common-data (5.4-5) slaine; urgency=low
+
+  * Added glib schema overrides
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Mar 2012 00:49:20 +0100
+
+trisquel-desktop-common-data (5.4-4) slaine; urgency=low
+
+  * Added metacity-compositing-helper
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 19:32:48 +0100
+
+trisquel-desktop-common-data (5.4-3) slaine; urgency=low
+
+  * Added xscreensaver autostart script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 03:46:38 +0100
+
+trisquel-desktop-common-data (5.4-2) slaine; urgency=low
+
+  * Updated default panel settings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 02:00:23 +0100
+
+trisquel-desktop-common-data (5.4-1) slaine; urgency=low
+
+  * removed /usr/local/share/applications
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 28 Feb 2012 23:03:27 +0100
+
+trisquel-desktop-common-data (5.4) slaine; urgency=low
+
+  * Initial release for Brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 18:40:13 +0100
+
+trisquel-desktop-common-data (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:31:45 +0200
+
+trisquel-desktop-common-data (4.99-5) slaine; urgency=low
+
+  * Changed IceCat back to Abrowser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 08 Sep 2011 15:36:50 +0200
+
+trisquel-desktop-common-data (4.99-4) slaine; urgency=low
+
+  * Gconf xml tree moved to /usr/share/gconf/defaults value list file
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 07 Aug 2011 01:22:36 +0200
+
+trisquel-desktop-common-data (4.99-3) slaine; urgency=low
+
+  * Removed Midori xdg file
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 01 Aug 2011 02:54:19 +0200
+
+trisquel-desktop-common-data (4.99-2) slaine; urgency=low
+
+  * Replaced Firefox with IceCat and OpenOffice.org with LibreOffice
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 27 Jul 2011 17:02:47 +0200
+
+trisquel-desktop-common-data (4.99-1) slaine; urgency=low
+
+  * Deleted exaile xdg config files
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 19 Jul 2011 17:18:20 +0200
+
+trisquel-desktop-common-data (4.99) slaine; urgency=low
+
+  * Initial release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 Jul 2011 14:48:28 +0200
+
+trisquel-desktop-common-data (4.5-4) slaine; urgency=low
+
+  * Midori config modified for DDG
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 12 May 2011 20:46:04 +0200
+
+trisquel-desktop-common-data (4.5-3) slaine; urgency=low
+
+  * added /usr/lib/firefox-addons/searchplugins/trisquel-packages.xml
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 02 May 2011 17:12:17 +0200
+
+trisquel-desktop-common-data (4.5-2) slaine; urgency=low
+
+  * Added /apps/gdm/simple-greeter/logo_icon_name gcond entry
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 14 Apr 2011 21:39:04 +0200
+
+trisquel-desktop-common-data (4.5-1) slaine; urgency=low
+
+  * Changed defaults back to gthumb
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 23 Mar 2011 00:16:37 +0100
+
+trisquel-desktop-common-data (4.5) slaine; urgency=low
+
+  * Set liferea/trayicon-new-count=true in gconf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 14 Mar 2011 23:28:54 +0100
+
+trisquel-desktop-common-data (4.4.9-7) slaine; urgency=low
+
+  * Set /apps/gwibber/preferences/autostart=false in gconf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Mar 2011 20:42:10 +0100
+
+trisquel-desktop-common-data (4.4.9-6) slaine; urgency=low
+
+  * removed indicator applet
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 17:29:53 +0100
+
+trisquel-desktop-common-data (4.4.9-5) slaine; urgency=low
+
+  * Network servers icon removed from desktop
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 01:55:55 +0100
+
+trisquel-desktop-common-data (4.4.9-4) slaine; urgency=low
+
+  * updated gconf settings for default applications
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Mar 2011 01:13:45 +0100
+
+trisquel-desktop-common-data (4.4.9-3) slaine; urgency=low
+
+  * updated gconf settings for default applications
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 25 Feb 2011 05:53:31 +0100
+
+trisquel-desktop-common-data (4.4.9-2) slaine; urgency=low
+
+  * Dropped pidgin skel config files
+  * Moved applications.menu to xdg dir
+  * moved mimeaps.list to /usr/share/gnome/applications
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 25 Feb 2011 03:03:04 +0100
+
+trisquel-desktop-common-data (4.4.9-1) slaine; urgency=low
+
+  * Updaded mime associations
+  * added software-properties-gtk to menu
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 24 Feb 2011 04:17:32 +0100
+
+trisquel-desktop-common-data (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-desktop-common-data (4.0-3) taranis; urgency=low
+
+  * Added missing divertion to replace OO.o extensions link to FSF's
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 27 Oct 2010 14:28:18 +0200
+
+trisquel-desktop-common-data (4.0-2) taranis; urgency=low
+
+  * Added gnome-mplayer gconf entry
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 18:53:29 +0200
+
+trisquel-desktop-common-data (4.0-1) taranis; urgency=low
+
+  * Added midori xdg config file
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 15 Sep 2010 23:19:33 +0200
+
+trisquel-desktop-common-data (4.0) taranis; urgency=low
+
+  * update-manager first-run message disabled via gconf
+  * Enabled gtk button icons and GNOME animations
+  * Disabled shotwell welcome dialog
+  * Transparent GNOME menu via compiz
+  * Added exaile global config file
+  * Enabled nautilus sidebar
+  * Enabled pixmap background for the panel
+  * Removed metacity transparency for inactive windows
+  * Fixed typo in gconf tree
+  * removed ubuntu-software-center.desktop
+  * gnome-panel gconf settings updated
+  * epiphany gconf entries updated
+  * several menu icons are now hidden in lxde
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2010 19:50:00 +0200
+
+trisquel-desktop-common-data (3.5-3) awen; urgency=low
+
+  * Gnome-app-install added as .desktop entry
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 17 Mar 2010 23:07:31 +0100
+
+trisquel-desktop-common-data (3.5-2) awen; urgency=low
+
+  * Top-left corner as "compiz show all all windows"
+  * Brasero moved to utilities
+  * Nautilus-burn hidden
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 17 Mar 2010 21:17:26 +0100
+
+trisquel-desktop-common-data (3.5-1) awen; urgency=low
+
+  * Tiff extension mapped to gthumb
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 03 Mar 2010 21:12:58 +0100
+
+trisquel-desktop-common-data (3.5) awen; urgency=low
+
+  * The panel is now transparent
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 25 Feb 2010 15:40:28 +0100
+
+trisquel-desktop-common-data (3.4.9-1) awen; urgency=low
+
+  * Applications menu updated
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 24 Feb 2010 00:10:19 +0100
+
+trisquel-desktop-common-data (3.4.9) awen; urgency=low
+
+  * Gnome panel browser link fixed
+  * Rhythmbox assigned for audio files
+  * Abrowser 3.5 moved to menu top
+  * Trisquel-about replaced with direct link
+  * Pidgin configured via skel
+  * Audacious outdated config file removed
+  * Droid serif set as default serif font
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 20 Feb 2010 18:20:08 +0100
+
+trisquel-desktop-common-data (3.0-1) dwyn; urgency=low
+
+  * Added gconf-tree postinst handler
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 03 Dec 2009 20:54:35 +0100
+
+trisquel-desktop-common-data (3.0) dwyn; urgency=low
+
+  * x-www-browser replaced with abrowser in desktop files
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 10 Sep 2009 02:57:56 +0200
+
+trisquel-desktop-common-data (2.99-2) dwyn; urgency=low
+
+  * update-notifier auto-launch disabled
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 29 Jun 2009 10:27:01 +0200
+
+trisquel-desktop-common-data (2.99-1) dwyn; urgency=low
+
+  * Tuned abrowser panel icon
+  * Tunel panel background
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Sun, 14 Jun 2009 23:52:46 +0200
+
+trisquel-desktop-common-data (2.99) dwyn; urgency=low
+
+  * Initial release for Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Fri, 12 Jun 2009 14:15:51 +0200
+
+trisquel-desktop-common-data (2.1-11) robur; urgency=low
+
+  * Added Trisquel search plugin
+  * Firefox config file moved to firefox-3.0 package
+  * Added Thunderbird config file
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 28 May 2009 12:03:17 +0200
+
+trisquel-desktop-common-data (2.1-10) robur; urgency=low
+
+  * default_plugin_disabled chain removed from Firefox config file
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Wed, 20 May 2009 13:38:27 +0200
+
+trisquel-desktop-common-data (2.1-9) robur; urgency=low
+
+  * Removed gconf-tree cleanup preinst script (regression)
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 14 May 2009 08:54:43 +0200
+
+trisquel-desktop-common-data (2.1-8) robur; urgency=low
+
+  * Added gconf-tree cleanup preinst script
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Tue, 12 May 2009 10:09:56 +0200
+
+trisquel-desktop-common-data (2.1-7) robur; urgency=low
+
+  * Ported from dpkg -b
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200
