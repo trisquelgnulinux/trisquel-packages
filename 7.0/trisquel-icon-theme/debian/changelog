@@ -1,3 +1,21 @@
+trisquel-icon-theme (7.0-3) toutatis; urgency=low
+
+  * Added 48x48 libreoffice icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 08 Aug 2014 07:44:18 +0200
+
+trisquel-icon-theme (7.0-2) toutatis; urgency=low
+
+  * Updated Trisquel logo icon
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 19 Jul 2014 01:38:27 +0200
+
+trisquel-icon-theme (7.0-1) toutatis; urgency=low
+
+  * Added monochrome icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Jul 2014 23:13:20 +0200
+
 trisquel-icon-theme (7.0) belenos; urgency=low
 
   * Initial release for belenos
