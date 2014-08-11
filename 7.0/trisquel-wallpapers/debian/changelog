@@ -1,3 +1,9 @@
+trisquel-wallpapers (7.0-1) toutatis; urgency=low
+
+  * Added Belenos backgrounds
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 19 Jul 2014 02:59:42 +0200
+
 trisquel-wallpapers (7.0) belenos; urgency=low
 
   * Initial release for belenos

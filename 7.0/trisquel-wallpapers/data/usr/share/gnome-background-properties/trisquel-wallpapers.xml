@@ -2,6 +2,38 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper>
+    <name>Trisquel Belenos</name>
+    <filename>/usr/share/backgrounds/belenos.png</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Belenos 2</name>
+    <filename>/usr/share/backgrounds/belenos2.png</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Belenos 3</name>
+    <filename>/usr/share/backgrounds/belenos3.png</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
+    <name>Trisquel Belenos 4</name>
+    <filename>/usr/share/backgrounds/belenos4.png</filename>
+    <options>stretched</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
     <name>Trisquel Robur</name>
     <filename>/usr/share/backgrounds/robur.png</filename>
     <options>stretched</options>
