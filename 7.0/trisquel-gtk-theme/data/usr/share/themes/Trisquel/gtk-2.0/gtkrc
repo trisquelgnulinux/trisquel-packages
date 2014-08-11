@@ -49,12 +49,13 @@ style "murrine-default" {
 
 	GtkImage	::x-ayatana-indicator-dynamic	= 1
 
-	GtkScrollbar	::has-backward-stepper		= 0  
-	GtkScrollbar	::has-forward-stepper		= 0
-	GtkScrollbar	::min-slider-length		= 15
-	GtkScrollbar	::slider-width			= 13
-	GtkScrollbar	::trough-border			= 0
-	GtkScrollbar	::activate-slider		= 1
+        GtkScrollbar::activate-slider                   = 1
+        GtkScrollbar::has-backward-stepper              = 0
+        GtkScrollbar::has-forward-stepper               = 0
+        GtkScrollbar::min-slider-length                 = 42
+        GtkScrollbar::slider_width = 13
+        GtkScrolledWindow::scrollbar-spacing            = 0
+        GtkScrolledWindow::scrollbars-within-bevel      = 1
 
 	GtkScrolledWindow ::scrollbar-spacing		= 0
 	GtkScrolledWindow ::scrollbars-within-bevel	= 1
@@ -493,18 +494,118 @@ style "pixmap-scale" {
 	}
 }
 
-style "murrine-scrollbar" {
-	bg[NORMAL]	= shade (0.90, @bg_color)
-	bg[SELECTED]	= shade (0.6, @base_color)
-	bg[ACTIVE]	= shade (0.8, @bg_color)
-	bg[PRELIGHT]	= shade (0.8, @bg_color)
-	
-	engine "murrine" {
-		roundness	= 8
-		border_shades	= {0.80, 0.80}
-		contrast	= 0.0
-	}
+
+style "scrollbar"
+{
+
+  engine "pixmap" 
+  {
+    image 
+    {
+      function			= BOX
+      detail			= "trough"
+      file			= "Scrollbars/trough-scrollbar-horiz.png"
+      border			= { 19, 19, 4, 4 }
+      stretch			= TRUE
+      orientation		= HORIZONTAL
+    }
+    image 
+    {
+      function			= BOX
+      detail			= "trough"
+      file			= "Scrollbars/trough-scrollbar-vert.png"
+      border			= { 4, 4, 19, 19 }
+      stretch			= TRUE
+      orientation		= VERTICAL
+    }
+
+# Sliders
+
+    image 
+    {
+      function				= SLIDER
+      state           			= NORMAL
+      file				= "Scrollbars/slider-horiz.png" 
+      border				= { 7, 7, 5, 5 }
+      stretch				= TRUE
+      orientation			= HORIZONTAL
+
+    }
+    image 
+    {
+      function				= SLIDER
+      state           			= ACTIVE
+      file				= "Scrollbars/slider-horiz-active.png" 
+      border				= { 7, 7, 5, 5 }
+      stretch				= TRUE
+      orientation			= HORIZONTAL
+
+    }
+    image 
+    {
+      function				= SLIDER
+      state           			= PRELIGHT
+      file				= "Scrollbars/slider-horiz-prelight.png" 
+      border				= { 7, 7, 5, 5 }
+      stretch				= TRUE
+      orientation			= HORIZONTAL
+
+    }
+    image 
+    {
+      function				= SLIDER
+      state           			= INSENSITIVE
+      file				= "Scrollbars/slider-horiz-insens.png"
+      border				= { 7, 7, 5, 5 }
+      stretch				= TRUE
+      orientation			= HORIZONTAL
+    }
+
+# X Verticals
+
+    image 
+    {
+      function				= SLIDER
+      state           			= NORMAL
+      file				= "Scrollbars/slider-vert.png" 
+      border				= { 5, 5, 7, 7 }
+      stretch				= TRUE
+      orientation			= VERTICAL
+
+    }
+    image 
+    {
+      function				= SLIDER
+      state           			= ACTIVE
+      file				= "Scrollbars/slider-vert-active.png" 
+      border				= { 5, 5, 7, 7 }
+      stretch				= TRUE
+      orientation			= VERTICAL
+
+    }
+    image 
+    {
+      function				= SLIDER
+      state           			= PRELIGHT
+      file				= "Scrollbars/slider-vert-prelight.png" 
+      border				= { 5, 5, 7, 7 }
+      stretch				= TRUE
+      orientation			= VERTICAL
+
+    }
+    image 
+    {
+      function				= SLIDER
+      state           			= INSENSITIVE
+      file				= "Scrollbars/slider-vert-insens.png"
+      border				= { 5, 5, 7, 7 }
+      stretch				= TRUE
+      orientation			= VERTICAL
+
+    }
+  }
 }
+
 
 style "murrine-sidebar" {
 	xthickness = 0
@@ -591,9 +692,9 @@ class "GtkScale"	style "pixmap-scale"
 class "GtkVScale"	style "pixmap-scale"
 class "GtkHScale"	style "pixmap-scale"
 
-class "GtkScrollbar"	style "murrine-scrollbar"
-class "GtkVScrollbar"	style "murrine-scrollbar"
-class "GtkHScrollbar"	style "murrine-scrollbar"
+class "GtkScrollbar"	style "scrollbar"
+class "GtkVScrollbar"	style "scrollbar"
+class "GtkHScrollbar"	style "scrollbar"
 
 widget "*ToggleSwitch*"	style "murrine-toggleswitch"
 

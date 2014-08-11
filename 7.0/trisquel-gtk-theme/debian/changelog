@@ -1,3 +1,27 @@
+trisquel-gtk-theme (7.0-5) toutatis; urgency=low
+
+  * Applied changes from #12123
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 02:41:27 +0200
+
+trisquel-gtk-theme (7.0-4) toutatis; urgency=low
+
+  * Fixed menu text-shadows
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 05 Aug 2014 03:35:52 +0200
+
+trisquel-gtk-theme (7.0-3) toutatis; urgency=low
+
+  * Tuned up theme
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 21 Jul 2014 04:51:42 +0200
+
+trisquel-gtk-theme (7.0-2) toutatis; urgency=low
+
+  * Fixed borders in gnome panel buttons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 28 Apr 2014 20:54:54 +0200
+
 trisquel-gtk-theme (7.0-1) belenos; urgency=low
 
   * Updated to last Zukitwo upstream version
