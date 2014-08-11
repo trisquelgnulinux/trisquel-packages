@@ -1,3 +1,15 @@
+trisquel-gtk-theme (6.0-2) precise; urgency=low
+
+  * Fixed panel button borders
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 21 May 2014 00:25:27 +0200
+
+trisquel-gtk-theme (6.0-1) precise; urgency=low
+
+  * Fixed some glitches in the panel task list
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 01 Mar 2014 04:28:03 +0100
+
 trisquel-gtk-theme (6.0) toutatis; urgency=low
 
   * Final release for Toutatis
