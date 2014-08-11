@@ -1,3 +1,9 @@
+trisquel-mini-data (7.0-1) toutatis; urgency=low
+
+  * Updated settings for Belenos background
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 19 Jul 2014 03:02:43 +0200
+
 trisquel-mini-data (7.0) belenos; urgency=low
 
   * Initial release for belenos
@@ -10,7 +16,7 @@ trisquel-mini-data (5.99-3) toutatis; urgency=low
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 08 Mar 2013 05:48:01 +0100
 
-trisquel-mini-data (5.99-2) precise; urgency=low
+trisquel-mini-data (5.99-2) toutatis; urgency=low
 
   * Updated for new wallpaper
 

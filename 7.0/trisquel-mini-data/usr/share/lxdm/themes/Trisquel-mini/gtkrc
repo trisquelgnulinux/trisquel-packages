@@ -7,7 +7,7 @@ style "back"
 			function = FLAT_BOX
 			shadow=NONE
 			state = NORMAL
-			file="/usr/share/backgrounds/toutatis.jpg"
+			file="/usr/share/backgrounds/belenos.png"
 			stretch=TRUE
 			detail = "base"
 		}
