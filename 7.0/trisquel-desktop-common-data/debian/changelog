@@ -1,3 +1,82 @@
+trisquel-desktop-common-data (7.0-13) toutatis; urgency=low
+
+  * Remove nm hack
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 08 Aug 2014 08:19:36 +0200
+
+trisquel-desktop-common-data (7.0-12) toutatis; urgency=low
+
+  * Updated gsettings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 04:49:02 +0200
+
+trisquel-desktop-common-data (7.0-11) toutatis; urgency=low
+
+  * Added script to restart network-manager after suspend/hibernate
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 22 Jul 2014 21:31:20 +0200
+
+trisquel-desktop-common-data (7.0-10) toutatis; urgency=low
+
+  * Updated gsettings for Belenos background
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 19 Jul 2014 03:01:19 +0200
+
+trisquel-desktop-common-data (7.0-9) toutatis; urgency=low
+
+  * Hide ibus icon in gsettings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Jul 2014 22:56:20 +0200
+
+trisquel-desktop-common-data (7.0-8) toutatis; urgency=low
+
+  * Disable switch user entry in gnome menu
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Jul 2014 00:12:22 +0200
+
+trisquel-desktop-common-data (7.0-7) toutatis; urgency=low
+
+  * disable trisquel-wm-chooser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 14 Jun 2014 04:52:41 +0200
+
+trisquel-desktop-common-data (7.0-6) belenos; urgency=low
+
+  * Added mouse-button-modifier to gsettings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 21 May 2014 20:36:05 +0200
+
+trisquel-desktop-common-data (7.0-5) belenos; urgency=low
+
+  * Removed computer-icon-visible from gsettings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 21 May 2014 20:29:59 +0200
+
+trisquel-desktop-common-data (7.0-4) belenos; urgency=low
+
+  * Enable buttons in menus and buttons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 21 May 2014 03:51:30 +0200
+
+trisquel-desktop-common-data (7.0-3) belenos; urgency=low
+
+  * Updated gsettings
+  * Removed gnome-panel wrapper
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 28 Apr 2014 15:43:12 +0200
+
+trisquel-desktop-common-data (7.0-2) belenos; urgency=low
+
+  * Run nm-applet in gnome-panel wrapper script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 17 Feb 2014 01:28:57 +0100
+
+trisquel-desktop-common-data (7.0-1) belenos; urgency=low
+
+  * Launch gnome-panel in the background
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 16 Feb 2014 04:58:13 +0100
+
 trisquel-desktop-common-data (7.0) belenos; urgency=low
 
   * Initial release for belenos
@@ -10,32 +89,32 @@ trisquel-desktop-common-data (6.0-6) toutatis; urgency=low
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 28 Aug 2013 06:53:14 +0200
 
-trisquel-desktop-common-data (6.0-5) precise; urgency=low
+trisquel-desktop-common-data (6.0-5) belenos; urgency=low
 
   * Removed about-trisquel
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 02 Mar 2013 05:17:20 +0100
 
-trisquel-desktop-common-data (6.0-4) precise; urgency=low
+trisquel-desktop-common-data (6.0-4) belenos; urgency=low
 
   * Changed font hinting to rgb
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 24 Feb 2013 17:30:15 +0100
 
-trisquel-desktop-common-data (6.0-3) precise; urgency=low
+trisquel-desktop-common-data (6.0-3) belenos; urgency=low
 
   * Updated gschema for new wallpaper
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 13 Feb 2013 05:02:37 +0100
 
-trisquel-desktop-common-data (6.0-2) precise; urgency=low
+trisquel-desktop-common-data (6.0-2) belenos; urgency=low
 
   * Updated trisquel-wm-chooser so it only runs compiz when 3D is
     available
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 12 Feb 2013 03:10:28 +0100
 
-trisquel-desktop-common-data (6.0-1) precise; urgency=low
+trisquel-desktop-common-data (6.0-1) belenos; urgency=low
 
   * Added trisquel-wm-chooser
 

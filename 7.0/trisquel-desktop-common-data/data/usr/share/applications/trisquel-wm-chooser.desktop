@@ -9,6 +9,7 @@ StartupNotify=true
 Categories=Compiz;Settings;DesktopSettings;
 OnlyShowIn=GNOME;
 Keywords=Compiz,Metacity,Window manager
+NoDisplay=true
 
 Name[es]=Gestor de ventanas y efectos
 Comment[es]=Permite alternar entre Compiz y Metacity

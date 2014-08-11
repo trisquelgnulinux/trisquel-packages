@@ -2,17 +2,25 @@
 logfile='/var/log/syslog'
 logfiles=['/var/log/auth.log', '/var/log/dpkg.log', '/var/log/mail.log', '/var/log/syslog', '/var/log/Xorg.0.log']
 
+[org.gnome.desktop.lockdown]
+disable-user-switching = true
+
+[org.gnome.settings-daemon.plugins.updates]
+enable-check-firmware = false
+
 [org.gnome.settings-daemon.plugins.xsettings]
 antialiasing = 'rgba'
 hinting = 'slight'
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
-picture-uri='file:///usr/share/backgrounds/toutatis.jpg'
+picture-uri='file:///usr/share/backgrounds/belenos.png'
 picture-options='stretched'
 color-shading-type='solid'
 
 [org.gnome.desktop.interface]
+menus-have-icons=true
+buttons-have-icons=true
 cursor-theme='DMZ-White'
 document-font-name='Serif 10'
 enable-animations=true
@@ -29,7 +37,6 @@ image-uri='file:///usr/share/themes/Trisquel/gtk-3.0/panel-bg.png'
 type='image'
 
 [org.gnome.nautilus.desktop]
-computer-icon-visible=true
 font='Sans Bold 8'
 home-icon-visible=true
 network-icon-visible=true
@@ -38,3 +45,18 @@ volumes-visible=true
 
 [system.smb]
 workgroup='TRISQUEL'
+
+[com.canonical.indicator.keyboard]
+visible=false
+
+[org.gnome.desktop.wm.preferences]
+button-layout='menu:minimize,maximize,close'
+titlebar-font='Sans Bold 9'
+theme='Trisquel'
+mouse-button-modifier='<Alt>'
+
+[org.freedesktop.ibus.panel]
+show-icon-on-systray=false
+
+[com.ubuntu.update-notifier]
+show-apport-crashes = false
