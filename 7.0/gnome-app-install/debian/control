@@ -1,0 +1,39 @@
+Source: gnome-app-install
+Section: gnome
+Priority: optional
+Maintainer: Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>
+XSBC-Original-Maintainer: GNOME-App-Install Developers <g-a-i-devel@lists.alioth.debian.org>
+Uploaders: Julian Andres Klode <jak@debian.org>, Michael Vogt <mvo@debian.org>
+Build-Depends: debhelper (>= 7.0.50),
+               gettext,
+               intltool,
+               python,
+               python-central (>= 0.5),
+               python-distutils-extra (>= 1.91),
+	           python-setuptools
+Standards-Version: 3.8.3
+XS-Python-Version: current
+Vcs-Bzr: http://bzr.debian.org/g-a-i/debian-sid/
+Vcs-Browser: http://bzr.debian.org/loggerhead/g-a-i/debian-sid/
+
+Package: gnome-app-install
+Architecture: all
+Depends: ${python:Depends},
+         ${misc:Depends},
+         app-install-data (>= 0.4.0),
+         gksu,
+         gnome-icon-theme,
+         python-apt (>= 0.7.4ubuntu4),
+         python-dbus,
+         python-gconf,
+         python-gdbm,
+         python-gst0.10,
+         python-gtk2 (>= 2.10.1),
+         python-xdg (>= 0.8),
+         synaptic (>= 0.57.8) | aptdaemon
+Recommends: yelp, lsb-release
+Provides: software-center
+XB-Python-Version: ${python:Versions}
+Description: GNOME Application Installer
+ A pretty application installer for GNOME. It can also search for MIME
+ types or GStreamer codecs.

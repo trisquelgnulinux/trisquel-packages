@@ -1,0 +1,52 @@
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?rev=59
+
+Files: *
+Copyright: © 2004-2006 Ross Burton <ross@burtonini.com>
+           © 2004      Sandino Flores Moreno
+           © 2005-2009 Canonical Ltd
+           © 2007-2008 Sebastian Heinlein <glatzor@ubuntu.com>
+           © 2007-2009 Julian Andres Klode <jak@jak-linux.org>
+           © 2008-2010 Ruben Rodriguez <ruben@trisquel.info>
+License: GPL-2
+
+Files: po/*.po
+Copyright: © 2005-2008 Canonical Ltd, and Rosetta Contributors
+License: GPL-2
+
+Files: po/hu.po, po/nl.po, po/pt_BR.po, po/sk.po, po/sq.po, po/sv.po, po/uk.po
+Copyright: © 2005 Free Software Foundation, Inc.
+License: GPL-2
+
+Files: po/vi.po
+Copyright: © 2005 Gnome i18n Project for Vietnamese
+License: GPL-2
+
+Files: po/en_CA.po
+Copyright: © 2005 Adam Weinberger and the GNOME Foundation
+License: GPL-2
+
+Files: help/*
+Copyright: © 2006-2008 Canonical
+License: GFDL-1.2+
+
+Files: help/*/*.po
+Copyright: © 2006 Free Software Foundation, Inc.
+License: GFDL-1.2+
+
+License: GPL-2
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 dated June, 1991.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-2'.
+
+License: GFDL-1.2+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation
+ License can be found in `/usr/share/common-licenses/GFDL-1.2'.

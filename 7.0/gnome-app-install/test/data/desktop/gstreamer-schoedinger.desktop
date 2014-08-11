@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=Codecs to play Dirac video streams
+Name=GStreamer Dirac video plugin
+Encoding=UTF-8
+Terminal=false
+Type=Application
+Categories=GNOME;Application;Multimedia;AudioVideo;
+X-AppInstall-Package=gstreamer0.10-schroedinger
+X-AppInstall-Popcon=0
+X-AppInstall-Section=main
+X-AppInstall-Codecs=0.10:element-schrotoy;0.10:encoder-video/x-dirac;0.10:decoder-video/x-dirac;0.10:element-schrodec;0.10:element-schroenc;0.10:element-schroparse

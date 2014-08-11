@@ -1,0 +1,10 @@
+For the extraction of the desktop files, you will need a full
+mirror. Then run:
+
+# util/getMenuData.py /srv/archive.ubuntu.com/ubuntu/pool/
+
+this will create a directory "menu-data/" with all the desktop 
+data.
+
+For adding popularity information, run:
+# util/addPopconData.py -d ./menu-data

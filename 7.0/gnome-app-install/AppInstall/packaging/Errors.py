@@ -1,0 +1,4 @@
+
+class AddonCdromError(Exception):
+    pass
+

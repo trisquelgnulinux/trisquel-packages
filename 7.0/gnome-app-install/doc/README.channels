@@ -1,0 +1,5 @@
+Channels are a general concept to for a source of software.
+Each channel consists of a sources.list fragment that can
+be copied into the sources.list.d dir. It must be nammed 
+"$channelname.list". It should have a matching channel authentication
+key as well. The key is called "$channelname.key". 

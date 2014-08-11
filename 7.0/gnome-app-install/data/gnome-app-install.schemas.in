@@ -1,0 +1,131 @@
+<?xml version="1.0" ?>
+<gconfschemafile>
+  <schemalist>
+    <schema>
+      <key>/schemas/apps/gnome-app-install/filter_applications</key>
+      <applyto>/apps/gnome-app-install/filter_applications</applyto>
+      <owner>gnome-app-install</owner>
+      <type>int</type>
+      <default>0</default>
+		
+      <locale name="C">
+        <short>Show only a subset of applications</short>
+        <long>
+	  Possible values:
+	  0 : show all available applications
+	  1 : show only free applications
+	  2 : -
+	  3 : show only supported applications 
+	  4 : show only 3rd party applications
+	  5 : -
+	  6 : show only installed applications
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-app-install/components_seen</key>
+      <applyto>/apps/gnome-app-install/components_seen</applyto>
+      <owner>gnome-app-install</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <default>[]</default>
+      <locale name="C">
+	<short>
+          Components that have been confirmed to install applications from
+	</short>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-app-install/cache_dialog_time</key>
+      <applyto>/apps/gnome-app-install/cache_dialog_time</applyto>
+      <owner>gnome-app-install</owner>
+      <type>int</type>
+      <default>0</default>
+		
+      <locale name="C">
+        <short>Timestamp of the last cache refresh run</short>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-app-install/mime-whitelist-components</key>
+      <applyto>/apps/gnome-app-install/mime-whitelist-components</applyto>
+      <owner>gnome-app-install</owner>
+      <type>list</type>
+      <list_type>string</list_type>
+      <default>[main]</default>
+		
+      <locale name="C">
+        <short>Suggest application for MIME-type: approved components</short>
+        <long>
+          When the user asks to open a file but no supported
+	  application is present, the system will offer to install
+	  applications in the components listed here, as well as
+          the individually whitelisted applications.
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-app-install/search-timeout</key>
+      <applyto>/apps/gnome-app-install/search-timeout</applyto>
+      <owner>gnome-app-install</owner>
+      <type>int</type>
+      <default>1000</default>
+		
+      <locale name="C">
+        <short>Timeout for interactive search</short>
+        <long>
+	 Timeout from typing in the search entry until a search is 
+	 triggered (in milliseconds).
+        </long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-app-install/state/window_maximized</key>
+      <applyto>/apps/gnome-app-install/state/window_maximized</applyto>
+      <owner>gnome-app-install</owner>
+      <type>bool</type>
+      <default>False</default>
+      <locale name="C">
+	<short>
+          Main window maximization state
+        </short>
+	<long>
+	  If true, the main window is maximized.
+	</long>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-app-install/state/window_height</key>
+      <applyto>/apps/gnome-app-install/state/window_height</applyto>
+      <owner>gnome-app-install</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+	<short>
+          Main window height
+        </short>
+      </locale>
+    </schema>
+
+    <schema>
+      <key>/schemas/apps/gnome-app-install/state/window_width</key>
+      <applyto>/apps/gnome-app-install/state/window_width</applyto>
+      <owner>gnome-app-install</owner>
+      <type>int</type>
+      <default>0</default>
+      <locale name="C">
+	<short>
+          Main window width
+        </short>
+      </locale>
+    </schema>
+
+  </schemalist>
+</gconfschemafile>
+

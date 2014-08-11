@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "purge" ]; then
+    # remove the cached application data
+    rm -f /var/cache/app-install/*
+fi
+
+
+#DEBHELPER#
