@@ -1,3 +1,171 @@
+trisquel-meta (7.0-27) toutatis; urgency=low
+
+  * Removed indicator-appmenu
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 04:55:14 +0200
+
+trisquel-meta (7.0-26) toutatis; urgency=low
+
+  * Added i965-va-driver
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 04:37:11 +0200
+
+trisquel-meta (7.0-25) toutatis; urgency=low
+
+  * Added extra gst packages
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 04:32:40 +0200
+
+trisquel-meta (7.0-24) toutatis; urgency=low
+
+  * Replaced im-switch with im-config
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 18 Jul 2014 18:23:18 +0200
+
+trisquel-meta (7.0-23) toutatis; urgency=low
+
+  * Added all gstreamer plugin groups
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 16 Jul 2014 21:59:25 +0200
+
+trisquel-meta (7.0-22) toutatis; urgency=low
+
+  * Replaced Abrowser with IceCat
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 15 Jul 2014 06:07:04 +0200
+
+trisquel-meta (7.0-21) toutatis; urgency=low
+
+  * Added xul-ext-torproxy
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 10 Jul 2014 04:38:58 +0200
+
+trisquel-meta (7.0-20) toutatis; urgency=low
+
+  * Added electrum, tor, libreoffice, vim, gnome-mahjongg
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Jul 2014 23:20:17 +0200
+
+trisquel-meta (7.0-19) toutatis; urgency=low
+
+  * Added indicator-session to trisquel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Jul 2014 21:32:19 +0200
+
+trisquel-meta (7.0-18) toutatis; urgency=low
+
+  * Added gst-plugins-espeak to sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Jul 2014 21:26:56 +0200
+
+trisquel-meta (7.0-17) toutatis; urgency=low
+
+  * Updated sugar to 102
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Jul 2014 19:43:14 +0200
+
+trisquel-meta (7.0-16) toutatis; urgency=low
+
+  * Updated triskel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 29 Jun 2014 02:16:09 +0200
+
+trisquel-meta (7.0-15) toutatis; urgency=low
+
+  * Updated sugar packages
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 25 Jun 2014 21:15:01 +0200
+
+trisquel-meta (7.0-14) toutatis; urgency=low
+
+  * Replaced gnome-session-flashback with trisquel-session
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 19 Jun 2014 00:03:17 +0200
+
+trisquel-meta (7.0-13) toutatis; urgency=low
+
+  * Updated toast metapackages
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 17 Jun 2014 02:57:08 +0200
+
+trisquel-meta (7.0-12) toutatis; urgency=low
+
+  * Replaced epdfview with evince
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 16 Jun 2014 21:08:15 +0200
+
+trisquel-meta (7.0-11) toutatis; urgency=low
+
+  * Replaced lightdm-gtk-greeter with unity-greeter, added ubuntu-mono, light-themes
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 16 Jun 2014 03:44:20 +0200
+
+trisquel-meta (7.0-10) toutatis; urgency=low
+
+  * Replaced remmina with vinagre, added gstreamer1.0-libav
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 15 Jun 2014 22:12:14 +0200
+
+trisquel-meta (7.0-9) toutatis; urgency=low
+
+  * Removed samba
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 14 Jun 2014 06:17:11 +0200
+
+trisquel-meta (7.0-8) toutatis; urgency=low
+
+  * Removed onboard
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 14 Jun 2014 05:59:06 +0200
+
+trisquel-meta (7.0-7) toutatis; urgency=low
+
+  * Removed gwibber and indicator-session
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 21 May 2014 22:12:07 +0200
+
+trisquel-meta (7.0-6) toutatis; urgency=low
+
+  * Removed evince and gwibber deprecated plugins
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 18 May 2014 17:58:53 +0200
+
+trisquel-meta (7.0-5) belenos; urgency=low
+
+  * Added indicator packages
+  * Replaced compiz>compton gdm>lightdm-gtk
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 18 May 2014 03:36:53 +0200
+
+trisquel-meta (7.0-4) belenos; urgency=low
+
+  * Removed gnome-ppp
+  * Added compton
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 28 Apr 2014 21:58:43 +0200
+
+trisquel-meta (7.0-3) belenos; urgency=low
+
+  * Updated deprecated dependencies
+  * ttf-dustin ttf-mgopen ttf-sil-andika to "fonts-..."
+  * Removed gstreamer0.10-ffmpeg and libcelt0-0
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 11 Feb 2014 01:01:45 +0100
+
+trisquel-meta (7.0-2) belenos; urgency=low
+
+  * Replaced hpijs with printer-driver-hpijs
+  * Replaced ttf-droid with fonts-droid
+  * Removed x-ttcidfont-conf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 10 Feb 2014 02:46:00 +0100
+
+trisquel-meta (7.0-1) belenos; urgency=low
+
+  * Removed ntfsprogs and hal
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 10 Feb 2014 02:04:46 +0100
+
 trisquel-meta (7.0) belenos; urgency=low
 
   * Initial release for belenos
@@ -10,55 +178,55 @@ trisquel-meta (6.0-12) toutatis; urgency=low
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 22 Dec 2013 04:11:36 +0100
 
-trisquel-meta (6.0-11) precise; urgency=low
+trisquel-meta (6.0-11) toutatis; urgency=low
 
   * Added libglib2.0-bin, mobile-broadband-provider-info to trisquel-sugar
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 28 Aug 2013 06:52:01 +0200
 
-trisquel-meta (6.0-10) precise; urgency=low
+trisquel-meta (6.0-10) toutatis; urgency=low
 
   * Added telepathy dependencies to trisquel-sugar
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Aug 2013 07:26:32 +0200
 
-trisquel-meta (6.0-9) precise; urgency=low
+trisquel-meta (6.0-9) toutatis; urgency=low
 
   * Removed etoys from trisquel-sugar
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Aug 2013 06:40:28 +0200
 
-trisquel-meta (6.0-8) precise; urgency=low
+trisquel-meta (6.0-8) toutatis; urgency=low
 
   * Updated trisquel-sugar metapackage dependencies
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Aug 2013 06:08:39 +0200
 
-trisquel-meta (6.0-7) precise; urgency=low
+trisquel-meta (6.0-7) toutatis; urgency=low
 
   * Replaced gdebi with apturl
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 24 Feb 2013 09:10:03 +0100
 
-trisquel-meta (6.0-6) precise; urgency=low
+trisquel-meta (6.0-6) toutatis; urgency=low
 
   * Updated for xorg lts
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 23 Feb 2013 00:30:02 +0100
 
-trisquel-meta (6.0-5) precise; urgency=low
+trisquel-meta (6.0-5) toutatis; urgency=low
 
   * Replaced ttf-defavu with ttf-dejavu-core
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 11 Feb 2013 04:22:14 +0100
 
-trisquel-meta (6.0-4) precise; urgency=low
+trisquel-meta (6.0-4) toutatis; urgency=low
 
   * Removed ubuntu-docs
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 11 Feb 2013 02:45:09 +0100
 
-trisquel-meta (6.0-3) precise; urgency=low
+trisquel-meta (6.0-3) toutatis; urgency=low
 
   * Added python-mako
 
@@ -144,7 +312,7 @@ trisquel-meta (5.99-3) toutatis; urgency=low
 
 trisquel-meta (5.99-2) toutatis; urgency=low
 
-  * Replaced missing packages due to rebase to precise
+  * Replaced missing packages due to rebase to toutatis
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 20 Oct 2012 21:55:23 +0200
 
