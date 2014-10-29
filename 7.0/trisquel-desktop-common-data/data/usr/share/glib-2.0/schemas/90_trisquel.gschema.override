@@ -60,3 +60,7 @@ show-icon-on-systray=false
 
 [com.ubuntu.update-notifier]
 show-apport-crashes = false
+
+[org.freedesktop.ibus.general.hotkey]
+triggers=['<Super>space']
+

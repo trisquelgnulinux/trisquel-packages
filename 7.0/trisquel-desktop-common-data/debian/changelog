@@ -1,3 +1,15 @@
+trisquel-desktop-common-data (7.0-15) toutatis; urgency=low
+
+  * Set ibus trigger to Super+space, fixes #12004
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 30 Aug 2014 03:51:21 +0200
+
+trisquel-desktop-common-data (7.0-14) toutatis; urgency=low
+
+  * Added divert for /etc/gtk-3.0/settings.ini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 30 Aug 2014 00:52:46 +0200
+
 trisquel-desktop-common-data (7.0-13) toutatis; urgency=low
 
   * Remove nm hack
