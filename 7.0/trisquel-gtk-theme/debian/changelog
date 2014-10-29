@@ -1,3 +1,21 @@
+trisquel-gtk-theme (7.0-8) toutatis; urgency=low
+
+  * Fixed bluetooth switches in panel indicator
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 15 Oct 2014 15:50:28 +0200
+
+trisquel-gtk-theme (7.0-7) toutatis; urgency=low
+
+  * Added support for unity-greeter, #12123
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 30 Aug 2014 00:36:22 +0200
+
+trisquel-gtk-theme (7.0-6) toutatis; urgency=low
+
+  * Fixed notification color in indicator menus
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 28 Aug 2014 04:50:00 +0200
+
 trisquel-gtk-theme (7.0-5) toutatis; urgency=low
 
   * Applied changes from #12123
