@@ -1,3 +1,9 @@
+trisquel-icon-theme (7.0-4) toutatis; urgency=low
+
+  * Added onboard icon
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 28 Aug 2014 03:01:34 +0200
+
 trisquel-icon-theme (7.0-3) toutatis; urgency=low
 
   * Added 48x48 libreoffice icons
