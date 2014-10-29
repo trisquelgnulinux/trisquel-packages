@@ -1,130 +1,166 @@
-trisquel-meta (7.0-27) toutatis; urgency=low
+trisquel-meta (7.0-33) toutatis; urgency=low
+
+  * Added trisquel-icon-theme to trisquel-sugar
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Oct 2014 18:49:50 +0200
+
+trisquel-meta (7.0-32) toutatis; urgency=low
+
+  * Replaced lxdm with lightdm in trisquel-mini
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 14 Oct 2014 13:04:08 +0200
+
+trisquel-meta (7.0-31) toutatis; urgency=low
+
+  * Reverted Abrowser as main browser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 14 Oct 2014 09:48:29 +0200
+
+trisquel-meta (7.0-30) belenos; urgency=low
+
+  * Added cheese and network-manager-openvpn-gnome
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 31 Aug 2014 17:45:24 +0200
+
+trisquel-meta (7.0-29) belenos; urgency=low
+
+  * Removed libpam-smbpass
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 30 Aug 2014 02:48:19 +0200
+
+trisquel-meta (7.0-28) belenos; urgency=low
+
+  * Added onboard, removed system-config-printer from gnome edition
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 28 Aug 2014 03:05:01 +0200
+
+trisquel-meta (7.0-27) belenos; urgency=low
 
   * Removed indicator-appmenu
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 04:55:14 +0200
 
-trisquel-meta (7.0-26) toutatis; urgency=low
+trisquel-meta (7.0-26) belenos; urgency=low
 
   * Added i965-va-driver
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 04:37:11 +0200
 
-trisquel-meta (7.0-25) toutatis; urgency=low
+trisquel-meta (7.0-25) belenos; urgency=low
 
   * Added extra gst packages
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 04:32:40 +0200
 
-trisquel-meta (7.0-24) toutatis; urgency=low
+trisquel-meta (7.0-24) belenos; urgency=low
 
   * Replaced im-switch with im-config
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 18 Jul 2014 18:23:18 +0200
 
-trisquel-meta (7.0-23) toutatis; urgency=low
+trisquel-meta (7.0-23) belenos; urgency=low
 
   * Added all gstreamer plugin groups
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 16 Jul 2014 21:59:25 +0200
 
-trisquel-meta (7.0-22) toutatis; urgency=low
+trisquel-meta (7.0-22) belenos; urgency=low
 
   * Replaced Abrowser with IceCat
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 15 Jul 2014 06:07:04 +0200
 
-trisquel-meta (7.0-21) toutatis; urgency=low
+trisquel-meta (7.0-21) belenos; urgency=low
 
   * Added xul-ext-torproxy
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 10 Jul 2014 04:38:58 +0200
 
-trisquel-meta (7.0-20) toutatis; urgency=low
+trisquel-meta (7.0-20) belenos; urgency=low
 
   * Added electrum, tor, libreoffice, vim, gnome-mahjongg
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 09 Jul 2014 23:20:17 +0200
 
-trisquel-meta (7.0-19) toutatis; urgency=low
+trisquel-meta (7.0-19) belenos; urgency=low
 
   * Added indicator-session to trisquel
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Jul 2014 21:32:19 +0200
 
-trisquel-meta (7.0-18) toutatis; urgency=low
+trisquel-meta (7.0-18) belenos; urgency=low
 
   * Added gst-plugins-espeak to sugar
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Jul 2014 21:26:56 +0200
 
-trisquel-meta (7.0-17) toutatis; urgency=low
+trisquel-meta (7.0-17) belenos; urgency=low
 
   * Updated sugar to 102
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Jul 2014 19:43:14 +0200
 
-trisquel-meta (7.0-16) toutatis; urgency=low
+trisquel-meta (7.0-16) belenos; urgency=low
 
   * Updated triskel
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 29 Jun 2014 02:16:09 +0200
 
-trisquel-meta (7.0-15) toutatis; urgency=low
+trisquel-meta (7.0-15) belenos; urgency=low
 
   * Updated sugar packages
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 25 Jun 2014 21:15:01 +0200
 
-trisquel-meta (7.0-14) toutatis; urgency=low
+trisquel-meta (7.0-14) belenos; urgency=low
 
   * Replaced gnome-session-flashback with trisquel-session
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 19 Jun 2014 00:03:17 +0200
 
-trisquel-meta (7.0-13) toutatis; urgency=low
+trisquel-meta (7.0-13) belenos; urgency=low
 
   * Updated toast metapackages
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 17 Jun 2014 02:57:08 +0200
 
-trisquel-meta (7.0-12) toutatis; urgency=low
+trisquel-meta (7.0-12) belenos; urgency=low
 
   * Replaced epdfview with evince
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 16 Jun 2014 21:08:15 +0200
 
-trisquel-meta (7.0-11) toutatis; urgency=low
+trisquel-meta (7.0-11) belenos; urgency=low
 
   * Replaced lightdm-gtk-greeter with unity-greeter, added ubuntu-mono, light-themes
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 16 Jun 2014 03:44:20 +0200
 
-trisquel-meta (7.0-10) toutatis; urgency=low
+trisquel-meta (7.0-10) belenos; urgency=low
 
   * Replaced remmina with vinagre, added gstreamer1.0-libav
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 15 Jun 2014 22:12:14 +0200
 
-trisquel-meta (7.0-9) toutatis; urgency=low
+trisquel-meta (7.0-9) belenos; urgency=low
 
   * Removed samba
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 14 Jun 2014 06:17:11 +0200
 
-trisquel-meta (7.0-8) toutatis; urgency=low
+trisquel-meta (7.0-8) belenos; urgency=low
 
   * Removed onboard
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 14 Jun 2014 05:59:06 +0200
 
-trisquel-meta (7.0-7) toutatis; urgency=low
+trisquel-meta (7.0-7) belenos; urgency=low
 
   * Removed gwibber and indicator-session
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 21 May 2014 22:12:07 +0200
 
-trisquel-meta (7.0-6) toutatis; urgency=low
+trisquel-meta (7.0-6) belenos; urgency=low
 
   * Removed evince and gwibber deprecated plugins
 
