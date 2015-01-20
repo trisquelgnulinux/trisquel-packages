@@ -1,8 +1,9 @@
-ubiquity-slideshow-trisquel (4.5-9) UNRELEASED; urgency=medium
+ubiquity-slideshow-trisquel (4.5-10) UNRELEASED; urgency=medium
 
   * Added swedish translation by Albin S.
+  * Set Trisquel links to https
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 20 Jan 2015 22:58:39 +0100
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 20 Jan 2015 23:03:43 +0100
 
 ubiquity-slideshow-trisquel (4.5-8) toutatis; urgency=low
 
