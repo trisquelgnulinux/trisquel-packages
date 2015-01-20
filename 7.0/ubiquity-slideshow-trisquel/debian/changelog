@@ -1,3 +1,9 @@
+ubiquity-slideshow-trisquel (4.5-9) UNRELEASED; urgency=medium
+
+  * Added swedish translation by Albin S.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 20 Jan 2015 22:58:39 +0100
+
 ubiquity-slideshow-trisquel (4.5-8) toutatis; urgency=low
 
   * Fixed index.html

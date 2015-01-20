@@ -2,5 +2,6 @@ ubiquitySlideshowDirectoryCb({
 "es": {"slides": ["community.html", "help.html", "software.html", "freedom.html", "welcome.html"], "media": []}, 
 "gl": {"slides": ["community.html", "help.html", "software.html", "freedom.html", "welcome.html"], "media": []}, 
 "de": {"slides": ["community.html", "help.html", "software.html", "freedom.html", "welcome.html"], "media": []}, 
+"sv": {"slides": ["community.html", "help.html", "software.html", "freedom.html", "welcome.html"], "media": []}, 
 "it": {"slides": ["community.html", "help.html", "software.html", "freedom.html", "welcome.html"], "media": []}
  });
