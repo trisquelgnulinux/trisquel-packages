@@ -1,3 +1,11 @@
+gnome-app-install (0.5.60.1ubuntu2trisquel6-8) belenos; urgency=low
+
+  * Fixed bug on multiple selections
+  * Fixed untranslated chains
+  * Fixed package description and translations
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 06 Dec 2014 06:26:51 +0100
+
 gnome-app-install (0.5.60.1ubuntu2trisquel6-7) toutatis; urgency=low
 
   * Fixed #12010

@@ -44,7 +44,7 @@ class Application(MenuItem):
         self.execCmd = None
         # needsTerminal
         self.needsTerminal = False
-        # component the package is in (main, universe, multiverse, restricted)
+        # component the package is in (main, universe)
         self.component = None
         # channel the pacakge is in (e.g. skype)
         self.channel = None

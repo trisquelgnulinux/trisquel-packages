@@ -733,8 +733,8 @@ msgstr "%s ist kein offizieller Bestandteil von Debian"
 
 #: ../AppInstall/distros/Debian.py:83
 msgid ""
-"<big><b>Checking installed and available applications</b></big>\n"
-"\n"
+"<big><b>Checking installed and available applications</b></big>"
+""
 "Debian offers you a large variety of applications that you can install on "
 "your system."
 msgstr ""
@@ -761,8 +761,8 @@ msgstr "Installation der %s-Komponente aus ihrer Distribution aktivieren?"
 
 #: ../AppInstall/distros/Default.py:90
 msgid ""
-"<big><b>Checking installed and available applications</b></big>\n"
-"\n"
+"<big><b>Checking installed and available applications</b></big>"
+""
 "Your distribution and third party vendors offer you a large variety of "
 "applications that you can install on your system."
 msgstr ""

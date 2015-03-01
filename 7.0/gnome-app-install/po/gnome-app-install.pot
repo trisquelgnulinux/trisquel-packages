@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
-"POT-Creation-Date: 2014-08-07 03:30+0200\n"
+"POT-Creation-Date: 2014-12-06 06:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,52 +344,34 @@ msgid ""
 "applications, use the Synaptic package manager."
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:621
-msgid "Confirm installation of restricted software"
-msgstr ""
-
-#: ../AppInstall/AppInstallApp.py:622
-msgid ""
-"The use of this software may be restricted in some countries. You must "
-"verify that one of the following is true:\n"
-"\n"
-"* These restrictions do not apply in your country of legal residence\n"
-"* You have permission to use this software (for example, a patent license)\n"
-"* You are using this software for research purposes only"
-msgstr ""
-
-#: ../AppInstall/AppInstallApp.py:632
-msgid "C_onfirm"
-msgstr ""
-
 #. Fallback
-#: ../AppInstall/AppInstallApp.py:673 ../AppInstall/DialogProprietary.py:21
+#: ../AppInstall/AppInstallApp.py:632 ../AppInstall/DialogProprietary.py:21
 #: ../AppInstall/distros/Debian.py:24
 #, python-format
 msgid "Enable the installation of software from %s?"
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:675
+#: ../AppInstall/AppInstallApp.py:634
 #, python-format
 msgid ""
 "%s is provided by a third party vendor. The third party vendor is "
 "responsible for support and security updates."
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:679 ../AppInstall/DialogProprietary.py:24
+#: ../AppInstall/AppInstallApp.py:638 ../AppInstall/DialogProprietary.py:24
 msgid "You need a working internet connection to continue."
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:683 ../AppInstall/DialogProprietary.py:34
+#: ../AppInstall/AppInstallApp.py:642 ../AppInstall/DialogProprietary.py:34
 msgid "_Enable"
 msgstr ""
 
 #. show an error dialog if something went wrong with the cache
-#: ../AppInstall/AppInstallApp.py:892
+#: ../AppInstall/AppInstallApp.py:848
 msgid "Failed to check for installed and available applications"
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:893
+#: ../AppInstall/AppInstallApp.py:849
 msgid ""
 "This is a major failure of your software management system. Please check for "
 "broken packages with synaptic, check the file permissions and correctness of "
@@ -397,61 +379,61 @@ msgid ""
 "'sudo apt-get update' and 'sudo apt-get install -f'."
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:981
+#: ../AppInstall/AppInstallApp.py:937
 msgid "Apply changes to installed applications before closing?"
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:982
+#: ../AppInstall/AppInstallApp.py:938
 msgid "If you do not apply your changes they will be lost permanently."
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:986
+#: ../AppInstall/AppInstallApp.py:942
 msgid "_Close Without Applying"
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:1003
+#: ../AppInstall/AppInstallApp.py:959
 msgid "No help available"
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:1004
+#: ../AppInstall/AppInstallApp.py:960
 msgid "To display the help, you need to install the \"yelp\" application."
 msgstr ""
 
 #. FIXME: move this inside the dialog class, we show a different
 #. text for a quit dialog and a approve dialog
-#: ../AppInstall/AppInstallApp.py:1053
+#: ../AppInstall/AppInstallApp.py:1009
 msgid "Apply the following changes?"
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:1054
+#: ../AppInstall/AppInstallApp.py:1010
 msgid ""
 "Please take a final look through the list of applications that will be "
 "installed or removed."
 msgstr ""
 
-#: ../AppInstall/AppInstallApp.py:1275
+#: ../AppInstall/AppInstallApp.py:1231
 msgid "There is no matching application available."
 msgstr ""
 
 #. TRANSLATORS: %s represents a filter name
-#: ../AppInstall/AppInstallApp.py:1285
+#: ../AppInstall/AppInstallApp.py:1241
 #, python-format
 msgid "To broaden your search, choose \"%s\"."
 msgstr ""
 
 #. TRANSLATORS: %s represents a filter name
-#: ../AppInstall/AppInstallApp.py:1289
+#: ../AppInstall/AppInstallApp.py:1245
 #, python-format
 msgid "To broaden your search, choose \"%s\" or \"%s\"."
 msgstr ""
 
 #. TRANSLATORS: Show refers to the Show: combobox
-#: ../AppInstall/AppInstallApp.py:1295
+#: ../AppInstall/AppInstallApp.py:1251
 msgid "To broaden your search, choose a different \"Show\" item."
 msgstr ""
 
 #. TRANSLATORS: All refers to the All category in the left list
-#: ../AppInstall/AppInstallApp.py:1301
+#: ../AppInstall/AppInstallApp.py:1257
 msgid "To broaden your search, choose 'All' categories."
 msgstr ""
 
@@ -621,7 +603,7 @@ msgid "Loading applications..."
 msgstr ""
 
 #. add "All" category
-#: ../AppInstall/Menu.py:377
+#: ../AppInstall/Menu.py:377 ../AppInstall/distros/Default.py:12
 msgid "All"
 msgstr ""
 
@@ -630,13 +612,12 @@ msgstr ""
 msgid "Loading %s..."
 msgstr ""
 
-#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:12
-#: ../AppInstall/distros/Ubuntu.py:21
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Ubuntu.py:21
 msgid "All available applications"
 msgstr ""
 
 #. %s is the name of the component
-#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:26
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:23
 #: ../AppInstall/distros/Ubuntu.py:38
 #, python-format
 msgid "%s is not officially supported with security updates."
@@ -672,20 +653,14 @@ msgid ""
 "your system."
 msgstr ""
 
-#: ../AppInstall/distros/Default.py:13
-msgid ""
-"Show all applications including ones which are unsupported and possibly "
-"restricted by law or copyright"
-msgstr ""
-
-#: ../AppInstall/distros/Default.py:24
+#: ../AppInstall/distros/Default.py:21
 #, python-format
 msgid ""
 "Enable the installation of software from the %s component of your "
 "Distribution?"
 msgstr ""
 
-#: ../AppInstall/distros/Default.py:90
+#: ../AppInstall/distros/Default.py:87
 msgid "<big><b>Checking installed and available applications</b></big>"
 msgstr ""
 
@@ -793,13 +768,13 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:108
+#: ../AppInstall/widgets/AppDescView.py:78
 #, python-format
 msgid "%s cannot be installed"
 msgstr ""
 
 #. warn that this app is not available on this plattform
-#: ../AppInstall/widgets/AppDescView.py:117
+#: ../AppInstall/widgets/AppDescView.py:87
 #, python-format
 msgid ""
 "%s cannot be installed on your computer type (%s). Either the application "
@@ -807,29 +782,29 @@ msgid ""
 "computer type."
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:128
+#: ../AppInstall/widgets/AppDescView.py:98
 #, python-format
 msgid ""
 "%s is available in the third party software channel '%s'. To install it, "
 "please click on the checkbox to activate the software channel."
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:138
+#: ../AppInstall/widgets/AppDescView.py:108
 msgid "This application is bundled with the following applications: "
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:232
+#: ../AppInstall/widgets/AppDescView.py:202
 msgid "Screenshot"
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:240
+#: ../AppInstall/widgets/AppDescView.py:210
 #, python-format
 msgid ""
 "\n"
 "Homepage: %s\n"
 msgstr ""
 
-#: ../AppInstall/widgets/AppDescView.py:242
+#: ../AppInstall/widgets/AppDescView.py:212
 #, python-format
 msgid "Version: %s (%s)"
 msgstr ""

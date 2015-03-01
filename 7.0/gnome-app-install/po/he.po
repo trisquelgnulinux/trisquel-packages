@@ -729,6 +729,6 @@ msgstr "יישום"
 
 #: ../data/gnome-app-install.ui.h:3
 msgid ""
-"<big><b>Checking installed and available applications</b></big>\n"
+"<big><b>Checking installed and available applications</b></big>"
 msgstr ""
-"<big><b>בדיקת היישומים המותקנים והיישומים הזמינים להתקנה</b></big>\n"
+"<big><b>בדיקת היישומים המותקנים והיישומים הזמינים להתקנה</b></big>"

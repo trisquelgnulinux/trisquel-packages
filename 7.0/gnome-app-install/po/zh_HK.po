@@ -717,6 +717,6 @@ msgstr "應用程式"
 
 #: ../data/gnome-app-install.ui.h:3
 msgid ""
-"<big><b>Checking installed and available applications</b></big>\n"
+"<big><b>Checking installed and available applications</b></big>"
 msgstr ""
-"<big><b>檢查已安裝和可安裝應用程式</b></big>\n"
+"<big><b>檢查已安裝和可安裝應用程式</b></big>"

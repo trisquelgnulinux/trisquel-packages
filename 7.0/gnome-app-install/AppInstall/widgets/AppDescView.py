@@ -70,37 +70,7 @@ class AppDescView(ReleaseNotesViewer):
             candidate = getattr(pkg, 'candidate', pkg)
             homepage = candidate and candidate.homepage
             short_desc = candidate and candidate.summary
-            try:
-                # short_desc = ... already looked up the correct translation
-                # for us.
-                tmp = candidate.package._pcache._records.LongDesc.split("\n",1)
-                if len(tmp) == 1:
-                    rough_desc = ""
-                else:
-                    rough_desc = tmp[1]
-            except AttributeError:
-                rough_desc = candidate and candidate.raw_description #.split("\n",1)[0]
-            
-            # Split into sections, parse each section on its own.
-            sections = rough_desc.split("\n .")
-
-            for section in sections:
-                # Take care of lists and use UTF-8 bullets.
-                section = re.sub("\n( |\t)+(-|\*)", u"\n\r\t\u2022 ", section)
-                # There should be no new lines within a section.
-                section = section.replace("\n", "")
-                # Hack to get the lists working again.
-                section = section.replace("\r", "\n")
-                # Multiple whitespace gets merged into a single one.
-                section = re.sub("\ \ +", " ", section)
-                # Append it to the complete description.
-                if section.startswith(u"\n\t\u2022"):
-                    clean_desc += section
-                else:
-                    clean_desc += "\n%s" % section.strip()
-
-            # Remove the leading newline.
-            clean_desc = clean_desc[1:]
+            clean_desc = self.cache[item.pkgname].versions[0].description
             
             if not clean_desc:
                 clean_desc = item.comment

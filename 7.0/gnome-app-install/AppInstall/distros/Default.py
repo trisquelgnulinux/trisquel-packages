@@ -9,10 +9,7 @@ class Distribution(object):
         # The installed filter will be automatically added in non-installer mode
         # The primary and secondary filters are separated
         self.filters_primary = {
-            SHOW_ALL : (_("All available applications"),
-                        _("Show all applications including ones which are "
-                          "unsupported and possibly restricted by law or "
-                          "copyright"))
+            SHOW_ALL : (_("All"),"")
             }
         self.filters_secondary = {}
         # List of components whose applications should not be installed
@@ -87,7 +84,7 @@ class Distribution(object):
         return []
 
     def get_progress_label(self):
-        return _("<big><b>Checking installed and available applications</b></big>")
+        return _("<big><b>Checking installed and available applications</b></big>"+"\n")
 
 if __name__ == "__main__":
     d = Distribution()

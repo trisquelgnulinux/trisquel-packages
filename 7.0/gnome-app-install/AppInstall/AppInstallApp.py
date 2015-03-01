@@ -589,7 +589,7 @@ class AppInstallApp(SimpleGtkbuilderApp):
 
         # check if we do not conflict with something
         for app in to_add:
-            if not self.cache[app.pkgname].markedInstall:
+            if not self.cache[app.pkgname].marked_install:
                 apt_error = True
         # then check for real errors
         if apt_error or self.cache._depcache.broken_count > 0:
@@ -605,47 +605,6 @@ class AppInstallApp(SimpleGtkbuilderApp):
                 for app in apps:
                     app.toInstall = not app.toInstall
             self.treeview_packages.queue_draw()
-        return True
-
-    def _ensureUnsupportedOrLegalWarning(self, item):
-        """ warn:
-            - on potential legal problems (codecs) always
-            - when a universe or multiverse package is installed for
-              the first time
-        """
-        # check patentBadness
-        if item.patentBadness == True:
-            dia = gtk.MessageDialog(parent=self.window_main,
-                                    type=gtk.MESSAGE_WARNING,
-                                    buttons=gtk.BUTTONS_CANCEL)
-            header = _("Confirm installation of restricted software")
-            body = _("The use of this software may be "
-                     "restricted in some countries. You "
-                     "must verify that one of the following is true:\n\n"
-                     "* These restrictions do not apply in your country "
-                     "of legal residence\n"
-                     "* You have permission to use this software (for "
-                     "example, a patent license)\n"
-                     "* You are using this software for research "
-                     "purposes only")
-            dia.set_markup("<big><b>%s</b></big>\n\n%s" % (header,body))
-            dia.add_button(_("C_onfirm"), gtk.RESPONSE_OK)
-            res = dia.run()
-            dia.hide()
-            if res != gtk.RESPONSE_OK:
-                return False
-            return True
-
-        # we run the dialog with need_internet = False because we come
-        # here always after _ensureInArchive() was run and that will
-        # enable the sources.list bits for us
-        if (item.component in self.distro.get_components_ask() and 
-            item.component not in self.components_seen):
-            if not self._confirm_source_activation(item):
-                return False
-            self.components_seen.append(item.component)
-            self.config.set_list("/apps/gnome-app-install/components_seen",
-                                 "string", self.components_seen)
         return True
 
     def _confirm_source_activation(self, item, need_internet=True):
@@ -707,9 +666,6 @@ class AppInstallApp(SimpleGtkbuilderApp):
         # give a first time warning on universe/multiverse package
         # installs (because we enable unverse/multiverse by default now)
         if install:
-            if not self._ensureUnsupportedOrLegalWarning(item):
-                self.setBusy(False)
-                return False
             if not self._ensureInArchive(item):
                 self.setBusy(False)
                 return False
