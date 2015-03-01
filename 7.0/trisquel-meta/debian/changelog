@@ -1,22 +1,41 @@
-trisquel-meta (7.0-34) toutatis; urgency=low
+trisquel-meta (7.0-37) belenos; urgency=low
+
+  * Updated sugar components to v104
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 28 Feb 2015 19:43:54 +0100
+
+trisquel-meta (7.0-36) belenos; urgency=low
+
+  * Remove avahi-daemon by default, to improve privacy
+  * Remove gnash by default
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 19 Dec 2014 12:44:38 +0100
+
+trisquel-meta (7.0-35) belenos; urgency=low
+
+  * Added cups-pk-helper and smbclient to trisquel-desktop-common
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 17 Dec 2014 18:23:41 +0100
+
+trisquel-meta (7.0-34) belenos; urgency=low
 
   * Removed tor from default images
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 02 Nov 2014 16:49:44 +0100
 
-trisquel-meta (7.0-33) toutatis; urgency=low
+trisquel-meta (7.0-33) belenos; urgency=low
 
   * Added trisquel-icon-theme to trisquel-sugar
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Oct 2014 18:49:50 +0200
 
-trisquel-meta (7.0-32) toutatis; urgency=low
+trisquel-meta (7.0-32) belenos; urgency=low
 
   * Replaced lxdm with lightdm in trisquel-mini
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 14 Oct 2014 13:04:08 +0200
 
-trisquel-meta (7.0-31) toutatis; urgency=low
+trisquel-meta (7.0-31) belenos; urgency=low
 
   * Reverted Abrowser as main browser
 
