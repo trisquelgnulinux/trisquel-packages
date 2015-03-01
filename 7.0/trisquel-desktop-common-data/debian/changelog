@@ -1,3 +1,10 @@
+trisquel-desktop-common-data (7.0-16) toutatis; urgency=low
+
+  * 7.0/trisquel-desktop-common-data Removed xscreensaver.desktop fixes
+    #12680
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 05 Nov 2014 17:02:17 +0100
+
 trisquel-desktop-common-data (7.0-15) toutatis; urgency=low
 
   * Set ibus trigger to Super+space, fixes #12004
