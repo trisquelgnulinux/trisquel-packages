@@ -1,0 +1,6 @@
+python-gwebsockets (0.4) belenos; urgency=low
+
+  * Debianized from upstream
+
+ -- Ruben Rodriguez <ruben@trisquel.info>  Tue, 17 Jun 2014 00:00:00 +0000
+

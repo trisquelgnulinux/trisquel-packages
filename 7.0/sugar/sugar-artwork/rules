@@ -1,0 +1,63 @@
+#!/usr/bin/make -f
+# -*- mode: makefile; coding: utf-8 -*-
+# Copyright © 2008-2010 Jonas Smedegaard <dr@jones.dk>
+# Description: Main Debian packaging script for sugar-artwork
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+include /usr/share/cdbs/1/rules/upstream-tarball.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/rules/autoreconf.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+pkgbranch = $(lastword $(subst -,$(space),$(DEB_SOURCE_PACKAGE)))
+
+pkgbase = sugar-artwork
+pkg = $(pkgbase)-$(pkgbranch)
+
+DEB_UPSTREAM_PACKAGE = $(DEB_SOURCE_PACKAGE:%-$(pkgbranch)=%)
+DEB_UPSTREAM_URL = http://download.sugarlabs.org/sources/sucrose/glucose/$(DEB_UPSTREAM_PACKAGE)
+DEB_UPSTREAM_TARBALL_EXTENSION = tar.bz2
+DEB_UPSTREAM_TARBALL_MD5 = 08e715a9f1840962d8e60559f25eae09
+
+# Register icons for optional caching
+binary-install/$(pkg)::
+	dh_icons -p$(cdbs_curpkg)
+
+# Strip hardcoded rpath
+binary-strip/$(pkg)::
+	find $(DEB_DESTDIR)/usr/lib -type f -name '*.so' -exec chrpath -d '{}' ';'
+
+# Needed by upstream build process
+#  * x11-apps needed only indirectly by icon-slicer. Can be dropped when
+#    icon-slicer is in Debian stable, or if depending on icon-slicer
+#    version 03-5
+CDBS_BUILD_DEPENDS += , libgtk2.0-dev (>= 2.16), libgtk-3-dev, libglib2.0-dev, libcairo2-dev, python-empy, icon-slicer, icon-naming-utils (>= 0.8.2), x11-apps
+
+# Needed (always/often) at runtime
+CDBS_DEPENDS_DEFAULT = ttf-dejavu-core
+CDBS_RECOMMENDS_DEFAULT = sugar-$(pkgbranch), ttf-dejavu-extra
+
+# Ensure only one variant is installed at a time (Debian Policy 7.6.2)
+CDBS_PROVIDES_DEFAULT = $(pkgbase)
+CDBS_CONFLICTS_DEFAULT = $(pkgbase)
+CDBS_REPLACES_DEFAULT = $(pkgbase)
+
+# Needed for our packaging
+CDBS_BUILD_DEPENDS += , chrpath, dh-autoreconf, gnome-common
+
+# Avoid .la files - see http://wiki.debian.org/ReleaseGoals/LAFileRemoval
+common-binary-post-install-arch::
+	find '$(cdbs_curdestdir)' -name '*.la' -delete

@@ -1,0 +1,39 @@
+From 5c8aead95135a9023041c1893661f42d872c9178 Mon Sep 17 00:00:00 2001
+From: Gonzalo Odiard <godiard@gmail.com>
+Date: Wed, 30 Oct 2013 10:36:33 -0300
+Subject: [PATCH] Workaround to enable start of activities still using
+ service_name
+
+While we deprecated service_name a long time ago, still there are activities
+using it, and is a source of frequent problems.
+
+Signed-off-by: Gonzalo Odiard <gonzalo@laptop.org>
+---
+ src/sugar3/bundle/activitybundle.py | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+diff --git a/src/sugar3/bundle/activitybundle.py b/src/sugar3/bundle/activitybundle.py
+index 268092f..2695718 100644
+--- a/src/sugar3/bundle/activitybundle.py
++++ b/src/sugar3/bundle/activitybundle.py
+@@ -129,9 +129,15 @@ class ActivityBundle(Bundle):
+         if cp.has_option(section, 'bundle_id'):
+             self._bundle_id = cp.get(section, 'bundle_id')
+         else:
+-            raise MalformedBundleException(
+-                'Activity bundle %s does not specify a bundle id' %
+-                self._path)
++            if cp.has_option(section, 'service_name'):
++                self._bundle_id = cp.get(section, 'service_name')
++                logging.error('ATENTION: service_name property in the '
++                              'activity.info file is deprecated, should be '
++                              ' changed to bundle_id')
++            else:
++                raise MalformedBundleException(
++                    'Activity bundle %s does not specify a bundle id' %
++                    self._path)
+ 
+         if cp.has_option(section, 'name'):
+             self._name = cp.get(section, 'name')
+-- 
+1.8.1.4

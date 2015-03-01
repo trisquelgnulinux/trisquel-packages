@@ -1,0 +1,833 @@
+sugar-MAJOR (DETAIL) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ruben Rodríguez <ruben@trisquel.info>  DATE
+
+sugar-0.96 (0.96.1-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * sugar-emulator: python-carquinyol moved to depends (Closes: #678720)
+  * Fix shell test syntax for /u/b/sugar
+  * sugar-emulator: depends on x11-xserver-utils
+
+ -- Simon Paillard <spaillard@debian.org>  Mon, 08 Oct 2012 21:18:58 +0200
+
+sugar-0.96 (0.96.1-2) unstable; urgency=low
+
+  * Fix stop depending on sugar-presence-service-*: Solely used by
+    sugar-etoys-activity, according to git commit message in
+    sugar-presence-service.
+  * Drop obsolete l10n patches.
+  * Update package relations:
+    + Relax to suggest (not recommend) sucrose for sugar-session, and
+      sugar-session for python-jarabe and sugar-tools: Eases installing
+      utilities without pulling in everything.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 27 May 2012 18:03:07 +0200
+
+sugar-0.96 (0.96.1-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+  * Remove debian/source/local-options: abort-on-upstream-changes and
+    unapply-patches are default in dpkg-source since 1.16.1.
+  * Bump debhelper compatibility level to 7.
+  * Use Python helper python2 (not python-support).
+  * Bump standards-version to 3.9.3.
+  * Use anonscm.debian.org for Vcs-Browser field.
+  * Update copyright file:
+    + Rewrite using format 1.0.
+    + Extend copyright coverage of some files to include recent years.
+  * Switch packaging to upstream branch 0.96.
+  * Have python-jarabe depend on python-xapian and python-gst0.10.
+  * Have sugar-session recommend upower and consolekit
+  * Have python-jarabe recommend xdg-user-dirs and python-carquinyol.
+  * Have python-jarabe suggest olpc-powerd and (not yet packaged)
+    gstreamer0.10-espeak.
+  * Stop installing binary sugar-activity: Moved to separate upstream
+    project.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 27 May 2012 04:12:37 +0200
+
+sugar-0.90 (0.90.3-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 14 Oct 2010 20:53:28 +0200
+
+sugar-0.90 (0.90.2-2) unstable; urgency=low
+
+  * Have sugar-session (not sucrose) provide unversioned sugar (and not
+    replace or conflict with it).
+  * Have sugar-session recommend sucrose.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 13 Oct 2010 09:25:05 +0200
+
+sugar-0.90 (0.90.2-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Update Fructose activity relations to match activities (but not
+    versions) at upstream release notes.
+  * Add patch to fix POSIX handling (a.k.a. bashisms) and quoting in
+    shell scripts.
+  * Have sugar-emulator recommend gnome-keyring, and sucrose depend on
+    it.
+  * Recommend (and for sucrose: depend on) modemmanager.
+  * Ease building with git-buildpackage: Git-ignore quilt .pc dir, and
+    add source local-options.
+  * Bump Policy compliance to standards-version 3.9.1.
+  * Shorten Vcs-* stanzas.
+  * Update copyright file: New copyright holders and years (same
+    licenses).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 12 Oct 2010 19:43:06 +0200
+
+sugar-0.90 (0.89.1-1) experimental; urgency=low
+
+  * New upstream development release.
+  * Switch packaging to upstream branch 0.90.
+  * Refresh patches.
+  * Relax transitional conflicts to use Breaks: (not Conflicts:).
+  * Bump claimed Policy compliance to standards-version to 3.9.0.
+  * Update copyright file: Extend some copyright years.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Jul 2010 15:09:44 +0200
+
+sugar-0.88 (0.88.1-1) unstable; urgency=low
+
+  * New upstream maintenance release.
+
+  [ Luke Faraone ]
+  * Include a comment in sugar.desktop.
+  * Add self to uploaders and set DMUA.
+
+  [ Jonas Smedegaard ]
+  * Tighten README.source section on CDBS usage: all snippets are now
+    officially packaged ones.
+  * Update README.source: Fix document bootstrapping upstream Git, and
+    rewrite to not use upstream-git branch.
+  * Bump a year in copyright file.
+  * Suppress unneeded auto-resolved build-dependency on python-dev.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 25 Jun 2010 10:59:22 +0200
+
+sugar-0.88 (0.88.0-3) unstable; urgency=low
+
+  * Update copyright file:
+    + Fix replace license section MIT with Expat and other-X, adding
+      comment on Expat variation.
+    + Rename and tighten other-GAP-* sections.
+  * Refer to FSF website (not postal address) in rules file header.
+  * Have sugar-session and sucrose recommend (not suggest) officially
+    packaged activities and python-xklavier.
+  * Have python-jarabe recommend, and sucrose depend on, avahi-autoipd.
+    Closes: bug#580808, thanks to Sascha Silbe.
+  * Have python-jarabe recommend, and sucrose depend on, alsa-utils.
+    Closes: bug#581504, thanks to Sascha Silbe.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 14 May 2010 01:04:49 +0200
+
+sugar-0.88 (0.88.0-2) unstable; urgency=low
+
+  * Tidy copyright sections in copyright file.
+  * Adjust debian/* copyright years in copyright file.
+  * Have sugar-session recommend (and sucrose depend on) gvfs, for GIO
+    removable media support. Closes: bug#577681, thanks to Sascha Silbe.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 13 Apr 2010 22:20:14 +0200
+
+sugar-0.88 (0.88.0-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Drop all local CDBS snippets: included with main cdbs package now.
+  * Revert apply patches to source in Git.
+  * Refresh and unfuzz patches.
+  * Drop build-dependencies on quilt and patchutils.
+  * Relax build-dependencies on python-central and python-dev.
+  * Relax build-dependency on devscripts slightly, to ease backporting.
+  * Tighten build-dependency on cdbs.
+  * Disable patches adding danish l10n: Upstream ships with alternative
+    translation now (merging postponed till later).
+  * Update copyright file:
+    + Reformat to conform to draft DEP5 rev. 135.
+    + Add a few new owners and years (no new licenses).
+    + Shuffle file sections around to better match hints file.
+  * Bump standards-version to 3.8.4.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 30 Mar 2010 12:13:18 +0200
+
+sugar-0.88 (0.87.2-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Use bzip2-compressed tarballs in gbp.conf.
+  * Fix depend on python-simplejson (and not python-cjson). Closes:
+    bug#563037, thanks to Rafael Ortiz.
+  * Update debian/copyright (no new licenses or owners, just shuffling
+    around).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 30 Dec 2009 16:09:09 +0100
+
+sugar-0.88 (0.87.1-2) unstable; urgency=low
+
+  * Have python-jarabe depend on sugar-presence-service. Closes:
+    bug#560292, thanks to Fabian Greffrath.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 10 Dec 2009 13:19:03 +0100
+
+sugar-0.88 (0.87.1-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Drop patch syncing against upstream Git: obsoleted by new upstream
+    release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 01 Dec 2009 15:43:39 +0100
+
+sugar-0.88 (0.86.3-2) experimental; urgency=low
+
+  * Drop noop conflicts/replaces, and adjust notes on when others can be
+    dropped.
+  * Have versioned sucrose conflict/replace (not only provide) virtual
+    unversioned sugar.
+  * Add note on need for python-wnck.
+  * Fix short and long descriptions for sugar-emulator. Closes:
+    bug#558903, thanks to Rhonda.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 01 Dec 2009 02:06:29 +0100
+
+sugar-0.88 (0.86.3-1) experimental; urgency=low
+
+  * Switch packaging to branch 0.88.
+  * Add and apply patch to sync with upstream git head.
+  * Update local CDBS snippet upstream-tarball.mk to no longer
+    recompress bzip-compressed tarballs in get-orig-source rule.
+  * Release for experimental, as not all parts of 0.88 branch are
+    packaged yet.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 20 Nov 2009 20:09:28 +0100
+
+sugar-0.86 (0.86.3-6) unstable; urgency=low
+
+  * Fix and improve dependencies:
+    + Recommend (not depend on) x11-xserver-utils (used in
+      controlpanel).
+    + Fix replace and conflict with sugar from replacement packages (not
+      sucrose metapackage), and do it versioned.
+    + Fix provide/conflict with/replace virtual counterparts of all non-
+      meta packages (not only python-jarabe).
+    + Declare session_activities more compactly.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 17 Nov 2009 15:31:45 +0100
+
+sugar-0.86 (0.86.3-5) unstable; urgency=low
+
+  * Update local CDBS snippets:
+    + Fix python-vars.mk to allow overriding DEB_PYTHON_PACKAGES.
+    + Fix invoke Python debhelper hook right after dh_install (not
+      before) to include files installed through debhelper.
+  * Split out new binary packages python-jarabe, sugar-session,
+    sugar-emulator and sugar-tools, and replace/rename now empty sugar
+    package with sucrose (all with trailing -$BRANCH).
+    As a result, parts of Sugar can be installed alone, and installing
+    sucrose ensures that all official parts of a released sucrose gets
+    installed (in the future - not all parts are packaged officially for
+    Debian yet).
+    Provides/conflicts/replaces are temporarily provided for old
+    versioned sugar packages to help migration.
+    Provides/conflicts/replaces for unversioned "sugar" will be kept, to
+    have "aptitude install sugar" be sensible (with only a single branch
+    available it installs, with multiple branches it lists the options).
+  * Use locally written XDG-compliant desktop file for sugar-emulator.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 11 Nov 2009 14:09:33 +0100
+
+sugar-0.86 (0.86.3-4) unstable; urgency=low
+
+  * Tighten python-gobject dependency to versions providing GIO binding.
+  * Tighten dependency on python-telepathy to versions implementing
+    CONNECTION_INTERFACE_REQUESTS ABI.
+  * Beautify comments in debian/rules.
+  * Restructure debian/rules to explicitly use sugar-$(pkgbranch).
+  * Update local python-autotools.mk snippet to make
+    DEB_PYTHON_PRIVATE_MODULES_DIRS apply alos to dh_python-central (not
+    only dh_python-support) as it has apparently been supported since at
+    least python-central 0.6.6.
+  * Register Python private modules below /usr/share/sugar.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 10 Nov 2009 01:58:05 +0100
+
+sugar-0.86 (0.86.3-3) unstable; urgency=low
+
+  * Apply patches, and drop using quilt (unneeded with new source
+    format, and Sugar not backportable to Etch anyway). Stop build-
+    depending on quilt or patchutils. Update README.source.
+  * Unfuzz patches.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 06 Nov 2009 01:06:48 +0100
+
+sugar-0.86 (0.86.3-2) unstable; urgency=low
+
+  * Have dependency on python-gconf fallback to older python-gnome2, to
+    ease backporting.
+  * Switch to source format 3.0 (quilt).
+  * Restructure patches to DEP3 format: Add meta-info; drop leading
+    numbers and README.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 06 Nov 2009 00:37:43 +0100
+
+sugar-0.86 (0.86.3-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Oct 2009 23:29:54 +0200
+
+sugar-0.86 (0.86.2-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 08 Oct 2009 22:03:48 +0200
+
+sugar-0.86 (0.86.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+  * Depend on x11-xserver-utils (xrdb now needed in sugar script).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 02 Oct 2009 15:09:55 +0200
+
+sugar-0.86 (0.86.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 30 Sep 2009 17:14:13 +0200
+
+sugar-0.86 (0.85.9-2) unstable; urgency=low
+
+  * Fix add epoch to dependency on metacity.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 20 Sep 2009 18:38:00 +0200
+
+sugar-0.86 (0.85.9-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Recommend tzdata (needed in datetime controlpanel).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 19 Sep 2009 14:16:49 +0200
+
+sugar-0.86 (0.85.8-1) unstable; urgency=low
+
+  * New upstream devlopment release.
+  * Fix depend versioned on metacilty (required --no-force-fullscreen
+    option introduced in 2.27.1).
+  * Use upstream sugar-emulator desktop file.
+    + Drop locally shipped desktop file.
+    + Depend on (not recommend) branched sugar-artwork (needed for icon
+      used in upstream desktop file).
+    + Adapt menu file to not use -x option (matching upstream desktop
+      file).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 18 Sep 2009 21:37:20 +0200
+
+sugar-0.86 (0.85.7-1) unstable; urgency=low
+
+  * New upstream devlopment release:
+  * Switch to new branch:
+    + Bump major version to 0.86 for binary and source package.
+    + Use unversioned upstream-branch in gbp.conf.
+    + Simplify watch file (we want to watch too new files too).
+  * Update dependencies:
+    + Depend on metacity (and not matchbox-window-manager).
+    + Depend on python-gconf.
+    + Recommend (current branch of) python-carquinyol.
+    + Suggest sugar activities read write imageviewer browse jukebox
+      pippy (set upstream as default actions for various mime types).
+    + Suggest python-xklavier (should be recommended, but not yet in
+      Debian).
+    + Stop recommending x11-xserver-utils (xrandr and xmodmap no longer
+      used).
+  * Drop patches 0001 and 1002 obsoleted by new release.
+  * Bump standards-version to 3.8.3 in control.in.
+  * Update debian/copyright (new owners and years, same licenses).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 15 Sep 2009 01:02:31 +0200
+
+sugar-0.84 (0.84.6-8) unstable; urgency=low
+
+  * Update OLPC relation (now historic) in long description.
+  * Fix error in changelog (wrong upstream branch for patch).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 11 Sep 2009 09:08:40 +0200
+
+sugar-0.84 (0.84.6-7) unstable; urgency=low
+
+  * Add patch 0001 syncing with head of upstream sucrose-0.84 branch.
+    + Update locales zh_TW, nl, ne, mn, it, fr, ar.
+    + Remake the cache when the DS returns an unexpected amount of
+      entries.
+    + Fix .xoj support (sl#1098).
+    + Upgrade activities that were installed from bundles (sl#1176).
+  * Update CDBS snippets:
+    + Enhance package-relations.mk to support all binary package
+      relations (except -indep ones).
+    + Improve package-relation.mk cleanup to cover debhelper 6 and 7,
+      strip more whitespace and cover mixture of unversioned+versioned
+      dependencies.
+    + Silence applying dependencies in package-relation.mk.
+    + Implement fail-source-not-repackaged rule in upstream-tarball.mk.
+    + Update URL to draft DEP5 format in copyright-check.mk output.
+  * Fix double cdbs build-dependency.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 10 Sep 2009 20:46:47 +0200
+
+sugar-0.84 (0.84.6-6) unstable; urgency=low
+
+  * Stop depending on telepathy-gabble or telepathy-salut (only logfile
+    prefs mentioned here, actual use is by sugar-presence-service).
+  * Rename patch 2002→1002 and adapt to strip path (not just adapt it to
+    fit Debian).
+  * Recommend x11-utils, lsb-release, wpasupplicant and ethtool.
+  * Stop depending on python-numpy (passed to grid function in
+    python-sugar-toolkit since 0.83.x).
+  * Depend on openssh-client (not just suggest: needed at initial
+    login).
+  * Stop depending on net-tool (actual use is by
+    sugar-presence-service).
+  * Suggest gdb (needed by --debug option of sugar-launch command).
+  * Fix install menu file, and XDG xsession and desktop files.
+  * Fix depend on python-wnck (wrongly depended on python-rsvg since
+    0.84.6-4), thanks to Tomeu Vizoso.
+  * Build-depend on python-gtksourceview2. Thanks to Tomeu Vizoso for
+    spotting this.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 16 Jul 2009 14:10:51 +0200
+
+sugar-0.84 (0.84.6-5) unstable; urgency=low
+
+  * Conflict with and replace sugar-journal-activity.
+  * Rewrite copyright to use DEP5 r54 proposed machine-readable format.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 07 Jun 2009 17:23:37 +0200
+
+sugar-0.84 (0.84.6-4) unstable; urgency=low
+
+  * Improve dependencies:
+    + Depend on python-rsvg (only fallback to python-gnome2-desktop and
+      librsvg2-common)
+    + Stop x11-xserver-utils fallbacks to xrandr or xbase-clients
+    + Depend on python-cjson (not simplejson)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 May 2009 21:38:46 +0200
+
+sugar-0.84 (0.84.6-3) unstable; urgency=low
+
+  * Fix dependencies (for real this time).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 May 2009 02:17:07 +0200
+
+sugar-0.84 (0.84.6-2) unstable; urgency=low
+
+  * Enhance package-relations.mk to support all binary package relations
+    (except -indep ones).
+  * Extend package-relation cleanup to include debhelper 6 and 7.0.1.
+  * Fix provide/conflict/replace sugar.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 May 2009 02:02:36 +0200
+
+sugar-0.84 (0.84.6-1) unstable; urgency=low
+
+  [ Jonas Smedegaard ]
+  * New upstream release.
+  * Update patches:
+    + Drop patches 0001-0002 and 2992 (glive.py dropped upstream)
+    + Drop patch 2004 (dbus syntax problem resolved upstream)
+    + Add (another) patch 2992 to really use system empy
+    + Unfuzz remaining patches
+  * Append branch to source and binary package names and Sugar-specific
+    package relations, to support multiple branches in same distribution
+    concurrently.
+  * Add README.source (and drop CDBS hints and README.packaging).
+  * Update git-buildpackage configfile to enable signed-tags and use
+    upstream-0.84 as upstream branch.
+  * Use sugarlabs.org URLs (and drop laptop.org ones) to upstream source
+    and Homepage.  Bump watch file to track 0.84*.
+  * Really tighten dependency on sugar-artwork (as promised, and
+    misspelled, in 0.79.4-1). Closes: bug#477275 for real this time.
+  * Update debian/copyright and copyright hints:
+    + Use format documented in dep5 r48 proposal
+    + Separate files owned only by Redhat or OLPC.
+    + Add proper licensing header to debian/rules
+  * Bump standards-version to 3.8.1.
+  * Move aside (and revert at cleanup) upstream shipped temporary files.
+  * Build-depend on libgconf2-dev.
+
+  [ Laurent Bigonville ]
+  * Remove telepathy-stream-engine dependency, not needed anymore
+    (Closes: #526889)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 May 2009 01:21:07 +0200
+
+sugar (0.82.9-5) unstable; urgency=medium
+
+  * Update CDBS snippets:
+    + Simplify internal variables
+    + Ignore no files by default in copyright-check.mk
+    + Correct and update copyright hints of the snippets themselves
+  * Update debian/copyright and copyright hints:
+    + Rewrite debian/copyright using new file format, version 428
+    + Add info on CDBS snippets (new owners, no new licenses)
+    + Set Sugarlabs (not Redhat) as upstream maintainer, and add both
+      old laptop.org and new sugarlabs.org source URLs.
+    + Update copyright years
+    + Fix licensing change LGPL -> GPL (changed at 0.79.x)
+    + Include GAP licenses verbatim.
+  * Set urgency=medium due to opyright and licensing corrections.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Jan 2009 05:38:42 +0100
+
+sugar (0.82.9-4) unstable; urgency=low
+
+  * Add (not yet used) sugarlabs URL to watch file.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Jan 2009 03:33:22 +0100
+
+sugar (0.82.9-3) unstable; urgency=low
+
+  * Fix dependencies declared in debian/rules.
+  * Semi-auto-update debian/control to update dependencies:
+    DEB_MAINTAINER_MODE=1 fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Jan 2009 00:25:36 +0100
+
+sugar (0.82.9-2) unstable; urgency=low
+
+  * Limit watch file to track stable 0.82 branch.
+  * Add patches 0002 (from upstream Git) and 2992 to avoid unused
+    glive.py. Drop depending on python-gst0.10 or recommending
+    gstreamer0.10-plugins-good.
+  * Declare dependencies in debian/rules (not debian/control{,in}).
+  * Semi-auto-update debian/control to update dependencies:
+    DEB_MAINTAINER_MODE=1 fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 19 Jan 2009 18:47:45 +0100
+
+sugar (0.82.9-1) unstable; urgency=high
+
+  * New upstream release.
+    + Update locales es, fr, nl, pt and tr.
+    + Initialize dbus threads (fix X11 crashes during software update).
+      Closes: olpc#8234.
+    + Resync default favorites list with G1G1 activities list.
+      Closes: olpc#8657
+    + Fix WPA key dialog handling passwords with shell metacharacters.
+      Closes: olpc#8642.
+    + Fix the jumpy xo man.
+      Closes: olpc#8662.
+    + Fix accidental searches leading to a "blank" Home screen.
+      Closes: olpc#7969.
+  * Add patch 0001 syncing with head of upstream (sucrose-0.82 branch):
+    + Update locales de, it, nl, sl, tr.
+    + Explicitly stop the pulsing icon when an activity finishes
+      launching.
+  * Unfuzz patch 2002.
+  * Set urgency=high as changes are only minimal while fixing major
+    issues.
+  * Add git-buildpackage configfile to hint at our using non-default
+    upstream-0.82 branch for this release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 16 Jan 2009 18:37:48 +0100
+
+sugar (0.82.8-4) unstable; urgency=high
+
+  * Drop send_interface dbus hints. Closes:bug#510657, thanks to Simon
+    McVittie.
+  * Set urgency=high as is related to security bugs #503532 and #508032.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 04 Jan 2009 21:20:18 +0100
+
+sugar (0.82.8-3) unstable; urgency=low
+
+  * Update CDBS snippet makefile.mk: Cleanup check stamp dir for
+    flavored builds. Fixing failure to build twice in a row.
+  * Update CDBS snippet copyright-check.mk: Compact simple licenses
+    (those without ' or later').
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Nov 2008 18:47:52 +0100
+
+sugar (0.82.8-2) unstable; urgency=low
+
+  * Update cdbs snippets:
+    + Fix python-autotools.mk to run dh_py* scripts before
+      dh_installinit.  See bug#494288.
+    + Fix makefile.mk to create check stamp dir for flavored builds.
+    + Several minor improvements to upstream-tarball.mk.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 19 Oct 2008 20:57:02 +0200
+
+sugar (0.82.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update patch 1001.
+  * Unfuzz patch 2991.
+  * Depend on ${misc:Depends}.
+  * Update debian/copyright (copyright year bumped). Update copyright
+    hints.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 19 Oct 2008 17:07:11 +0200
+
+sugar (0.82.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Unfuzz patch 2991.
+  * Update cdbs snippets:
+    + Move dependency cleanup to new local snippet package-relations.mk.
+    + Update copyright-check output to more closely match proposed new
+      copyright file format.  Update copyright-hints.
+    + Internal restructuring of flavor-enhanced autotools- and makefile-
+      snippets.
+    + Update README.cdbs-tweaks.
+  * Add DEB_MAINTAINER_MODE in debian/rules (thanks to Romain Beauxis).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 16 Aug 2008 13:49:57 +0200
+
+sugar (0.81.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Disable (but keep in source) patch 2003 (refactored upstream).
+  * Tighten dependency on python-sugar-toolkit (control panel items
+    moved).
+  * Update local cdbs snippets:
+    + Relax copyright-check to only warn about its discoveries.  Closes:
+      bug#486984.
+    + Update dependency cleanup to strip cdbs 0.4.27 (not 0.4.27-1).
+  * Update debian/copyright (new files, same owners and licenses).
+    Update debian/copyright-hints.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 20 Jun 2008 23:11:55 +0200
+
+sugar (0.81.2-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 26 May 2008 10:06:47 +0200
+
+sugar (0.81.1-1) unstable; urgency=low
+
+  * New upstream release.
+    + Merge activities.default into favorites. Closes: bug#480856.
+  * Unfuzz patches.
+  * Update debian/copyright and debian/copyright-hints (new owners but
+    same licenses).
+  * Rewrite debian/copyright to only mention each licensing string once.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 24 May 2008 22:31:14 +0200
+
+sugar (0.79.4-2) unstable; urgency=medium
+
+  * Update cdbs tweaks:
+    + Strip any non-printable characters in copyright-check.mk.
+  * Update danish l10n.
+  * Raise to urgency=medium, as these are small changes that shouldn't
+    delay the earlier large changes reaching Lenny.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 29 Apr 2008 15:29:41 +0200
+
+sugar (0.79.4-1) unstable; urgency=low
+
+  [ Santiago Ruano Rincón ]
+  * Fixed sugar.desktop location
+
+  [ Jonas Smedegaard ]
+  * New upstream release.
+  * Highlights:
+    + Display current activity when its frame icon is clicked
+    + Add support for adding/removing activities to/from ring
+    + Coding improvements thanks to pylint
+    + Improved accesspoint indication
+    + support battery-charge-state-dependent battery frame icon
+  * Drop patch 0001 included in new upstream release.
+  * Depend on python-simplejson (crucial for dbus interaction - possibly
+    only since 0.79.2).
+  * Depend on librsvg2-common (SVG support in python-gnome2-desktop is
+    not enough).  Closes: bug#476789, thanks to Shaun Jackman.
+  * Depend on x11-xserver-utils (xrandr needed for rotation: <alt>r).
+  * Tighten python-artwork recommendation to versions supporting new UI.
+    Closes: bug#477275, thanks to Ivan Vucica.
+  * Add patch 2003 to resolve Debian-style timezone config in
+    sugar-control-panel.
+  * Add patch 2991 to enable danish l10n in configure.
+  * Use XO-style in sugar-emulator.desktop (why not?).
+  * Register sugar and sugar-emulator with the Debian menu system.
+  * Bump debhelper compatibility level to 6.
+  * Rewrite short description to not mention sugar, thanks to lintian.
+  * Mention exact upstream Git source in debian/copyright.
+  * Update local cdbs snippets:
+    + Relax python-central and python-support build-dependencies in
+      python-autotools.mk.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 22 Apr 2008 15:30:34 +0200
+
+sugar (0.79.3-2) unstable; urgency=low
+
+  [Santiago Ruano Rincón]
+  * Added sugar and sugar-emulator .desktop files. Taken from ubuntu
+    package.
+
+  [ Jonas Smedegaard ]
+  * Install both .desktop files in sugar package.
+  * Tighten dependency on python-sugar-toolkit.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 13 Apr 2008 02:38:41 +0200
+
+sugar (0.79.3-1) unstable; urgency=low
+
+  * New upstream release.
+    Highlights:
+    + Remove <ctrl>o shortcut
+    + Clean up calls to palette constructor
+    + Use the sugar-xo theme only on the XO
+    + Fix home view accelerators.
+    + Don't traceback when stopping an already stopped PulsingIcon.
+    + Fix the mesh-device pulsing icon
+    + Add palettes to activities in list view
+  * Replace patch 0001 syncing with Git as of today.
+    + Display current activity when its frame icon is clicked.
+  * Tighten dependency on python-gst0.10 (we need the set_volume
+    attribute). Closes: bug#475787.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 13 Apr 2008 01:51:47 +0200
+
+sugar (0.79.2-1) unstable; urgency=low
+
+  * New upstream release.
+    Highlights:
+    + New Frame and Home design.
+  * Replace patch 0001 syncing with Git as of today.
+    + Fix home view accelerators
+    + Don't traceback when stopping an already stopped PulsingIcon
+    + Fix the mesh-device pulsing icon
+  * Tighten dependency on python-sugar-toolkit.
+  * Update local cdbs snippets:
+    + Update copyright-check cdbs snippet to store newline-delimited
+      hints.  Update hints.
+    + Drop wget options broken with recent versions of wget in
+      update-tarball.mk.
+  * Update debian/copyright:
+    Adjust some copyright years.
+    Add Makefile.in and Makefile.in.in (GNU all-permissive license).
+  * Drop patch 2991 against no longer provided upstream automade files.
+  * Merge yet another duplicate cdbs build-dependency.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 05 Apr 2008 10:54:56 +0200
+
+sugar (0.79.0-5) unstable; urgency=low
+
+  * Add patch 1001 adding danish l10n.
+  * Sync with upstream Git as of today.
+    Main changes:
+    + Lots of l10n updates
+    + Move some LGPL files to GPL
+    + Fix access rights of clipboardservice
+    + Hide palettes when switching zoom levels
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 26 Mar 2008 12:07:25 +0100
+
+sugar (0.79.0-4) unstable; urgency=low
+
+  * Update CDBS tweaks:
+    + Add local python-autotools.mk (and drop py-compile.mk).
+    + Update python-vars.mk and makefile.mk for improved DEB_*PACKAGES
+      and build-dependency resolving.
+    + Cosmetic updates to README.cdbs-tweaks.
+  * Fix email address of OLPC Alioth team.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 16 Mar 2008 14:22:24 +0100
+
+sugar (0.79.0-3) unstable; urgency=low
+
+  * Pass over maintenance of the package to the OLPC team: Change
+    Maintainer, and add myself to Uploaders.
+  * Build-depend on python-all-dev.
+  * Build as arch-all.
+  * Fix README.packaging to use "pull; fetch --tags" (not "pull -t").
+  * Recommend xserver-xephyr (not xephyr). Closes: bug#470502.
+  * Update CDBS tweaks:
+    + Add local py-compile.mk and python-vars.mk to handle autotools-
+      based Python compilation.
+    + Add local autotools.mk, autotools-vars.mk, makefile.mk and
+      makefile-vars.mk providing multi-flavor build support needed by
+      py-compile.mk.
+    + README.cdbs-tweaks updated to mention the above.
+    + Add patchsys-quilt.mk.
+  * Add already applied patch 2001 to use empy from system.
+  * Add already applied patch 2991 to apply empy patch to automade file.
+  * Add already applied patch 2002 to invoke wpa_passphrase in /usr/bin.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 14 Mar 2008 16:13:13 +0100
+
+sugar (0.79.0-2) unstable; urgency=low
+
+  * Drop commented out relibtoolize rules from debian/control (claiming
+    relibtoolizing in 0.79.0-1 was a lie).
+  * Patch src/hardware/keydialog.py to use /usr/bin/wpa_passphrase (not
+    /usr/sbin/wpa_passphrase).
+  * Fix Git commands in README.packaging: Cannot push all+tags in 1 go.
+  * Update debian/copyright:
+    + Bump copyright years for debian/* files.
+    + Drop copyright and licensing info for files moved to sugar-toolkit
+    + Adjust changed paths: services/shell -> service, shell/ -> src
+  * Add watch file.
+  * Use (and build-depend on) separately packaged python-empy. Borrow
+    timestamps from similar files at build time to avoid triggering
+    automake.
+  * Depend on sugar-base, sugar-toolkit, matchbox-window-manager,
+    dbus-x11, telepathy-gabble, telepathy-salut,
+    telepathy-stream-engine, python-dbus, python-gst0.10, python-numpy,
+    python-gobject, python-gtk2, python-telepathy, python-cairo,
+    python-gnome2-desktop (for wnck), and python-hippocanvas.
+  * Recommend sugar-artwork, gstreamer0.10-plugins-good, xephyr,
+    network-manager and net-tools.
+  * Suggest openssh-client.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Mar 2008 02:30:07 +0100
+
+sugar (0.79.0-1) unstable; urgency=low
+
+  * First official release. Closes: bug#444021.
+  * New Upstream Version
+  * Update CDBS tweaks:
+    + Add upstream-tarball.mk to implement get-orig-source target.
+      Pristine-tar Git branch is maintained too, but git-buildpackage
+      does not yet support recreating the bz2 tarball
+    + Update copyright-check.mk to parse licensecheck using perl:
+      + No longer randomly drops newlines
+      + More compact hint file (and ordered more like wiki-proposed new
+        copyright syntax).
+      + No longer ignore files without copyright.
+    + Strip no longer relevant notes on cdbs-autoupdate.mk from
+      README.cdbs-tweaks
+  * Fix invoking dh_pycentral.
+  * Add sections on packaging to README.packaging.
+  * Cleanup duplicate build-dependencies in debian/rules
+    (upstream-tarball.mk needs tightened cdbs dependency).
+  * Stop generating autotools now included in upstream tarball.
+  * Relibtoolize to avoid hardcoded rpath.
+  * Add upstream source (in addition to Git source) to debian/copyright.
+  * Add Vcs-* and Homepage fields to debian/control.
+  * Fix typo and mention XO in long description.
+  * Semi-auto-update debian/control to update build-dependencies:
+    DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 08 Mar 2008 02:04:11 +0100
+
+sugar (0.2~git20080111-0~0jones1) jones; urgency=low
+
+  * Initial unofficial release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 24 Nov 2007 12:54:48 +0100

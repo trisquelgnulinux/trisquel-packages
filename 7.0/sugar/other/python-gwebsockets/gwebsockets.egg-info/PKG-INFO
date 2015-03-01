@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: gwebsockets
+Version: 0.4
+Summary: GLib based websockets server
+Home-page: http://github.com/dnarvaez/gwebsockets
+Author: Daniel Narvaez
+Author-email: dwnarvaez@gmail.com
+License: UNKNOWN
+Description: 
+        A websocket server written in python. It uses GIO for network communication
+        and hence it easily integrates with the GLib mainloop.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

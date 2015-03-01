@@ -1,0 +1,374 @@
+sugar-artwork-MAJOR (DETAIL) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ruben Rodríguez <ruben@trisquel.info>  DATE
+
+sugar-artwork-0.96 (0.96.2-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+  [ Luke Faraone ]
+  * clean: Don't fail when sugar.stamp is missing
+
+  [ Jonas Smedegaard ]
+  * Build-depend on libgtk-3-dev.
+  * Extend patch 2001 to cover gtk3 theme sources, and add DEP3 header.
+  * (Re)generate autotools:
+    + Build-depend on dh-autoreconf and gnome-common.
+    + Include autoreconf snippet.
+    + Drop patch 2991.
+  * Update copyright file:
+    + Bump format to 1.0.
+    + Fix turn second paragraph into a proper format 1.0 catch-all Files
+      paragraph.
+    + Fix double-indent in Copyright fields as per Policy §5.6.13.
+    + Quote license strings in comments.
+    + Include disclaimer in license paragraph GAP~Makefile.in.
+    + Fix consistently use License name LGPL~ (not other-LGPL).
+  * Bump standards-version to 3.9.3.
+  * Use anonscm.debian.org for Vcs-Browser field.
+  * Fix typo in long description.
+  * Avoid .la files.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 24 May 2012 20:26:12 +0200
+
+sugar-artwork-0.92 (0.92.0-1) unstable; urgency=low
+
+  * Shorten Vcs-* stanzas.
+  * Update README.source to not mention quilt: Still implicitly used but
+    not unusual for source format 3.0 and thus need no mention here.
+  * Update copyright file:
+    + Bump file format to draft 174 of DEP-5.
+    + Fix consistently refer to GNU Lesser GPL (not Library).
+    + Extend years.
+  * Bump policy compliance to standards-version 3.9.2.
+  * Switch packaging to upstream branch 0.92.
+  * Unfuzz patches.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 19 Apr 2011 18:41:06 +0200
+
+sugar-artwork-0.90 (0.90.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Bump Policy compliance to standards-version 3.9.1.
+  * Append _DEFAULT to deprecated CDBS variables in rules file.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 12 Oct 2010 13:54:13 +0200
+
+sugar-artwork-0.90 (0.89.2-1) experimental; urgency=low
+
+  * New upstream development release.
+  * Unfuzz patches.
+  * Switch packaging to upstream branch 0.90.
+  * Update copyright file: Extend some copyright years.
+  * Bump Policy compliance to standards-version to 3.9.0.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 21 Jul 2010 01:47:49 +0200
+
+sugar-artwork-0.88 (0.88.1-1) unstable; urgency=low
+
+  * New upstream maintenance release.
+    + Fixes undefined symbol: GTK_WIDGET_HAS_FOCUS.
+      Closes: bug#583578.
+  * Refresh patches.
+  * Improve copyright file:
+    + Tidy copyright sections.
+    + Fix replace license section MIT with Expat and other-X.
+  * Drop patch 1002 (workaround for older GTK+) as it causes other
+    errors. Instead tighten build-dependency on libgtk2.0-dev to at
+    least 2.16.
+    Closes: bug#584717, thanks to Sascha Silbe.
+  * Refer to FSF website (not postal address) in rules file header.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 25 Jun 2010 16:28:11 +0200
+
+sugar-artwork-0.88 (0.88.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Drop all local CDBS snippets: included with main cdbs package now.
+  * Switch to source format "3.0 (quilt)".
+  * Drop patchsys-quilt.mk snippet: superfluous with source format "3.0
+    (quilt)".
+  * Refresh and unfuzz patches.
+  * Drop build-dependencies on quilt and patchutils.
+  * Relax build-dependency on devscripts slightly, to ease backporting.
+  * Tighten build-dependency on cdbs.
+  * Add git-buildpackage hint about use of bzip2-compressed tarballs.
+  * Bump standards-version to 3.8.4.
+  * Update debian/copyright:
+    + Reformat to conform to draft DEP5 rev. 135.
+    + Add GPL disclaimers.
+    + Adjust years for debian/*.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 30 Mar 2010 15:54:45 +0200
+
+sugar-artwork-0.88 (0.87.1-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Switch packaging to branch 0.88.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 05 Dec 2009 18:35:10 +0100
+
+sugar-artwork-0.86 (0.86.0-2) unstable; urgency=medium
+
+  * Build-depend versioned on icon-slicer. Closes: bug#555963, thanks to
+    Sascha Silbe.
+  * Set urgency=medium as this fixes a bug also in testing.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 13 Nov 2009 20:13:10 +0100
+
+sugar-artwork-0.86 (0.86.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 30 Sep 2009 17:30:02 +0200
+
+sugar-artwork-0.86 (0.85.4-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Update OLPC relation (now historic) in long description.
+  * Drop versioned upstream branch in gbp.conf.
+  * Simplify watch file (we want to watch too new files too).
+  * Bump major version to 0.86 for binary and source package.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 19 Sep 2009 10:33:10 +0200
+
+sugar-artwork-0.84 (0.84.1-3) unstable; urgency=low
+
+  * Update CDBS snippets:
+    + Enhance package-relations.mk to support all binary package
+      relations (except -indep ones).
+    + Improve package-relation.mk cleanup to cover debhelper 6 and 7,
+      strip more whitespace and cover mixture of unversioned+versioned
+      dependencies.
+    + Silence applying dependencies in package-relation.mk.
+    + Implement fail-source-not-repackaged rule in upstream-tarball.mk.
+    + Update URL to draft DEP5 format in copyright-check.mk output.
+  * Update DEP5 to rev54 and fix libtool licensing in debian/copyright
+    (No new authors, ltmain.sh alternate GAP-like license added).
+  * Bump up policy compliance to standards version 3.8.3.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 10 Sep 2009 22:08:22 +0200
+
+sugar-artwork-0.84 (0.84.1-2) unstable; urgency=low
+
+  * Fix typo in debian/control (python-artwork → sugar-artwork).
+  * Update debian/copyright to use format as of dep5 proposal draft 48.
+  * Tighten build-dependency on debhelper.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 05 May 2009 14:39:49 +0200
+
+sugar-artwork-0.84 (0.84.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop patches 1001 and 2991, now upstream.
+  * Unfuzz patches 1002 and 2001 (and fix typo in comment).
+  * Add new patch 2991 expanding patch 2001 to automade file.
+  * Append branch to source and binary package names and Sugar-specific
+    package relations, to support multiple branches in same distribution
+    concurrently.
+  * Add README.source (and drop CDBS hints and README.packaging).
+  * Enable tag signing in git-buildpackage configfile.
+  * Enhance package-relations.mk to support all binary package relations
+    (except -indep ones).
+  * Add proper copyright header to debian/rules.
+  * Consistently use sugarlabs.org URLs (drop laptop.org) to homepage
+    and upstream source.
+  * Maintain all package dependencies in debian/rules, with comments.
+  * Build-depend on icon-slicer (and not x11-apps).
+  * Bump standards-version to 3.8.1.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 08 Apr 2009 02:51:00 +0200
+
+sugar-artwork (0.82.3-4) unstable; urgency=low
+
+  * Add IRC channel as alternate contact URL in debian/copyright.
+  * Use chrpath to fix hardcoded rpath.
+  * Semi-auto-update debian/control to update dependencies:
+    DEB_MAINTAINER_MODE=1 fakeroot debian/rules clean
+  * Register icons for optional caching.
+  * Update debian/copyright: Fix license for aclocal.m4 (GPL-compatible,
+    not GAP), and add Scott James Remnant as additional author.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 14 Feb 2009 21:54:45 +0100
+
+sugar-artwork (0.82.3-3) unstable; urgency=medium
+
+  * Update CDBS snippets:
+    + Simplify internal variables
+    + Ignore no files by default in copyright-check.mk
+    + Correct and update copyright hints of the snippets themselves
+  * Update debian/copyright and copyright hints:
+    + Rewrite debian/copyright using new file format, version 428
+    + Add info on CDBS snippets (new owners, no new licenses)
+    + Set Sugarlabs (not Redhat) as upstream maintainer, and add both
+      old laptop.org and new sugarlabs.org source URLs.
+    + Update copyright years
+    + Include GAP licenses verbatim.
+  * Set urgency=medium due to opyright and licensing corrections.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Jan 2009 06:21:14 +0100
+
+sugar-artwork (0.82.3-2) unstable; urgency=low
+
+  * Update CDBS snippet copyright-check.mk: Compact simple licenses
+    (those without ' or later').
+  * Track only stable 0.82 branch in watch file, and add (not yet used)
+    sugarlabs URL.
+  * Declare dependencies in debian/rules (not debian/control{,in}), and
+    drop old superfluous build-dependency cleanup.
+  * Add git-buildpackage configfile.
+  * Semi-auto-update debian/control to update dependencies:
+    DEB_MAINTAINER_MODE=1 fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Jan 2009 04:03:27 +0100
+
+sugar-artwork (0.82.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Unfuzz patch 2991.
+  * Depend on ${misc:Depends}.
+  * Update cdbs snippets:
+    + Several minor improvements to upstream-tarball.mk.
+  * Update copyright hints (no new copyrights or licenses).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 19 Oct 2008 21:29:37 +0200
+
+sugar-artwork (0.82.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Build-depend on icon-naming-utils.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 07 Aug 2008 21:54:43 +0200
+
+sugar-artwork (0.81.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Unfuzz patch 2991.
+  * Update local cdbs snippets:
+    + Minor improvements to copyright-check.mk.
+    + Add new local package-relations.mk to merge duplicate
+      build-dependencies and more.
+    + Update README.cdbs-tweaks.
+  * Update copyright hints.
+  * Add DEB_MAINTAINER_MODE in debian/rules (thanks to Romain Beauxis).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 07 Aug 2008 05:51:17 +0200
+
+sugar-artwork (0.81.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update local cdbs snippets:
+    + Relax copyright-check to only warn about its discoveries.  Closes:
+      bug#487012.
+    + Update dependency cleanup to strip cdbs 0.4.27 (not 0.4.27-1).
+  * Update debian/copyright-hints.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 20 Jun 2008 22:00:57 +0200
+
+sugar-artwork (0.79.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Reorganize debian/copyright to only mention each license once.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 09 Jun 2008 12:07:26 +0200
+
+sugar-artwork (0.79.2-2) unstable; urgency=low
+
+  * Add patch 1002 to only skip none-arrow if supported (got implemented
+    around GTK+ 2.10).
+  * Update cdbs tweaks:
+    + Strip any non-printable characters in copyright-check.mk.  Update
+      copyright-hints.
+  * Bump debhelper compatibility level to 6 (was 5).
+  * Semi-auto-update debian/control due to above changes:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 23 Apr 2008 16:01:09 +0200
+
+sugar-artwork (0.79.2-1) unstable; urgency=low
+
+  * New Upstream release.
+    Highlights:
+    + Fix the appearance of the speaker device
+    + Increase the size of the battery icon slightly
+    + Fixed canvas sizes of a number of device icons
+    + Fixed the makefile for emblem icons
+    + Fix the build. Evil designer...
+    + Fixed up the emblem icons
+    + Add battery-100.svg to makefile
+  * Drop patch 0001, now applied upstream.
+  * Drop patches 2991 and 2992, now fixed upstream.
+  * Add new patch 2991 applying patch 1001 (noexec cursor files) to
+    automade files.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 14 Apr 2008 00:54:39 +0200
+
+sugar-artwork (0.79.1-1) unstable; urgency=low
+
+  * New upstream release.
+    Highlights:
+    + Added view-list and view-radial icons
+    + Updated device icons
+  * Replace patch 0001 syncing with Git as of today.
+    + Add battery-100.svg
+    + Fix emblem icons
+  * Add patch 2991 updating autotools to match above patch 0001.
+  * Add patch 2992 reverting part of patch 2991 (nattery-100.svg is
+    missing).
+  * Update local cdbs snippets:
+    + Update copyright-check cdbs snippet to store newline-delimited
+      hints.  Update hints.
+    + Drop wget options broken with recent versions of wget in
+      update-tarball.mk.
+    + Update README.cdbs-tweaks.
+  * No longer reconfigure autotools.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 08 Apr 2008 03:39:32 +0200
+
+sugar-artwork (0.79.0-4) unstable; urgency=low
+
+  * Sync with upstream Git as of today.
+    Main changes:
+    + Added view-list and view-radial icons
+    + Updated device icons
+  * Update debian/copyright to include additions in above patch (updated
+    copyright holders, same licenses).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 26 Mar 2008 11:21:21 +0100
+
+sugar-artwork (0.79.0-3) unstable; urgency=low
+
+  * Pass over maintenance of the package to the OLPC team: Change
+    Maintainer, and add myself to Uploaders.
+  * Fix README.packaging to use "pull; fetch --tags" (not "pull -t").
+  * Fix email address of OLPC Alioth team.
+  * Use quilt to handle patches.
+  * Add already applied patch 1001 to install cursor files executable.
+  * Add already applied patch 2001 to use empy from system.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 16 Mar 2008 14:12:30 +0100
+
+sugar-artwork (0.79.0-2) unstable; urgency=low
+
+  * Add watch file.
+  * Depend on ttf-dejavu-core.
+  * Recommend sugar and ttf-dejavu-extra.
+  * Remove config.h.in in build clean.
+  * Update CDBS tweaks:
+    + Replace virtual automake1.10 build-dependency with automake
+    + Build-depend on xbase-clients as fallback for x11-apps, to support
+      backporting to etch.
+  * Semi-auto-update debian/control to update build-dependencies:
+    DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Mar 2008 01:54:21 +0100
+
+sugar-artwork (0.79.0-1) unstable; urgency=low
+
+  * Initial release. Closes: bug#444021.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 08 Mar 2008 02:30:18 +0100

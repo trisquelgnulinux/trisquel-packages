@@ -1,0 +1,69 @@
+#!/usr/bin/make -f
+# -*- mode: makefile; coding: utf-8 -*-
+# Copyright © 2007-2010 Jonas Smedegaard <dr@jones.dk>
+# Description: Main Debian packaging script for sugar-base
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA
+# 02111-1307 USA.
+
+DEB_BUILDDIR = build
+include /usr/share/cdbs/1/rules/upstream-tarball.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/python-autotools.mk
+
+pkgbase = python-sugar
+pkgbranch = $(lastword $(subst -,$(space),$(DEB_SOURCE_PACKAGE)))
+pkg = $(pkgbase)-$(pkgbranch)
+
+DEB_UPSTREAM_PACKAGE = $(DEB_SOURCE_PACKAGE:%-$(pkgbranch)=%)
+DEB_UPSTREAM_URL = http://download.sugarlabs.org/sources/sucrose/glucose/$(DEB_UPSTREAM_PACKAGE)
+DEB_UPSTREAM_TARBALL_EXTENSION = tar.bz2
+DEB_UPSTREAM_TARBALL_MD5 = ffb3a98c38d680f701eae4834ba6ff31
+
+# Remove .la file
+binary-post-install/$(pkg)::
+	find $(DEB_DESTDIR)/usr -type f -name '*.la' -delete
+
+# Strip hardcoded rpath
+binary-strip/$(pkg)::
+	find $(DEB_DESTDIR)/usr/lib -type f -name '*.so' -exec chrpath -d '{}' ';'
+
+# Cleanup a few empty subdirs missed by py-compile.mk cleanup routines
+clean::
+	-[ ! -d $(DEB_BUILDDIR) ] || for flavor in $(cdbs_python_curpkg_build_versions); do \
+		(cd $(DEB_BUILDDIR) && rmdir -p $$flavor/src/sugar); \
+	done
+	-[ ! -d $(DEB_BUILDDIR) ] || rmdir $(DEB_BUILDDIR)
+
+# Needed by upstream build process
+#  * pygtk << 2.9 contained gobject
+#    (pygtk needed by autotools but seems bogus: no linkage in binaries)
+CDBS_BUILD_DEPENDS += , python-gtk2-dev, python-gobject-dev (>= 2) | python-gtk2-dev (<< 2.9), intltool
+
+# Needed (always/often/seldom) at runtime
+#  * python-gobject versioning needed for GIO bindings
+#  * ipython beautifies tracebacks in logs
+CDBS_DEPENDS_DEFAULT = python-gobject (>= 2.15.0), python-decorator
+CDBS_RECOMMENDS_DEFAULT = sugar-$(pkgbranch)
+CDBS_SUGGESTS_DEFAULT = ipython
+
+# Ensure only one variant is installed at a time (Debian Policy 7.6.2)
+CDBS_PROVIDES_DEFAULT = $(pkgbase)
+CDBS_CONFLICTS_DEFAULT = $(pkgbase)
+CDBS_REPLACES_DEFAULT = $(pkgbase)
+
+# Needed for our packaging
+CDBS_BUILD_DEPENDS += , chrpath

@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gwebsockets/__init__.py
+gwebsockets/protocol.py
+gwebsockets/server.py
+gwebsockets.egg-info/PKG-INFO
+gwebsockets.egg-info/SOURCES.txt
+gwebsockets.egg-info/dependency_links.txt
+gwebsockets.egg-info/top_level.txt

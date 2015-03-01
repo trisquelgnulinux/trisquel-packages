@@ -1,0 +1,13 @@
+Source: python-gwebsockets
+Section: python
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends: debhelper (>= 7), python-all (>= 2.6.6-3~)
+Standards-Version: 3.9.2
+Homepage: https://github.com/dnarvaez/gwebsockets
+
+Package: python-gwebsockets
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: A websocket server written in python. It uses GIO for network
+ communication and hence it easily integrates with the GLib mainloop.

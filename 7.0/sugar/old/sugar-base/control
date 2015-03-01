@@ -1,0 +1,37 @@
+Source: sugar-base-MAJOR
+Section: python
+Priority: optional
+Maintainer: Debian OLPC <debian-olpc-devel@lists.alioth.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>
+Build-Depends: autotools-dev,
+ devscripts,
+ debhelper,
+ dh-buildinfo,
+ python (>= 2.6.5),
+ cdbs (>= 0.4.97~),
+ python-all-dev,
+ python-gtk2-dev,
+ python-gobject-dev (>= 2) | python-gtk2-dev (<< 2.9),
+ intltool,
+ chrpath
+Standards-Version: 3.9.3
+Vcs-Git: git://git.debian.org/git/collab-maint/sugar-base
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/sugar-base.git
+Homepage: http://wiki.sugarlabs.org/go/Sugar
+
+Package: python-sugar-MAJOR
+Architecture: any
+Depends: ${shlibs:Depends}, ${python:Depends}, ${cdbs:Depends}, ${misc:Depends}
+Recommends: ${cdbs:Recommends}
+Suggests: ${cdbs:Suggests}
+Provides: ${python:Provides}, ${cdbs:Provides}
+Conflicts: ${cdbs:Conflicts}
+Replaces: ${cdbs:Replaces}
+Description: Sugar graphical shell - core functionality
+ Sugar is a graphical user interface aimed at children.
+ .
+ Originating as integral part of the OLPC "XO" a.k.a. the $100 laptop,
+ Sugar has since grown into a more widely usable low-ressource desktop
+ environment for kids.
+ .
+ This package contains the base modules for Sugar.

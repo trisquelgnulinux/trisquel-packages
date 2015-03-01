@@ -1,0 +1,652 @@
+sugar-toolkit-MAJOR (1:DETAIL) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ruben Rodríguez <ruben@trisquel.info>  DATE
+
+sugar-toolkit-0.96 (0.96.1-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+  * Switch packaging to upstream branch 0.96.
+  * Refresh patches.
+  * Update copyright file:
+    + Extend copyright coverage of some files to include recent years.
+    + Drop copyright holder of no longer included files.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 24 May 2012 23:14:52 +0200
+
+sugar-toolkit-0.90 (0.90.2-2) unstable; urgency=low
+
+  * Tidy rules file: Resolve $pkgbranch from $DEB_SOURCE_PACKAGE.
+  * Bump debhelper compatibility level to 7.
+  * Use Python helper python2 (not python-support).
+  * Rewrite copyright file using format 1.0.
+  * Bump standards-version to 3.9.3.
+  * Use anonscm.debian.org for Vcs-Browser field.
+  * Fix typo in long description.
+  * Extend copyright of Debian packaging to cover recent years.
+  * Avoid .la files.
+    Closes: bug#633225. Thanks to Neil Williams.
+  * Update package relations:
+    + Tighten build-dependency on cdbs and python: Needed for python2
+      helper.
+    + Stop build-depending on python-central: No longer used.
+    + Relax build-depend unversioned on debhelper and devscripts: Needed
+      versions satisfied even in oldstable.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 24 May 2012 22:15:16 +0200
+
+sugar-toolkit-0.90 (0.90.2-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Shorten Vcs-Git stanza.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 14 Oct 2010 21:03:50 +0200
+
+sugar-toolkit-0.90 (0.90.1-2) unstable; urgency=low
+
+  * Fix recommend (not provide) sugar-presence-service: Apparently only
+    parts of it was merged.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 12 Oct 2010 13:36:45 +0200
+
+sugar-toolkit-0.90 (0.90.1-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * sugar-presence-service has been merged with sugar-toolkit:
+    + Provide (not recommend) sugar-presence-service
+    + Recommend telepathy-mission-control-5, telepathy-gabble and
+      telepathy-salut.
+      Version the recommendations to match upstream release notes.
+  * Update copyright file: New authors and years (no new licenses).
+  * Bump Policy compliance to standards-version 3.9.1.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 12 Oct 2010 11:59:41 +0200
+
+sugar-toolkit-0.90 (0.89.1-1) experimental; urgency=low
+
+  * New upstream development release.
+  * Switch packaging to upstream branch 0.90.
+  * Drop unused (and most likely non-working with quilt variant of
+    source format 3.0) DEB_AUTOTOOLS_RECREATE routines in debian/rules.
+  * Bump Policy compliance to standards-version to 3.9.0.
+  * Update copyright file: Extend some copyright years.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 21 Jul 2010 10:23:47 +0200
+
+sugar-toolkit-0.88 (0.88.1-1) unstable; urgency=low
+
+  * New upstream maintenance release.
+  * Improve copyright file:
+    + Fix replace license section MIT with Expat and other-X.
+    + Add comment on Expat variation.
+    + Rename and tighten other-GAP-* sections.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 25 Jun 2010 20:01:35 +0200
+
+sugar-toolkit-0.88 (0.88.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Drop all local CDBS snippets: included with main cdbs package now.
+  * Drop patchsys-quilt.mk snippet: superfluous with source format "3.0
+    (quilt)".
+  * Refresh patches with shortening quilt options --no-timestamps --no-
+    index -pab.
+  * Build-depend on python-dateutil.
+  * Drop build-dependencies on quilt and patchutils.
+  * Relax build-dependency on python-central and python-all-dev to be
+    unversioned.
+  * Tighten build-dependency on cdbs.
+  * Disable patch 1001 (danish l10n): Upstream ships with alternative
+    translation now (merging postponed till later).
+  * Add git-buildpackage hint about use of bzip2-compressed tarballs.
+  * Update copyright file:
+    + Reformat to conform to draft DEP5 rev. 135.
+    + Add GPL disclaimers.
+    + Adjust years for debian/*.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 30 Mar 2010 18:17:55 +0200
+
+sugar-toolkit-0.88 (0.87.4-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Update local cdbs snippets:
+    + Update package-relations.mk: Cleanup and tighten dependencies.
+      Improve whitespace cleanup. Rewrite and silence applying
+      dependencies.
+    + Let copyright-check.mk investigate top 99999 lines (not just 60 as
+      default for licensecheck), and make it configurable with
+      DEB_COPYRIGHT_CHECK_PARSELINES. Silence (GENERATED FILE) licensing
+      notices. Group ownerships by sorted owner list (ignoring years).
+    + Update upstream-tarball.mk to preserve bzip2 tarballs with source
+      format 3.0 (quilt).
+  * Use source format '3.0 "quilt"'.
+  * Add DEP3 header to patches.
+  * Bump Standards-Version to 3.8.4.
+  * Cleanup double cdbs build-dependency.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 08 Feb 2010 18:16:30 +0100
+
+sugar-toolkit-0.88 (0.87.1-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Update copyright years in debian/copyright.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 01 Dec 2009 14:09:33 +0100
+
+sugar-toolkit-0.88 (0.86.2-1) experimental; urgency=low
+
+  * Switch packaging to branch 0.88.
+  * Tighten python-gobject dependency to versions providing GIO binding.
+  * Release for experimental, as not all parts of 0.88 branch are
+    packaged yet.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 20 Nov 2009 21:28:12 +0100
+
+sugar-toolkit-0.86 (0.86.2-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 20 Oct 2009 23:39:55 +0200
+
+sugar-toolkit-0.86 (0.86.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 02 Oct 2009 14:46:51 +0200
+
+sugar-toolkit-0.86 (0.86.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 30 Sep 2009 16:03:17 +0200
+
+sugar-toolkit-0.86 (0.85.8-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Re-enable pristine-tar in gbp.conf.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 19 Sep 2009 23:22:13 +0200
+
+sugar-toolkit-0.86 (0.85.7-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Fix double listing of ltmain.sh in debian/copyright.
+  * Update OLPC relation (now historic) in long description.
+  * Bump up policy compliance to standards version 3.8.3.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 10 Sep 2009 21:30:50 +0200
+
+sugar-toolkit-0.86 (0.85.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update CDBS snippets:
+    + Enhance package-relations.mk to support all binary package
+      relations (except -indep ones).
+    + Improve package-relation.mk cleanup to cover debhelper 6 and 7,
+      strip more whitespace and cover mixture of unversioned+versioned
+      dependencies.
+    + Silence applying dependencies in package-relation.mk.
+    + Implement fail-source-not-repackaged rule in upstream-tarball.mk.
+    + Update URL to draft DEP5 format in copyright-check.mk output.
+  * Fix double build-dependency on cdbs.
+  * Update debian/copyright (no new licenses or copyright holders).
+  * Unfuzz patches 2002 and 2003.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 10 Sep 2009 16:43:38 +0200
+
+sugar-toolkit-0.86 (0.85.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Adjust to upstream-shipped automade files.
+    + drop patch 2991
+    + Stop generating and cleaning up autotools (keep but disable code)
+    + Build-depend on autotools-dev (not libtool, automake1.10 or
+      autoconf)
+    + Update debian/copyright and copyright hints
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 18 Jul 2009 14:06:08 +0200
+
+sugar-toolkit-0.86 (0.85~0.84.2-3) unstable; urgency=medium
+
+  * Simplify dependency on python-rsvg and fallbacks to
+    python-gnome2-desktop and librsvg2-common.
+  * Recommend python-jarabe (not sugar-journal-activity, its
+    predecessor).
+  * Rewrite copyright to use DEP5 r54 proposed machine-readable format.
+  * Set urgency=medium, as above are simple but important changes.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 08 Jun 2009 20:49:24 +0200
+
+sugar-toolkit-0.86 (0.85~0.84.2-2) unstable; urgency=low
+
+  * Extend package-relation cleanup to include debhelper 6 and 7.0.1.
+  * Drop TopGit noise (from merged-in cdbs-skel).
+  * Rewrite copyright to use DEP5 r48 proposed machine-readable format.
+  * Recommend python-carquinyol (not python-olpc-datastore).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 May 2009 15:53:11 +0200
+
+sugar-toolkit-0.86 (0.85~0.84.2-1) unstable; urgency=low
+
+  * Swith namespaces to development tracks:
+    + Use unversioned branch "master" as master branch
+    + Bump watch file tracking to 0.85 and 0.86 releases
+    + Append 0.86 to source and binary package names
+    + Set next release to 0.85~<latest_stable_release>
+  * Enable autoreconfigure, and add autogen target to save as patch.
+  * Fix autotools.mk to ensure configure is automade before used.
+  * Replace patch 2991 from adjusting automade to provide them
+    (generated using above autogen target).
+  * Update copyright hints (same licenses and owners, merge GAP licenses
+    now contained in patch).
+  * Comment out use of pristine-tar (no upstream tarballs yet).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 07 Apr 2009 03:14:12 +0200
+
+sugar-toolkit-0.84 (0.84.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Repackage source adding branch-specific namespace, to support
+    multiple branches in same distribution concurrently.  Adapt
+    Sugar-specific package relations too.
+  * Update debian/copyright to no longer mention files dropped upstream.
+    Update copyright hints too.
+  * Fix re-add suggests (typo introduced in 0.84.1-1).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 05 Apr 2009 18:31:39 +0200
+
+sugar-toolkit (0.84.1-3) unstable; urgency=low
+
+  * Depend on python-cjson (and not python-json, python-gconf (or older
+    python-gnome2) and python-rsvg (or older but not too old
+    python-gnome2-desktop and sometimes also librsvg2-common).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 31 Mar 2009 05:12:45 +0200
+
+sugar-toolkit (0.84.1-2) unstable; urgency=low
+
+  * Fix provide and conflict virtual package sugar-toolkit.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 31 Mar 2009 04:13:51 +0200
+
+sugar-toolkit (0.84.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Rename binary package as sugar-toolkit-0.84, with old name as
+    virtual package.
+  * Drop patch 0000 (backported snapshot) now included upstream.
+  * Update patch 1001 (danish locale).
+  * Unfuzz patches 2002, 2003 and 2991.
+  * Build only for Python 2.5 or newer, and drop patch 2001
+    (pre-python-2.5 workaround).
+  * Add README.source (and drop CDBS hints and README.packaging).
+  * Add git-buildpackage configfile, enable signed-tags and use of
+    pristine-tar and upstream-0.84 as upstream branch.
+  * Use sugarlabs.org URLs (and drop laptop.org ones) to upstream source
+    and Homepage.  Bump watch file to track 0.84*.
+  * Maintain all package dependencies in debian/rules, with comments.
+  * Update copyright and licensing info:
+    + Add proper copyright header to debian/rules
+    + Update debian/copyright and hints (bump years, a couple of new
+      authors, added another variant of GAP)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 31 Mar 2009 03:49:15 +0200
+
+sugar-toolkit (0.82.11-7) unstable; urgency=medium
+
+  * Add patch 0000 (and drop patch 0001) to sync with upstream stable
+    head:
+    + Update urdu (ur), russian (ru) and tyrkish (tr) translations
+    + sanity-check bundle root; don't delete install_root on failure
+    + Set the correct locale path for system activities
+  * Limit watch file to track stable 0.82 branch.
+  * Update CDBS snippets:
+    + Simplify internal variables
+    + Ignore no files by default in copyright-check.mk
+    + Correct and update copyright hints of the snippets themselves
+  * Update debian/copyright and copyright hints:
+    + Add info on CDBS snippets (new owners, no new licenses)
+    + Bump to version 420 of new format (no structural changes)
+    + Add sugar-devel mailinglist as upstream maintainer.
+    + Update upstream source URLs.
+    + Refer to LGPL as "GNU Library..." (not Lesser).
+    + Refer to "Debian GNU systems" (not only GNU/Linux).
+  * Set urgency=medium due to install_root removal fix.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 19 Dec 2008 17:06:05 +0100
+
+sugar-toolkit (0.82.11-6) unstable; urgency=low
+
+  * Add patch 0001 to fix locale path for system activities. Closes:
+    bug#507719.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 03 Dec 2008 23:48:42 +0100
+
+sugar-toolkit (0.82.11-5) unstable; urgency=low
+
+  * Extend patch 2003 to also exit nonzero on fallback help messages.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 13 Nov 2008 16:20:40 +0100
+
+sugar-toolkit (0.82.11-4) unstable; urgency=low
+
+  * Add Patch 2003 to make bundlebuilder exit nonzero on error.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 13 Nov 2008 14:28:34 +0100
+
+sugar-toolkit (0.82.11-3) unstable; urgency=low
+
+  * Update cdbs snippets:
+    + Cleanup check stamp dir for flavored builds in makefile.mk, fixing
+      failure to build twice in a row.
+    + Compact simple licenses too (those without ' or later') in
+      copyright-check.mk
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Nov 2008 17:35:46 +0100
+
+sugar-toolkit (0.82.11-2) unstable; urgency=low
+
+  * Update cdbs snippets:
+    + Fix python-autotools.mk to run dh_py* scripts before
+      dh_installinit.  See bug#494288.
+    + Fix makefile.mk to create check stamp dir for flavored builds.
+    + Several minor improvements to upstream-tarball.mk.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 19 Oct 2008 20:30:15 +0200
+
+sugar-toolkit (0.82.11-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop patch 1002 now applied upstream.
+  * Drop patch 1003 no longer relevant (upstream routine rewritten).
+  * Update patch 2002.
+  * Unfuzz patch 2991
+  * Update debian/copyright and copyright hints (new copyright holders
+    and years, same licenses).
+  * Build-depend on libsm-dev, libice-dev and libasound2-dev (with
+    fallback on virtual libasound-dev).
+  * Depend on ${misc:Depends}.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 19 Oct 2008 13:47:21 +0200
+
+sugar-toolkit (0.82.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Unfuzz patch 2991.
+  * Add DEB_MAINTAINER_MODE in debian/rules (thanks to Romain Beauxis).
+  * Update copyright-hints.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 07 Aug 2008 19:43:09 +0200
+
+sugar-toolkit (0.81.8-2) unstable; urgency=low
+
+  * Re-release, setting distribution hint properly.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 07 Aug 2008 05:26:47 +0200
+
+sugar-toolkit (0.81.8-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Drop patch 0001 now included upstream.
+  * Unfuzz patches 2002 and 2991.
+  * Update patch 1001 (danish locale).
+  * Update local cdbs snippets:
+    + Minor improvements to local makefile* and autotools* snippets.
+    + Minor improvements to copyright-check.mk.
+    + Add new local package-relations.mk to merge duplicate
+      build-dependencies and more.  Drop cleanup in debian/rules.
+    + Update README.cdbs-tweaks.
+  * Update debian/copyright (bump autotools copyright years).  Update
+    copyright hints.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 07 Aug 2008 04:44:34 +0200
+
+sugar-toolkit (0.81.6-2) unstable; urgency=medium
+
+  * Add patch 1003 to nest try-except in try-except-finally construct,
+    for Python < 2.5 compatibility.
+  * Keep urgency=high to still attempt reaching Lenny before freezing.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 15 Jul 2008 10:13:43 +0200
+
+sugar-toolkit (0.81.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop patch 1002 and 2992 (gettext rename fixed upstream now).
+  * Update patch 2991 (other translations added now, that danish needs
+    to merge with).
+  * Restructure output of copyright-check.mk to match new proposed
+    copyright-format at
+    http://wiki.debian.org/Proposals/CopyrightFormat .
+  * Adjust debian/copyright to follow new proposed copyright-format.
+  * Add patch 0001 from upstream Git to fix crash in get_joined_buddies
+    when a buddy disappears uncleanly.
+  * Add patch 1002 to fix function `gsm_xsmp_init' implicitly converted
+    to pointer.  Closes: bug#489817, thanks to Dann Frazier.
+  * Set urgency=medium to hopefully reach Lenny before freezing.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 14 Jul 2008 14:44:57 +0200
+
+sugar-toolkit (0.81.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Rewrite patch 2002 (ignore debian subdir and .pc quilt subdir) and
+    unfuzz patch 1002.
+  * Update local cdbs snippets:
+    + Relax copyright-check to only warn about its discoveries.  Closes:
+      bug#486987.
+    + Update dependency cleanup to strip cdbs 0.4.27 (not 0.4.27-1).
+  * Update debian/copyright (new files, same owners and licenses).
+    Update debian/copyright-hints.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 20 Jun 2008 20:57:43 +0200
+
+sugar-toolkit (0.81.4-2) unstable; urgency=medium
+
+  * Add patch 2002 to ignore debian subdir and .pc quilt subdir when
+    packaging bundles (since version 0.81.4 the MANIFEST file is ignored
+    and instead everything but an internally hardcoded exception list is
+    included).
+  * Set urgency=medium as -1 causes FTBFS for sugar activities.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 11 Jun 2008 03:30:01 +0200
+
+sugar-toolkit (0.81.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update debian/copyright:
+    + Really adjust paths as promised in 0.79.7-1
+    + Update copyright year and license owner for
+      src/sugar/activity/bundlebuilder.py
+  * Update copyright-hints regarding above mentioned bundlebuilder.py.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 09 Jun 2008 12:22:13 +0200
+
+sugar-toolkit (0.81.3-1) unstable; urgency=low
+
+  * New upstream release.
+  * Unfuzz patches.
+  * Mention po/Makefile.in.in (freeware) in debian/copyright.  Update
+    debian/copyright-hints.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 26 May 2008 10:42:48 +0200
+
+sugar-toolkit (0.79.7-1) unstable; urgency=low
+
+  * New upstream release.
+  * Unfuzz patches (most of sources moved sugar -> src/sugar).
+  * Drop patch 1003 fixing zip-based bundle install (upstream identical
+    fix applied within an hour(!) from the earlier Debian patch).
+  * Mention new file src/sugar/presence/sugartubeconn.py in
+    debian/copyright (LGPL-2.1+) and update paths, thanks to local
+    copyright-check.mk cdbs snippet. Update debian/copyright-hints.
+  * Rewrite debian/copyright to only mention each licensing string once.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 24 May 2008 21:51:37 +0200
+
+sugar-toolkit (0.79.6-3) unstable; urgency=medium
+
+  * Recommend sugar-journal-activity (not bogus sugar-journal-service).
+    Closes: bug#480857, thanks to Holger Levsen.
+  * Set urgency=medium to not have the above delay entering testing.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 12 May 2008 14:34:55 +0200
+
+sugar-toolkit (0.79.6-2) unstable; urgency=high
+
+  * Add patch 1003 to fix installing zip-based bundles (*.xo files).
+  * Set urgency=high to get this into testing ASAP, as sugar activity
+    building is currently broken due to the above.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 25 Apr 2008 15:11:05 +0200
+
+sugar-toolkit (0.79.6-1) unstable; urgency=low
+
+  * New upstream release.
+    Highlights:
+    + Fix installation of bundles
+    + Use new style for unused variables
+  * Update local cdbs snippets:
+    + Strip any non-printable characters in copyright-check.mk.  Update
+      copyright_hints.
+  * Fix upstream Git source in debian/copyright.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 24 Apr 2008 22:17:27 +0200
+
+sugar-toolkit (0.79.5-3) unstable; urgency=low
+
+  * Use gettext domain sugar-toolkit (to not clash with sugar package).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 23 Apr 2008 00:33:19 +0200
+
+sugar-toolkit (0.79.5-2) unstable; urgency=low
+
+  * Bump debhelper compatibility level to 6.
+  * Update local cdbs snippets:
+    + Relax python-central and python-support build-dependencies in
+      python-autotools.mk.
+  * Mention exact upstream Git source in debian/copyright.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 22 Apr 2008 21:44:12 +0200
+
+sugar-toolkit (0.79.5-1) unstable; urgency=low
+
+  * New upstream release.
+    Highlights:
+    + Fix callback name for private-invitation
+    + Coding style improvements thanks to pylint
+    + Work around circular dep between Icon and Palette
+    + Use new style properties
+    + Correctly use tempfile.mkstemp()
+  * Add patch 1001 adding danish l10n.
+  * Add patch 2991 to enable danish l10n in configure.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 22 Apr 2008 20:40:23 +0200
+
+sugar-toolkit (0.79.3-1) unstable; urgency=low
+
+  * New upstream release.
+    Highlights:
+    + Added default to label arg in palette constructor
+  * Drop patch 0001 now applied upstream.
+  * Depend on python-hippocanvas (used in graphics routines).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 13 Apr 2008 00:08:19 +0200
+
+sugar-toolkit (0.79.2-1) unstable; urgency=low
+
+  * New upstream source.
+  * Add patch 0001 to synchronize with upstream Git as of today.
+    Highlights:
+    + Add default to label arg in palette constructor, for API backwards
+      compatibility
+  * Drop patch 2991 to apply reconfigured autotools files, and instead
+    use (and build-depend on) chrpath to remove hardcoded rpath.
+  * Recommend unzip, needed for bundlebuilder (activity packaging).
+  * Update local cdbs snippets:
+    + Newline-delimit found files in copyright-check.  Update
+      copyright-hints.
+    + Drop wget options broken with recent versions of wget in
+      update-tarball.mk.
+  * Update debian/copyright:
+    + Update some copyright years
+    + Add some changed ownership (Redhat -> OLPC)
+    + Add some new GPL-2+ and LGPL-2+ licensed files.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 07 Apr 2008 21:31:11 +0200
+
+sugar-toolkit (0.79.0-5) unstable; urgency=low
+
+  * Update CDBS tweaks:
+    + Add local python-autotools.mk (and drop py-compile.mk).
+    + Update python-vars.mk and makefile.mk for improved DEB_*PACKAGES
+      and build-dependency resolving.
+    + Cosmetic updates to README.cdbs-tweaks.
+  * Recommend python-olpc-datastore (not python-sugar-datastore).
+  * Fix email address of OLPC Alioth team.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 16 Mar 2008 13:45:52 +0100
+
+sugar-toolkit (0.79.0-4) unstable; urgency=low
+
+  * Depend on python-sugar-datastore (not sugar-datastore).
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 14 Mar 2008 15:57:07 +0100
+
+sugar-toolkit (0.79.0-3) unstable; urgency=low
+
+  * Pass over maintenance of the package to the OLPC team: Change
+    Maintainer, and add myself to Uploaders.
+  * Fix README.packaging to use "pull; fetch --tags" (not "pull -t").
+  * Depend on python-sugar (not sugar-base).
+  * Rename binary package sugar-toolkit -> python-sugar-toolkit, to
+    comply with Python policy (or maybe not: should each Python module
+    be packaged separately?).
+  * Change binary package to section python.
+  * Update CDBS tweaks:
+    + Add local py-compile.mk and python-vars.mk to handle autotools-
+      based Python compilation.  This adds suppurt also for non-default
+      Python versions.
+    + Add local autotools.mk, autotools-vars.mk, makefile.mk and
+      makefile-vars.mk providing multi-flavor build support needed by
+      py-compile.mk.
+    + Add patchsys-quilt.mk.
+    + README.cdbs-tweaks updated to mention the above.
+  * Add already applied patch 1001 to fix sha1 routine on python < 2.5.
+  * Regenerate patched automade files only explicitly (not at every
+    build), and apply as patch 2991.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 14 Mar 2008 11:52:09 +0100
+
+sugar-toolkit (0.79.0-2) unstable; urgency=low
+
+  * Depend on sugar-base, python-gtk2, python-dbus, python-gobject,
+    python-cairo, python-gnome2-desktop (new enough to include rsvg),
+    python-telepathy and python-json.
+  * Recommend sugar, sugar-artwork, sugar-datastore,
+    sugar-presence-service, sugar-journal-activity and ttf-dejavu-core.
+  * Suggest git-core, subversion and ttf-dejavu-extra.
+  * Patch sugar/activity/activity.py to work on Python < 2.5 missing
+    hashlib module.
+  * Update CDBS tweaks:
+    + Replace virtual automake1.10 build-dependency with automake
+  * Semi-auto-update debian/control to update build-dependencies:
+    DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Mar 2008 02:10:15 +0100
+
+sugar-toolkit (0.79.0-1) unstable; urgency=low
+
+  * Initial release. Closes: bug#444021.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 08 Mar 2008 20:57:22 +0100

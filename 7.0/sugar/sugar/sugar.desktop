@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Sugar
+Exec=/usr/bin/sugar
+Type=Application
+Comment=A graphical user interface aimed at children

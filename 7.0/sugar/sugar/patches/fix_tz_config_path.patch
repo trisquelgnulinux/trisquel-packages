@@ -1,0 +1,49 @@
+From: Jonas Smedegaard <dr@jones.dk>
+Subject: Adapt timezone handling to Debian environment
+
+Debian-specific environment handling only relevant on, well, Debian.
+
+Upstream might want to not be Fedora-specific, however...
+
+Forwarded: not-needed
+Last-Update: 2009-11-05
+diff --git a/src/controlpanel/control.py b/src/controlpanel/control.py
+index faac689..a6d9d04 100644
+--- a/src/controlpanel/control.py
++++ b/src/controlpanel/control.py
+@@ -45,7 +45,7 @@ _COLORS = {'red': {'dark':'#b20008', 'medium':'#e6000a', 'light':'#ffadce'},
+ 
+ _MODIFIERS = ('dark', 'medium', 'light')
+ 
+-_TIMEZONE_CONFIG = '/etc/sysconfig/clock'
++_TIMEZONE_CONFIG = '/etc/timezone'
+ 
+ _LANGUAGES = {
+     'Afrikaans/South_Africa': 'af_ZA',
+@@ -351,13 +351,8 @@ def get_timezone():
+             line = line.strip()
+             if len (line) and line[0] == '#':
+                 continue
+-            try:
+-                tokens = line.split("=")
+-                if tokens[0] == "ZONE":
+-                    timezone = tokens[1].replace('"', '')
+-                    return timezone        
+-            except Exception, e:
+-                print "get_timezone: %s" % e
++            timezone = line
++            return timezone
+     except Exception, e:
+         print "get_timezone: %s" % e
+     return None
+@@ -407,9 +402,7 @@ def set_timezone(timezone):
+                 
+         # Write info to the /etc/sysconfig/clock file
+         fd = open(_TIMEZONE_CONFIG, "w")
+-        fd.write('# use sugar-control-panel to change this\n')
+-        fd.write('ZONE="%s"\n' % timezone)
+-        fd.write('UTC=true\n')
++        fd.write(timezone)
+         fd.close()                       
+     else:
+         print (_("Error timezone does not exist."))

@@ -1,0 +1,44 @@
+Description: Use system empy
+Author: Jonas Smedegaard <dr@jones.dk>
+Last-Update: 2012-03-15
+
+--- a/gtk/theme/Makefile.am
++++ b/gtk/theme/Makefile.am
+@@ -1,9 +1,9 @@
+ sugar-72.gtkrc: gtkrc.em
+-	$(srcdir)/em.py -p $$ -D scaling=\'72\' $(srcdir)/gtkrc.em > \
++	empy -p $$ -D scaling=\'72\' $(srcdir)/gtkrc.em > \
+ 		$(top_builddir)/gtk/theme/sugar-72.gtkrc
+ 
+ sugar-100.gtkrc: gtkrc.em
+-	$(srcdir)/em.py -p $$ -D scaling=\'100\' $(srcdir)/gtkrc.em > \
++	empy -p $$ -D scaling=\'100\' $(srcdir)/gtkrc.em > \
+ 		$(top_builddir)/gtk/theme/sugar-100.gtkrc
+ 
+ clean:
+--- a/gtk3/theme/Makefile.am
++++ b/gtk3/theme/Makefile.am
+@@ -1,19 +1,19 @@
+ SUBDIRS = assets
+ 
+ gtk-widgets-72.css: gtk-widgets.css.em
+-	$(srcdir)/em.py -p $$ -D scaling=\'72\' $(srcdir)/gtk-widgets.css.em > \
++	empy -p $$ -D scaling=\'72\' $(srcdir)/gtk-widgets.css.em > \
+ 		$(top_builddir)/gtk3/theme/gtk-widgets-72.css
+ 
+ gtk-widgets-100.css: gtk-widgets.css.em
+-	$(srcdir)/em.py -p $$ -D scaling=\'100\' $(srcdir)/gtk-widgets.css.em > \
++	empy -p $$ -D scaling=\'100\' $(srcdir)/gtk-widgets.css.em > \
+ 		$(top_builddir)/gtk3/theme/gtk-widgets-100.css
+ 
+ settings-72.ini: settings.ini.em
+-	$(srcdir)/em.py -p $$ -D scaling=\'72\' $(srcdir)/settings.ini.em > \
++	empy -p $$ -D scaling=\'72\' $(srcdir)/settings.ini.em > \
+ 		$(top_builddir)/gtk3/theme/settings-72.ini
+ 
+ settings-100.ini: settings.ini.em
+-	$(srcdir)/em.py -p $$ -D scaling=\'100\' $(srcdir)/settings.ini.em > \
++	empy -p $$ -D scaling=\'100\' $(srcdir)/settings.ini.em > \
+ 		$(top_builddir)/gtk3/theme/settings-100.ini
+ 
+ clean:

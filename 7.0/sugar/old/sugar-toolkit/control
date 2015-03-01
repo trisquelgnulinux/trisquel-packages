@@ -1,0 +1,44 @@
+Source: sugar-toolkit-MAJOR
+Section: python
+Priority: optional
+Maintainer: Debian OLPC <debian-olpc-devel@lists.alioth.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>
+Build-Depends: autotools-dev,
+ devscripts,
+ python (>= 2.6.5),
+ cdbs (>= 0.4.97~),
+ python-all-dev,
+ debhelper,
+ dh-buildinfo,
+ libglib2.0-dev,
+ python-gtk2-dev,
+ libsm-dev,
+ libice-dev,
+ libasound2-dev | libasound-dev,
+ gettext,
+ intltool,
+ libxml-parser-perl,
+ chrpath
+Standards-Version: 3.9.3
+Vcs-Git: git://git.debian.org/git/collab-maint/sugar-toolkit
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/sugar-toolkit.git
+Homepage: http://wiki.sugarlabs.org/go/Sugar
+
+Package: python-sugar-toolkit-MAJOR
+Architecture: any
+Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}, ${cdbs:Depends}
+Recommends: ${cdbs:Recommends}
+Suggests: ${cdbs:Suggests}
+Provides: ${python:Provides}, ${cdbs:Provides}
+Conflicts: ${cdbs:Conflicts}
+Replaces: ${cdbs:Replaces}
+Description: Sugar graphical shell - core widgets
+ Sugar is a graphical user interface aimed at children.
+ .
+ Originating as integral part of the OLPC "XO" a.k.a. the $100 laptop,
+ Sugar has since grown into a more widely usable low-ressource desktop
+ environment for kids.
+ .
+ This package contains a set of widgets to build HIG compliant
+ applications and interfaces to interact with system services like
+ presence and the datastore.

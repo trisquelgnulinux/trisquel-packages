@@ -1,0 +1,20 @@
+Description: add compatibility with ipython 0.11
+ AutoFormattedTB now is in IPython.core.
+ Both possibilities are tried to remain compatible with older
+ ipython versions.
+Author: Julian Taylor <jtaylor.debian@googlemail.com>
+
+--- a/src/sugar/logger.py
++++ b/src/sugar/logger.py
+@@ -69,7 +69,10 @@
+     # Attempt to provide verbose IPython tracebacks.
+     # Importing IPython is slow, so we import it lazily.
+     try:
+-        from IPython.ultraTB import AutoFormattedTB
++        try:
++            from IPython.core.ultratb import AutoFormattedTB
++        except ImportError:
++            from IPython.ultraTB import AutoFormattedTB
+         sys.excepthook = AutoFormattedTB(mode='Verbose',
+             color_scheme='NoColor')
+     except ImportError:

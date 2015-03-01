@@ -1,0 +1,347 @@
+sugar-datastore-MAJOR (DETAIL) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Ruben Rodríguez <ruben@trisquel.info>  DATE
+
+sugar-datastore-0.90 (0.90.0-1build1) precise; urgency=low
+
+  * Rebuild to drop python2.6 dependencies and provides.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sat, 14 Apr 2012 13:45:43 +0000
+
+sugar-datastore-0.90 (0.90.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+  * Append _DEFAULT to deprecated CDBS variables in rules file.
+  * Ease building with git-buildpackage: Git-ignore quilt .pc dir, and
+    add source local-options.
+  * Drop TODO: Only issue was use of Xappy, but its predecessor, secore,
+    was dropped since upstream v0.8.1.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 12 Oct 2010 14:29:23 +0200
+
+sugar-datastore-0.90 (0.89.1-1) experimental; urgency=low
+
+  * New upstream development release.
+  * Switch packaging to upstream branch 0.90.
+  * Improve copyright file:
+    + Fix add install-sh, licensed as Expat and other-X.
+    + Drop unused license section MIT.
+    + Add comment on Expat variation.
+    + Rename and tighten other-GAP-* sections.
+  * Relax transitional conflicts to use Breaks: (not Conflicts:).
+  * Stop needlessly providing python-olpc-datastore.
+  * Bump Policy compliance to standards-version to 3.9.0.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 21 Jul 2010 11:48:04 +0200
+
+sugar-datastore-0.88 (0.88.0-2) unstable; urgency=low
+
+  * New upstream stable release.
+  * Drop all local CDBS snippets: included with main cdbs package now.
+  * Switch to source format "3.0 (quilt)".
+  * Drop build-dependencies on quilt and patchutils.
+  * Relax build-dependencies on python-central and python-all-dev.
+  * Relax build-dependency on devscripts slightly, to ease backporting.
+  * Tighten build-dependency on cdbs.
+  * Add git-buildpackage hint about use of bzip2-compressed tarballs.
+  * Bump standards-version to 3.8.4.
+  * Update copyright file:
+    + Reformat to conform to draft DEP5 rev. 135.
+    + Add GPL disclaimers.
+    + Adjust some years.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 30 Mar 2010 20:24:52 +0200
+
+sugar-datastore-0.88 (0.87.1-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Switch packaging to branch 0.88.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 01 Dec 2009 22:26:47 +0100
+
+sugar-datastore-0.86 (0.86.1-1) unstable; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 02 Oct 2009 15:33:40 +0200
+
+sugar-datastore-0.86 (0.86.0-1) unstable; urgency=low
+
+  * New upstream stable release.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 30 Sep 2009 18:04:24 +0200
+
+sugar-datastore-0.86 (0.85.4-2) unstable; urgency=low
+
+  * Drop unneeded dependency on python-gnome2.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 22 Sep 2009 19:36:03 +0200
+
+sugar-datastore-0.86 (0.85.4-1) unstable; urgency=low
+
+  * New upstream development release.
+  * Bump major version to 0.86 for binary and source package.
+  * Simplify watch file (we want to watch too new files too).
+  * Update debian/copyright (no new licenses or copyright holders).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 18 Sep 2009 14:49:59 +0200
+
+sugar-datastore-0.84 (0.84.0-3) unstable; urgency=low
+
+  * Update CDBS snippets:
+    + Enhance package-relations.mk to support all binary package
+      relations (except -indep ones).
+    + Improve package-relation.mk cleanup to cover debhelper 6 and 7,
+      strip more whitespace and cover mixture of unversioned+versioned
+      dependencies.
+    + Silence applying dependencies in package-relation.mk.
+    + Implement fail-source-not-repackaged rule in upstream-tarball.mk.
+    + Update URL to draft DEP5 format in copyright-check.mk output.
+  * Update OLPC relation (now historic) in long description.
+  * Bump up policy compliance to standards version 3.8.3.
+  * Update debian/copyright format to DEP5 rev54.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 18 Sep 2009 13:08:27 +0200
+
+sugar-datastore-0.84 (0.84.0-2) unstable; urgency=low
+
+  * Provide, conflict with and replace python-olpc-datastore.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 May 2009 20:21:12 +0200
+
+sugar-datastore-0.84 (0.84.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop patch 0001 no longer relevant (related code dropped upstream).
+  * Drop patches 1002-1005, and limit Python support to 2.5 and newer.
+  * Add README.source (and drop CDBS hints and README.packaging).
+  * Update CDBS snippets:
+    + Minor updates to buildinfo.mk and copyright-check.mk
+    + Enhance package-relations.mk to support all binary package
+      relations (except -indep ones)
+    + Extend package-relation.mk to handle debhelper 6 and 7.0.1
+  * Add git-buildpackage configfile, enabling signed tags and use of
+    pristine-tar.
+  * Use sugarlabs.org (not laptop.org) as upstream URLs.
+  * Restrict watch file to current stable release (0.84).
+  * Handle binary (not only source) dependencies in rules file.
+  * Rename binary to package python-carquinyol (from python-olpc-
+    datastore), and adjust upstream project name to sugar-datastore
+    (from OLPC Datastore).
+  * Switch to achitecture-dependent packaging (code now includes private
+    metadatareader library).
+  * Append major version (0.84) to binary and source package.
+  * Update debian/copyright:
+    + Rewrite to use DEP5 r48 proposed machine-readable format
+    + Add authors of autogenerated files and files below debian/* (no
+      new licenses)
+    + Main author is OLPC (not Lemur Consulting Ltd)
+  * Bump policy compliance to Standards-Version 3.8.1.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 May 2009 15:13:43 +0200
+
+sugar-datastore (0.82.1-2) unstable; urgency=high
+
+  * Add patch 0001 to fix Xapian overflow.
+  * Set urgency=high as without above patch the Sugar journal is
+    completely broken (as in _no_ data gets saved in Sugar).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 14 Jan 2009 23:01:39 +0100
+
+sugar-datastore (0.82.1-1) unstable; urgency=low
+
+  * New Upstream Version.
+  * Depend on ${misc:Depends}.
+  * Update CDBS snippet copyright-check.mk: Compact simple licenses
+    (those without ' or later').
+  * Update CDBS snippet makefile.mk: Cleanup check stamp dir for
+    flavored builds. Fixing failure to build twice in a row.
+  * Update CDBS snippet update-tarball.mk: Various improvements (none
+    important here).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Nov 2008 19:23:36 +0100
+
+sugar-datastore (0.82.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Update cdbs snippets:
+    + Move dependency cleanup to new local snippet package-relations.mk.
+    + Update copyright-check output to more closely match proposed new
+      copyright file format.  Update copyright-hints.
+    + Internal restructuring of flavor-enhanced autotools- and makefile-
+      snippets.
+    + Update README.cdbs-tweaks.
+  * Add DEB_MAINTAINER_MODE in debian/rules (thanks to Romain Beauxis).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 16 Aug 2008 14:42:14 +0200
+
+sugar-datastore (0.8.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Unfuzz patches.
+  * Update local cdbs snippets:
+    + Relax copyright-check to only warn about its discoveries.  Closes:
+      bug#486979.
+    + Update dependency cleanup to strip cdbs 0.4.27 (not 0.4.27-1).
+  * Update debian/copyright-hints.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 21 Jun 2008 01:19:15 +0200
+
+sugar-datastore (0.8.1-3) UNRELEASED; urgency=low
+
+  * Add URL to upstream tarball source in debian/copyright.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 26 May 2008 14:30:28 +0200
+
+sugar-datastore (0.8.1-2) unstable; urgency=low
+
+  * Really update build-dependencies as promised in 0.8.1-1.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 26 May 2008 12:23:09 +0200
+
+sugar-datastore (0.8.1-1) unstable; urgency=low
+
+  * New upstream release (only version number bumped, compared to prior
+    Git snapshot release).
+  * Drop patch 1001 against no longer included doc file.
+  * Unfuzz patch 1005.
+  * Update copyright-check (only files dropped or replaced with
+    auto-generated ones).
+  * Update local cdbs snippets:
+    + Use upstream-tarball.mk to track upstream source releases.
+    + Drop use of autotools.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 26 May 2008 11:28:42 +0200
+
+sugar-datastore (0.8.0~git.13d354b-11) unstable; urgency=low
+
+  * Bump debhelper compatibility level to 6 (was 5).
+  * Update local cdbs snippets:
+    + Relax python-central and python-support build-dependencies in
+      python-autotools.mk.
+    + Update copyright-check cdbs snippet to store newline-delimited
+      hints, and strip any non-printable characters.  Update hints.
+    + Drop wget options broken with recent versions of wget in
+      update-tarball.mk.
+  * Mention exact upstream Git source in debian/copyright.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 24 Apr 2008 12:43:35 +0200
+
+sugar-datastore (0.8.0~git.13d354b-10) unstable; urgency=low
+
+  * Suggest (not recommend) abiword and poppler-utils - really this time
+    (forgot to semi-auto-update debian/control in last upload :-P ).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 11 Apr 2008 21:40:00 +0200
+
+sugar-datastore (0.8.0~git.13d354b-9) unstable; urgency=low
+
+  * Suggest (not recommend) abiword and poppler-utils.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 11 Apr 2008 19:17:30 +0200
+
+sugar-datastore (0.8.0~git.13d354b-8) unstable; urgency=low
+
+  * Fix typo in long description.
+  * Add patches 1004 and 1005 to avoid queue.join and queue.task_done,
+    and check_call, all of them unavailable in Python < 2.5.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 23 Mar 2008 15:10:46 +0100
+
+sugar-datastore (0.8.0~git.13d354b-7) unstable; urgency=low
+
+  * Rename binary package to python-olpc-datastore (not sugar-datastore
+    and not python-sugar-datastore), to comply with Python policy
+    (currently this package also contains secore which should be dropped
+    as soon as its backwards-compatilbe successor - Xappy - is packaged
+    for Debian).
+  * Update debian/copyright to advertise this packaging as "Python
+    module OLPC Datastore" (not "Sugar Datastore").
+  * Fix email address of OLPC Alioth team.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 16 Mar 2008 13:23:29 +0100
+
+sugar-datastore (0.8.0~git.13d354b-6) unstable; urgency=low
+
+  * Update CDBS tweaks:
+    + Add local python-autotools.mk (and drop py-compile.mk).
+    + Update python-vars.mk and makefile.mk for improved DEB_*PACKAGES
+      and build-dependency resolving.
+    + Cosmetic updates to README.cdbs-tweaks.
+  * Fix patch 1003 to not strip declaring self._write_lock.
+  * Remove auto-generated py-compile in target clean.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 16 Mar 2008 12:35:19 +0100
+
+sugar-datastore (0.8.0~git.13d354b-5) unstable; urgency=low
+
+  * Pass over maintenance of the package to the OLPC team: Change
+    Maintainer, and add myself to Uploaders.
+  * Fix README.packaging to use "pull; fetch --tags" (not "pull -t").
+  * Rename binary package sugar-datastore -> python-sugar-datastore, to
+    comply with Python policy (or maybe not: should each Python module
+    be packaged separately?).
+  * Change binary package to section python.
+  * Depend on python-sugar (not sugar-base).
+  * Update CDBS tweaks:
+    + Add local py-compile.mk and python-vars.mk to handle autotools-
+      based Python compilation.  This adds suppurt also for non-default
+      Python versions.
+    + Add local autotools.mk, autotools-vars.mk, makefile.mk and
+      makefile-vars.mk providing multi-flavor build support needed by
+      py-compile.mk.
+    + Add patchsys-quilt.mk.
+    + README.cdbs-tweaks updated to mention the above.
+  * Add already applied patch 1001 to use unversioned Python hashbang in
+    getbuildpath.py script.
+  * Add already applied patch 1002 to nest try-except in
+    try-except-finally constructs, for Python < 2.5 compatibility.
+  * Add already applied patch 1003 to avoid fancy locking using "with"
+    statement, for Python < 2.5 compatibility.
+  * Drop empty usr/lib cleanup, now handled by puthon-central.
+  * Semi-auto-update debian/control to update build-dependencies:
+      DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 14 Mar 2008 13:14:12 +0100
+
+sugar-datastore (0.8.0~git.13d354b-4) unstable; urgency=low
+
+  * Fix watch file (no tarball yet - just guessing the upcoming name).
+  * Update CDBS tweaks:
+    + Replace virtual automake1.10 build-dependency with automake
+  * Semi-auto-update debian/control to update build-dependencies:
+    DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 11 Mar 2008 02:36:26 +0100
+
+sugar-datastore (0.8.0~git.13d354b-3) unstable; urgency=low
+
+  * Patch xapianindex to not import with-statement (now that we've
+    patched around using it).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 09 Mar 2008 17:46:58 +0100
+
+sugar-datastore (0.8.0~git.13d354b-2) unstable; urgency=low
+
+  * Patch converter, datatore and backingstore to nest try: except: in
+    try: except: finally: constructs, to support Python 2.4.
+  * Patch xapianindex to manually acquire and release locks (not using
+    with construct), to support Python 2.4.
+  * Drop documentation-related build-dependencies: Not yet integrated
+    with main build routines.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 09 Mar 2008 17:24:15 +0100
+
+sugar-datastore (0.8.0~git.13d354b-1) unstable; urgency=low
+
+  * Initial release. Closes: bug#444021.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 09 Mar 2008 14:59:33 +0100

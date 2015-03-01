@@ -1,0 +1,179 @@
+#!/usr/bin/make -f
+# -*- mode: makefile; coding: utf-8 -*-
+# Copyright 2007, 2008, 2009, 2010, 2012 Jonas Smedegaard <dr@jones.dk>
+# Description: Main Debian packaging script for sugar
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+pkgbranch = $(lastword $(subst -,$(space),$(DEB_SOURCE_PACKAGE)))
+
+DEB_BUILDDIR = build
+DEB_PYTHON2_MODULE_PACKAGES = python-jarabe-$(pkgbranch)
+DEB_PYTHON2_MODULE_PACKAGES += $(foreach pkg,session tools,sugar-$(pkg)-$(pkgbranch))
+include /usr/share/cdbs/1/rules/upstream-tarball.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/class/python-autotools.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+# Suppress unneeded auto-resolved build-dependency on python-dev
+CDBS_BUILD_DEPENDS_class_python-autotools_python = python$(cdbs_python_nondefault_version)
+
+DEB_UPSTREAM_PACKAGE = $(DEB_SOURCE_PACKAGE:%-$(pkgbranch)=%)
+DEB_UPSTREAM_URL = http://download.sugarlabs.org/sources/sucrose/glucose/$(DEB_UPSTREAM_PACKAGE)
+DEB_UPSTREAM_TARBALL_EXTENSION = tar.bz2
+DEB_UPSTREAM_TARBALL_MD5 = bd569878b5b5d3c5230ae5bbdbf8ccbf
+
+DEB_PYTHON_PRIVATE_MODULES_DIRS = /usr/share/sugar
+
+# Generate (and cleanup) files containing variables static per build
+infiles = $(filter-out debian/control.in, $(wildcard debian/*.in))
+outfiles = $(subst __VER__,$(pkgbranch),$(basename $(infiles)))
+DEB_PHONY_RULES += $(outfiles)
+pre-build:: $(outfiles)
+$(outfiles):
+	sed 's/__VER__/$(pkgbranch)/' <$(subst $(pkgbranch),__VER__,$@).in >$@
+clean::
+	rm -f $(outfiles)
+
+# Register GConf schemas
+post-install/sugar-session-$(pkgbranch)::
+	mkdir -p $(DEB_DESTDIR)/usr/share/gconf/schemas/
+	mv $(DEB_DESTDIR)/etc/gconf/schemas/sugar.schemas $(DEB_DESTDIR)/usr/share/gconf/schemas/
+	rmdir $(DEB_DESTDIR)/etc/gconf/schemas
+	rmdir $(DEB_DESTDIR)/etc/gconf
+binary-install/sugar-session-$(pkgbranch)::
+	dh_gconf -p$(cdbs_curpkg)
+
+# Needed by upstream build process
+CDBS_BUILD_DEPENDS += , libglib2.0-dev, python-gtk2-dev, libgconf2-dev, gettext, intltool, shared-mime-info
+
+comma = ,
+
+# $(1): activity stems
+# $(2): default branch (optional)
+# $(3): fallback flag (if non-empty unversioned fallback is added)
+sugar_expand_activities = $(foreach stem,$(1),$(comma) $(patsubst %,sugar-$(stem)-activity-%$(if $(3), | ),$(2))$(if $(if $(2),,true)$(3),sugar-$(stem)-activity))
+
+# Fructose activities
+#session_expand_activities += $(call sugar_expand_activities,pippy turtleart,,$(1))
+# Fructose activities not avilable in Debian main for this Sugar branch
+session_expand_activities_relaxed += $(call sugar_expand_activities,calculate etoys,,$(1))
+session_expand_activities_relaxed += $(call sugar_expand_activities,browse chat log write,0.86,$(1))
+session_expand_activities_relaxed += $(call sugar_expand_activities,jukebox imageviewer,$(pkgbranch),$(1))
+
+# Needed (always/often/sometimes) at runtime
+#  * python-wnck needed by python-jarabe (several places) and commands
+#    sugar-ui-check and sugar-session. Fallback unneeded since
+#    python-wnck 2.24.0-2: can be dropped after Squeeze+1
+#  * python-gconf fallback unneeded since python-gconf 2.22.3-3: can be
+#    dropped after Squeeze+1
+#  * python-gobject versioning needed for GIO bindings
+#  * python-telepathy versioning needed for use of
+#    CONNECTION_INTERFACE_REQUESTS ABI
+#  * python-gst0.10 and gstreamer0.10-espeak needed in
+#    jarabe.model.speech
+#  * metacity needed by commands sugar and sugar-session
+#  * xserver-xephyr and x11-utils (xdpyinfo) needed in
+#    src/jarabe/util/emulator.py
+#  * x11-xserver-utils (xrdb) needed by command sugar and (xsetroot) by
+#    command sugar-session
+#  * lsb-release (lsb_release), tzdata and ethtool needed in extension
+#    ControlPanel
+#  * wpasupplicant (wpa_passphrase) needed in
+#    jarabe.desktop.keydialog.WPAKeyDialog()
+#  * avahi-autoipd needed in jarabe/desktop/meshbox.py to establish
+#    NM_802_11_MODE_ADHOC
+#  * openssh-client (ssh-keygen) needed in
+#    intro.intro.IntroWindow()
+#  * olpc-powerd (/etc/powerd/flags) needed in
+#    jarabe/intro/window.create_profile() and jarabe.controlpanel.ControlPanel()
+#  * alsa-utils needed by jarabe/model/sound.py to properly initialize
+#    underlying audio channels (Sugar can only control main volume)
+#  * gdb needed by command sugar-launch
+#  * gvfs needed for GIO removable media support
+#  * upower needed in extensions/deviceicon/battery.py
+#  * xdg-user-dir needed in
+#    jarabe/journal/model.get_documents_path()
+session_nm = network-manager, modemmanager
+session_gio = gvfs
+session_pm = upower, consolekit
+jarabe_initprofile = openssh-client
+jarabe_nm = wpasupplicant, avahi-autoipd
+jarabe_cp_cli_exec = x11-xserver-utils, lsb-release, ethtool, tzdata
+jarabe_audio = alsa-utils
+jarabe_fs = xdg-user-dirs
+tools_debug = gdb
+CDBS_DEPENDS_sugar-session-$(pkgbranch) = python-sugar3, sugar-artwork-$(pkgbranch), python-jarabe-$(pkgbranch)
+CDBS_DEPENDS_sugar-session-$(pkgbranch) += , python-gobject (>= 2.15.0), python-gtk2, python-dbus, gir1.2-xkl-1.0, python-gwebsockets, gir1.2-nmgtk-1.0, gir1.2-atspi-2.0, gir1.2-gtksource-3.0, gir1.2-webkit2-3.0
+CDBS_DEPENDS_sugar-session-$(pkgbranch) += , python-wnck | python-gnome2-desktop (<= 2.24.0-1)
+CDBS_DEPENDS_sugar-session-$(pkgbranch) += , python-gconf | python-gnome2 (<= 2.22.3-2)
+CDBS_DEPENDS_sugar-session-$(pkgbranch) += , metacity (>= 1:2.27.1), dbus-x11, python-carquinyol-$(pkgbranch), x11-xserver-utils
+CDBS_DEPENDS_sugar-tools-$(pkgbranch) = python-sugar3, python-jarabe-$(pkgbranch)
+CDBS_DEPENDS_python-jarabe-$(pkgbranch) = python-sugar3
+CDBS_DEPENDS_python-jarabe-$(pkgbranch) += , python-hippocanvas, python-gobject (>= 2.15.0), python-gtk2, python-cairo, python-dbus, python-telepathy (>= 0.15.9), python-simplejson, python-gtksourceview2, python-xapian, python-gst0.10
+CDBS_DEPENDS_python-jarabe-$(pkgbranch) += , python-wnck | python-gnome2-desktop (<= 2.24.0-1)
+CDBS_DEPENDS_python-jarabe-$(pkgbranch) += , python-gconf | python-gnome2 (<= 2.22.3-2)
+CDBS_RECOMMENDS_sugar-session-$(pkgbranch) = sugar-tools-$(pkgbranch)
+CDBS_RECOMMENDS_sugar-session-$(pkgbranch) += , $(call session_expand_activities,true)
+CDBS_RECOMMENDS_sugar-session-$(pkgbranch) += , python-xklavier
+CDBS_RECOMMENDS_sugar-session-$(pkgbranch) += , $(jarabe_initprofile), $(session_nm), $(session_gio), $(session_pm), $(jarabe_cp_cli_exec)
+CDBS_RECOMMENDS_sugar-tools-$(pkgbranch) += , python-gobject (>= 2.15.0), python-gtk2, python-dbus
+CDBS_RECOMMENDS_sugar-tools-$(pkgbranch) += , python-wnck | python-gnome2-desktop (<= 2.24.0-1)
+CDBS_RECOMMENDS_sugar-tools-$(pkgbranch) += , $(session_nm), $(jarabe_cp_cli_exec), dbus
+CDBS_RECOMMENDS_python-jarabe-$(pkgbranch) = python-carquinyol-$(pkgbranch)
+CDBS_RECOMMENDS_python-jarabe-$(pkgbranch) += , $(session_nm), $(jarabe_nm), $(jarabe_initprofile), $(jarabe_audio), $(jarabe_fs)
+CDBS_SUGGESTS_sugar-session-$(pkgbranch) = sucrose-$(pkgbranch), $(call session_expand_activities_relaxed,true)
+CDBS_SUGGESTS_sugar-tools-$(pkgbranch) = sugar-session-$(pkgbranch), $(tools_debug)
+CDBS_SUGGESTS_python-jarabe-$(pkgbranch) = sugar-session-$(pkgbranch)
+
+CDBS_DEPENDS_sucrose-$(pkgbranch) = sugar-session-$(pkgbranch), sugar-tools-$(pkgbranch), python-carquinyol-$(pkgbranch)
+CDBS_DEPENDS_sucrose-$(pkgbranch) += , $(call session_expand_activities)
+CDBS_DEPENDS_sucrose-$(pkgbranch) += , python-xklavier
+CDBS_DEPENDS_sucrose-$(pkgbranch) += , $(session_nm), $(session_gio), $(session_pm), $(jarabe_nm), $(jarabe_initprofile), $(jarabe_cp_cli_exec), $(jarabe_audio), $(jarabe_fs), $(tools_debug)
+CDBS_SUGGESTS_sucrose-$(pkgbranch) = $(call session_expand_activities_relaxed)
+
+# TODO: recommend when packaged officially for Debian
+CDBS_SUGGESTS_python-jarabe-$(pkgbranch) += , gstreamer0.10-espeak
+
+# Ensure only one variant is installed at a time (Debian Policy 7.6.2)
+CDBS_PROVIDES_python-jarabe-$(pkgbranch) = python-jarabe
+CDBS_CONFLICTS_python-jarabe-$(pkgbranch) = python-jarabe
+CDBS_REPLACES_python-jarabe-$(pkgbranch) = python-jarabe
+CDBS_PROVIDES_sugar-session-$(pkgbranch) = sugar-session
+CDBS_CONFLICTS_sugar-session-$(pkgbranch) = sugar-session
+CDBS_REPLACES_sugar-session-$(pkgbranch) = sugar-session
+CDBS_PROVIDES_sugar-tools-$(pkgbranch) = sugar-tools
+CDBS_CONFLICTS_sugar-tools-$(pkgbranch) = sugar-tools
+CDBS_REPLACES_sugar-tools-$(pkgbranch) = sugar-tools
+
+# Provide virtual unversioned sugar package
+CDBS_PROVIDES_sugar-session-$(pkgbranch) = sugar
+
+# sugar until 0.82.9-5 (released with Lenny) split into
+# python-jarabe-0.86 and sugar-{session,emulator,tools}-0.86: can be
+# dropped after Squeeze+1
+CDBS_BREAKS_python-jarabe-$(pkgbranch) = sugar (<= 0.82.9-5)
+CDBS_REPLACES_python-jarabe-$(pkgbranch) = sugar (<= 0.82.9-5)
+CDBS_BREAKS_sugar-session-$(pkgbranch) = sugar (<= 0.82.9-5)
+CDBS_REPLACES_sugar-session-$(pkgbranch) = sugar (<= 0.82.9-5)
+CDBS_BREAKS_sugar-tools-$(pkgbranch) = sugar (<= 0.82.9-5)
+CDBS_REPLACES_sugar-tools-$(pkgbranch) = sugar (<= 0.82.9-5)
+
+# Journal, now part of Jarabe, was separately packaged upstream < 0.84
+# (released with Lenny): can be dropped after Squeeze+1
+CDBS_BREAKS_python-jarabe-$(pkgbranch) += , sugar-journal-activity
+CDBS_REPLACES_python-jarabe-$(pkgbranch) += , sugar-journal-activity
+
+# Needed for our packaging
+CDBS_BUILD_DEPENDS += , python-empy

@@ -1,0 +1,192 @@
+Description: Danish l10n of upstream strings
+Author: Jonas Smedegaard <dr@jones.dk>
+Last-Update: 2010-02-08
+--- /dev/null
++++ b/po/da.po
+@@ -0,0 +1,186 @@
++# Danish translations for sugar-toolkit
++# Copyright (C) 2008 Jonas Smedegaard <dr@jones.dk>
++# This file is distributed under the same license as the sugar-toolkit package.
++# Jonas Smedegaard <dr@jones.dk>, 2008.
++#
++msgid ""
++msgstr ""
++"Project-Id-Version: sugar-toolkit 0.81.8\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2009-01-20 00:31-0500\n"
++"PO-Revision-Date: 2009-03-30 16:21+0200\n"
++"Last-Translator: Jonas Smedegaard <dr@jones.dk>\n"
++"Language-Team: None\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
++
++#: ../src/sugar/activity/activity.py:123
++msgid "Share with:"
++msgstr "Del med:"
++
++#: ../src/sugar/activity/activity.py:125
++msgid "Private"
++msgstr "Privat"
++
++#: ../src/sugar/activity/activity.py:126
++msgid "My Neighborhood"
++msgstr "Mit nabolag"
++
++#: ../src/sugar/activity/activity.py:133
++#: ../src/sugar/activity/namingalert.py:65
++msgid "Keep"
++msgstr "Behold"
++
++#: ../src/sugar/activity/activity.py:144
++msgid "Stop"
++msgstr "Stop"
++
++#: ../src/sugar/activity/activity.py:258
++msgid "Undo"
++msgstr "Fortryd"
++
++#: ../src/sugar/activity/activity.py:263
++msgid "Redo"
++msgstr "Gentag"
++
++#: ../src/sugar/activity/activity.py:273
++msgid "Copy"
++msgstr "Kopiér"
++
++#: ../src/sugar/activity/activity.py:278
++msgid "Paste"
++msgstr "Sæt ind"
++
++#: ../src/sugar/activity/activity.py:304
++msgid "Activity"
++msgstr "Aktivitet"
++
++#: ../src/sugar/activity/activity.py:542
++#, python-format
++msgid "%s Activity"
++msgstr "%s aktivitet"
++
++#: ../src/sugar/activity/activity.py:910
++msgid "Keep error"
++msgstr "Opbevaringsfejl"
++
++#: ../src/sugar/activity/activity.py:911
++msgid "Keep error: all changes will be lost"
++msgstr "Opbevaringsfejl: alle ændringer går tabt"
++
++#: ../src/sugar/activity/activity.py:914
++msgid "Don't stop"
++msgstr "Stop ikke"
++
++#: ../src/sugar/activity/activity.py:917
++msgid "Stop anyway"
++msgstr "Stop alligevel"
++
++#: ../src/sugar/activity/namingalert.py:60
++msgid "Name this entry"
++msgstr "Navngiv disse indlæg"
++
++#: ../src/sugar/activity/namingalert.py:248
++msgid "Untitled"
++msgstr "Uden navn"
++
++#: ../src/sugar/activity/namingalert.py:255
++msgid "Description:"
++msgstr "Beskrivelse:"
++
++#: ../src/sugar/activity/namingalert.py:279
++msgid "Tags:"
++msgstr "Stikord:"
++
++#: ../src/sugar/graphics/alert.py:288 ../src/sugar/graphics/alert.py:367
++msgid "Cancel"
++msgstr "Afbryd"
++
++#: ../src/sugar/graphics/alert.py:292 ../src/sugar/graphics/alert.py:426
++msgid "Ok"
++msgstr "Ok"
++
++#: ../src/sugar/graphics/alert.py:377
++msgid "Continue"
++msgstr "Fortsæt"
++
++#: ../src/sugar/graphics/colorbutton.py:49
++msgid "Choose a color"
++msgstr "Vælg en farve"
++
++#: ../src/sugar/graphics/colorbutton.py:262
++msgid "Red"
++msgstr "Rød"
++
++#: ../src/sugar/graphics/colorbutton.py:264
++msgid "Green"
++msgstr "Grøn"
++
++#: ../src/sugar/graphics/colorbutton.py:266
++msgid "Blue"
++msgstr "Blå"
++
++#: ../src/sugar/util.py:194
++msgid " and "
++msgstr " og "
++
++#: ../src/sugar/util.py:195
++msgid ", "
++msgstr ", "
++
++#. TRANS: Indicating something that just happened, eg. "just now", "moments ago"
++#: ../src/sugar/util.py:198
++msgid "Seconds ago"
++msgstr "sekunder siden"
++
++#. TRANS: Indicating time passed, eg. "[10 day, 5 hours] ago",
++#. "[2 minutes] in the past", or "[3 years, 1 month] earlier"
++#: ../src/sugar/util.py:202
++#, python-format
++msgid "%s ago"
++msgstr "%s siden"
++
++#. TRANS: Relative dates (eg. 1 month and 5 days).
++#: ../src/sugar/util.py:215
++#, python-format
++msgid "%d year"
++msgid_plural "%d years"
++msgstr[0] "%d år"
++msgstr[1] "%d år"
++
++#: ../src/sugar/util.py:216
++#, python-format
++msgid "%d month"
++msgid_plural "%d months"
++msgstr[0] "%d måned"
++msgstr[1] "%d måneder"
++
++#: ../src/sugar/util.py:217
++#, python-format
++msgid "%d week"
++msgid_plural "%d weeks"
++msgstr[0] "%d uge"
++msgstr[1] "%d uger"
++
++#: ../src/sugar/util.py:218
++#, python-format
++msgid "%d day"
++msgid_plural "%d days"
++msgstr[0] "%d dag"
++msgstr[1] "%d dage"
++
++#: ../src/sugar/util.py:219
++#, python-format
++msgid "%d hour"
++msgid_plural "%d hours"
++msgstr[0] "%d time"
++msgstr[1] "%d timer"
++
++#: ../src/sugar/util.py:220
++#, python-format
++msgid "%d minute"
++msgid_plural "%d minutes"
++msgstr[0] "%d minut"
++msgstr[1] "%d minutter"
