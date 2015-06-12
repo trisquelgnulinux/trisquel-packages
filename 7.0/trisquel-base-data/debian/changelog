@@ -1,3 +1,9 @@
+trisquel-base-data (7.0-1) belenos; urgency=medium
+
+  * Remove alias for rm command
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 12 Jun 2015 02:40:33 +0200
+
 trisquel-base-data (7.0) belenos; urgency=low
 
   * Initial release for belenos
