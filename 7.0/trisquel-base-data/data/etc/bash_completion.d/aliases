@@ -16,8 +16,6 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 
-    alias rm='rm -i'
-
     [ -f /usr/bin/vim ] && alias vi='vim' || alias vi='vim.tiny'
     [ -f /usr/bin/vim ] || alias vim='vim.tiny'
 
