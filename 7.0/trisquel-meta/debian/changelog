@@ -1,8 +1,14 @@
-trisquel-meta (7.0-38) belenos; urgency=medium
+trisquel-meta (7.0-39) belenos; urgency=critical
 
-  * Added policykit-1-gnome to trisquel-mini
+  * Added policykit-1-gnome and ligtk2-perl to trisquel-mini
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 31 Aug 2015 18:52:28 +0200
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 26 Oct 2015 20:12:17 +0100
+
+trisquel-meta (7.0-38) UNRELEASED; urgency=medium
+
+  * Replaced telepathy-gabble with sugar-telepathy-gabble
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 14 Apr 2015 02:36:28 +0200
 
 trisquel-meta (7.0-37) belenos; urgency=low
 
