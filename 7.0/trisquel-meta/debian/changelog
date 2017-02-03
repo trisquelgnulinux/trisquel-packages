@@ -1,10 +1,16 @@
+trisquel-meta (7.0-40) belenos; urgency=medium
+
+  * Sugar packages updated to 108
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 15 May 2016 19:46:46 -0400
+
 trisquel-meta (7.0-39) belenos; urgency=critical
 
   * Added policykit-1-gnome and ligtk2-perl to trisquel-mini
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 26 Oct 2015 20:12:17 +0100
 
-trisquel-meta (7.0-38) UNRELEASED; urgency=medium
+trisquel-meta (7.0-38) belenos; urgency=medium
 
   * Replaced telepathy-gabble with sugar-telepathy-gabble
 
