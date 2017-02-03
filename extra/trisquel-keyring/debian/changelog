@@ -1,3 +1,9 @@
+trisquel-keyring (2017.01.07) flidas; urgency=medium
+
+  * Added new key to fix #21407
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 07 Jan 2017 18:18:40 -0500
+
 trisquel-keyring (4.5-1) slaine; urgency=low
 
   * Added missing udeb generation files
