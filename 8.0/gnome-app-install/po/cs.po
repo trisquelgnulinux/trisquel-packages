@@ -1,0 +1,755 @@
+# translation of cs.po to čeština
+# keny <keny@nativepeople.cz>, 2004.
+# Keny Otter <keny@nativepeople.cz>, 2004.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Synaptic v. 55\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:13+0000\n"
+"Last-Translator: Kamil Páral <Unknown>\n"
+"Language-Team: cs <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "Zdroje, u kterých byla potvrzena možnost instalovat aplikace"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "Pokud aktivní, hlavní okno je maximalizované."
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "Výška hlavního okna"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "Stav maximalizace hlavního okna"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "Šířka hlavního okna"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"Možné hodnoty: 0 : zobrazit všechny dostupné aplikace 1 : zobrazit pouze "
+"svobodné aplikace 2 : - 3 : zobrazit pouze podporované aplikace 4: zobrazit "
+"pouze aplikace třetích stran 5 : - 6 : zobrazit pouze nainstalované aplikace"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "Zobrazit pouze podmnožinu aplikací"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "Navrhnout aplikaci pro typ MIME: odsouhlasené komentáře"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "Prodleva pro interaktivní hledání"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr ""
+"Prodleva mezi psaním v hledacím políčku a spuštěním hledání (v "
+"milisekundách)."
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "Časová známka posledního spuštění aktualizace vyrovnávací paměti"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"Když se uživatel dotáže na otevření souboru, ale žádná podporovaná aplikace "
+"není dostupná, systém navrhne instalaci aplikace ve zde vypsaných "
+"součástech, stejně jako individuálně povolené aplikace."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>Přidat</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>Odstranit</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>Seznam dostupných aplikací je zastaralý</b></big>\n"
+"\n"
+"Pro obnovení seznamu potřebujete funkční internetové připojení."
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "Přidat/Odstranit aplikace"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "Provést čekající změny a zavřít okno"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "Zrušit čekající změny a zavřít okno"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "Kategorie"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "Najít:"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "Zobrazit:"
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "Kategorie představují aplikační nabídku"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "Přid_at/Odstranit další aplikace"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "Upl_atnit změny"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "_Obnovit databázi"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "_Odstranit"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "Opa_kovat"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "aplikace"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "Přidat/Odstranit..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "Nainstalovat a odstranit aplikace"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "Správce balíků"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "žádná odpovídající aplikace"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr ""
+"Není dostupná žádná aplikace vhodná pro automatickou instalaci, která by "
+"pracovala s tímto typem souboru."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "žádná aplikace nenalezena"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "Není známá žádná aplikace pro tento druh souboru."
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "Hledám odpovídající aplikace"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "Prosím čekejte. Může to trvat minutu nebo dvě."
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "Hledat vhodný kodek?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"Požadovaný software pro přehrání tohoto souboru není nainstalován. Pro "
+"přehrávání multimediálních souborů potřebujete nainstalovat vhodné kodeky. "
+"Chcete vyhledat kodek, který podporuje vybraný soubor?\n"
+"\n"
+"Toto hledání taktéž zahrne software, který není oficiálně podporován."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "Neplatná příkazová řádka"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "'%s' nerozuměl argumentu příkazové řádky '%s'"
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "Hledání vhodných kodeků"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_Nainstalovat"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "Nainstalovat multimediální zásuvné moduly"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "Kodek"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "\"%s\" nemohlo být otevřeno"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr ""
+"Bude vytvořen seznam aplikací, které umí pracovat s dokumenty typu '%s'"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "Nainstalovat aplikace pro otevření \"%s\""
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "Nainstalovat aplikace"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "_Najít"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "Hledání rozšíření"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "Rozšíření vám dovolí přidávat nové vlastnosti do vašich aplikací."
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "Nainstalovat/Odstranit rozšíření"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "Rozšíření"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"Pro instalaci aplikace označte pole vedle aplikace. Zrušte označení pole pro "
+"odstranění aplikace."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr "Pro provedení pokročilých operací použijte manažer balíků Synaptic."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "Rychlé seznámení"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "Pouze nainstalované aplikace"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "Zobrazuj jen aplikace, které jsou nainstalované na tomto počítači"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "Chyba při čtení přidaného CD"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "Přidané CD může být poškozeno "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "Seznam aplikací není dostupný"
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"Stiskněte 'Obnovit' pro jeho načtení. Pro obnovu seznamu potřebujete funkční "
+"internetové připojení. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "%s nemůže být nainstalováno na váš typ počítače (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"Tato aplikace buď vyžaduje zvláštní funkce hardware, nebo se dodavatel "
+"rozhodl nepodporovat váš typ počítače."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "Nemohu nainstalovat '%s'"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"Tato aplikace je v konfliktu s jiným nainstalovaným softwarem. Pro instalaci "
+"'%s' musí být nejdříve konfliktní software odstraněn.\n"
+"\n"
+"Přepněte se do správce balíků 'synaptic' pro vyřešení konfliktu."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "Nemohu odstranit '%s'"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"Jedna či více aplikací závisejí na %s. Pro odebrání %s a závislých aplikací "
+"použijte manažer instalačních balíků Synaptic."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "P_otvrdit"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "Povolit instalaci softwaru z %s?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr ""
+"%s je nabízen výrobcem třetí strany. Výrobce třetí strany je zodpovědný za "
+"podporu a bezpečnostní aktualizace."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "Pro pokračování potřebujete funkční připojení k Internetu."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "_Povolit"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "Chyba při kontrole nainstalovaných a dostupných aplikací"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Toto je zásadní chyba vašeho systému správy softwaru. Prosím zkontrolujte "
+"poškozené balíky synapticem, zkontrolujte oprávnění a správnost souboru '/"
+"etc/apt/sources.list' a obnovte informace o softwaru příkazy: 'sudo apt-get "
+"update' a 'sudo apt-get install -f'."
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "Provést změny u instalovaných aplikací před uzavřením?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr "Pokud neprovedete své změny, budou navždy ztraceny."
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "_Zavřít bez provedení"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "Nápověda není dostupná"
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "Pro zobrazení nápovědy musíte nainstalovat aplikaci \"yelp\"."
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "Provést následující změny?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr ""
+"Prosím podívejte se naposledy na seznam aplikací, které budou nainstalovány "
+"nebo odstraněny."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "Není k dispozici žádná odpovídající aplikace."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "Pro rozšíření vašeho hledání zvolte \"%s\"."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "Pro rozšíření vašeho hledání zvolte \"%s\" nebo \"%s\"."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr "Pro rozšíření vašeho hledání zvolte jinou položku \"Zobrazit\"."
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "Pro rozšíření vašeho hledání zvolte 'Všechny' kategorie"
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "Nelze otevřít '%s'"
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "Aplikace"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "Instalace softwaru selhala"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "Objevil se problém během instalace následujících částí softwaru."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "Přidat/Odstranit další software"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "Instalace aplikace selhala"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "Objevil se problém během instalace následujících aplikací."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "Software nemohl být odstraněn"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "Objevil se problém během odstraňování následujících částí softwaru."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "Ne všechny aplikace mohly být odstraněny"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "Objevil se problém během odstraňování následujících aplikací."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "Instalace a odstraňování softwaru selhalo"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr ""
+"Objevil se problém během instalace nebo odstraňování následujících částí "
+"softwaru."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "Instalace a odstraňování aplikací selhalo"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr ""
+"Objevil se problém během instalace nebo odstraňování následujících aplikací."
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "Byla nainstalována nová aplikace"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "Byly nainstalovány nové aplikace"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr ""
+"Pro spuštění nově nainstalované aplikace, vyberte ji z nabídky Aplikace."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr "Pro spuštění nově nainstalované aplikace, poklikejte na ni."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "Software byl úspěšně nainstalován"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "Chcete instalovat nebo odstranit další software?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "Aplikace byly úspěšně odstraněny"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "Chcete instalovat nebo odstranit další aplikace?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "Odstranit %s a přibalené aplikace?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"%s je součástí softwarového balíku. Pokud odstraníte %s, odstraníte také "
+"všechny přibalené aplikace."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "_Odstranit vše"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "Nainstalovat %s a přibalené aplikace?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"%s je součástí softwarového balíku. Pokud nainstalujete %s, nainstalujete "
+"také všechny přibalené aplikace."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "_Nainstalovat vše"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "%s je dodáván výrobcem třetí strany."
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"Aplikace obsahuje následující licenční podmínky a pravidla. Klikněte na "
+"tlačítko 'Povolit' pro jejich přijetí."
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "Souhlasit s licenčními podmínkami a nainstalovat software"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "Nahrávám vyrovnávací paměť..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "Sbírám informace o aplikacích..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "Nahrávání aplikací..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "Vše"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "Nahrává se %s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr "Povolit instalaci oficiálně podporovaného debianního softwaru?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s je součástí hlavní distribuce Debianu. Debian poskytuje podporu a "
+"bezpečnostní záplaty, které budou taktéž povoleny."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "Debian poskytuje podporu a bezpečnostní záplaty pro %s"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "%s není oficiálně podporováno bezpečnostními aktualizacemi."
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "Popis"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "%s nemůže být nainstalováno"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"%s nemůže být nainstalován na váš typ počítače (%s). Aplikace potřebuje buď "
+"zvláštní vlastnosti hardwaru, nebo se výrobce rozhodl nepodporovat váš typ "
+"počítače."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+"%s je dostupné v kanále softwaru třetí strany \"%s\". Pro instalaci prosím "
+"klikněte na zaškrtávací pole k aktivaci softwarového kanálu."
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "Tato aplikace je dodávána s následujícími aplikacemi: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"Domovská stránka: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Verze: %s (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "Oblíbenost"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "Aplikace"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>Kontroluji nainstalované a dostupné aplikace</b></big>"

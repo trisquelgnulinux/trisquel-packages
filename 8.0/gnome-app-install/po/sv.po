@@ -1,0 +1,763 @@
+# Swedish messages for gnome-app-install.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# Christian Rose <menthos@menthos.com>, 2005.
+#
+# $Id: sv.po,v 1.1 2005/06/19 13:02:14 menthos Exp $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:13+0000\n"
+"Last-Translator: Christian Rose <menthos@menthos.com>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "Komponenter som har bekräftats att installera program från"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "Om sant är huvudfönstret maximerat."
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "Höjd på huvudfönster"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "Maximeringstillstånd för huvudfönster"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "Bredd på huvudfönster"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"Möjliga värden: 0 : visa alla tillgängliga program 1 : visa endast fria "
+"program 2 : - 3 : visa endast program som stöds 4 : visa endast "
+"tredjepartsprogram 5 : - 6 : visa endast installerade program"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "Visa endast ett mindre antal program"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "Föreslå program för MIME-typ: godkända komponenter"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "Tidsgräns för interaktiv sökning"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr ""
+"Tidsgräns från inmatning i sökfältet tills att sökningen startar (i "
+"millisekunder)"
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "Tidsstämpel för senaste cacheuppdateringen"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"När användaren öppnar en fil men inget program finns tillgängligt kommer "
+"systemet att erbjuda att installera programvaror i komponenterna som listas "
+"här, såväl som individuellt vitlistade program."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>Lägg till</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>Ta bort</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>Listan över tillgängliga program är utdaterad</b></big>\n"
+"\n"
+"För att läsa om listan behöver du en fungerande Internetanslutning."
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "Lägg till/Ta bort program"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "Verkställ väntande ändringar och stäng fönstret"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "Avbryt väntande ändringar och stäng fönstret"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "Kategorier"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "Sök:"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "Visa:"
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "Kategorierna representerar programmenyn"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "_Lägg till/Ta bort fler program"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "_Verkställ ändringar"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "_Läs om"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "_Ta bort"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "_Försök igen"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "program"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "Lägg till/Ta bort..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "Installera och ta bort program"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "Pakethanterare"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "inget lämpligt program"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr ""
+"Inget lämpligt program för automatisk installation finns tillgängligt för "
+"att hantera den här filtypen."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "inget program hittades"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "Inget program är känt för den här filtypen."
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "Söker efter lämpliga program"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "Var god vänta. Det här kan ta en minut eller två."
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "Sök efter en lämplig kodek?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"Den nödvändiga programvaran som behövs för att spela upp denna fil är inte "
+"installerad. Du behöver installera lämpliga kodekar för att spela upp "
+"mediafiler. Vill du söka efter en kodek som ger stöd för den valda filen?\n"
+"\n"
+"Sökningen kommer även att inkludera programvara som inte stöds officiellt."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "Ogiltig kommandorad"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "\"%s\" förstår inte kommandoradsargumentet \"%s\""
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "Söker efter lämpliga kodekar"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_Installera"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "Installera mediainsticksmoduler"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "Kodek"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "\"%s\" kan inte öppnas"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr ""
+"En lista över program som kan hantera dokument av typen \"%s\" kommer att "
+"skapas"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "Installera program för att öppna \"%s\""
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "Installera program"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "_Sök"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "Söker efter tillägg"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "Tillägg låter dig lägga till nya funktioner till dina program."
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "Installera/Ta bort tillägg"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "Tillägg"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"För att installera ett program, kryssa i rutan bredvid programmet. Ta bort "
+"krysset i rutan för att ta bort programmet."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr ""
+"Använd pakethanteraren Synaptic för att genomföra avancerade uppgifter."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "Snabbintroduktion"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "Endast installerade program"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "Visa endast program som är installerade på din dator"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "Fel vid läsning av tilläggs-cd"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "Tilläggsskivan kan vara skadad "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "Listan över program finns inte tillgänglig"
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"Klicka på \"Uppdatera\" för att läsa in den. Du behöver en fungerande "
+"internetanslutning för att uppdatera listan. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "%s kan inte installeras på din datortyp (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"Antingen kräver programmet speciella hårdvarufunktioner eller så har "
+"tillverkaren bestämt att inte erbjuda stöd för din datortyp."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "Kan inte installera \"%s\""
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"Det här programmet står i konflikt med annan installerad programvara. För "
+"att installera \"%s\" måste först programvaran som den står i konflikt med "
+"tas bort.\n"
+"\n"
+"Byt till pakethanteraren \"Synaptic\" för att rätta till den här konflikten."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "Kan inte ta bort \"%s\""
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"Ett eller flera program är beroende av %s. Använd pakethanteraren Synaptic "
+"för att ta bort %s och de beroende programmen."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "B_ekräfta"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "Aktivera installation av programvara från \"%s\"?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr ""
+"%s tillhandahålls av en tredjepartstillverkare. Tredjepartstillverkaren är "
+"ansvarig för stöd och säkerhetsuppdateringar."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "Du behöver en fungerande internetanslutning för att fortsätta."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "A_ktivera"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "Misslyckades med att kontrollera installerade och tillgängliga program"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Det här är ett allvarligt fel i ditt programhanteringssystem. Leta efter "
+"trasiga paket med Synaptic, kontrollera filrättigheterna och om filen \"/etc/"
+"apt/sources.list\" är korrekt. Läs sedan om programinformationen med \"sudo "
+"apt-get update\" och \"sudo apt-get install -f\"."
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "Verkställ ändringar på installerade program innan programmet avslutas?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr ""
+"Om du inte verkställer dina ändringar kommer de att förloras för alltid."
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "_Stäng utan att verkställa"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "Det finns ingen hjälp tillgänglig"
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "Du behöver installera programmet \"yelp\" för att visa hjälpen."
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "Verkställ följande ändringar?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr ""
+"Gör en sista kontroll av de program som kommer att installeras eller tas "
+"bort."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "Det finns inget matchande program tillgängligt."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "Välj \"%s\" för att utöka din sökning."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "Välj \"%s\" eller \"%s\" för att utöka din sökning."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr "Välj ett annat \"Visa\"-objekt för att utöka din sökning."
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "För att utöka din sökning, välj \"Alla\" kategorier."
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "Misslyckades med att öppna \"%s\""
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "Program"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "Installation av programvara misslyckades"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "Det inträffade ett fel under installationen av följande programvara."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "Lägg till/Ta bort mer programvara"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "Installation av program misslyckades"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "Det har inträffat ett fel under installationen av följande program."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "Programvara kunde inte tas bort"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "Det inträffade ett fel under borttagningen av följande programvara."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "Inte alla program kunde tas bort"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "Det inträffade ett fel under borttagningen av följande program."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "Installation och borttagning av programvara misslyckades"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr ""
+"Det inträffade ett fel under installation eller borttagning av följande "
+"programvara."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "Installation och borttagning av program misslyckades"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr ""
+"Det inträffade ett problem under installationen eller borttagningen av "
+"följande program."
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "Nytt program har installerats"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "Nya program har installerats"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr ""
+"För att starta ett nyligen installerat program kan du välja det från "
+"programmenyn."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr ""
+"För att starta ett nyligen installerat program kan du dubbelklicka på det."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "Programvara har installerats"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "Vill du installera eller ta bort ytterligare programvara?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "Program har tagits bort"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "Vill du installera eller ta bort fler program?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "Ta bort %s och sammanslagna program?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"%s är en del av en programsamling. Om du tar bort %s kommer du även att ta "
+"bort alla sammanslagna program."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "_Ta bort alla"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "Installera %s och sammanslagna program?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"%s är en del av en programsamling. Om du installerar %s kommer du även att "
+"installera de sammanslagna programmen."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "_Installera alla"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "%s tillhandahålls av en tredjepartstillverkare."
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"Programmet levereras med följande licensvillkor. Klicka på knappen \"Aktivera"
+"\" för att acceptera dem:"
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "Acceptera licensvillkoren och installera programvaran"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "Läser in cache..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "Samlar in programdata..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "Läser in program..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "Alla"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "Läser in %s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr "Aktivera installationen av officiellt stödd Debian-programvara?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s är en del av Debians huvuddistribution. Debian tillhandahåller stöd och "
+"säkerhetsuppdateringar, vilket också kommer att aktiveras."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "Debian tillhandahåller support och säkerhetsuppdateringar för %s"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "%s stöds inte officiellt med säkerhetsuppdateringar."
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "Beskrivning"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "%s kan inte installeras"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"%s kan inte installeras på din datortyp (%s). Antingen kräver programmet "
+"speciella hårdvarufunktioner eller så har tillverkaren valt att inte erbjuda "
+"stöd för din datortyp."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+"%s finns tillgänglig i kanalen för tredjepartsprogramvara \"%s\". Klicka på "
+"kryssrutan bredvid programkanalen för att aktivera och installera den."
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "Med det här programmet medföljer följande program: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"Webbplats: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Version: %s (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "Popularitet"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "Program"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>Kontrollerar installerade och tillgängliga program</b></big>"

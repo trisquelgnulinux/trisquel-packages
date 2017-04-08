@@ -1,0 +1,19 @@
+if gnome-app-install is called as "gnome-codec-install" it will expect
+a argument like:
+
+gstreamer.net|0.10|totem|DivX MPEG-4 Version 5 decoder|decoder-video/x-divx, divxversion=(int)5 (DivX MPEG-4 Version 5 decoder)
+
+For testing run:
+$ ./gnome-codec-install 'gstreamer.net|0.10|totem|DivX MPEG-4 Version 5 decoder|decoder-video/mpeg'
+
+and search if it finds a matching codec (codecs need to be encoded
+via X-AppInstall-Codecs= field).
+
+Example codec desktop file:
+/usr/share/app-install/desktop/gstreamer-ffmepg.desktop
+
+Some example files are here:
+http://samples.mplayerhq.hu/
+
+General multimedia codec information:
+http://wiki.multimedia.cx/index.php?title=Main_Page

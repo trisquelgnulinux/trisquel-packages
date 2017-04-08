@@ -1,0 +1,764 @@
+# Hungarian translation of gnome-app-install
+# This file is distributed under the same license as the gnome-app-install package.
+# Copyright (C) 2005, Free Software Foundation, Inc.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: HEAD\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:13+0000\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
+"Language-Team: Hungarian <gnome@gnome.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "Alkalmazástelepítés forrásaként jóváhagyott komponensek"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "Ha ez igazra van állítva, akkor a főablak ablakmérete maximális."
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "Főablak magassága"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "Főablak teljes méretű állapota"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "Főablak szélessége"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"Lehetséges értékek: 0 : az összes alkalmazás mutatása 1 : csak a nyílt "
+"alkalmazások mutatása 2: - 3 : csak a támogatott alkalmazások mutatása 4 : "
+"Csak a harmadik féltől származó alkalmazások mutatása 5 : - 6 : csak a "
+"telepített alkalmazások mutatása"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "Csak néhány alkalmazás mutatása"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "Alkalmazásjavaslat a MIME típushoz: jóváhagyott komponensek"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "időtúllépés az interaktív keresésnél"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr ""
+"Időkorlát a keresőmezőbe gépelés után, amely leteltével beindul a keresés "
+"(ezredmásodperc)."
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "A gyorsítótár utolsó frissítéséhez tartozó időbélyegző"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"Ha a felhasználó meg szeretne nyitni egy fájlt, de nincs telepítve "
+"támogatott alkalmazás, a rendszer az itt felsorolt komponensekben szereplő "
+"vagy a fehérlistára egyedileg felvett alkalmazások telepítését ajánlja fel."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>Hozzáadás</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>Eltávolítás</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>A rendelkezésre álló alkalmazások listája elavult</b></big>\n"
+"\n"
+"A lista újratöltéséhez működő internetkapcsolatra van szüksége."
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "Alkalmazások hozzáadása/eltávolítása"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "Függőben lévő módosítások alkalmazása és az ablak bezárása"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "Függőben lévő módosítások törlése és az ablak bezárása"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "Kategóriák"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "Keresés:"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "Megjelenítés:"
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "A kategóriák az alkalmazások menüt képviselik"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "További alkalmazások _hozzáadása/eltávolítása"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "Változtatások _alkalmazása"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "Újr_atöltés"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "_Eltávolítás"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "Új_ra"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "alkalmazások"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "Hozzáadás/eltávolítás..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "Alkalmazások telepítése és eltávolítása"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "Csomagkezelő"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "nincs megfelelő alkalmazás"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr ""
+"Nem áll rendelkezésre ezen fájltípus kezelésére alkalmas, az automatikus "
+"telepítéshez megfelelő alkalmazás."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "nem található alkalmazás"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "Nincs ismert alkalmazás az ilyen típusú fájlokhoz."
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "Megfelelő alkalmazások keresése"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "Kis türelmet, ez eltarthat egy-két percig."
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "Kíván megfelelő kodeket keresni?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"Nincs telepítve a fájl lejátszásához szükséges program. A médiafájlok "
+"lejátszásához megfelelő kodekeket kell telepíteni. Kíván a kiválasztott "
+"fájlt támogató kodeket keresni?\n"
+"\n"
+"A keresés hivatalosan nem támogatott szoftvert is magában fog foglalni."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "Érvénytelen parancssor"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "A(z) „%s” nem érti a(z) „%s” parancssori argumentumot"
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "Megfelelő kodekek keresése"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_Telepítés"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "Médiabővítmények telepítése"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "Kodek"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "A(z) „%s” nem nyitható meg"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr ""
+"A(z) „%s” típusú dokumentumok kezelésére képes alkalmazások listája létrejön"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "Alkalmazások telepítése a(z) „%s” megnyitásához"
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "Alkalmazások telepítése"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "Kere_sés"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "Bővítmények keresése"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "A bővítmények az alkalmazást új szolgáltatásokkal bővítik."
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "Bővítmények telepítése/eltávolítása"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "Bővítmény"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"Egy alkalmazás telepítéséhez jelölje be az alkalmazás melletti "
+"jelölőnégyzetet. Törölje a négyzet kijelölését az alkalmazás eltávolításához."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr "Haladó feladatok végrehajtásához használja a Synaptic csomagkezelőt."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "Gyors bevezetés"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "Csak a telepített alkalmazások"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "Csak a számítógépen telepített alkalmazások megjelenítése"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "Hiba a kiegészítő CD olvasása közben"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "A kiegészítő CD feltehetőleg megsérült "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "Az alkalmazások listája nem érhető el."
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"Kattintson az „Újratöltés” gombra a lista frissítéséhez. A frissítéshez "
+"működő internetkapcsolatra van szükség. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "A(z) %s nem telepíthető erre a számítógéptípusra (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"Az alkalmazás vagy különleges hardverfunkciókat igényel, vagy a szállító nem "
+"támogatja az Ön számítógépének típusát."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "„%s” nem telepíthető"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"Ez az alkalmazás ütközik egy másik telepített szoftverrel. A(z) „%s” "
+"telepítéséhez előbb el kell távolítani az ütköző szoftvert.\n"
+"\n"
+"Az ütközés feloldásához váltson a „synaptic” csomagkezelőre."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "„%s” nem távolítható el"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"Legalább egy alkalmazás függ a következőtől: %s. A(z) %s és minden attól "
+"függő alkalmazás eltávolításához használja a Synaptic csomagkezelőt."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "_Megerősítés"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "Engedélyezi a szoftvertelepítést a következő helyről: %s?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr ""
+"A következőt harmadik fél szállítja: %s. A támogatásért és a biztonsági "
+"frissítésekért a harmadik fél felel."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "A folytatáshoz működő internetkapcsolatra van szükség."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "_Engedélyezés"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "A telepített és elérhető alkalmazások ellenőrzése meghiúsult"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Ez a szoftverkezelő rendszer súlyos hibáját jelzi. Ellenőrizze a törött "
+"csomagokat a Synaptickal, ellenőrizze a fájl jogosultságait és az /etc/apt/"
+"sources.list fájl helyességét, majd töltse újra a szoftverinformációkat a "
+"„sudo apt-get update” és „sudo apt-get install -f” parancsok kiadásával."
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "Alkalmazza a telepített alkalmazások változtatásait kilépés előtt?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr "Ha nem alkalmazza a módosításokat, akkor azok véglegesen elvesznek."
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "Be_zárás alkalmazás nélkül"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "Nem áll rendelkezésre segítség."
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "A segítség megjelenítéséhez telepítse a „yelp” alkalmazást."
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "Alkalmazza a következő módosításokat?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr ""
+"Vessen egy utolsó pillantást a telepítendő vagy eltávolítandó alkalmazások "
+"listájára."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "Nem érhető el megfelelő alkalmazás"
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "A keresés kibővítéséhez válassza a következő szűrőt: „%s”"
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "A keresés kibővítéséhez válassza a(z) „%s” vagy „%s” szűrőt."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr ""
+"A keresés kibővítéséhez válasszon másik elemet a „Megjelenítés” mezőből."
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "A keresés szélesítéséhez válassza az „Összes” kategóriát."
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "Nem sikerült megnyitni a(z) „%s” fájlt."
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "Alkalmazások"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "A szoftvertelepítés meghiúsult"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "Hiba lépett fel a következő szoftverek telepítése során."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "További szoftverek hozzáadása/eltávolítása"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "Az alkalmazástelepítés meghiúsult"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "Hiba lépett fel a következő alkalmazások telepítése során."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "A szoftver nem távolítható el"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "Hiba lépett fel a következő szoftverek eltávolítása során."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "Nem sikerült minden alkalmazást eltávolítani"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "Hiba lépett fel a következő alkalmazások eltávolítása során."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "A szoftvertelepítés és -eltávolítás meghiúsult"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr ""
+"Hiba lépett fel a következő szoftverek telepítése vagy eltávolítása során."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "Az alkalmazások telepítése és eltávolítása meghiúsult"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr ""
+"Hiba lépett fel a következő alkalmazások telepítése vagy eltávolítása során."
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "Új alkalmazás került telepítésre"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "Új alkalmazások kerültek telepítésre"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr ""
+"Az újonnan telepített alkalmazás elindításához válassza ki azt az "
+"Alkalmazások menüből."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr "Az újonnan telepített alkalmazás elindításához kattintson rá kétszer."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "A szoftver telepítése sikerült."
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "Kíván további szoftvereket telepíteni vagy eltávolítani?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "Az alkalmazások eltávolítása sikerült."
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "Kíván további alkalmazásokat telepíteni vagy eltávolítani?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr ""
+"Eltávolítja a(z) %s alkalmazást és a vele közös csomagot használó "
+"alkalmazásokat?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"A(z) %s egy szoftvergyűjtemény része. Ha eltávolítja a(z) %s alkalmazást, "
+"akkor a közös csomagot használó többi alkalmazást is eltávolítja."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "Összes _eltávolítása"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr ""
+"Telepíti a(z) %s alkalmazást és a vele közös csomagot használó "
+"alkalmazásokat?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"A(z) %s egy szoftvergyűjtemény része. Ha telepíti a(z) %s alkalmazást, akkor "
+"a vele közös csomagot használó többi alkalmazást is telepíti."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "Összes _telepítése"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "A következőt harmadik fél szállítja: %s."
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"Az alkalmazás a következő licencfeltételekkel telepíthető. Kattintson az "
+"„Engedélyezés” gombra ezek elfogadásához:"
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "A licencfeltételek elfogadása és a szoftver telepítése"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "Gyorsítótár betöltése..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "Alkalmazásadatok összegyűjtése..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "Alkalmazások betöltése..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "Összes"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "%s betöltése..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr "Engedélyezi a hivatalosan támogatott Debian szoftver telepítését?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"A(z) %s a Debian „main” disztribúció része. A Debian támogatást és "
+"biztonsági frissítéseket biztosít, amelyek szintén engedélyezve lesznek."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr ""
+"A Debian támogatást és biztonsági frissítéseket biztosít a(z) „%s” csomaghoz"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "A következő nincs hivatalosan támogatva biztonsági frissítésekkel: %s"
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "Leírás"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "A(z) %s nem telepíthető"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"A(z) %s nem telepíthető az Ön által használt számítógéptípusra (%s). Az "
+"alkalmazás vagy különleges hardverfunkciókat igényel, vagy a szállító nem "
+"támogatja az Ön számítógépének típusát."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+"A(z) %s a „%s” harmadik féltől származó szoftverforrásból beszerezhető. A "
+"telepítéshez aktiválja a szoftverforrás melletti jelölőnégyzet "
+"kiválasztásával."
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr ""
+"Az alkalmazás közös telepítőcsomagot használ a következő alkalmazásokkal: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"Honlap: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Verzió: %s (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "Népszerűség"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "Alkalmazás"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>Telepített és elérhető alkalmazások ellenőrzése</b></big>"

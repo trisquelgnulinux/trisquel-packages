@@ -1,0 +1,734 @@
+# translation of gnome-app-install.HEAD.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Yuval Tanny, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install.HEAD\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:13+0000\n"
+"Last-Translator: Michael Vogt <michael.vogt@ubuntu.com>\n"
+"Language-Team: Hebrew <he@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "רכיבים שאושר להתקין מהם יישומים"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "אם true, החלון הראשי מוגדל."
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "גובה החלון הראשי"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "מצב ההגדלה של החלון"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "רוחב חלון ראשי"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"ערכים אפשריים: 0 : הראה את כל הישומים הזמינים 1 : הראה רק ישומים חופשיים 2 : "
+"-3 : הראה רק ישומים נתמכים 4 : הראה רק ישוצים מצד שלישי 5 : -6 : הראה רק "
+"ישומים מותקנים"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "הצגת תת-קבוצה של יישומים"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "הצע ישום עבור ישום מסוג MIME: רכיבים מאושרים"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "זמן תפוגה לחיפוש אינטראקטיבי"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr "זמן תפוגה מהקלדה בתיבת החיפוש עד הפעלת החיפוש (במילי-שניות)."
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "חותמת זמן של ריצת עדכון המטמון האחרונה"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"כאשר המשתמש מבקש לפתוח קובץ אך אין בנמצא יישום תומך, המערכת תציע להתקין "
+"יישומים ברכיבים הרשומים כאן וביישומים אשר נבחרו באופן אישי."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>הוספה</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>הסרה</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>רשימת היישומים הזמינים אינה מעודכנת</b></big>\n"
+"\n"
+"יש צורך בחיבור אינטרנט פעיל כדי לעדכן אותה."
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "התקנה/הסרה של ישומים"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "החל את השינויים וסגור את החלון"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "בטל את השינויים וסגור את החלון"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "קטגוריות"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "חיפוש:"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "הצג:"
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "הקטגוריות מייצגות את תפריט היישומים"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "התקנה\\הסרה של יישומים נוספים"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "_החל שינויים"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "_רענן"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "_הסרה"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "נסה _שנית"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "יישומים"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "התקנה/הסרה..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "התקנה והסרה של יישומים"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "מנהל חבילות"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "אין יישומים מתאימים"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr "לא נמצא יישום הזמין להתקנה אוטומטית המאפשר שימוש בסוג קובץ זה."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "לא נמצאו יישומים"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "לא ידוע על יישום המאפשר שימוש בסוג קובץ זה."
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "מחפש יישומים מתאימים"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "נא להמתין, התהליך עשוי לקחת דקה או שתיים."
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "האם לחפש ממקודד מתאים?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"התוכנה הנדרשת להשמעת קובץ זה אינה מותקנת. יש להתקין מפענחים להשמעת קבצי "
+"מדיה. האם ברצונך לחפש אחר מפענחים התומכים בקובץ הנבחר?\n"
+"\n"
+"החיפוש יכיל גם תוכנות שאינן נתמכות באופן רשמי."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "שורת פקודה לא חוקית"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "'%s' לא מבין את ארגומנט שורת הפקודה '%s'"
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "מחפש אחר מפענחים הולמים"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_התקנה"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "התקן תוספי מדיה"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "מפענח"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "פתיחת הקובץ \"%s\" אינה אפשרית"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr "תיווצר רשימת יישומים המאפשרים את הטיפול בקבצי '%s'"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "התקנת יישומים אשר יאפשרו את פתיחת הקובץ \"%s\""
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "התקת יישומים"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "_חיפוש"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "חיפוש אחר הרחבות"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "הרחבות מאפשרות לך להוסיף ליישומים תכונות חדשות"
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "התקנה\\הסרה של הרחבות"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "סיומת"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"כדי להתקין יישום, סמן את התיבה ליד שם היישום. הסר את סימון מהתיבה כדי להסיר "
+"את היישום."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr "כדי לבצע משימות מתקדמות השתמשו במנהל החבילות Synaptic."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "הקדמה קצרה"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "התקן יישומים בלבד"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "הצגת היישומים המותקנים במחשבך"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "תקלה בקריאת תקליטור התוספות"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "תוסף ה־CD כנראה פגום. "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "רשימת היישומים אינה זמינה"
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"לחצו על 'רענן' כדי לטעון. כדי לטעון את הרשימה יש צורך בחיבור פעיל לאינטרנט. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "לא ניתן להתקין את %s על סוג המחשב שלך (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"התוכנה עשויה לדרוש חלקי חומרה מיוחדים, או שיצרנה לא החליט לתמוך במחשבך עדיין."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "נכשלה התקנת '%s'"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"יישום זה מתנגש עם תוכנה אחרת המותקנת במחשבך. להתקנת '%s' יש להסיר את התכנה "
+"המתנגשת.\n"
+"\n"
+"עבור לשימוש במנהל החבילות 'synaptic' כדי להתגבר על בעיה זו."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "נכשלה הסרת '%s'"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"תוכנה אחת או יותר תלויות ב-%s. כדי להסיר את %s ואת התכנות התלויות בה, עשו "
+"זאת במנהל החבילות Synaptic."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "מ_אשר"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "האם לאפשר התקנת תוכנה שמקורה ב-\"%s\" ?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr "צד שלישי מספק את %s. היצרן של התכנה אחראי לתמיכה בה, ולעדכוני האבטחה."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "יש צורך בחיבור פעיל לאינטרנט כדי להמשיך."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "_אפשר"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "החיפוש אחר יישומים מותקנים וזמינים נכשל"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"זו תקלה חמורה במערכת ניהול התכנות. בדוק אם יש חבילות שבורות בעזרת synaptic, "
+"בדוק את ההרשאות והתקינות של הקובץ '/etc/apt/sources.list' ותטען מחדש את "
+"נתוני התכנות עם: 'sudo apt-get update' ו- 'sudo apt-get install -f'."
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "האם לבצע את השינויים בתוכנות המותקנות לפני הסגירה?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr "אם לא תבצעו את השינויים הם יאבדו לצמיתות."
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "_סגירה מבלי לבצע"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "אין עזרה זמינה"
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "בכדי להציג את העזרה, יש להתקין את היישום \"yelp\"."
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "האם לבצע את השינויים הבאים?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr "אנא בצעו בדיקה סופית של רשימת היישומים שיותקנו או יוסרו."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "אין יישום מתאים זמין."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "להרחבת החיפוש בחר \"%s\"."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "להרחבת החיפוש בחרו \"%s\" או \"%s\"."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr "להרחבת החיפוש בחרו בפריט אחר מתיבת הבחירה \"הצג\"."
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "כדי להרחיב את החיפוש, בחרו בקטגוריה \"הכל\"."
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "פתיחת הקובץ \"%s\" נכשלה."
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "יישומים"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "התקנת תכנה נכשלה"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "נמצאה תקלה בעת התקנת חלקי התוכנה הבאים."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "הוספה/הסרה של תכנות נוספות"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "התקנת יישום נכשלה"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "התגלו בעיות במהלך התקנת היישומים הבאים."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "לא ניתן להסיר את התכנה"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "נמצאה תקלה בעת הסרת חלקי התוכנה הבאים."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "לא כל היישומים הוסרו"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "התגלתה בעיה במהלך הסרת היישומים הבאים."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "התקנה והסרה של תכנה נכשלה"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr "נמצאה תקלה בעת התקנת או הסרת חלקי התוכנה הבאים."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "התקנה והסרה של יישומים נכשלה"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr "התגלתה בעיה במהלך ההתקנה או ההסרה של היישומים הבאים."
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "הותקנו יישומים חדשים"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "הותקנו יישומים חדשים"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr "כדי להתחיל בהתקנת יישומים בחר באפשרות זו מתפריט היישומים."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr "בכדי להתחיל יישום שהותקן הקלק עליו פעמיים."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "תכנה הותקנה בהצלחה"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "אתם רוצים להסיר או להתקין תכנות נוספות?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "היישומים הוסרו בהצלחה"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "האם ברצונך להתקין או להסיר יישומים נוספים?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "האם להסיר את %s ואת היישומים הנלווים?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"היישום %s הוא חלק מאוסף תכנה. אם %s יוסר, כל היישומים באוסף יוסרו גם כן."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "_הסר הכל"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "האם להתקין את %s ואת היישומים הנלווים?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"היישום %s הוא חלק מאסף תוכנה. אם %s יותקן, כל היישומים באוסף יותקנו גם כן."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "_התקן הכל"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "היישום %s מסופק על ידי יצרן צד שלישי."
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"היישום מותקן תחת הרישיון והתנאים הבאים. לחץ 'אפשר' לאישור הסכמתך לרישיון "
+"ולתנאים:"
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "אשר את קבלת תנאי הרישיון והתקן את התכנה"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "טוען מטמון..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "אוסף את נתוני היישום..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "טוען יישומים..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "הכל"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "טוען את %s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr "האם לאפשר התקנת תוכנה הנתמכת באופן רשמי על-ידי דביאן?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s שייך לרכיב הראשי של הפצת דביאן. דביאן מספקת תמיכה ועדכוני אבטחה, אשר "
+"יופעלו גם כן."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "דביאן מספקת תמיכה ועידכוני אבטחה עבור %s."
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "%s אינה נתמכת רשמית עם עדכוני אבטחה."
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "תיאור"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "לא ניתן להתקין את %s"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"לא ניתן להתקין את %s על סוג המחשב שלך (%s). התכנה עשויה לדרוש חומרה מיוחדת "
+"או שיצרנה לא החליט לתמוך בסוג מחשבים זה עדיין."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+"%s זמין בערוץ תוכנת צד שלישי %s. להתקנה יש לסמן את התיבת בחירה כדי להפעיל את "
+"ערוץ התוכנה."
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "היישום הזה כרוך עם היישומים הבאים: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"דף הבית: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "גרסה %s  (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "פופולריות"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "יישום"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>בדיקת היישומים המותקנים והיישומים הזמינים להתקנה</b></big>"

@@ -1,0 +1,771 @@
+# Catalan translation of gnome-app-install
+# Copyright (C) 2006 Canonical Ltd, and Rosetta Contributors
+# This file is distributed under the same license as the gnome-app-install package.
+# Jordi Irazuzta <irazuzta@gmail.com>, 2006.
+# Jordi Sayol Salomó <jordisayol@gmail.com>, 2006.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:12+0000\n"
+"Last-Translator: Siegfried Gevatter <rainct@ubuntu.com>\n"
+"Language-Team: Català <ubuntu-l10n-ca@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"X-Poedit-Language: Catalan\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "Components que han estat habilitats per a instaŀlar aplicacions"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "Si és cert, la finestra principal està maximitzada."
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "Alçada de la finestra principal"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "Estat de maximització de la finestra principal"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "Amplada de la finestra principal"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"Valors possibles: 0: mostra totes les aplicacions disponibles, 1: mostra "
+"només les aplicacions lliures, 2: -, 3: mostra només les aplicacions "
+"suportades, 4: mostra només les aplicacions de tercers, 5: -, 6: mostra "
+"només les aplicacions instaŀlades"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "Mostra només un subconjunt de les aplicacions"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "Suggereix una aplicació per al tipus MIME: components aprovats"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "Temps d'espera per a la cerca interactiva"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr ""
+"Temps d'espera des de l'últim tecleig al camp de cerca fins que comença la "
+"cerca (en miŀlisegons)."
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "Marca horària de l'últim refresc de la memòria cau"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"Quan l'usuari intenta obrir un tipus d'arxiu per al qual no hi ha cap "
+"aplicació adient instaŀlada, se li oferirà la instaŀlació d'aplicacions tant "
+"dels components llistats aquí com d'una selecció d'altres aplicacions "
+"aprovades."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>Afegeix</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>Elimina</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>La llista d'aplicacions disponibles no està actualizada</b></big>\n"
+"\n"
+"Per actualitzar la llista necessiteu una connexió operativa a Internet."
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "Afegeix/Elimina aplicacions"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "Aplica els canvis pendents i tanca la finestra"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "Cancel·la els canvis pendents i tanca la finestra"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "Categories"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "Cerca:"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "Mostra:"
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "Les categories representen el menú d'aplicacions"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "_Afegeix/Elimina més aplicacions"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "_Aplica els canvis"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "_Actualitza"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "_Elimina"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "_Torna a intentar"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "aplicacions"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "Afegeix/Elimina..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "Instal·la i elimina aplicacions"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "Gestor de paquets"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "cap aplicació apropiada"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr ""
+"No hi ha cap aplicació disponible que es pugui instaŀlar automàticament per "
+"a aquest tipus d'arxiu."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "no s'ha trobat cap aplicació"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "No es coneix cap aplicació per a aquest tipus de fitxer."
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "S'estan cercant les aplicacions adequades"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "Espereu. Això pot trigar un parell de minuts."
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "Voleu que cerqui un còdec apropiat?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"El programari necessari per reproduir aquest arxiu no està instaŀlat. Heu "
+"d'instaŀlar còdecs apropiats per poder reproduir arxius multimèdia. Voleu "
+"que cerqui un còdec adient per a l'arxiu seleccionat?\n"
+"\n"
+"La cerca també inclourà programari que no està mantingut oficialment."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "Ordre invàlida"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "«%s» no accepta l'argument «%s»"
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "S'estan cercant còdecs apropiats"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_Instal·la"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "Instaŀla connectors multimèdia"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "Còdec"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "no s'ha pogut obrir «%s»"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr ""
+"Es crearà una llista d'aplicacions que puguin gestionar documents del tipus «%"
+"s»"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "Instaŀla aplicacions per a obrir «%s»"
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "Instaŀla aplicacions"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "_Cerca"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "S'estan cercant extensions"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "Les extensions us permeten afegir noves funcionalitats a l'aplicació."
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "Instaŀla/elimina extensions"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "Extensió"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"Si voleu instal·lar una aplicació marqueu-ne el quadre associat. De la "
+"mateixa manera si la voleu eliminar desmarqueu el quadre associat a "
+"l'aplicació."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr ""
+"Per realitzar tasques avançades feu servir el gestor de paquets Synaptic."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "Introducció ràpida"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "Nomeś les aplicacions instal·lades"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "Mostra només les aplicacions instal·lades al vostre ordinador"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "Error en llegir el CD de complements"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "Pot ser que el CD de complements estigui malmès "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "El llistat d'aplicacions no està disponible."
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"Premeu 'Actualitza' per carregar-ho. Per actualitzar la llista necessiteu "
+"una connexió operativa a Internet. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "%s no es pot instal·lar al vostre tipus d'ordinador (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"Pot ser que l'aplicació requereixi maquinari especial o bé el proveïdor ha "
+"decidit no oferir compatibilitat amb el vostre tipus d'ordinador."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "No es pot instaŀlar «%s»"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"Aquesta aplicació té un conflicte amb un altre programa instaŀlat, que heu "
+"d'eliminar si voleu instaŀlar «%s».\n"
+"\n"
+"Utilitzeu el gestor de paquets Synaptic per solucionar aquest conflicte."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "No es pot eliminar «%s»"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"Una o més aplicacions depenen de %s. Per eliminar %s i les aplicacions "
+"dependents, feu servir el gestor de paquets Synaptic."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "_Confirma"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "Voleu habilitar la instaŀlació de programari de %s?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr ""
+"%s l'ha proporcionat un proveïdor extern. Aquest és el responsable de "
+"proveir ajuda i actualitzacions de seguretat."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "Per continuar necessiteu una connexió operativa a Internet."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "_Activa"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr ""
+"No s'ha pogut fer la verificació de les aplicacions instaŀlades i disponibles"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Aquesta és una fallada greu del vostre sistema de gestió de paquets. "
+"Comproveu mitjançant el Synaptic que no hi hagi paquets trencats, que "
+"l'arxiu «/etc/apt/sources.list» tingui els permisos i el contingut adequats i "
+"actualitzeu la informació de programari amb: «sudo apt-get update» i «sudo apt-"
+"get install -f»."
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr ""
+"Voleu aplicar els canvis a les aplicacions instaŀlades abans de tancar?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr "Si no apliqueu els vostres canvis els perdreu."
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "Tan_ca sense aplicar els canvis"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "No hi ha ajuda disponible"
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "Per a veure l'ajuda, heu d'instaŀlar l'aplicació «yelp»."
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "Voleu aplicar els canvis següents?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr ""
+"Feu una darrera ullada a la llista d'aplicacions que instaŀlareu o "
+"eliminareu."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "No hi ha cap aplicació coincident disponible."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "Per ampliar la vostra cerca, trieu «%s»."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "Per ampliar la vostra cerca, trieu «%s» o «%s»."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr ""
+"Per ampliar la vosta cerca, trieu una altre element a la caixa «Mostra»."
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "Per ampliar la vostra cerca, trieu «Totes les categories»."
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "No s'ha pogut obrir «%s»"
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "Aplicacions"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "No s'ha pogut instaŀlar el programari"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "Hi ha hagut un problema en instaŀlar el següent programari."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "Afegeix/elimina més programari"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "No s'ha pogut instaŀlar l'aplicació"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "Hi ha hagut un problema en instaŀlar les següents aplicacions."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "Hi ha programari que no s'ha pogut eliminar"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "Hi ha hagut un problema al eliminar el següent programari."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "No s'han pogut eliminar totes les aplicacions"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "Hi ha hagut un problema al eliminar les següent aplicacions."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "La instaŀlació i l'eliminació de programari ha fallat"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr "Hi ha hagut un problema en instaŀlar o eliminar el següent programari."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "La instaŀlació i l'eliminació de les aplicacions ha fallat"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr ""
+"Hi ha hagut un problema durant la instaŀlació o l'eliminació de les següents "
+"aplicacions:"
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "S'ha instaŀlat una nova aplicació"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "S'han instaŀlat aplicacions noves"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr ""
+"Per iniciar una aplicació recentment instaŀlada, seleccioneu-la al menú "
+"d'aplicacions."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr ""
+"Per iniciar una aplicació recentment instaŀlada, feu doble clic sobre ella."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "S'ha instaŀlat el programari satisfactòriament"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "Voleu continuar instaŀlant o eliminant més programari?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "S'han eliminat les aplicacions satisfactòriament"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "Voleu continuar instaŀlant o esborrant més aplicacions?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "Voleu eliminar %s i les aplicacions que hi estan lligades?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"%s és part d'una coŀlecció de programari. Si esborreu %s, també esborrareu "
+"totes les aplicacions lligades del paquet."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "Elimina-_ho tot"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "Instaŀlar %s i les aplicacions lligades?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"%s és part d'una coŀlecció de programari. Si instaŀleu %s, també "
+"s'instaŀlaran totes les aplicacions que hi van lligades."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "_Instaŀla-ho tot"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "%s és proporcionat per un proveïdor extern."
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"La aplicació ve amb la següent llicència. Premeu el botó «Habilita» per "
+"acceptar-la:"
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "Accepta els termes de la llicència i instaŀla el programari"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "S'està carregant la memòria cau..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "S'estan recollint dades de l'aplicació..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "S'estan carregant les aplicacions..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "Tot"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "S'està carregant %s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr ""
+"Voleu habilitar la instaŀlació del programari mantingut oficialment per "
+"Debian?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s forma part de la distribució principal de Debian. Debian proporciona "
+"ajuda i actualitzacions de seguretat, que també s'habilitaran."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "Debian proporciona ajuda i actualitzacions de seguretat per a %s"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "%s no rep actualitzacions de seguretat de forma oficial."
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "Descripció"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "%s no es pot instaŀlar"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"%s no es pot instaŀlar al vostre tipus d'ordinador (%s). Pot ser que "
+"l'aplicació requereixi maquinari especial o bé el proveïdor ha decidit no "
+"oferir compatibilitat amb el vostre tipus d'ordinador."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+"%s està disponible en el canal de programari de tercers «%s». Per a instaŀlar-"
+"lo, feu clic a la casella de selecció per a activar el canal."
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "Aquesta aplicació està lligada amb les aplicacions següents: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"Lloc web: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Versió: %s (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "Popularitat"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "Aplicació"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>S'estan comprovant les aplicacions instal·lades i disponibles</b></"
+"big>"

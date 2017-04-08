@@ -1,0 +1,79 @@
+Application Install Tool 
+for the list of authors, see the AUTHORS file
+
+
+The application presents to the user a list of applications which can be
+installed or removed.  These applications are either end-user applications (such
+as OpenOffice, GIMP, Pidgin) or server-side roles (HTTP server, FTP server).
+These can be added and removed by toggling a check box.  The applications will
+be shown in a tree identical to the Applications menu on the panel, and system
+roles in a separate list.
+
+The package information based on Freedesktop .desktop files.  This is due to all
+end-user applications already having a .desktop file which can be extended with
+a small amount of metadata for use by the application install tool.  These
+.desktop files will be extracted from the Hoary archive automatically and a
+package solely containing .desktop files and the relevant icons created.
+
+For a package to be available the .desktop file must have a X-AppInstall-Package
+key under the [Desktop Entry] group, which is the name of the package the
+desktop file relates too.  The Name, Comment and Icon keys will be used in the
+interface.
+
+
+Example 1: Sound Juicer
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=Sound Juicer CD Ripper
+Comment=Extract music from your CDs
+Exec=sound-juicer
+Icon=sound-juicer.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;Application;AudioVideo;
+X-AppInstall-Package=sound-juicer
+
+The only change here from the upstream .desktop file is the X-AppInstall-Package
+key, which marks this application as to be displayed in the interface. The
+existing Name, Comment and Icon fields are displayed to the user in the
+interface.
+
+
+Example 2: OpenOffice.org
+
+OpenOffice.org installs a number of .desktop files, none of which are suitable
+for displaying in an Application Install tool as they are for particular aspects
+of the suite (i.e. Writer or Impress).  In this case a new .desktop file is
+added to the package, which contains the required information alongside a
+Hidden=true key.  The Hidden key ensures that it won't be displayed in any
+application menus, but can be picked up by the Application Install Tool.
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=OpenOffice.org
+Comment=Powerful office suite
+Icon=ooo.png
+Type=Application
+Categories=GNOME;Application;Office;
+X-AppInstall-Package=openoffice.org
+
+
+The menu layout is based upon the Freedesktop menu specification.  Currently
+GNOME does not support this standard, but hopefully GNOMEE 2.10 will.  At the
+moment the Application Install Tool includes a copy of the Applications menu
+structure in the Freedesktop menu format, which can be removed if GNOME 2.10
+does move to it. [note: this depends on API additions to PyXDG]
+
+
+TODO: Instead of X-AppInstall-Package, use X-AppInstall-Packages which is a list
+of required packages.  This will primarily used for the "Web Server" role which
+would require "apache-mpm-worker" and "apache2-doc" at least.  The UI should
+represent partial-installs and allow the user to fully install or remove a
+partial install.  I'm not sure if this or enforcing Recommends: to be installed
+is a better solution.
+
+TODO: Currently the X-AppInstall-Icon key is used in preference over the Icon
+key if the standard Icon is not suitable.  I'm not sure there is a solid
+use-case for this.

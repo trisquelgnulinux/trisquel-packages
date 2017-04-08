@@ -1,0 +1,62 @@
+FEISTY:
+-------
+* support dependency to multi components+channels
+
+
+DAPPER + 1:
+-----------
+* show if the application is "free", "unsupported", "commercial"
+  [done]
+* make it easy to show *only* applications of a given category
+  [done]
+* make it possible to have "Proprietary+License+section(=multiverse)",
+  currently we can only show licenses if the thing is in a 3rd party
+  channel (ie not in "multiverse")
+
+FIXLIST:
+-------
+- DialogProprietary can't be cancelt while it downloads the license from the
+  net
+- some icons are not rendered by gtkhtml2 [done]
+- some apps that are not available for the given hardware plattform
+  (e.g. realplay on amd64) show "enable multiverse" buttons even when 
+  multiverse is enabled [done]
+- restore the stored state at startup time (?)
+
+dependency handling:
+--------------------
+
+* how to prevent meta packages from locking a lot of packages. e.g.
+  "ubuntu-desktop"?
+* how to solve package conflicts?
+
+user interface:
+--------------
+
+* store the state of the treeviews and the search 
+* replace the html rendering for the description with a gtktextview
+  [done]
+
+
+non-root-mode:
+--------------
+* problem: some operations require two root subprocess calls, e.g.
+           enable a channel requires to copy and then reload
+
+cleanups:
+---------
+- redo the mime-search [done]
+
+3rd party packages:
+-------------------
+- keys: how to update the channel keys when they are e.g. expired?
+
+misc:
+-----
+
+- get rid of that terrible stores and move the bits into a "application"
+  class so that the store only contains "name" and "application-class"
+  [done]
+- abstract the apt bits out to make it easy to port to smart
+- aptsources.py should go into python-apt (currently in update-manager),
+  that makes us get rid of the update-manager dependency

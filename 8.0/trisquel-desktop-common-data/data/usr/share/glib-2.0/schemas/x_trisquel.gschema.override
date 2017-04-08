@@ -1,0 +1,113 @@
+[org.mate.session.required-components]
+windowmanager='marco-compton'
+
+[org.mate.panel]
+default-layout='trisquel'
+
+[org.mate.panel.object]
+has-arrow = false
+
+[org.mate.panel.toplevel.background]
+opacity=30000
+color='#000000'
+type='color'
+
+[org.mate.marco.general]
+theme = 'Trisquel'
+titlebar-font = 'Roboto Bold 9'
+compositing-manager = false
+
+[org.mate.marco.global-keybindings]                                                              
+switch-panels='<Primary>Tab'
+
+[org.mate.background]
+show-desktop-icons=true
+picture-filename='/usr/share/backgrounds/belenos.png'
+picture-options='stretched'
+color-shading-type='solid'
+primary-color='#000000000000'
+
+[org.mate.interface]
+menus-have-icons=true
+buttons-have-icons=true
+document-font-name='Roboto 10'
+enable-animations=true
+font-name='Roboto 9'
+gtk-theme='Trisquel'
+icon-theme='trisquel'
+monospace-font-name='Dejavu Sans Mono 10'
+toolbar-style='icons'
+
+[org.mate.caja.desktop]
+font='Roboto Medium 9'
+home-icon-visible=true
+network-icon-visible=true
+trash-icon-visible=true
+volumes-visible=true
+
+[org.gnome.gnome-system-log]
+logfile='/var/log/syslog'
+logfiles=['/var/log/auth.log', '/var/log/dpkg.log', '/var/log/mail.log', '/var/log/syslog', '/var/log/Xorg.0.log']
+
+[org.gnome.desktop.lockdown]
+disable-user-switching = true
+
+[org.gnome.settings-daemon.plugins.updates]
+enable-check-firmware = false
+
+[org.gnome.settings-daemon.plugins.xsettings]
+antialiasing = 'rgba'
+hinting = 'slight'
+
+[org.gnome.desktop.background]
+show-desktop-icons=true
+picture-uri='file:///usr/share/backgrounds/belenos.png'
+picture-options='stretched'
+color-shading-type='solid'
+
+[org.gnome.desktop.interface]
+menus-have-icons=true
+buttons-have-icons=true
+cursor-theme='DMZ-White'
+document-font-name='Serif 10'
+enable-animations=true
+font-name='Sans 8'
+gtk-theme='Trisquel'
+icon-theme='trisquel'
+monospace-font-name='Monospace Bold 9'
+
+[org.gnome.desktop.sound]
+event-sounds=true
+
+[org.gnome.gnome-panel.layout.toplevels.panel.background]
+image-uri='file:///usr/share/themes/Trisquel/gtk-3.0/panel-bg.png'
+type='image'
+
+[org.gnome.nautilus.desktop]
+font='Sans Bold 8'
+home-icon-visible=true
+network-icon-visible=true
+trash-icon-visible=true
+volumes-visible=true
+
+[system.smb]
+workgroup='TRISQUEL'
+
+[com.canonical.indicator.keyboard]
+visible=false
+
+[org.gnome.desktop.wm.preferences]
+button-layout='menu:minimize,maximize,close'
+titlebar-font='Sans Bold 9'
+theme='Trisquel'
+mouse-button-modifier='<Alt>'
+
+[org.freedesktop.ibus.panel]
+show-icon-on-systray=false
+
+[com.ubuntu.update-notifier]
+show-apport-crashes = false
+
+[org.freedesktop.ibus.general.hotkey]
+triggers=['<Super>space']
+

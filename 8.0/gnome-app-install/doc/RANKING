@@ -1,0 +1,15 @@
+RANKING OF THE SEARCH RESULTS
+
+Possible values:
+ 
+ * application name
+ * package description
+ * package name
+ * popcon data
+ * freeness
+ * mime type handler
+ * desktop environment
+
+Approaches:
+ 
+ * Use multiplier for the popcon

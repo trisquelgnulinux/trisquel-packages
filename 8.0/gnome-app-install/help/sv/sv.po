@@ -1,0 +1,409 @@
+# Swedish translation of gnome-app-install.
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# Daniel Nylander <po@danielnylander.se>, 2006.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-05-09 20:33+0200\n"
+"PO-Revision-Date: 2006-10-07 17:00-0700\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:184(None)
+msgid "@@image: './figures/main_window.png'; md5=966bf2d1891220a30ef231bf0c0bc2cb"
+msgstr "@@image: './figures/main_window.png'; md5=966bf2d1891220a30ef231bf0c0bc2cb"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:226(None)
+msgid "@@image: './figures/search_apps.png'; md5=203398c7eaacad516ffe760faabd8782"
+msgstr "@@image: './figures/search_apps.png'; md5=203398c7eaacad516ffe760faabd8782"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:243(None)
+msgid "@@image: './figures/add_apps.png'; md5=0f9fb1d2a138c2956f97483caea0a23b"
+msgstr "@@image: './figures/add_apps.png'; md5=0f9fb1d2a138c2956f97483caea0a23b"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:255(None)
+msgid "@@image: './figures/download_apps.png'; md5=99e7e323ef1b1645f42363c52d657f7c"
+msgstr "@@image: './figures/download_apps.png'; md5=99e7e323ef1b1645f42363c52d657f7c"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:268(None)
+msgid "@@image: './figures/configure_install_apps.png'; md5=f9c65ab39c3825e48061146448571748"
+msgstr "@@image: './figures/configure_install_apps.png'; md5=f9c65ab39c3825e48061146448571748"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:281(None)
+msgid "@@image: './figures/new_apps.png'; md5=9e8ec366241db7e4db55b7a06e94b04e"
+msgstr "@@image: './figures/new_apps.png'; md5=9e8ec366241db7e4db55b7a06e94b04e"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:299(None)
+msgid "@@image: './figures/remove_apps.png'; md5=13e3180ab9f6831262c73c5e8f58b0c7"
+msgstr "@@image: './figures/remove_apps.png'; md5=13e3180ab9f6831262c73c5e8f58b0c7"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/gnome-app-install.xml:312(None)
+msgid "@@image: './figures/configure_remove_apps.png'; md5=44920c27907cfe7ad92cc13f2d523164"
+msgstr "@@image: './figures/configure_remove_apps.png'; md5=44920c27907cfe7ad92cc13f2d523164"
+
+#: C/gnome-app-install.xml:23(title)
+msgid "Install and Remove Applications"
+msgstr "Installera och ta bort program"
+
+#: C/gnome-app-install.xml:36(publishername)
+msgid "Ubuntu Documentation Project"
+msgstr "Ubuntus dokumentationsprojekt"
+
+#: C/gnome-app-install.xml:44(firstname)
+msgid "Jerome"
+msgstr "Jerome"
+
+#: C/gnome-app-install.xml:45(surname)
+msgid "Gotangco"
+msgstr "Gotangco"
+
+#: C/gnome-app-install.xml:46(email)
+msgid "jgotangco@ubuntu.com"
+msgstr "jgotangco@ubuntu.com"
+
+#: C/gnome-app-install.xml:51(revnumber)
+msgid "V 1.0"
+msgstr "V 1.0"
+
+#: C/gnome-app-install.xml:52(date)
+msgid "22/02/2006"
+msgstr "2006-02-22"
+
+#: C/gnome-app-install.xml:54(para)
+msgid "First version of document for Ubuntu 6.06 <email>jgotangco@ubuntu.com</email>"
+msgstr "Första versionen av dokumentet för Ubuntu 6.06 <email>jgotangco@ubuntu.com</email>"
+
+#: C/gnome-app-install.xml:60(revnumber)
+msgid "V 1.1"
+msgstr "v1.1"
+
+#: C/gnome-app-install.xml:61(date)
+msgid "02/04/2006"
+msgstr "2006-04-02"
+
+#: C/gnome-app-install.xml:63(para)
+msgid "New screenshots to reflect Ubuntu distribution changes <email>jgotangco@ubuntu.com</email>"
+msgstr "Nya skärmbilder för att spegla ändringarna i Ubuntu-utgåvan <email>jgotangco@ubuntu.com</email>"
+
+#: C/gnome-app-install.xml:70(title)
+msgid "Feedback"
+msgstr "Återkoppling"
+
+#. <para>To report a bug or make a suggestion regarding this package or this
+#.         manual, follow the directions in the <ulink url="ghelp:GNOME-feedback"
+#.           type="help">GNOME Feedback Page</ulink>. </para>
+#: C/gnome-app-install.xml:74(para)
+#: C/gnome-app-install.xml:326(para)
+msgid "To report a bug or make a suggestion regarding this package or this manual, send mail to <email>ubuntu-users@lists.ubuntu.com</email>."
+msgstr "För att rapportera ett fel eller komma med förslag angående det här paketet eller handboken, skicka e-post till <email>ubuntu-users@lists.ubuntu.com</email>."
+
+#: C/gnome-app-install.xml:79(para)
+msgid "This manual explains how to use <application>Install and Remove Applications</application>, an application that enables users to easily add and remove software for the GNOME desktop created by the Ubuntu project."
+msgstr "Den här handboken förklarar hur man använder <application>Installera och ta bort program</application>, ett program som låter användare enkelt lägga till och ta bort programvara för GNOME-skrivbordet, skapat av Ubuntu-projektet."
+
+#: C/gnome-app-install.xml:85(title)
+msgid "Introduction"
+msgstr "Introduktion"
+
+#: C/gnome-app-install.xml:86(para)
+msgid "<application>Install and Remove Applications</application> allows you to add or remove programs with a click of a button. You can browse through the categories to find programs, or search through all of the programs using the search box."
+msgstr "<application>Installera och ta bort program</application> låter dig lägga till och ta bort program med en enda knapptryckning. Du kan bläddra genom kategorier för att hitta program, eller söka genom alla programmen genom att använda sökrutan."
+
+#: C/gnome-app-install.xml:89(para)
+msgid "Only simple additions and removals can be performed with <application>Install and Remove Applications</application>. For more advanced needs, the <application>Synaptic Package Manager</application> is used."
+msgstr "Endast enkla tilläggningar och borttagningar kan genomföras med <application>Installera och ta bort program</application>. För mer avancerat bruk används <application>Pakethanteraren Synaptic</application>."
+
+#: C/gnome-app-install.xml:92(title)
+msgid "Getting Started"
+msgstr "Komma igång"
+
+#: C/gnome-app-install.xml:94(title)
+msgid "Installation"
+msgstr "Installation"
+
+#: C/gnome-app-install.xml:95(para)
+msgid "<application>Install and Remove Applications</application> is configured as part of the Ubuntu desktop, and should already be in your system if you did a standard install. If <application>Install and Remove Applications</application> is not installed, you can use the <application>Synaptic Package Manager</application> to add it. From your desktop, select <menuchoice><guimenu>System</guimenu><guisubmenu>Administration</guisubmenu><guimenuitem>Synaptic Package Manager</guimenuitem></menuchoice> to start <application>Synaptic</application>. The package you need to install is <command>gnome-app-install</command>."
+msgstr "<application>Installera och ta bort program</application> konfigureras som en del av Ubuntu-skrivbordet, och bör redan finnas tillgängligt på ditt system om du gjorde en standardinstallation. Om <application>Installera och ta bort program</application> inte är installerat, kan du använda <application>Pakethanteraren Synaptic</application> för att lägga till det. Från ditt skrivbord, välj <menuchoice><guimenu>System</guimenu><guisubmenu>Administration</guisubmenu><guimenuitem>Pakethanteraren Synaptic</guimenuitem></menuchoice> för att starta <application>Synaptic</application>. Paketet du behöver installera heter <command>gnome-app-install</command>."
+
+#: C/gnome-app-install.xml:105(para)
+msgid "You may also install and set up <application>Install and Remove Applications</application> from the command line using <command>apt-get</command>:"
+msgstr "Du kan även installera och konfigurera <application>Installera och ta bort program</application> från kommandoraden med kommandot <command>apt-get</command>:"
+
+#: C/gnome-app-install.xml:106(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"sudo apt-get install gnome-app-install\n"
+msgstr ""
+"\n"
+"sudo apt-get install gnome-app-install\n"
+
+#: C/gnome-app-install.xml:109(para)
+msgid "<application>Install and Remove Applications</application> is dependent on the following packages:"
+msgstr "<application>Installera och ta bort program</application> är beroende av följande paket:"
+
+#: C/gnome-app-install.xml:114(application)
+msgid "gconf2"
+msgstr "gconf2"
+
+#: C/gnome-app-install.xml:117(application)
+msgid "python"
+msgstr "python"
+
+#: C/gnome-app-install.xml:120(application)
+msgid "synaptic"
+msgstr "synaptic"
+
+#: C/gnome-app-install.xml:123(application)
+msgid "python-gtk2"
+msgstr "python-gtk2"
+
+#: C/gnome-app-install.xml:126(application)
+msgid "python-gnome2-extras"
+msgstr "python-gnome2-extras"
+
+#: C/gnome-app-install.xml:129(application)
+msgid "python-glade2"
+msgstr "python-glade2"
+
+#: C/gnome-app-install.xml:132(application)
+msgid "python-gnome2"
+msgstr "python-gnome2"
+
+#: C/gnome-app-install.xml:135(application)
+msgid "python-apt"
+msgstr "python-apt"
+
+#: C/gnome-app-install.xml:138(application)
+msgid "python-xdg"
+msgstr "python-xdg"
+
+#: C/gnome-app-install.xml:141(application)
+msgid "gnome-icon-theme"
+msgstr "gnome-icon-theme"
+
+#: C/gnome-app-install.xml:144(application)
+msgid "python-launchpad-integration"
+msgstr "python-launchpad-integration"
+
+#: C/gnome-app-install.xml:147(application)
+msgid "firefox"
+msgstr "firefox"
+
+#: C/gnome-app-install.xml:150(application)
+msgid "update-manager"
+msgstr "update-manager"
+
+#: C/gnome-app-install.xml:153(application)
+msgid "app-install-data"
+msgstr "app-install-data"
+
+#: C/gnome-app-install.xml:159(title)
+msgid "Starting Install and Remove Applications"
+msgstr "Starta Installera och ta bort program"
+
+#: C/gnome-app-install.xml:160(para)
+msgid "There are two ways to start <application>Install and Remove Applications</application>:"
+msgstr "Det finns två sätt att starta <application>Installera och ta bort program</application> på:"
+
+#: C/gnome-app-install.xml:163(para)
+msgid "From your desktop, select <menuchoice><guimenu>Applications</guimenu><guimenuitem>Add/Remove...</guimenuitem></menuchoice>to start <application>Install and Remove Applications</application>."
+msgstr "Från ditt skrivbord, välj <menuchoice><guimenu>Program</guimenu><guimenuitem>Lägg till/Ta bort...</guimenuitem></menuchoice>för att starta <application>Installera och ta bort program</application>."
+
+#: C/gnome-app-install.xml:170(para)
+msgid "<application>Install and Remove Applications</application> can also be invoked from the command line:"
+msgstr "<application>Installera och ta bort program</application> kan även anropas från kommandoraden:"
+
+#: C/gnome-app-install.xml:171(programlisting)
+#, no-wrap
+msgid ""
+"\n"
+"gnome-app-install\n"
+msgstr ""
+"\n"
+"gnome-app-install\n"
+
+#: C/gnome-app-install.xml:176(para)
+msgid "When the program is loaded, it will check for installed and available applications. After the check process, you can now use <application>Install and Remove Applications</application> to manage your software."
+msgstr "När programmet startas, kommer det att leta efter installerade och tillgängliga program. Efter att kontrollen har gjorts, kan du nu använda <application>Installera och ta bort program</application> för att hantera din programvara."
+
+#: C/gnome-app-install.xml:179(title)
+msgid "Main Window"
+msgstr "Huvudfönstret"
+
+#: C/gnome-app-install.xml:180(para)
+msgid "When you start <application>Install and Remove Applications</application>, the following window is displayed."
+msgstr "När du startar <application>Installera och ta bort program</application> visas följande fönster."
+
+#: C/gnome-app-install.xml:187(para)
+msgid "Install and Remove Applications main window"
+msgstr "Huvudfönstret i Installera och ta bort program"
+
+#: C/gnome-app-install.xml:191(para)
+msgid "The main window of <application>Install and Remove Applications</application> consists of the following:"
+msgstr "Huvudfönstret i <application>Installera och ta bort program</application> innehåller följande:"
+
+#: C/gnome-app-install.xml:193(para)
+msgid "<emphasis role=\"bold\">Software catalog column</emphasis> - displays the categories of software that are available."
+msgstr "<emphasis role=\"bold\">Katalogkolumn för programvara</emphasis> - visar kategorierna för programvaror som finns tillgängliga."
+
+#: C/gnome-app-install.xml:194(para)
+msgid "<emphasis role=\"bold\">Applications window</emphasis> - shows the software available from the category chosen from the software catalog column."
+msgstr "<emphasis role=\"bold\">Programfönstret</emphasis> - visar program tillgängliga från den valda kategorien i katalogkolumnen."
+
+#: C/gnome-app-install.xml:195(para)
+msgid "<emphasis role=\"bold\">Search field</emphasis> - you can search for a specific software from a chosen category."
+msgstr "<emphasis role=\"bold\">Sökfältet</emphasis> - du kan söka efter en specifikt programvara från en markerad kategori."
+
+#: C/gnome-app-install.xml:196(para)
+msgid "<emphasis role=\"bold\">Extra applications checkbox</emphasis> - you can filter the results of your search by selecting or deselecting these checkboxes."
+msgstr "<emphasis role=\"bold\">Kryssruta för extra program</emphasis> - du kan filtrera resultaten för din sökning genom att kryssa i eller av dessa kryssrutor."
+
+#: C/gnome-app-install.xml:197(para)
+msgid "<emphasis role=\"bold\">Application description window.</emphasis> - a brief description of the application to be installed or removed is displayed here."
+msgstr "<emphasis role=\"bold\">Programbeskrivningsfönstret.</emphasis> - en kort beskrivning av programmet som skall installeras eller tas bort visas här."
+
+#: C/gnome-app-install.xml:198(para)
+msgid "<emphasis role=\"bold\">Help button</emphasis> - displays this help page."
+msgstr "<emphasis role=\"bold\">Hjälp-knappen</emphasis> - visar den här handboken."
+
+#: C/gnome-app-install.xml:199(para)
+msgid "<emphasis role=\"bold\">Advanced button</emphasis> - opens up the Synaptic Package Manager for advanced installation and removal of software."
+msgstr "<emphasis role=\"bold\">Avancerat-knappen</emphasis> - öppnar Pakethanteraren Synaptic för avancerad installation och borttagning av programvara."
+
+#: C/gnome-app-install.xml:200(para)
+msgid "<emphasis role=\"bold\">Action buttons</emphasis> - you can apply or cancel changes with these buttons. You can also close the application by clicking the ok button."
+msgstr "<emphasis role=\"bold\">Åtgärdsknappar</emphasis> - du kan verkställa eller avbryta ändringar med dessa knappar. Du kan även stänga programmet genom att klicka på OK-knappen."
+
+#: C/gnome-app-install.xml:205(title)
+msgid "Managing Applications"
+msgstr "Hantera program"
+
+#: C/gnome-app-install.xml:207(title)
+msgid "Searching for applications to install or remove"
+msgstr "Sök efter program att installera eller ta bort"
+
+#: C/gnome-app-install.xml:208(para)
+msgid "The first thing to do before installing or removing an application using <application>Install and Remove Applications</application> is to locate for it from the software catalog. To start a search from the software catalog, you can do the following:"
+msgstr "Det första man bör göra innan installation eller borttagning av program med <application>Installera och ta bort program</application> är att hitta det i programvarukatalogen. Gör följande för att påbörja en sökning i programvarukatalogen:"
+
+#: C/gnome-app-install.xml:211(para)
+msgid "Select a category from the software catalog column. The category <emphasis role=\"bold\">\"All\"</emphasis> consists of all the software available in the catalog."
+msgstr "Markera en kategori från programvarukatalogkolumnen. Kategorien <emphasis role=\"bold\">\"Alla\"</emphasis> innehåller all tillgänglig programvara i katalogen."
+
+#: C/gnome-app-install.xml:214(para)
+msgid "Type the name of the application you need in the search field."
+msgstr "Skriv in namnet på programmet som du letar efter i sökfältet."
+
+#: C/gnome-app-install.xml:217(para)
+msgid "When you find the application you need, click on the checkbox beside the name of the application in the Applications window."
+msgstr "När du hittar programmet du letar efter, klicka på kryssrutan bredvid namnet på programmet i programfönstret."
+
+#: C/gnome-app-install.xml:220(para)
+msgid "You can also search for unsupported and proprietary applications (they are part of the <emphasis>\"universe\"</emphasis> and <emphasis>\"multiverse\"</emphasis> software repositories). Make sure \"Show unsupported applications\" and \"Show proprietary applications\" are selected."
+msgstr "Du kan även söka efter program som inte stöds eller är properitära (de är en del av programvaruförråden <emphasis>\"universe\"</emphasis> och <emphasis>\"multiverse\"</emphasis>). Se till att \"Visa programvara utan support\" och \"Visa properitära program\" har markerats."
+
+#: C/gnome-app-install.xml:229(para)
+msgid "Use the search field to search for applications to be installed or removed."
+msgstr "Använd sökfältet för att söka efter program som ska installeras eller tas bort."
+
+#: C/gnome-app-install.xml:235(title)
+msgid "Installing new applications"
+msgstr "Installera nya program"
+
+#: C/gnome-app-install.xml:236(para)
+msgid "To install applications using <application>Install and Remove Applications</application>, make sure it is already selected from the Applications window. If it is still not selected, follow the steps as enumerated in <xref linkend=\"searching-applications\"/>."
+msgstr "För att installera program med <application>Installera och ta bort programvara</application>, se till att det redan har markerats i programfönstret. Om det fortfarande inte är markerat, följ stegen i <xref linkend=\"searching-applications\"/>."
+
+#: C/gnome-app-install.xml:239(para)
+msgid "Once you have selected an application to be installed, click \"<emphasis role=\"bold\">Apply</emphasis>\" to start the installation. A window will appear that shows the applications that will be added to your system."
+msgstr "När du har markerat ett program för installation, klicka på \"<emphasis role=\"bold\">Verkställ</emphasis>\" för att påbörja installationen. Ett fönster kommer att dyka upp som visar programmen som kommer att läggas till i ditt system."
+
+#: C/gnome-app-install.xml:246(para)
+msgid "List of applications to be added after selecting and applying them from the main window"
+msgstr "Lista över program som kommer att läggas till efter de markerats och verkställts från huvudfönstret "
+
+#: C/gnome-app-install.xml:251(para)
+msgid "To confirm the installation, click \"<emphasis role=\"bold\">Apply</emphasis>.\" If you wish to go back to the main window or cancel the installation, click \"<emphasis role=\"bold\">Cancel</emphasis>. The software will then be downloaded."
+msgstr "För att bekräfta installationen, klicka på \"<emphasis role=\"bold\">Verkställ</emphasis>.\" Om du önskar att gå tillbaka till huvudfönstret eller avbryta installationen, klicka på \"<emphasis role=\"bold\">Avbryt</emphasis>. Programvaran kommer då att hämtas."
+
+#: C/gnome-app-install.xml:258(para)
+msgid "Downloading package files"
+msgstr "Hämtar paketfiler"
+
+#: C/gnome-app-install.xml:264(para)
+msgid "The downloaded package will then be installed. To have the progress dialog box close after installation, select \"<emphasis>Automatically close after the changes have been successfully applied</emphasis>.\" You can also check the progress of the installation from a terminal output by maximizing the Terminal option."
+msgstr "Det hämtade paketet kommer sedan att installeras. För att förloppsdialogrutan ska stängas efter installationen, välj \"<emphasis>Stäng automatiskt när ändringarna har verkställts korrekt</emphasis>.\" Du kan även se förloppet för installationen från en terminal genom att maximera terminalfönstret i alternativet Detaljer."
+
+#: C/gnome-app-install.xml:271(para)
+msgid "Installing software"
+msgstr "Installerar programvara"
+
+#: C/gnome-app-install.xml:277(para)
+msgid "When installation is done, <application>Install and Remove Applications</application> will setup desktop shortcuts for the application so that it will be available after setup. You can double-click on an icon to launch it from here, or, you can close this window to finish the installation."
+msgstr "När installationen är färdig, kommer <application>Installera och ta bort program</application> att konfigurera skrivbordsgenvägar för programmet så att det kommer att vara tillgängligt efter konfigureringen. Du kan dubbelklicka på en ikon för att starta det härifrån, eller stänga fönstret för att färdigställa installationen."
+
+#: C/gnome-app-install.xml:284(para)
+msgid "New applications installed"
+msgstr "Nya program installerade"
+
+#: C/gnome-app-install.xml:292(title)
+msgid "Removing applications from the system"
+msgstr "Ta bort program från systemet"
+
+#: C/gnome-app-install.xml:293(para)
+msgid "To remove applications using <application>Install and Remove Applications</application>, make sure it is already selected from the Applications window. If it is still not selected, follow the steps as enumerated in <xref linkend=\"searching-applications\"/>."
+msgstr "För att ta bort program med <application>Installera och ta bort program</application>, se till att det redan har markerats i programfönstret. Om det fortfarande inte har markerats, följ stegen i <xref linkend=\"searching-applications\"/>."
+
+#: C/gnome-app-install.xml:295(para)
+msgid "Once you have selected an application to be removed, click \"<emphasis role=\"bold\">Apply</emphasis>\" to start the process. A dialog box will show the applications that will be removed from your system. To continue removing the application, click \"<emphasis role=\"bold\">Apply</emphasis>\". To cancel the removal, click \"<emphasis role=\"bold\">Cancel</emphasis>\"."
+msgstr "När du har markerat ett program för borttagning, klicka på \"<emphasis role=\"bold\">Verkställ</emphasis>\" för att påbörja processen. En dialogruta kommer att visa programmen som kommer att tas bort från ditt system. För att fortsätta borttagningen av programmet, klicka på \"<emphasis role=\"bold\">Verkställ</emphasis>\". För att avbryta borttagningen, klicka på \"<emphasis role=\"bold\">Avbryt</emphasis>\"."
+
+#: C/gnome-app-install.xml:302(para)
+msgid "List of applications to be removed after selecting and applying them from the main window"
+msgstr "Lista över program som kommer att tas bort efter de markerats och verkställts från huvudfönstret"
+
+#: C/gnome-app-install.xml:308(para)
+msgid "Once the removal of the application is confirmed, <application>Install and Remove Applications</application> will start de-installing the application from the system. Once it is done, you can now close the dialog box and you will be sent back to the main window of <application>Install and Remove Applications</application>."
+msgstr "När borttagningen av programmet har bekräftats, kommer <application>Installera och ta bort program</application> att påbörja avinstallationen av programmet från systemet. När det är klart, kan du nu stänga dialogrutan och du kommer att skickas tillbaka till huvudfönstret i <application>Installera och ta bort program</application>."
+
+#: C/gnome-app-install.xml:315(para)
+msgid "Removing software"
+msgstr "Ta bort programvara"
+
+#: C/gnome-app-install.xml:324(title)
+msgid "About Install and Remove Applications"
+msgstr "Om Installera och ta bort program"
+
+#: C/gnome-app-install.xml:325(para)
+msgid "<application>Install and Remove Applications</application> was written by Ross Burton <email>ross@burtonini.com</email>, Michael Vogt <email>michael.vogt@ubuntu.com</email>, Niran Babalola <email>niran@niran.org</email>, and Sebasitan Heinlein <email>sebastian.heinlein@web.de</email> as an application installer for the GNOME Desktop of the Ubuntu distribution. The user manual was written by Jerome Gotangco <email>jgotangco@ubuntu.com</email>."
+msgstr "<application>Installera och ta bort program</application> skrevs av Ross Burton <email>ross@burtonini.com</email>, Michael Vogt <email>michael.vogt@ubuntu.com</email>, Niran Babalola <email>niran@niran.org</email>, och Sebastian Heinlein <email>sebastian.heinlein@web.de</email> som en programinstallerare för GNOME-skrivbordet för Ubuntu-distributionen. Användarhandboken skrevs av Jerome Gotangco <email>jgotangco@ubuntu.com</email>."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/gnome-app-install.xml:0(None)
+msgid "translator-credits"
+msgstr "Daniel Nylander <po@danielnylander.se>, 2006"
+

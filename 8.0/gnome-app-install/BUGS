@@ -1,0 +1,8 @@
+* select: Show: "All applications", then type "xxx" in the search 
+  field, then remove it again (backspace), then see the error on the
+  terimal: 
+  """
+    for elm in iterate_tree_model(store, store.iter_children(it)):
+  RuntimeError: maximum recursion depth exceeded
+  """
+  [SebastianHeinlein: I cannot reproduce this here]

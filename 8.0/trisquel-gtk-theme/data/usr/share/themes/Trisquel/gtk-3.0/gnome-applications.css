@@ -1,0 +1,55 @@
+/****************
+ * Applications *
+ ****************/
+
+/* Nautilus desktop */
+.nautilus-canvas-item {
+	border-radius: 5px;
+}
+
+.nautilus-desktop.nautilus-canvas-item {
+	color: @theme_selected_fg_color;
+	text-shadow: 1px 1px black;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active {
+	color: @theme_text_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:selected {
+	color: @theme_selected_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:selected {
+	text-shadow: none;
+}
+
+.nautilus-desktop.nautilus-canvas-item:selected:backdrop {
+	color: @theme_unfocused_selected_fg_color;
+}
+
+/* gedit */
+.gedit-headerbar-paned:backdrop {
+	background-image: url("assets/null.png");
+}
+
+.gedit-search-slider * {
+	color: @theme_fg_color;
+}
+
+.gedit-document-panel {
+	background-color: @theme_bg_color;
+}
+
+/*************
+ * rhythmbox *
+ *************/
+
+.primary-toolbar.toolbar.horizontal RBHeader.horizontal GtkVolumeButton.button.flat,
+.primary-toolbar.toolbar.horizontal RBHeader.horizontal GtkVolumeButton.button.flat:active,
+.primary-toolbar.toolbar.horizontal RBHeader.horizontal GtkVolumeButton.button.flat:hover {
+	padding: 0px 6px;
+}
+

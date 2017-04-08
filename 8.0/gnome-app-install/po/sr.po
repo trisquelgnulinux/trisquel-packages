@@ -1,0 +1,768 @@
+# Serbian linux distribution cp6Linux
+# Copyright (C) 2007 Marko Uskokovic
+# Marko Uskokovic <uskokovic@etf.bg.ac.yu>, 2007, 2008.
+# Marko Uskokovic <turncoat@cp6linux.org>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:15+0000\n"
+"Last-Translator: Michael Vogt <michael.vogt@ubuntu.com>\n"
+"Language-Team: sr <prevod@cp6linux.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "Компоненте за које је потврђено да инсталирају апликације од"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "Ако је тачно, главни прозор ће се повећати."
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "Висина главног прозора"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "Повећано стање прозора"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "Ширина главног прозора"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"Могуће вредности: 0 : прикажи све доступне апликације 1 : прикажи само "
+"слободне апликације 2 : -3 : прикажи само апликације које су подржане 4 : "
+"прикажи само апликације трећих лица 5 : -6 : прикажи само апликације које су "
+"инсталиране"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "Прикажи само подскуп апликација"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "Предложите апликацију за MIME-тип: одобрене компоненте"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "Време за интерактивну претрагу је истекло"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr ""
+"Пауза за куцање у пољу за претрагу док се претрага не активира (у "
+"милисекундама)."
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "Време последњег освежавања кеша"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"Када корисник затражи да отвори фајл a одговарајућа апликација не постоји, "
+"систем ће понудити да инсталира апликације из листе компонената, као и "
+"индивидуалне апликације са беле листе."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:6
+#, fuzzy
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"Кликните на 'Поновно учитавање' да бисте учитали.  За поновно учитавање "
+"листе потребна Вам је установљена интернет конекција. "
+
+#: ../data/gnome-app-install.ui.h:9
+#, fuzzy
+msgid "Add/Remove Applications"
+msgstr "Апликације"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr ""
+
+# _Тражи
+#: ../data/gnome-app-install.ui.h:13
+#, fuzzy
+msgid "Search:"
+msgstr "_Претрага"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:16
+#, fuzzy
+msgid "_Add/Remove More Applications"
+msgstr "Додај/Уклони још софтвера"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:19
+#, fuzzy
+msgid "_Remove"
+msgstr "_Уклони све"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr ""
+
+#: ../data/gnome-app-install.ui.h:21
+#, fuzzy
+msgid "applications"
+msgstr "Апликације"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "Додај/Уклони..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "Инсталирај и уклони апликације"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "Менаџер за пакете"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "нема одговарајуће апликације"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr ""
+"Ниједна одговарајућа апликација за аутоматску инсталацију није слободна за "
+"руковање овим типом фајла."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "не могу да пронађем апликацију"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "Ниједна апликација није позната за овакву врсту фајла."
+
+# Претрага за погодним апликацијама
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "Тражим апликације које су погодне"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "Молим Вас сачекајте. Ово ће потрајати минут или два."
+
+# Желите ли да тражите одговарајући кодек?
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "Желите ли да тражим одговарајући кодек?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"Софтвер потребан за пуштање овог фајла није инсталиран. Потребно је да "
+"инсталирате одговарајуће кодеке који ће пуштати медија фајлове. Да ли желите "
+"да потражите кодек  који подржава одабрани фајл? \n"
+" \n"
+"\\ Претрага ће такође укључити софтвер који није званично подржан."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "Грешка у командној линији"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "'%s' не разуме аргумент командне линије '%s'"
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "Тражим одговарајуће кодеке"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_Инсталирај"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "Инсталирај додатке за мултимедију"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "Кодек"
+
+# Не могу да отворим \"%s\"
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "не могу да отворим \"%s\""
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr ""
+"Биће креирана листа апликација које могу да рукују са документима типа '%s'"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "Инсталирај апликације за отварање \"%s\""
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "Инсталирај апликације"
+
+# _Тражи
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "_Претрага"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "Тражим екстензије"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "Екстензије Вам омогућавају да додате нове опције у апликацију."
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "Инсталирај/Уклони екстензије"
+
+# Можда Проширење?
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "Екстензија"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"Штиклирајте апликације које желите да буду инсталиране. Одштиклирајте "
+"апликације које не желите."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr ""
+"Да бисте извршили тражене послове користите Synaptic менаџер за пакете."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "Брзо упутство"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "Само инсталиране апликације"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "Прикажи само оне апликације које су инсталиране на Вашем компјутеру"
+
+# //addon?
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "Дошло је до грешке при читању CD-a"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "CD је вероватно оштећен "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "Листа апликација није доступна"
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"Кликните на 'Поновно учитавање' да бисте учитали.  За поновно учитавање "
+"листе потребна Вам је установљена интернет конекција. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "%s не може бити инсталирана на Вашем компјутеру типа (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"Апликација захтева специјалне карактеристике хардвера или Ваш тип рачунара "
+"није подржан одлуком произвођача."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "Не могу да инсталирам  '%s'"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"Ова апликација је у конфликту са осталим инсталираним софтвером. Да бисте "
+"инсталирали %s морате прво да уклоните софтвер који прави конфликт. \n"
+"Пређите у 'synaptic' менаџер за пакете да бисте решили овај конфликт."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "Не могу да уклоним '%s'"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"Једна или више апликација зависе од %s. Да бисте уклонили %s и остале "
+"зависне апликације, користите Synaptic менаџер за пакете."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "_Потврди"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "Омогући инсталацију софтвера од %s?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr ""
+"%s је обезбеђена од произвођача треће стране. Произвођач треће стране је "
+"одговоран за подршку и сигурносна ажурирања."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "Потребна Вам је установљена интернет конекција да бисте наставили."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "_Омогући"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "Провера инсталираних и доступних апликација није успела"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Ово је значајан неуспех Вашег система за одржавање пакета. Молим Вас "
+"проверите да ли постоје неисправни пакети са програмом synaptic, проверите "
+"дозволе фајла и исправност фајла '/etc/apt/sources.list' и поново учитајте "
+"информације о доступним пакетима командама: 'sudo apt-get update' и 'sudo "
+"apt-get install -f'."
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "Да применим промене на инсталираним апликацијама пре затварања?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr "Ако не примените Ваше промене, оне ће бити трајно изгубљене."
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "_Затворити без промена"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "Нема помоћи"
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "Да бисте приказали помоћ, инсталирајте програм „yelp“."
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "Да применим следеће промене?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr ""
+"Молим Вас погледајте листу апликација које ће бити инсталиране или уклоњене."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "Не постоји тражена апликација."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "Да бисте проширили Вашу претрагу, изаберите \"%s\"."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "Да бисте проширили Вашу претрагу, изаберите \"%s\" или \"%s\"."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr ""
+"Да бисте проширили Вашу претрагу, изаберите другачију \"Show\" наредбу."
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "Да бисте проширили Вашу претрагу, изаберите 'Све' категорије."
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "Нисам успео да отворим '%s'"
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "Апликације"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "Инсталација софтвера није успела"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "Дошло је до проблема у току инсталације следећих делова софтвера."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "Додај/Уклони још софтвера"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "Инсталација апликације није успела"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "Дошло је до проблема у току инсталације следећих апликација."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "Није могуће уклонити софтвер"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "Дошло је до проблема у току уклањања следећих делова софтвера."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "Нису све апликације могле бити уклоњене"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "Дошло је до проблема у току уклањања следећих апликација."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "Инсталација и уклањање софтвера није успело"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr ""
+"Дошло је до проблема у току инсталације или уклањања следећих делова "
+"софтвера."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "Инсталација или уклањање апликација није успело"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr ""
+"Дошло је до проблема у току инсталације или уклањања следећих апликација."
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "Нова апликација је инсталирана"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "Нове апликације су инсталиране"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr ""
+"Да би покренули новоинсталирану апликацију, изаберите је из менија за "
+"апликације."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr "Да би покренули новоинсталирану апликацију два пута кликните на њу."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "Софтвер је успешно инсталиран"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "Да ли желите да инсталирате или уклоните још софтвера?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "Апликације су успешно уклоњене"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "Да ли желите да инсталирате или уклоните још апликација?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "Да уклоним %s и апликације које иду са њим?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"%s је део софтверске колекције. Ако уклоните  %s, уклонићете такође и остале "
+"апликације из колекције."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "_Уклони све"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "Да инсталирам %s и апликације које иду са њим?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"%s је део колекције софтвера. Ако прихватите инсталацију %s, инсталираћете "
+"такође и све апликације из колекције."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "_Инсталирај све"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "%s је обезбеђена од стране трећих лица."
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"Ова апликација долази са следећим условима и ограничењима лиценце. Кликните "
+"на 'Одобрити' дугме да их прихватите:"
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "Прихвати ограничења лиценце и инсталирај софтвер"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "Учитавам кеш меморију..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "Прикупљам податке о апликацији..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "Учитавам апликације..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "Све"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "Учитавам %s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr "Да дозволим инсталацију званичног Debian софтвера?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s је део Debian основне дистрибуције. Debian обезбеђује подршку и "
+"сигурносна ажурирања, која ће такође бити омогућена."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "Debian обезбеђује подршку и сигурносна ажурирања за %s"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "%s није званично подржан у сигурносним ажурирањима."
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "Опис"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "%s не може бити инсталирана"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"%s не може да буде инсталирана на Вашем типу рачунара (%s). Или апликација "
+"захтева специјалне карактеристике хардвера или Ваш тип рачунара није подржан "
+"одлуком произвођача."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+"%s је доступан у каналу трећих лица „%s“. Да бисте га инсталирали, "
+"штиклирајте поље за активацију софтверског канала."
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "Ова апликација иде заједно са следећим апликацијама: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"Адреса сајта: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Верзија: %s(%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "Популарност"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "Апликација"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""

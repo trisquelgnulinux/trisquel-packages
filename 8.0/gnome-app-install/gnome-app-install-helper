@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+#  software-properties - graphical abstraction of the sources.list
+#  
+#  Copyright (c) 2004,2005 Canonical
+#                2004,2005 Michiel Sikkes
+#  
+#  Author: Michiel Sikkes <michiel@eyesopened.nl>
+#          Michael Vogt <mvo@debian.org>
+# 
+#  This program is free software; you can redistribute it and/or 
+#  modify it under the terms of the GNU General Public License as 
+#  published by the Free Software Foundation; either version 2 of the
+#  License, or (at your option) any later version.
+# 
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+# 
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+#  USA
+
+from gettext import gettext as _
+import os
+import sys
+import apt
+import apt_pkg
+
+from optparse import OptionParser
+
+import aptsources
+import aptsources.distro
+from aptsources.sourceslist import SourcesList
+
+if __name__ == "__main__":
+  # Begin parsing of options
+  parser = OptionParser()
+  parser.add_option("-e", "--enable-component", 
+                    action="store", type="string", dest="enable_component",
+                    help="Enable the specified component of the distro's "\
+                    "repositories")
+
+  (options, args) = parser.parse_args()
+  # Check for root permissions
+  if os.geteuid() != 0:
+    print _("You need to be root to run this program")
+    sys.exit(1)
+
+  if options.enable_component:
+    sourceslist = SourcesList()
+    distro = aptsources.distro.get_distro()
+    distro.get_sources(sourceslist)
+    distro.enable_component(options.enable_component)
+    sourceslist.save()
+    print "Enabled the %s component" % options.enable_component

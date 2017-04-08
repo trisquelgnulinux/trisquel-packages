@@ -1,0 +1,758 @@
+# Finnish messages for gnome-app-install
+# Copyright (C) 2005 Ilkka Tuohela, Finland.
+# This file is distributed under the same license as the gnome-app-install package.
+# Ilkka Tuohela <hile@iki.fi>, 2005-2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:14+0000\n"
+"Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "Komponentit jotka on vahvistettu sovellusten asennuslähteiksi"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "Jos tosi, pääikkuna on suurennettu koko ruudun kokoiseksi"
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "Pääikkunan korkeus"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "Pääikkunan kokoruututila"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "Pääikkunan leveys"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"Mahdolliset arvot: 0 : näytä kaikki saatavilla olevat sovellukset 1 : näytä "
+"vain vapaat sovellukset 2: - 3: näytä vain tuetut sovellukset 4: näytä vain "
+"kolmannen osapuolen sovellukset 5: - 6: näytä vain asennetut sovellukset"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "Näytä vain osa sovelluksista"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "suosittele sovelluste MIME-tyypille: hyväksytyt komponentit"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "Aikakatkaisu interaktiivisessa haussa"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr ""
+"Hakukenttään kirjoitettaessa aika, jonka jälkeen hakua aletaan suorittaa "
+"(millisekunneissa)"
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "Viimeisimmän välimuistivirkistyksen aikaleima"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"Kun käyttäjä pyytää tiedoston avaamista, mutta tuettua sovellusta ei ole "
+"asennettuna, järjestelmä tarjoaa asennettavaa sovellusta näistä "
+"komponenteista sekä erityisestä hyväksyttyjen sovellusten (whitelist) "
+"luettelosta."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>Lisää</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>Poista</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>Saatavilla olevien ohjelmien luettelo on vanhentunut</b></big>\n"
+"\n"
+"Ladataksesi luettelon uudelleen tarvitset toimivan Internet-yhteyden."
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "Lisää/poista sovelluksia"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "Toteuta muutokset ja sulje ikkuna"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "Peruuta muutokset ja sulje ikkuna"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "Kategoriat"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "Etsi:"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "Näytä:"
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "Kategoriat kuvaavat sovellukset-valikkoa"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "_Lisää/poista muita sovelluksia"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "_Toteuta muutokset"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "Ta_rkista"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "_Poista"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "Y_ritä uudelleen"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "sovellukset"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "Lisää/poista..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "Asenna tai poista sovelluksia"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "Pakettienhallinta"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "ei sopivaa sovellusta"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr ""
+"Automaattisesti asennettavissa olevaa sovellusta tämän tiedoston avaamiseen "
+"ei ole."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "sovellusta ei löytynyt"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "Tämänlaiselle tiedostolle sopivaa sovellusta ei ole tiedossa."
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "Etsitään sopivia sovelluksia"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "Odota. Tämä voi kestää jonkin aikaa."
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "Etsi sopivaa koodekkia?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"Tämän tiedoston toistamiseen tarvittavia ohjelmistoja ei ole asennettu. "
+"Sopivat koodekit tulee asentaa mediatiedostojen toistamiseksi. Etsitäänkö "
+"valittua tiedostoa tukevaa koodekkia?\n"
+"\n"
+"Tämä haku sisältää myös ohjelmia, joita ei virallisesti tueta."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "Virheellinen komentorivi"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "\"%s\" ei tunnista komentoriviargumenttia \"%s\""
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "Etsitään sopivia koodekkeja"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_Asenna"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "Asenna medialiitännäiset"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "Koodekki"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "\"%s\" ei voi avata"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr ""
+"Asiakirjatyypin \"%s\" käsitttelyn hallitsevista sovelluksista luodaan "
+"luettelo"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "Asenna sovellukset kohteen \"%s\" avaamiseksi"
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "Asenna sovellukset"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "Et_si"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "Etsitään laajennuksia"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "Laajennukset lisäävät sovellukseen uusia ominaisuuksia."
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "Asenna/poista laajennuksia"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "Lisäosa"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"Asentaaksesi ohjelman valitse ohjelman vieressä oleva laatikko. Samaten "
+"poistaaksesi ohjelman poista valinta."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr ""
+"Tehdäksesi edistyneempiä toimenpiteitä käytä Synaptic-"
+"pakettienhallintaohjelmaa."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "Lyhyt esittely"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "Vain asennetut sovellukset"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "Näytä vain sovellukset, jotka ovat asennettuina tietokoneelle"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "Virhe luettaessa lisä-CD-levyä"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "Lisä-CD saattaa olla vioittunut "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "Sovellusluettelo ei ole saatavilla"
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"Napsauta \"Tarkista\" ladataksesi sen. Tämä vaatii toimivan Internet-"
+"yhteyden. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "%s ei voida asentaa tietokonetyypillesi (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"Sovellus vaatii joko erityistä laitteistoa, tai valmistaja on päättänyt olla "
+"tukematta tietokonetyyppiäsi."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "Ei voida asentaa sovellusta '%s'"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"Tämä sovellus on ristiriidassa muiden asennettujen ohjelmistojen kanssa. "
+"Asentaaksesi sovelluksen \"%s\" tulee ristiriidassa olevat ohjelmistot "
+"poistaa ensin.\n"
+"\n"
+"Vaihda Synaptic-pakettienhallinnan puolelle korjataksesi tämän ongelman."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "Ei voida poistaa sovellusta '%s'"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"Yksi tai useampi sovellus riippuu sovelluksesta %s. Poistaaksesi sovelluksen "
+"%s ja siitä riippuvat sovellukset, käytä Synaptic-pakettienhallintaa."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "V_ahvista"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "Ota käyttöön sovellusten asentaminen lähteestä %s?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr ""
+"Kolmas osapuoli tarjoaa sovelluksen %s. Kyseinen valmistaja on vastuussa "
+"tuesta ja tietoturvapäivityksistä."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "Tarvitset toimivan Internet-yhteyden jatkaaksesi."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "_Ota käyttöön"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "Ei voitu tarkistaa asennettuja ja saatavilla olevia ohjelmia."
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Tämä on isohko virhe pakettienhallintajärjestelmässä. Tarkista rikkinäiset "
+"paketit Synaptic-ohjelmalla, tarkista \"/etc/apt/sources.list\"-tiedoston "
+"oikeudet ja sisällön virheettömyys, ja lataa ohjelmaluettelotiedot uudelleen "
+"komennoilla:\"sudo apt-get update\" ja \"sudo apt-get install -f\"."
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "Toteuta muutokset asennettuihin ohjelmiin ennen sulkemista?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr "Jos et toteuta muutoksia, ne hukataan pysyvästi."
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "Sulje _toteuttamatta"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "Ohjetta ei saatavilla"
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "\"Yelp\"-ohjelma tulee asentaa ohjeiden näyttämiseksi."
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "Toteutetaanko seuraavat muutokset?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr ""
+"Tarkista vielä viimeisen kerran lista sovelluksista, jotka tullaan "
+"asentamaan tai poistamaan."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "Sovellusta ei löytynyt."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "Laajentaaksesi hakua, valitse \"%s\"."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "Laajentaaksesi hakua, valitse \"%s\" tai \"%s\"."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr "Laajentaaksesi hakua, valitse \"Näytä\"-pudotusvalikosta jotain muuta"
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "Laajentaaksesi hakua valitse \"Kaikki\" vasemman laidan luettelosta."
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "Kohdetta \"%s\" ei voi avata"
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "Sovellukset"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "Ohjelmiston asennus epäonnistui"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "Seuraavien ohjelmien asennuksessa oli ongelmia."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "Lisää/poista muita ohjelmia"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "Sovelluksen asentaminen epäonnistui"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "Seuraavien sovellusten asentamisessa oli ongelmia."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "Ohjelmaa ei voitu poistaa"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "Seuraavien ohjelmien poistamisessa oli ongelmia."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "Kaikkia sovelluksia ei voitu poistaa"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "Seuraavien sovellusten poistamisessa oli ongelmia."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "Ohjelman asentaminen tai poistaminen epäonnistui"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr "Seuraavien ohjelmien asentamisessa tai poistamisessa oli ongelmia."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "Sovelluksien asennus tai poistaminen epäonnistui"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr "Seuraavien sovellusten asentamisessa tai poistamisessa oli ongelmia."
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "Uusi sovellus on asennettu"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "Uusia sovelluksia on asennettu"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr ""
+"Käynnistääksesi juuri asennetun sovelluksen, valitse se Sovellukset-"
+"valikosta."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr "Käynnistääksesi juuri asennetun sovelluksen, kaksoisnapsauta sitä."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "Ohjelma on asennettu onnistuneesti"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "Haluatko asentaa tai poistaa muita ohjelmia?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "Sovellukset on poistettu onnistuneesti"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "Haluatko asentaa tai poistaa lisää sovelluksia?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "Poista %s ja siihen liittyvät sovellukset?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"%s on osa ohjelmakokonaisuutta. Jos %s poistetaan, poistetaan myös siihen "
+"liittyvät sovellukset."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "_Poista kaikki"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "Asenna %s ja siihen liittyvät sovellukset?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"%s on osa ohjelmakokonaisuutta. Jos %s asennetaan, asennetaan myös siihen "
+"liittyvät sovellukset."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "_Asenna kaikki"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "Sovelluksen %s tarjoaa kolmannen osapuolen valmistaja."
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"Sovellukseen liittyy seuraavat lisenssiehdot. Napsauta \"Ota käyttöön\" -"
+"painiketta hyväksyäksesi ne:"
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "Hyväksy lisenssiehdot ja asenna ohjelma"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "Luetaan välimuistia..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "Kerätään sovellustietoja..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "Luetaan sovelluksia..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "Kaikki"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "Luetaan %s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr "Ota käyttöön virallisesti tuettujen Debian-ohjelmien ohjelmalähde?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s on osa Debianin \"main\"-jakelua. Debian tarjoaa tuki- ja "
+"tietoturvapäivityksiä, jotka otetaan käyttöön myös."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "Debian tarjoaa tukea ja turvallisuuspäivityksiä ohjelmalle %s"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "Sovellusta %s ei tueta virallisesti tietoturvapäivityksillä."
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "Kuvaus"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "Ei voida asentaa sovellusta %s"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"Sovellusta %s ei voida asentaa tietokonetyypillesi (%s). Sovelluksella voi "
+"olla erityisiä laitteistovaatimuksia, tai sovelluksen valmistaja on "
+"päättänyt olla tukematta tietokonetyyppiäsi."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+"%s on saatavilla kolmannen osapuolen ohjelmalähteestä \"%s\". Asentaaksesi "
+"sen, napsauta valintalaatikkoa ottaaksesi ohjelmalähteen käyttöön."
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "Tämä ohjelma jakaa asennuspaketin seuraavien ohjelmien kanssa: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"Kotisivu: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Versio: %s (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "Suosio"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "Sovellus"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>Tarkistetaan asennettuja ja saatavilla olevia sovelluksia</b></big>"

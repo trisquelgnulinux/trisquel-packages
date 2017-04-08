@@ -1,0 +1,54 @@
+.\" Copyright (C) 2008 Julian Andres Klode. Released under the terms of the
+.\" GNU General Public License, version 2 or later
+.TH gnome-app-install 1 "2008-02-05" "0.5.2"
+.SH NAME
+gnome-app-install \- Application Installer
+gnome-codec-install \- Codec Installer
+.SH SYNOPSIS
+.B gnome-app-install
+.RI [ options ]
+
+.B gnome-codec-install
+.RI [ options ] ARGUMENT
+.SH DESCRIPTION
+.B gnome-app-install
+is a user friendly application installer
+.SH OPTIONS
+.TP
+.B \-h or \-\-help
+print quick usage details to the screen.
+.TP
+.B \-\-mime\-type=MIME_TYPE
+Show only applications that handle the given file type
+.TP
+.B \-\-transient\-for=TRANSIENT_FOR
+Start as a child window of the given window (Only needed by developers)
+.TP
+.B \-\-data\-dir=DATADIR
+Load data from the given directory (Only needed by developers)
+.TP
+.B \-\-desktopdir=DESKTOPDIR
+Read the desktop files from the given directory (Only needed by developers)
+.TP
+.B \-\-cachedir=CACHEDIR
+Use the given directory for the cache (Only needed by developers)
+.TP
+.B \-\-xul\-extensions=XUL_EXTENSIONS
+Start as installer for XUL extensions
+.TP
+.B \-\-addon\-cd=ADDON_CD
+Start as installer for an addon cd
+.TP
+.B \-\-selftest
+Perform self tests (Only needed by developers)
+.TP
+.B \-\-profile=PROFILE
+Store profiling data in the given file (Only needed by developers)
+.TP
+.B \-\-test\-mode
+Run in a sepcial test mode(Only needed by developers)
+.SH ARGUMENTS
+gnome-codec-install takes an argument in the form of "gstreamer.net|0.10|totem|DivX MPEG\-4 Version 5 decoder|decoder\-video/x\-divx, divxversion=(int)5 (DivX MPEG\-4 Version 5 decoder)".
+This argument is used to find all packages containing this codec.
+.SH AUTHOR
+This manpage has been written by Julian Andres Klode <jak@jak-linux.org>

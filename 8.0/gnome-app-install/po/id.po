@@ -1,0 +1,761 @@
+# Indonesian translation for gnome-app-install
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the gnome-app-install package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:16+0000\n"
+"Last-Translator: Michael Vogt <michael.vogt@ubuntu.com>\n"
+"Language-Team: Indonesian <id@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "Komponen yang telah dikonfirmasikan untuk memasang aplikasi darinya"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "Jika benar, jendela utama dimaksimalkan."
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "Tinggi jendela utama"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "Keadaan maksimal jendela utama"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "Lebar jendela utama"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"Nilai-nilai yang mungkin: 0 : tampilkan semua aplikasi yang tersedia 1 : "
+"tampilkan hanya aplikasi yang bebas saja 2 : - 3 : tampilkan aplikasi yang "
+"didukung saja 4 : tampilkan aplikasi pihak ketiga saja 5 : - 6 : tampilkan "
+"aplikasi yang terpasang saja"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "Tampilkan sebuah subset aplikasi saja"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "Aplikasi yang disarankan untuk tipe-MIME: komponen yang disetujui"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "Tenggang waktu pencarian interaktif"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr ""
+"Tenggang waktu dari penulisan dalam masukan pencarian hingga pencarian "
+"dimulai (milidetik)."
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "Tandawaktu dari penyegar ransum terakhir berjalan"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"Ketika pengguna meminta untuk membuka sebuah berkas namun tidak ada aplikasi "
+"pendukung, sistem akan menawarkan untuk menginstal aplikasi-aplikasi dalam "
+"komponen-koponen yang telah terdaftar di sini, sebagaimana aplikasi-aplikasi "
+"terdaftar secara individu."
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>Tambah</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>Hapus</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>Daftar aplikasi tersedia telah kadaluarsa</b></big>\n"
+"\n"
+"Untuk memuat ulang daftar tersebut, Anda memerlukan sambungan internet."
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "Tambah/Hapus Aplikasi"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "Terapkan perubahan-perubahan yang ditangguhkan dan tutup jendela"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "Batalkan perubahan-perubahan yang ditangguhkan dan tutup jendela"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "Kategori"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "Cari:"
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "Tunjukkan:"
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "Kategori-kategori mewakili menu aplikasi"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "T_ambah/Hapus Aplikasi Lain"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "Ter_apkan Perubahan"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "Muat Ulang"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "Hapus"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "Ulangi"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "aplikasi"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "Tambah/Hapus..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "Install dan menghilangkan aplikasi"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "Manajer Paket"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "tidak ada aplikasi yang cocok"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr ""
+"Tidak ada aplikasi yang cocok untuk instalasi otomatis yang tersedia untuk "
+"penanganan berkas jenis ini."
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "tidak ada aplikasi yang ditemukan"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "Tidak ada aplikasi yang diketahui untuk berkas jenis ini."
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "Sedang mencari aplikasi-aplikasi yang sesuai"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "Tunggu Sebentar. Ini akan meminta waktu 1 atau 2 menit."
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "Mencari codec yang cocok?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"Perangkat lunak yang dibutuhkan untuk menjalankan berkas ini tidak "
+"terinstal. Anda membutuhkan codec yang cocok untuk menjalankan berkas-berkas "
+"media. Apakah Anda ingin mencari sebuah codec yang mendukung berkas ini?\n"
+"\n"
+"Pencarian juga akan mengikutsertakan perangkat lunak yang tidak didukung "
+"secara resmi."
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "Baris perintah yang tidak tepat"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "'%s' tidak mengerti argumen baris perintah '%s'"
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "Sedang mencari codec-codec yang sesuai"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "_instal"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr ""
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "Codec"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "\"%s\" tidak dapat dibuka"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr ""
+"Daftar aplikasi-aplikasi yang dapat menangani dokumen-dokumen bertipe '%s' "
+"akan dibuat"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "Pasang aplikasi untuk membuka berkas \"%s\""
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "Pasang aplikasi"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "Cari"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "Sedang mencari ekstensi"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr ""
+"Ekstensi mengijinkan Anda untuk menambah kemampuan-keamampuan baru pada "
+"aplikasi Anda."
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "Instal/Hapus Ekstensi"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "Ekstensi"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr ""
+"Untuk menginstall aplikasi cek pada box sebelah aplikasi. Hilangkan cek pada "
+"box untuk menghapus aplikasi."
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr ""
+"Untuk mengerjakan tugas-tugas yang dimajukan gunakan manajer paket Synaptic."
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "Pengenalan singkat"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr ""
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "Tunjukkan hanya aplikasi yang terinstall di komputer anda"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "Kesalahan membaca CD tambahan"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "CD tambahan telah korup "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr ""
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr ""
+"Tekan 'Reload' untuk mengisi. Untuk mengisi kembali daftar, anda membutuhkan "
+"koneksi internet. "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "%s tidak dapat diinstal ke jenis komputer anda (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr ""
+"Aplikasi memerlukan kemampuan-kemampuan perangkat keras khusus atau penyedia "
+"telah memutuskan untuk tidak mendukung jenis komputer Anda."
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "Tidak dapat di install '%s'"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"Aplikasi ini konflik dengan perangkat lunak lain yang telah terinstal. Untuk "
+"menginstal '%s', hapus dulu perangkat lunak yang konflik.\n"
+"\n"
+"Pindah ke manajer paket 'synaptic' untuk menyelesaikan konflik ini."
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "Tidak dapat menghapus '%s'"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"Satu atau lebih aplikasi membutuhkan %s. Untuk melepas %s dan aplikasi "
+"terkait, gunakan Synaptic manajemen paket."
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr ""
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "Aktipkan penginstalan perangkat lunak dari %s?"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr ""
+"%s disediakan oleh penyedia pihak ketiga. Penyedia pihak ketiga bertanggung "
+"jawab untuk mendukung pemutakhiran keamanan."
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "Anda membutuhkan koneksi internet untuk meneruskan."
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "_Aktifkan"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "Gagal saat memeriksa aplikasi yang terinstal dan yang tersedia"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"Ini adalah kegagalan utama sistem manajemen perangkat lunak anda. Periksa "
+"paket - paket rusak dengan synaptic, periksa ijin berkas dan kebenaran dari "
+"file '/etc/apt/sources.list' dan load ulang informasi software dengan: 'sudo "
+"apt-get update' dan 'sudo apt-get install -f'"
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "Terapkan perubahan aplikasi yang diinstal sebelum ditutup?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr ""
+"Jika anda tidak menerapkan perubahan maka perubahan akan hilang permanen"
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "_Tutup Tanpa Mengaplikasikan Perubahan"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr ""
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr ""
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "Terapkan perubahan berikut?"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr ""
+"Mohon lihat kembali daftar aplikasi yang akan di pasang maupun di lepas."
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "Aplikasi yang tersedia tidak ada yang cocok"
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "Untuk menjadikan pencarian Anda, pilih \"%s\"."
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "Untuk menjadikan pencarian Anda, pilih \"%s\" atau \"%s\"."
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr "Untuk menjadikan pencarian Anda, pilih item \"Tampil\" yang berbeda."
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "Untuk menjadikan pencarian Anda, pilih kategori \"Semua\"."
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "Gagal membuka '%s'"
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "Aplikasi"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "Penginstalan perangkat lunak gagal"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "Ada masalah saat penginstalan beberapa perangkat lunak berikut."
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "Tambah/Hapus Piranti Lunak"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "Penginstalan aplikasi gagal"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "Ada masalah saat penginstalan dari aplikasi-aplikasi berikut."
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "Perangkat lunak tidak dapat dihapus"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "Ada masalah saat penghapusan bebrapa perangkat lunak berikut."
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "Tidak semua aplikasi dapat dihapus"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "Ada masalah saat penghapusan dari aplikasi-aplikasi berikut."
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "Instalasi dan penghapusan piranti lunak gagal"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr ""
+"Ada masalah saat penginstalan dan penghapusan bebrapa perangkat lunak "
+"berikut."
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "Instalasi dan penghapusan aplikasi-aplikasi gagal"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr ""
+"Ada masalah saat instalasi atau penghapusan dari aplikasi-aplikasi berikut."
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "Aplikasi baru telah terinstal"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "Aplikasi-aplikasi baru telah terinstal"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr ""
+"Untuk memulai aplikasi yang baru saja terinstal, pilihlah aplikasi tersebut "
+"dari menu Aplikasi."
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr "Untuk memulai aplikasi yang baru saja terinstal, klik ganda padanya."
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "Perangkat lunak telah terinstal dengan berhasil"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "Anda ingin menginstal atau menghapus perangkat lunak lainnya?"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "Aplikasi-aplikasi telah terhapus dengan berhasil"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "Apakah Anda ingin mrnginstal atau menghapus aplikasi-aplikasi lagi?"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "Hapus %s dan aplikasi-aplikasi terbendel?"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr ""
+"%s merupakan bagian dari kumpulan perangkat lunak. Jka Anda ingin menghapus %"
+"s, Anda akan menghapus semua aplikasi terbendel juga."
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "_Lepas Semua"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "Menginstal %s dan aplikasi terbendel?"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr ""
+"%s merupakan bagian dari kumpulan perangkat lunak. Jka Anda ingin menginstal "
+"%s, Anda akan menginstal semua aplikasi terbendel juga."
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "_Instal Semua"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "%s disediakan oleh penyedia pihak ketiga"
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr ""
+"Aplikasi ini datang dengan ketentuan lisensi dan kondisi, Klik tombol "
+"'Aktipkan' untuk menerimanya."
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "Menerima peraturan lisensi dan memasang perangkat lunak"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "Memuat ransum..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "Mengumpulkan data aplikasi"
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "Memuat aplikasi..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "Semua"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "Memuat %s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr ""
+"Aktipkan penginstalan perangkat lunak Debian yang didukung secara resmi?"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s adalah bagian dari distribusi utama Debian. Debian menyediakan dukungan "
+"dan pemutakhiran keamanan, yang akan diaktipkan juga."
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "Debian menyediakan dukungan dan pemutakhiran  keamanan untuk %s"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "%s tidak didukung secara resmi dengan pemutakhiran keamanan."
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "Deskripsi"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "%s tidak dapat di pasang"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"%s tidak dapat di pasang pada komputer tipe (%s). Selain itu aplikasi ini "
+"membutuhkan fitur perangkat keras spesial atau penyedia mmemutuskan tidak "
+"mendukung tipe komputer anda."
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr ""
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "Aplikasi ini terbendel dengan aplikasi-aplikasi berikut: "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "Versi: %s (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "Kepopuleran"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "Aplikasi"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>Memeriksa aplikasi-aplikasi yang telah terpasang dan tersedia</b></"
+"big>"

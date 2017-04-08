@@ -1,0 +1,722 @@
+# Chinese (Hong Kong) translation for gnome-app-install
+# Copyright (c) 2007 Rosetta Contributors and Canonical Ltd 2007
+# This file is distributed under the same license as the gnome-app-install package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-app-install\n"
+"Report-Msgid-Bugs-To: Sebastian Heinlein <sebi@glatzor.de>\n"
+"POT-Creation-Date: 2009-08-10 19:10+0200\n"
+"PO-Revision-Date: 2009-07-28 14:12+0000\n"
+"Last-Translator: Michael Vogt <michael.vogt@ubuntu.com>\n"
+"Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-08-10 16:00+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../data/gnome-app-install.schemas.in.h:1
+msgid "Components that have been confirmed to install applications from"
+msgstr "已確認要安裝應用程式的來源元件"
+
+#: ../data/gnome-app-install.schemas.in.h:2
+msgid "If true, the main window is maximized."
+msgstr "如果值是 true，主視窗會被最大化。"
+
+#: ../data/gnome-app-install.schemas.in.h:3
+msgid "Main window height"
+msgstr "主視窗高度"
+
+#: ../data/gnome-app-install.schemas.in.h:4
+msgid "Main window maximization state"
+msgstr "主視窗最大化狀態"
+
+#: ../data/gnome-app-install.schemas.in.h:5
+msgid "Main window width"
+msgstr "主視窗寬度"
+
+#: ../data/gnome-app-install.schemas.in.h:6
+msgid ""
+"Possible values: 0 : show all available applications 1 : show only free "
+"applications 2 : - 3 : show only supported applications 4 : show only 3rd "
+"party applications 5 : - 6 : show only installed applications"
+msgstr ""
+"值可以是： 0 : 顯示所有可安裝應用程式 1 : 顯示所有開放源碼應用程式 2 : - 3 : "
+"顯示受支援的應用程式 4 : 顯示第三方應用程式 5 : - 6 : 顯示已安裝的的應用程式"
+
+#: ../data/gnome-app-install.schemas.in.h:7
+msgid "Show only a subset of applications"
+msgstr "只顯示哪一部份應用程式"
+
+#: ../data/gnome-app-install.schemas.in.h:8
+msgid "Suggest application for MIME-type: approved components"
+msgstr "無應用程式支援的 MIME 類型時建議應用程式來自的元件"
+
+#: ../data/gnome-app-install.schemas.in.h:9
+msgid "Timeout for interactive search"
+msgstr "互動搜尋的超時時間"
+
+#: ../data/gnome-app-install.schemas.in.h:10
+msgid ""
+"Timeout from typing in the search entry until a search is triggered (in "
+"milliseconds)."
+msgstr "當在搜尋欄開始輸入時，多少微秒後才開始搜尋。"
+
+#: ../data/gnome-app-install.schemas.in.h:11
+msgid "Timestamp of the last cache refresh run"
+msgstr "上次重新載入快取的時間"
+
+#: ../data/gnome-app-install.schemas.in.h:12
+msgid ""
+"When the user asks to open a file but no supported application is present, "
+"the system will offer to install applications in the components listed here, "
+"as well as the individually whitelisted applications."
+msgstr ""
+"當使用者開啟一個檔案但沒有支援檔案類型的應用程式，系統會列出在此元件中支援檔"
+"案類型的應用程式和個別特選的應用程式供使用者安裝。"
+
+#: ../data/gnome-app-install.ui.h:1
+msgid "<b>Add</b>"
+msgstr "<b>添加</b>"
+
+#: ../data/gnome-app-install.ui.h:2
+msgid "<b>Remove</b>"
+msgstr "<b>刪除</b>"
+
+#: ../data/gnome-app-install.ui.h:6
+msgid ""
+"<big><b>The list of available applications is out of date</b></big>\n"
+"\n"
+"To reload the list you need a working internet connection."
+msgstr ""
+"<big><b>此可安裝應用程式的列表已經過期</b></big>\n"
+"\n"
+"重新載入此列表需要連接互聯網。"
+
+#: ../data/gnome-app-install.ui.h:9
+msgid "Add/Remove Applications"
+msgstr "新增/移除應用程式"
+
+#: ../data/gnome-app-install.ui.h:10
+msgid "Apply pending changes and close the window"
+msgstr "套用待辦的更改並關閉視窗"
+
+#: ../data/gnome-app-install.ui.h:11
+msgid "Cancel pending changes and close the window"
+msgstr "取消待辦的更改並關閉視窗"
+
+#: ../data/gnome-app-install.ui.h:12
+msgid "Categories"
+msgstr "分類"
+
+#: ../data/gnome-app-install.ui.h:13
+msgid "Search:"
+msgstr "搜尋："
+
+#: ../data/gnome-app-install.ui.h:14
+msgid "Show:"
+msgstr "顯示："
+
+#: ../data/gnome-app-install.ui.h:15
+msgid "The categories represent the application menu"
+msgstr "應用程式選單上顯示的分類"
+
+#: ../data/gnome-app-install.ui.h:16
+msgid "_Add/Remove More Applications"
+msgstr "添加/刪除更多應用程式(_A)"
+
+#: ../data/gnome-app-install.ui.h:17
+msgid "_Apply Changes"
+msgstr "套用變更 (_A)"
+
+#: ../data/gnome-app-install.ui.h:18
+msgid "_Reload"
+msgstr "重新載入(_R)"
+
+#: ../data/gnome-app-install.ui.h:19
+msgid "_Remove"
+msgstr "刪除(_R)"
+
+#: ../data/gnome-app-install.ui.h:20
+msgid "_Retry"
+msgstr "重試(_R)"
+
+#: ../data/gnome-app-install.ui.h:21
+msgid "applications"
+msgstr "應用程式"
+
+#: ../data/gnome-app-install.desktop.in.h:1
+#: ../data/gnome-app-install-xfce.desktop.in.h:1
+msgid "Add/Remove..."
+msgstr "添加/删除..."
+
+#: ../data/gnome-app-install.desktop.in.h:2
+#: ../data/gnome-app-install-xfce.desktop.in.h:2
+msgid "Install and remove applications"
+msgstr "安裝和刪除應用程式"
+
+#: ../data/gnome-app-install.desktop.in.h:3
+#: ../data/gnome-app-install-xfce.desktop.in.h:3
+msgid "Package Manager"
+msgstr "套件管理程式"
+
+#: ../AppInstall/activation.py:124
+msgid "no suitable application"
+msgstr "無合適的應用程式"
+
+#: ../AppInstall/activation.py:125
+msgid ""
+"No application suitable for automatic installation is available for handling "
+"this kind of file."
+msgstr "沒有可以處理此類型檔案的應用程式供自動安裝。"
+
+#: ../AppInstall/activation.py:128
+msgid "no application found"
+msgstr "找不到應用程式"
+
+#: ../AppInstall/activation.py:129
+msgid "No application is known for this kind of file."
+msgstr "無應用程式可處理此類型檔案。"
+
+#: ../AppInstall/activation.py:142 ../AppInstall/activation.py:336
+msgid "Searching for appropriate applications"
+msgstr "搜尋合適的應用程式"
+
+#: ../AppInstall/activation.py:144 ../AppInstall/activation.py:217
+msgid "Please wait. This might take a minute or two."
+msgstr "這可能要花一、兩分鐘的時間，請耐心等待。"
+
+#: ../AppInstall/activation.py:172
+msgid "Search for suitable codec?"
+msgstr "搜尋合適的解碼器 (codec) ?"
+
+#: ../AppInstall/activation.py:173
+msgid ""
+"The required software to play this file is not installed. You need to "
+"install suitable codecs to play media files. Do you want to search for a "
+"codec that supports the selected file?\n"
+"\n"
+"The search will also include software which is not officially supported."
+msgstr ""
+"播放這個檔案需要的軟體尚未安裝，你需要安裝適合的解碼器(codecs)才能播放媒體檔"
+"案。\n"
+"你想要尋找支援這個檔案格式的解碼器嗎？\n"
+"\n"
+"這個搜尋也會包含官方不支援的軟體。"
+
+#: ../AppInstall/activation.py:184
+msgid "Invalid commandline"
+msgstr "無效的命令列"
+
+#: ../AppInstall/activation.py:185
+#, python-format
+msgid "'%s' does not understand the commandline argument '%s'"
+msgstr "‘%s’ 並不明白命令列參數 ‘%s’"
+
+#: ../AppInstall/activation.py:215
+msgid "Searching for appropriate codecs"
+msgstr "搜尋合適的 codecs"
+
+#: ../AppInstall/activation.py:220 ../AppInstall/activation.py:341
+msgid "_Install"
+msgstr "安裝(_I)"
+
+#: ../AppInstall/activation.py:221
+msgid "Install Media Plug-ins"
+msgstr "安裝媒體外掛程式"
+
+#: ../AppInstall/activation.py:225
+msgid "Codec"
+msgstr "解碼器 (Codec)"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:303
+#, python-format
+msgid "\"%s\" cannot be opened"
+msgstr "“%s” 未能被開啟"
+
+#: ../AppInstall/activation.py:338
+#, python-format
+msgid ""
+"A list of applications that can handle documents of the type '%s' will be "
+"created"
+msgstr "一個可以處理 ‘%s’ 類型文件的應用程式列表將被建立"
+
+#. TRANSLATORS: %s represents a file path
+#: ../AppInstall/activation.py:344
+#, python-format
+msgid "Install applications to open \"%s\""
+msgstr "安裝應用程式以開啟 “%s”"
+
+#: ../AppInstall/activation.py:347
+msgid "Install applications"
+msgstr "安裝應用程式"
+
+#: ../AppInstall/activation.py:358
+msgid "_Search"
+msgstr "搜尋 (_S)"
+
+#: ../AppInstall/activation.py:397
+msgid "Searching for extensions"
+msgstr "搜尋附加元件"
+
+#: ../AppInstall/activation.py:398
+msgid "Extensions allow you to add new features to your application."
+msgstr "附加元件讓您為您的應用程式增加新功能。"
+
+#: ../AppInstall/activation.py:400
+msgid "Install/Remove Extensions"
+msgstr "添加/刪除附加元件"
+
+#: ../AppInstall/activation.py:402
+msgid "Extension"
+msgstr "附加元件"
+
+#: ../AppInstall/AppInstallApp.py:177
+msgid ""
+"To install an application check the box next to the application. Uncheck the "
+"box to remove the application."
+msgstr "勾選應用程式旁的方框來安裝此應用程式，除消勾選則刪除此應用程式。"
+
+#: ../AppInstall/AppInstallApp.py:180
+msgid "To perform advanced tasks use the Synaptic package manager."
+msgstr "使用 Synaptic 套件管理程式進行進階工作。"
+
+#: ../AppInstall/AppInstallApp.py:182
+msgid "Quick Introduction"
+msgstr "簡要說明"
+
+#: ../AppInstall/AppInstallApp.py:228
+msgid "Installed applications only"
+msgstr "已安裝的應用程式"
+
+#: ../AppInstall/AppInstallApp.py:229
+msgid "Show only applications that are installed on your computer"
+msgstr "只顯示已安裝在您電腦中的應用程式"
+
+#: ../AppInstall/AppInstallApp.py:351
+msgid "Error reading the addon CD"
+msgstr "讀取附加軟件光碟錯誤"
+
+#: ../AppInstall/AppInstallApp.py:352
+msgid "The addon CD may be corrupt "
+msgstr "這片加值光碟可能已損壞 "
+
+#: ../AppInstall/AppInstallApp.py:440
+msgid "The list of applications is not available"
+msgstr "沒有應用程式列表"
+
+#: ../AppInstall/AppInstallApp.py:441
+msgid ""
+"Click on 'Reload' to load it. To reload the list you need a working internet "
+"connection. "
+msgstr "按下 ‘重新整理’ 按鈕來載入它。 要重新載入清單，你需要連接互聯網絡。 "
+
+#: ../AppInstall/AppInstallApp.py:460
+#, python-format
+msgid "%s cannot be installed on your computer type (%s)"
+msgstr "%s 不能安裝在您的電腦類型 (%s)"
+
+#: ../AppInstall/AppInstallApp.py:463
+msgid ""
+"Either the application requires special hardware features or the vendor "
+"decided to not support your computer type."
+msgstr "應用程式可能需要特別的硬體功能或者生產商不支援您的電腦類型。"
+
+#: ../AppInstall/AppInstallApp.py:489
+#, python-format
+msgid "Cannot install '%s'"
+msgstr "無法安裝‘%s’"
+
+#: ../AppInstall/AppInstallApp.py:490
+#, python-format
+msgid ""
+"This application conflicts with other installed software. To install '%s' "
+"the conflicting software must be removed first.\n"
+"\n"
+"Switch to the 'synaptic' package manager to resolve this conflict."
+msgstr ""
+"此應用程式和其他已安裝軟體發生衝突。要安裝 ‘%s’，一定要先刪除衝突的軟體。\n"
+"\n"
+"請切換至 ‘Synaptic’ 套件管理程式去解決此衝突。"
+
+#: ../AppInstall/AppInstallApp.py:542
+#, python-format
+msgid "Cannot remove '%s'"
+msgstr "無法刪除‘%s’"
+
+#: ../AppInstall/AppInstallApp.py:543
+#, python-format
+msgid ""
+"One or more applications depend on %s. To remove %s and the dependent "
+"applications, use the Synaptic package manager."
+msgstr ""
+"一個或多個應用程式依靠 %s。請使用 Synaptic 套件管理程式刪除 %s 及其相依應用程"
+"式。"
+
+#: ../AppInstall/AppInstallApp.py:639
+msgid "C_onfirm"
+msgstr "確定 (_O)"
+
+#. Fallback
+#: ../AppInstall/AppInstallApp.py:680 ../AppInstall/DialogProprietary.py:22
+#: ../AppInstall/distros/Debian.py:24
+#, python-format
+msgid "Enable the installation of software from %s?"
+msgstr "啟用由 %s 安裝軟體？"
+
+#: ../AppInstall/AppInstallApp.py:682
+#, python-format
+msgid ""
+"%s is provided by a third party vendor. The third party vendor is "
+"responsible for support and security updates."
+msgstr "%s 是由第三方生產商提供的。由第三方生產商承担支援和安全更新。"
+
+#: ../AppInstall/AppInstallApp.py:686 ../AppInstall/DialogProprietary.py:25
+msgid "You need a working internet connection to continue."
+msgstr "您需要連接互聯網才可以繼續。"
+
+#: ../AppInstall/AppInstallApp.py:690 ../AppInstall/DialogProprietary.py:35
+msgid "_Enable"
+msgstr "啟用(_E)"
+
+#. show an error dialog if something went wrong with the cache
+#: ../AppInstall/AppInstallApp.py:899
+msgid "Failed to check for installed and available applications"
+msgstr "檢查已安裝和可安裝的應用程式失敗"
+
+#: ../AppInstall/AppInstallApp.py:900
+msgid ""
+"This is a major failure of your software management system. Please check for "
+"broken packages with synaptic, check the file permissions and correctness of "
+"the file '/etc/apt/sources.list' and reload the software information with: "
+"'sudo apt-get update' and 'sudo apt-get install -f'."
+msgstr ""
+"這是您的軟體管理系統的一個主要故障，請使用 synaptic 檢查破損的套件，檢查檔案 "
+"‘/etc/apt/sources.list’ 的權限和內容是否正確，然後使用命令 ‘sudo apt-get "
+"update’ 和 ‘sudo apt-get install -f’ 重新載入軟體資訊。"
+
+#: ../AppInstall/AppInstallApp.py:978
+msgid "Apply changes to installed applications before closing?"
+msgstr "關閉之前套用更改到已安裝的應用程式嗎?"
+
+#: ../AppInstall/AppInstallApp.py:979
+msgid "If you do not apply your changes they will be lost permanently."
+msgstr "如果您不套用更改，此更改內容將會永遠丟失。"
+
+#: ../AppInstall/AppInstallApp.py:983
+msgid "_Close Without Applying"
+msgstr "關閉而不套用更改(_C)"
+
+#: ../AppInstall/AppInstallApp.py:1000
+msgid "No help available"
+msgstr "沒有說明文件"
+
+#: ../AppInstall/AppInstallApp.py:1001
+msgid "To display the help, you need to install the \"yelp\" application."
+msgstr "要顯示說明文件，您需要安裝 \"yelp\" 應用程式。"
+
+#. FIXME: move this inside the dialog class, we show a different
+#. text for a quit dialog and a approve dialog
+#: ../AppInstall/AppInstallApp.py:1050
+msgid "Apply the following changes?"
+msgstr "套用以下更改嗎？"
+
+#: ../AppInstall/AppInstallApp.py:1051
+msgid ""
+"Please take a final look through the list of applications that will be "
+"installed or removed."
+msgstr "請對要安裝和刪除的應用程式列表作最後的確認。"
+
+#: ../AppInstall/AppInstallApp.py:1272
+msgid "There is no matching application available."
+msgstr "沒有符合的應用程式。"
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1282
+#, python-format
+msgid "To broaden your search, choose \"%s\"."
+msgstr "選擇 “%s” 以擴大您的搜尋。"
+
+#. TRANSLATORS: %s represents a filter name
+#: ../AppInstall/AppInstallApp.py:1286
+#, python-format
+msgid "To broaden your search, choose \"%s\" or \"%s\"."
+msgstr "選擇 “%s” 或 “%s” 以擴大您的搜尋。"
+
+#. TRANSLATORS: Show refers to the Show: combobox
+#: ../AppInstall/AppInstallApp.py:1292
+msgid "To broaden your search, choose a different \"Show\" item."
+msgstr "選擇不同的 “顯示” 項目以擴大您的搜尋。"
+
+#. TRANSLATORS: All refers to the All category in the left list
+#: ../AppInstall/AppInstallApp.py:1298
+msgid "To broaden your search, choose 'All' categories."
+msgstr "請選擇 ‘全部’ 分類去擴大您的搜尋。"
+
+#: ../AppInstall/BrowserView.py:96
+#, python-format
+msgid "Failed to open '%s'"
+msgstr "開啟 ‘%s’ 失敗"
+
+#: ../AppInstall/CoreMenu.py:195
+msgid "Applications"
+msgstr "應用程式"
+
+#: ../AppInstall/DialogComplete.py:130
+msgid "Software installation failed"
+msgstr "軟件安裝失敗"
+
+#: ../AppInstall/DialogComplete.py:131
+msgid ""
+"There has been a problem during the installation of the following pieces of "
+"software."
+msgstr "安裝下列軟件的過程中發生問題。"
+
+#: ../AppInstall/DialogComplete.py:133 ../AppInstall/DialogComplete.py:149
+#: ../AppInstall/DialogComplete.py:165 ../AppInstall/DialogComplete.py:193
+msgid "Add/Remove More Software"
+msgstr "新增/移除更多軟件"
+
+#: ../AppInstall/DialogComplete.py:135
+msgid "Application installation failed"
+msgstr "應用程式安裝失敗"
+
+#: ../AppInstall/DialogComplete.py:136
+msgid ""
+"There has been a problem during the installation of the following "
+"applications."
+msgstr "安裝下列應用程式時發生一些問題。"
+
+#: ../AppInstall/DialogComplete.py:146
+msgid "Software could not be removed"
+msgstr "無法移除軟體"
+
+#: ../AppInstall/DialogComplete.py:147
+msgid ""
+"There has been a problem during the removal of the following pieces of "
+"software."
+msgstr "移除下列軟件的過程中發生問題。"
+
+#: ../AppInstall/DialogComplete.py:151
+msgid "Not all applications could be removed"
+msgstr "不是所有應用程式可以被刪除"
+
+#: ../AppInstall/DialogComplete.py:152
+msgid ""
+"There has been a problem during the removal of the following applications."
+msgstr "刪除下列應用程式時發生一些問題。"
+
+#: ../AppInstall/DialogComplete.py:162
+msgid "Installation and removal of software failed"
+msgstr "安裝及移除軟件失敗"
+
+#: ../AppInstall/DialogComplete.py:163
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"pieces of software."
+msgstr "在安裝或移除下列軟件的過程當中發生問題。"
+
+#: ../AppInstall/DialogComplete.py:167
+msgid "Installation and removal of applications failed"
+msgstr "安裝移除應用程式失敗"
+
+#: ../AppInstall/DialogComplete.py:168
+msgid ""
+"There has been a problem during the installation or removal of the following "
+"applications."
+msgstr "安裝或刪除下列應用程式時發生一些問題。"
+
+#: ../AppInstall/DialogComplete.py:176
+msgid "New application has been installed"
+msgstr "新的應用程式已經安裝"
+
+#: ../AppInstall/DialogComplete.py:177
+msgid "New applications have been installed"
+msgstr "新的應用程已經安裝"
+
+#: ../AppInstall/DialogComplete.py:182
+msgid ""
+"To start a newly installed application, choose it from the applications menu."
+msgstr "要啟動新安裝的應用程式，在應用程式選單選取它。"
+
+#: ../AppInstall/DialogComplete.py:185
+msgid "To start a newly installed application double click on it."
+msgstr "要啟動新安裝的應用程式，雙擊它。"
+
+#: ../AppInstall/DialogComplete.py:189
+msgid "Software has been installed successfully"
+msgstr "軟體已經成功安裝"
+
+#: ../AppInstall/DialogComplete.py:190
+msgid "Do you want to install or remove further software?"
+msgstr "你是否要安裝或移除更多軟件？"
+
+#: ../AppInstall/DialogComplete.py:195
+msgid "Applications have been removed successfully"
+msgstr "應用程式已經成功移除"
+
+#: ../AppInstall/DialogComplete.py:196
+msgid "Do you want to install or remove further applications?"
+msgstr "你是否要安裝或移除更多應用程式？"
+
+#: ../AppInstall/DialogMultipleApps.py:30
+#, python-format
+msgid "Remove %s and bundled applications?"
+msgstr "刪除 %s 和附帶應用程式？"
+
+#: ../AppInstall/DialogMultipleApps.py:31
+#, python-format
+msgid ""
+"%s is part of a software collection. If you remove %s, you will remove all "
+"bundled applications as well."
+msgstr "%s 是一個軟體集的一部份。如果您刪除 %s，您會同時刪除所有附帶應用程式。"
+
+#: ../AppInstall/DialogMultipleApps.py:34
+msgid "_Remove All"
+msgstr "刪除所有(_R)"
+
+#: ../AppInstall/DialogMultipleApps.py:36
+#, python-format
+msgid "Install %s and bundled applications?"
+msgstr "安裝 %s 和附帶應用程式？"
+
+#: ../AppInstall/DialogMultipleApps.py:37
+#, python-format
+msgid ""
+"%s is part of a software collection. If you install %s, you will install all "
+"bundled applications as well."
+msgstr "%s 是一個軟體集的一部份。如果您安裝 %s，您會同時安裝所有附帶應用程式。"
+
+#: ../AppInstall/DialogMultipleApps.py:40
+msgid "_Install All"
+msgstr "安裝全部(_I)"
+
+#: ../AppInstall/DialogProprietary.py:24
+#, python-format
+msgid "%s is provided by a third party vendor."
+msgstr "%s 是由第三方生產商提供。"
+
+#: ../AppInstall/DialogProprietary.py:41
+msgid ""
+"The application comes with the following license terms and conditions. Click "
+"on the 'Enable' button to accept them:"
+msgstr "應用程式有下列授權證款項。按 ‘啟用’ 同意它："
+
+#: ../AppInstall/DialogProprietary.py:47
+msgid "Accept the license terms and install the software"
+msgstr "同意授權證款項並安裝軟體"
+
+#: ../AppInstall/Menu.py:128
+msgid "Loading cache..."
+msgstr "載入快取..."
+
+#: ../AppInstall/Menu.py:132
+msgid "Collecting application data..."
+msgstr "收集應用程式資料..."
+
+#: ../AppInstall/Menu.py:372
+msgid "Loading applications..."
+msgstr "載入應用程式..."
+
+#. add "All" category
+#: ../AppInstall/Menu.py:375
+msgid "All"
+msgstr "全部"
+
+#: ../AppInstall/Menu.py:385
+#, python-format
+msgid "Loading %s..."
+msgstr "正在載入%s..."
+
+#: ../AppInstall/distros/Debian.py:14 ../AppInstall/distros/Default.py:13
+#. %s is the name of the component
+#: ../AppInstall/distros/Debian.py:26 ../AppInstall/distros/Default.py:27
+#: ../AppInstall/distros/Debian.py:28
+msgid "Enable the installation of officially supported Debian software?"
+msgstr "啟用安裝由 Debian 官方支援的軟件？"
+
+#. %s is the name of the application
+#: ../AppInstall/distros/Debian.py:31
+#, fuzzy, python-format
+msgid ""
+"%s is part of the Debian distribution. Debian provides support and security "
+"updates, which will be enabled too."
+msgstr ""
+"%s 是 Debian main 發行版的一部份。Debian 會提供支援和安全更新(會同樣被啟用)。"
+
+#: ../AppInstall/distros/Debian.py:56
+#, python-format
+msgid "Debian provides support and security updates for %s"
+msgstr "Debian 提供 %s 的支援和安全更新"
+
+#: ../AppInstall/distros/Debian.py:61
+#, fuzzy, python-format
+msgid "%s is not an official part of Debian."
+msgstr "%s 是不受官方支援安全更新的。"
+
+#. Fallback
+#. %s is the name of the application
+#. %s is the name of the application
+#. %s is the name of the application
+#: ../AppInstall/widgets/AppDescView.py:16
+msgid "Description"
+msgstr "描述"
+
+#: ../AppInstall/widgets/AppDescView.py:88
+#, python-format
+msgid "%s cannot be installed"
+msgstr "不能安裝%s"
+
+#. warn that this app is not available on this plattform
+#: ../AppInstall/widgets/AppDescView.py:97
+#, python-format
+msgid ""
+"%s cannot be installed on your computer type (%s). Either the application "
+"requires special hardware features or the vendor decided to not support your "
+"computer type."
+msgstr ""
+"%s 不能安裝在您的電腦類型 (%s)。這可能是因為應用程式需要特別的硬體功能或者生"
+"產商不支援您的電腦類型。"
+
+#: ../AppInstall/widgets/AppDescView.py:108
+#, python-format
+msgid ""
+"%s is available in the third party software channel '%s'. To install it, "
+"please click on the checkbox to activate the software channel."
+msgstr "%s 在第三方軟體頻道 '%s' 中。要安裝它，請勾選軟體頻道以啟用它。"
+
+#: ../AppInstall/widgets/AppDescView.py:118
+msgid "This application is bundled with the following applications: "
+msgstr "此應用程式需要以下應用程式才能正常運行： "
+
+#: ../AppInstall/widgets/AppDescView.py:212
+#, python-format
+msgid ""
+"\n"
+"Homepage: %s\n"
+msgstr ""
+"\n"
+"網頁: %s\n"
+
+#: ../AppInstall/widgets/AppDescView.py:214
+#, python-format
+msgid "Version: %s (%s)"
+msgstr "版本：%s (%s)"
+
+#: ../AppInstall/widgets/AppListView.py:55
+msgid "Popularity"
+msgstr "流行程度"
+
+#. Application column (icon, name, description)
+#: ../AppInstall/widgets/AppListView.py:79
+msgid "Application"
+msgstr "應用程式"
+
+#: ../data/gnome-app-install.ui.h:3
+msgid ""
+"<big><b>Checking installed and available applications</b></big>"
+msgstr ""
+"<big><b>檢查已安裝和可安裝應用程式</b></big>"

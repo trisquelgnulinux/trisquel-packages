@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Lxsession
+TryExec=/usr/bin/lxsession -s Trisquel-mini
+Exec=/usr/bin/lxsession -s Trisquel-mini
+OnlyShowIn=GNOME;LXDE;
+X-GNOME-Autostart-Phase=Initialization
+X-GNOME-Autostart-Notify=true
+X-GNOME-AutoRestart=true
