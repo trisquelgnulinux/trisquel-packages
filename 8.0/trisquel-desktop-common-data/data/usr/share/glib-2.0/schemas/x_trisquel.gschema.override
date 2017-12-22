@@ -1,5 +1,13 @@
+[org.mate.screensaver]
+themes=['screensavers-trisquel']
+
+[com.canonical.unity-greeter]
+indicators=['ug-accessibility', 'com.canonical.indicator.keyboard', 'com.canonical.indicator.session', 'com.canonical.indicator.datetime', 'com.canonical.indicator.power', 'com.canonical.indicator.sound']
+theme-name='Ambiant-MATE'
+icon-theme-name='ubuntu-mono-dark'
+
 [org.mate.session.required-components]
-windowmanager='marco-compton'
+windowmanager='mate-wm'
 
 [org.mate.panel]
 default-layout='trisquel'
@@ -12,12 +20,12 @@ opacity=30000
 color='#000000'
 type='color'
 
-[org.mate.marco.general]
+[org.mate.Marco.general]
 theme = 'Trisquel'
 titlebar-font = 'Roboto Bold 9'
 compositing-manager = false
 
-[org.mate.marco.global-keybindings]                                                              
+[org.mate.Marco.global-keybindings]
 switch-panels='<Primary>Tab'
 
 [org.mate.background]
@@ -85,10 +93,6 @@ type='image'
 
 [org.gnome.nautilus.desktop]
 font='Sans Bold 8'
-home-icon-visible=true
-network-icon-visible=true
-trash-icon-visible=true
-volumes-visible=true
 
 [system.smb]
 workgroup='TRISQUEL'

@@ -1,3 +1,39 @@
+trisquel-desktop-common-data (8.0-7) flidas; urgency=medium
+
+  * Fixed keybinding schema for mate.Marco
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 09 Apr 2017 00:18:22 -0400
+
+trisquel-desktop-common-data (8.0-6) flidas; urgency=medium
+
+  * Added gsetting for Trisquel screensaver
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Apr 2017 21:23:47 -0400
+
+trisquel-desktop-common-data (8.0-5) flidas; urgency=medium
+
+  * Added /usr/share/mate/applications/mate-wm.desktop
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Apr 2017 21:06:18 -0400
+
+trisquel-desktop-common-data (8.0-4) flidas; urgency=medium
+
+  * Configured schemas for unity-greeter
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Apr 2017 20:39:05 -0400
+
+trisquel-desktop-common-data (8.0-3) flidas; urgency=medium
+
+  * Fixed schema for mate.Marco
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Apr 2017 17:32:59 -0400
+
+trisquel-desktop-common-data (8.0-2) flidas; urgency=medium
+
+  * Default wm in mate session to marco-compton
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Apr 2017 15:04:27 -0400
+
 trisquel-desktop-common-data (8.0-1) flidas; urgency=medium
 
   * Added Mate settings
