@@ -1,6 +1,13 @@
+trisquel-meta (8.0-1) flidas; urgency=medium
+
+  * 8.0/trisquel-meta corrected dependencies for flidas mate
+    metapackages
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 22 Dec 2017 17:49:14 -0500
+
 trisquel-meta (8.0) flidas; urgency=medium
 
-  * Updated for Flidas
+  * Initial release for Flidas
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 15 Dec 2017 10:24:53 -0500
 
