@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Trisquel
+Exec=/usr/lib/mate-screensaver/floaters /usr/share/pixmaps/trisquel-screensaver.png
+TryExec=/usr/lib/mate-screensaver/floaters
+StartupNotify=false
+Terminal=false
+Type=Application
+Categories=Screensaver;
+Keywords=MATE;screensaver;GNOME;logo;bubbles;
+OnlyShowIn=MATE;
