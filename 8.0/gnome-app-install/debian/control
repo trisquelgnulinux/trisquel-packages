@@ -30,7 +30,7 @@ Depends: ${python:Depends},
          python-gst0.10,
          python-gtk2 (>= 2.10.1),
          python-xdg (>= 0.8),
-         synaptic (>= 0.57.8) | aptdaemon
+         synaptic
 Recommends: yelp, lsb-release
 Provides: software-center
 XB-Python-Version: ${python:Versions}

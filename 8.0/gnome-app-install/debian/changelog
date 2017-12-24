@@ -1,3 +1,9 @@
+gnome-app-install (0.5.60.1ubuntu2trisquel8-1) flidas; urgency=medium
+
+  * Depend on synaptic 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Apr 2017 17:48:22 -0400
+
 gnome-app-install (0.5.60.1ubuntu2trisquel8) flidas; urgency=medium
 
   * Updated for flidas, fixed category icon loading
