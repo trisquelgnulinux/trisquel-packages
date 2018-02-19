@@ -1,3 +1,9 @@
+trisquel-keyring (2018.02.19) flidas; urgency=medium
+
+  * Make sure new keys are always processed
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 19 Feb 2018 14:31:54 -0500
+
 trisquel-keyring (2017.01.07) flidas; urgency=medium
 
   * Added new key to fix #21407
