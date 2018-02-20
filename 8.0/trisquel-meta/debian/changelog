@@ -1,4 +1,10 @@
-trisquel-meta (8.0-7) UNRELEASED; urgency=medium
+trisquel-meta (8.0-8) flidas; urgency=medium
+
+  * Updated Icedove related dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 19 Feb 2018 01:48:19 -0500
+
+trisquel-meta (8.0-7) flidas; urgency=medium
 
   * Corrected deprecated packages
   * Replace firmware-carl9170 with firmware-linux-free
