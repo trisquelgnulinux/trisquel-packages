@@ -1,3 +1,9 @@
+trisquel-gtk-theme (9.0) etiona; urgency=medium
+
+  * Theme rebased on newest version of Mate's BlueMenta
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 23 Jul 2019 20:34:22 -0500
+
 trisquel-gtk-theme (8.0) flidas; urgency=medium
 
   * Theme rebased on Mate's BlueMenta

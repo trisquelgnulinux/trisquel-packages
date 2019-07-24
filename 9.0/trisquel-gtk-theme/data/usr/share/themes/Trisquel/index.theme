@@ -3,7 +3,7 @@ Version=1.0
 Encoding=UTF-8
 Name=Trisquel
 Type=X-GNOME-Metatheme
-Comment=Trisquel 8.x Theme, based on BlueMenta
+Comment=Trisquel 9.x Theme, based on BlueMenta
 
 [X-GNOME-Metatheme]
 GtkTheme=Trisquel
