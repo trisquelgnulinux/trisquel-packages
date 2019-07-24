@@ -31,7 +31,7 @@
 
 @define-color inactive_frame_color #ccc;
 
-@define-color sidebar_bg shade (@theme_bg_color, 1.025);
+@define-color sidebar_bg shade (@theme_bg_color, 1.08);
 @define-color sidebar_bg_unfocused mix(@sidebar_bg, @theme_unfocused_base_color, 0.5);
 
 @define-color sidebar_scrollbar_trough shade(@sidebar_bg, 0.8);
@@ -50,6 +50,9 @@
 
 @define-color button_hover_gradient_color_a shade(@button_gradient_color_a, 1.11);
 @define-color button_hover_gradient_color_b shade(@button_gradient_color_b, 1.06);
+
+@define-color button_default_border_color #6699CC;
+@define-color button_default_box_shadow_color #336699;
 
 @define-color insensitive_bg_color shade(@theme_bg_color, 0.95);
 @define-color insensitive_fg_color shade(@theme_bg_color, 0.6);
@@ -97,6 +100,7 @@
 @define-color scale_trough_bg_b shade(@theme_bg_color, 0.76);
 @define-color scale_shadow alpha(white, 0.50);
 @define-color scale_progress_fill @theme_selected_bg_color;
+@define-color scale_trough_border shade(@borders, 0.83);
 @define-color scale_highlight_border @theme_selected_bg_color;
 @define-color scale_highlight_bg @theme_selected_bg_color;
 @define-color scale_highlight_shadow alpha(white, 0.50);
@@ -226,6 +230,9 @@
 
 /* csd border */
 @define-color wm_csd_solid_border_color shade (#3c3c3c, 1.2);
+
+/* inactive-pane caja */
+@define-color inactive-pane_bg_color #DEDEDE;
 
 @import url("gtk-main-common.css");
 @import url("gtk-widgets-backgrounds.css");

@@ -1,12 +1,3 @@
-/***************
- * Resize grip *
- ***************/
-
-.grip {
-	background-color: transparent;
-	background-image: url("assets/resize-grip.svg");
-}
-
 /*******************
  * Pane separators *
  *******************/
@@ -32,9 +23,7 @@
  * Header bar separator  *
  *************************/
 
-.header-bar > GtkBox > .separator.vertical {
-	-GtkWidget-wide-separators: 1;
-	-GtkWidget-separator-width: 2px;
+headerbar > box > separator.vertical {
 	background: transparent;
 	border-width: 0 1px 0 1px;
 	border-style: solid;
@@ -47,243 +36,263 @@
  *************************/
 
 /* draw regular check and radio items using our SVG assets */
+/* old syntax is for broken firefox */
 
+check,
 .check,
-.view.cell.check {
+check .view.cell {
 	-gtk-icon-source: -gtk-scaled(url("assets/check-normal.png"));
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.check:insensitive {
+check:disabled,
+.check {
 	-gtk-icon-source: -gtk-scaled(url("assets/check-normal-ins.png"));
 }
 
-.check row:insensitive {
+check row:disabled {
 	background-color: transparent;
 }
 
-.check:active,
-.check:checked,
-.view.cell.check:active,
-.view.cell.check:checked {
+check:checked,
+.view.cell check:checked {
 	-gtk-icon-source: -gtk-scaled(url("assets/check-active.png"));
 }
 
-.check:active:insensitive,
-.check:checked:insensitive {
+check:checked:disabled {
 	-gtk-icon-source: -gtk-scaled(url("assets/check-active-ins.png"));
 }
 
-.check:inconsistent {
+check:indeterminate {
 	-gtk-icon-source: -gtk-scaled(url("assets/check-mixed-active.png"));
 }
 
-.check:inconsistent:insensitive {
+check:indeterminate:disabled {
 	-gtk-icon-source: -gtk-scaled(url("assets/check-mixed-active-ins.png"));
 }
 
+radio,
 .radio,
-.view.cell.radio {
+.view.cell radio {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-normal.png"));
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.radio:insensitive {
+radio:disabled,
+.radio {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-normal-ins.png"));
 }
 
-.radio row:insensitive {
+radio row:disabled {
 	background-color: transparent;
 }
 
-.radio:active,
-.view.cell.radio:active,
-.radio:checked,
-.view.cell.radio:checked {
+radio:checked,
+.view.cell radio:checked {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-active.png"));
 }
 
-.radio:active:insensitive,
-.radio:checked:insensitive {
+radio:checked:disabled {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-active-ins.png"));
 }
 
-.radio:inconsistent {
+radio:indeterminate {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-active.png"));
 }
 
-.radio:inconsistent:insensitive {
+radio:indeterminate:disabled {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-active-ins.png"));
 }
 
-.sidebar .view.radio:active,
-.sidebar .view.radio:active:focus,
-.sidebar .view.radio:active:hover,
-.sidebar .view.radio:checked,
-.sidebar .view.radio:checked:focus,
-.sidebar .view.radio:checked:hover {
+.sidebar view radio:active,
+.sidebar view radio:active:focus,
+.sidebar view radio:active:hover,
+.sidebar view radio:checked,
+.sidebar view radio:checked:focus,
+.sidebar view radio:checked:hover {
 	-gtk-icon-source: -gtk-scaled(url("assets/sidebar-radio-checked.svg"));
 }
 
-.sidebar .view.radio:hover {
+.sidebar view radio:hover {
 	-gtk-icon-source: -gtk-scaled(url("assets/sidebar-radio-prelight.svg"));
 }
 
-.sidebar .view.radio:active:selected,
-.sidebar .view.radio:active:selected:focus,
-.sidebar .view.radio:checked:selected,
-.sidebar .view.radio:checked:selected:focus {
+.sidebar view radio:active:selected,
+.sidebar view radio:active:selected:focus,
+.sidebar view radio:checked:selected,
+.sidebar view radio:checked:selected:focus {
 	-gtk-icon-source: -gtk-scaled(url("assets/sidebar-radio-selected.svg"));
 }
 
-.sidebar .view.radio:selected:hover,
-.sidebar .view.radio:selected:focus {
+.sidebar view radio:selected:hover,
+.sidebar view radio:selected:focus {
 	-gtk-icon-source: -gtk-scaled(url("assets/sidebar-radio-selected-prelight.svg"));	
 }
 
 /*************
  * GtkSwitch *
  *************/
-GtkSwitch.trough {
+
+switch {
  	background-image: url("assets/switch-off.png");
+    background-repeat: no-repeat;
 }
 
-GtkSwitch.trough:active {
+switch:checked {
 	background-image: url("assets/switch-on.png");
+    background-repeat: no-repeat;
 }
 
-GtkSwitch.trough:insensitive {
+switch:disabled {
 	background-image: url("assets/switch-off-ins.png");
+    background-repeat: no-repeat;
 }
 
-GtkSwitch.trough:active:insensitive {
+switch:checked:disabled {
 	background-image: url("assets/switch-on-ins.png");
+    background-repeat: no-repeat;
 }
 
 /*********************
  * GtkScale's slider *
  *********************/
-.scale.slider,
-.scale.slider.horizontal {
-	background-image: url("assets/slider.png");
+
+scale.horizontal contents:only-child > trough > slider,
+scale slider {
+	background-image: url("assets/slider.svg");
+    background-repeat: no-repeat;
 }
 
-.scale.slider:hover,
-.scale.slider.horizontal:hover {
-	background-image: url("assets/slider-hover.png");
+scale slider:hover {
+	background-image: url("assets/slider-hover.svg");
+    background-repeat: no-repeat;
 }
 
-.scale.slider:active,
-.scale.slider:active:hover,
-.scale.slider.horizontal:active,
-.scale.slider.horizontal:active:hover {
-	background-image: url("assets/slider-hover.png");
+scale slider:disabled,
+scale slider:disabled:hover {
+	background-image: url("assets/slider-ins.svg");
+    background-repeat: no-repeat;
 }
 
-.scale.slider:insensitive,
-.scale.slider:insensitive:hover,
-.scale.slider.horizontal:insensitive,
-.scale.slider.horizontal:insensitive:hover {
-	background-image: url("assets/slider-ins.png");
+scale.horizontal.color.marks-before slider,
+scale.horizontal.marks-before slider {
+	background-image: url("assets/scale-slider-marks-above-horizontal.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.horizontal {
-	background-image: url("assets/slider.png");
+scale.horizontal.color.marks-before slider:hover,
+scale.horizontal.marks-before slider:hover {
+	background-image: url("assets/scale-slider-marks-above-horizontal-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.horizontal:hover {
-	background-image: url("assets/slider-hover.png");
+scale.horizontal.color.marks-before slider:active,
+scale.horizontal.color.marks-before slider:active:hover,
+scale.horizontal.marks-before slider:active,
+scale.horizontal.marks-before slider:active:hover {
+	background-image: url("assets/scale-slider-marks-above-horizontal-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.horizontal:active,
-.scale.scale-has-marks-above.slider.horizontal:active:hover {
-	background-image: url("assets/slider-hover.png");
+scale.horizontal.color.marks-before slider:disabled,
+scale.horizontal.marks-before slider:disabled {
+	background-image: url("assets/scale-slider-marks-above-horizontal-insensitive.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.horizontal:insensitive,
-.scale.scale-has-marks-above.slider.horizontal:insensitive:hover {
-	background-image: url("assets/slider-ins.png");
+scale.vertical.marks-before slider {
+	background-image: url("assets/scale-slider-marks-above-vertical.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.vertical {
-	background-image: url("assets/slider.png");
+scale.vertical.marks-before slider:hover {
+	background-image: url("assets/scale-slider-marks-above-vertical-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.vertical:hover {
-	background-image: url("assets/slider-hover.png");
+scale.vertical.marks-before slider:active,
+scale.vertical.marks-before slider:active:hover {
+	background-image: url("assets/scale-slider-marks-above-vertical-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.vertical:active,
-.scale.scale-has-marks-above.slider.vertical:active:hover {
-	background-image: url("assets/slider-hover.png");
+scale.vertical.marks-before slider:disabled,
+scale.vertical.marks-before slider:disabled:hover {
+	background-image: url("assets/scale-slider-marks-above-vertical-insensitive.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-above.slider.vertical:insensitive,
-.scale.scale-has-marks-above.slider.vertical:insensitive:hover {
-	background-image: url("assets/slider-ins.png");
+scale.horizontal.marks-after slider {
+	background-image: url("assets/scale-slider-marks-below-horizontal.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-below.slider.horizontal {
-	background-image: url("assets/slider.png");
+scale.horizontal.marks-after slider:hover {
+	background-image: url("assets/scale-slider-marks-below-horizontal-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-below.slider.horizontal:hover {
-	background-image: url("assets/slider-hover.png");
+scale.horizontal.marks-after slider:active,
+scale.horizontal.marks-after slider:active:hover {
+	background-image: url("assets/scale-slider-marks-below-horizontal-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-below.slider.horizontal:active,
-.scale.scale-has-marks-below.slider.horizontal:active:hover {
-	background-image: url("assets/slider-hover.png");
+scale.horizontal.marks-after slider:disabled:hover {
+	background-image: url("assets/scale-slider-marks-below-horizontal-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-below.slider.horizontal:insensitive,
-.scale.scale-has-marks-below.slider.horizontal:insensitive:hover {
-	background-image: url("assets/slider-ins.png");
+scale.vertical.marks-after slider {
+	background-image: url("assets/scale-slider-marks-below-vertical.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-below.slider.vertical {
-	background-image: url("assets/slider.png");
+scale.vertical.marks-after slider:hover {
+	background-image: url("assets/scale-slider-marks-below-vertical-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-below.slider.vertical:hover {
-	background-image: url("assets/slider-hover.png");
+scale.vertical.marks-after slider:active,
+scale.vertical.marks-after slider:active:hover {
+	background-image: url("assets/scale-slider-marks-below-vertical-active.png");
+    background-repeat: no-repeat;
 }
 
-.scale.scale-has-marks-below.slider.vertical:active,
-.scale.scale-has-marks-below.slider.vertical:active:hover {
-	background-image: url("assets/slider-hover.png");
-}
-
-.scale.scale-has-marks-below.slider.vertical:insensitive,
-.scale.scale-has-marks-below.slider.vertical:insensitive:hover {
-	background-image: url("assets/slider-ins.png");
+scale.vertical.marks-after slider:disabled,
+scale.vertical.marks-after slider:disabled:hover {
+	background-image: url("assets/scale-slider-marks-below-vertical-insensitive.png");
+    background-repeat: no-repeat;
 }
 
 /********************************
  * Touch text selection handles *
  ********************************/
-.cursor-handle.bottom {
+
+cursor-handle.bottom {
 	background-image: url("assets/slider.png");
 }
 
-.cursor-handle.top {
+cursor-handle.top {
 	background-image: url("assets/slider.png");
 }
 
-.entry.cursor-handle.top,
-.cursor-handle.top {
+entry cursor-handle.top,
+cursor-handle.top {
 	-gtk-icon-source: -gtk-icontheme("selection-start-symbolic");
 }
-.entry.cursor-handle.bottom,
-.cursor-handle.bottom {
+
+entry cursor-handle.bottom,
+cursor-handle.bottom {
 	-gtk-icon-source: -gtk-icontheme("selection-end-symbolic");
 }
 
 /****************
  * Content view *
  ****************/
+.view.content-view,
 .content-view.view {
 	/*background-image: url("assets/noise-texture-light.png");*/
 }
