@@ -284,8 +284,7 @@
 .mate-panel-menu-bar menuitem,
 #PanelPlug,
 #PanelApplet button,
-PanelToplevel.background,
-#PanelApplet-window-menu-applet-button {
+PanelToplevel.background {
     background-color: transparent;
     border-image: none;
     background-image: none;
@@ -297,12 +296,10 @@ PanelToplevel.background,
 #PanelPlug,
 .mate-panel-menu-bar,
 PanelToplevel.background {
-    background-color: @theme_bg_color;
-    background-image: none;
-    /* normal panel */
-    color: @theme_fg_color;
-    /* transparent panel */
-/*    color: @theme_selected_fg_color; */
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_bg_dark_color, 0.86),
+                                      shade (@theme_bg_dark_color, 0.26));
+    color: @theme_fg_dark_color;
     text-shadow: none;
 }
 
@@ -349,6 +346,13 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
     background-position: left;
 }
 
+/* this makes text readable with all kind of wallpapers if using a transparent panel */
+#PanelApplet label,
+.mate-panel-menu-bar menubar > menuitem {
+    color: @menu_fg_dark_color;
+    text-shadow: 1px 1px alpha (#000000, 0.8);
+}
+
 /* outlines */
 window.background, /* selector where outlines are writen on GtkTrayIcon */
 .mate-panel-menu-bar menubar,
@@ -378,14 +382,14 @@ window.background, /* selector where outlines are writen on GtkTrayIcon */
 /* needed for mate-menu/mintmenu/wnck-tasklist to override a wildcard at line 37 gtk-widgets.css */
 #PanelApplet:selected,
 #PanelApplet #tasklist-button * {
-    color: shade (@theme_fg_color, 1.00);
+    color: shade (@theme_fg_dark_color, 1.00);
 }
 
 .mate-panel-menu-bar #PanelApplet button,
 .mate-panel-menu-bar #PanelApplet button.flat,
 .mate-panel-menu-bar #PanelApplet button.toggle,
 .mate-panel-menu-bar #PanelApplet button.flat.toggle {
-    color: shade (@theme_fg_color, 1.00);
+    color: shade (@theme_fg_dark_color, 1.00);
     transition: all 400ms ease-out;
     background-image: none;
     background-color: transparent;
@@ -411,9 +415,9 @@ window.background, /* selector where outlines are writen on GtkTrayIcon */
 .mate-panel-menu-bar #PanelApplet button.flat.toggle:checked:hover,
 .mate-panel-menu-bar #PanelApplet button.flat.toggle:hover:active {
     background-image: linear-gradient(to bottom,
-                                      shade (@theme_bg_color, 1.0),
-                                      shade (@theme_bg_color, 0.82));
-    color: shade (@theme_fg_color, 1.00);
+                                      shade (@theme_bg_dark_color, 1.0),
+                                      shade (@theme_bg_dark_color, 0.82));
+    color: shade (@theme_fg_dark_color, 1.00);
 }
 
 .mate-panel-menu-bar #PanelApplet button:hover,
@@ -421,33 +425,33 @@ window.background, /* selector where outlines are writen on GtkTrayIcon */
 .mate-panel-menu-bar #PanelApplet button.toggle:hover,
 .mate-panel-menu-bar #PanelApplet button.flat.toggle:hover {
     background-image: linear-gradient(to bottom,
-                                      shade (@theme_bg_color, 1.14),
-                                      shade (@theme_bg_color, 0.96));
-    color: shade (@theme_fg_color, 1.00);
+                                      shade (@theme_bg_dark_color, 1.14),
+                                      shade (@theme_bg_dark_color, 0.96));
+    color: shade (@theme_fg_dark_color, 1.00);
 }
+
+.mate-panel-menu-bar menubar > menuitem:hover:active,
+.mate-panel-menu-bar menubar > menuitem:hover {
+    color: shade (@theme_selected_fg_color, 1.6);
+}
+
 
 /* WnckPager */
 PanelApplet.wnck-applet .wnck-pager {
     color: shade (@theme_selected_bg_color, 1.30);
-    background-image: none;
-    background-color: transparent;
+    background-color: shade (@theme_fg_dark_color, 0.4);
     text-shadow: none;
-    outline-offset: -1px;
-    outline-color: shade (@theme_selected_bg_color, 1.0);
+    outline-color: shade (@theme_bg_dark_color, 1.0);
 }
 
 /* selected WnckPager */
 PanelApplet.wnck-applet .wnck-pager:selected {
-    background-image: linear-gradient(to bottom,
-                                      @theme_selected_bg_color,
-                                      shade (@theme_selected_bg_color, 0.36));
+    background-color: @theme_selected_bg_color;
 }
 
 /* prelight of WnckPager */
 PanelApplet.wnck-applet .wnck-pager:hover {
-    background-image: linear-gradient(to bottom,
-                                      shade (@theme_selected_bg_color, 0.56),
-                                      @theme_selected_bg_color);
+    background-color: shade (@theme_fg_dark_color, 0.6);
 }
 
 #clock-applet-button.flat.toggle > box.horizontal > label {

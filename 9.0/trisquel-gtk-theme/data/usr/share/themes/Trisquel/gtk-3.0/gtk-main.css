@@ -5,7 +5,8 @@
 @define-color theme_text_color #2c2c2c;
 @define-color theme_fg_color @theme_text_color;
 @define-color theme_selected_fg_color #ffffff;
-
+@define-color theme_bg_dark_color #2C2C2C;
+@define-color theme_fg_dark_color #D4D4D4;
 @define-color placeholder_text_color shade(@text_color, 3.5);
 
 @define-color theme_unfocused_base_color shade(@insensitive_bg_color, 1.015); /* I don't want the same color, hope not to hurt usability to much here */
@@ -23,7 +24,11 @@
 
 @define-color menu_bg_color shade (@theme_bg_color, 1.1);
 @define-color menu_fg_color @theme_fg_color;
-
+@define-color menu_bg_dark_color shade(@theme_bg_dark_color, 0.95);
+@define-color menu_fg_dark_color shade(@theme_fg_dark_color, 1.00);
+@define-color menu_shadow_dark_color alpha(#000, 0.30);
+@define-color menu_line_dark_color shade(@theme_bg_dark_color, 0.78);
+@define-color menu_separator shade (@menu_bg_color, 0.96);
 @define-color menu_controls_color shade (@theme_fg_color, 0.9);
 
 @define-color menu_combobox_border @theme_selected_bg_color;
