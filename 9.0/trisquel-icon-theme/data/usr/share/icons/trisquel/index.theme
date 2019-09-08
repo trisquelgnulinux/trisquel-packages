@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Trisquel
 Comment=Trisquel icons for GNOME
-Inherits=gnome-brave,ubuntu-mono-dark,gnome,hicolor
+Inherits=trisquel-brave
 Example=folder
 
 Directories=scalable/apps,scalable/devices,scalable/places,24x24/apps,24x24/status,scalable/actions,scalable/status,actions/16,actions/22,actions/24,animations/24,animations/24,apps/16,apps/22,apps/24,apps/48,categories/22,categories/24,mimes/16,mimes/22,mimes/24,places/16,places/22,places/24,places/32,places/48,places/64,status/16,status/22,status/24,stock/16,stock/22,stock/24,stock/32,stock/48,stock/64,stock/128,48x48/apps
