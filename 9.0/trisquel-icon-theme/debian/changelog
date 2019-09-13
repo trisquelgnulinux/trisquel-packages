@@ -1,3 +1,10 @@
+trisquel-icon-theme (9.0) etiona; urgency=medium
+
+  * Fixed icon sizing issue
+  * Fixed monochrome indicator icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 12 Sep 2019 19:33:23 -0700
+
 trisquel-icon-theme (8.0) flidas; urgency=medium
 
   * Fixed indicator icons
