@@ -1,0 +1,13 @@
+Source: trisquel-sounds
+Section: gnome
+Priority: optional
+Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: trisquel-sounds
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: gnome-audio, ubuntu-sounds
+Description: Trisquel's GNOME audio theme
+ Sounds to spruce up the GNOME desktop environment.
