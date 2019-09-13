@@ -1,0 +1,161 @@
+trisquel-icon-theme (9.0) etiona; urgency=medium
+
+  * Fixed icon sizing issue
+  * Fixed monochrome indicator icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 12 Sep 2019 19:33:23 -0700
+
+trisquel-icon-theme (8.0) flidas; urgency=medium
+
+  * Fixed indicator icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 05 Apr 2017 19:27:45 -0400
+
+trisquel-icon-theme (7.0-4) belenos; urgency=low
+
+  * Added onboard icon
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 28 Aug 2014 03:01:34 +0200
+
+trisquel-icon-theme (7.0-3) belenos; urgency=low
+
+  * Added 48x48 libreoffice icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 08 Aug 2014 07:44:18 +0200
+
+trisquel-icon-theme (7.0-2) belenos; urgency=low
+
+  * Updated Trisquel logo icon
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 19 Jul 2014 01:38:27 +0200
+
+trisquel-icon-theme (7.0-1) belenos; urgency=low
+
+  * Added monochrome icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Jul 2014 23:13:20 +0200
+
+trisquel-icon-theme (7.0) belenos; urgency=low
+
+  * Initial release for belenos
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 31 Jan 2014 19:46:31 +0100
+
+trisquel-icon-theme (6.0) toutatis; urgency=low
+
+  * Final release for Toutatis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 25 Nov 2012 07:37:14 +0100
+
+trisquel-icon-theme (5.99-2) toutatis; urgency=low
+
+  * Fixed wireless icons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 19 Nov 2012 03:44:14 +0100
+
+trisquel-icon-theme (5.99-1) toutatis; urgency=low
+
+  * Updated icon resolutions
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Nov 2012 05:57:40 +0100
+
+trisquel-icon-theme (5.99) toutatis; urgency=low
+
+  * Initial release for Toutatis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 07 Oct 2012 05:26:25 +0200
+
+trisquel-icon-theme (5.5) brigantia; urgency=low
+
+  * Make the theme inherit gnome as well as gnome-brave
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Mar 2012 10:31:58 +0100
+
+trisquel-icon-theme (5.4-2) slaine; urgency=low
+
+  * Moved base to gnome-brave
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 14 Mar 2012 15:58:40 +0100
+
+trisquel-icon-theme (5.4-1) slaine; urgency=low
+
+  * Added symbolic action icons, needed by totem among others
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 23:13:55 +0100
+
+trisquel-icon-theme (5.4) slaine; urgency=low
+
+  * Initial release for Brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 18:40:14 +0100
+
+trisquel-icon-theme (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:31:55 +0200
+
+trisquel-icon-theme (4.99-1) slaine; urgency=low
+
+  * Now inherits from Elementary Dark
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 09 Aug 2011 18:51:55 +0200
+
+trisquel-icon-theme (4.99) slaine; urgency=low
+
+  * Initial release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 Jul 2011 14:48:41 +0200
+
+trisquel-icon-theme (4.5) slaine; urgency=low
+
+  * added a lock to nm-applet icons, and a gwibber status icon
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 10 Mar 2011 00:45:36 +0100
+
+trisquel-icon-theme (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-icon-theme (4.0) taranis; urgency=low
+
+  * Added shotwell icon
+  * Added exaile smaller icons
+  * New battery icons
+  * Moved to elementary
+  * removed 48x48/apps/gnome-session-reboot.png
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2010 19:50:00 +0200
+
+trisquel-icon-theme (3.5) awen; urgency=low
+
+  * Initial release for Awen
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 21 Feb 2010 03:11:56 +0100
+
+trisquel-icon-theme (3.0) dwyn; urgency=low
+
+  * added update-manager trisquel icon
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Wed, 12 Aug 2009 18:46:29 +0200
+
+trisquel-icon-theme (2.99-1) dwyn; urgency=low
+
+  * Added notification icons, the sleep icon, and fixed network-manager
+    icon sizes
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Thu, 09 Jul 2009 18:51:42 +0200
+
+trisquel-icon-theme (2.99) dwyn; urgency=low
+
+  * Initial release for Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Fri, 12 Jun 2009 14:26:55 +0200
+
+trisquel-icon-theme (2.1-1) robur; urgency=low
+
+  * Initial release
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200
