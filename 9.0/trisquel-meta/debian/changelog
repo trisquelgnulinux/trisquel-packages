@@ -1,3 +1,77 @@
+trisquel-meta (9.0-12) etiona; urgency=medium
+
+  * Updated triskel dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 17 Jan 2020 22:09:35 -0500
+
+trisquel-meta (9.0-11) etiona; urgency=medium
+
+  * Fixed electrum depend
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 17 Jan 2020 21:57:34 -0500
+
+trisquel-meta (9.0-10) etiona; urgency=medium
+
+  * gcalctool moved to gnome-calculator
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 17 Jan 2020 21:49:01 -0500
+
+trisquel-meta (9.0-9) etiona; urgency=medium
+
+  * Fixed trisquel-gnome dependencies
+  * Added exfat support and awesome font
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 17 Jan 2020 21:35:50 -0500
+
+trisquel-meta (9.0-8) etiona; urgency=medium
+
+  * Corrected calculator
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 19 Dec 2019 22:51:20 -0500
+
+trisquel-meta (9.0-7) etiona; urgency=medium
+
+  * Fixed outdated dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 19 Dec 2019 22:40:02 -0500
+
+trisquel-meta (9.0-6) etiona; urgency=medium
+
+  * Removed upstart, moved iproute to iproute2
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 14 Dec 2019 02:26:08 -0500
+
+trisquel-meta (9.0-5) etiona; urgency=medium
+
+  * Removed gst0.10 and other deprecated dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 14 Dec 2019 01:52:18 -0500
+
+trisquel-meta (9.0-4) etiona; urgency=medium
+
+  * Fixed firmware-ath9k-htc
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 13 Dec 2019 23:52:27 -0500
+
+trisquel-meta (9.0-3) etiona; urgency=medium
+
+  * Error in backintime replacement
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 13 Dec 2019 21:59:35 -0500
+
+trisquel-meta (9.0-2) etiona; urgency=medium
+
+  * Updated dependencies for etiona
+  * Updated dependencies. Deja-dup replaced with backintime
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 13 Dec 2019 21:52:52 -0500
+
+trisquel-meta (9.0) etiona; urgency=medium
+
+  * Initial release for etiona
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 13 Dec 2019 16:17:17 -0500
+
 trisquel-meta (8.0-8) flidas; urgency=medium
 
   * Updated Icedove related dependencies
