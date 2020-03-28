@@ -1,3 +1,9 @@
+trisquel-base-data (9.0) etiona; urgency=medium
+
+  * Encrypt / by default
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 13 Dec 2019 16:15:19 -0500
+
 trisquel-base-data (7.0-1) belenos; urgency=medium
 
   * Remove alias for rm command

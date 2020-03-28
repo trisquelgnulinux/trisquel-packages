@@ -7,7 +7,8 @@ partman-auto/text/home_scheme ::
     filesystem{ xfs }
     mountpoint{ / }
     options/relatime{ relatime } .
-    $lvmok{ }
+    $lvmok{ } lv_name{ root }
+    in_vg { crypt }
 
 500 1000 2000 ext4
     method{ format }
@@ -18,12 +19,14 @@ partman-auto/text/home_scheme ::
     options/relatime{ relatime } .
 
 96 512 300% linux-swap
-    $lvmok{ }
+    $lvmok{ } lv_name{ swap }
+    in_vg { crypt }
     method{ swap }
     format{ } .
 
 100 10000 -1 xfs
-    $lvmok{ }
+    $lvmok{ } lv_name{ home }
+    in_vg { crypt }
     method{ format }
     format{ }
     use_filesystem{ }
