@@ -1,3 +1,9 @@
+trisquel-base-data (9.0-2) etiona; urgency=medium
+
+  * Improved custom systemd-resolved settings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 17 Apr 2020 18:26:04 -0400
+
 trisquel-base-data (9.0-1) etiona; urgency=medium
 
   * Custom systemd-resolve settings
