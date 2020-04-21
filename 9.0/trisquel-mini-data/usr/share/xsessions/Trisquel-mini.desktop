@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Trisquel-mini
+Comment=Trisquel-mini - Lightweight X11 desktop environment based on LXDE
+Comment[zh_TW]=Trisquel-mini - 輕量級的 X11 桌面環境
+Comment[fi]=Trisquel-mini - kevyt X11-työpöytäympäristö
+Comment[ja]=Trisquel-mini - 軽量な X11 デスクトップ環境
+Exec=/usr/bin/starttrisquel-mini
+# Icon=
+Type=Application
