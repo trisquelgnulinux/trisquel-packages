@@ -1,3 +1,10 @@
+trisquel-meta (9.0-15) etiona; urgency=medium
+
+  * Added mpv, trisquel-sounds, indicator-datetime, indicator-session to trisquel-mini
+  * Added dbus-user-session to trisquel-desktop-common
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 21 Apr 2020 19:53:47 -0400
+
 trisquel-meta (9.0-14) etiona; urgency=medium
 
   * Replaced gnome-mplayer with gnome-mpv
