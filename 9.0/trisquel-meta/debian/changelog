@@ -1,3 +1,9 @@
+trisquel-meta (9.0-14) etiona; urgency=medium
+
+  * Replaced gnome-mplayer with gnome-mpv
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 21 Apr 2020 18:43:17 -0400
+
 trisquel-meta (9.0-13) etiona; urgency=medium
 
   * Added trisquel-app-install to trisquel-desktop-common and  openvpn-systemd-resolved to trisquel
