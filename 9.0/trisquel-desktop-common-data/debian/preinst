@@ -1,0 +1,18 @@
+#!/bin/sh
+
+item="/etc/gtk-3.0/settings.ini"
+
+[ -f "$item"".ubuntu" ] && exit 0 || true
+
+dpkg-divert --package trisquel-desktop-common-data --add --rename --divert "$item"".ubuntu" "$item"
+
+cat << EOF > $item
+[Settings]
+gtk-theme-name = Trisquel
+gtk-icon-theme-name = trisquel
+gtk-fallback-icon-theme = gnome
+gtk-sound-theme-name = freedesktop
+gtk-icon-sizes = panel-menu-bar=24,24
+EOF
+
+
