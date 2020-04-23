@@ -120,7 +120,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-sugar
 Architecture: all
 Priority: optional
-Depends: trisquel-base, sugar, dbus-x11, lightdm, lightdm-gtk-greeter, indicator-application, indicator-messages, indicator-datetime, indicator-power, indicator-sound, trisquel-desktop-common-data, ttf-dejavu-core, fonts-droid-fallback, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, metacity, dmz-cursor-theme, usb-creator-gtk, network-manager|wicd, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, pulseaudio, mobile-broadband-provider-info, trisquel-icon-theme
+Depends: trisquel-base, sugar, dbus-x11, lightdm, lightdm-gtk-greeter, indicator-application, indicator-messages, indicator-datetime, indicator-power, indicator-sound, trisquel-desktop-common-data, ttf-dejavu-core, fonts-droid-fallback, xdg-utils, xkb-data, xorg, xserver-xorg-input-all, xserver-xorg-video-all, xterm, metacity, dmz-cursor-theme, usb-creator-gtk, network-manager|wicd, gnome-settings-daemon, plymouth-theme-trisquel-text, plymouth-theme-sugar, trisquel-gtk-theme, libfltk1.1, pulseaudio, mobile-broadband-provider-info, trisquel-icon-theme, gir1.2-networkmanager-1.0, telepathy-mission-control-5, gir1.2-telepathyglib-0.12, gir1.2-telepathylogger-0.2, python-gtk2, telepathy-salut, telepathy-gabble, gir1.2-gtk-3.0, gir1.2-gtk-2.0
 Recommends: sugar-honey
 Suggests: casper, ubiquity-frontend-gtk, ubiquity, lupin-casper, grub-pc, ubiquity-slideshow-trisquel
 Description: Sugar environment for Trisquel.
@@ -138,7 +138,7 @@ Description: Sugar environment for Trisquel.
 Package: sugar
 Architecture: all
 Priority: optional
-Depends: gir1.2-sugarext-1.0, libsugar-eventcontroller0, libsugarext-data, libsugarext0, python-carquinyol-0.108, python-jarabe-0.108, python-sugar3, sugar-artwork-0.108, sugar-session-0.108, sugar-tools-0.108, python-sugar-0.98, python-sugar-toolkit-0.98, gir1.2-wnck-3.0, python-webkit, libwebkitgtk-3.0-0, libwebkitgtk-1.0-0, gir1.2-webkit-3.0, gir1.2-evince-3.0, python-pygame, espeak, libgnomevfs2-common, libgnomevfs2-0, python-xlib, gstreamer1.0-pulseaudio, gir1.2-gstreamer-1.0, gir1.2-gst-plugins-base-1.0, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gstreamer1.0-plugins-bad, gstreamer1.0-libav, libfltk1.1, python-elements, liblo7, sugar-activity-terminal, sugar-activity-browse, sugar-activity-image-viewer, telepathy-mission-control-5, sugar-telepathy-gabble, telepathy-salut, sucrose-0.108, python-gi-cairo, light-themes, gst-plugins-espeak
+Depends: gir1.2-sugarext-1.0, libsugarext-data, libsugarext0, python-carquinyol, python-jarabe, python-sugar3, sugar-themes, sugar-session, python-sugar, python-sugar3, gir1.2-wnck-3.0, libwebkitgtk-3.0-0, libwebkitgtk-1.0-0, gir1.2-webkit-3.0, gir1.2-evince-3.0, python-pygame, espeak, libgnomevfs2-common, libgnomevfs2-0, python-xlib, gstreamer1.0-pulseaudio, gir1.2-gstreamer-1.0, gir1.2-gst-plugins-base-1.0, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gstreamer1.0-plugins-bad, gstreamer1.0-libav, libfltk1.1, python-elements, liblo7, sugar-activity-terminal, sugar-activity-browse, sugar-activity-image-viewer, telepathy-mission-control-5, telepathy-salut, sucrose, python-gi-cairo, light-themes, gstreamer1.0-espeak
 Description: Sugar graphical shell
  Provides a Sugar based environment.
  Sugar is a graphical user interface aimed at children.
