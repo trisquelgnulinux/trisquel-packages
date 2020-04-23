@@ -7,4 +7,12 @@ fi
 
 update-initramfs -u
 
+# Default to systemd-resolved
+if [ -L /etc/resolv.conf ] && \
+   [ "$(readlink /etc/resolv.conf)" != "/run/systemd/resolve/stub-resolv.conf" ] && \
+   [ -f /run/systemd/resolve/stub-resolv.conf ]; then
+  mv /etc/resolv.conf /etc/resolv.conf.trisquel.bak
+  ln -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+fi
+
 exit 0
