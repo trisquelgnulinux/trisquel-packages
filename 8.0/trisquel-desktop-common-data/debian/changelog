@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (8.0-10) flidas; urgency=medium
+
+  * Corrected postrm script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Apr 2020 12:37:55 -0400
+
 trisquel-desktop-common-data (8.0-9) flidas; urgency=medium
 
   * Hide desktop icons in nautilus
