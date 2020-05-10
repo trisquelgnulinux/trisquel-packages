@@ -9,6 +9,7 @@ Package: trisquel-desktop-common-data
 Architecture: all
 Priority: optional
 Replaces: trisquel-desktop-common
+Depends: desktop-file-utils
 Description: Trisquel desktop metapackage - data files.
  Virtual package providing a dependency list for Trisquel base installation.
  Provides a X11 environment and a set of tools common to all Trisquel versions.

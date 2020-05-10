@@ -25,12 +25,12 @@ theme = 'Trisquel'
 titlebar-font = 'Roboto Bold 9'
 compositing-manager = false
 
-[org.mate.marco.global-keybindings]                                                              
+[org.mate.Marco.global-keybindings]
 switch-panels='<Super>Tab'
 
 [org.mate.background]
 show-desktop-icons=true
-picture-filename='/usr/share/backgrounds/belenos.png'
+picture-filename='/usr/share/backgrounds/etiona.jpg'
 picture-options='stretched'
 color-shading-type='solid'
 primary-color='#000000000000'
@@ -69,7 +69,7 @@ hinting = 'slight'
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
-picture-uri='file:///usr/share/backgrounds/belenos.png'
+picture-uri='file:///usr/share/backgrounds/etiona.jpg'
 picture-options='stretched'
 color-shading-type='solid'
 

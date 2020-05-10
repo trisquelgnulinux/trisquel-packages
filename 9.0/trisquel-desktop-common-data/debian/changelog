@@ -1,8 +1,32 @@
+trisquel-desktop-common-data (9.0) etiona; urgency=medium
+
+  * Initial release for etiona
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 10 May 2020 18:12:28 -0400
+
+trisquel-desktop-common-data (8.0-13) flidas; urgency=medium
+
+  * Corrected typo in gschema
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 16 Apr 2018 20:30:31 -0400
+
+trisquel-desktop-common-data (8.0-12) flidas; urgency=medium
+
+  * Added dependency on desktop-file-utils
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 03 Apr 2018 20:35:30 -0400
+
+trisquel-desktop-common-data (8.0-11) flidas; urgency=medium
+
+  * Updated references to wallpapers
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 18 Mar 2018 17:47:45 -0400
+
 trisquel-desktop-common-data (8.0-10) flidas; urgency=medium
 
-  * Corrected postrm script
+  * Removed deprecated custom wm scripts, replaced viewnor with eom
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Apr 2020 12:34:58 -0400
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Mar 2018 22:22:10 -0400
 
 trisquel-desktop-common-data (8.0-9) flidas; urgency=medium
 

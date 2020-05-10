@@ -1,10 +1,10 @@
 
 [Default Applications]
-text/calendar=evolution.desktop
+text/calendar=icedove.desktop
 
 [Added Associations]
-application/xml=gedit.desktop;
-text/calendar=evolution.desktop;
+application/xml=pluma.desktop;
+text/calendar=icedove.desktop;
 image/jpeg=viewnior.desktop;gimp.desktop;
 image/x-pcx=viewnior.desktop;gimp.desktop;
 image/gif=viewnior.desktop;gimp.desktop;
