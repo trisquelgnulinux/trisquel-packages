@@ -7,7 +7,7 @@ style "back"
 			function = FLAT_BOX
 			shadow=NONE
 			state = NORMAL
-			file="/usr/share/backgrounds/flidas.jpg"
+			file="/usr/share/backgrounds/etiona.jpg"
 			stretch=TRUE
 			detail = "base"
 		}
