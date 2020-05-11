@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (9.0-1) etiona; urgency=medium
+
+  * Added /etc/NetworkManager/conf.d/privacy-options.conf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 11 May 2020 19:26:03 -0400
+
 trisquel-desktop-common-data (9.0) etiona; urgency=medium
 
   * Initial release for etiona
