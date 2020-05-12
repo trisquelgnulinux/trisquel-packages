@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (9.0-3) etiona; urgency=medium
+
+  * Mac is random by default on wifi scanning
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 12 May 2020 15:12:47 -0400
+
 trisquel-desktop-common-data (9.0-2) etiona; urgency=medium
 
   * Corrected mistake in /etc/NetworkManager/conf.d/privacy-options.conf
