@@ -1,3 +1,9 @@
+trisquel-meta (9.0-21) etiona; urgency=medium
+
+  * Added plasma-pa, accountwizard to triskel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 May 2020 01:49:07 -0400
+
 trisquel-meta (9.0-20) etiona; urgency=medium
 
   * Corrected Triskel meta dependencies
