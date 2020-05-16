@@ -1,3 +1,9 @@
+trisquel-meta (9.0-18) etiona; urgency=medium
+
+  * Added triskel artwork dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 15 May 2020 23:45:24 -0400
+
 trisquel-meta (9.0-17) etiona; urgency=medium
 
   * Improvements to sugar dependencies
