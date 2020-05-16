@@ -1,3 +1,9 @@
+trisquel-meta (9.0-20) etiona; urgency=medium
+
+  * Corrected Triskel meta dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 May 2020 01:01:04 -0400
+
 trisquel-meta (9.0-19) etiona; urgency=medium
 
   * Removed kubuntu-settings-desktop
