@@ -1,3 +1,9 @@
+trisquel-meta (9.0-22) etiona; urgency=medium
+
+  * Added powerdevil, libcamberra-pulseaudio, spectale. Removed ubiquity-frontend-kde
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 06 Jun 2020 22:44:18 -0400
+
 trisquel-meta (9.0-21) etiona; urgency=medium
 
   * Added plasma-pa, accountwizard to triskel
