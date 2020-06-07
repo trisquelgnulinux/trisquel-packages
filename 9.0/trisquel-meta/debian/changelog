@@ -1,3 +1,9 @@
+trisquel-meta (9.0-23) etiona; urgency=medium
+
+  * Corrected libcanberra dependency
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 07 Jun 2020 02:00:16 -0400
+
 trisquel-meta (9.0-22) etiona; urgency=medium
 
   * Added powerdevil, libcamberra-pulseaudio, spectale. Removed ubiquity-frontend-kde
