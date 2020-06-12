@@ -1,3 +1,9 @@
+trisquel-meta (9.0-24) etiona; urgency=medium
+
+  * Fixed typo
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 12 Jun 2020 12:16:20 -0400
+
 trisquel-meta (9.0-23) etiona; urgency=medium
 
   * Corrected libcanberra dependency
