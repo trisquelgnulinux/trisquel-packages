@@ -1,3 +1,9 @@
+trisquel-meta (9.0-25) etiona; urgency=medium
+
+  * Fixed triskel a11y
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 13 Jun 2020 00:02:30 -0400
+
 trisquel-meta (9.0-24) etiona; urgency=medium
 
   * Fixed typo
