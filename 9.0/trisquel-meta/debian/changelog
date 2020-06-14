@@ -1,4 +1,4 @@
-trisquel-meta (9.0-28) UNRELEASED; urgency=medium
+trisquel-meta (9.0-28) etiona; urgency=medium
 
   * Added telepathy-gabble to triskel
 
