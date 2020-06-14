@@ -1,3 +1,9 @@
+trisquel-meta (9.0-27) etiona; urgency=medium
+
+  * Addded vlc and jami to triskel, other fixes
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 14 Jun 2020 16:09:51 -0400
+
 trisquel-meta (9.0-26) etiona; urgency=medium
 
   * Corrected triskel dependencies
