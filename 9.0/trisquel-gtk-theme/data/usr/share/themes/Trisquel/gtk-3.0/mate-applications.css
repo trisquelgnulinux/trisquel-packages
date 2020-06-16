@@ -393,8 +393,8 @@ window.background, /* selector where outlines are writen on GtkTrayIcon */
     background-image: none;
     background-color: transparent;
     border-image: none;
-    border-style: none;
-    border-width: 0px;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
     border-radius: 0px;
     text-shadow: none;
     -GtkWidget-window-dragging: true;
@@ -414,16 +414,17 @@ window.background, /* selector where outlines are writen on GtkTrayIcon */
 .mate-panel-menu-bar #PanelApplet button.flat.toggle:checked:hover,
 .mate-panel-menu-bar #PanelApplet button.flat.toggle:hover:active {
     background-image: linear-gradient(to bottom,
-                                      shade (@theme_selected_bg_color, 0.26),
-                                      shade (@theme_selected_bg_color, 0.86));
+                                      alpha (#555, 0.2),
+                                      alpha (#fff, 0.3));
     background-color: transparent;
     color: shade (@theme_fg_dark_color, 1.00);
-    border-image: none;
+    border-color:alpha (#fff, 0.3);
     border-style: solid;
-    border-width: 0px;
-    border-radius: 5px;
+    border-width: 1px 0px 0px 0px;
+    border-radius: 3px;
     text-shadow: none;
-    padding: 4px 4px 4px 4px;
+    padding: 0px;
+    margin:10px;
 }
 
 .mate-panel-menu-bar #PanelApplet button:hover,
@@ -431,14 +432,14 @@ window.background, /* selector where outlines are writen on GtkTrayIcon */
 .mate-panel-menu-bar #PanelApplet button.toggle:hover,
 .mate-panel-menu-bar #PanelApplet button.flat.toggle:hover {
     background-image: linear-gradient(to bottom,
-                                      @theme_bg_dark_color,
-                                      shade (@theme_selected_bg_color, 0.86));
+                                      alpha (#fff, 0.3),
+                                      alpha (#555, 0.2));
     background-color: transparent;
     color: shade (@theme_fg_dark_color, 1.00);
-    border-image: none;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 5px;
+    border-color: alpha (#fff, 0.5);
+    border-style: inset;
+    border-width: 1px 0px 0px 0px;
+    border-radius: 3px;
     text-shadow: none;
     padding: 4px 4px 4px 4px;
 }
@@ -453,7 +454,7 @@ window.background, /* selector where outlines are writen on GtkTrayIcon */
     border-image: none;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 1px;
     text-shadow: none;
     padding: 4px 4px 4px 4px;
 }

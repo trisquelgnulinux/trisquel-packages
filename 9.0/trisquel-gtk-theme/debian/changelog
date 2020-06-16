@@ -1,3 +1,21 @@
+trisquel-gtk-theme (9.0-3) UNRELEASED; urgency=medium
+
+  * Improved scrollbar styling. Corrected line terminators on gtkrc
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 16 Jun 2020 03:43:50 -0400
+
+trisquel-gtk-theme (9.0-2) etiona; urgency=medium
+
+  * Improved panel styling
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 19 Dec 2019 22:17:05 -0500
+
+trisquel-gtk-theme (9.0-1) etiona; urgency=medium
+
+  * Transparent panel buttons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 13 Dec 2019 21:10:12 -0500
+
 trisquel-gtk-theme (9.0) etiona; urgency=medium
 
   * Theme rebased on newest version of Mate's BlueMenta

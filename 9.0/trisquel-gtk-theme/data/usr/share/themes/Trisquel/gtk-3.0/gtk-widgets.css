@@ -2636,17 +2636,17 @@ scrollbar {
 	background-image: none;
 	border-style: solid;
 	border-color: shade (@theme_bg_color, 0.94);
-	-GtkScrollbar-has-backward-stepper: true;
-	-GtkScrollbar-has-forward-stepper: true;
+	-GtkScrollbar-has-backward-stepper: false;
+	-GtkScrollbar-has-forward-stepper: false;
 }
 
 scrollbar.vertical {
-    border-width: 0px 0px 0px 1px;
+    border-width: 0px 0px 0px 0px;
     min-width: 10px;
 }
 
 scrollbar.horizontal {
-    border-width: 1px 0px 0px 0px;
+    border-width: 0px 0px 0px 0px;
     min-height: 10px;
 }
 
@@ -2660,7 +2660,7 @@ placessidebar scrollbar.vertical trough {
 	background-image: linear-gradient(to right,
 		@scrollbar_trough,
 		shade (@scrollbar_trough, 1.08));
-	border-width: 1px 0px 1px 0px;
+	border-width: 0px;
 	border-style: solid;
 	border-color: shade (@theme_bg_color, 0.94);
 	border-radius: 0;
@@ -2674,7 +2674,7 @@ placessidebar scrollbar.horizontal trough {
 	background-image: linear-gradient(to bottom,
 		@scrollbar_trough,
 		shade (@scrollbar_trough, 1.08));
-	border-width: 0px 1px 0px 1px;
+	border-width: 0px;
 	border-style: solid;
 	border-color: shade (@theme_bg_color, 0.94);
 	border-radius: 0;
@@ -2787,11 +2787,11 @@ scrollbar.vertical slider,
 scrollbar.vertical .slider {
     min-width: 12px;
     min-height: 42px;
-    margin: 0px -1px 0px -1px;
+    margin: -1px 0px -1px 0px;
 	background-image: linear-gradient(to right,
 		shade(@scrollbar_slider, 0.95),
 		shade(@scrollbar_slider, 0.8));
-	border-radius: 20px;
+	border-radius: 0px;
 	border-style: solid;
 	border-image: none;
 	border-color: shade(@scrollbar_slider, 0.65);
@@ -2815,11 +2815,11 @@ scrollbar.horizontal slider,
 scrollbar.horizontal .slider {
     min-width: 42px;
     min-height: 12px;
-    margin: -1px 0px -1px 0px;
+    margin: 0px 0px -1px 0px;
 	background-image: linear-gradient(to bottom,
 		shade(@scrollbar_slider, 0.95),
 		shade(@scrollbar_slider, 0.8));
-	border-radius: 20px;
+	border-radius: 0px;
 	border-style: solid;
 	border-image: none;
 	border-color: shade(@scrollbar_slider, 0.65);
