@@ -1,3 +1,9 @@
+trisquel-meta (9.0-29) etiona; urgency=medium
+
+  * Improvements to xorg dependencies, added gnome-power-manager and thermald
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Jul 2020 11:58:34 -0400
+
 trisquel-meta (9.0-28) etiona; urgency=medium
 
   * Added telepathy-gabble to triskel
