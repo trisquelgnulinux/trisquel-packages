@@ -1,3 +1,9 @@
+trisquel-meta (9.0-30) etiona; urgency=medium
+
+  * Multiple dependency fixes (triskel, libreoffice, etc)
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 18 Jul 2020 20:01:41 -0400
+
 trisquel-meta (9.0-29) etiona; urgency=medium
 
   * Improvements to xorg dependencies, added gnome-power-manager and thermald
