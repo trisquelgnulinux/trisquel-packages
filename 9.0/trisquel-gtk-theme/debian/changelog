@@ -1,4 +1,10 @@
-trisquel-gtk-theme (9.0-3) UNRELEASED; urgency=medium
+trisquel-gtk-theme (9.0-4) etiona; urgency=medium
+
+  * Corrected scrollbar offset
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 18 Jul 2020 20:54:02 -0400
+
+trisquel-gtk-theme (9.0-3) etiona; urgency=medium
 
   * Improved scrollbar styling. Corrected line terminators on gtkrc
 

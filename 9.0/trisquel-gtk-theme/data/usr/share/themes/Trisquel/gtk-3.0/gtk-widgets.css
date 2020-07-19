@@ -2787,7 +2787,7 @@ scrollbar.vertical slider,
 scrollbar.vertical .slider {
     min-width: 12px;
     min-height: 42px;
-    margin: -1px 0px -1px 0px;
+    margin: 0px;
 	background-image: linear-gradient(to right,
 		shade(@scrollbar_slider, 0.95),
 		shade(@scrollbar_slider, 0.8));
