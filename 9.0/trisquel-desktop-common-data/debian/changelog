@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (9.0-4) etiona; urgency=medium
+
+  * Preserve triskel gtkrc files
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 19 Jul 2020 02:02:43 -0400
+
 trisquel-desktop-common-data (9.0-3) etiona; urgency=medium
 
   * Mac is random by default on wifi scanning

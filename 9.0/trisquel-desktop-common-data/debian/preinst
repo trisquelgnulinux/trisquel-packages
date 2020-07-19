@@ -2,6 +2,7 @@
 
 item="/etc/gtk-3.0/settings.ini"
 
+grep -qi -e Trisquel -e Breeze $item && exit 0 || true
 [ -f "$item"".ubuntu" ] && exit 0 || true
 
 dpkg-divert --package trisquel-desktop-common-data --add --rename --divert "$item"".ubuntu" "$item"
@@ -11,7 +12,10 @@ cat << EOF > $item
 gtk-theme-name = Trisquel
 gtk-icon-theme-name = trisquel
 gtk-fallback-icon-theme = gnome
-gtk-sound-theme-name = freedesktop
+gtk-sound-theme-name = Trisquel
+gtk-menu-images=1
+gtk-button-images=1
+gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
 gtk-icon-sizes = panel-menu-bar=24,24
 EOF
 
