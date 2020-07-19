@@ -1,3 +1,9 @@
+trisquel-meta (9.0-31) etiona; urgency=medium
+
+  * Removed kmix
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 19 Jul 2020 02:35:04 -0400
+
 trisquel-meta (9.0-30) etiona; urgency=medium
 
   * Multiple dependency fixes (triskel, libreoffice, etc)
