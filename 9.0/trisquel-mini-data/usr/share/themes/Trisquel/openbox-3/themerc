@@ -8,7 +8,7 @@ padding.height: 2
 window.handle.width: 4
 window.client.padding.width: 0
 menu.overlap: 2
-*.justify: center
+*.justify: left
 
 window.active.title.bg.highlight: 40
 window.active.title.bg.shadow:    00
@@ -61,16 +61,16 @@ window.*.grip.bg.color: #eaebec
 
 window.*.border.color: #b6b2a3
 
-window.active.title.separator.color: #E0DEDC
+window.active.title.separator.color: #D4D4D4
 
 *.title.bg: Raised Gradient splitvertical
-*.title.bg.color.splitTo: #ffffff
-*.title.bg.color: #e4e3e2
-*.title.bg.colorTo: #e5e3e1
-*.title.bg.colorTo.splitTo: #E0DEDC
+*.title.bg.color.splitTo: #DBDBDB
+*.title.bg.color: #D9D9D9
+*.title.bg.colorTo: #D9D9D9
+*.title.bg.colorTo.splitTo: #D4D4D4
 
 window.active.label.bg: Parentrelative
-window.active.label.text.color: #000000
+window.active.label.text.color: #555555
 
 window.*.button.*.bg: parentrelative
 window.active.button.*.image.color: #888888
@@ -79,14 +79,14 @@ window.active.button.hover.image.color: #666666
 
 !# inactive
 
-!#window.inactive.border.color: #b6b2a3
-window.inactive.title.separator.color: #E0DEDC
+!#window.inactive.border.color: #DDDDDD
+window.inactive.title.separator.color: #D4D4D4
 
 window.inactive.title.bg: Raised Gradient splitvertical
-window.inactive.title.bg.color.splitTo: #ffffff
-window.inactive.title.bg.color: #e4e3e2
-window.inactive.title.bg.colorTo: #e5e3e1
-window.inactive.title.bg.colorTo.splitTo: #E0DEDC
+window.inactive.title.bg.color.splitTo: #DBDBDB
+window.inactive.title.bg.color: #D9D9D9
+window.inactive.title.bg.colorTo: #D9D9D9
+window.inactive.title.bg.colorTo.splitTo: #D4D4D4
 
 window.inactive.label.bg: Parentrelative
 window.inactive.label.text.color: #70747d

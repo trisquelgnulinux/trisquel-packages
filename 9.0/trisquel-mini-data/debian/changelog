@@ -1,3 +1,9 @@
+trisquel-mini-data (9.0-2) etiona; urgency=medium
+
+  * Match window theme to MATE version
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 19 Jul 2020 17:26:02 -0400
+
 trisquel-mini-data (9.0-1) etiona; urgency=medium
 
   * Added new artwork refs
