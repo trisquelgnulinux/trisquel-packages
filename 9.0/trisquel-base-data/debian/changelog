@@ -1,3 +1,9 @@
+trisquel-base-data (9.0-5) etiona; urgency=medium
+
+  * Wait for systemd-resolved to be available
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 19 Jul 2020 21:46:41 -0400
+
 trisquel-base-data (9.0-4) etiona; urgency=medium
 
   * Default to systemd-resolved

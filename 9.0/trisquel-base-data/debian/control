@@ -8,6 +8,7 @@ Standards-Version: 3.5.9.0
 Package: trisquel-base-data
 Architecture: all
 Priority: important
+Depends: systemd (>= 237-3ubuntu10)
 Description: Trisquel base metapackage - data files.
  Virtual package providing a dependency list for Trisquel base installation.
  Provides a console basic environment.

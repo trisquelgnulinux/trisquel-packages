@@ -8,6 +8,10 @@ fi
 update-initramfs -u
 
 # Default to systemd-resolved
+
+systemctl enable systemd-resolved
+systemctl start systemd-resolved
+
 if [ -L /etc/resolv.conf ] && \
    [ "$(readlink /etc/resolv.conf)" != "/run/systemd/resolve/stub-resolv.conf" ] && \
    [ -f /run/systemd/resolve/stub-resolv.conf ]; then
