@@ -1,3 +1,9 @@
+trisquel-meta (9.0-32) etiona; urgency=medium
+
+  * Improved triskel metapackage, added fonts-trisquel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 25 Jul 2020 18:28:10 -0400
+
 trisquel-meta (9.0-31) etiona; urgency=medium
 
   * Removed kmix
