@@ -1,3 +1,9 @@
+trisquel-meta (9.0-33) etiona; urgency=medium
+
+  * Added libcanberra-gtk3-module
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 25 Jul 2020 19:21:47 -0400
+
 trisquel-meta (9.0-32) etiona; urgency=medium
 
   * Improved triskel metapackage, added fonts-trisquel
