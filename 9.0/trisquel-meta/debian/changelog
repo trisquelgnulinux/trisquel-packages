@@ -1,3 +1,9 @@
+trisquel-meta (9.0-34) etiona; urgency=medium
+
+  * Added sddm-theme-breeze
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 25 Jul 2020 23:17:21 -0400
+
 trisquel-meta (9.0-33) etiona; urgency=medium
 
   * Added libcanberra-gtk3-module
