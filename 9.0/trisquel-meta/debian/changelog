@@ -1,3 +1,9 @@
+trisquel-meta (9.0-35) etiona; urgency=medium
+
+  * Removed plasma-discover
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Aug 2020 03:16:55 -0400
+
 trisquel-meta (9.0-34) etiona; urgency=medium
 
   * Added sddm-theme-breeze
