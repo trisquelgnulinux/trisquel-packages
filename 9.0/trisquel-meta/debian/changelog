@@ -1,3 +1,9 @@
+trisquel-meta (9.0-37) etiona; urgency=medium
+
+  * Updated Toast dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 17 Oct 2020 14:49:02 -0400
+
 trisquel-meta (9.0-36) etiona; urgency=medium
 
   * Added libblockdev-crypto2
