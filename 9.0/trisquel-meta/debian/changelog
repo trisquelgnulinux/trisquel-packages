@@ -1,3 +1,9 @@
+trisquel-meta (9.0-38) etiona; urgency=medium
+
+  * Removed python-elements
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 17 Oct 2020 16:26:57 -0400
+
 trisquel-meta (9.0-37) etiona; urgency=medium
 
   * Updated Toast dependencies
