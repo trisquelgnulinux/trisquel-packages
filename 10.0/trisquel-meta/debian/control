@@ -1,18 +1,17 @@
 Source: trisquel-meta
 Section: metapackages
 Priority: optional
-Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Maintainer: Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>
 Build-Depends: debhelper (>= 4.1.0)
 Standards-Version: 3.7.3
 
 Package: trisquel-minimal
 Architecture: all
 Priority: important
-Depends: adduser, apt, apt-utils, bzip2, console-setup, dash, debconf, isc-dhcp-client, eject, gnupg, ifupdown, initramfs-tools, iproute2, iputils-ping, kbd, less, locales, lsb-release, makedev, mawk, net-tools, netbase, netcat-openbsd, ntpdate, passwd, procps, python, sudo, rsyslog, tasksel, tzdata, udev, vim-tiny, whiptail, trisquel-keyring, software-properties-common, ppa-purge, apt-transport-https, rename, scdaemon, pcscd
+Depends: adduser, apt, apt-utils, bzip2, console-setup, debconf, debconf-i18n, e2fsprogs, eject, init, iproute2, iputils-ping, isc-dhcp-client, kbd, kmod, less, locales, lsb-release, mawk, mount, netbase, netcat-openbsd, netplan.io, passwd, procps, python3, sensible-utils, sudo, tzdata, trisquel-keyring, udev, vim-tiny, whiptail, apt-transport-https
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.
  Provides a minimal console environment.
-
 
 Package: trisquel-codecs
 Architecture: all
@@ -25,7 +24,7 @@ Description: Trisquel codecs metapackage
 Package: trisquel-base
 Architecture: all
 Priority: optional
-Depends: bc, dc, dmraid, jfsutils, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-autoipd, ca-certificates, doc-base, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, pcmciautils, ecryptfs-utils, apparmor, apparmor-utils, apparmor-profiles, apparmor-profiles-extra,  mdadm, btrfs-tools, cryptsetup, openssh-client, lvm2, dmraid, xz-utils, dns-root-data, gettext, update-inetd, exfat-fuse, exfat-utils, libblockdev-crypto2
+Depends: bc, dc, dmraid, jfsutils, reiserfsprogs, reiser4progs, xfsprogs, trisquel-base-data, libnss-mdns, laptop-detect, acpi-support, acpid, alsa-base, alsa-utils, anacron, avahi-autoipd, ca-certificates, doc-base, screen, aptitude, at, busybox-static, cpio, cron, dmidecode, dnsutils, dosfstools, ed, file, ftp, hdparm, info, iptables, language-selector-common, logrotate, lshw, lsof, ltrace, man-db, mime-support, parted, nano, pciutils, psmisc, rsync, strace, time, usbutils, wget, dvd+rw-tools, wireless-tools, pcmciautils, ecryptfs-utils, apparmor, apparmor-utils, apparmor-profiles, apparmor-profiles-extra,  mdadm, btrfs-tools, cryptsetup, openssh-client, lvm2, dmraid, xz-utils, dns-root-data, gettext, update-inetd, exfat-fuse, exfat-utils, libblockdev-crypto2, gnupg, scdaemon, pcscd, software-properties-common, ppa-purge, tasksel
 Recommends: unzip, zip, beep, nmap, unp, debfoster, bash-completion, gddrescue, modemmanager, wvdial, openfwwf, atheros-firmware, firmware-linux-free, firmware-ath9k-htc, command-not-found, friendly-recovery, unar, vim, powertop, gdisk, iputils-arping, geoclue, geoip-database, xbrlapi
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.

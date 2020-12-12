@@ -1,3 +1,9 @@
+trisquel-meta (10.0-2) nabia; urgency=medium
+
+  * Updated dependencies for trisquel-minimal and trisquel-base
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 12 Dec 2020 16:31:33 +0100
+
 trisquel-meta (10.0-1) nabia; urgency=medium
 
   * trisquel-minimal: removed depend on module-init-tools and ureadahead
