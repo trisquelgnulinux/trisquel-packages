@@ -8,7 +8,7 @@ Standards-Version: 3.7.3
 Package: trisquel-minimal
 Architecture: all
 Priority: important
-Depends: adduser, apt, apt-utils, bzip2, console-setup, dash, debconf, isc-dhcp-client, eject, gnupg, ifupdown, initramfs-tools, iproute2, iputils-ping, kbd, less, locales, lsb-release, makedev, mawk, module-init-tools, net-tools, netbase, netcat-openbsd, ntpdate, passwd, procps, python, sudo, rsyslog, tasksel, tzdata, udev, ureadahead, vim-tiny, whiptail, trisquel-keyring, software-properties-common, ppa-purge, apt-transport-https, rename, scdaemon, pcscd
+Depends: adduser, apt, apt-utils, bzip2, console-setup, dash, debconf, isc-dhcp-client, eject, gnupg, ifupdown, initramfs-tools, iproute2, iputils-ping, kbd, less, locales, lsb-release, makedev, mawk, net-tools, netbase, netcat-openbsd, ntpdate, passwd, procps, python, sudo, rsyslog, tasksel, tzdata, udev, vim-tiny, whiptail, trisquel-keyring, software-properties-common, ppa-purge, apt-transport-https, rename, scdaemon, pcscd
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.
  Provides a minimal console environment.
