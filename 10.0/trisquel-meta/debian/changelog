@@ -1,3 +1,9 @@
+trisquel-meta (10.0-5) nabia; urgency=medium
+
+  * Adjust further changes for nabia/trisquel-desktop-common
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 06 Aug 2021 12:39:35 -0500
+
 trisquel-meta (10.0-4) nabia; urgency=medium
 
   * Adjust metapackage for nabia/trisquel
