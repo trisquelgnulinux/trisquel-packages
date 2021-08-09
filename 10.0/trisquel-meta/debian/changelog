@@ -1,3 +1,10 @@
+trisquel-meta (10.0-6) nabia; urgency=medium
+
+  * Remove trisquel 9.0 specific packages
+  * Replace jami-all to jami (debian/testing)
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 09 Aug 2021 02:12:54 -0500
+
 trisquel-meta (10.0-5) nabia; urgency=medium
 
   * Adjust further changes for nabia/trisquel-desktop-common
