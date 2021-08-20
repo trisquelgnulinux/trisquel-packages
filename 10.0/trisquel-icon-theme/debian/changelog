@@ -1,3 +1,10 @@
+trisquel-icon-theme (10.0) nabia; urgency=medium
+
+  * Fix vpn nm trisquel icon
+  * Fix missing control center time preferences icon
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 20 Aug 2021 12:55:18 -0500
+
 trisquel-icon-theme (9.0) etiona; urgency=medium
 
   * Fixed icon sizing issue
