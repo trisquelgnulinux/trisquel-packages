@@ -1,3 +1,9 @@
+trisquel-icon-theme (10.1) nabia; urgency=medium
+
+  * Fix path for data copy on rules file
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 06 Sep 2021 20:40:16 -0500
+
 trisquel-icon-theme (10.0) nabia; urgency=medium
 
   * Fix vpn nm trisquel icon
