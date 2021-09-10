@@ -13,7 +13,7 @@ binary-indep:
 	dh_testroot
 	dh_installchangelogs
 	dh_installdocs
-	cp data/* -a debian/`find debian/ -mindepth 1 -maxdepth 1 -type d | cut -d/ -f2`
+	cp data/* -a debian/`find debian/ -mindepth 1 -maxdepth 1 -type d -not -path '*/\.*'| cut -d'/' -f2`
 	dh_fixperms
 	dh_compress
 	dh_installdeb
