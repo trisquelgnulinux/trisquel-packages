@@ -1,3 +1,9 @@
+trisquel-meta (10.0-8) nabia; urgency=medium
+
+  * usb-creator only available on x86
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 21 Sep 2021 18:01:08 -0400
+
 trisquel-meta (10.0-7) nabia; urgency=medium
 
   * Some dependencies only apply to x86
