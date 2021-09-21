@@ -7,7 +7,7 @@ clean:
 	dh_testroot
 	dh_clean
 
-binary-indep:
+binary-arch:
 	dh_clean
 	dh_testdir
 	dh_testroot
@@ -20,8 +20,12 @@ binary-indep:
 	dh_md5sums
 	dh_builddeb
 
-binary-arch:
+binary-indep:
+
+build-indep:
+
+build-arch:
 
 binary: binary-indep binary-arch
 
-.PHONY: binary binary-arch binary-indep clean build
+.PHONY: binary binary-arch binary-indep clean build build-arch build-indep
