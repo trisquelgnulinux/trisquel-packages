@@ -1,3 +1,9 @@
+trisquel-meta (10.0-9) nabia; urgency=medium
+
+  * Update package dependency names and remove deprecated packages for nabia.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Sep 2021 10:31:24 -0500
+
 trisquel-meta (10.0-8) nabia; urgency=medium
 
   * usb-creator only available on x86
