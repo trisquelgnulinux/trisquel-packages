@@ -1,0 +1,11 @@
+Source: ACTIVITY
+Section: games
+Priority: optional
+Maintainer: Ruben Rodriguez <ruben@trisquel.info>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.2
+
+Package: ACTIVITY
+Architecture: all
+Description: ACTIVITY
+ An activity for the Sugar learning environment.
