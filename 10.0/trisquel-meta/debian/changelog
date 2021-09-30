@@ -1,3 +1,9 @@
+trisquel-meta (10.0-12) nabia; urgency=medium
+
+  * Update fonts-tiresias correct package name on nabia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 30 Sep 2021 14:18:59 -0500
+
 trisquel-meta (10.0-11) nabia; urgency=medium
 
   * Set jami as default package for dependencies.
