@@ -8,7 +8,7 @@ for repo in browse-activity calculate-activity chat imageviewer-activity jukebox
 do
   git clone https://github.com/sugarlabs/$repo.git bundles/$repo
 
-dos2unix bundles/$repo/activity/activity.info
+sed -rie 's|\r\n|\n|' bundles/$repo/activity/activity.info
 
 activity=$(grep "^name *=" bundles/$repo/activity/activity.info| sed 's/.*=//;s/ //g')
 version=$(grep "^activity_version *=" bundles/$repo/activity/activity.info| sed 's/.*=//;s/ //g')
