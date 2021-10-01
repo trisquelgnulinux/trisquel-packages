@@ -1,0 +1,14 @@
+Source: trisquel-screensaver
+Section: trisquel
+Priority: optional
+Maintainer: Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: trisquel-screensaver
+Architecture: all
+Priority: optional
+Description: Trisquel screensaver.
+ A floating Trisquel screensaver.
+ .
+
