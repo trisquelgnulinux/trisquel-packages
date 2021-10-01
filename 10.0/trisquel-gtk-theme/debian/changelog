@@ -1,0 +1,234 @@
+trisquel-gtk-theme (10.0) nabia; urgency=medium
+
+  * Port trisquel-gtk-theme to nabia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 30 Sep 2021 19:22:06 -0500
+
+trisquel-gtk-theme (9.0-5) etiona; urgency=medium
+
+  * Port trisquel-gtk-theme to nabia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 30 Sep 2021 19:21:58 -0500
+
+trisquel-gtk-theme (9.0-4) etiona; urgency=medium
+
+  * Corrected scrollbar offset
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 18 Jul 2020 20:54:02 -0400
+
+trisquel-gtk-theme (9.0-3) etiona; urgency=medium
+
+  * Improved scrollbar styling. Corrected line terminators on gtkrc
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 16 Jun 2020 03:43:50 -0400
+
+trisquel-gtk-theme (9.0-2) etiona; urgency=medium
+
+  * Improved panel styling
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 19 Dec 2019 22:17:05 -0500
+
+trisquel-gtk-theme (9.0-1) etiona; urgency=medium
+
+  * Transparent panel buttons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 13 Dec 2019 21:10:12 -0500
+
+trisquel-gtk-theme (9.0) etiona; urgency=medium
+
+  * Theme rebased on newest version of Mate's BlueMenta
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 23 Jul 2019 20:34:22 -0500
+
+trisquel-gtk-theme (8.0) flidas; urgency=medium
+
+  * Theme rebased on Mate's BlueMenta
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 07 Jan 2017 15:01:18 -0500
+
+trisquel-gtk-theme (7.0-8) belenos; urgency=low
+
+  * Fixed bluetooth switches in panel indicator
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 15 Oct 2014 15:50:28 +0200
+
+trisquel-gtk-theme (7.0-7) belenos; urgency=low
+
+  * Added support for unity-greeter, #12123
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 30 Aug 2014 00:36:22 +0200
+
+trisquel-gtk-theme (7.0-6) belenos; urgency=low
+
+  * Fixed notification color in indicator menus
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 28 Aug 2014 04:50:00 +0200
+
+trisquel-gtk-theme (7.0-5) belenos; urgency=low
+
+  * Applied changes from #12123
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 07 Aug 2014 02:41:27 +0200
+
+trisquel-gtk-theme (7.0-4) belenos; urgency=low
+
+  * Fixed menu text-shadows
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 05 Aug 2014 03:35:52 +0200
+
+trisquel-gtk-theme (7.0-3) belenos; urgency=low
+
+  * Tuned up theme
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 21 Jul 2014 04:51:42 +0200
+
+trisquel-gtk-theme (7.0-2) belenos; urgency=low
+
+  * Fixed borders in gnome panel buttons
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 28 Apr 2014 20:54:54 +0200
+
+trisquel-gtk-theme (7.0-1) belenos; urgency=low
+
+  * Updated to last Zukitwo upstream version
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 05 Feb 2014 04:08:04 +0100
+
+trisquel-gtk-theme (7.0) belenos; urgency=low
+
+  * Initial release for belenos
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 31 Jan 2014 19:46:31 +0100
+
+trisquel-gtk-theme (6.0) toutatis; urgency=low
+
+  * Final release for Toutatis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 25 Nov 2012 07:34:31 +0100
+
+trisquel-gtk-theme (5.99-4) toutatis; urgency=low
+
+  * Fixed maximized windows not closing by clicking top right corner
+    under compiz
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 20 Nov 2012 03:26:28 +0100
+
+trisquel-gtk-theme (5.99-3) toutatis; urgency=low
+
+  * Fixed typo
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Nov 2012 19:54:15 +0100
+
+trisquel-gtk-theme (5.99-2) toutatis; urgency=low
+
+  * Fixed some graphical glitches
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Nov 2012 05:58:33 +0100
+
+trisquel-gtk-theme (5.99-1) toutatis; urgency=low
+
+  * Rebased on Zukitwo theme
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 21 Oct 2012 01:45:28 +0200
+
+trisquel-gtk-theme (5.99) toutatis; urgency=low
+
+  * Initial release for Toutatis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 07 Oct 2012 05:26:25 +0200
+
+trisquel-gtk-theme (5.5) brigantia; urgency=low
+
+  * Updated panel settings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 11 Mar 2012 19:34:15 +0100
+
+trisquel-gtk-theme (5.4-2) slaine; urgency=low
+
+  * Updated gtk3 theme, dropped old unused gtk2 themes
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 10 Mar 2012 16:58:07 +0100
+
+trisquel-gtk-theme (5.4-1) slaine; urgency=low
+
+  * Added gtk3 theme by grvrulz
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 22 Feb 2012 14:46:38 +0100
+
+trisquel-gtk-theme (5.4) slaine; urgency=low
+
+  * Initial release for Brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 18:40:14 +0100
+
+trisquel-gtk-theme (5.0-1) slaine; urgency=low
+
+  * Removed hack to hide resize grips
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 16 Sep 2011 21:18:11 +0200
+
+trisquel-gtk-theme (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:31:50 +0200
+
+trisquel-gtk-theme (4.99-1) slaine; urgency=low
+
+  * Removed resize widget in the lower right corner
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 09 Aug 2011 18:13:27 +0200
+
+trisquel-gtk-theme (4.99) slaine; urgency=low
+
+  * Initial release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 Jul 2011 14:48:32 +0200
+
+trisquel-gtk-theme (4.5) slaine; urgency=low
+
+  * fixed a bug in the previous update which changed the style of
+    several widgets
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 19 Jan 2011 22:04:16 +0100
+
+trisquel-gtk-theme (4.4.9-1) slaine; urgency=low
+
+  * Fixed progress bar bug messing with Exaile
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 19 Jan 2011 19:23:52 +0100
+
+trisquel-gtk-theme (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-gtk-theme (4.0) taranis; urgency=low
+
+  * New panel handles
+  * Fixed panel background image
+  * Fixed missing arrows
+  * Darker panel menu for transparency
+  * Replaced panel background image
+  * Now based on Equinox
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2010 19:50:00 +0200
+
+trisquel-gtk-theme (3.5) awen; urgency=low
+
+  * Initial release for Awen
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 03 Mar 2010 21:26:35 +0100
+
+trisquel-gtk-theme (3.0) dwyn; urgency=low
+
+  * Initial release for Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Fri, 12 Jun 2009 14:24:16 +0200
+
+trisquel-gtk-theme (2.1-3) robur; urgency=low
+
+  * Ported from dpkg -b
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200
