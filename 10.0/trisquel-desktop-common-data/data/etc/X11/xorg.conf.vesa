@@ -1,0 +1,14 @@
+Section "Device"
+        Identifier      "Configured Video Device"
+        Driver          "vesa"
+EndSection
+
+Section "Monitor"
+        Identifier      "Configured Monitor"
+EndSection
+
+Section "Screen"
+        Identifier      "Default Screen"
+        Monitor         "Configured Monitor"
+        Device          "Configured Video Device"
+EndSection
