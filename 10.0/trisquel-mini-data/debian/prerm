@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+set -e
+
+if [ "$1" = "remove" ] || [ "$1" = upgrade ]; then
+  update-alternatives --remove lxdm.conf /etc/xdg/trisquel-mini/lxdm/lxdm.conf 
+fi
+
+#DEBHELPER#
+exit 0
