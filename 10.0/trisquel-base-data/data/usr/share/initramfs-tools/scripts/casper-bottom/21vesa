@@ -1,0 +1,27 @@
+#!/bin/sh
+
+PREREQ=""
+DESCRIPTION="Configuring Xorg server for VESA safe mode"
+
+prereqs()
+{
+       echo "$PREREQ"
+}
+
+case $1 in
+# get pre-requisites
+prereqs)
+       prereqs
+       exit 0
+       ;;
+esac
+
+. /scripts/casper-functions
+
+grep video=vesa  /proc/cmdline || exit
+
+log_begin_msg "$DESCRIPTION"
+
+cp /root/etc/X11/xorg.conf.vesa /root/etc/X11/xorg.conf
+
+log_end_msg
