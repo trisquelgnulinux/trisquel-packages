@@ -30,7 +30,7 @@ switch-panels='<Super>Tab'
 
 [org.mate.background]
 show-desktop-icons=true
-picture-filename='/usr/share/backgrounds/etiona.jpg'
+picture-filename='/usr/share/backgrounds/nabia.jpg'
 picture-options='stretched'
 color-shading-type='solid'
 primary-color='#000000000000'
@@ -69,7 +69,7 @@ hinting = 'slight'
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
-picture-uri='file:///usr/share/backgrounds/etiona.jpg'
+picture-uri='file:///usr/share/backgrounds/nabia.jpg'
 picture-options='stretched'
 color-shading-type='solid'
 

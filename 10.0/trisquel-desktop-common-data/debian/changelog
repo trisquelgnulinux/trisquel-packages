@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (10.0-1) nabia; urgency=medium
+
+  * Setting wallpaper for nabia release
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 05 Oct 2021 10:38:25 -0500
+
 trisquel-desktop-common-data (10.0) nabia; urgency=medium
 
   * Initial release for trisquel-desktop-common-data for nabia
