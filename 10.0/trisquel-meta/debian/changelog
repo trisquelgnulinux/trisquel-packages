@@ -1,3 +1,9 @@
+trisquel-meta (10.0-13) nabia; urgency=medium
+
+  * Replace kmail in favor of icedove as email client
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 27 Oct 2021 15:27:01 -0500
+
 trisquel-meta (10.0-12) nabia; urgency=medium
 
   * Update fonts-tiresias correct package name on nabia
