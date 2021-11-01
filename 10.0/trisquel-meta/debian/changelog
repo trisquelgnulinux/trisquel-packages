@@ -1,3 +1,9 @@
+trisquel-meta (10.0-15) nabia; urgency=medium
+
+  * Fix dependencies for sugar-activity-measure
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 31 Oct 2021 22:39:51 -0600
+
 trisquel-meta (10.0-14) nabia; urgency=medium
 
   * Fix unmeet dependencies for trisquel-sugar 10.0
