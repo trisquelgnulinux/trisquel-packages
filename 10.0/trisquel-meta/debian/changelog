@@ -1,3 +1,9 @@
+trisquel-meta (10.0-16) nabia; urgency=medium
+
+  * Fix gcompris activity dependency.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 01 Nov 2021 15:48:38 -0600
+
 trisquel-meta (10.0-15) nabia; urgency=medium
 
   * Fix dependencies for sugar-activity-measure
