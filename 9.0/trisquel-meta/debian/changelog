@@ -1,3 +1,9 @@
+trisquel-meta (9.0-41) etiona; urgency=medium
+
+  * Fix sugar-activity-gcompris dependency.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 02 Nov 2021 13:21:48 -0600
+
 trisquel-meta (9.0-40) etiona; urgency=medium
 
   * Updated Toast dependencies
