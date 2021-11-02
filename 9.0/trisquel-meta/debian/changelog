@@ -1,3 +1,9 @@
+trisquel-meta (9.0-42) etiona; urgency=medium
+
+  * Fix dependencies for sugar-activity-measure
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 02 Nov 2021 16:32:11 -0600
+
 trisquel-meta (9.0-41) etiona; urgency=medium
 
   * Fix sugar-activity-gcompris dependency.
