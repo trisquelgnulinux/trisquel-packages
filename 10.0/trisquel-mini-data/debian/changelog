@@ -1,4 +1,10 @@
-trisquel-mini-data (10.0) etiona; urgency=medium
+trisquel-mini-data (10.0-1) nabia; urgency=medium
+
+  * Update trisquel-mini wallpaper for nabia.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 10 Nov 2021 04:32:49 -0600
+
+trisquel-mini-data (10.0) nabia; urgency=medium
 
   * Initial release for trisquel-mini-data for nabia
 
