@@ -102,7 +102,7 @@ Package: trisquel-mini
 Architecture: any
 Priority: optional
 Depends: trisquel-base, trisquel-desktop-common, lxde, unity-greeter, lightdm, indicator-application, indicator-datetime, indicator-keyboard, indicator-power, indicator-session, indicator-sound, gnome-power-manager, trisquel-mini-data, language-selector-gnome, gigolo, gvfs-fuse, gvfs-backends, gvfs-bin, pulseaudio, synaptic, system-config-printer-udev, system-config-printer-gnome, update-notifier, software-properties-gtk, apturl, xdg-user-dirs-gtk,  zenity, gnome-keyring, libpam-gnome-keyring, indicator-messages, network-manager-openvpn-gnome, network-manager-gnome, python3-gi-cairo, policykit-1-gnome (>= 0.105), libgtk2-perl, indicator-datetime, indicator-session, trisquel-sounds, compton
-Recommends: midori, abiword, sylpheed, sylpheed-i18n, xfburn, mtpaint, evince, transmission-gtk, gnome-calculator, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, simple-scan, gnome-mpv, mpv, usb-creator-gtk [amd64 i386], pidgin, pidgin-plugin-pack, pidgin-guifications, liferea
+Recommends: abrowser, abiword, sylpheed, sylpheed-i18n, xfburn, mtpaint, evince, transmission-gtk, gnome-calculator, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, simple-scan, gnome-mpv, mpv, usb-creator-gtk [amd64 i386], pidgin, pidgin-plugin-pack, pidgin-guifications, liferea
 Suggests: casper, ubiquity, grub-pc [amd64 i386], ubiquity-frontend-gtk, language-pack-gnome-es, lupin-casper, ubiquity-slideshow-trisquel, abrowser-locale-en, aspell, aspell-en, aspell-es, dictionaries-common, language-pack-en, language-pack-en-base, language-pack-gnome-en, language-pack-gnome-en-base, wamerican, wbritish, wspanish
 Description: Trisquel metapackage (mini edition).
  Dependency list for Trisquel base installation.
@@ -111,7 +111,7 @@ Description: Trisquel metapackage (mini edition).
 Package: trisquel-mini-recommended
 Architecture: any
 Priority: optional
-Depends: midori, abiword, sylpheed, sylpheed-i18n, xfburn, mtpaint, evince, transmission-gtk, gnome-calculator, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, simple-scan, gnome-mpv, mpv, usb-creator-gtk [amd64 i386], pidgin, pidgin-plugin-pack, pidgin-guifications, liferea
+Depends: abrowser, abiword, sylpheed, sylpheed-i18n, xfburn, mtpaint, evince, transmission-gtk, gnome-calculator, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, simple-scan, gnome-mpv, mpv, usb-creator-gtk [amd64 i386], pidgin, pidgin-plugin-pack, pidgin-guifications, liferea
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.
  Provides lightweight desktop environment.
