@@ -1,3 +1,9 @@
+trisquel-meta (10.0-19) nabia; urgency=medium
+
+  * trisquel-minimal: Add ifupdown as an alternative to netplan.io
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 19 Nov 2021 13:50:39 -0500
+
 trisquel-meta (10.0-18) nabia; urgency=medium
 
   * Replace midori in favor of abrowser as default browser
