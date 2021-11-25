@@ -1,3 +1,9 @@
+trisquel-meta (10.0-20) nabia; urgency=medium
+
+  * Added ubiquity-frontend-gtk-panel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 25 Nov 2021 15:14:59 -0500
+
 trisquel-meta (10.0-19) nabia; urgency=medium
 
   * trisquel-minimal: Add ifupdown as an alternative to netplan.io
