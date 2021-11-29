@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (10.0-2) nabia; urgency=medium
+
+  * Corrected default Serif font
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 29 Nov 2021 16:54:22 -0500
+
 trisquel-desktop-common-data (10.0-1) nabia; urgency=medium
 
   * Setting wallpaper for nabia release
