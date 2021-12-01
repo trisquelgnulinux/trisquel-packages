@@ -1,3 +1,9 @@
+trisquel-gtk-theme (10.1) nabia; urgency=medium
+
+  * Fixed gtk-2.0 color definition syntax
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Dec 2021 11:19:47 -0500
+
 trisquel-gtk-theme (10.0) nabia; urgency=medium
 
   * Port trisquel-gtk-theme to nabia
