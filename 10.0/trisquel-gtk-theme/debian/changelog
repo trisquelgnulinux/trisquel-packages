@@ -1,3 +1,9 @@
+trisquel-gtk-theme (10.2) nabia; urgency=medium
+
+  * Set black background on mate-terminal
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Dec 2021 14:12:23 -0500
+
 trisquel-gtk-theme (10.1) nabia; urgency=medium
 
   * Fixed gtk-2.0 color definition syntax

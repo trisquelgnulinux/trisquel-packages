@@ -580,6 +580,12 @@ na-tray-applet widget box widget {
     border-style: none;
 }
 
+vte-terminal {
+    -TerminalWindow-background-darkness: 1.0;
+    background-color: @terminal_background_color;
+    color: @selected_fg_color;
+}
+
 /****************
  * Pluma *
  ****************/
