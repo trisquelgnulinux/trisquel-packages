@@ -1,3 +1,10 @@
+trisquel-icon-theme (9.0+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Add icons for window buttons to be used in trisquel-gtk-theme
+
+ -- Keno Goertz <keno@goertz-berlin.com>  Sat, 12 Dec 2020 11:44:12 +0100
+
 trisquel-icon-theme (9.0) etiona; urgency=medium
 
   * Fixed icon sizing issue
