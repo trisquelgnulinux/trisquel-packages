@@ -1,3 +1,11 @@
+trisquel-gtk-theme (9.0-4.1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Make GTK3 window buttons consistent with those of GTK2. Remove rounding on
+    GTK3 titlebars for added consistency.
+
+ -- Keno Goertz <keno@goertz-berlin.com>  Sat, 12 Dec 2020 11:45:51 +0100
+
 trisquel-gtk-theme (9.0-4) etiona; urgency=medium
 
   * Corrected scrollbar offset
