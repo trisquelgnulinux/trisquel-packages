@@ -6,7 +6,7 @@ Type=X-GNOME-Metatheme
 Comment=Trisquel 10.x Theme, based on Greybird
 
 [X-GNOME-Metatheme]
-GtkTheme=Trisquel
+GtkTheme=Greybird
 MetacityTheme=Trisquel
 IconTheme=trisquel
 CursorTheme=DMZ-White

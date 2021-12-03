@@ -1,3 +1,9 @@
+trisquel-gtk-theme (10.4) nabia; urgency=medium
+
+  * Avoid symlinks on gtk directories 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 18:49:07 -0500
+
 trisquel-gtk-theme (10.3) nabia; urgency=medium
 
   * Re-made using greybird-gtk-theme as new base
