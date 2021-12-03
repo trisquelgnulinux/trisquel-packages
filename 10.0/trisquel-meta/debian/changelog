@@ -1,3 +1,9 @@
+trisquel-meta (10.0-22) nabia; urgency=medium
+
+  * Added blueman, sane-airscan to trisquel-recommended
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 18:04:03 -0500
+
 trisquel-meta (10.0-21) nabia; urgency=medium
 
   * Added net-tools and libgdk-pixbuf2.0-bin to all releases, electrum and
