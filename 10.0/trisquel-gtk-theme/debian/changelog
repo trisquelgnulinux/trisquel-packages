@@ -1,3 +1,9 @@
+trisquel-gtk-theme (10.3) nabia; urgency=medium
+
+  * Re-made using greybird-gtk-theme as new base
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 09:57:43 -0500
+
 trisquel-gtk-theme (10.2) nabia; urgency=medium
 
   * Set black background on mate-terminal
