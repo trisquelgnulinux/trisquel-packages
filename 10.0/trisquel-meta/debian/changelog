@@ -1,3 +1,10 @@
+trisquel-meta (10.0-21) nabia; urgency=medium
+
+  * Added net-tools and libgdk-pixbuf2.0-bin to all releases, electrum and
+    khotkeys to Triskel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 15:35:24 -0500
+
 trisquel-meta (10.0-20) nabia; urgency=medium
 
   * Added ubiquity-frontend-gtk-panel
