@@ -1,6 +1,12 @@
+trisquel-gtk-theme (10.5) nabia; urgency=medium
+
+  * Modified deployment method for symlinks
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 08 Dec 2021 16:44:29 -0500
+
 trisquel-gtk-theme (10.4) nabia; urgency=medium
 
-  * Avoid symlinks on gtk directories 
+  * Avoid symlinks on gtk directories
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 18:49:07 -0500
 
