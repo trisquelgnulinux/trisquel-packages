@@ -1,3 +1,10 @@
+trisquel-meta (10.0-23) nabia; urgency=medium
+
+  * Remove duplicated calculator as lxde recommends its own package
+    'gcalculator' as first option
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 07 Dec 2021 01:20:57 -0600
+
 trisquel-meta (10.0-22) nabia; urgency=medium
 
   * Added blueman, sane-airscan to trisquel-recommended
