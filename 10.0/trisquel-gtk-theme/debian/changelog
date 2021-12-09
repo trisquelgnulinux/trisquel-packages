@@ -1,3 +1,9 @@
+trisquel-gtk-theme (10.6) nabia; urgency=medium
+
+  * Set greybird-gtk-theme as Pre-Depends
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 09 Dec 2021 17:47:46 -0500
+
 trisquel-gtk-theme (10.5) nabia; urgency=medium
 
   * Modified deployment method for symlinks
