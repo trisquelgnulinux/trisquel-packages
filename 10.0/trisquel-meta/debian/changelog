@@ -1,3 +1,9 @@
+trisquel-meta (10.0-25) nabia; urgency=medium
+
+  * Removed from triskel: kontact korganizer kaddressbook okular 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 30 Dec 2021 17:33:03 -0500
+
 trisquel-meta (10.0-24) nabia; urgency=medium
 
   * Add lxhotkey-gtk required package 'lxhotkey-plugin-openbox' to
