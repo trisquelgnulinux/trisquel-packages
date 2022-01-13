@@ -1,3 +1,9 @@
+ubiquity-slideshow-trisquel (4.5-12) nabia; urgency=medium
+
+  * Replace freenode in favor of libera.chat
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 12 Jan 2022 20:38:23 -0600
+
 ubiquity-slideshow-trisquel (4.5-11) nabia; urgency=medium
 
   * Apply fix for debian path to build correclty.
