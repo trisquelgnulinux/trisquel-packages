@@ -1,3 +1,9 @@
+ubiquity-slideshow-trisquel (4.5-13) nabia; urgency=medium
+
+  * Added danish translation by Hans-Jørgen Martinus
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 19 Jan 2022 03:00:03 -0600
+
 ubiquity-slideshow-trisquel (4.5-12) nabia; urgency=medium
 
   * Replace freenode in favor of libera.chat
