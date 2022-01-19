@@ -1,7 +1,7 @@
 Source: ubiquity-slideshow-trisquel
 Section: x11
 Priority: optional
-Maintainer: Rubén Rodríguez <ruben@trisquel.info>
+Maintainer: Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>
 Build-Depends-Indep: debhelper
 Standards-Version: 3.5.9.0
 
