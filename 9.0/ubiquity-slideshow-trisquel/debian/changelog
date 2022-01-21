@@ -1,3 +1,9 @@
+ubiquity-slideshow-trisquel (4.5-15) etiona; urgency=medium
+
+  * Added french translation by lanun
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 20 Jan 2022 02:02:07 -0600
+
 ubiquity-slideshow-trisquel (4.5-14) etiona; urgency=medium
 
   * Backport ubiquity-slideshow-trisquel updates to etiona.
