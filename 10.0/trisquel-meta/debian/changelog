@@ -1,3 +1,9 @@
+trisquel-meta (10.0-27) nabia; urgency=medium
+
+  * Added kmenuedit kinfocenter libvdpau-va-gl1 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 24 Jan 2022 16:27:12 -0500
+
 trisquel-meta (10.0-26) nabia; urgency=medium
 
   * Update trisquel-gnome dependencies for nabia.
