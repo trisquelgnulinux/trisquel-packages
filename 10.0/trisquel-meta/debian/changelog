@@ -1,3 +1,9 @@
+trisquel-meta (10.0-28) nabia; urgency=medium
+
+  * Removed irqbalance
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 29 Jan 2022 12:10:51 -0500
+
 trisquel-meta (10.0-27) nabia; urgency=medium
 
   * Added kmenuedit kinfocenter libvdpau-va-gl1 
