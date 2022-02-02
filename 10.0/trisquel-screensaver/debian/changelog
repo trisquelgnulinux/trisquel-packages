@@ -1,3 +1,9 @@
+trisquel-screensaver (10.1) nabia; urgency=medium
+
+  * Fixed path to floaters binary
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Feb 2022 13:02:06 -0500
+
 trisquel-screensaver (10.0) nabia; urgency=medium
 
   * Port trisquel-screensaver to nabia
