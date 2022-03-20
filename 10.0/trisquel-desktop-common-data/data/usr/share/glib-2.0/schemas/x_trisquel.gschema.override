@@ -12,6 +12,9 @@ windowmanager='mate-wm'
 [org.mate.panel]
 default-layout='trisquel'
 
+[org.mate.pluma]
+color-scheme = 'Ambiant-MATE'
+
 [org.mate.panel.object]
 has-arrow = false
 
