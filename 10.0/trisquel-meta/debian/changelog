@@ -1,3 +1,9 @@
+trisquel-meta (10.0-30) nabia; urgency=medium
+
+  * Added trisquel-release-upgrader packages
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 27 May 2022 11:55:37 -0400
+
 trisquel-meta (10.0-29) nabia; urgency=medium
 
   * Enable lightdm-gtk-greeter on trisquel-mini 10.0
