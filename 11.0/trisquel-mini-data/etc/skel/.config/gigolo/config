@@ -1,0 +1,17 @@
+
+[general]
+vm_impl=hal
+file_manager=gvfs-open
+autoconnect_interval=60
+
+[ui]
+save_geometry=true
+show_in_systray=true
+start_in_systray=false
+show_toolbar=true
+toolbar_style=3
+toolbar_orientation=0
+view_mode=1
+show_panel=true
+last_panel_page=0
+show_autoconnect_errors=true

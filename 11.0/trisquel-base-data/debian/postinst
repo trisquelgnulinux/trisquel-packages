@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if update-alternatives --query default.plymouth | grep Value | grep lubuntu -q
+then
+update-alternatives --remove default.plymouth /lib/plymouth/themes/lubuntu-logo/lubuntu-logo.plymouth
+fi
+
+update-initramfs -u
+
+# Default to systemd-resolved
+
+systemctl enable systemd-resolved
+systemctl start systemd-resolved
+
+if [ -L /etc/resolv.conf ] && \
+   [ "$(readlink /etc/resolv.conf)" != "/run/systemd/resolve/stub-resolv.conf" ] && \
+   [ -f /run/systemd/resolve/stub-resolv.conf ]; then
+  mv /etc/resolv.conf /etc/resolv.conf.trisquel.bak
+  ln -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+fi
+
+exit 0

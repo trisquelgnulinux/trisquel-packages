@@ -1,0 +1,55 @@
+#!/bin/sh
+
+if [ -z "$XDG_CONFIG_HOME" ]; then
+    export XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+#Allow custom configuration files in /etc/xdg/trisquel-mini
+if test "x$XDG_CONFIG_DIRS" = "x"
+then
+  XDG_CONFIG_DIRS="/etc/xdg/trisquel-mini:/etc/xdg"
+else
+  XDG_CONFIG_DIRS="/etc/xdg/trisquel-mini/:$XDG_CONFIG_DIRS:/etc/xdg"
+fi
+export XDG_CONFIG_DIRS
+
+if test "x$XDG_DATA_DIRS" = "x"
+then
+ XDG_DATA_DIRS="/etc/xdg/trisquel-mini:/usr/local/share:/usr/share:/usr/share"
+ else
+ XDG_DATA_DIRS="/etc/xdg/trisquel-mini:$XDG_DATA_DIRS:/usr/share"
+fi
+export XDG_DATA_DIRS
+
+# Ensure the existance of pcmanfm config file
+PCMANFM_CONF_DIR="$XDG_CONFIG_HOME/pcmanfm/Trisquel-mini"
+if [ ! -f "$PCMANFM_CONF_DIR/pcmanfm.conf" ]; then
+    mkdir -p "$PCMANFM_CONF_DIR"
+    cp /usr/share/trisquel-mini/pcmanfm/main.trisquel-mini "$PCMANFM_CONF_DIR/pcmanfm.conf"
+fi
+
+# Ensure the existance of openbox config file
+OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
+if [ ! -f "$OPENBOX_CONF_DIR/trisquel-mini-rc.xml" ]; then
+    mkdir -p "$OPENBOX_CONF_DIR"
+    cp /usr/share/trisquel-mini/openbox/rc.xml "$OPENBOX_CONF_DIR/trisquel-mini-rc.xml"
+fi
+
+# Install custom QT configuration if no one is already installed
+if [ ! -f "$XDG_CONFIG_HOME/Trolltech.conf" ]; then
+    cp /usr/share/trisquel-mini/qt/Trolltech.conf "$XDG_CONFIG_HOME/Trolltech.conf"
+fi
+
+# Clean up after GDM (GDM sets the number of desktops to one)
+xprop -root -remove _NET_NUMBER_OF_DESKTOPS -remove _NET_DESKTOP_NAMES -remove _NET_CURRENT_DESKTOP 2> /dev/null
+
+# Enable GTK+2 integration for OpenOffice.org, if available.
+export SAL_USE_VCLPLUGIN=gtk
+
+# Launch DBus if needed
+if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+       eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+
+# Start the LXDE session
+exec /usr/bin/lxsession -s Trisquel-mini -e LXDE
