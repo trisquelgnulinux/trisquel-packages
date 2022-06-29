@@ -1,0 +1,8 @@
+#!/bin/sh
+
+item="/etc/gtk-3.0/settings.ini"
+
+if [ remove = "$1" -o abort-install = "$1" -o disappear = "$1" -o abort-upgrade = "$1" ]
+then
+    [ -f "$item"".ubuntu" ] && dpkg-divert --package trisquel-desktop-common-data --remove --rename --divert "$item"".ubuntu" "$item"
+fi

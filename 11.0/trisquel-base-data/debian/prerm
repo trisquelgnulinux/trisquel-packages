@@ -1,0 +1,5 @@
+#!/bin/bash
+
+grep -q b43 /etc/modules && sed -i '/b43/d' /etc/modules 
+
+exit 0

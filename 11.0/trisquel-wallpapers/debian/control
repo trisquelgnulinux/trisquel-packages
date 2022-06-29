@@ -1,0 +1,15 @@
+Source: trisquel-wallpapers
+Section: trisquel
+Priority: optional
+Maintainer: Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>
+Build-Depends-Indep: debhelper
+Standards-Version: 3.5.9.0
+
+Package: trisquel-wallpapers
+Architecture: all
+Priority: optional
+Provides: ubuntu-wallpapers
+Description: Trisquel Wallpapers
+ The default Wallpapers for Trisquel.
+ .
+

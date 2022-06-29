@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_gconf
+if [ "$1" = "configure" ] && which update-gconf-defaults >/dev/null 2>&1; then
+grep -q ^gdm: /etc/fstab && sudo -u gdm gconftool-2 --recursive-unset /desktop/gnome || true
+	update-gconf-defaults
+fi
+# End automatically added section

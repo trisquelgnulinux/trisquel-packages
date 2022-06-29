@@ -1,0 +1,149 @@
+trisquel-mini-data (11.0) aramo; urgency=medium
+
+  * Initial release for Aramo
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 18:55:45 +0000
+
+trisquel-mini-data (10.0) etiona; urgency=medium
+
+  * Initial release for trisquel-mini-data for nabia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 02 Oct 2021 01:12:14 -0500
+
+trisquel-mini-data (9.0-2) etiona; urgency=medium
+
+  * Match window theme to MATE version
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 19 Jul 2020 17:26:02 -0400
+
+trisquel-mini-data (9.0-1) etiona; urgency=medium
+
+  * Added new artwork refs
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 10 May 2020 23:45:20 -0400
+
+trisquel-mini-data (9.0) etiona; urgency=medium
+
+  * Initial release for Etiona
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 21 Apr 2020 18:35:16 -0400
+
+trisquel-mini-data (8.0) flidas; urgency=medium
+
+  * Artwork updated for flidas
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 30 Mar 2018 11:39:39 -0400
+
+trisquel-mini-data (7.0-2) belenos; urgency=low
+
+  * Added defalt session to lightdm
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 19 Oct 2014 19:53:55 +0200
+
+trisquel-mini-data (7.0-1) belenos; urgency=low
+
+  * Updated settings for Belenos background
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 19 Jul 2014 03:02:43 +0200
+
+trisquel-mini-data (7.0) belenos; urgency=low
+
+  * Initial release for belenos
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 31 Jan 2014 19:46:31 +0100
+
+trisquel-mini-data (5.99-3) toutatis; urgency=low
+
+  * Updated 6.0/trisquel-mini-data to fix font color in lxdm theme
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 08 Mar 2013 05:48:01 +0100
+
+trisquel-mini-data (5.99-2) toutatis; urgency=low
+
+  * Updated for new wallpaper
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 13 Feb 2013 05:29:32 +0100
+
+trisquel-mini-data (5.99-1) toutatis; urgency=low
+
+  * Updated panel settings
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 01 Dec 2012 02:18:57 +0100
+
+trisquel-mini-data (5.99) toutatis; urgency=low
+
+  * Initial release for Toutatis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 07 Oct 2012 05:26:26 +0200
+
+trisquel-mini-data (5.5) brigantia; urgency=low
+
+  * Updated for final brigantia artwork
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 05 Apr 2012 02:33:21 +0200
+
+trisquel-mini-data (5.4-1) slaine; urgency=low
+
+  * nm-applet is no longer needed in the autostart script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 10 Mar 2012 16:34:02 +0100
+
+trisquel-mini-data (5.4) slaine; urgency=low
+
+  * Initial release for Brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 18:40:14 +0100
+
+trisquel-mini-data (5.0-1) slaine; urgency=low
+
+  * Added changes from http://trisquel.info/es/issues/4235
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 08 Nov 2011 22:42:19 +0100
+
+trisquel-mini-data (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:32:13 +0200
+
+trisquel-mini-data (4.99-1) slaine; urgency=low
+
+  * Added final artwork
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 01:52:08 +0200
+
+trisquel-mini-data (4.99) slaine; urgency=low
+
+  * Initial release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 Jul 2011 14:48:53 +0200
+
+trisquel-mini-data (4.4.9-1) slaine; urgency=low
+
+  * Updated for new pcmanfm version
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 05 Apr 2011 16:51:40 +0200
+
+trisquel-mini-data (4.4.9) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-mini-data (3.99-2) taranis; urgency=low
+
+  * Added gigolo config file
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 18:06:49 +0200
+
+trisquel-mini-data (3.99-1) taranis; urgency=low
+
+  * Replaced wallpaper, Midori as default browser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Sep 2010 00:10:44 +0200
+
+trisquel-mini-data (3.99) taranis; urgency=low
+
+  * Initial release
+
+ -- Rubén Rodríguez <ruben@trisquel.info>  Wed, 12 May 2010 15:09:43 +0100

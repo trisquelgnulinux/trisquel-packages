@@ -1,0 +1,65 @@
+trisquel-screensaver (11.0) aramo; urgency=medium
+
+  * Initial release for Aramo
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 02:57:53 +0000
+
+trisquel-screensaver (10.0) nabia; urgency=medium
+
+  * Port trisquel-screensaver to nabia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 30 Sep 2021 19:35:48 -0500
+
+trisquel-screensaver (8.0) flidas; urgency=medium
+
+  * Updated for MATE
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 08 Apr 2017 21:20:17 -0400
+
+trisquel-screensaver (5.5) brigantia; urgency=low
+
+  * Initial release for Brigantia
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 23 Jan 2012 18:40:14 +0100
+
+trisquel-screensaver (5.0) slaine; urgency=low
+
+  * Final release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 15 Sep 2011 13:32:18 +0200
+
+trisquel-screensaver (4.99) slaine; urgency=low
+
+  * Initial release for Dagda
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 16 Jul 2011 14:49:00 +0200
+
+trisquel-screensaver (4.5) slaine; urgency=low
+
+  * Initial release for slaine
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 12 Dec 2010 18:41:00 +0200
+
+trisquel-screensaver (4.0) taranis; urgency=low
+
+  * Initial release for Taranis
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2010 19:50:00 +0200
+
+trisquel-screensaver (3.5) awen; urgency=low
+
+  * Initial release for Awen
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 03 Mar 2010 21:27:09 +0100
+
+trisquel-screensaver (3.0) dwyn; urgency=low
+
+  * Initial release for Dwyn
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Fri, 12 Jun 2009 14:28:12 +0200
+
+trisquel-screensaver (2.1-1) robur; urgency=low
+
+  * Initial release
+
+ -- Rubén Rodríguez Pérez <ruben@trisquel.info>  Mon, 11 May 2009 11:56:59 +0200
