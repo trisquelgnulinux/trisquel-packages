@@ -2,7 +2,7 @@ Source: trisquel-sounds
 Section: gnome
 Priority: optional
 Maintainer: Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>
-Build-Depends: debhelper (>= 5)
+Build-Depends: debhelper (>= 10)
 Standards-Version: 3.7.2
 
 Package: trisquel-sounds

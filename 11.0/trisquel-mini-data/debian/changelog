@@ -1,10 +1,22 @@
 trisquel-mini-data (11.0) aramo; urgency=medium
 
-  * Initial release for Aramo
+  * Initial release for trisquel-mini-data for aramo
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 18:55:45 +0000
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 20:50:32 -0500
 
-trisquel-mini-data (10.0) etiona; urgency=medium
+trisquel-mini-data (10.0-2) nabia; urgency=medium
+
+  * Added dark openbox theme
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 12:23:47 -0500
+
+trisquel-mini-data (10.0-1) nabia; urgency=medium
+
+  * Update trisquel-mini wallpaper for nabia.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 10 Nov 2021 04:32:49 -0600
+
+trisquel-mini-data (10.0) nabia; urgency=medium
 
   * Initial release for trisquel-mini-data for nabia
 

@@ -1,8 +1,14 @@
-trisquel-screensaver (11.0) aramo; urgency=medium
+trisquel-screensaver (10.2) nabia; urgency=medium
 
-  * Initial release for Aramo
+  * Port trisquel-screensaver to aramo
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 02:57:53 +0000
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 20:51:40 -0500
+
+trisquel-screensaver (10.1) nabia; urgency=medium
+
+  * Fixed path to floaters binary
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 02 Feb 2022 13:02:06 -0500
 
 trisquel-screensaver (10.0) nabia; urgency=medium
 

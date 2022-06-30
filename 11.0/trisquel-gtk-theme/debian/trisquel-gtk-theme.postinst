@@ -1,0 +1,19 @@
+#!/bin/bash
+
+for VARIANT in "" "-dark"; do
+  for DIR in gnome-shell plank unity xfwm4 gtk-2.0 gtk-3.0; do
+    if [ ! -L /usr/share/themes/Trisquel$VARIANT/$DIR ]; then
+       rm -rf /usr/share/themes/Trisquel$VARIANT/$DIR
+       ln -s /usr/share/themes/Greybird$VARIANT/$DIR /usr/share/themes/Trisquel$VARIANT/$DIR
+    fi
+  done
+  if ! [ -L /usr/share/themes/Trisquel$VARIANT/Trisquel$VARIANT.emerald ]; then
+    rm -rf /usr/share/themes/Trisquel$VARIANT/Trisquel$VARIANT.emerald
+    ln -s /usr/share/themes/Greybird$VARIANT/Greybird$VARIANT.emerald /usr/share/themes/Trisquel$VARIANT/Trisquel$VARIANT.emerald
+  fi
+  if ! [ -L /usr/share/themes/Trisquel-dark/metacity-1 ]; then
+     rm -rf /usr/share/themes/Trisquel-dark/metacity-1
+     ln -s /usr/share/themes/Trisquel/metacity-1 /usr/share/themes/Trisquel-dark/metacity-1
+  fi
+done
+

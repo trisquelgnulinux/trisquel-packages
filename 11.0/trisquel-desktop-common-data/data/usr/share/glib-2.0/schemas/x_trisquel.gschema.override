@@ -12,6 +12,9 @@ windowmanager='mate-wm'
 [org.mate.panel]
 default-layout='trisquel'
 
+[org.mate.pluma]
+color-scheme = 'Ambiant-MATE'
+
 [org.mate.panel.object]
 has-arrow = false
 
@@ -30,8 +33,8 @@ switch-panels='<Super>Tab'
 
 [org.mate.background]
 show-desktop-icons=true
-picture-filename='/usr/share/backgrounds/etiona.jpg'
-picture-options='stretched'
+picture-filename='/usr/share/backgrounds/nabia.jpg'
+picture-options='zoom'
 color-shading-type='solid'
 primary-color='#000000000000'
 
@@ -69,8 +72,8 @@ hinting = 'slight'
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
-picture-uri='file:///usr/share/backgrounds/etiona.jpg'
-picture-options='stretched'
+picture-uri='file:///usr/share/backgrounds/nabia.jpg'
+picture-options='zoom'
 color-shading-type='solid'
 
 [org.gnome.desktop.interface]

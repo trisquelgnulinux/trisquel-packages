@@ -1,0 +1,122 @@
+!# Trisquel theme, based in Clearlooks and Natura
+
+!# general stuff
+
+border.width: 1
+padding.width: 3
+padding.height: 2
+window.handle.width: 4
+window.client.padding.width: 0
+menu.overlap: 2
+*.justify: left
+
+window.active.title.bg.highlight: 40
+window.active.title.bg.shadow:    00
+
+window.inactive.title.bg.highlight: 30
+window.inactive.title.bg.shadow:    00
+
+window.*.grip.bg.highlight: 50
+window.*.grip.bg.shadow:    30
+
+window.*.handle.bg.highlight: 50
+window.*.handle.bg.shadow:    30
+
+!# Menu settings
+
+menu.border.color: #aaaaaa
+menu.border.width: 1
+
+menu.title.bg: solid flat
+menu.title.bg.color: #E6E7E6
+menu.title.text.color: #111111
+
+menu.items.bg: Flat Solid
+menu.items.bg.color: #e7e7e7
+menu.items.text.color: #111111
+menu.items.disabled.text.color: #aaaaaa
+
+menu.items.active.bg: Flat Gradient splitvertical border
+
+menu.items.active.bg.color: #97b8e2
+menu.items.active.bg.color.splitTo: #a8c5e9
+
+menu.items.active.bg.colorTo: #91b3de
+menu.items.active.bg.colorTo.splitTo: #80a7d6
+menu.items.active.bg.border.color: #4b6e99
+menu.items.active.text.color: #ffffff
+
+!# set handles here and only the once?
+
+window.*.handle.bg: Raised solid
+window.*.handle.bg.color: #333
+
+window.*.grip.bg: Raised solid
+window.*.grip.bg.color: #333
+
+!# Active
+
+!# no handles - kind of closer to the clearlooks border, maybe?
+!#window.active.border.color: #455d7c
+
+window.*.border.color: #333
+
+window.active.title.separator.color: #3b3b3b
+
+*.title.bg: Raised Gradient splitvertical
+*.title.bg.color.splitTo: #3f3f3f
+*.title.bg.color: #3d3d3d
+*.title.bg.colorTo: #3d3d3d
+*.title.bg.colorTo.splitTo: #3b3b3b
+
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #ddd
+
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: #888888
+window.active.button.hover.image.color: #666666
+
+
+!# inactive
+
+!#window.inactive.border.color: #DDDDDD
+window.inactive.title.separator.color: #3b3b3b
+
+window.inactive.title.bg: Raised Gradient splitvertical
+window.inactive.title.bg.color.splitTo: #3f3f3f
+window.inactive.title.bg.color: #3d3d3d
+window.inactive.title.bg.colorTo: #3d3d3d
+window.inactive.title.bg.colorTo.splitTo: #3b3b3b
+
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #666
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #888888
+
+
+!# osd (pop ups and what not, dock?)
+
+osd.border.width: 1
+osd.border.color:  #999
+
+osd.bg: flat border gradient splitvertical
+osd.bg.color: #F0EFEE
+osd.bg.color.splitto: #f5f5f4
+osd.bg.colorTo: #EAEBEC
+osd.bg.colorTo.splitto: #E7E5E4
+
+osd.bg.border.color: #ffffff
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #efefef
+osd.label.bg.border.color: #9c9e9c
+
+osd.label.text.color: #444
+!# yeah whatever, this is fine anyhoo?
+osd.hilight.bg: flat vertical gradient 
+osd.hilight.bg.color: #9ebde5
+osd.hilight.bg.colorTo: #749dcf
+osd.unhilight.bg: flat vertical gradient
+osd.unhilight.bg.color: #BABDB6
+osd.unhilight.bg.colorTo: #efefef

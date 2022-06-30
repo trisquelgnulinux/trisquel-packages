@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.0
 Encoding=UTF-8
-Name=Trisquel
+Name=Trisquel Dark
 Type=X-GNOME-Metatheme
-Comment=Trisquel 10.x Theme, based on Greybird
+Comment=Trisquel 10.x Dark Theme, based on Greybird-dark
 
 [X-GNOME-Metatheme]
-GtkTheme=Trisquel
-MetacityTheme=Trisquel
+GtkTheme=Trisquel-dark
+MetacityTheme=Trisquel-dark
 IconTheme=trisquel
 CursorTheme=DMZ-White

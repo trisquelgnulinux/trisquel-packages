@@ -4,7 +4,7 @@
   <wallpaper>
     <name>Trisquel Nabia</name>
     <filename>/usr/share/backgrounds/nabia.jpg</filename>
-    <options>stretched</options>
+    <options>zoomed</options>
     <pcolor>#000000</pcolor>
     <scolor>#000000</scolor>
     <shade_type>solid</shade_type>
