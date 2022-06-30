@@ -1,8 +1,50 @@
-trisquel-gtk-theme (11.0) aramo; urgency=medium
+trisquel-gtk-theme (11.0) nabia; urgency=medium
 
-  * Initial release for Aramo
+  * Port trisquel-gtk-theme to aramo
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 15:39:47 +0000
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 20:48:02 -0500
+
+trisquel-gtk-theme (10.7) nabia; urgency=medium
+
+  * Run links during postinstall
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 10 Dec 2021 10:13:26 -0500
+
+trisquel-gtk-theme (10.6) nabia; urgency=medium
+
+  * Set greybird-gtk-theme as Pre-Depends
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 09 Dec 2021 17:47:46 -0500
+
+trisquel-gtk-theme (10.5) nabia; urgency=medium
+
+  * Modified deployment method for symlinks
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 08 Dec 2021 16:44:29 -0500
+
+trisquel-gtk-theme (10.4) nabia; urgency=medium
+
+  * Avoid symlinks on gtk directories
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 18:49:07 -0500
+
+trisquel-gtk-theme (10.3) nabia; urgency=medium
+
+  * Re-made using greybird-gtk-theme as new base
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 09:57:43 -0500
+
+trisquel-gtk-theme (10.2) nabia; urgency=medium
+
+  * Set black background on mate-terminal
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Dec 2021 14:12:23 -0500
+
+trisquel-gtk-theme (10.1) nabia; urgency=medium
+
+  * Fixed gtk-2.0 color definition syntax
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Dec 2021 11:19:47 -0500
 
 trisquel-gtk-theme (10.0) nabia; urgency=medium
 

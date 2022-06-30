@@ -87,20 +87,16 @@
 
 <draw_ops name="title-text-focused">
 		<!-- Title shade -->
-		<!--title color="gtk:base[NORMAL]" x="((width-title_width)/2+1)" y="((height-title_height)/2)+1"/-->	
-		<title color="gtk:base[NORMAL]" x="1" y="((height-title_height)/2)+1"/>	
+		<title color="shade/gtk:bg[NORMAL]/1.1" x="1" y="((height-title_height)/2)+1"/>	
 		<!-- Title -->
-		<!--title color="gtk:text[NORMAL]" x="((width-title_width)/2)" y="(height-title_height)/2"/-->
-		<title color="#555555" x="1" y="(height-title_height)/2"/>
+		<title color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.3" x="1" y="(height-title_height)/2"/>
 </draw_ops>
 
 <draw_ops name="title-text-unfocused">
 		<!-- Title shade -->
-		<!-- title color="gtk:base[NORMAL]" x="((width-title_width)/2+1)" y="((height-title_height)/2)+1"/-->	
-		<title color="gtk:base[NORMAL]" x="1" y="((height-title_height)/2)+1"/>	
+		<title color="shade/gtk:bg[NORMAL]/1.05" x="1" y="((height-title_height)/2)+1"/>	
 		<!-- Title -->
-		<!--title color="gtk:text[INSENSITIVE]" x="((width-title_width)/2)" y="(height-title_height)/2"/-->
-		<title color="#bbb" x="1" y="(height-title_height)/2"/>
+		<title color="blend/gtk:fg[NORMAL]/gtk:bg[NORMAL]/0.6" x="1" y="(height-title_height)/2"/>
 </draw_ops>
 
 <!--### WINDOW BASE ###-->

@@ -2,7 +2,118 @@ trisquel-meta (11.0) aramo; urgency=medium
 
   * Initial release for Aramo
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 00:15:44 +0000
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 20:41:04 -0500
+
+trisquel-meta (10.0-30) nabia; urgency=medium
+
+  * Added trisquel-release-upgrader packages
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 27 May 2022 11:55:37 -0400
+
+trisquel-meta (10.0-29) nabia; urgency=medium
+
+  * Enable lightdm-gtk-greeter on trisquel-mini 10.0
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 15 May 2022 15:18:12 -0500
+
+trisquel-meta (10.0-28) nabia; urgency=medium
+
+  * Removed irqbalance
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 29 Jan 2022 12:10:51 -0500
+
+trisquel-meta (10.0-27) nabia; urgency=medium
+
+  * Added kmenuedit kinfocenter libvdpau-va-gl1 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 24 Jan 2022 16:27:12 -0500
+
+trisquel-meta (10.0-26) nabia; urgency=medium
+
+  * Update trisquel-gnome dependencies for nabia.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 21 Jan 2022 17:42:44 -0600
+
+trisquel-meta (10.0-25) nabia; urgency=medium
+
+  * Removed from triskel: kontact korganizer kaddressbook okular 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 30 Dec 2021 17:33:03 -0500
+
+trisquel-meta (10.0-24) nabia; urgency=medium
+
+  * Add lxhotkey-gtk required package 'lxhotkey-plugin-openbox' to
+    default installation.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Dec 2021 12:47:15 -0600
+
+trisquel-meta (10.0-23) nabia; urgency=medium
+
+  * Remove duplicated calculator as lxde recommends its own package
+    'gcalculator' as first option
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 07 Dec 2021 01:20:57 -0600
+
+trisquel-meta (10.0-22) nabia; urgency=medium
+
+  * Added blueman, sane-airscan to trisquel-recommended
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 18:04:03 -0500
+
+trisquel-meta (10.0-21) nabia; urgency=medium
+
+  * Added net-tools and libgdk-pixbuf2.0-bin to all releases, electrum and
+    khotkeys to Triskel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 03 Dec 2021 15:35:24 -0500
+
+trisquel-meta (10.0-20) nabia; urgency=medium
+
+  * Added ubiquity-frontend-gtk-panel
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 25 Nov 2021 15:14:59 -0500
+
+trisquel-meta (10.0-19) nabia; urgency=medium
+
+  * trisquel-minimal: Add ifupdown as an alternative to netplan.io
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 19 Nov 2021 13:50:39 -0500
+
+trisquel-meta (10.0-18) nabia; urgency=medium
+
+  * Replace midori in favor of abrowser as default browser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 17 Nov 2021 20:17:11 -0600
+
+trisquel-meta (10.0-17) nabia; urgency=medium
+
+  * Add kdialog as dependency for IM GUI selector
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 16 Nov 2021 13:25:03 -0600
+
+trisquel-meta (10.0-16) nabia; urgency=medium
+
+  * Fix gcompris activity dependency.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 01 Nov 2021 15:48:38 -0600
+
+trisquel-meta (10.0-15) nabia; urgency=medium
+
+  * Fix dependencies for sugar-activity-measure
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 31 Oct 2021 22:39:51 -0600
+
+trisquel-meta (10.0-14) nabia; urgency=medium
+
+  * Fix unmeet dependencies for trisquel-sugar 10.0
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 31 Oct 2021 15:23:53 -0600
+
+trisquel-meta (10.0-13) nabia; urgency=medium
+
+  * Replace kmail in favor of icedove as email client
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 27 Oct 2021 15:27:01 -0500
 
 trisquel-meta (10.0-12) nabia; urgency=medium
 

@@ -1,8 +1,8 @@
-trisquel-base-data (11.0) aramo; urgency=medium
+trisquel-base-data (11.0) nabia; urgency=medium
 
-  * Initial release for Aramo
+  * Initial release and standardize alias
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 02:12:17 +0000
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 20:45:18 -0500
 
 trisquel-base-data (10.0) nabia; urgency=medium
 

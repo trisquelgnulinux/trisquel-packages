@@ -1,8 +1,20 @@
 trisquel-wallpapers (11.0) aramo; urgency=medium
 
-  * Initial release for Aramo
+  * Initial release for aramo
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 17:08:03 +0000
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 29 Jun 2022 20:54:32 -0500
+
+trisquel-wallpapers (10.2) nabia; urgency=medium
+
+  * Zoom the background instead of stretch, improves the transition from unity-greeter
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 30 Nov 2021 16:55:49 -0500
+
+trisquel-wallpapers (10.1) nabia; urgency=medium
+
+  * Final artwork for nabia.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 30 Nov 2021 12:35:19 -0500
 
 trisquel-wallpapers (10.0) nabia; urgency=medium
 
