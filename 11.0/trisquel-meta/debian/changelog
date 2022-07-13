@@ -1,3 +1,10 @@
+trisquel-meta (11.0-2) aramo; urgency=medium
+
+  * 11.0/trisquel-meta Replaced compton with picom
+  * 11.0/trisquel-meta Use ayatana indicators on MATE
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 13 Jul 2022 12:09:32 -0400
+
 trisquel-meta (11.0-1) aramo; urgency=medium
 
   * Adjust trisquel-meta packages for aramo: trisquel, trisquel-desktop-
