@@ -1,4 +1,10 @@
-trisquel-base-data (11.0) nabia; urgency=medium
+trisquel-base-data (11.1) aramo; urgency=medium
+
+  * removed Dpkg/Vendor/Trisquel.pm, now provided by dpkg  
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 15 Jul 2022 19:03:10 -0400
+
+trisquel-base-data (11.0) aramo; urgency=medium
 
   * Initial release and standardize alias
 
