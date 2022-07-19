@@ -1,13 +1,19 @@
+trisquel-meta (11.0-4) aramo; urgency=medium
+
+  * Temporarlily removed jami 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 19 Jul 2022 09:59:32 -0400
+
 trisquel-meta (11.0-3) aramo; urgency=medium
 
-  * 11.0/trisquel-meta: Removed lupin-casper
+  * Removed lupin-casper
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 17 Jul 2022 09:47:02 -0400
 
 trisquel-meta (11.0-2) aramo; urgency=medium
 
-  * 11.0/trisquel-meta Replaced compton with picom
-  * 11.0/trisquel-meta Use ayatana indicators on MATE
+  * Replaced compton with picom
+  * Use ayatana indicators on MATE
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 13 Jul 2022 12:09:32 -0400
 
