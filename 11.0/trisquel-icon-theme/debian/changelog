@@ -1,3 +1,9 @@
+trisquel-icon-theme (11.0-1) aramo; urgency=medium
+
+  * Fix control center bluetooth manager icon.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 23 Jul 2022 16:00:18 -0500
+
 trisquel-icon-theme (11.0) aramo; urgency=medium
 
   * Initial release for trisquel-icon-theme for aramo
