@@ -1,3 +1,10 @@
+trisquel-desktop-common-data (11.0-1) aramo; urgency=medium
+
+  * Updating org.gnome.desktop.interface and org.mate.font-rendering
+    schema for aramo.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 21 Jul 2022 01:29:43 -0500
+
 trisquel-desktop-common-data (11.0) aramo; urgency=medium
 
   * Initial release for trisquel-desktop-common-data for aramo

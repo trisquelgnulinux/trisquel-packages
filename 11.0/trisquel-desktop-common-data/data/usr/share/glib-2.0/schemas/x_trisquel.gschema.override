@@ -66,9 +66,9 @@ disable-user-switching = true
 [org.gnome.settings-daemon.plugins.updates]
 enable-check-firmware = false
 
-[org.gnome.settings-daemon.plugins.xsettings]
-antialiasing = 'rgba'
-hinting = 'slight'
+[org.mate.font-rendering]
+hinting='slight'
+antialiasing='rgba'
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
@@ -77,8 +77,6 @@ picture-options='zoom'
 color-shading-type='solid'
 
 [org.gnome.desktop.interface]
-menus-have-icons=true
-buttons-have-icons=true
 cursor-theme='DMZ-White'
 document-font-name='Serif 10'
 enable-animations=true
@@ -86,6 +84,8 @@ font-name='Sans 8'
 gtk-theme='Trisquel'
 icon-theme='trisquel'
 monospace-font-name='Monospace Bold 9'
+font-antialiasing = 'rgba'
+font-hinting = 'slight'
 
 [org.gnome.desktop.sound]
 event-sounds=true
