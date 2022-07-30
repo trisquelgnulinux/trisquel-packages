@@ -1,6 +1,9 @@
 ubiquity-slideshow-trisquel (4.5-17) etiona; urgency=medium
 
-  * Add spanish localized images. 
+  * Add german localized images. 
+  * Add spanish localized images.
+  * Add galician localized images.
+  * Add italian localized images.
   * Fix typo on german slide.
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 29 Jul 2022 11:32:13 -0500
