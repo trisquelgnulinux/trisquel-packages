@@ -1,4 +1,10 @@
-trisquel-gtk-theme (11.0) nabia; urgency=medium
+trisquel-gtk-theme (11.1) aramo; urgency=medium
+
+  * Set cursor theme to mate, prevents theme showing as "custom"
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 12 Aug 2022 15:23:44 -0400
+
+trisquel-gtk-theme (11.0) aramo; urgency=medium
 
   * Port trisquel-gtk-theme to aramo
 

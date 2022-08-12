@@ -1,3 +1,9 @@
+trisquel-gtk-theme (10.8) nabia; urgency=medium
+
+  * Set cursor theme to mate, prevents theme showing as "custom"
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 12 Aug 2022 15:32:32 -0400
+
 trisquel-gtk-theme (10.7) nabia; urgency=medium
 
   * Run links during postinstall
