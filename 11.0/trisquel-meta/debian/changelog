@@ -1,3 +1,9 @@
+trisquel-meta (11.0-5) aramo; urgency=medium
+
+  * Add redshift-gtk to trisquel recommeded packages.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 14 Aug 2022 18:29:13 -0500
+
 trisquel-meta (11.0-4) aramo; urgency=medium
 
   * Temporarlily removed jami 
