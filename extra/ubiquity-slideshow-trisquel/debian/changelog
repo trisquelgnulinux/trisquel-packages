@@ -1,3 +1,9 @@
+ubiquity-slideshow-trisquel (4.5-18) etiona; urgency=medium
+
+  * update debian/compat version for aramo and later versions.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 30 Aug 2022 23:31:58 -0500
+
 ubiquity-slideshow-trisquel (4.5-17) etiona; urgency=medium
 
   * Add german localized images. 
