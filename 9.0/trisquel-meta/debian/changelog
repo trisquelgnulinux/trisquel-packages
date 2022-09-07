@@ -1,3 +1,9 @@
+trisquel-meta (9.0-44) etiona; urgency=medium
+
+  * Remove conflicting notify-osd from meta package.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2022 14:04:24 -0500
+
 trisquel-meta (9.0-43) etiona; urgency=medium
 
   * Fix missing edit menu (kmenuedit) package option.
