@@ -1,3 +1,9 @@
+trisquel-meta (10.0-31) nabia; urgency=medium
+
+  * Remove conflicting notify-osd from meta package.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2022 13:44:50 -0500
+
 trisquel-meta (10.0-30) nabia; urgency=medium
 
   * Added trisquel-release-upgrader packages
