@@ -1,3 +1,10 @@
+trisquel-desktop-common-data (11.0-2) aramo; urgency=medium
+
+  * Renew pluma color set to 'Oblivion' as previous selection is
+    deprecated on aramo.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 03 Oct 2022 22:55:29 +0000
+
 trisquel-desktop-common-data (11.0-1) aramo; urgency=medium
 
   * Updating org.gnome.desktop.interface and org.mate.font-rendering
