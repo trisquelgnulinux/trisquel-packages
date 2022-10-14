@@ -1,8 +1,9 @@
 trisquel-meta (11.0-6) aramo; urgency=medium
 
   * Add redshift-gtk to trisquel recommeded packages.
+  * Add tool to manage screen locker on KDE environment.
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 14 Oct 2022 00:08:54 -0500
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 14 Oct 2022 01:04:31 -0500
 
 trisquel-meta (11.0-5) aramo; urgency=medium
 
