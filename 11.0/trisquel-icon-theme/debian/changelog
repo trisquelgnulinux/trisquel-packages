@@ -1,3 +1,9 @@
+trisquel-icon-theme (11.0-2) aramo; urgency=medium
+
+  * Add scalable battery applet icon to match theme.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 31 Aug 2022 19:24:43 -0500
+
 trisquel-icon-theme (11.0-1) aramo; urgency=medium
 
   * Fix control center bluetooth manager icon.

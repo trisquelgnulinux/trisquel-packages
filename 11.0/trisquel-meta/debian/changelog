@@ -1,8 +1,14 @@
-trisquel-meta (11.0-5) aramo; urgency=medium
+trisquel-meta (11.0-6) aramo; urgency=medium
 
   * Add redshift-gtk to trisquel recommeded packages.
 
- -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 14 Aug 2022 18:29:13 -0500
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 14 Oct 2022 00:08:54 -0500
+
+trisquel-meta (11.0-5) aramo; urgency=medium
+
+  * Remove conflicting notify-osd from meta package.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Sep 2022 13:19:48 -0500
 
 trisquel-meta (11.0-4) aramo; urgency=medium
 
