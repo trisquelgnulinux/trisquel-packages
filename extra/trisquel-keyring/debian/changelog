@@ -1,3 +1,10 @@
+trisquel-keyring (2022.10.19) aramo; urgency=medium
+
+  * Added new key 4AD4C938
+  * Handle apt keys via trusted.gpg.d
+
+ -- Rubén Rodríguez <ruben@trisquel.info>  Wed, 19 Oct 2022 14:30:23 -0400
+
 trisquel-keyring (2018.02.19) flidas; urgency=medium
 
   * Make sure new keys are always processed

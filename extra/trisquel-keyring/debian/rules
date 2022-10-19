@@ -27,10 +27,12 @@ binary-indep: checkroot
 	$(checkdir)
 	-rm -rf debian/tmp
 	$(install_dir) debian/tmp/DEBIAN/
-	$(install_script) debian/postinst debian/tmp/DEBIAN/
 
 	$(install_dir) debian/tmp/usr/share/keyrings/
 	$(install_file) keyrings/trisquel-archive-keyring.gpg debian/tmp/usr/share/keyrings/
+
+	$(install_dir) debian/tmp/etc/apt/trusted.gpg.d/
+	$(install_file) keyrings/trisquel-archive-keyring.gpg debian/tmp/etc/apt/trusted.gpg.d/
 
 	$(install_dir) debian/tmp/usr/share/doc/trisquel-keyring/
 	$(install_file) debian/changelog debian/tmp/usr/share/doc/trisquel-keyring/changelog
