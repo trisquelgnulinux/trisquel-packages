@@ -1,3 +1,9 @@
+trisquel-base-data (11.3) aramo; urgency=medium
+
+  * Dealing with lubuntu-logo.plymouth is deprecated
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 11 Nov 2022 14:05:31 -0500
+
 trisquel-base-data (11.2) aramo; urgency=medium
 
   * Systemd-resolved update script is deprecated
