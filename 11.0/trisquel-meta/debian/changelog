@@ -1,3 +1,9 @@
+trisquel-meta (11.0-7) aramo; urgency=medium
+
+  * Added pulseaudio-module-bluetooth to mate and kde
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 21 Nov 2022 18:43:10 -0500
+
 trisquel-meta (11.0-6) aramo; urgency=medium
 
   * Add redshift-gtk to trisquel recommeded packages.
