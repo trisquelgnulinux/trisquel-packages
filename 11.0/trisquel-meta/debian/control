@@ -16,7 +16,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-codecs
 Architecture: any
 Priority: optional
-Depends: gstreamer1.0-vaapi, i965-va-driver, gstreamer1.0-libav, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-plugins-base, gstreamer1.0-x, gstreamer1.0-alsa, libaacs0
+Depends: gstreamer1.0-vaapi, i965-va-driver, gstreamer1.0-libav, gstreamer1.0-plugins-good, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-ugly, gstreamer1.0-plugins-base, gstreamer1.0-x, gstreamer1.0-alsa, libaacs0, gstreamer1.0-tools
 Description: Trisquel codecs metapackage
  Dependency list for Trisquel base installation.
  Provides a set of gstreamer codecs.
