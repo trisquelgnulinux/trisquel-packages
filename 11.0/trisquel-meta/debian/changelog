@@ -1,3 +1,9 @@
+trisquel-meta (11.0-9) aramo; urgency=medium
+
+  * Add support for sound files previews.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 30 Nov 2022 10:46:59 -0600
+
 trisquel-meta (11.0-8) aramo; urgency=medium
 
   * Removed kde-config-whoopsie and kerneloops
