@@ -1,3 +1,9 @@
+trisquel-meta (11.0-10) aramo; urgency=medium
+
+  * Added wpa_supplicant to desktop environments.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 02 Dec 2022 16:17:27 -0600
+
 trisquel-meta (11.0-9) aramo; urgency=medium
 
   * Add support for sound files previews.
