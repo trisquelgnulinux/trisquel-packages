@@ -1,3 +1,10 @@
+trisquel-meta (11.0-11) aramo; urgency=medium
+
+  * Removed broken sugar-activity-jumble
+  * Added arctica-greeter and reorganized display-manager dependencies
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 06 Dec 2022 09:01:23 -0500
+
 trisquel-meta (11.0-10) aramo; urgency=medium
 
   * Added wpa_supplicant to desktop environments.
