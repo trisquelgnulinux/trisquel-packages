@@ -1,3 +1,11 @@
+trisquel-meta (11.0-12) aramo; urgency=medium
+
+  * Moved to lightdm-gtk-greeter
+  * Removed broken sugar-activity-iq
+  * Added rfkill
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 07 Dec 2022 18:51:13 -0500
+
 trisquel-meta (11.0-11) aramo; urgency=medium
 
   * Removed broken sugar-activity-jumble
