@@ -1,3 +1,11 @@
+trisquel-icon-theme (11.0-3) aramo; urgency=medium
+
+  * Set status icons to 16px
+  * Minimize files with scour
+  * Cleanup of broken links
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 06 Dec 2022 17:11:02 -0500
+
 trisquel-icon-theme (11.0-2) aramo; urgency=medium
 
   * Add scalable battery applet icon to match theme.
