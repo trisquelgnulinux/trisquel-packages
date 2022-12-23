@@ -1,3 +1,9 @@
+trisquel-base-data (11.4) aramo; urgency=medium
+
+  * Added aramo artwork
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 23 Dec 2022 12:28:28 -0500
+
 trisquel-base-data (11.3) aramo; urgency=medium
 
   * Dealing with lubuntu-logo.plymouth is deprecated
