@@ -1,3 +1,9 @@
+trisquel-meta (11.0-14) aramo; urgency=medium
+
+  * spice-vdagent and display managers should be installed by makeiso
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 23 Dec 2022 14:22:16 -0500
+
 trisquel-meta (11.0-13) aramo; urgency=medium
 
   * Added spice-vdagent to trisquel-desktop-common-recommended
