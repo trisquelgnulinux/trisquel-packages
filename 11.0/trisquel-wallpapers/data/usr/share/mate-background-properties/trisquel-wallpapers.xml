@@ -2,6 +2,14 @@
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
   <wallpaper>
+    <name>Trisquel Aramo</name>
+    <filename>/usr/share/backgrounds/aramo.jpg</filename>
+    <options>zoomed</options>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+    <shade_type>solid</shade_type>
+  </wallpaper>
+  <wallpaper>
     <name>Trisquel Nabia</name>
     <filename>/usr/share/backgrounds/nabia.jpg</filename>
     <options>zoomed</options>
