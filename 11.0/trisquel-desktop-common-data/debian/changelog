@@ -1,3 +1,9 @@
+trisquel-desktop-common-data (11.0-3) aramo; urgency=medium
+
+  * Set aramo background gschema
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Fri, 23 Dec 2022 17:23:15 -0500
+
 trisquel-desktop-common-data (11.0-2) aramo; urgency=medium
 
   * Renew pluma color set to 'Oblivion' as previous selection is

@@ -33,7 +33,7 @@ switch-panels='<Super>Tab'
 
 [org.mate.background]
 show-desktop-icons=true
-picture-filename='/usr/share/backgrounds/nabia.jpg'
+picture-filename='/usr/share/backgrounds/aramo.jpg'
 picture-options='zoom'
 color-shading-type='solid'
 primary-color='#000000000000'
@@ -72,7 +72,7 @@ antialiasing='rgba'
 
 [org.gnome.desktop.background]
 show-desktop-icons=true
-picture-uri='file:///usr/share/backgrounds/nabia.jpg'
+picture-uri='file:///usr/share/backgrounds/aramo.jpg'
 picture-options='zoom'
 color-shading-type='solid'
 
