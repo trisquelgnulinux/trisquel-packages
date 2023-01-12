@@ -1,6 +1,8 @@
 trisquel-meta (11.0-15) aramo; urgency=medium
 
   * Add scrot screen capture application for trisquel-mini
+  * Add obconf configuration utility for trisquel-mini
+  * Add Epson Inkjet drivers to trisquel-print-system
 
  -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 10 Jan 2023 04:42:38 -0600
 
