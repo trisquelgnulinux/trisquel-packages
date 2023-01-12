@@ -58,7 +58,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-print-system
 Architecture: any
 Priority: optional
-Depends: cups, hplip, printer-driver-foo2zjs, printer-driver-foo2zjs-common, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-hpijs, printer-driver-min12xxw, printer-driver-pxljr, printer-driver-splix, cups-bsd, cups-client, openprinting-ppds, cups-pk-helper, foomatic-db-compressed-ppds, ipp-usb, printer-driver-postscript-hp, system-config-printer-udev
+Depends: cups, hplip, printer-driver-foo2zjs, printer-driver-foo2zjs-common, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-hpijs, printer-driver-min12xxw, printer-driver-pxljr, printer-driver-splix, cups-bsd, cups-client, openprinting-ppds, cups-pk-helper, foomatic-db-compressed-ppds, ipp-usb, printer-driver-postscript-hp, system-config-printer-udev, printer-driver-escpr
 Description: Trisquel metapackage for printer compatibility.
 
 
@@ -111,7 +111,7 @@ Description: Trisquel metapackage (mini edition).
 Package: trisquel-mini-recommended
 Architecture: any
 Priority: optional
-Depends: abrowser, abiword, sylpheed, sylpheed-i18n, xfburn, mtpaint, evince, transmission-gtk, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, simple-scan, gnome-mpv, mpv, usb-creator-gtk [amd64 i386], pidgin, pidgin-plugin-pack, pidgin-guifications, liferea, lxhotkey-plugin-openbox, scrot
+Depends: abrowser, abiword, sylpheed, sylpheed-i18n, xfburn, mtpaint, evince, transmission-gtk, plymouth-theme-trisquel-logo, plymouth-theme-trisquel-text, simple-scan, gnome-mpv, mpv, usb-creator-gtk [amd64 i386], pidgin, pidgin-plugin-pack, pidgin-guifications, liferea, lxhotkey-plugin-openbox, scrot, obconf
 Description: Trisquel base metapackage.
  Dependency list for Trisquel base installation.
  Provides lightweight desktop environment.
