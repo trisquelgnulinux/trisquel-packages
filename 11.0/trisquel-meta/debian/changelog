@@ -1,3 +1,10 @@
+trisquel-meta (11.0-17) aramo; urgency=medium
+
+  * Add policykit-desktop-privileges as recommended to trisquel desktop
+    environment.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Feb 2023 01:03:46 -0600
+
 trisquel-meta (11.0-16) aramo; urgency=medium
 
   * Added update-notifier and update-manager to triskel
