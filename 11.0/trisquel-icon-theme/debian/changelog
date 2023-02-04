@@ -1,3 +1,9 @@
+trisquel-icon-theme (11.0-4) aramo; urgency=medium
+
+  * Add scalable pdf mimetype icon for mate-control-center.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 04 Feb 2023 03:49:49 -0600
+
 trisquel-icon-theme (11.0-3) aramo; urgency=medium
 
   * Set status icons to 16px
