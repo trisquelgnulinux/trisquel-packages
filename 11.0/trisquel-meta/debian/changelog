@@ -1,3 +1,9 @@
+trisquel-meta (11.0-18) aramo; urgency=medium
+
+  * Replaced deprecated exfat-utils for exfatprogs
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Mon, 06 Feb 2023 17:29:46 -0500
+
 trisquel-meta (11.0-17) aramo; urgency=medium
 
   * Add policykit-desktop-privileges as recommended to trisquel desktop
