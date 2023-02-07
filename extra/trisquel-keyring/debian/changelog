@@ -1,3 +1,9 @@
+trisquel-keyring (2023.02.07) aramo; urgency=medium
+
+  * Removed key 8D8AEBF1, https://gitlab.trisquel.org/trisquel/package-helpers/-/issues/53
+
+ -- Rubén Rodríguez <ruben@trisquel.info>  Tue, 07 Feb 2023 15:49:06 -0500
+
 trisquel-keyring (2022.10.19) aramo; urgency=medium
 
   * Added new key 4AD4C938
