@@ -1,3 +1,10 @@
+trisquel-meta (11.0-19) aramo; urgency=medium
+
+  * Add printer driver for (some) Brother laser printers.
+  * Add printer driver for OKI Data printers.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 11 Feb 2023 15:35:43 -0600
+
 trisquel-meta (11.0-18) aramo; urgency=medium
 
   * Replaced deprecated exfat-utils for exfatprogs
