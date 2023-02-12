@@ -58,7 +58,7 @@ Description: Trisquel base metapackage.
 Package: trisquel-print-system
 Architecture: any
 Priority: optional
-Depends: cups, hplip, printer-driver-foo2zjs, printer-driver-foo2zjs-common, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-hpijs, printer-driver-min12xxw, printer-driver-pxljr, printer-driver-splix, cups-bsd, cups-client, openprinting-ppds, cups-pk-helper, foomatic-db-compressed-ppds, ipp-usb, printer-driver-postscript-hp, system-config-printer-udev, printer-driver-escpr
+Depends: cups, cups-bsd, cups-client, cups-pk-helper, foomatic-db-compressed-ppds, hplip, ipp-usb, openprinting-ppds, printer-driver-brlaser, printer-driver-escpr, printer-driver-foo2zjs, printer-driver-foo2zjs-common, printer-driver-gutenprint, printer-driver-hpcups, printer-driver-hpijs, printer-driver-min12xxw, printer-driver-oki, printer-driver-postscript-hp, printer-driver-pxljr, printer-driver-splix, system-config-printer-udev
 Description: Trisquel metapackage for printer compatibility.
 
 
