@@ -1,3 +1,9 @@
+trisquel-meta (11.0-20) aramo; urgency=medium
+
+  * Remove apport-kde & whoopsie dependency on triskel metapackage.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 16 Feb 2023 09:35:45 -0600
+
 trisquel-meta (11.0-19) aramo; urgency=medium
 
   * Add printer driver for (some) Brother laser printers.
