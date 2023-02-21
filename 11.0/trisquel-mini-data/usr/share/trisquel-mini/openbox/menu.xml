@@ -12,7 +12,7 @@
     <action name="Execute"><command>lxterminal</command></action>
   </item>
   <item label="Browser">
-    <action name="Execute"><command>midori</command></action>
+    <action name="Execute"><command>x-www-browser</command></action>
   </item>
 </menu>
 

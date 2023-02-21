@@ -1,3 +1,9 @@
+trisquel-mini-data (11.3) aramo; urgency=medium
+
+  * Replaced midori references with abrowser
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 21 Feb 2023 11:38:39 -0500
+
 trisquel-mini-data (11.2) aramo; urgency=medium
 
   * Use aramo wallpaper on lxdm

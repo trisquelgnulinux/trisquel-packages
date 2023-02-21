@@ -51,7 +51,7 @@ Plugin {
             id=pcmanfm.desktop
         }
         Button {
-            id=/usr/share/applications/midori.desktop
+            id=abrowser.desktop
         }
     }
 }
