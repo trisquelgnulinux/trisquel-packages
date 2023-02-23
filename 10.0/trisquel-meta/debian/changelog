@@ -1,3 +1,10 @@
+trisquel-meta (10.0-34) nabia; urgency=medium
+
+  * Remove gnome-raw-thumbnailer, gnome-xcf-thumbnailer deprecated
+    packages from trisquel-gnome-recommended.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 23 Feb 2023 00:35:00 -0600
+
 trisquel-meta (10.0-33) nabia; urgency=medium
 
   * Remove kde-config-whoopsie from triskel metapackages.
