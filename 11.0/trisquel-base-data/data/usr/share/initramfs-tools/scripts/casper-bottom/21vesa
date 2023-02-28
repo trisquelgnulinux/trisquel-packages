@@ -22,6 +22,6 @@ grep video=vesa  /proc/cmdline || exit
 
 log_begin_msg "$DESCRIPTION"
 
-cp /root/etc/X11/xorg.conf.vesa /root/etc/X11/xorg.conf
+cp /root/etc/X11/xorg.conf.vesa /root/usr/share/X11/xorg.conf.d/10-vesa.conf
 
 log_end_msg

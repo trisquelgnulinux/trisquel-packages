@@ -1,3 +1,13 @@
+trisquel-base-data (11.6) aramo; urgency=medium
+
+  * Reimplemented grub background setup
+  * Removed disable-radeon.conf for blobless activation
+  * Configured systemd-resolved to use opportunistic DNSOverTLS
+  * Updated partman recipes
+  * Updated casper configuration file for vesa usage
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Tue, 28 Feb 2023 07:47:24 -0500
+
 trisquel-base-data (11.5) aramo; urgency=medium
 
   * Corrected grub.png size
