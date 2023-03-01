@@ -1,3 +1,11 @@
+trisquel-meta (11.0-21) aramo; urgency=medium
+
+  * Restructure of -recommended packages
+  * Added jami back
+  * policykit-desktop-privileges moved to trisquel-desktop-common 
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Wed, 01 Mar 2023 07:09:43 -0500
+
 trisquel-meta (11.0-20) aramo; urgency=medium
 
   * Remove apport-kde & whoopsie dependency on triskel metapackage.
