@@ -8,6 +8,7 @@ Standards-Version: 3.5.9.0
 Package: trisquel-wallpapers
 Architecture: all
 Priority: optional
+Pre-Depends: python3
 Provides: ubuntu-wallpapers
 Description: Trisquel Wallpapers
  The default Wallpapers for Trisquel.
