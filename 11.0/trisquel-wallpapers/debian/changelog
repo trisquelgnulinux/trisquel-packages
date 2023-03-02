@@ -1,3 +1,10 @@
+trisquel-wallpapers (11.2) aramo; urgency=medium
+
+  * Add python3 as trisquel-wallpapers depedency in order to prevent
+    setup errors on release upgrade.
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Thu, 02 Mar 2023 02:19:56 -0600
+
 trisquel-wallpapers (11.1) aramo; urgency=medium
 
   * Added aramo artwork
