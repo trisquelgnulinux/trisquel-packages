@@ -1,3 +1,9 @@
+trisquel-base-data (11.7) aramo; urgency=medium
+
+  * Added /etc/modprobe.d/blacklist-amdgpu.conf
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sat, 04 Mar 2023 10:07:01 -0500
+
 trisquel-base-data (11.6) aramo; urgency=medium
 
   * Reimplemented grub background setup
