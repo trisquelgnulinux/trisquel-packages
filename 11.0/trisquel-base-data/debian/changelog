@@ -1,3 +1,9 @@
+trisquel-base-data (11.8) aramo; urgency=medium
+
+  * Fix debian/postinst script
+
+ -- Trisquel GNU/Linux developers <trisquel-devel@listas.trisquel.info>  Sun, 05 Mar 2023 03:53:21 -0600
+
 trisquel-base-data (11.7) aramo; urgency=medium
 
   * Added /etc/modprobe.d/blacklist-amdgpu.conf
