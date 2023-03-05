@@ -1,5 +1,7 @@
 #!/bin/sh
 
-[ -e /etc/modprobe.d/disable-radeon.conf ] && rm /etc/modprobe.d/disable-radeon.conf
-[ -e /etc/grub.d/06_trisquel_theme ] && rm /etc/grub.d/06_trisquel_theme
+rm -f /etc/modprobe.d/disable-radeon.conf
+rm -f /etc/grub.d/06_trisquel_theme
 
+#DEBHELPER#
+exit 0
